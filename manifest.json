@@ -1,0 +1,22 @@
+{
+  "name": "OBC Care - Urgent Medical Courier Services",
+  "short_name": "OBC Care",
+  "description": "Fast, reliable urgent medical hand carry courier services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#194479",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
