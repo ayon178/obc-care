@@ -194,7 +194,7 @@ const Home = () => {
         <div
           className="md:h-screen h-screen bg-cover bg-center flex items-center justify-center relative px-2 md:px-0"
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImage]})`,
+            backgroundImage: `linear-gradient(90deg, rgba(25, 68, 121, 0.35) 0%, rgba(25, 68, 121, 0.12) 55%), linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url(${images[currentImage]})`,
             transition: "background-image 0.5s ease-in-out", // Smooth transition for background
           }}
         >
@@ -210,7 +210,7 @@ const Home = () => {
             }}
             className="absolute inset-0"
             style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImage]})`,
+              backgroundImage: `linear-gradient(90deg, rgba(25, 68, 121, 0.35) 0%, rgba(25, 68, 121, 0.12) 55%), linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url(${images[currentImage]})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               opacity: 1,
@@ -239,7 +239,7 @@ const Home = () => {
                 {currentImage === 1 && (
                   <>
                     <motion.h1
-                      className="headingFont text-2xl md:text-3xl lg:text-5xl text-[#B07E5B] mt-6 leading-tight"
+                      className="headingFont text-2xl md:text-3xl lg:text-5xl text-[#91c73e] drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)] mt-6 leading-tight"
                       initial="hidden"
                       animate="visible"
                       variants={headerVariants.firstLine}
@@ -262,12 +262,25 @@ const Home = () => {
                     >
                       {textData[currentImage].smallLine}
                     </motion.p>
+                    <motion.div
+                      className="flex flex-col md:flex-row md:justify-start gap-2 mt-5"
+                      initial="hidden"
+                      animate="visible"
+                      variants={headerVariants.viewProjectsButton}
+                    >
+                      <button className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out">
+                        Get a Free Quote
+                      </button>
+                      <button className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out">
+                        Learn More About Our Services
+                      </button>
+                    </motion.div>
                     {/* <motion.button
                       onClick={() =>
                         (window.location.href =
                           textData[currentImage].buttonLink)
                       }
-                      className="buttonFont inline-block bg-white/10 hover:bg-[#B07E5B] mt-4 text-[#fff7ec] text-md px-8 py-3 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
+                      className="buttonFont inline-block bg-white/10 hover:bg-[#194479] mt-4 text-white text-md px-8 py-3 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
                       initial="hidden"
                       animate="visible"
                       variants={headerVariants.viewProjectsButton}
@@ -283,7 +296,7 @@ const Home = () => {
                 {currentImage !== 1 && (
                   <>
                     <motion.h1
-                      className="headingFont text-2xl md:text-3xl lg:text-5xl text-[#B07E5B] mt-6 leading-tight"
+                      className="headingFont text-2xl md:text-3xl lg:text-5xl text-[#91c73e] drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)] mt-6 leading-tight"
                       initial="hidden"
                       animate="visible"
                       variants={headerVariants.firstLine}
@@ -306,12 +319,25 @@ const Home = () => {
                     >
                       {textData[currentImage].smallLine}
                     </motion.p>
+                    <motion.div
+                      className="flex flex-col md:flex-row md:justify-end gap-2 mt-5"
+                      initial="hidden"
+                      animate="visible"
+                      variants={headerVariants.viewProjectsButton}
+                    >
+                      <button className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out">
+                        Get a Free Quote
+                      </button>
+                      <button className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out">
+                        Learn More About Our Services
+                      </button>
+                    </motion.div>
                     {/* <motion.button
                       onClick={() =>
                         (window.location.href =
                           textData[currentImage].buttonLink)
                       }
-                      className="buttonFont inline-block bg-white/10 hover:bg-[#B07E5B] mt-4 text-[#fff7ec] text-md px-8 py-3 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
+                      className="buttonFont inline-block bg-white/10 hover:bg-[#194479] mt-4 text-white text-md px-8 py-3 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
                       initial="hidden"
                       animate="visible"
                       variants={headerVariants.viewProjectsButton}
