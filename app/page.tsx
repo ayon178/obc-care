@@ -10,8 +10,10 @@ const textData = [
   {
     // smallLine: 'The Structural Engineers Ltd.',
     // firstLine: 'Dedicated to  ',
-    firstLine: "Developing homes",
-    secondLine: "with precision",
+    firstLine: "Global Logistics Solutions",
+    secondLine: "You Can Trust",
+    smallLine:
+      "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
     buttonText: "View Projects",
     buttonLink: "#",
   },
@@ -19,7 +21,8 @@ const textData = [
     // smallLine: 'The Structural Engineers Ltd.',
     firstLine: "Modern design",
     secondLine: "with craftsmanship",
-    // thirdLine: 'in every project',
+    smallLine:
+      "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
     buttonText: "View Projects",
     buttonLink: "#explore",
   },
@@ -27,6 +30,8 @@ const textData = [
     // smallLine: 'The Structural Engineers Ltd.',
     firstLine: "Spaces resonating with ",
     secondLine: "comfort and elegance",
+    smallLine:
+      "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
     // thirdLine: 'reflecting value ',
     buttonText: "View Projects",
     buttonLink: "#get-started",
@@ -128,7 +133,7 @@ const Home = () => {
       visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 0.8, ease: "easeInOut" },
+        transition: { duration: 0.8, ease: "easeInOut", delay: 1.2 },
       },
     },
     firstLine: {
@@ -187,7 +192,7 @@ const Home = () => {
       <AnimatePresence mode="wait">
         {/* Fullscreen Banner with Text Overlay */}
         <div
-          className="md:h-screen h-[70vh] bg-cover bg-center flex items-center justify-center relative px-4 md:px-0"
+          className="md:h-screen h-screen bg-cover bg-center flex items-center justify-center relative px-2 md:px-0"
           style={{
             backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${images[currentImage]})`,
             transition: "background-image 0.5s ease-in-out", // Smooth transition for background
@@ -211,36 +216,26 @@ const Home = () => {
               opacity: 1,
             }}
           >
-            <div className="container mx-auto flex items-center justify-between relative h-full">
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between relative h-full gap-10 md:gap-0">
               {/* Social Media Icons and Line */}
-              <div className="flex flex-col items-center space-y-6">
-                <div className="w-[1px] h-32 bg-white"></div>
+              <div className="flex md:flex-col items-center justify-center md:justify-start md:space-y-6 space-x-4 md:space-x-0 mt-8 md:mt-0 order-last md:order-first">
+                <div className="w-[1px] h-32 bg-white hidden md:block"></div>
                 <FaFacebookF
                   className="text-white text-lg hover:text-[#bfa980]"
-                  onClick={() =>
-                    socialMediaLink("#")
-                  }
+                  onClick={() => socialMediaLink("#")}
                 />
                 <FaInstagram
                   className="text-white text-lg hover:text-[#bfa980]"
-                  onClick={() =>
-                    socialMediaLink(
-                      "#"
-                    )
-                  }
+                  onClick={() => socialMediaLink("#")}
                 />
                 <FaYoutube
                   className="text-white text-lg hover:text-[#bfa980]"
-                  onClick={() =>
-                    socialMediaLink(
-                      "#"
-                    )
-                  }
+                  onClick={() => socialMediaLink("#")}
                 />
               </div>
 
               {/* Left-aligned specific text and button */}
-              <div className="text-center md:text-left w-full ps-6">
+              <div className="text-center md:text-left w-full md:ps-6">
                 {currentImage === 1 && (
                   <>
                     <motion.h1
@@ -259,6 +254,14 @@ const Home = () => {
                     >
                       {textData[currentImage].secondLine}
                     </motion.h1>
+                    <motion.p
+                      className="text-sm md:text-base text-white/80 mt-3 max-w-xl"
+                      initial="hidden"
+                      animate="visible"
+                      variants={headerVariants.smallLine}
+                    >
+                      {textData[currentImage].smallLine}
+                    </motion.p>
                     {/* <motion.button
                       onClick={() =>
                         (window.location.href =
@@ -276,7 +279,7 @@ const Home = () => {
               </div>
 
               {/* Right-aligned dynamic text */}
-              <div className="text-center md:text-right w-full">
+              <div className="text-center md:text-right w-full mt-8 md:mt-0">
                 {currentImage !== 1 && (
                   <>
                     <motion.h1
@@ -295,6 +298,14 @@ const Home = () => {
                     >
                       {textData[currentImage].secondLine}
                     </motion.h1>
+                    <motion.p
+                      className="text-sm md:text-base text-white/80 mt-3 md:ml-auto max-w-xl"
+                      initial="hidden"
+                      animate="visible"
+                      variants={headerVariants.smallLine}
+                    >
+                      {textData[currentImage].smallLine}
+                    </motion.p>
                     {/* <motion.button
                       onClick={() =>
                         (window.location.href =
