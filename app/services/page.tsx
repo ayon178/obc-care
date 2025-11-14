@@ -3,6 +3,7 @@
 import Navbar from "@/components/shared/Navbar"
 import ServicesBanner from "@/components/services-banner"
 import CoreServices from "@/components/core-services"
+import OperatingProcess from "@/components/operating-process"
 import Footer from "@/components/footer"
 
 export default function ServicesPage() {
@@ -11,6 +12,7 @@ export default function ServicesPage() {
       <Navbar />
       <ServicesBanner />
       <CoreServices />
+      <OperatingProcess />
       <Footer />
     </main>
   )
