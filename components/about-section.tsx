@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { useRef } from "react"
+import { Globe, Shield, Zap, TrendingUp } from "lucide-react"
 
 // Word-by-word reveal
 const WordReveal = ({ text, className }: { text: string; className?: string }) => {
@@ -16,7 +17,7 @@ const WordReveal = ({ text, className }: { text: string; className?: string }) =
             whileInView={{ y: 0, opacity: 1 }}
             transition={{
               duration: 0.6,
-              delay: index * 0.1,
+              delay: index * 0.08,
               ease: [0.25, 0.1, 0.25, 1]
             }}
             viewport={{ once: true, margin: "-50px" }}
@@ -32,6 +33,7 @@ const WordReveal = ({ text, className }: { text: string; className?: string }) =
 
 export default function AboutSection() {
   const containerRef = useRef<HTMLDivElement>(null)
+  const imageRef = useRef<HTMLDivElement>(null)
   
   // Scroll-based animations
   const { scrollYProgress } = useScroll({
@@ -39,305 +41,263 @@ export default function AboutSection() {
     offset: ["start end", "end start"]
   })
   
-  // Parallax effects
-  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"])
-  const imageScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.05, 1])
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"])
-  const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0.8])
+  // Advanced parallax effects - more controlled
+  const imageY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"])
+  const imageOpacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.7, 1, 1, 0.8])
+  const contentY = useTransform(scrollYProgress, [0, 1], ["5%", "-5%"])
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0.9])
   
   // Spring animations for smoother feel
   const smoothImageY = useSpring(imageY, { stiffness: 100, damping: 30 })
-  const smoothImageScale = useSpring(imageScale, { stiffness: 100, damping: 30 })
+  const smoothImageOpacity = useSpring(imageOpacity, { stiffness: 100, damping: 30 })
   const smoothContentY = useSpring(contentY, { stiffness: 100, damping: 30 })
-  
-  // Rotate based on scroll
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 5])
-  const smoothRotate = useSpring(rotate, { stiffness: 100, damping: 30 })
+  const smoothContentOpacity = useSpring(contentOpacity, { stiffness: 100, damping: 30 })
+
+  const stats = [
+    { icon: Globe, label: "Global Network", value: "150+" },
+    { icon: Shield, label: "Trusted Partners", value: "500+" },
+    { icon: Zap, label: "Fast Delivery", value: "24/7" },
+    { icon: TrendingUp, label: "Success Rate", value: "99%" },
+  ]
 
   return (
     <section 
       id="about" 
       ref={containerRef}
-      className="py-20 md:py-32 bg-white relative overflow-hidden"
+      className="py-20 md:py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden"
     >
       {/* Advanced Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Animated gradient orbs */}
         <motion.div
-          className="absolute top-20 left-10 w-96 h-96 bg-[#91C73E]/10 rounded-full blur-3xl"
+          className="absolute top-20 left-10 w-[500px] h-[500px] bg-[#91C73E]/8 rounded-full blur-3xl"
           animate={{
-            x: [0, 50, 0],
-            y: [0, 30, 0],
-            scale: [1, 1.2, 1],
+            x: [0, 60, 0],
+            y: [0, 40, 0],
+            scale: [1, 1.3, 1],
           }}
           transition={{
-            duration: 20,
+            duration: 25,
             repeat: Infinity,
             ease: "easeInOut"
           }}
         />
         <motion.div
-          className="absolute bottom-20 right-10 w-80 h-80 bg-[#194479]/10 rounded-full blur-3xl"
+          className="absolute bottom-20 right-10 w-[400px] h-[400px] bg-[#194479]/8 rounded-full blur-3xl"
           animate={{
-            x: [0, -40, 0],
-            y: [0, -20, 0],
-            scale: [1, 1.1, 1],
+            x: [0, -50, 0],
+            y: [0, -30, 0],
+            scale: [1, 1.2, 1],
           }}
           transition={{
-            duration: 15,
+            duration: 20,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1
+            delay: 1.5
           }}
         />
         
-        {/* Grid pattern overlay */}
+        {/* Subtle grid pattern */}
         <div 
-          className="absolute inset-0 opacity-[0.02]"
+          className="absolute inset-0 opacity-[0.015]"
           style={{
             backgroundImage: `
               linear-gradient(#194479 1px, transparent 1px),
               linear-gradient(90deg, #194479 1px, transparent 1px)
             `,
-            backgroundSize: "50px 50px"
+            backgroundSize: "60px 60px"
           }}
         />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image Section - Left Side with Advanced Animations */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Image Section - Left Side with Professional Design */}
           <motion.div
+            ref={imageRef}
             style={{
               y: smoothImageY,
-              scale: smoothImageScale,
-              rotate: smoothRotate,
+              opacity: smoothImageOpacity,
             }}
-            className="relative"
+            className="relative order-2 lg:order-1"
           >
-            {/* Image Container with Decorative Elements */}
+            {/* Professional Image Container */}
             <div className="relative">
-              {/* Multiple Decorative shapes with animations */}
-              <motion.div
-                className="absolute -top-6 -left-6 w-24 h-24 bg-[#91C73E]/20 rounded-lg z-0"
-                initial={{ opacity: 0, rotate: -45, scale: 0.8 }}
-                whileInView={{ opacity: 1, rotate: 12, scale: 1 }}
-                transition={{
-                  duration: 0.8,
-                  type: "spring",
-                  stiffness: 200
-                }}
-                viewport={{ once: true }}
-                animate={{
-                  rotate: [12, 18, 12],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
+              {/* Decorative frame elements */}
+              <div className="absolute -inset-4 bg-gradient-to-br from-[#91C73E]/20 via-transparent to-[#194479]/20 rounded-3xl blur-2xl"></div>
               
+              {/* Main image container with professional styling */}
               <motion.div
-                className="absolute -top-3 -right-3 w-16 h-16 bg-[#194479]/15 rounded-full z-0"
-                initial={{ opacity: 0, scale: 0 }}
+                initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.6,
-                  delay: 0.3,
-                  type: "spring"
-                }}
-                viewport={{ once: true }}
-                animate={{
-                  scale: [1, 1.1, 1],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-              
-              {/* Main Image with Parallax */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9, rotateY: -15 }}
-                whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
                 transition={{ 
                   duration: 1,
-                  delay: 0.2,
                   ease: [0.25, 0.1, 0.25, 1]
                 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="relative z-10 rounded-2xl overflow-hidden shadow-2xl"
-                style={{
-                  transformStyle: "preserve-3d",
-                }}
-                whileHover={{
-                  scale: 1.02,
-                  transition: { duration: 0.3 }
-                }}
+                className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
               >
-                <div className="relative overflow-hidden">
+                {/* Image with parallax */}
+                <motion.div
+                  style={{
+                    y: useTransform(scrollYProgress, [0, 1], [0, "20%"]),
+                  }}
+                  className="relative h-[500px] md:h-[650px] overflow-hidden"
+                >
                   <img 
                     src="/medical-logistics-warehouse-background-8IkL7.jpg" 
-                    alt="OBC Care Logistics Operations" 
-                    className="w-full h-[500px] md:h-[600px] object-cover"
+                    alt="OBC Care Global Logistics Operations" 
+                    className="w-full h-full object-cover scale-110"
                   />
-                  {/* Advanced Gradient overlays */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#194479]/10 to-transparent"></div>
                   
-                  {/* Shine effect on hover */}
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.6 }}
+                  {/* Professional gradient overlays */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/40 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#194479]/30 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#91C73E]/20"></div>
+                  
+                  {/* Overlay pattern for texture */}
+                  <div 
+                    className="absolute inset-0 opacity-10"
+                    style={{
+                      backgroundImage: `repeating-linear-gradient(
+                        45deg,
+                        transparent,
+                        transparent 10px,
+                        rgba(255, 255, 255, 0.1) 10px,
+                        rgba(255, 255, 255, 0.1) 20px
+                      )`
+                    }}
                   />
-                </div>
+                </motion.div>
+
+                {/* Professional badge overlay */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.8,
+                    delay: 0.5,
+                    type: "spring",
+                    stiffness: 200
+                  }}
+                  viewport={{ once: true }}
+                  className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/50"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
+                        Trusted Worldwide
+                      </p>
+                      <p className="text-2xl font-bold" style={{ color: "#194479" }}>
+                        Global Excellence
+                      </p>
+                    </div>
+                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#194479] to-[#1d5a96] flex items-center justify-center shadow-lg">
+                      <Globe className="w-8 h-8 text-white" />
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Corner accent */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#91C73E]/30 to-transparent rounded-bl-full"></div>
               </motion.div>
 
-              {/* Advanced Floating Icon Badge with 3D effect */}
+              {/* Floating stats cards */}
               <motion.div
-                initial={{ opacity: 0, scale: 0, rotate: -180, y: 50 }}
-                whileInView={{ opacity: 1, scale: 1, rotate: 0, y: 0 }}
-                transition={{ 
-                  duration: 0.8,
-                  delay: 0.5,
-                  type: "spring",
-                  stiffness: 200
-                }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
                 viewport={{ once: true }}
-                className="absolute -bottom-6 -right-6 bg-white rounded-full p-4 shadow-2xl z-20"
-                whileHover={{
-                  scale: 1.1,
-                  rotate: 360,
-                  transition: { duration: 0.5 }
-                }}
-                style={{
-                  transformStyle: "preserve-3d",
-                }}
+                className="absolute -right-6 top-1/2 -translate-y-1/2 hidden lg:block"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-[#194479] via-[#1d5a96] to-[#153666] rounded-full flex items-center justify-center relative">
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 bg-[#91C73E]/30 rounded-full blur-xl animate-pulse"></div>
-                  <svg 
-                    className="w-8 h-8 text-white relative z-10" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M13 10V3L4 14h7v7l9-11h-7z" 
-                    />
-                  </svg>
+                <div className="bg-white rounded-2xl p-4 shadow-xl border border-gray-100 space-y-3">
+                  {stats.slice(0, 2).map((stat, index) => {
+                    const Icon = stat.icon
+                    return (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.8 + index * 0.1 }}
+                        viewport={{ once: true }}
+                        whileHover={{ scale: 1.05, x: 5 }}
+                        className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-gray-50 to-white hover:from-[#91C73E]/5 hover:to-white transition-all cursor-pointer"
+                      >
+                        <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#91C73E20" }}>
+                          <Icon className="w-5 h-5" style={{ color: "#91C73E" }} />
+                        </div>
+                        <div>
+                          <p className="text-lg font-bold" style={{ color: "#194479" }}>{stat.value}</p>
+                          <p className="text-xs text-gray-600">{stat.label}</p>
+                        </div>
+                      </motion.div>
+                    )
+                  })}
                 </div>
               </motion.div>
-
-              {/* Additional floating elements */}
-              <motion.div
-                className="absolute top-1/4 -left-4 w-3 h-3 bg-[#91C73E] rounded-full"
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.7, type: "spring" }}
-                viewport={{ once: true }}
-                animate={{
-                  y: [0, -10, 0],
-                  opacity: [0.5, 1, 0.5]
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
             </div>
           </motion.div>
 
-          {/* Content Section - Right Side with Advanced Text Animations */}
+          {/* Content Section - Right Side */}
           <motion.div
             style={{
               y: smoothContentY,
-              opacity,
+              opacity: smoothContentOpacity,
             }}
-            className="space-y-6"
+            className="space-y-8 order-1 lg:order-2"
           >
-            {/* Small Label with slide animation */}
+            {/* Label with professional styling */}
             <motion.div
-              initial={{ opacity: 0, x: -30, clipPath: "inset(0 100% 0 0)" }}
-              whileInView={{ opacity: 1, x: 0, clipPath: "inset(0 0% 0 0)" }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true, margin: "-50px" }}
+              className="inline-block"
             >
-              <span 
-                className="text-sm font-semibold tracking-wider uppercase inline-block relative"
-                style={{ color: "#91C73E" }}
-              >
-                <motion.span
-                  className="absolute bottom-0 left-0 h-0.5 bg-[#91C73E]"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "100%" }}
-                  transition={{ duration: 0.6, delay: 0.5 }}
-                  viewport={{ once: true }}
-                />
-                About Us
-              </span>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-px w-12 bg-gradient-to-r from-[#91C73E] to-transparent"></div>
+                <span 
+                  className="text-sm font-bold tracking-wider uppercase"
+                  style={{ color: "#91C73E" }}
+                >
+                  About Us
+                </span>
+                <div className="h-px flex-1 bg-gradient-to-r from-[#91C73E] to-transparent"></div>
+              </div>
             </motion.div>
 
-            {/* Main Title with Word-by-Word Reveal */}
+            {/* Main Title */}
             <div className="overflow-hidden">
               <WordReveal
                 text="About OBC Care"
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4"
               />
             </div>
 
-            {/* Subtitle with Character Reveal */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+            {/* Subtitle */}
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="overflow-hidden"
+              className="text-2xl md:text-3xl font-semibold mb-6"
+              style={{ color: "#91C73E" }}
             >
-              <h3
-                className="text-2xl md:text-3xl font-semibold inline-block"
-                style={{ color: "#91C73E" }}
-              >
-                {"Your Global Partner in Time-Critical Logistics".split("").map((char, index) => (
-                  <motion.span
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.05,
-                      delay: 0.5 + index * 0.02,
-                      ease: "easeOut"
-                    }}
-                    viewport={{ once: true }}
-                    className="inline-block"
-                  >
-                    {char === " " ? "\u00A0" : char}
-                  </motion.span>
-                ))}
-              </h3>
-            </motion.div>
+              Your Global Partner in Time-Critical Logistics
+            </motion.h3>
 
-            {/* Description Paragraphs with Stagger Animation */}
+            {/* Description */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true }}
-              className="space-y-4 pt-4"
+              className="space-y-5"
             >
               <motion.p
-                initial={{ opacity: 0, x: 30 }}
+                initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.7 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
                 className="text-lg md:text-xl text-gray-700 leading-relaxed"
               >
@@ -345,9 +305,9 @@ export default function AboutSection() {
               </motion.p>
               
               <motion.p
-                initial={{ opacity: 0, x: 30 }}
+                initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.9 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
                 className="text-lg md:text-xl text-gray-700 leading-relaxed"
               >
@@ -355,68 +315,59 @@ export default function AboutSection() {
               </motion.p>
             </motion.div>
 
-            {/* Advanced Decorative Divider with Animation */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1.1 }}
-              viewport={{ once: true }}
-              className="pt-4 relative"
-            >
-              <div className="relative">
-                <motion.div
-                  initial={{ scaleX: 0, originX: 0 }}
-                  whileInView={{ scaleX: 1 }}
-                  transition={{ duration: 1, delay: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
-                  viewport={{ once: true }}
-                  className="h-1 w-24 rounded-full absolute"
-                  style={{ backgroundColor: "#91C73E" }}
-                />
-                <motion.div
-                  initial={{ scaleX: 0, originX: 0 }}
-                  whileInView={{ scaleX: 1 }}
-                  transition={{ duration: 0.8, delay: 1.4, ease: "easeOut" }}
-                  viewport={{ once: true }}
-                  className="h-1 w-12 rounded-full"
-                  style={{ backgroundColor: "#194479", opacity: 0.6 }}
-                />
-              </div>
-            </motion.div>
-
-            {/* Optional: Add animated stats or features */}
+            {/* Stats Grid */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.3 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-4 pt-6"
             >
-              {[
-                { label: "Global Reach", value: "150+" },
-                { label: "Years Experience", value: "10+" }
-              ].map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 1.4 + index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="p-4 rounded-lg border border-gray-200 hover:border-[#91C73E] transition-colors"
-                  whileHover={{ scale: 1.05, y: -5 }}
-                >
+              {stats.map((stat, index) => {
+                const Icon = stat.icon
+                return (
                   <motion.div
-                    className="text-2xl font-bold"
-                    style={{ color: "#194479" }}
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.5 + index * 0.1 }}
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: 1.1 + index * 0.1 }}
                     viewport={{ once: true }}
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="group relative p-5 rounded-xl bg-white border-2 border-gray-100 hover:border-[#91C73E] transition-all shadow-sm hover:shadow-lg overflow-hidden"
                   >
-                    {stat.value}
+                    {/* Hover gradient */}
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-br from-[#91C73E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+                    />
+                    
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#91C73E20" }}>
+                          <Icon className="w-5 h-5" style={{ color: "#91C73E" }} />
+                        </div>
+                        <p className="text-2xl font-bold" style={{ color: "#194479" }}>
+                          {stat.value}
+                        </p>
+                      </div>
+                      <p className="text-sm text-gray-600 font-medium">{stat.label}</p>
+                    </div>
                   </motion.div>
-                  <div className="text-sm text-gray-600 mt-1">{stat.label}</div>
-                </motion.div>
-              ))}
+                )
+              })}
+            </motion.div>
+
+            {/* Professional divider */}
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              whileInView={{ opacity: 1, scaleX: 1 }}
+              transition={{ duration: 1, delay: 1.3 }}
+              viewport={{ once: true }}
+              className="pt-6"
+            >
+              <div className="flex items-center gap-4">
+                <div className="h-1 w-20 rounded-full" style={{ background: "linear-gradient(to right, #91C73E, transparent)" }}></div>
+                <div className="h-1 flex-1 rounded-full bg-gray-200"></div>
+              </div>
             </motion.div>
           </motion.div>
         </div>
