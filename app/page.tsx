@@ -193,8 +193,6 @@ const Home = () => {
     <div className="relative overflow-hidden">
       <Navbar setIsOpen={setIsOpen} isOpen={isOpen} />
 
-      
-
       {/* Fullscreen Banner with Text Overlay */}
       <AnimatePresence mode="wait">
         {/* Fullscreen Banner with Text Overlay */}
