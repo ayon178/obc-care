@@ -193,6 +193,8 @@ const Home = () => {
     <div className="relative overflow-hidden">
       <Navbar setIsOpen={setIsOpen} isOpen={isOpen} />
 
+      
+
       {/* Fullscreen Banner with Text Overlay */}
       <AnimatePresence mode="wait">
         {/* Fullscreen Banner with Text Overlay */}
@@ -221,24 +223,7 @@ const Home = () => {
               opacity: 1,
             }}
           >
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between relative h-full gap-10 md:gap-0">
-              {/* Social Media Icons and Line */}
-              <div className="flex md:flex-col items-center justify-center md:justify-start md:space-y-6 space-x-4 md:space-x-0 mt-8 md:mt-0 order-last md:order-first">
-                <div className="w-[1px] h-32 bg-white hidden md:block"></div>
-                <FaFacebookF
-                  className="text-white text-lg hover:text-[#bfa980]"
-                  onClick={() => socialMediaLink("#")}
-                />
-                <FaInstagram
-                  className="text-white text-lg hover:text-[#bfa980]"
-                  onClick={() => socialMediaLink("#")}
-                />
-                <FaYoutube
-                  className="text-white text-lg hover:text-[#bfa980]"
-                  onClick={() => socialMediaLink("#")}
-                />
-              </div>
-
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center relative h-full gap-10 md:gap-0">
               {/* Left-aligned specific text and button */}
               <div className="text-center md:text-left w-full md:ps-6">
                 {currentImage === 1 && (

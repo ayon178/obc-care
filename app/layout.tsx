@@ -8,8 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "OBC Care - Urgent Medical Courier Services",
-  description: "Professional urgent medical hand carry courier services for hospitals, clinics, and diagnostic centers",
+  title: "OBC Care - Global Logistics Solutions You Can Trust",
+  description:
+    "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
   generator: "v0.app",
 }
 

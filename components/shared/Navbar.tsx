@@ -4,18 +4,15 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { FiChevronDown, FiMenu } from "react-icons/fi"
 import { useRouter, usePathname } from "next/navigation"
+import { Mail, Phone, Facebook, Linkedin, Instagram } from "lucide-react"
 import MobileSidebar from "./MobileSidebar"
 
 const menuItems = [
-  { label: "Home", path: "/home" },
+  { label: "Home", path: "/" },
   {
     label: "Services",
     path: "/services",
     subItems: [
-      {
-        label: "All Services",
-        path: "/services",
-      },
       {
         label: "On Board Courier Services",
         path: "/on-board-courier-services",
@@ -69,12 +66,12 @@ const menuItems = [
 
 const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true)
-  const [activeDropdown, setActiveDropdown] = useState(null)
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false)
 
   const router = useRouter()
   const pathname = usePathname()
-  
+
   // Determine if we're on inquiry page (white background) or home page (dark background)
   const isInquiryPage = pathname === "/inquiry"
   const textColor = isInquiryPage ? "#194479" : "white"
@@ -90,14 +87,84 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const toggleDropdown = (menuLabel) => {
-    setActiveDropdown((prev) => (prev === menuLabel ? null : menuLabel))
+  const handleMouseEnter = (menuLabel: string) => {
+    setActiveDropdown(menuLabel)
+  }
+
+  const handleMouseLeave = () => {
+    setActiveDropdown(null)
+  }
+
+  const handleMenuClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string
+  ) => {
+    e.preventDefault()
+    router.push(path)
   }
 
   return (
     <>
+      {/* Header Information Bar */}
+      <div className="fixed top-0 left-0 w-full z-40 bg-[#194479] text-white text-xs md:text-sm">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center py-2 md:py-2 gap-2 md:gap-0">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6">
+              <a
+                href="mailto:request@obc-care.com"
+                className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                <span className="hidden sm:inline">Mail Us:</span>
+                <span>request@obc-care.com</span>
+              </a>
+              <a
+                href="tel:+4917645922485"
+                className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                <span className="hidden sm:inline">Call Us / WhatsApp:</span>
+                <span>+49 176 459 224 85</span>
+              </a>
+            </div>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/obc.care.kerpen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
+                title="Facebook: OBC CARE | Kerpen"
+              >
+                <Facebook className="w-4 h-4" />
+                <span className="hidden md:inline">OBC CARE | Kerpen</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/obc-care-company/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
+                title="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4" />
+                <span className="hidden md:inline">LinkedIn</span>
+              </a>
+              <a
+                href="https://www.instagram.com/obc_care/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
+                title="Instagram: OBC CARE (@obc_care)"
+              >
+                <Instagram className="w-4 h-4" />
+                <span className="hidden md:inline">@obc_care</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <motion.div
-        className={`fixed top-0 left-0 w-full z-30 bg-primary md:bg-transparent shadow-none ${
+        className={`fixed top-[40px] md:top-[36px] left-0 w-full z-30 bg-primary md:bg-transparent shadow-none ${
           isNavbarVisible ? "visible" : "hidden"
         }`}
         initial={{ opacity: 1 }}
@@ -120,8 +187,15 @@ const Navbar = () => {
                 />
               </div>
               <div className="hidden md:block">
-                <h3 className="font-bold text-lg" style={{ color: textColor }}>OBC Care</h3>
-                <p className="text-xs" style={{ color: textColor, opacity: textOpacity }}>Global Logistics</p>
+                <h3 className="font-bold text-lg" style={{ color: textColor }}>
+                  OBC Care
+                </h3>
+                <p
+                  className="text-xs"
+                  style={{ color: textColor, opacity: textOpacity }}
+                >
+                  Global Logistics
+                </p>
               </div>
             </motion.div>
             <button
@@ -133,14 +207,20 @@ const Navbar = () => {
             </button>
             <div className="hidden md:flex space-x-4 items-center">
               {menuItems.map((menu) => (
-                <div key={menu.label} className="relative flex items-center">
+                <div
+                  key={menu.label}
+                  className="relative flex items-center"
+                  onMouseEnter={() =>
+                    menu.subItems && handleMouseEnter(menu.label)
+                  }
+                  onMouseLeave={() => menu.subItems && handleMouseLeave()}
+                >
                   {menu.subItems ? (
                     <>
-                      <button
-                        onClick={() => toggleDropdown(menu.label)}
-                        className="buttonFont flex items-center space-x-1 py-2 text-white cursor-pointer"
-                        aria-expanded={activeDropdown === menu.label}
-                        aria-haspopup="true"
+                      <a
+                        href={menu.path}
+                        onClick={(e) => handleMenuClick(e, menu.path)}
+                        className="buttonFont flex items-center space-x-1 py-2 text-white cursor-pointer hover:opacity-80 transition-opacity"
                       >
                         <span>{menu.label}</span>
                         <motion.div
@@ -151,20 +231,23 @@ const Navbar = () => {
                         >
                           <FiChevronDown />
                         </motion.div>
-                      </button>
+                      </a>
                       {activeDropdown === menu.label && (
                         <motion.div
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
                           transition={{ duration: 0.3 }}
-                          className="absolute top-full mt-2 w-56 bg-white text-gray-700 rounded shadow-lg"
+                          className="absolute top-full mt-2 w-56 bg-white text-gray-700 rounded shadow-lg z-50"
+                          onMouseEnter={() => handleMouseEnter(menu.label)}
+                          onMouseLeave={handleMouseLeave}
                         >
                           {menu.subItems.map((subItem) => (
                             <a
                               key={subItem.label}
                               href={subItem.path}
-                              className="buttonFont block px-4 py-2 hover:bg-gray-100"
+                              onClick={(e) => handleMenuClick(e, subItem.path)}
+                              className="buttonFont block px-4 py-2 hover:bg-gray-100 transition-colors"
                             >
                               {subItem.label}
                             </a>
@@ -175,20 +258,14 @@ const Navbar = () => {
                   ) : (
                     <a
                       href={menu.path}
-                      className="buttonFont flex items-center py-2 text-white cursor-pointer"
+                      onClick={(e) => handleMenuClick(e, menu.path)}
+                      className="buttonFont flex items-center py-2 text-white cursor-pointer hover:opacity-80 transition-opacity"
                     >
                       {menu.label}
                     </a>
                   )}
                 </div>
               ))}
-              <a
-                href="/contact"
-                rel="noopener noreferrer"
-                className="buttonFont text-white px-4 py-2 rounded-full border border-white hover:bg-white hover:text-primary transition-colors duration-300"
-              >
-                Get Started
-              </a>
             </div>
           </nav>
         </div>
