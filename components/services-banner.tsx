@@ -1,0 +1,201 @@
+"use client"
+
+import { motion, useScroll, useTransform, useSpring } from "framer-motion"
+import { useRef } from "react"
+import { Truck, Zap, Shield, Clock } from "lucide-react"
+
+export default function ServicesBanner() {
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  // Scroll-based parallax animations
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"],
+  })
+
+  // Parallax effects
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"])
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"])
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0.3])
+
+  // Spring animations
+  const smoothImageY = useSpring(imageY, { stiffness: 100, damping: 30 })
+  const smoothContentY = useSpring(contentY, { stiffness: 100, damping: 30 })
+  const smoothOpacity = useSpring(opacity, { stiffness: 100, damping: 30 })
+
+  const features = [
+    { icon: Zap, text: "Fast" },
+    { icon: Shield, text: "Secure" },
+    { icon: Clock, text: "Reliable" },
+  ]
+
+  return (
+    <section
+      ref={containerRef}
+      className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden"
+    >
+      {/* Background Image with Parallax */}
+      <motion.div
+        style={{
+          y: smoothImageY,
+          opacity: smoothOpacity,
+        }}
+        className="absolute inset-0 z-0"
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/services/banner.jpg')",
+          }}
+        >
+          {/* Gradient Overlays - Slightly darker for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#194479]/65 via-[#194479]/55 to-[#194479]/65"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#194479]/40"></div>
+        </div>
+      </motion.div>
+
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
+        <motion.div
+          className="absolute top-20 right-20 w-96 h-96 bg-[#91C73E]/10 rounded-full blur-3xl"
+          animate={{
+            x: [0, 50, 0],
+            y: [0, 30, 0],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute bottom-20 left-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"
+          animate={{
+            x: [0, -40, 0],
+            y: [0, -20, 0],
+            scale: [1, 1.15, 1],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1,
+          }}
+        />
+      </div>
+
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full pt-24 md:pt-28">
+        <motion.div
+          style={{
+            y: smoothContentY,
+          }}
+          className="text-center max-w-4xl mx-auto"
+        >
+          {/* Main Title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-2xl"
+          >
+            Delivering Precision-Driven
+            <br />
+            <span className="bg-gradient-to-r from-[#91C73E] to-white bg-clip-text text-transparent drop-shadow-lg">
+              Logistics Solutions
+            </span>
+          </motion.h1>
+
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-sm sm:text-base md:text-xl text-white/95 mb-6 leading-relaxed max-w-2xl mx-auto drop-shadow-lg"
+          >
+            For time-critical shipments across the globe — from AOG and
+            automotive parts to electronics and industrial components.
+          </motion.p>
+
+          {/* Tagline with Features */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-8"
+          >
+            {features.map((feature, index) => {
+              const Icon = feature.icon
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                  whileHover={{ scale: 1.1, y: -5 }}
+                  className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20"
+                >
+                  <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#91C73E]" />
+                  <span className="text-white font-semibold text-xs sm:text-sm">
+                    {feature.text}
+                  </span>
+                </motion.div>
+              )
+            })}
+            <span className="text-white/80 font-medium text-xs sm:text-sm">
+              Always on time.
+            </span>
+          </motion.div>
+
+          {/* Decorative Elements */}
+          <motion.div
+            initial={{ opacity: 0, scaleX: 0 }}
+            animate={{ opacity: 1, scaleX: 1 }}
+            transition={{ duration: 1, delay: 1.0 }}
+            className="flex items-center justify-center gap-4"
+          >
+            <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#91C73E]"></div>
+            <div className="w-2 h-2 rounded-full bg-[#91C73E]"></div>
+            <div className="h-px flex-1 max-w-32 bg-gradient-to-r from-[#91C73E] to-transparent"></div>
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20"
+      >
+        <motion.div
+          animate={{
+            y: [0, 10, 0],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="flex flex-col items-center gap-2"
+        >
+          <span className="text-white/60 text-sm">Scroll</span>
+          <div className="w-6 h-10 rounded-full border-2 border-white/40 flex items-start justify-center p-2">
+            <motion.div
+              className="w-1.5 h-1.5 rounded-full bg-white/60"
+              animate={{
+                y: [0, 12, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          </div>
+        </motion.div>
+      </motion.div>
+    </section>
+  )
+}

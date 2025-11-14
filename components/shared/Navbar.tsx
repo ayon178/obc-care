@@ -13,6 +13,10 @@ const menuItems = [
     path: "/services",
     subItems: [
       {
+        label: "All Services",
+        path: "/services",
+      },
+      {
         label: "On Board Courier Services",
         path: "/on-board-courier-services",
       },
