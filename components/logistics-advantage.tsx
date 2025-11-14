@@ -40,20 +40,21 @@ export default function LogisticsAdvantage() {
     offset: ["start end", "end start"]
   })
   
-  // Parallax effects - Very minimal to prevent overlap
-  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "-2%"])
-  const imageScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.01, 1])
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "1%"])
-  const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0.8])
+  // Enhanced Parallax effects
+  const imageY = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"])
+  const imageScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.03, 1])
+  const contentY = useTransform(scrollYProgress, [0, 1], ["8%", "-8%"])
+  const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0.9])
   
-  // Spring animations for smoother feel - Higher damping to reduce movement
-  const smoothImageY = useSpring(imageY, { stiffness: 50, damping: 50 })
-  const smoothImageScale = useSpring(imageScale, { stiffness: 50, damping: 50 })
-  const smoothContentY = useSpring(contentY, { stiffness: 50, damping: 50 })
+  // Spring animations for smoother feel
+  const smoothImageY = useSpring(imageY, { stiffness: 100, damping: 30 })
+  const smoothImageScale = useSpring(imageScale, { stiffness: 100, damping: 30 })
+  const smoothContentY = useSpring(contentY, { stiffness: 100, damping: 30 })
+  const smoothOpacity = useSpring(opacity, { stiffness: 100, damping: 30 })
   
-  // Rotate based on scroll - Very minimal rotation
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -1])
-  const smoothRotate = useSpring(rotate, { stiffness: 50, damping: 50 })
+  // Rotate based on scroll
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, -3])
+  const smoothRotate = useSpring(rotate, { stiffness: 100, damping: 30 })
 
   const features = [
     { icon: Zap, text: "Fast Delivery" },
@@ -114,11 +115,11 @@ export default function LogisticsAdvantage() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center relative">
-          {/* Content Section - Left Side */}
+          {/* Content Section - Left Side with Parallax */}
           <motion.div
             style={{
               y: smoothContentY,
-              opacity,
+              opacity: smoothOpacity,
             }}
             className="space-y-6 relative z-10"
           >

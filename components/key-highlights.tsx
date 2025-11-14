@@ -1,6 +1,7 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform, useSpring } from "framer-motion"
+import { useRef } from "react"
 import { Plane, Truck, Globe, Bell } from "lucide-react"
 
 const highlights = [
@@ -63,8 +64,29 @@ const cardVariants = {
 }
 
 export default function KeyHighlights() {
+  const containerRef = useRef<HTMLDivElement>(null)
+  
+  // Scroll-based parallax animations
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  })
+  
+  // Parallax effects
+  const headerY = useTransform(scrollYProgress, [0, 1], ["10%", "-5%"])
+  const cardsY = useTransform(scrollYProgress, [0, 1], ["15%", "-10%"])
+  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0.9])
+  
+  // Spring animations for smoother feel
+  const smoothHeaderY = useSpring(headerY, { stiffness: 100, damping: 30 })
+  const smoothCardsY = useSpring(cardsY, { stiffness: 100, damping: 30 })
+  const smoothOpacity = useSpring(opacity, { stiffness: 100, damping: 30 })
+
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section 
+      ref={containerRef}
+      className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -97,8 +119,12 @@ export default function KeyHighlights() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+        {/* Section Header with Parallax */}
         <motion.div
+          style={{
+            y: smoothHeaderY,
+            opacity: smoothOpacity,
+          }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -135,8 +161,11 @@ export default function KeyHighlights() {
           />
         </motion.div>
 
-        {/* Highlights Grid */}
+        {/* Highlights Grid with Parallax */}
         <motion.div
+          style={{
+            y: smoothCardsY,
+          }}
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
