@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { FiChevronDown, FiMenu } from "react-icons/fi"
-import { useRouter } from "next/navigation"
+import { useRouter, usePathname } from "next/navigation"
 import MobileSidebar from "./MobileSidebar"
 
 const menuItems = [
@@ -69,6 +69,12 @@ const Navbar = () => {
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false)
 
   const router = useRouter()
+  const pathname = usePathname()
+  
+  // Determine if we're on inquiry page (white background) or home page (dark background)
+  const isInquiryPage = pathname === "/inquiry"
+  const textColor = isInquiryPage ? "#194479" : "white"
+  const textOpacity = isInquiryPage ? 0.8 : 0.7
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,8 +116,8 @@ const Navbar = () => {
                 />
               </div>
               <div className="hidden md:block">
-                <h3 className="font-bold text-lg text-white">OBC Care</h3>
-                <p className="text-xs text-white/70">Global Logistics</p>
+                <h3 className="font-bold text-lg" style={{ color: textColor }}>OBC Care</h3>
+                <p className="text-xs" style={{ color: textColor, opacity: textOpacity }}>Global Logistics</p>
               </div>
             </motion.div>
             <button
