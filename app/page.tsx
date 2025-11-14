@@ -1,6 +1,10 @@
 "use client"
 
 import Navbar from "@/components/shared/Navbar"
+import AboutSection from "@/components/about-section"
+import KeyHighlights from "@/components/key-highlights"
+import LogisticsAdvantage from "@/components/logistics-advantage"
+import UrgentSupportCTA from "@/components/urgent-support-cta"
 
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
@@ -263,15 +267,15 @@ const Home = () => {
                       {textData[currentImage].smallLine}
                     </motion.p>
                     <motion.div
-                      className="flex flex-col md:flex-row md:justify-start gap-2 mt-5"
+                      className="flex flex-col md:flex-row md:justify-start gap-2 mt-5 mx-4 md:mx-0"
                       initial="hidden"
                       animate="visible"
                       variants={headerVariants.viewProjectsButton}
                     >
-                      <button className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out">
+                      <button className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto">
                         Get a Free Quote
                       </button>
-                      <button className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out">
+                      <button className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto">
                         Learn More About Our Services
                       </button>
                     </motion.div>
@@ -320,15 +324,15 @@ const Home = () => {
                       {textData[currentImage].smallLine}
                     </motion.p>
                     <motion.div
-                      className="flex flex-col md:flex-row md:justify-end gap-2 mt-5"
+                      className="flex flex-col md:flex-row md:justify-end gap-2 mt-5 mx-4 md:mx-0"
                       initial="hidden"
                       animate="visible"
                       variants={headerVariants.viewProjectsButton}
                     >
-                      <button className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out">
+                      <button className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto">
                         Get a Free Quote
                       </button>
-                      <button className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out">
+                      <button className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto">
                         Learn More About Our Services
                       </button>
                     </motion.div>
@@ -350,7 +354,7 @@ const Home = () => {
             </div>
 
             {/* Slider Controls */}
-            {/* <div className="absolute bottom-10 right-10 flex items-center space-x-2 z-10">
+            <div className="absolute bottom-10 right-10 flex items-center space-x-2 z-10">
               <button
                 onClick={prevImage}
                 className="font-bold hover:bg-gray text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out shadow-lg"
@@ -363,10 +367,22 @@ const Home = () => {
               >
                 &gt;
               </button>
-            </div> */}
+            </div>
           </motion.div>
         </div>
       </AnimatePresence>
+
+      {/* About Section */}
+      <AboutSection />
+
+      {/* Key Highlights Section */}
+      <KeyHighlights />
+
+      {/* Logistics Advantage Section */}
+      <LogisticsAdvantage />
+
+      {/* Urgent Support CTA Section */}
+      <UrgentSupportCTA />
     </div>
   )
 }
