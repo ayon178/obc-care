@@ -96,12 +96,24 @@ const Navbar = () => {
       >
         <div className="container mx-auto">
           <nav className="flex justify-between items-center p-4 bg-primary md:bg-transparent">
-            <img
-              onClick={() => router.push("/home")}
-              className="w-10 md:w-16 cursor-pointer"
-              src="https://i.ibb.co.com/xtZDFNwK/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c-removebg-preview-1.png"
-              alt="Logo"
-            />
+            <motion.div
+              onClick={() => router.push("/")}
+              className="flex items-center gap-3 cursor-pointer group"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="w-12 h-12 md:w-16 md:h-16 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center p-2 group-hover:bg-white/20 transition-colors">
+                <img
+                  src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
+                  alt="OBC Care Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="hidden md:block">
+                <h3 className="font-bold text-lg text-white">OBC Care</h3>
+                <p className="text-xs text-white/70">Global Logistics</p>
+              </div>
+            </motion.div>
             <button
               className="md:hidden text-white"
               onClick={() => setIsMobileSidebarOpen(true)}

@@ -5,6 +5,7 @@ import AboutSection from "@/components/about-section"
 import KeyHighlights from "@/components/key-highlights"
 import LogisticsAdvantage from "@/components/logistics-advantage"
 import UrgentSupportCTA from "@/components/urgent-support-cta"
+import Footer from "@/components/footer"
 
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
@@ -383,6 +384,9 @@ const Home = () => {
 
       {/* Urgent Support CTA Section */}
       <UrgentSupportCTA />
+
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
