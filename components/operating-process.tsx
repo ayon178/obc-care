@@ -80,7 +80,7 @@ export default function OperatingProcess() {
   return (
     <section
       ref={containerRef}
-      className="relative py-20 md:py-28 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden"
+      className="relative py-16 md:py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden"
     >
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-30">
@@ -129,7 +129,7 @@ export default function OperatingProcess() {
             y: smoothHeaderY,
             opacity: smoothOpacity,
           }}
-          className="text-center mb-16 md:mb-20"
+          className="text-center mb-12 md:mb-16"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -152,7 +152,7 @@ export default function OperatingProcess() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-5 md:mb-6 leading-tight"
           >
             <span className="text-gray-900">Efficient Process,</span>
             <br />
@@ -166,12 +166,12 @@ export default function OperatingProcess() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-3xl mx-auto space-y-4"
+            className="max-w-3xl mx-auto space-y-3 md:space-y-4 px-1"
           >
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
               At OBC Care, <span className="font-semibold text-[#194479]">every minute matters</span>. That's why our process is designed to be efficient, transparent, and fully customized for your shipment's urgency, route, and industry.
             </p>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
               Here's how we make it happen:
             </p>
           </motion.div>
@@ -188,7 +188,7 @@ export default function OperatingProcess() {
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#194479]/20 to-transparent -translate-y-1/2"></div>
 
           {/* Steps Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-4">
             {steps.map((step, index) => {
               const Icon = step.icon
               const isLast = index === steps.length - 1

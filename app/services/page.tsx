@@ -4,6 +4,9 @@ import Navbar from "@/components/shared/Navbar"
 import ServicesBanner from "@/components/services-banner"
 import CoreServices from "@/components/core-services"
 import OperatingProcess from "@/components/operating-process"
+import DeliveryOptions from "@/components/delivery-options"
+import ShipmentMethods from "@/components/shipment-methods"
+import ServicesCTA from "@/components/services-cta"
 import Footer from "@/components/footer"
 
 export default function ServicesPage() {
@@ -13,6 +16,9 @@ export default function ServicesPage() {
       <ServicesBanner />
       <CoreServices />
       <OperatingProcess />
+      <DeliveryOptions />
+      <ShipmentMethods />
+      <ServicesCTA />
       <Footer />
     </main>
   )
