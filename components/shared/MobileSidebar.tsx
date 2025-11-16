@@ -31,12 +31,20 @@ const MobileSidebar = ({ isOpen, onClose, menuItems }) => {
             className="fixed top-0 left-0 h-full w-3/4 max-w-xs bg-primary z-50 overflow-y-auto"
           >
             <div className="p-4">
-              <div className="flex justify-between items-center mb-8">
-                <img
-                  src="https://i.ibb.co.com/WJGfHv2/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
-                  alt="Logo"
-                  className="w-16 h-auto"
-                />
+              <div className="flex justify-between items-center mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
+                    <img
+                      src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
+                      alt="OBC Care Logo"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-white text-base leading-tight">OBC Care</h3>
+                    <p className="text-white/80 text-[11px] leading-tight">Global Logistics</p>
+                  </div>
+                </div>
                 <button
                   onClick={onClose}
                   className="text-white"
