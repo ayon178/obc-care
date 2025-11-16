@@ -58,21 +58,31 @@ const MobileSidebar = ({ isOpen, onClose, menuItems }) => {
                   <div key={menu.label} className="mb-4">
                     {menu.subItems ? (
                       <>
-                        <button
-                          onClick={() => toggleDropdown(menu.label)}
-                          className="buttonFont flex items-center justify-between w-full text-white py-2"
-                          aria-expanded={activeDropdown === menu.label}
-                        >
-                          <span>{menu.label}</span>
-                          <motion.div
-                            animate={{
-                              rotate: activeDropdown === menu.label ? 180 : 0,
-                            }}
-                            transition={{ duration: 0.3 }}
+                        {/* Parent row: left navigates to page, right toggles submenu */}
+                        <div className="flex items-center justify-between w-full gap-2">
+                          <a
+                            href={menu.path}
+                            className="buttonFont text-white py-2"
+                            onClick={onClose}
                           >
-                            <FiChevronDown />
-                          </motion.div>
-                        </button>
+                            {menu.label}
+                          </a>
+                          <button
+                            onClick={() => toggleDropdown(menu.label)}
+                            className="text-white p-2 aria-expanded:font-semibold"
+                            aria-expanded={activeDropdown === menu.label}
+                            aria-label={`Toggle ${menu.label} submenu`}
+                          >
+                            <motion.div
+                              animate={{
+                                rotate: activeDropdown === menu.label ? 180 : 0,
+                              }}
+                              transition={{ duration: 0.3 }}
+                            >
+                              <FiChevronDown />
+                            </motion.div>
+                          </button>
+                        </div>
                         <AnimatePresence>
                           {activeDropdown === menu.label && (
                             <motion.div
