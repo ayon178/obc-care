@@ -242,7 +242,7 @@ const Navbar = () => {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
                           transition={{ duration: 0.3 }}
-                          className="absolute top-full mt-2 w-56 bg-white text-gray-700 rounded shadow-lg z-50"
+                          className="absolute top-full mt-0 w-56 bg-white text-gray-700 rounded shadow-lg z-50 pt-2"
                           onMouseEnter={() => handleMouseEnter(menu.label)}
                           onMouseLeave={handleMouseLeave}
                         >
