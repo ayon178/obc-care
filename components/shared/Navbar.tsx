@@ -106,17 +106,19 @@ const Navbar = () => {
   return (
     <>
       {/* Header Information Bar */}
-      <div className="fixed top-0 left-0 w-full z-40 bg-[#194479] text-white text-xs md:text-sm">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center py-2 md:py-2 gap-2 md:gap-0">
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6">
+      <div className="fixed top-0 left-0 w-full z-40 bg-[#194479] text-white text-[11px] md:text-sm">
+        <div className="container mx-auto px-2 md:px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center py-1 md:py-2 gap-1.5 md:gap-0 overflow-x-auto whitespace-nowrap">
+            <div className="flex items-center justify-center md:justify-start gap-3 md:gap-6">
               <a
                 href="mailto:request@obc-care.com"
                 className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
               >
                 <Mail className="w-4 h-4" />
                 <span className="hidden sm:inline">Mail Us:</span>
-                <span>request@obc-care.com</span>
+                <span className="max-w-[150px] sm:max-w-none truncate">
+                  request@obc-care.com
+                </span>
               </a>
               <a
                 href="tel:+4917645922485"
@@ -124,10 +126,12 @@ const Navbar = () => {
               >
                 <Phone className="w-4 h-4" />
                 <span className="hidden sm:inline">Call Us / WhatsApp:</span>
-                <span>+49 176 459 224 85</span>
+                <span className="max-w-[120px] sm:max-w-none truncate">
+                  +49 176 459 224 85
+                </span>
               </a>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3 md:gap-4">
               <a
                 href="https://www.facebook.com/obc.care.kerpen"
                 target="_blank"
