@@ -6,6 +6,7 @@ import ObcBanner from "@/components/obc/obc-banner"
 import ObcWhatIs from "@/components/obc/obc-what-is"
 import ObcWhyImportant from "@/components/obc/obc-why-important"
 import ObcWhyChoose from "@/components/obc/obc-why-choose"
+import ObcIndustries from "@/components/obc/obc-industries"
 
 export default function OnboardCourierServicesPage() {
   return (
@@ -15,6 +16,7 @@ export default function OnboardCourierServicesPage() {
       <ObcWhatIs />
       <ObcWhyImportant />
       <ObcWhyChoose />
+      <ObcIndustries />
       <Footer />
     </main>
   )
