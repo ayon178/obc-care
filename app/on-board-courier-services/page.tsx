@@ -8,6 +8,7 @@ import ObcWhyImportant from "@/components/obc/obc-why-important"
 import ObcWhyChoose from "@/components/obc/obc-why-choose"
 import ObcIndustries from "@/components/obc/obc-industries"
 import ObcHowItWorks from "@/components/obc/obc-how-it-works"
+import ObcNetwork from "@/components/obc/obc-network"
 
 export default function OnboardCourierServicesPage() {
   return (
@@ -19,6 +20,7 @@ export default function OnboardCourierServicesPage() {
       <ObcWhyChoose />
       <ObcIndustries />
       <ObcHowItWorks />
+      <ObcNetwork />
       <Footer />
     </main>
   )
