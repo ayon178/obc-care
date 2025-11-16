@@ -5,6 +5,7 @@ import Footer from "@/components/footer"
 import ObcBanner from "@/components/obc/obc-banner"
 import ObcWhatIs from "@/components/obc/obc-what-is"
 import ObcWhyImportant from "@/components/obc/obc-why-important"
+import ObcWhyChoose from "@/components/obc/obc-why-choose"
 
 export default function OnboardCourierServicesPage() {
   return (
@@ -13,6 +14,7 @@ export default function OnboardCourierServicesPage() {
       <ObcBanner />
       <ObcWhatIs />
       <ObcWhyImportant />
+      <ObcWhyChoose />
       <Footer />
     </main>
   )
