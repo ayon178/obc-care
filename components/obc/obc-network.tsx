@@ -65,7 +65,7 @@ export default function ObcNetwork() {
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             OBC Network
           </span>
-          <h2 className="titleFont mt-3 text-[#194479] text-2xl sm:text-3xl md:text-4xl leading-tight">
+          <h2 className="titleFont mt-3 text-[#194479] text-xl sm:text-2xl md:text-3xl leading-tight">
             A global hand‑carry network on standby
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base max-w-xl">
@@ -95,7 +95,7 @@ export default function ObcNetwork() {
                     <Icon className="w-6 h-6 text-[#194479]" />
                   </div>
                   <div>
-                    <div className="titleFont text-[#194479] text-xl md:text-2xl">{s.value}</div>
+                    <div className="titleFont text-[#194479] text-lg md:text-xl">{s.value}</div>
                     <div className="paragraphFont text-gray-600 text-sm">{s.label}</div>
                   </div>
                 </motion.div>

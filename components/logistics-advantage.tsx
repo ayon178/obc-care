@@ -67,7 +67,7 @@ export default function LogisticsAdvantage() {
     <section 
       id="logistics-advantage" 
       ref={containerRef}
-      className="py-20 md:py-32 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
+      className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
     >
       {/* Advanced Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -149,7 +149,7 @@ export default function LogisticsAdvantage() {
             <div className="overflow-hidden">
               <WordReveal
                 text="Fast, Secure, and Global — Our Logistics Advantage"
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight"
               />
             </div>
 
@@ -159,7 +159,7 @@ export default function LogisticsAdvantage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-2xl md:text-3xl font-semibold"
+              className="text-xl md:text-2xl font-semibold"
               style={{ color: "#91C73E" }}
             >
               Your deadlines drive us.
@@ -171,14 +171,14 @@ export default function LogisticsAdvantage() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
-              className="space-y-5 pt-4"
+              className="space-y-4 pt-3"
             >
               <motion.p
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl text-gray-700 leading-relaxed"
+                className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
                 OBC Care provides end-to-end logistics solutions designed for industries that can't afford delays — aviation, automotive, and electronics.
               </motion.p>
@@ -188,7 +188,7 @@ export default function LogisticsAdvantage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl text-gray-700 leading-relaxed"
+                className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
                 We coordinate first and last mile deliveries, onboard couriers, customs clearance, and next-flight-out (NFO) arrangements to ensure every shipment arrives when it's needed most.
               </motion.p>
@@ -198,7 +198,7 @@ export default function LogisticsAdvantage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl text-gray-700 leading-relaxed"
+                className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
                 Whether it's across the city or across the world, we move faster, think smarter, and deliver with care.
               </motion.p>
@@ -210,9 +210,9 @@ export default function LogisticsAdvantage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
               viewport={{ once: true }}
-              className="pt-4"
+              className="pt-3"
             >
-              <p className="text-xl md:text-2xl font-semibold italic" style={{ color: "#194479" }}>
+              <p className="text-lg md:text-xl font-semibold italic" style={{ color: "#194479" }}>
                 Your shipment, our mission — 24/7, across the globe.
               </p>
             </motion.div>

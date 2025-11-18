@@ -85,7 +85,7 @@ export default function KeyHighlights() {
   return (
     <section 
       ref={containerRef}
-      className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
+      className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -146,7 +146,7 @@ export default function KeyHighlights() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-4"
             style={{ color: "#194479" }}
           >
             Why Choose OBC Care?
@@ -186,7 +186,7 @@ export default function KeyHighlights() {
                 className="group relative"
               >
                 {/* Card */}
-                <div className="relative h-full bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden">
+                <div className="relative h-full bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden">
                   {/* Gradient overlay on hover */}
                   <motion.div
                     className={`absolute inset-0 bg-gradient-to-br ${highlight.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
@@ -250,7 +250,7 @@ export default function KeyHighlights() {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
                     viewport={{ once: true }}
-                    className="text-2xl font-bold mb-4 group-hover:translate-x-1 transition-transform duration-300"
+                    className="text-xl font-bold mb-3 group-hover:translate-x-1 transition-transform duration-300"
                     style={{ color: "#194479" }}
                   >
                     {highlight.title}
@@ -261,7 +261,7 @@ export default function KeyHighlights() {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
                     viewport={{ once: true }}
-                    className="text-gray-600 leading-relaxed text-lg group-hover:text-gray-700 transition-colors duration-300"
+                    className="text-gray-600 leading-relaxed text-base group-hover:text-gray-700 transition-colors duration-300"
                   >
                     {highlight.description}
                   </motion.p>

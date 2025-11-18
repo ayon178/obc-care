@@ -63,7 +63,7 @@ export default function ObcWhyImportant() {
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             Why Is OBC Important?
           </span>
-          <h2 className="headingFont mt-3 text-xl sm:text-2xl md:text-3xl font-semibold text-[#194479]">
+          <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
             When every minute counts
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
@@ -92,7 +92,7 @@ export default function ObcWhyImportant() {
                     <Icon className="w-6 h-6 text-[#194479]" />
                   </div>
                   <div>
-                    <h3 className="titleFont text-[#194479] text-base sm:text-lg md:text-xl leading-snug">
+                    <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg leading-snug">
                       {r.title}
                     </h3>
                     <p className="paragraphFont mt-1.5 md:mt-2 text-gray-600 text-sm md:text-base">

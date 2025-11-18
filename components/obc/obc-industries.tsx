@@ -49,7 +49,7 @@ export default function ObcIndustries() {
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             Industries We Serve
           </span>
-          <h2 className="headingFont mt-3 text-xl sm:text-2xl md:text-3xl font-semibold text-[#194479]">
+          <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
             Built for operations that can’t afford downtime
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
@@ -89,7 +89,7 @@ export default function ObcIndustries() {
                       <Icon className="w-6 h-6 text-[#194479]" />
                     </div>
                     <div className="min-w-0">
-                      <h3 className={`titleFont text-[#194479] ${isHero ? "text-lg sm:text-xl md:text-2xl" : "text-base sm:text-lg"}`}>
+                      <h3 className={`titleFont text-[#194479] ${isHero ? "text-base sm:text-lg md:text-xl" : "text-sm sm:text-base"}`}>
                         {it.title}
                       </h3>
                       <p className={`paragraphFont mt-1.5 text-gray-600 ${isHero ? "text-sm md:text-base" : "text-sm"}`}>

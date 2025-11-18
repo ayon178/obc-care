@@ -69,7 +69,7 @@ export default function ObcWhyChoose() {
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             Why Choose OBC Care?
           </span>
-          <h2 className="headingFont mt-3 text-xl sm:text-2xl md:text-3xl font-semibold text-[#194479]">
+          <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
             Precision‑driven hand‑carry logistics
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
@@ -89,7 +89,7 @@ export default function ObcWhyChoose() {
                 <ShieldCheck className="w-6 h-6 text-[#194479]" />
               </div>
               <div>
-                <h3 className="titleFont text-[#194479] text-base sm:text-lg md:text-xl">
+                <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg">
                   Built for Critical Missions
                 </h3>
                 <p className="paragraphFont mt-1.5 text-gray-600 text-sm">
@@ -99,15 +99,15 @@ export default function ObcWhyChoose() {
             </div>
             <div className="mt-5 grid grid-cols-3 gap-3">
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-lg md:text-xl">15m</div>
+                <div className="titleFont text-[#194479] text-base md:text-lg">15m</div>
                 <div className="paragraphFont text-gray-600 text-[11px]">Quote SLA</div>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-lg md:text-xl">1,200+</div>
+                <div className="titleFont text-[#194479] text-base md:text-lg">1,200+</div>
                 <div className="paragraphFont text-gray-600 text-[11px]">Active OBCs</div>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-lg md:text-xl">70+</div>
+                <div className="titleFont text-[#194479] text-base md:text-lg">70+</div>
                 <div className="paragraphFont text-gray-600 text-[11px]">Countries</div>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function ObcWhyChoose() {
                       <Icon className="w-6 h-6 text-[#194479]" />
                     </div>
                     <div>
-                      <h3 className="titleFont text-[#194479] text-base sm:text-lg md:text-xl leading-snug">
+                      <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg leading-snug">
                         {f.title}
                       </h3>
                       <p className="paragraphFont mt-1.5 md:mt-2 text-gray-600 text-sm md:text-base">

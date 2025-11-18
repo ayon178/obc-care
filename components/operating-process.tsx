@@ -80,7 +80,7 @@ export default function OperatingProcess() {
   return (
     <section
       ref={containerRef}
-      className="relative py-16 md:py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden"
+      className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden"
     >
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-30">
@@ -129,7 +129,7 @@ export default function OperatingProcess() {
             y: smoothHeaderY,
             opacity: smoothOpacity,
           }}
-          className="text-center mb-12 md:mb-16"
+          className="text-center mb-8 md:mb-12"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -152,7 +152,7 @@ export default function OperatingProcess() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-5 md:mb-6 leading-tight"
+            className="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 leading-tight"
           >
             <span className="text-gray-900">Efficient Process,</span>
             <br />
@@ -168,10 +168,10 @@ export default function OperatingProcess() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-3xl mx-auto space-y-3 md:space-y-4 px-1"
           >
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-light">
               At OBC Care, <span className="font-semibold text-[#194479]">every minute matters</span>. That's why our process is designed to be efficient, transparent, and fully customized for your shipment's urgency, route, and industry.
             </p>
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed font-light">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-light">
               Here's how we make it happen:
             </p>
           </motion.div>
@@ -307,7 +307,7 @@ export default function OperatingProcess() {
                       </motion.div>
 
                       {/* Content */}
-                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 leading-tight">
+                      <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 leading-tight">
                         {step.title}
                       </h3>
                       <p className="text-sm md:text-base text-gray-600 leading-relaxed">

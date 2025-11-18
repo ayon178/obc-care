@@ -90,7 +90,7 @@ export default function UrgentSupportCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-5"
           >
             Need Urgent Delivery Support?
           </motion.h2>

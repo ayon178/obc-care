@@ -38,7 +38,7 @@ export default function ShipmentMethods() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#91c73e]" />
               How We Move Your Shipments
             </span>
-            <h2 className="headingFont mt-4 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#194479]">
+            <h2 className="headingFont mt-4 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#194479]">
               Fast. Secure. Global.
             </h2>
             <p className="paragraphFont mt-3 md:mt-4 text-gray-600 text-sm sm:text-base md:text-lg">

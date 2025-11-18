@@ -98,7 +98,7 @@ export default function ServicesBanner() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-2xl"
+            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-3 leading-tight drop-shadow-2xl"
           >
             Delivering Precision-Driven
             <br />
@@ -112,7 +112,7 @@ export default function ServicesBanner() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-sm sm:text-base md:text-xl text-white/95 mb-6 leading-relaxed max-w-2xl mx-auto drop-shadow-lg"
+            className="text-xs sm:text-sm md:text-base text-white/95 mb-5 leading-relaxed max-w-2xl mx-auto drop-shadow-lg"
           >
             For time-critical shipments across the globe — from AOG and
             automotive parts to electronics and industrial components.

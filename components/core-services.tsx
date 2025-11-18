@@ -68,7 +68,7 @@ export default function CoreServices() {
   return (
     <section
       ref={containerRef}
-      className="relative py-16 md:py-28 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden"
+      className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden"
     >
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-30">
@@ -117,7 +117,7 @@ export default function CoreServices() {
             y: smoothHeaderY,
             opacity: smoothOpacity,
           }}
-          className="text-center mb-12 md:mb-16"
+          className="text-center mb-8 md:mb-12"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -140,7 +140,7 @@ export default function CoreServices() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-3xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight"
+            className="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-5 leading-tight"
           >
             <span className="text-gray-900">Priority</span>
             <br />
@@ -156,10 +156,10 @@ export default function CoreServices() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-3xl mx-auto space-y-4 md:space-y-5 px-1"
           >
-            <p className="text-base sm:text-lg md:text-2xl text-gray-700 leading-relaxed font-light">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-light">
               At OBC Care, we understand that <span className="font-semibold text-[#194479]">downtime costs money</span>. That's why we provide priority logistics solutions tailored for industries that demand speed, security, and global reach.
             </p>
-            <p className="text-base sm:text-lg md:text-2xl text-gray-700 leading-relaxed font-light">
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-light">
               Our expertise ensures that every shipment — big or small — arrives <span className="font-semibold text-[#91C73E]">safely, swiftly, and seamlessly</span>.
             </p>
           </motion.div>
@@ -284,10 +284,10 @@ export default function CoreServices() {
                   </motion.div>
 
                   {/* Content */}
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4 group-hover:text-gray-800 transition-colors duration-300 leading-tight">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 md:mb-3 group-hover:text-gray-800 transition-colors duration-300 leading-tight">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-base sm:text-lg md:text-xl mb-5 md:mb-6">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg mb-4 md:mb-5">
                     {service.description}
                   </p>
 

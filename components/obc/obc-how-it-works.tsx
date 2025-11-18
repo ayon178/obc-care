@@ -32,7 +32,7 @@ export default function ObcHowItWorks() {
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             How It Works
           </span>
-          <h2 className="headingFont mt-3 text-xl sm:text-2xl md:text-3xl font-semibold text-[#194479]">
+          <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
             Timeline of an OBC Mission
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
@@ -69,7 +69,7 @@ export default function ObcHowItWorks() {
                   {/* Card */}
                   <div className={cardCols}>
                     <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-4 md:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)] transition-all">
-                      <h3 className="titleFont text-[#194479] text-base sm:text-lg leading-snug">{s.title}</h3>
+                      <h3 className="titleFont text-[#194479] text-sm sm:text-base leading-snug">{s.title}</h3>
                       <p className="paragraphFont mt-1.5 text-gray-600 text-sm md:text-base">{s.desc}</p>
                     </div>
                   </div>

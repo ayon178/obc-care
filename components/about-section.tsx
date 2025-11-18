@@ -5,9 +5,15 @@ import { useRef } from "react"
 import { Globe, Shield, Zap, TrendingUp } from "lucide-react"
 
 // Word-by-word reveal
-const WordReveal = ({ text, className }: { text: string; className?: string }) => {
+const WordReveal = ({
+  text,
+  className,
+}: {
+  text: string
+  className?: string
+}) => {
   const words = text.split(" ")
-  
+
   return (
     <h2 className={className} style={{ color: "#194479" }}>
       {words.map((word, index) => (
@@ -18,7 +24,7 @@ const WordReveal = ({ text, className }: { text: string; className?: string }) =
             transition={{
               duration: 0.6,
               delay: index * 0.08,
-              ease: [0.25, 0.1, 0.25, 1]
+              ease: [0.25, 0.1, 0.25, 1],
             }}
             viewport={{ once: true, margin: "-50px" }}
             className="inline-block"
@@ -34,24 +40,38 @@ const WordReveal = ({ text, className }: { text: string; className?: string }) =
 export default function AboutSection() {
   const containerRef = useRef<HTMLDivElement>(null)
   const imageRef = useRef<HTMLDivElement>(null)
-  
+
   // Scroll-based animations
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"]
+    offset: ["start end", "end start"],
   })
-  
+
   // Advanced parallax effects - more controlled
   const imageY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"])
-  const imageOpacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.7, 1, 1, 0.8])
+  const imageOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.7, 1],
+    [0.7, 1, 1, 0.8]
+  )
   const contentY = useTransform(scrollYProgress, [0, 1], ["5%", "-5%"])
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0.9])
-  
+  const contentOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.8, 1],
+    [0, 1, 1, 0.9]
+  )
+
   // Spring animations for smoother feel
   const smoothImageY = useSpring(imageY, { stiffness: 100, damping: 30 })
-  const smoothImageOpacity = useSpring(imageOpacity, { stiffness: 100, damping: 30 })
+  const smoothImageOpacity = useSpring(imageOpacity, {
+    stiffness: 100,
+    damping: 30,
+  })
   const smoothContentY = useSpring(contentY, { stiffness: 100, damping: 30 })
-  const smoothContentOpacity = useSpring(contentOpacity, { stiffness: 100, damping: 30 })
+  const smoothContentOpacity = useSpring(contentOpacity, {
+    stiffness: 100,
+    damping: 30,
+  })
 
   const stats = [
     { icon: Globe, label: "Global Network", value: "150+" },
@@ -61,10 +81,10 @@ export default function AboutSection() {
   ]
 
   return (
-    <section 
-      id="about" 
+    <section
+      id="about"
       ref={containerRef}
-      className="py-20 md:py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden"
+      className="py-16 md:py-24 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden"
     >
       {/* Advanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -79,7 +99,7 @@ export default function AboutSection() {
           transition={{
             duration: 25,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         />
         <motion.div
@@ -93,23 +113,23 @@ export default function AboutSection() {
             duration: 20,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1.5
+            delay: 1.5,
           }}
         />
-        
+
         {/* Subtle grid pattern */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.015]"
           style={{
             backgroundImage: `
               linear-gradient(#194479 1px, transparent 1px),
               linear-gradient(90deg, #194479 1px, transparent 1px)
             `,
-            backgroundSize: "60px 60px"
+            backgroundSize: "60px 60px",
           }}
         />
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Section - Left Side with Professional Design */}
@@ -125,14 +145,14 @@ export default function AboutSection() {
             <div className="relative">
               {/* Decorative frame elements */}
               <div className="absolute -inset-4 bg-gradient-to-br from-[#91C73E]/20 via-transparent to-[#194479]/20 rounded-3xl blur-2xl"></div>
-              
+
               {/* Main image container with professional styling */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ 
+                transition={{
                   duration: 1,
-                  ease: [0.25, 0.1, 0.25, 1]
+                  ease: [0.25, 0.1, 0.25, 1],
                 }}
                 viewport={{ once: true, margin: "-100px" }}
                 className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
@@ -144,19 +164,19 @@ export default function AboutSection() {
                   }}
                   className="relative h-[500px] md:h-[650px] overflow-hidden"
                 >
-                  <img 
-                    src="/medical-logistics-warehouse-background-8IkL7.jpg" 
-                    alt="OBC Care Global Logistics Operations" 
+                  <img
+                    src="/medical-logistics-warehouse-background-8IkL7.jpg"
+                    alt="OBC Care Global Logistics Operations"
                     className="w-full h-full object-cover scale-110"
                   />
-                  
+
                   {/* Professional gradient overlays */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/40 via-transparent to-transparent"></div>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#194479]/30 via-transparent to-transparent"></div>
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#91C73E]/20"></div>
-                  
+
                   {/* Overlay pattern for texture */}
-                  <div 
+                  <div
                     className="absolute inset-0 opacity-10"
                     style={{
                       backgroundImage: `repeating-linear-gradient(
@@ -165,7 +185,7 @@ export default function AboutSection() {
                         transparent 10px,
                         rgba(255, 255, 255, 0.1) 10px,
                         rgba(255, 255, 255, 0.1) 20px
-                      )`
+                      )`,
                     }}
                   />
                 </motion.div>
@@ -174,11 +194,11 @@ export default function AboutSection() {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8, y: 20 }}
                   whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={{ 
+                  transition={{
                     duration: 0.8,
                     delay: 0.5,
                     type: "spring",
-                    stiffness: 200
+                    stiffness: 200,
                   }}
                   viewport={{ once: true }}
                   className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/50"
@@ -188,7 +208,10 @@ export default function AboutSection() {
                       <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
                         Trusted Worldwide
                       </p>
-                      <p className="text-2xl font-bold" style={{ color: "#194479" }}>
+                      <p
+                        className="text-2xl font-bold"
+                        style={{ color: "#194479" }}
+                      >
                         Global Excellence
                       </p>
                     </div>
@@ -223,11 +246,22 @@ export default function AboutSection() {
                         whileHover={{ scale: 1.05, x: 5 }}
                         className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-gray-50 to-white hover:from-[#91C73E]/5 hover:to-white transition-all cursor-pointer"
                       >
-                        <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#91C73E20" }}>
-                          <Icon className="w-5 h-5" style={{ color: "#91C73E" }} />
+                        <div
+                          className="w-10 h-10 rounded-lg flex items-center justify-center"
+                          style={{ backgroundColor: "#91C73E20" }}
+                        >
+                          <Icon
+                            className="w-5 h-5"
+                            style={{ color: "#91C73E" }}
+                          />
                         </div>
                         <div>
-                          <p className="text-lg font-bold" style={{ color: "#194479" }}>{stat.value}</p>
+                          <p
+                            className="text-lg font-bold"
+                            style={{ color: "#194479" }}
+                          >
+                            {stat.value}
+                          </p>
                           <p className="text-xs text-gray-600">{stat.label}</p>
                         </div>
                       </motion.div>
@@ -254,9 +288,9 @@ export default function AboutSection() {
               viewport={{ once: true, margin: "-50px" }}
               className="inline-block"
             >
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-0.5">
                 <div className="h-px w-12 bg-gradient-to-r from-[#91C73E] to-transparent"></div>
-                <span 
+                <span
                   className="text-sm font-bold tracking-wider uppercase"
                   style={{ color: "#91C73E" }}
                 >
@@ -267,10 +301,10 @@ export default function AboutSection() {
             </motion.div>
 
             {/* Main Title */}
-            <div className="overflow-hidden">
+            <div className="overflow-hidden -mt-1">
               <WordReveal
                 text="About OBC Care"
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4"
+                className="text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.1] mb-0.5"
               />
             </div>
 
@@ -280,7 +314,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-2xl md:text-3xl font-semibold mb-6"
+              className="text-xl md:text-2xl font-semibold mb-2 leading-tight"
               style={{ color: "#91C73E" }}
             >
               Your Global Partner in Time-Critical Logistics
@@ -292,26 +326,30 @@ export default function AboutSection() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true }}
-              className="space-y-5"
+              className="space-y-4"
             >
               <motion.p
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl text-gray-700 leading-relaxed"
+                className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                At OBC Care, we move what matters most — from aviation spare parts and AOG shipments to automotive components and electronic equipment.
+                At OBC Care, we move what matters most — from aviation spare
+                parts and AOG shipments to automotive components and electronic
+                equipment.
               </motion.p>
-              
+
               <motion.p
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="text-lg md:text-xl text-gray-700 leading-relaxed"
+                className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                We're trusted by businesses worldwide to handle high-value, urgent shipments with precision, reliability, and full transparency.
+                We're trusted by businesses worldwide to handle high-value,
+                urgent shipments with precision, reliability, and full
+                transparency.
               </motion.p>
             </motion.div>
 
@@ -336,20 +374,29 @@ export default function AboutSection() {
                     className="group relative p-5 rounded-xl bg-white border-2 border-gray-100 hover:border-[#91C73E] transition-all shadow-sm hover:shadow-lg overflow-hidden"
                   >
                     {/* Hover gradient */}
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-br from-[#91C73E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                    />
-                    
+                    <motion.div className="absolute inset-0 bg-gradient-to-br from-[#91C73E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+
                     <div className="relative z-10">
                       <div className="flex items-center gap-3 mb-2">
-                        <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: "#91C73E20" }}>
-                          <Icon className="w-5 h-5" style={{ color: "#91C73E" }} />
+                        <div
+                          className="w-10 h-10 rounded-lg flex items-center justify-center"
+                          style={{ backgroundColor: "#91C73E20" }}
+                        >
+                          <Icon
+                            className="w-5 h-5"
+                            style={{ color: "#91C73E" }}
+                          />
                         </div>
-                        <p className="text-2xl font-bold" style={{ color: "#194479" }}>
+                        <p
+                          className="text-2xl font-bold"
+                          style={{ color: "#194479" }}
+                        >
                           {stat.value}
                         </p>
                       </div>
-                      <p className="text-sm text-gray-600 font-medium">{stat.label}</p>
+                      <p className="text-sm text-gray-600 font-medium">
+                        {stat.label}
+                      </p>
                     </div>
                   </motion.div>
                 )
@@ -365,7 +412,13 @@ export default function AboutSection() {
               className="pt-6"
             >
               <div className="flex items-center gap-4">
-                <div className="h-1 w-20 rounded-full" style={{ background: "linear-gradient(to right, #91C73E, transparent)" }}></div>
+                <div
+                  className="h-1 w-20 rounded-full"
+                  style={{
+                    background:
+                      "linear-gradient(to right, #91C73E, transparent)",
+                  }}
+                ></div>
                 <div className="h-1 flex-1 rounded-full bg-gray-200"></div>
               </div>
             </motion.div>

@@ -77,7 +77,7 @@ export default function DeliveryOptions() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#91c73e]" />
             Flexible Delivery Options
           </span>
-          <h2 className="headingFont mt-4 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#194479]">
+          <h2 className="headingFont mt-4 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#194479]">
             Built for Every Route and Requirement
           </h2>
           <p className="paragraphFont mt-3 md:mt-4 text-sm sm:text-base md:text-lg text-gray-600 px-1">
@@ -111,7 +111,7 @@ export default function DeliveryOptions() {
                   {opt.icon}
                 </div>
                 <div>
-                  <h3 className="titleFont text-base sm:text-lg md:text-xl text-[#194479] leading-snug">
+                  <h3 className="titleFont text-sm sm:text-base md:text-lg text-[#194479] leading-snug">
                     {opt.title}
                   </h3>
                   <p className="paragraphFont mt-1.5 md:mt-2 text-gray-600 text-sm md:text-base">

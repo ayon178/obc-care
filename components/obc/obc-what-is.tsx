@@ -32,7 +32,7 @@ export default function ObcWhatIs() {
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
               What Is an Onboard Courier Service?
             </span>
-            <h2 className="headingFont mt-3 text-xl sm:text-2xl md:text-3xl font-semibold text-[#194479] leading-tight">
+            <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479] leading-tight">
               Fastest and most secure way to move urgent shipments worldwide
             </h2>
             <div className="paragraphFont mt-3 space-y-3 text-gray-700">

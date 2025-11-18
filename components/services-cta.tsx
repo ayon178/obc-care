@@ -95,7 +95,7 @@ export default function ServicesCTA() {
           <div className="max-w-xl">
             <motion.h2
               variants={staggerVariants}
-              className="titleFont text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight"
+              className="titleFont text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight"
             >
               Need a Time‑Critical Delivery?
             </motion.h2>
