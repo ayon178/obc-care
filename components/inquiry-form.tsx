@@ -142,58 +142,32 @@ export default function InquiryForm() {
     delay?: number
   }) => {
     const Icon = fieldIcons[field as keyof typeof fieldIcons]
-    const isFocused = focusedField === field
-    const hasError = !!errors[field]
     const hasValue =
       formData[field as keyof typeof formData]?.toString().length > 0
 
     return (
-      <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay }}
-        className="relative"
-      >
+      <div className="relative">
         <label
           htmlFor={field}
           className="block text-sm font-bold mb-3 flex items-center gap-2"
           style={{ color: "#194479" }}
         >
           {Icon && (
-            <motion.div
-              animate={{
-                scale: isFocused ? 1.1 : 1,
-                rotate: isFocused ? [0, -5, 5, 0] : 0,
-              }}
-              transition={{ duration: 0.3 }}
-            >
-              <Icon className="w-4 h-4" />
-            </motion.div>
+            <Icon className="w-4 h-4" />
           )}
           <span>{label}</span>
           {required && <span className="text-red-500">*</span>}
         </label>
 
         <div className="relative">
-          <motion.div
-            className={`absolute inset-0 rounded-lg transition-all duration-300 ${
-              isFocused
-                ? "bg-gradient-to-r from-[#194479]/10 via-[#91C73E]/10 to-[#194479]/10 blur-sm"
-                : ""
-            }`}
-            animate={{
-              opacity: isFocused ? 1 : 0,
-            }}
-          />
-
-          <div className="relative">{children}</div>
+          <div className="relative z-20">{children}</div>
 
           {/* Floating Label Effect */}
           {hasValue && (
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="absolute -top-2 left-3 px-2 bg-white text-xs font-medium"
+              className="absolute -top-2 left-3 px-2 bg-white text-xs font-medium pointer-events-none z-10"
               style={{ color: "#91C73E" }}
             >
               {label}
@@ -214,7 +188,7 @@ export default function InquiryForm() {
             </motion.p>
           )}
         </AnimatePresence>
-      </motion.div>
+      </div>
     )
   }
 
