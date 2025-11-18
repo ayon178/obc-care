@@ -18,7 +18,7 @@ export default function ObcBanner() {
       <div className="absolute inset-0 bg-[radial-gradient(80%_50%_at_80%_10%,rgba(145,199,62,0.18),transparent)]" />
 
       <div className="container mx-auto h-full px-4 sm:px-6 lg:px-8">
-        <div className="flex h-full items-center justify-end pt-24 md:pt-28">
+        <div className="flex h-full items-center justify-end pt-32 md:pt-36">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}

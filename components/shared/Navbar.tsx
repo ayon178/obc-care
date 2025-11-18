@@ -66,6 +66,7 @@ const menuItems = [
 
 const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true)
+  const [isScrolled, setIsScrolled] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false)
 
@@ -80,10 +81,20 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sliderHeight = window.innerHeight - 40
-      setIsNavbarVisible(window.scrollY <= sliderHeight)
+      const headerHeight = 90 // Approximate header height
+      const scrolled = window.scrollY > headerHeight
+
+      // Make navbar sticky when scrolled past header height
+      setIsScrolled(scrolled)
+
+      // Navbar visible when: in slider area OR when sticky
+      // This ensures sticky navbar stays visible even when scrolling back up
+      setIsNavbarVisible(window.scrollY <= sliderHeight || scrolled)
     }
 
     window.addEventListener("scroll", handleScroll)
+    // Initial check
+    handleScroll()
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -105,11 +116,36 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Header Information Bar */}
-      <div className="fixed top-0 left-0 w-full z-40 bg-[#194479] text-white text-[11px] md:text-sm">
+      {/* Header Information Bar with Logo */}
+      <div className="relative w-full z-40 bg-[#194479] text-white">
         <div className="container mx-auto px-2 md:px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center py-1 md:py-2 gap-1.5 md:gap-0 overflow-x-auto whitespace-nowrap">
-            <div className="flex items-center justify-center md:justify-start gap-3 md:gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-center py-2 md:py-3 gap-3 md:gap-0">
+            {/* Logo Section - Left */}
+            <motion.div
+              onClick={() => router.push("/")}
+              className="flex items-center gap-3 cursor-pointer group order-1 md:order-none"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center p-2 group-hover:bg-white/20 transition-colors">
+                <img
+                  src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
+                  alt="OBC Care Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="font-bold text-xl md:text-2xl text-white">
+                  OBC Care
+                </h3>
+                <p className="text-sm md:text-base text-white/90">
+                  Global Logistics
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Contact Info - Center */}
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-6 order-2 md:order-none text-[11px] md:text-sm overflow-x-auto whitespace-nowrap">
               <a
                 href="mailto:request@obc-care.com"
                 className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
@@ -131,36 +167,35 @@ const Navbar = () => {
                 </span>
               </a>
             </div>
-            <div className="flex items-center gap-3 md:gap-4">
+
+            {/* Social Media Icons - Right */}
+            <div className="flex items-center gap-3 md:gap-4 order-3 md:order-none">
               <a
                 href="https://www.facebook.com/obc.care.kerpen"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
+                className="hover:text-[#91C73E] transition-colors"
                 title="Facebook: OBC CARE | Kerpen"
               >
-                <Facebook className="w-4 h-4" />
-                <span className="hidden md:inline">OBC CARE | Kerpen</span>
+                <Facebook className="w-5 h-5 md:w-6 md:h-6" />
               </a>
               <a
                 href="https://www.linkedin.com/company/obc-care-company/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
+                className="hover:text-[#91C73E] transition-colors"
                 title="LinkedIn"
               >
-                <Linkedin className="w-4 h-4" />
-                <span className="hidden md:inline">LinkedIn</span>
+                <Linkedin className="w-5 h-5 md:w-6 md:h-6" />
               </a>
               <a
                 href="https://www.instagram.com/obc_care/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#91C73E] transition-colors"
+                className="hover:text-[#91C73E] transition-colors"
                 title="Instagram: OBC CARE (@obc_care)"
               >
-                <Instagram className="w-4 h-4" />
-                <span className="hidden md:inline">@obc_care</span>
+                <Instagram className="w-5 h-5 md:w-6 md:h-6" />
               </a>
             </div>
           </div>
@@ -168,40 +203,24 @@ const Navbar = () => {
       </div>
 
       <motion.div
-        className={`fixed top-[40px] md:top-[36px] left-0 w-full z-30 bg-primary md:bg-transparent shadow-none ${
-          isNavbarVisible ? "visible" : "hidden"
+        className={`${
+          isScrolled ? "fixed top-0" : "absolute top-[80px] md:top-[88px]"
+        } left-0 w-full z-30 ${
+          isScrolled ? "bg-primary shadow-lg" : "bg-transparent shadow-none"
+        } transition-all duration-300 ${
+          isNavbarVisible || isScrolled ? "visible" : "hidden"
         }`}
         initial={{ opacity: 1 }}
-        animate={{ opacity: isNavbarVisible ? 1 : 0 }}
+        animate={{ opacity: isNavbarVisible || isScrolled ? 1 : 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="container mx-auto">
-          <nav className="flex justify-between items-center p-4 bg-primary md:bg-transparent">
-            <motion.div
-              onClick={() => router.push("/")}
-              className="flex items-center gap-3 cursor-pointer group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center p-2 group-hover:bg-white/20 transition-colors">
-                <img
-                  src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
-                  alt="OBC Care Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="hidden md:block">
-                <h3 className="font-bold text-lg" style={{ color: textColor }}>
-                  OBC Care
-                </h3>
-                <p
-                  className="text-xs"
-                  style={{ color: textColor, opacity: textOpacity }}
-                >
-                  Global Logistics
-                </p>
-              </div>
-            </motion.div>
+          <nav
+            className={`flex items-center p-4 justify-between ${
+              !isScrolled ? "md:justify-center" : ""
+            }`}
+          >
+            {/* Mobile Hamburger - Left */}
             <button
               className="md:hidden text-white"
               onClick={() => setIsMobileSidebarOpen(true)}
@@ -209,7 +228,37 @@ const Navbar = () => {
             >
               <FiMenu size={24} />
             </button>
-            <div className="hidden md:flex space-x-4 items-center">
+
+            {/* Logo - Only visible when sticky (Desktop) */}
+            {isScrolled && (
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3 }}
+                onClick={() => router.push("/")}
+                className="hidden md:flex items-center gap-3 cursor-pointer group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center p-2 group-hover:bg-white/20 transition-colors">
+                  <img
+                    src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
+                    alt="OBC Care Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-white">OBC Care</h3>
+                  <p className="text-xs text-white/90">Global Logistics</p>
+                </div>
+              </motion.div>
+            )}
+
+            <div
+              className={`hidden md:flex space-x-4 items-center ${
+                isScrolled ? "" : "mx-auto"
+              }`}
+            >
               {menuItems.map((menu) => (
                 <div
                   key={menu.label}
@@ -271,6 +320,26 @@ const Navbar = () => {
                 </div>
               ))}
             </div>
+
+            {/* Mobile Logo - Right */}
+            <motion.div
+              onClick={() => router.push("/")}
+              className="md:hidden flex items-center gap-2 cursor-pointer group"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center p-1.5 group-hover:bg-white/20 transition-colors">
+                <img
+                  src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
+                  alt="OBC Care Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="font-bold text-base text-white">OBC Care</h3>
+                <p className="text-[10px] text-white/90">Global Logistics</p>
+              </div>
+            </motion.div>
           </nav>
         </div>
       </motion.div>

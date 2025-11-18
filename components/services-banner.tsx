@@ -86,7 +86,7 @@ export default function ServicesBanner() {
       </div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full pt-24 md:pt-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full pt-32 md:pt-36">
         <motion.div
           style={{
             y: smoothContentY,
