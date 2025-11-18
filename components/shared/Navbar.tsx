@@ -204,7 +204,7 @@ const Navbar = () => {
 
       <motion.div
         className={`${
-          isScrolled ? "fixed top-0" : "absolute top-[80px] md:top-[88px]"
+          isScrolled ? "fixed top-0" : "absolute top-[100px] md:top-[110px]"
         } left-0 w-full z-30 ${
           isScrolled ? "bg-primary shadow-lg" : "bg-transparent shadow-none"
         } transition-all duration-300 ${
@@ -255,8 +255,8 @@ const Navbar = () => {
             )}
 
             <div
-              className={`hidden md:flex space-x-4 items-center ${
-                isScrolled ? "" : "mx-auto"
+              className={`hidden md:flex items-center ${
+                isScrolled ? "space-x-4" : "space-x-6 mx-auto"
               }`}
             >
               {menuItems.map((menu) => (
@@ -273,7 +273,9 @@ const Navbar = () => {
                       <a
                         href={menu.path}
                         onClick={(e) => handleMenuClick(e, menu.path)}
-                        className="buttonFont flex items-center space-x-1 py-2 text-white cursor-pointer hover:opacity-80 transition-opacity"
+                        className={`buttonFont flex items-center space-x-1 py-2 text-white cursor-pointer hover:opacity-80 transition-opacity ${
+                          !isScrolled ? "text-base" : ""
+                        }`}
                       >
                         <span>{menu.label}</span>
                         <motion.div
@@ -312,7 +314,9 @@ const Navbar = () => {
                     <a
                       href={menu.path}
                       onClick={(e) => handleMenuClick(e, menu.path)}
-                      className="buttonFont flex items-center py-2 text-white cursor-pointer hover:opacity-80 transition-opacity"
+                      className={`buttonFont flex items-center py-2 text-white cursor-pointer hover:opacity-80 transition-opacity ${
+                        !isScrolled ? "text-base" : ""
+                      }`}
                     >
                       {menu.label}
                     </a>
