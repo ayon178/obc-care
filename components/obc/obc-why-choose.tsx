@@ -1,8 +1,7 @@
 "use client"
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import { ShieldCheck, Plane, Globe2, Bell, UserCheck, Timer } from "lucide-react"
-import { useRef } from "react"
 
 const featureList = [
   {
@@ -33,28 +32,8 @@ const featureList = [
 ]
 
 export default function ObcWhyChoose() {
-  const ref = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 80%", "end 20%"],
-  })
-
-  const yHeader = useSpring(useTransform(scrollYProgress, [0, 1], [20, -10]), {
-    stiffness: 120,
-    damping: 20,
-  })
-  const yLeft = useSpring(useTransform(scrollYProgress, [0, 1], [24, -16]), {
-    stiffness: 120,
-    damping: 22,
-  })
-  const yRight = useSpring(useTransform(scrollYProgress, [0, 1], [30, -20]), {
-    stiffness: 120,
-    damping: 24,
-  })
-
   return (
     <section
-      ref={ref}
       className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden"
     >
       {/* soft background accents */}
@@ -65,7 +44,7 @@ export default function ObcWhyChoose() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.div style={{ y: yHeader }} className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
+        <motion.div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             Why Choose OBC Care?
           </span>
@@ -81,7 +60,6 @@ export default function ObcWhyChoose() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-14 max-w-6xl mx-auto items-start">
           {/* Left: Trust & stats card */}
           <motion.div
-            style={{ y: yLeft }}
             className="order-2 lg:order-1 lg:sticky lg:top-28 rounded-3xl border border-gray-200 bg-white/70 backdrop-blur-md p-5 md:p-6 shadow-[0_6px_20px_rgba(0,0,0,0.06)]"
           >
             <div className="flex items-start gap-3">
@@ -115,7 +93,6 @@ export default function ObcWhyChoose() {
 
           {/* Right: Vertical connected feature flow */}
           <motion.div
-            style={{ y: yRight }}
             className="relative order-1 lg:order-2 lg:col-span-2"
           >
             {/* Vertical connector line */}

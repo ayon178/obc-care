@@ -1,8 +1,7 @@
 "use client"
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import { Plane, Car, Cpu, Factory, FileText } from "lucide-react"
-import { useRef } from "react"
 
 const industries = [
   { icon: Plane, title: "Aviation & AOG", desc: "Urgent aircraft parts, tools, and documents to keep operations flying." },
@@ -22,22 +21,8 @@ const spans = [
 ]
 
 export default function ObcIndustries() {
-  const ref = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 80%", "end 20%"],
-  })
-  const yHeader = useSpring(useTransform(scrollYProgress, [0, 1], [20, -10]), {
-    stiffness: 120,
-    damping: 20,
-  })
-  const yGrid = useSpring(useTransform(scrollYProgress, [0, 1], [30, -20]), {
-    stiffness: 120,
-    damping: 24,
-  })
-
   return (
-    <section ref={ref} className="relative py-14 md:py-20 bg-white overflow-hidden">
+    <section className="relative py-14 md:py-20 bg-white overflow-hidden">
       {/* background accents */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -left-24 w-64 h-64 rounded-full bg-[#91c73e]/10 blur-3xl" />
@@ -45,7 +30,7 @@ export default function ObcIndustries() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div style={{ y: yHeader }} className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
+        <motion.div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             Industries We Serve
           </span>
@@ -59,7 +44,6 @@ export default function ObcIndustries() {
 
         {/* Mosaic grid: unique structure (hero + supporting tiles) */}
         <motion.div
-          style={{ y: yGrid }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 auto-rows-[minmax(120px,auto)] gap-3 md:gap-4 lg:gap-5 max-w-6xl mx-auto"
         >
           {industries.map((it, i) => {

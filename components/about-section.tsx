@@ -1,7 +1,6 @@
 "use client"
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
-import { useRef } from "react"
+import { motion } from "framer-motion"
 import { Globe, Shield, Zap, TrendingUp } from "lucide-react"
 
 // Word-by-word reveal
@@ -38,40 +37,6 @@ const WordReveal = ({
 }
 
 export default function AboutSection() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const imageRef = useRef<HTMLDivElement>(null)
-
-  // Scroll-based animations
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  })
-
-  // Advanced parallax effects - more controlled
-  const imageY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"])
-  const imageOpacity = useTransform(
-    scrollYProgress,
-    [0, 0.3, 0.7, 1],
-    [0.7, 1, 1, 0.8]
-  )
-  const contentY = useTransform(scrollYProgress, [0, 1], ["5%", "-5%"])
-  const contentOpacity = useTransform(
-    scrollYProgress,
-    [0, 0.2, 0.8, 1],
-    [0, 1, 1, 0.9]
-  )
-
-  // Spring animations for smoother feel
-  const smoothImageY = useSpring(imageY, { stiffness: 100, damping: 30 })
-  const smoothImageOpacity = useSpring(imageOpacity, {
-    stiffness: 100,
-    damping: 30,
-  })
-  const smoothContentY = useSpring(contentY, { stiffness: 100, damping: 30 })
-  const smoothContentOpacity = useSpring(contentOpacity, {
-    stiffness: 100,
-    damping: 30,
-  })
 
   const stats = [
     { icon: Globe, label: "Global Network", value: "150+" },
@@ -83,7 +48,6 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      ref={containerRef}
       className="py-16 md:py-24 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden"
     >
       {/* Advanced Background Elements */}
@@ -134,11 +98,6 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Section - Left Side with Professional Design */}
           <motion.div
-            ref={imageRef}
-            style={{
-              y: smoothImageY,
-              opacity: smoothImageOpacity,
-            }}
             className="relative order-2 lg:order-1"
           >
             {/* Professional Image Container */}
@@ -157,13 +116,8 @@ export default function AboutSection() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
               >
-                {/* Image with parallax */}
-                <motion.div
-                  style={{
-                    y: useTransform(scrollYProgress, [0, 1], [0, "20%"]),
-                  }}
-                  className="relative h-[500px] md:h-[650px] overflow-hidden"
-                >
+                {/* Image */}
+                <div className="relative h-[500px] md:h-[650px] overflow-hidden">
                   <img
                     src="/medical-logistics-warehouse-background-8IkL7.jpg"
                     alt="OBC Care Global Logistics Operations"
@@ -188,7 +142,8 @@ export default function AboutSection() {
                       )`,
                     }}
                   />
-                </motion.div>
+                </div>
+              </motion.div>
 
                 {/* Professional badge overlay */}
                 <motion.div
@@ -223,16 +178,16 @@ export default function AboutSection() {
 
                 {/* Corner accent */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#91C73E]/30 to-transparent rounded-bl-full"></div>
-              </motion.div>
+            </div>
 
-              {/* Floating stats cards */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7 }}
-                viewport={{ once: true }}
-                className="absolute -right-6 top-1/2 -translate-y-1/2 hidden lg:block"
-              >
+            {/* Floating stats cards */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              viewport={{ once: true }}
+              className="absolute -right-6 top-1/2 -translate-y-1/2 hidden lg:block"
+            >
                 <div className="bg-white rounded-2xl p-4 shadow-xl border border-gray-100 space-y-3">
                   {stats.slice(0, 2).map((stat, index) => {
                     const Icon = stat.icon
@@ -268,16 +223,11 @@ export default function AboutSection() {
                     )
                   })}
                 </div>
-              </motion.div>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Content Section - Right Side */}
           <motion.div
-            style={{
-              y: smoothContentY,
-              opacity: smoothContentOpacity,
-            }}
             className="space-y-8 order-1 lg:order-2"
           >
             {/* Label with professional styling */}

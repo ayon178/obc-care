@@ -1,34 +1,22 @@
 "use client"
 
-import { motion, useScroll, useTransform } from "framer-motion"
-import { useRef } from "react"
+import { motion } from "framer-motion"
 import Navbar from "@/components/shared/Navbar"
 import InquiryForm from "@/components/inquiry-form"
 import { ArrowLeft, Mail, Phone, Clock, Shield, Zap } from "lucide-react"
 import Link from "next/link"
 
 export default function InquiryPage() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"]
-  })
-
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
-  const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0.8])
-
   return (
-    <div ref={containerRef} className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
       <Navbar />
       
       {/* Advanced Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        <motion.div
-          style={{ y: backgroundY }}
+        <div
           className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-[#91C73E]/20 to-transparent rounded-full blur-3xl"
         />
-        <motion.div
-          style={{ y: backgroundY }}
+        <div
           className="absolute bottom-0 left-0 w-[700px] h-[700px] bg-gradient-to-tr from-[#194479]/20 to-transparent rounded-full blur-3xl"
         />
         

@@ -1,7 +1,6 @@
 "use client"
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
-import { useRef } from "react"
+import { motion } from "framer-motion"
 import { Clock, Globe, Shield, Zap } from "lucide-react"
 
 // Word-by-word reveal component
@@ -32,29 +31,6 @@ const WordReveal = ({ text, className }: { text: string; className?: string }) =
 }
 
 export default function LogisticsAdvantage() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  
-  // Scroll-based animations
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  })
-  
-  // Enhanced Parallax effects
-  const imageY = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"])
-  const imageScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.03, 1])
-  const contentY = useTransform(scrollYProgress, [0, 1], ["8%", "-8%"])
-  const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0.9])
-  
-  // Spring animations for smoother feel
-  const smoothImageY = useSpring(imageY, { stiffness: 100, damping: 30 })
-  const smoothImageScale = useSpring(imageScale, { stiffness: 100, damping: 30 })
-  const smoothContentY = useSpring(contentY, { stiffness: 100, damping: 30 })
-  const smoothOpacity = useSpring(opacity, { stiffness: 100, damping: 30 })
-  
-  // Rotate based on scroll
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -3])
-  const smoothRotate = useSpring(rotate, { stiffness: 100, damping: 30 })
 
   const features = [
     { icon: Zap, text: "Fast Delivery" },
@@ -66,7 +42,6 @@ export default function LogisticsAdvantage() {
   return (
     <section 
       id="logistics-advantage" 
-      ref={containerRef}
       className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
     >
       {/* Advanced Background Elements */}
@@ -115,12 +90,8 @@ export default function LogisticsAdvantage() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center relative">
-          {/* Content Section - Left Side with Parallax */}
+          {/* Content Section - Left Side */}
           <motion.div
-            style={{
-              y: smoothContentY,
-              opacity: smoothOpacity,
-            }}
             className="space-y-6 relative z-10"
           >
             {/* Small Label */}
@@ -273,13 +244,8 @@ export default function LogisticsAdvantage() {
             </motion.div>
           </motion.div>
 
-          {/* Image Section - Right Side with Advanced Animations */}
+          {/* Image Section - Right Side */}
           <motion.div
-            style={{
-              y: smoothImageY,
-              scale: smoothImageScale,
-              rotate: smoothRotate,
-            }}
             className="relative z-0"
           >
             {/* Image Container with Decorative Elements */}

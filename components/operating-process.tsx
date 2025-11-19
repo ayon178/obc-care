@@ -1,8 +1,7 @@
 "use client"
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
-import { useRef } from "react"
-import { 
+import { motion } from "framer-motion"
+import {
   FileSearch,
   FileText,
   Package,
@@ -15,70 +14,57 @@ const steps = [
     number: "01",
     icon: FileSearch,
     title: "Request & Assessment",
-    description: "Submit your shipment details — our operations team will evaluate the fastest route and provide a quote within 15 minutes.",
+    description:
+      "Submit your shipment details — our operations team will evaluate the fastest route and provide a quote within 15 minutes.",
     color: "#194479",
   },
   {
     number: "02",
     icon: FileText,
     title: "Booking & Documentation",
-    description: "Once confirmed, we book all flights and prepare all necessary paperwork, including customs documentation, to ensure a smooth transport.",
+    description:
+      "Once confirmed, we book all flights and prepare all necessary paperwork, including customs documentation, to ensure a smooth transport.",
     color: "#91C73E",
   },
   {
     number: "03",
     icon: Package,
     title: "Collection & Handover",
-    description: "A trained courier picks up your shipment and prepares it for departure.",
+    description:
+      "A trained courier picks up your shipment and prepares it for departure.",
     color: "#194479",
   },
   {
     number: "04",
     icon: Radio,
     title: "Real-Time Updates",
-    description: "From pickup to delivery, we send live status updates at every milestone.",
+    description:
+      "From pickup to delivery, we send live status updates at every milestone.",
     color: "#91C73E",
   },
   {
     number: "05",
     icon: CheckCircle2,
     title: "Final Delivery Confirmation",
-    description: "Once your shipment arrives, you'll receive instant proof of delivery — safely and on time.",
+    description:
+      "Once your shipment arrives, you'll receive instant proof of delivery — safely and on time.",
     color: "#194479",
   },
 ]
 
 export default function OperatingProcess() {
-  const containerRef = useRef<HTMLDivElement>(null)
-
-  // Scroll-based parallax animations
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  })
-
-  // Parallax effects
-  const headerY = useTransform(scrollYProgress, [0, 1], [30, -30])
-  const cardsY = useTransform(scrollYProgress, [0, 1], [60, -60])
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0.5])
-
-  // Spring animations
-  const smoothHeaderY = useSpring(headerY, { stiffness: 100, damping: 30 })
-  const smoothCardsY = useSpring(cardsY, { stiffness: 100, damping: 30 })
-  const smoothOpacity = useSpring(opacity, { stiffness: 100, damping: 30 })
-
   return (
-    <section
-      ref={containerRef}
-      className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden"
-    >
+    <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(to right, rgba(25, 68, 121, 0.03) 1px, transparent 1px),
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `linear-gradient(to right, rgba(25, 68, 121, 0.03) 1px, transparent 1px),
                             linear-gradient(to bottom, rgba(25, 68, 121, 0.03) 1px, transparent 1px)`,
-          backgroundSize: '50px 50px'
-        }} />
+            backgroundSize: "50px 50px",
+          }}
+        />
       </div>
 
       {/* Background Decorative Elements */}
@@ -114,13 +100,7 @@ export default function OperatingProcess() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header Section */}
-        <motion.div
-          style={{
-            y: smoothHeaderY,
-            opacity: smoothOpacity,
-          }}
-          className="text-center mb-8 md:mb-12"
-        >
+        <div className="text-center mb-8 md:mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -159,21 +139,22 @@ export default function OperatingProcess() {
             className="max-w-3xl mx-auto space-y-3 md:space-y-4 px-1"
           >
             <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-light">
-              At OBC Care, <span className="font-semibold text-[#194479]">every minute matters</span>. That's why our process is designed to be efficient, transparent, and fully customized for your shipment's urgency, route, and industry.
+              At OBC Care,{" "}
+              <span className="font-semibold text-[#194479]">
+                every minute matters
+              </span>
+              . That's why our process is designed to be efficient, transparent,
+              and fully customized for your shipment's urgency, route, and
+              industry.
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-light">
               Here's how we make it happen:
             </p>
           </motion.div>
-        </motion.div>
+        </div>
 
         {/* Enhanced Steps Grid - New Structure */}
-        <motion.div
-          style={{
-            y: smoothCardsY,
-          }}
-          className="relative"
-        >
+        <div className="relative">
           {/* Connecting Lines - Horizontal Flow */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#194479]/20 to-transparent -translate-y-1/2"></div>
 
@@ -189,15 +170,15 @@ export default function OperatingProcess() {
                   initial={{ opacity: 0, y: 50, scale: 0.9 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true, margin: "-50px" }}
-                  transition={{ 
-                    duration: 0.6, 
+                  transition={{
+                    duration: 0.6,
                     delay: index * 0.1,
                     type: "spring",
-                    stiffness: 100
+                    stiffness: 100,
                   }}
-                  whileHover={{ 
+                  whileHover={{
                     y: -8,
-                    transition: { duration: 0.3 }
+                    transition: { duration: 0.3 },
                   }}
                   className="relative group"
                 >
@@ -230,15 +211,15 @@ export default function OperatingProcess() {
                   {/* Step Card - Enhanced */}
                   <div className="relative h-full">
                     <div className="relative h-full p-6 md:p-7 bg-white/90 backdrop-blur-xl rounded-3xl shadow-lg border-2 border-gray-200/50 hover:shadow-2xl transition-all duration-500 overflow-hidden">
-
                       {/* Shine Effect */}
                       <motion.div
                         className="absolute inset-0 opacity-0 group-hover:opacity-100"
                         style={{
-                          background: 'linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%)',
+                          background:
+                            "linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%)",
                         }}
                         animate={{
-                          x: ['-100%', '200%'],
+                          x: ["-100%", "200%"],
                         }}
                         transition={{
                           duration: 1.5,
@@ -254,13 +235,18 @@ export default function OperatingProcess() {
                           className="relative w-12 h-12 rounded-full flex items-center justify-center shadow-xl"
                           style={{ backgroundColor: step.color }}
                         >
-                          <span className="text-white font-bold text-sm">{step.number}</span>
+                          <span className="text-white font-bold text-sm">
+                            {step.number}
+                          </span>
                         </div>
                       </div>
 
                       {/* Icon Container */}
                       <div className="relative mb-6">
-                        <div className="relative w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl" style={{ backgroundColor: step.color }}>
+                        <div
+                          className="relative w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl"
+                          style={{ backgroundColor: step.color }}
+                        >
                           <Icon className="w-8 h-8 text-white" />
                         </div>
                       </div>
@@ -288,7 +274,7 @@ export default function OperatingProcess() {
               )
             })}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

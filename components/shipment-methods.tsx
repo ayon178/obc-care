@@ -2,28 +2,12 @@
 
 import Image from "next/image"
 import React, { useRef } from "react"
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import { Plane, Truck, ShieldCheck, CheckCircle2 } from "lucide-react"
 
 export default function ShipmentMethods() {
-  const sectionRef = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start 80%", "end 20%"],
-  })
-
-  const yContent = useSpring(useTransform(scrollYProgress, [0, 1], [24, -24]), {
-    stiffness: 140,
-    damping: 22,
-  })
-  // Vertical-only parallax for image (no rotation or scaling)
-  const yImage = useSpring(useTransform(scrollYProgress, [0, 1], [-12, 12]), {
-    stiffness: 140,
-    damping: 24,
-  })
-
   return (
-    <section ref={sectionRef} className="relative py-14 md:py-24 bg-white overflow-hidden">
+    <section className="relative py-14 md:py-24 bg-white overflow-hidden">
       {/* soft background accents */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute top-0 -right-24 w-80 h-80 rounded-full bg-[#194479]/10 blur-3xl" />
@@ -33,7 +17,7 @@ export default function ShipmentMethods() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-16 items-center">
           {/* Text Content */}
-          <motion.div style={{ y: yContent }} className="relative z-10">
+          <div className="relative z-10">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#194479]/10 text-[#194479] text-xs md:text-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#91c73e]" />
               How We Move Your Shipments
@@ -107,10 +91,10 @@ export default function ShipmentMethods() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Image / Visual */}
-          <motion.div style={{ y: yImage }} className="relative z-0">
+          <div className="relative z-0">
             <div className="relative rounded-3xl overflow-hidden border border-gray-200 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
               {/* Decorative grid overlay */}
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:16px_16px]" />
@@ -134,7 +118,7 @@ export default function ShipmentMethods() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

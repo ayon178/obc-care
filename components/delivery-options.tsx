@@ -1,7 +1,7 @@
 "use client"
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
-import React, { useRef } from "react"
+import { motion } from "framer-motion"
+import React from "react"
 import { DoorOpen, Plane, MoveRight, Landmark } from "lucide-react"
 
 type DeliveryOption = {
@@ -43,25 +43,8 @@ const options: DeliveryOption[] = [
 ]
 
 export default function DeliveryOptions() {
-  const sectionRef = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start 80%", "end 20%"],
-  })
-
-  const yHeader = useSpring(useTransform(scrollYProgress, [0, 1], [20, -10]), {
-    stiffness: 120,
-    damping: 20,
-  })
-  const yGrid = useSpring(useTransform(scrollYProgress, [0, 1], [30, -20]), {
-    stiffness: 120,
-    damping: 24,
-  })
-  const opacityHeader = useTransform(scrollYProgress, [0, 0.2], [0, 1])
-  const opacityGrid = useTransform(scrollYProgress, [0.1, 0.3], [0, 1])
-
   return (
-    <section ref={sectionRef} className="relative py-14 md:py-24 bg-white overflow-hidden">
+    <section className="relative py-14 md:py-24 bg-white overflow-hidden">
       {/* subtle background accents */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-[#91c73e]/10 blur-3xl" />
@@ -70,7 +53,6 @@ export default function DeliveryOptions() {
 
       <div className="container mx-auto px-4">
         <motion.div
-          style={{ y: yHeader, opacity: opacityHeader }}
           className="max-w-3xl mx-auto text-center mb-8 md:mb-14"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#194479]/10 text-[#194479] text-xs md:text-sm">
@@ -88,7 +70,6 @@ export default function DeliveryOptions() {
 
         {/* Grid */}
         <motion.div
-          style={{ y: yGrid, opacity: opacityGrid }}
           className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6 lg:gap-8 max-w-6xl mx-auto"
         >
           {options.map((opt, index) => (

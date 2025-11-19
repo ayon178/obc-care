@@ -2,31 +2,13 @@
 
 import {
   motion,
-  useScroll,
-  useSpring,
-  useTransform,
   type Variants,
 } from "framer-motion"
 import Link from "next/link"
 import { Send, Phone } from "lucide-react"
-import React, { useRef } from "react"
+import React from "react"
 
 export default function ServicesCTA() {
-  const ref = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 80%", "end 20%"],
-  })
-
-  // Parallax layers
-  const yBack = useSpring(useTransform(scrollYProgress, [0, 1], [30, -10]), {
-    stiffness: 140,
-    damping: 22,
-  })
-  const yFront = useSpring(useTransform(scrollYProgress, [0, 1], [20, -20]), {
-    stiffness: 140,
-    damping: 22,
-  })
 
   const containerVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
@@ -47,21 +29,19 @@ export default function ServicesCTA() {
   }
 
   return (
-    <section ref={ref} className="relative z-0 py-16 md:py-24 overflow-hidden">
+    <section className="relative z-0 py-16 md:py-24 overflow-hidden">
       {/* background gradient base */}
       <div
         aria-hidden
         className="absolute inset-0 z-0 bg-gradient-to-br from-[#0f2744] via-[#153a62] to-[#0a1a2a]"
       />
-      {/* parallax accent layers */}
-      <motion.div
+      {/* accent layers */}
+      <div
         aria-hidden
-        style={{ y: yBack }}
         className="absolute z-0 -top-40 -left-40 h-96 w-96 rounded-full bg-[#91c73e]/14 blur-3xl"
       />
-      <motion.div
+      <div
         aria-hidden
-        style={{ y: yFront }}
         className="absolute z-0 -bottom-44 -right-40 h-[28rem] w-[28rem] rounded-full bg-white/8 blur-3xl"
       />
       {/* faint grid overlay */}

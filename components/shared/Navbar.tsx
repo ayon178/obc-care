@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { FiChevronDown, FiMenu } from "react-icons/fi"
 import { useRouter, usePathname } from "next/navigation"
@@ -69,6 +69,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false)
+  const navbarRef = useRef<HTMLDivElement>(null)
 
   const router = useRouter()
   const pathname = usePathname()
@@ -80,22 +81,29 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Lenis works with native scroll, so we can use window.scrollY
+      const scrollY = window.scrollY || window.pageYOffset || 0
       const sliderHeight = window.innerHeight - 40
       const headerHeight = 90 // Approximate header height
-      const scrolled = window.scrollY > headerHeight
+      const scrolled = scrollY > headerHeight
 
       // Make navbar sticky when scrolled past header height
       setIsScrolled(scrolled)
 
       // Navbar visible when: in slider area OR when sticky
       // This ensures sticky navbar stays visible even when scrolling back up
-      setIsNavbarVisible(window.scrollY <= sliderHeight || scrolled)
+      setIsNavbarVisible(scrollY <= sliderHeight || scrolled)
     }
 
-    window.addEventListener("scroll", handleScroll)
+    // Listen to scroll events - Lenis works with native scroll
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    
     // Initial check
     handleScroll()
-    return () => window.removeEventListener("scroll", handleScroll)
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
   }, [])
 
   const handleMouseEnter = (menuLabel: string) => {
@@ -203,10 +211,11 @@ const Navbar = () => {
       </div>
 
       <motion.div
+        ref={navbarRef}
         className={`${
           isScrolled ? "fixed top-0" : "absolute top-[100px] md:top-[110px]"
-        } left-0 w-full z-30 ${
-          isScrolled ? "bg-primary shadow-lg" : "bg-transparent shadow-none"
+        } left-0 w-full ${
+          isScrolled ? "bg-primary shadow-lg z-50" : "bg-transparent shadow-none z-30"
         } transition-all duration-300 ${
           isNavbarVisible || isScrolled ? "visible" : "hidden"
         }`}

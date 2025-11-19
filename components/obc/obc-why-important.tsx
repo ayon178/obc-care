@@ -1,8 +1,7 @@
 "use client"
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import { ShieldCheck, Plane, Eye, BellRing, Timer } from "lucide-react"
-import { useRef } from "react"
 
 const reasons = [
   {
@@ -35,23 +34,9 @@ const reasons = [
 ]
 
 export default function ObcWhyImportant() {
-  const ref = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 80%", "end 20%"],
-  })
-
-  const yHeader = useSpring(useTransform(scrollYProgress, [0, 1], [20, -10]), {
-    stiffness: 120,
-    damping: 20,
-  })
-  const yGrid = useSpring(useTransform(scrollYProgress, [0, 1], [30, -20]), {
-    stiffness: 120,
-    damping: 24,
-  })
 
   return (
-    <section ref={ref} className="relative py-14 md:py-20 bg-white overflow-hidden">
+    <section className="relative py-14 md:py-20 bg-white overflow-hidden">
       {/* subtle background accents */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-[#91c73e]/10 blur-3xl" />
@@ -59,7 +44,7 @@ export default function ObcWhyImportant() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div style={{ y: yHeader }} className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
+        <motion.div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             Why Is OBC Important?
           </span>
@@ -73,7 +58,6 @@ export default function ObcWhyImportant() {
         </motion.div>
 
         <motion.div
-          style={{ y: yGrid }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-8 max-w-6xl mx-auto"
         >
           {reasons.map((r, i) => {

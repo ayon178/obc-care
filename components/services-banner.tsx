@@ -1,27 +1,9 @@
 "use client"
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
-import { useRef } from "react"
+import { motion } from "framer-motion"
 import { Truck, Zap, Shield, Clock } from "lucide-react"
 
 export default function ServicesBanner() {
-  const containerRef = useRef<HTMLDivElement>(null)
-
-  // Scroll-based parallax animations
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  })
-
-  // Parallax effects
-  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"])
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"])
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0.3])
-
-  // Spring animations
-  const smoothImageY = useSpring(imageY, { stiffness: 100, damping: 30 })
-  const smoothContentY = useSpring(contentY, { stiffness: 100, damping: 30 })
-  const smoothOpacity = useSpring(opacity, { stiffness: 100, damping: 30 })
 
   const features = [
     { icon: Zap, text: "Fast" },
@@ -31,17 +13,10 @@ export default function ServicesBanner() {
 
   return (
     <section
-      ref={containerRef}
       className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Parallax */}
-      <motion.div
-        style={{
-          y: smoothImageY,
-          opacity: smoothOpacity,
-        }}
-        className="absolute inset-0 z-0"
-      >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -52,7 +27,7 @@ export default function ServicesBanner() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#194479]/65 via-[#194479]/55 to-[#194479]/65"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#194479]/40"></div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
@@ -88,9 +63,6 @@ export default function ServicesBanner() {
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full pt-32 md:pt-36">
         <motion.div
-          style={{
-            y: smoothContentY,
-          }}
           className="text-center max-w-4xl mx-auto"
         >
           {/* Main Title */}

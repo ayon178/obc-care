@@ -1,7 +1,6 @@
 "use client"
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
-import { useRef } from "react"
+import { motion } from "framer-motion"
 import { FileSearch, UserCheck, ShieldCheck, Radio, CheckCircle2 } from "lucide-react"
 
 const steps = [
@@ -13,13 +12,8 @@ const steps = [
 ]
 
 export default function ObcHowItWorks() {
-  const ref = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 80%", "end 20%"] })
-  const yHeader = useSpring(useTransform(scrollYProgress, [0, 1], [20, -10]), { stiffness: 120, damping: 20 })
-  const yTimeline = useSpring(useTransform(scrollYProgress, [0, 1], [30, -20]), { stiffness: 120, damping: 24 })
-
   return (
-    <section ref={ref} className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
+    <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* background accents */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-[#91c73e]/10 blur-3xl" />
@@ -28,7 +22,7 @@ export default function ObcHowItWorks() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.div style={{ y: yHeader }} className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+        <motion.div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             How It Works
           </span>
@@ -41,7 +35,7 @@ export default function ObcHowItWorks() {
         </motion.div>
 
         {/* Timeline */}
-        <motion.div style={{ y: yTimeline }} className="relative max-w-4xl mx-auto">
+        <motion.div className="relative max-w-4xl mx-auto">
           {/* Vertical line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#194479]/30 via-[#194479]/20 to-transparent -translate-x-1/2 md:translate-x-0" />
 

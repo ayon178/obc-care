@@ -1,34 +1,17 @@
 "use client"
 
 import Image from "next/image"
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
-import { useRef } from "react"
+import { motion } from "framer-motion"
 
 export default function ObcWhatIs() {
-  const ref = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 80%", "end 20%"],
-  })
-
-  const yText = useSpring(useTransform(scrollYProgress, [0, 1], [20, -20]), {
-    stiffness: 120,
-    damping: 22,
-  })
-  const yImage = useSpring(useTransform(scrollYProgress, [0, 1], [-14, 14]), {
-    stiffness: 120,
-    damping: 24,
-  })
-
   return (
     <section
-      ref={ref}
       className="relative py-14 md:py-20 bg-white overflow-hidden"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-16 items-center">
           {/* Text */}
-          <motion.div style={{ y: yText }}>
+          <div>
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
               What Is an Onboard Courier Service?
             </span>
@@ -51,10 +34,10 @@ export default function ObcWhatIs() {
                 supervision, and the shortest possible delivery time.
               </p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Image */}
-          <motion.div style={{ y: yImage }} className="relative">
+          <div className="relative">
             <div className="relative rounded-3xl overflow-hidden border border-gray-200 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:16px_16px]" />
               <Image
@@ -66,7 +49,7 @@ export default function ObcWhatIs() {
                 priority={false}
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,8 +1,7 @@
 "use client"
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import { Globe2, Users, Timer } from "lucide-react"
-import { useRef } from "react"
 
 const stats = [
   { label: "Active OBCs", value: "1,200+", icon: Users },
@@ -11,13 +10,8 @@ const stats = [
 ]
 
 export default function ObcNetwork() {
-  const ref = useRef<HTMLDivElement | null>(null)
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 80%", "end 20%"] })
-  const yHeader = useSpring(useTransform(scrollYProgress, [0, 1], [20, -10]), { stiffness: 120, damping: 20 })
-  const yPanel = useSpring(useTransform(scrollYProgress, [0, 1], [30, -20]), { stiffness: 120, damping: 24 })
-
   return (
-    <section ref={ref} className="relative py-16 md:py-24 bg-white overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       {/* subtle light accents for white background */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -left-24 w-64 h-64 rounded-full bg-[#91c73e]/10 blur-3xl" />
@@ -25,10 +19,9 @@ export default function ObcNetwork() {
       </div>
 
       {/* Abstract globe made of animated rings and dots (unique accent) */}
-      <motion.div
+      <div
         aria-hidden
         className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 h-80 w-80 rounded-full border border-[#194479]/30"
-        style={{ y: yPanel }}
       >
         {/* Primary orbits */}
         <div className="absolute inset-6 rounded-full border border-[#194479]/25" />
@@ -57,11 +50,11 @@ export default function ObcNetwork() {
         >
           <div className="absolute left-1/2 top-0 -translate-x-1/2 w-3 h-3 rounded-full bg-[#194479]" />
         </motion.div>
-      </motion.div>
+      </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
-        <motion.div style={{ y: yHeader }} className="max-w-3xl">
+        <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
             OBC Network
           </span>
@@ -72,11 +65,10 @@ export default function ObcNetwork() {
             With trained couriers stationed across major hubs, we dispatch the nearest OBC within
             minutes — ensuring priority handling and continuous custody.
           </p>
-        </motion.div>
+        </div>
 
         {/* Panel with stats */}
-        <motion.div
-          style={{ y: yPanel }}
+        <div
           className="mt-8 md:mt-12 rounded-3xl border border-gray-200 bg-white p-6 md:p-8 shadow-[0_6px_20px_rgba(0,0,0,0.06)]"
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
@@ -115,7 +107,7 @@ export default function ObcNetwork() {
               Live status updates from pickup to delivery
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )
