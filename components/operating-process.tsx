@@ -22,7 +22,7 @@ const steps = [
     number: "02",
     icon: FileText,
     title: "Booking & Documentation",
-    description: "We prepare all required paperwork and coordinate with carriers, airports, and customs to prevent delays.",
+    description: "Once confirmed, we book all flights and prepare all necessary paperwork, including customs documentation, to ensure a smooth transport.",
     color: "#91C73E",
   },
   {

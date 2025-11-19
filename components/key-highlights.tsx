@@ -7,29 +7,33 @@ import { Plane, Truck, Globe, Bell } from "lucide-react"
 const highlights = [
   {
     icon: Plane,
-    title: "AOG & Spare Parts Expertise",
-    description: "We specialize in mission-critical deliveries for grounded aircraft and essential aviation components.",
+    title: "Multi-Industry Logistics Solutions",
+    description:
+      "We specialize in mission-critical deliveries for aircraft parts, industrial spares, electronics, fashion items, and sensitive documents worldwide.",
     color: "#194479",
     gradient: "from-[#194479] to-[#1d5a96]",
   },
   {
     icon: Truck,
     title: "Complete Door-to-Door Service",
-    description: "From pickup to handover, every stage is managed by our professional team with care and accuracy.",
+    description:
+      "From pickup to handover, every stage is managed by our professional team with care and accuracy.",
     color: "#91C73E",
     gradient: "from-[#91C73E] to-[#7bb033]",
   },
   {
     icon: Globe,
     title: "Global Reach, Local Expertise",
-    description: "With a worldwide network of trusted partners, we deliver seamlessly across continents and time zones.",
+    description:
+      "With a worldwide network of trusted partners, we deliver seamlessly across continents and time zones.",
     color: "#194479",
     gradient: "from-[#194479] to-[#1d5a96]",
   },
   {
     icon: Bell,
     title: "Real-Time Updates",
-    description: "Stay informed at every milestone — our OBC team keeps you updated in real time, from pick-up to final delivery.",
+    description:
+      "Stay informed at every milestone — our OBC team keeps you updated in real time, from pick-up to final delivery.",
     color: "#91C73E",
     gradient: "from-[#91C73E] to-[#7bb033]",
   },

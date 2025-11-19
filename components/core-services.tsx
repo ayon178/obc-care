@@ -22,14 +22,14 @@ const services = [
   {
     icon: Plane,
     title: "Onboard Courier (OBC) Service",
-    description: "When every second counts, our professional couriers personally escort your shipment on the next available flight.",
+    description: "When every second counts, our professional couriers personally escort your shipment with utmost priority.",
     iconColor: "#91C73E",
     link: "/on-board-courier-services",
   },
   {
     icon: FileCheck,
     title: "Customs Clearance Assistance",
-    description: "We simplify the complex. Our experts handle every detail of international customs coordination.",
+    description: "We simplify the complex. Our customs experts handle every detail of international customs coordination.",
     iconColor: "#194479",
     link: "/services",
   },
