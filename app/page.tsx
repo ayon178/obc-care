@@ -51,9 +51,9 @@ const Home = () => {
   const [isAnimating, setIsAnimating] = useState(false)
 
   const images = [
-    "/medical-courier-urgent-delivery-service.jpg",
-    "/temperature-controlled-medical-transport.jpg",
-    "/24-7-emergency-medical-courier-service.jpg",
+    "/slide-1.png",
+    "/slide-2.png",
+    "/slide-3.png",
   ]
 
   const nextImage = () => {
