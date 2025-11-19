@@ -25,10 +25,10 @@ export default function Footer() {
   }
 
   const services = [
-    { name: "First Mile / Last Mile Delivery", icon: Truck },
-    { name: "Onboard Courier (OBC) Service", icon: Plane },
-    { name: "Customs Clearance Assistance", icon: FileCheck },
-    { name: "Next Flight Out (NFO) Solutions", icon: Zap },
+    { name: "First Mile / Last Mile Delivery", icon: Truck, href: "/services" },
+    { name: "Onboard Courier (OBC) Service", icon: Plane, href: "/on-board-courier-services" },
+    { name: "Customs Clearance Assistance", icon: FileCheck, href: "/services" },
+    { name: "Next Flight Out (NFO) Solutions", icon: Zap, href: "/services" },
   ]
 
   const aboutLinks = [
@@ -46,9 +46,9 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { name: "Facebook", icon: Facebook, href: "#" },
-    { name: "LinkedIn", icon: Linkedin, href: "#" },
-    { name: "Instagram", icon: Instagram, href: "#" },
+    { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/obccare/" },
+    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/obc-care-company/" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/obc_care/" },
   ]
 
   return (
@@ -174,9 +174,12 @@ export default function Footer() {
                     className="flex items-start gap-3 group"
                   >
                     <Icon className="w-4 h-4 text-[#91C73E] mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm text-gray-300 group-hover:text-white transition-colors">
+                    <Link
+                      href={service.href}
+                      className="text-sm text-gray-300 group-hover:text-white transition-colors"
+                    >
                       {service.name}
-                    </span>
+                    </Link>
                   </motion.li>
                 )
               })}

@@ -10,6 +10,7 @@ import Footer from "@/components/footer"
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"
+import Link from "next/link"
 
 const textData = [
   {
@@ -256,12 +257,18 @@ const Home = () => {
                       animate="visible"
                       variants={headerVariants.viewProjectsButton}
                     >
-                      <button className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto">
+                      <Link
+                        href="/inquiry"
+                        className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto text-center"
+                      >
                         Get a Free Quote
-                      </button>
-                      <button className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto">
+                      </Link>
+                      <Link
+                        href="/inquiry"
+                        className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto text-center"
+                      >
                         Learn More About Our Services
-                      </button>
+                      </Link>
                     </motion.div>
                     {/* <motion.button
                       onClick={() =>
@@ -313,12 +320,18 @@ const Home = () => {
                       animate="visible"
                       variants={headerVariants.viewProjectsButton}
                     >
-                      <button className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto">
+                      <Link
+                        href="/inquiry"
+                        className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto text-center"
+                      >
                         Get a Free Quote
-                      </button>
-                      <button className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto">
+                      </Link>
+                      <Link
+                        href="/inquiry"
+                        className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto text-center"
+                      >
                         Learn More About Our Services
-                      </button>
+                      </Link>
                     </motion.div>
                     {/* <motion.button
                       onClick={() =>

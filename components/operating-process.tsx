@@ -16,45 +16,35 @@ const steps = [
     icon: FileSearch,
     title: "Request & Assessment",
     description: "Submit your shipment details — our operations team will evaluate the fastest route and provide a quote within 15 minutes.",
-    gradient: "from-blue-500 via-blue-600 to-indigo-600",
-    iconGradient: "from-blue-500 to-indigo-600",
-    glowColor: "bg-blue-500/20",
+    color: "#194479",
   },
   {
     number: "02",
     icon: FileText,
     title: "Booking & Documentation",
     description: "We prepare all required paperwork and coordinate with carriers, airports, and customs to prevent delays.",
-    gradient: "from-[#91C73E] via-green-500 to-emerald-600",
-    iconGradient: "from-[#91C73E] to-emerald-600",
-    glowColor: "bg-[#91C73E]/20",
+    color: "#91C73E",
   },
   {
     number: "03",
     icon: Package,
     title: "Collection & Handover",
     description: "A trained courier picks up your shipment and prepares it for departure.",
-    gradient: "from-purple-500 via-purple-600 to-violet-600",
-    iconGradient: "from-purple-500 to-violet-600",
-    glowColor: "bg-purple-500/20",
+    color: "#194479",
   },
   {
     number: "04",
     icon: Radio,
     title: "Real-Time Updates",
     description: "From pickup to delivery, we send live status updates at every milestone.",
-    gradient: "from-orange-500 via-amber-500 to-yellow-500",
-    iconGradient: "from-orange-500 to-amber-600",
-    glowColor: "bg-orange-500/20",
+    color: "#91C73E",
   },
   {
     number: "05",
     icon: CheckCircle2,
     title: "Final Delivery Confirmation",
     description: "Once your shipment arrives, you'll receive instant proof of delivery — safely and on time.",
-    gradient: "from-[#194479] via-indigo-700 to-indigo-800",
-    iconGradient: "from-[#194479] to-indigo-800",
-    glowColor: "bg-[#194479]/20",
+    color: "#194479",
   },
 ]
 
@@ -260,51 +250,20 @@ export default function OperatingProcess() {
 
                       {/* Step Number Badge */}
                       <div className="absolute -top-3 -right-3 z-10">
-                        <motion.div
-                          initial={{ scale: 0, rotate: -180 }}
-                          whileInView={{ scale: 1, rotate: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ 
-                            duration: 0.6, 
-                            delay: index * 0.1 + 0.2,
-                            type: "spring"
-                          }}
-                          className={`relative w-12 h-12 rounded-full bg-gradient-to-br ${step.iconGradient} flex items-center justify-center shadow-xl`}
+                        <div
+                          className="relative w-12 h-12 rounded-full flex items-center justify-center shadow-xl"
+                          style={{ backgroundColor: step.color }}
                         >
                           <span className="text-white font-bold text-sm">{step.number}</span>
-                          <motion.div
-                            className={`absolute inset-0 rounded-full bg-gradient-to-br ${step.gradient} opacity-50 blur-md`}
-                            animate={{
-                              scale: [1, 1.3, 1],
-                              opacity: [0.5, 0, 0.5],
-                            }}
-                            transition={{
-                              duration: 2,
-                              repeat: Infinity,
-                              ease: "easeInOut",
-                              delay: index * 0.2,
-                            }}
-                          />
-                        </motion.div>
+                        </div>
                       </div>
 
                       {/* Icon Container */}
-                      <motion.div
-                        initial={{ scale: 0, rotate: -180 }}
-                        whileInView={{ scale: 1, rotate: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ 
-                          duration: 0.8, 
-                          delay: index * 0.1 + 0.3,
-                          type: "spring",
-                          stiffness: 200
-                        }}
-                        className="relative mb-6"
-                      >
-                        <div className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${step.iconGradient} flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
+                      <div className="relative mb-6">
+                        <div className="relative w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl" style={{ backgroundColor: step.color }}>
                           <Icon className="w-8 h-8 text-white" />
                         </div>
-                      </motion.div>
+                      </div>
 
                       {/* Content */}
                       <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 leading-tight">
@@ -314,13 +273,14 @@ export default function OperatingProcess() {
                         {step.description}
                       </p>
 
-                      {/* Decorative Gradient Line */}
+                      {/* Decorative Line */}
                       <motion.div
                         initial={{ scaleX: 0 }}
                         whileInView={{ scaleX: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: index * 0.1 + 0.4 }}
-                        className={`mt-6 h-1 bg-gradient-to-r ${step.gradient} rounded-full shadow-sm`}
+                        className="mt-6 h-1 rounded-full shadow-sm"
+                        style={{ backgroundColor: step.color }}
                       />
                     </div>
                   </div>

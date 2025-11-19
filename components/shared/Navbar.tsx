@@ -171,11 +171,11 @@ const Navbar = () => {
             {/* Social Media Icons - Right */}
             <div className="flex items-center gap-3 md:gap-4 order-3 md:order-none">
               <a
-                href="https://www.facebook.com/obc.care.kerpen"
+                href="https://www.facebook.com/obccare/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#91C73E] transition-colors"
-                title="Facebook: OBC CARE | Kerpen"
+                title="Facebook: OBC CARE"
               >
                 <Facebook className="w-5 h-5 md:w-6 md:h-6" />
               </a>
