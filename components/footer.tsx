@@ -123,7 +123,7 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
                 <MapPin className="w-6 h-6 text-[#91C73E]" />
               </div>
               <h3 className="text-xl font-bold">Contact</h3>
@@ -168,7 +168,7 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
                 <Truck className="w-6 h-6 text-[#91C73E]" />
               </div>
               <h3 className="text-xl font-bold">Our Services</h3>
@@ -206,10 +206,12 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
                 <Info className="w-6 h-6 text-[#91C73E]" />
               </div>
-              <h3 className="text-xl font-bold">About OBC Care</h3>
+              <h3 className="text-xl font-bold whitespace-nowrap">
+                About OBC Care
+              </h3>
             </motion.div>
 
             <ul className="space-y-3">
@@ -241,7 +243,7 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center">
+              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
                 <Cog className="w-6 h-6 text-[#91C73E]" />
               </div>
               <h3 className="text-xl font-bold">Quick Links</h3>
@@ -301,7 +303,7 @@ export default function Footer() {
                       whileTap={{ scale: 0.95 }}
                       className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#91C73E] transition-colors group"
                     >
-                      <Icon className="w-5 h-5 text-white group-hover:text-[#91C73E] transition-colors" />
+                      <Icon className="w-5 h-5 text-white group-hover:text-white transition-colors" />
                     </motion.a>
                   )
                 })}
