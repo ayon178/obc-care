@@ -37,7 +37,6 @@ const WordReveal = ({
 }
 
 export default function AboutSection() {
-
   const stats = [
     { icon: Globe, label: "Global Network", value: "150+" },
     { icon: Shield, label: "Trusted Partners", value: "500+" },
@@ -97,9 +96,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Section - Left Side with Professional Design */}
-          <motion.div
-            className="relative order-2 lg:order-1"
-          >
+          <motion.div className="relative order-2 lg:order-1">
             {/* Professional Image Container */}
             <div className="relative">
               {/* Decorative frame elements */}
@@ -119,9 +116,9 @@ export default function AboutSection() {
                 {/* Image */}
                 <div className="relative h-[500px] md:h-[650px] overflow-hidden">
                   <img
-                    src="/medical-logistics-warehouse-background-8IkL7.jpg"
+                    src="/images/about.png"
                     alt="OBC Care Global Logistics Operations"
-                    className="w-full h-full object-cover scale-110"
+                    className="w-full h-full object-cover object-left"
                   />
 
                   {/* Professional gradient overlays */}
@@ -145,39 +142,39 @@ export default function AboutSection() {
                 </div>
               </motion.div>
 
-                {/* Professional badge overlay */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8, y: 20 }}
-                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 0.5,
-                    type: "spring",
-                    stiffness: 200,
-                  }}
-                  viewport={{ once: true }}
-                  className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/50"
-                >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
-                        Trusted Worldwide
-                      </p>
-                      <p
-                        className="text-2xl font-bold"
-                        style={{ color: "#194479" }}
-                      >
-                        Global Excellence
-                      </p>
-                    </div>
-                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#194479] to-[#1d5a96] flex items-center justify-center shadow-lg">
-                      <Globe className="w-8 h-8 text-white" />
-                    </div>
+              {/* Professional badge overlay */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.5,
+                  type: "spring",
+                  stiffness: 200,
+                }}
+                viewport={{ once: true }}
+                className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/50"
+              >
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
+                      Trusted Worldwide
+                    </p>
+                    <p
+                      className="text-2xl font-bold"
+                      style={{ color: "#194479" }}
+                    >
+                      Global Excellence
+                    </p>
                   </div>
-                </motion.div>
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#194479] to-[#1d5a96] flex items-center justify-center shadow-lg">
+                    <Globe className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+              </motion.div>
 
-                {/* Corner accent */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#91C73E]/30 to-transparent rounded-bl-full"></div>
+              {/* Corner accent */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#91C73E]/30 to-transparent rounded-bl-full"></div>
             </div>
 
             {/* Floating stats cards */}
@@ -188,48 +185,46 @@ export default function AboutSection() {
               viewport={{ once: true }}
               className="absolute -right-6 top-1/2 -translate-y-1/2 hidden lg:block"
             >
-                <div className="bg-white rounded-2xl p-4 shadow-xl border border-gray-100 space-y-3">
-                  {stats.slice(0, 2).map((stat, index) => {
-                    const Icon = stat.icon
-                    return (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.8 + index * 0.1 }}
-                        viewport={{ once: true }}
-                        whileHover={{ scale: 1.05, x: 5 }}
-                        className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-gray-50 to-white hover:from-[#91C73E]/5 hover:to-white transition-all cursor-pointer"
+              <div className="bg-white rounded-2xl p-4 shadow-xl border border-gray-100 space-y-3">
+                {stats.slice(0, 2).map((stat, index) => {
+                  const Icon = stat.icon
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.8 + index * 0.1 }}
+                      viewport={{ once: true }}
+                      whileHover={{ scale: 1.05, x: 5 }}
+                      className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-gray-50 to-white hover:from-[#91C73E]/5 hover:to-white transition-all cursor-pointer"
+                    >
+                      <div
+                        className="w-10 h-10 rounded-lg flex items-center justify-center"
+                        style={{ backgroundColor: "#91C73E20" }}
                       >
-                        <div
-                          className="w-10 h-10 rounded-lg flex items-center justify-center"
-                          style={{ backgroundColor: "#91C73E20" }}
+                        <Icon
+                          className="w-5 h-5"
+                          style={{ color: "#91C73E" }}
+                        />
+                      </div>
+                      <div>
+                        <p
+                          className="text-lg font-bold"
+                          style={{ color: "#194479" }}
                         >
-                          <Icon
-                            className="w-5 h-5"
-                            style={{ color: "#91C73E" }}
-                          />
-                        </div>
-                        <div>
-                          <p
-                            className="text-lg font-bold"
-                            style={{ color: "#194479" }}
-                          >
-                            {stat.value}
-                          </p>
-                          <p className="text-xs text-gray-600">{stat.label}</p>
-                        </div>
-                      </motion.div>
-                    )
-                  })}
-                </div>
+                          {stat.value}
+                        </p>
+                        <p className="text-xs text-gray-600">{stat.label}</p>
+                      </div>
+                    </motion.div>
+                  )
+                })}
+              </div>
             </motion.div>
           </motion.div>
 
           {/* Content Section - Right Side */}
-          <motion.div
-            className="space-y-8 order-1 lg:order-2"
-          >
+          <motion.div className="space-y-8 order-1 lg:order-2">
             {/* Label with professional styling */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
