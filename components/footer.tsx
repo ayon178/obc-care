@@ -117,16 +117,23 @@ export default function Footer() {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 py-16"
         >
-          {/* Contact Section */}
+          {/* Logo and Brand Section */}
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
-                <MapPin className="w-6 h-6 text-[#91C73E]" />
+              <img
+                src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
+                alt="OBC Care Logo"
+                className="w-16 h-16 object-contain rounded-lg bg-white/10 p-2"
+              />
+              <div>
+                <h3 className="text-xl font-bold">OBC Care</h3>
+                <p className="text-sm text-white/80">
+                  Global Logistics Solutions
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Contact</h3>
             </motion.div>
 
             <div className="space-y-4">
@@ -159,6 +166,35 @@ export default function Footer() {
                 <Mail className="w-5 h-5 text-[#91C73E] group-hover:scale-110 transition-transform" />
                 <span className="text-sm">request@obc-care.com</span>
               </motion.a>
+            </div>
+
+            {/* Follow Us Section */}
+            <div className="mt-8 pt-8 border-t border-white/10">
+              <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
+                <span className="text-2xl">🌐</span>
+                Follow Us
+              </h3>
+              <p className="text-sm text-white mb-4">
+                Stay connected with us for logistics insights and updates:
+              </p>
+              <div className="flex items-center gap-4">
+                {socialLinks.map((social, index) => {
+                  const Icon = social.icon
+                  return (
+                    <motion.a
+                      key={index}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1, y: -3 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#91C73E] transition-colors group"
+                    >
+                      <Icon className="w-5 h-5 text-white group-hover:text-white transition-colors" />
+                    </motion.a>
+                  )
+                })}
+              </div>
             </div>
           </motion.div>
 
@@ -210,7 +246,7 @@ export default function Footer() {
                 <Info className="w-6 h-6 text-[#91C73E]" />
               </div>
               <h3 className="text-xl font-bold whitespace-nowrap">
-                About OBC Care
+                Quick Links
               </h3>
             </motion.div>
 
@@ -236,101 +272,6 @@ export default function Footer() {
               ))}
             </ul>
           </motion.div>
-
-          {/* Quick Links Section */}
-          <motion.div variants={itemVariants}>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center gap-3 mb-6"
-            >
-              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
-                <Cog className="w-6 h-6 text-[#91C73E]" />
-              </div>
-              <h3 className="text-xl font-bold">Quick Links</h3>
-            </motion.div>
-
-            <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <Link
-                    href={link.href}
-                    className="flex items-center gap-2 text-sm text-white hover:text-[#91C73E] transition-colors group"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#91C73E] opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <span className="group-hover:translate-x-1 transition-transform">
-                      {link.name}
-                    </span>
-                  </Link>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-        </motion.div>
-
-        {/* Follow Us Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="border-t border-white/10 pt-8 pb-6"
-        >
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div>
-              <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                <span className="text-2xl">🌐</span>
-                Follow Us
-              </h3>
-              <p className="text-sm text-white mb-4">
-                Stay connected with us for logistics insights and updates:
-              </p>
-              <div className="flex items-center gap-4">
-                {socialLinks.map((social, index) => {
-                  const Icon = social.icon
-                  return (
-                    <motion.a
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.1, y: -3 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#91C73E] transition-colors group"
-                    >
-                      <Icon className="w-5 h-5 text-white group-hover:text-white transition-colors" />
-                    </motion.a>
-                  )
-                })}
-              </div>
-            </div>
-
-            {/* Logo/Brand */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-              className="flex items-center gap-3"
-            >
-              <img
-                src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
-                alt="OBC Care Logo"
-                className="w-16 h-16 object-contain rounded-lg bg-white/10 p-2"
-              />
-              <div>
-                <h4 className="font-bold text-lg">OBC Care</h4>
-                <p className="text-xs text-white/80">
-                  Global Logistics Solutions
-                </p>
-              </div>
-            </motion.div>
-          </div>
         </motion.div>
 
         {/* Bottom Bar */}
