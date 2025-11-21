@@ -12,6 +12,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"
 import Link from "next/link"
+import ServicesCTA from "@/components/services-cta"
 
 const textData = [
   {
@@ -380,6 +381,7 @@ const Home = () => {
 
       {/* Urgent Support CTA Section */}
       <UrgentSupportCTA />
+      <ServicesCTA />
 
       {/* Footer */}
       <Footer />

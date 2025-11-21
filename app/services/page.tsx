@@ -9,6 +9,7 @@ import ShipmentMethods from "@/components/shipment-methods"
 import ServicesCTA from "@/components/services-cta"
 import Footer from "@/components/footer"
 import ShipmentMission from "@/components/shipment-mission"
+import UrgentSupportCTA from "@/components/urgent-support-cta"
 
 export default function ServicesPage() {
   return (
@@ -21,6 +22,8 @@ export default function ServicesPage() {
       <ShipmentMethods />
       {/* Shipment Mission Section */}
       <ShipmentMission />
+      {/* Urgent Support CTA Section */}
+      <UrgentSupportCTA />
       <ServicesCTA />
       <Footer />
     </main>

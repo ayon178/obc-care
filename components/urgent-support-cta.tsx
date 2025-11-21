@@ -117,36 +117,7 @@ export default function UrgentSupportCTA() {
             Expect a response within minutes once your inquiry is submitted.
           </motion.p>
 
-          {/* Feature Icons */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            viewport={{ once: true }}
-            className="flex flex-wrap justify-center gap-6 mb-12"
-          >
-            {[
-              { icon: Globe, text: "Global Coverage" },
-              { icon: Zap, text: "Fast Response" },
-              { icon: MessageSquare, text: "Real-Time Updates" },
-            ].map((feature, index) => {
-              const Icon = feature.icon
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.9 + index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  className="flex flex-col items-center gap-2 px-4 py-3 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20"
-                >
-                  <Icon className="w-6 h-6 text-[#91C73E]" />
-                  <span className="text-sm font-medium text-white">{feature.text}</span>
-                </motion.div>
-              )
-            })}
-          </motion.div>
+        
 
           {/* CTA Buttons */}
           <motion.div
@@ -265,6 +236,8 @@ export default function UrgentSupportCTA() {
           </motion.div>
         </div>
       </div>
+
+      
     </section>
   )
 }
