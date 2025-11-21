@@ -176,14 +176,7 @@ export default function KeyHighlights() {
                   </div>
 
                   {/* Icon Container */}
-                  <motion.div
-                    className="relative mb-6"
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: [0, -5, 5, 0],
-                      transition: { duration: 0.5 },
-                    }}
-                  >
+                  <div className="relative mb-6">
                     <div 
                       className="w-16 h-16 rounded-xl flex items-center justify-center relative overflow-hidden"
                       style={{ 
@@ -217,7 +210,7 @@ export default function KeyHighlights() {
                         className={`absolute inset-0 bg-gradient-to-br ${highlight.gradient} opacity-0 group-hover:opacity-30 blur-xl transition-opacity duration-300`}
                       />
                     </div>
-                  </motion.div>
+                  </div>
 
                   {/* Content */}
                   <motion.h3
