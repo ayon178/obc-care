@@ -118,13 +118,13 @@ const MobileSidebar = ({ isOpen, onClose, menuItems }) => {
                   </div>
                 ))}
                 <a
-                  href="https://www.selconnect.com.bd/"
+                  href="/inquiry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="buttonFont block text-white py-2 mt-4 border border-white rounded-full text-center hover:bg-white hover:text-primary transition-colors duration-300"
                   onClick={onClose}
                 >
-                  Sel connect
+                  Get a Quote
                 </a>
               </nav>
             </div>
