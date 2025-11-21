@@ -4,6 +4,7 @@ import Navbar from "@/components/shared/Navbar"
 import AboutSection from "@/components/about-section"
 import KeyHighlights from "@/components/key-highlights"
 import LogisticsAdvantage from "@/components/logistics-advantage"
+import ShipmentMission from "@/components/shipment-mission"
 import UrgentSupportCTA from "@/components/urgent-support-cta"
 import Footer from "@/components/footer"
 
@@ -50,11 +51,7 @@ const Home = () => {
   const [variantIndex, setVariantIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
 
-  const images = [
-    "/slide-1.png",
-    "/slide-2.png",
-    "/slide-3.png",
-  ]
+  const images = ["/slide-1.png", "/slide-2.png", "/slide-3.png"]
 
   const nextImage = () => {
     if (!isAnimating) {
@@ -377,6 +374,9 @@ const Home = () => {
 
       {/* Logistics Advantage Section */}
       <LogisticsAdvantage />
+
+      {/* Shipment Mission Section */}
+      <ShipmentMission />
 
       {/* Urgent Support CTA Section */}
       <UrgentSupportCTA />

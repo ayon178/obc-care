@@ -40,9 +40,9 @@ export default function LogisticsAdvantage() {
   ]
 
   return (
-    <section 
-      id="logistics-advantage" 
-      className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
+    <section
+      id="logistics-advantage"
+      className="py-16 md:pt-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
     >
       {/* Advanced Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -57,7 +57,7 @@ export default function LogisticsAdvantage() {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         />
         <motion.div
@@ -71,37 +71,39 @@ export default function LogisticsAdvantage() {
             duration: 15,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1
+            delay: 1,
           }}
         />
-        
+
         {/* Grid pattern overlay */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.02]"
           style={{
             backgroundImage: `
               linear-gradient(#194479 1px, transparent 1px),
               linear-gradient(90deg, #194479 1px, transparent 1px)
             `,
-            backgroundSize: "50px 50px"
+            backgroundSize: "50px 50px",
           }}
         />
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center relative">
           {/* Content Section - Left Side */}
-          <motion.div
-            className="space-y-6 relative z-10"
-          >
+          <motion.div className="space-y-6 relative z-10">
             {/* Small Label */}
             <motion.div
               initial={{ opacity: 0, x: -30, clipPath: "inset(0 100% 0 0)" }}
               whileInView={{ opacity: 1, x: 0, clipPath: "inset(0 0% 0 0)" }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{
+                duration: 0.8,
+                delay: 0.2,
+                ease: [0.25, 0.1, 0.25, 1],
+              }}
               viewport={{ once: true, margin: "-50px" }}
             >
-              <span 
+              <span
                 className="text-sm font-semibold tracking-wider uppercase inline-block relative"
                 style={{ color: "#91C73E" }}
               >
@@ -151,9 +153,11 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                OBC Care provides end-to-end logistics solutions designed for industries that can't afford delays — aviation, automotive, and electronics.
+                OBC Care provides end-to-end logistics solutions designed for
+                industries that can't afford delays — aviation, automotive, and
+                electronics.
               </motion.p>
-              
+
               <motion.p
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -161,9 +165,11 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                We coordinate first and last mile deliveries, onboard couriers, customs clearance, and next-flight-out (NFO) arrangements to ensure every shipment arrives when it's needed most.
+                We coordinate first and last mile deliveries, onboard couriers,
+                customs clearance, and next-flight-out (NFO) arrangements to
+                ensure every shipment arrives when it's needed most.
               </motion.p>
-              
+
               <motion.p
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -171,7 +177,8 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                Whether it's across the city or across the world, we move faster, think smarter, and deliver with care.
+                Whether it's across the city or across the world, we move
+                faster, think smarter, and deliver with care.
               </motion.p>
             </motion.div>
 
@@ -183,7 +190,10 @@ export default function LogisticsAdvantage() {
               viewport={{ once: true }}
               className="pt-3"
             >
-              <p className="text-lg md:text-xl font-semibold italic" style={{ color: "#194479" }}>
+              <p
+                className="text-lg md:text-xl font-semibold italic"
+                style={{ color: "#194479" }}
+              >
                 Your shipment, our mission — 24/7, across the globe.
               </p>
             </motion.div>
@@ -209,7 +219,9 @@ export default function LogisticsAdvantage() {
                     className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all"
                   >
                     <Icon className="w-5 h-5" style={{ color: "#91C73E" }} />
-                    <span className="text-sm font-medium text-gray-700">{feature.text}</span>
+                    <span className="text-sm font-medium text-gray-700">
+                      {feature.text}
+                    </span>
                   </motion.div>
                 )
               })}
@@ -227,7 +239,11 @@ export default function LogisticsAdvantage() {
                 <motion.div
                   initial={{ scaleX: 0, originX: 0 }}
                   whileInView={{ scaleX: 1 }}
-                  transition={{ duration: 1, delay: 1.6, ease: [0.25, 0.1, 0.25, 1] }}
+                  transition={{
+                    duration: 1,
+                    delay: 1.6,
+                    ease: [0.25, 0.1, 0.25, 1],
+                  }}
                   viewport={{ once: true }}
                   className="h-1 w-24 rounded-full absolute"
                   style={{ backgroundColor: "#91C73E" }}
@@ -245,9 +261,7 @@ export default function LogisticsAdvantage() {
           </motion.div>
 
           {/* Image Section - Right Side */}
-          <motion.div
-            className="relative z-0"
-          >
+          <motion.div className="relative z-0">
             {/* Image Container with Decorative Elements */}
             <div className="relative">
               {/* Multiple Decorative shapes with animations */}
@@ -258,7 +272,7 @@ export default function LogisticsAdvantage() {
                 transition={{
                   duration: 0.8,
                   type: "spring",
-                  stiffness: 200
+                  stiffness: 200,
                 }}
                 viewport={{ once: true }}
                 animate={{
@@ -267,10 +281,10 @@ export default function LogisticsAdvantage() {
                 transition={{
                   duration: 4,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
               />
-              
+
               <motion.div
                 className="absolute -top-3 -left-3 w-16 h-16 bg-[#194479]/15 rounded-full z-0"
                 initial={{ opacity: 0, scale: 0 }}
@@ -278,7 +292,7 @@ export default function LogisticsAdvantage() {
                 transition={{
                   duration: 0.6,
                   delay: 0.3,
-                  type: "spring"
+                  type: "spring",
                 }}
                 viewport={{ once: true }}
                 animate={{
@@ -287,18 +301,18 @@ export default function LogisticsAdvantage() {
                 transition={{
                   duration: 3,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
               />
-              
+
               {/* Main Image with Parallax */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, rotateY: 15 }}
                 whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
-                transition={{ 
+                transition={{
                   duration: 1,
                   delay: 0.2,
-                  ease: [0.25, 0.1, 0.25, 1]
+                  ease: [0.25, 0.1, 0.25, 1],
                 }}
                 viewport={{ once: true, margin: "-100px" }}
                 className="relative z-10 rounded-2xl overflow-hidden shadow-2xl"
@@ -307,19 +321,19 @@ export default function LogisticsAdvantage() {
                 }}
                 whileHover={{
                   scale: 1.02,
-                  transition: { duration: 0.3 }
+                  transition: { duration: 0.3 },
                 }}
               >
                 <div className="relative overflow-hidden">
-                  <img 
-                    src="/medical-courier-delivering-urgent-packages.jpg" 
-                    alt="OBC Care Logistics Operations - FM/LM and NFO Services" 
+                  <img
+                    src="/images/LogisticsAdvantage.png"
+                    alt="OBC Care Logistics Operations - FM/LM and NFO Services"
                     className="w-full h-[500px] md:h-[600px] object-cover"
                   />
                   {/* Advanced Gradient overlays */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                   <div className="absolute inset-0 bg-gradient-to-l from-[#194479]/10 to-transparent"></div>
-                  
+
                   {/* Shine effect on hover */}
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
@@ -334,18 +348,18 @@ export default function LogisticsAdvantage() {
               <motion.div
                 initial={{ opacity: 0, scale: 0, rotate: 180, y: 50 }}
                 whileInView={{ opacity: 1, scale: 1, rotate: 0, y: 0 }}
-                transition={{ 
+                transition={{
                   duration: 0.8,
                   delay: 0.5,
                   type: "spring",
-                  stiffness: 200
+                  stiffness: 200,
                 }}
                 viewport={{ once: true }}
                 className="absolute -bottom-6 -left-6 bg-white rounded-full p-4 shadow-2xl z-20"
                 whileHover={{
                   scale: 1.1,
                   rotate: -360,
-                  transition: { duration: 0.5 }
+                  transition: { duration: 0.5 },
                 }}
                 style={{
                   transformStyle: "preserve-3d",
@@ -367,12 +381,12 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 animate={{
                   y: [0, -10, 0],
-                  opacity: [0.5, 1, 0.5]
+                  opacity: [0.5, 1, 0.5],
                 }}
                 transition={{
                   duration: 2,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
               />
             </div>

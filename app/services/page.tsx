@@ -8,6 +8,7 @@ import DeliveryOptions from "@/components/delivery-options"
 import ShipmentMethods from "@/components/shipment-methods"
 import ServicesCTA from "@/components/services-cta"
 import Footer from "@/components/footer"
+import ShipmentMission from "@/components/shipment-mission"
 
 export default function ServicesPage() {
   return (
@@ -18,6 +19,8 @@ export default function ServicesPage() {
       <OperatingProcess />
       <DeliveryOptions />
       <ShipmentMethods />
+      {/* Shipment Mission Section */}
+      <ShipmentMission />
       <ServicesCTA />
       <Footer />
     </main>
