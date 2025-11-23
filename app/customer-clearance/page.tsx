@@ -10,6 +10,8 @@ import CustomsProcess from "@/components/customs/customs-process"
 import CustomsWhyChoose from "@/components/customs/customs-why-choose"
 import CustomsNetwork from "@/components/customs/customs-network"
 import CustomsJoin from "@/components/customs/customs-join"
+import ShipmentMission from "@/components/shipment-mission"
+import CustomsCta from "@/components/customs/customs-cta"
 
 export default function CustomsClearanceAssistancePage() {
   return (
@@ -23,6 +25,10 @@ export default function CustomsClearanceAssistancePage() {
       <CustomsWhyChoose />
       <CustomsNetwork />
       <CustomsJoin />
+      <div className="mt-10">
+        <ShipmentMission />
+      </div>
+      <CustomsCta />
       <Footer />
     </main>
   )
