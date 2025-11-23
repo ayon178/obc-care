@@ -11,6 +11,7 @@ import ObcHowItWorks from "@/components/obc/obc-how-it-works"
 import ObcNetwork from "@/components/obc/obc-network"
 import ObcJoin from "@/components/obc/obc-join"
 import ObcCta from "@/components/obc/obc-cta"
+import ShipmentMission from "@/components/shipment-mission"
 
 export default function OnboardCourierServicesPage() {
   return (
@@ -24,6 +25,10 @@ export default function OnboardCourierServicesPage() {
       <ObcHowItWorks />
       <ObcNetwork />
       <ObcJoin />
+      {/* Shipment Mission Section */}
+      <div className="mt-10">
+        <ShipmentMission />
+      </div>
       <ObcCta />
       <Footer />
     </main>
