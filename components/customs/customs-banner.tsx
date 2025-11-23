@@ -1,10 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Truck } from "lucide-react"
+import { Globe, FileText } from "lucide-react"
 import Link from "next/link"
 
-export default function FmlmBanner() {
+export default function CustomsBanner() {
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -28,16 +28,15 @@ export default function FmlmBanner() {
             className="max-w-4xl text-right ml-auto"
           >
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-white/10 text-white/90 text-[10px] sm:text-[11px] backdrop-blur self-end">
-              <Truck className="w-3 h-3" />
-              First Mile / Last Mile Delivery
+              <Globe className="w-3 h-3" />
+              Customs Clearance Assistance
             </span>
             <h1 className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight drop-shadow-2xl">
-              Bridging every mile — from pickup to delivery, with no delays.
+              Fast. Compliant. Stress-free.
             </h1>
             <p className="paragraphFont mt-2 text-white/95 text-[11px] sm:text-xs md:text-sm max-w-2xl drop-shadow-lg text-right ml-auto">
-              Seamless ground transport connecting airports, warehouses, and
-              destinations with speed, precision, and 24/7 availability —
-              worldwide.
+              We handle the paperwork so your shipment crosses borders without
+              a hitch.
             </p>
 
             <motion.div
@@ -70,3 +69,4 @@ export default function FmlmBanner() {
     </section>
   )
 }
+

@@ -9,6 +9,10 @@ import FmlmSolutions from "@/components/fmlm/fmlm-solutions"
 import FmlmHowItWorks from "@/components/fmlm/fmlm-how-it-works"
 import FmlmWhyChoose from "@/components/fmlm/fmlm-why-choose"
 import FmlmNetwork from "@/components/fmlm/fmlm-network"
+import FmlmQuoteCta from "@/components/fmlm/fmlm-quote-cta"
+import ShipmentMission from "@/components/shipment-mission"
+import FmlmJoin from "@/components/fmlm/fmlm-join"
+import FmlmCta from "@/components/fmlm/fmlm-cta"
 
 export default function FirstLastMileDeliveryPage() {
   return (
@@ -21,6 +25,13 @@ export default function FirstLastMileDeliveryPage() {
       <FmlmHowItWorks />
       <FmlmWhyChoose />
       <FmlmNetwork />
+      <FmlmQuoteCta />
+
+      <FmlmJoin />
+      <div className="mt-10">
+        <ShipmentMission />
+      </div>
+      <FmlmCta />
       <Footer />
     </main>
   )
