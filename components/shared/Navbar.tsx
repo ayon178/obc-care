@@ -31,7 +31,7 @@ const menuItems = [
         path: "/first-last-mile-delivery",
       },
       { label: "Customs Clearance", path: "/customer-clearance" },
-      { label: "Next Flight Out (NFO)", path: "/night-flight-out" },
+      { label: "Next Flight Out (NFO)", path: "/next-flight-out" },
     ],
   },
   {
