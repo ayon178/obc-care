@@ -68,7 +68,7 @@ export default function NfoIntro() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto mb-16"
         >
-          <h2 className="headingFont text-3xl sm:text-4xl md:text-5xl font-bold text-[#194479] leading-tight mb-6">
+          <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6">
             Time-Critical Logistics Without Compromise
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#91c73e] to-[#194479] mx-auto rounded-full" />

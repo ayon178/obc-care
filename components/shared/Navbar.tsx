@@ -38,26 +38,26 @@ const menuItems = [
     label: "Industries",
     path: "/industries",
     subItems: [
-      { label: "Aviation & AOG Parts", path: "/aviation-aog-parts" },
+      { label: "Aviation & AOG Parts", path: "/industries/aviation-aog-parts" },
       {
         label: "Automotive & Manufacturing",
-        path: "/automotive-manufacturing",
+        path: "/industries/automotive-manufacturing",
       },
       {
         label: "Electronics & Semiconductors",
-        path: "/electronics-semiconductors",
+        path: "/industries/electronics-semiconductors",
       },
       {
         label: "Industrial Machinery & Engineering",
-        path: "/industrial-machinery-engineering",
+        path: "/industries/industrial-machinery-engineering",
       },
       {
         label: "Technology & Data Equipment",
-        path: "/technology-data-equipment",
+        path: "/industries/technology-data-equipment",
       },
       {
         label: "High-Value / Confidential Documents",
-        path: "/high-value-confidential-documents",
+        path: "/industries/high-value-confidential-documents",
       },
     ],
   },

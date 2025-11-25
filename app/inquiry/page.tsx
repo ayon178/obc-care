@@ -254,7 +254,7 @@ export default function InquiryPage() {
             backgroundPosition: "center",
           }}
         >
-          <QuoteForm />
+            <QuoteForm />
 
           {/* How it works */}
           <div className="relative z-10 pt-6 px-4 sm:pt-8 sm:px-6 md:pt-10 md:pr-10 lg:pr-12">

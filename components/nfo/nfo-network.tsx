@@ -1,0 +1,238 @@
+"use client"
+
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { Globe, Plane, Clock, MapPin } from "lucide-react"
+
+const stats = [
+  { icon: Plane, value: "1000+", label: "Flights Daily" },
+  { icon: Globe, value: "24/7", label: "Control Tower" },
+  { icon: Clock, value: "Global", label: "Coverage" },
+]
+
+const coverageAreas = [
+  { region: "Asia", cities: ["Singapore", "Hong Kong", "Tokyo", "Dubai", "Mumbai"] },
+  { region: "Europe", cities: ["London", "Frankfurt", "Amsterdam", "Paris", "Milan"] },
+  { region: "Americas", cities: ["New York", "Los Angeles", "Miami", "Toronto", "São Paulo"] },
+]
+
+export default function NfoNetwork() {
+  return (
+    <section className="relative py-20 md:py-28 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          className="absolute top-20 right-20 w-96 h-96 bg-[#91c73e]/10 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.3, 0.5, 0.3],
+            x: [0, 30, 0],
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute bottom-20 left-20 w-80 h-80 bg-[#194479]/10 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
+            x: [0, -20, 0],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1,
+          }}
+        />
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12 md:mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold mb-6">
+              <Globe className="w-4 h-4" />
+              Global NFO Network
+            </div>
+            <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6 max-w-4xl mx-auto">
+              With access to thousands of commercial and cargo flights worldwide, OBC Care ensures the fastest routing possible — anytime, anywhere.
+            </h2>
+            <p className="paragraphFont text-gray-700 text-base md:text-lg max-w-3xl mx-auto">
+              Our control tower operates 24/7 to monitor routes, weather, customs, and flight availability in real time.
+            </p>
+          </motion.div>
+
+          {/* Split Layout: Content Left, Image Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12">
+            {/* Left: Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
+            >
+              {/* Stats Grid */}
+              <div className="grid grid-cols-3 gap-4 md:gap-6">
+                {stats.map((stat, index) => {
+                  const Icon = stat.icon
+                  return (
+                    <motion.div
+                      key={stat.label}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      className="bg-white rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-transparent hover:border-[#91c73e]/30"
+                    >
+                      <div className="w-12 h-12 rounded-xl bg-[#194479]/10 flex items-center justify-center mx-auto mb-3">
+                        <Icon className="w-6 h-6 text-[#194479]" />
+                      </div>
+                      <div className="text-2xl md:text-3xl font-bold text-[#194479] mb-1">
+                        {stat.value}
+                      </div>
+                      <div className="text-xs md:text-sm text-gray-600 font-medium">
+                        {stat.label}
+                      </div>
+                    </motion.div>
+                  )
+                })}
+              </div>
+
+              {/* Description Cards */}
+              <div className="space-y-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="bg-gradient-to-br from-[#194479] to-[#1a4a7f] rounded-2xl p-6 md:p-8 text-white shadow-xl"
+                >
+                  <h3 className="titleFont text-xl md:text-2xl font-bold mb-3">
+                    Worldwide Flight Access
+                  </h3>
+                  <p className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed">
+                    Thousands of commercial and cargo flights at your disposal, ensuring the fastest routing for your time-critical shipments.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border-2 border-[#91c73e]/20"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-[#91c73e]/10 flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-[#91c73e]" />
+                    </div>
+                    <div>
+                      <h3 className="titleFont text-[#194479] font-bold text-lg md:text-xl mb-2">
+                        24/7 Control Tower
+                      </h3>
+                      <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
+                        Real-time monitoring of routes, weather, customs, and flight availability across all time zones.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Right: Image with Coverage Cards */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <div className="relative h-[500px] md:h-[600px]">
+                  <Image
+                    src="/services/shipment.jpeg"
+                    alt="Global NFO Network"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/80 via-[#194479]/40 to-transparent" />
+                  
+                  {/* Coverage Area Cards - Aligned to Right Edge */}
+                  <div className="absolute bottom-0 right-0 top-0 flex flex-col justify-end p-4 md:p-6 gap-3">
+                    {coverageAreas.map((area, index) => (
+                      <motion.div
+                        key={area.region}
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                        className="bg-black/70 backdrop-blur-md rounded-l-lg rounded-r-none p-3 md:p-4 border-l-4 border-[#91c73e] shadow-xl max-w-[280px]"
+                      >
+                        <div className="flex items-center gap-2 mb-2">
+                          <MapPin className="w-4 h-4 text-[#91c73e] flex-shrink-0" />
+                          <h4 className="text-white font-bold text-sm md:text-base">
+                            {area.region}
+                          </h4>
+                        </div>
+                        <div className="flex flex-wrap gap-1.5">
+                          {area.cities.map((city, cityIndex) => (
+                            <span
+                              key={cityIndex}
+                              className="text-white/90 text-xs md:text-sm bg-white/10 px-2 py-1 rounded"
+                            >
+                              {city}
+                            </span>
+                          ))}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Bottom Stats Banner */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-[#194479] via-[#1a4a7f] to-[#194479] p-8 md:p-10 shadow-2xl"
+          >
+            <div className="absolute inset-0 bg-[url('/services/shipment.jpeg')] opacity-10 bg-cover bg-center" />
+            <div className="relative z-10">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="text-center md:text-left">
+                  <h3 className="headingFont text-white text-2xl md:text-3xl font-bold mb-2">
+                    Global Reach, Local Expertise
+                  </h3>
+                  <p className="paragraphFont text-white/90 text-base md:text-lg">
+                    Connecting your shipments to the world's fastest flight routes
+                  </p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md border-2 border-white/30 flex items-center justify-center">
+                    <Globe className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
