@@ -6,28 +6,40 @@ import { Truck, Package, User, HardHat } from "lucide-react"
 export default function AboutTeam() {
   const teamMembers = [
     {
-      name: "James Cameron",
-      role: "Deliver Boy",
+      name: "Eugen Reimer",
+      role: "CEO, Founder & General Manager",
       image: "/images/about/team-1.png",
       icon: <Truck className="h-8 w-8" />,
     },
     {
-      name: "William Logan",
-      role: "Driver", // Keeping role as per reference, even if he's in a suit
+      name: "Tanya Reimer",
+      role: "Accounting Manager",
       image: "/images/about/team-2.png",
       icon: <Package className="h-8 w-8" />,
     },
     {
-      name: "Sophia Arthur",
-      role: "HR Manager",
+      name: "Alexander Reimer",
+      role: "Operations Manager",
       image: "/images/about/team-3.png",
       icon: <User className="h-8 w-8" />,
     },
     {
-      name: "Michael Grey",
-      role: "Manager",
+      name: "Cristine Acosta",
+      role: "Project Manager",
       image: "/images/about/team-4.png",
       icon: <HardHat className="h-8 w-8" />,
+    },
+    {
+      name: "Noreleen Neypes",
+      role: "Project Manager",
+      image: "/images/about/team-1.png", // Reusing image for now
+      icon: <Package className="h-8 w-8" />,
+    },
+    {
+      name: "Renz Abad",
+      role: "Project Manager",
+      image: "/images/about/team-2.png", // Reusing image for now
+      icon: <Truck className="h-8 w-8" />,
     },
   ]
 
