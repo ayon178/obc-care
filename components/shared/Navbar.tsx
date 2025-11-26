@@ -70,7 +70,7 @@ const menuItems = [
     path: "/about-us",
   },
 
-  { label: "Contact", path: "contact" },
+  { label: "Contact", path: "/contact" },
 ]
 
 const Navbar = () => {

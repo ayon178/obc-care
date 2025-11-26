@@ -1,0 +1,46 @@
+"use client"
+
+import { motion } from "framer-motion"
+import Link from "next/link"
+import { ChevronRight } from "lucide-react"
+
+export default function ContactHero() {
+  return (
+    <section className="relative h-[400px] w-full overflow-hidden bg-[#194479]">
+      {/* Background Pattern/Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{
+          backgroundImage: "url('/images/world_map.jpg')", // Using existing map image
+        }}
+      />
+      
+      {/* Overlay Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#194479]/80 to-[#194479]" />
+
+      {/* Content */}
+      <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center text-center text-white">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          {/* Breadcrumb */}
+          <div className="flex items-center justify-center gap-2 text-sm md:text-base mb-4 text-gray-300">
+            <Link href="/" className="hover:text-[#91c73e] transition-colors">Home</Link>
+            <ChevronRight className="h-4 w-4" />
+            <span className="text-[#91c73e]">Contact Us</span>
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+            CONTACT US
+          </h1>
+          
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
+            Send Us a Message
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
