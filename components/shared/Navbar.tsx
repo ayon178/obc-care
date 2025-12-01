@@ -346,13 +346,24 @@ const Navbar = () => {
                 <Globe className="w-5 h-5 md:w-6 md:h-6" />
               </button>
 
+
               {/* Get a Quote Button */}
               <Button
                 onClick={() => router.push("/inquiry")}
-                className="hidden sm:flex bg-[#91C73E] hover:bg-[#91C73E]/90 text-white"
+                className="hidden cursor-pointer sm:flex bg-[#91C73E] hover:bg-[#91C73E]/90 text-white"
                 size="sm"
               >
                 Get a Quote
+              </Button>
+
+              
+              {/* Become an OBC Button */}
+              <Button
+                onClick={() => router.push("/become-obc")}
+                className="hidden cursor-pointer sm:flex bg-transparent border border-white text-white hover:bg-white hover:text-[#194479] transition-colors"
+                size="sm"
+              >
+                Become an OBC
               </Button>
 
               {/* Mobile Hamburger Menu */}
