@@ -246,36 +246,30 @@ export default function InquiryPage() {
           initial={{ opacity: 0, y: 50, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.8, type: "spring" }}
-          className="relative min-h-screen w-full flex flex-col lg:flex-row gap-x-16"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop")',
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+          className="relative min-h-screen w-full flex flex-col lg:flex-row gap-x-16 bg-white"
         >
             <QuoteForm />
 
           {/* How it works */}
           <div className="relative z-10 pt-6 px-4 sm:pt-8 sm:px-6 md:pt-10 md:pr-10 lg:pr-12">
-            <h2 className="text-2xl text-white sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 tracking-tight">
+            <h2 className="text-2xl text-primary sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 tracking-tight">
               How It Works
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-x-6 sm:gap-y-8 md:gap-x-8 md:gap-y-12">
               {/* Step 1 */}
               <div className="space-y-2">
-                <span className="text-white font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
+                <span className="text-slate-500 font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
                   STEP
                 </span>
-                <div className="text-4xl sm:text-5xl font-bold text-orange-400 mb-2 sm:mb-3">
+                <div className="text-4xl sm:text-5xl font-bold text-primary mb-2 sm:mb-3">
                   01
                 </div>
-                <h3 className="text-white font-semibold text-base sm:text-lg mb-2 leading-tight">
+                <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
                   Request a quote for your shipment
                 </h3>
                 {/* Decorative Chevron - positioned roughly where it is in the image */}
-                <div className="hidden md:block text-brand-orange mt-4">
+                <div className="hidden md:block text-primary mt-4">
                   <ChevronsLeft
                     size={32}
                     className="transform -rotate-45 opacity-80"
@@ -285,26 +279,26 @@ export default function InquiryPage() {
 
               {/* Step 2 */}
               <div className="space-y-2">
-                <span className="text-white font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
+                <span className="text-slate-500 font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
                   STEP
                 </span>
-                <div className="text-4xl sm:text-5xl font-bold text-orange-400 mb-2 sm:mb-3">
+                <div className="text-4xl sm:text-5xl font-bold text-primary mb-2 sm:mb-3">
                   02
                 </div>
-                <h3 className="text-white font-semibold text-base sm:text-lg mb-2 leading-tight">
+                <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
                   We will provide a quote for the services you need.
                 </h3>
               </div>
 
               {/* Step 3 */}
               <div className="space-y-2">
-                <span className="text-white font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
+                <span className="text-slate-500 font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
                   STEP
                 </span>
-                <div className="text-4xl sm:text-5xl font-bold text-orange-400 mb-2 sm:mb-3">
+                <div className="text-4xl sm:text-5xl font-bold text-primary mb-2 sm:mb-3">
                   03
                 </div>
-                <h3 className="text-white font-semibold text-base sm:text-lg mb-2 leading-tight">
+                <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
                   Once the quote is accepted, an agreement will be made on the
                   terms of payment.
                 </h3>
@@ -312,13 +306,13 @@ export default function InquiryPage() {
 
               {/* Step 4 */}
               <div className="space-y-2">
-                <span className="text-white font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
+                <span className="text-slate-500 font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
                   STEP
                 </span>
-                <div className="text-4xl sm:text-5xl font-bold text-orange-400 mb-2 sm:mb-3">
+                <div className="text-4xl sm:text-5xl font-bold text-primary mb-2 sm:mb-3">
                   04
                 </div>
-                <h3 className="text-white font-semibold text-base sm:text-lg mb-2 leading-tight">
+                <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
                   Once the agreement is confirmed, we go straight to work!
                 </h3>
               </div>

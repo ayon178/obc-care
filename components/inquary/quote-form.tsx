@@ -65,16 +65,16 @@ const QuoteForm: React.FC = () => {
   }
 
   return (
-    <div className="w-full bg-transparent border-r-2 border-orange-400 flex flex-col justify-center min-h-screen relative">
+    <div className="w-full bg-transparent border-r-2 border-primary flex flex-col justify-center min-h-screen relative">
       <div className="max-w-xl mx-auto w-full">
         {/* Header Section */}
         <div className="mb-10 pt-10 px-10">
-          <div className="inline-block border-b-[3px] border-brand-orange pb-1 mb-4">
-            <h2 className="text-sm font-bold text-white tracking-[0.2em] uppercase">
+          <div className="inline-block border-b-[3px] border-primary pb-1 mb-4">
+            <h2 className="text-base font-bold text-primary tracking-[0.2em] uppercase">
               Request a Quote
             </h2>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight">
             Want to manage your shipments with us?
           </h1>
         </div>
@@ -83,8 +83,8 @@ const QuoteForm: React.FC = () => {
         <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 lg:p-16 ">
           {/* Name */}
           <div className="space-y-2">
-            <label className="flex items-center gap-2 text-sm font-semibold text-slate-700">
-              <User size={16} className="text-brand-orange" />
+            <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+              <User size={18} className="text-primary" />
               Your Name <span className="text-red-500">*</span>
             </label>
             <input
@@ -94,14 +94,14 @@ const QuoteForm: React.FC = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Enter your full name"
-              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-sm rounded-md focus:ring-brand-orange focus:border-brand-orange block p-3.5 transition-colors"
+              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors"
             />
           </div>
 
           {/* Email */}
           <div className="space-y-2">
-            <label className="flex items-center gap-2 text-sm font-semibold text-slate-700">
-              <Mail size={16} className="text-brand-orange" />
+            <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+              <Mail size={18} className="text-primary" />
               Email <span className="text-red-500">*</span>
             </label>
             <input
@@ -111,14 +111,14 @@ const QuoteForm: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="your.email@example.com"
-              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-sm rounded-md focus:ring-brand-orange focus:border-brand-orange block p-3.5 transition-colors"
+              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors"
             />
           </div>
 
           {/* Phone */}
           <div className="space-y-2">
-            <label className="flex items-center gap-2 text-sm font-semibold text-slate-700">
-              <Phone size={16} className="text-brand-orange" />
+            <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+              <Phone size={18} className="text-primary" />
               Contact Number <span className="text-red-500">*</span>
             </label>
             <input
@@ -128,14 +128,14 @@ const QuoteForm: React.FC = () => {
               value={formData.phone}
               onChange={handleChange}
               placeholder="+1 (555) 123-4567"
-              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-sm rounded-md focus:ring-brand-orange focus:border-brand-orange block p-3.5 transition-colors"
+              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors"
             />
           </div>
 
           {/* Inquiry Type */}
           <div className="space-y-2">
-            <label className="flex items-center gap-2 text-sm font-semibold text-slate-700">
-              <FileText size={16} className="text-brand-orange" />
+            <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+              <FileText size={18} className="text-primary" />
               Select Your Inquiry Type <span className="text-red-500">*</span>
             </label>
             <select
@@ -143,7 +143,7 @@ const QuoteForm: React.FC = () => {
               required
               value={formData.inquiryType}
               onChange={handleChange}
-              className="w-full bg-gray-50 border border-gray-200 text-slate-500 text-sm rounded-md focus:ring-brand-orange focus:border-brand-orange block p-3.5 transition-colors"
+              className="w-full bg-gray-50 border border-gray-200 text-slate-500 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors"
             >
               <option value="" disabled>
                 Select an inquiry type
@@ -158,8 +158,8 @@ const QuoteForm: React.FC = () => {
 
           {/* Message */}
           <div className="space-y-2">
-            <label className="flex items-center gap-2 text-sm font-semibold text-slate-700">
-              <MessageSquare size={16} className="text-brand-orange" />
+            <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+              <MessageSquare size={18} className="text-primary" />
               Message Box
             </label>
             <textarea
@@ -168,9 +168,9 @@ const QuoteForm: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Tell us more about your inquiry..."
-              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-sm rounded-md focus:ring-brand-orange focus:border-brand-orange block p-3.5 transition-colors resize-none"
+              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors resize-none"
             />
-            <p className="text-xs text-slate-400 mt-1">
+            <p className="text-sm text-slate-400 mt-1">
               Optional - Provide additional details about your inquiry
             </p>
           </div>
@@ -179,7 +179,7 @@ const QuoteForm: React.FC = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-md transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-md transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg"
           >
             {isSubmitting ? (
               <>
@@ -199,7 +199,7 @@ const QuoteForm: React.FC = () => {
         {analysis && (
           <div className="mt-8 p-6 bg-slate-50 border border-slate-200 rounded-xl animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-brand-orange p-1.5 rounded text-white">
+              <div className="bg-primary p-1.5 rounded text-white">
                 <FileText size={16} />
               </div>
               <h3 className="text-lg font-bold text-slate-800">
@@ -237,7 +237,7 @@ const QuoteForm: React.FC = () => {
                       key={idx}
                       className="text-sm text-slate-700 flex items-start gap-2"
                     >
-                      <span className="min-w-[16px] text-brand-orange font-bold">
+                      <span className="min-w-[16px] text-primary font-bold">
                         {idx + 1}.
                       </span>
                       {step}
