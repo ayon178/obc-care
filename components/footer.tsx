@@ -17,6 +17,8 @@ import {
   Facebook,
   Linkedin,
   Instagram,
+  Twitter,
+  Youtube,
 } from "lucide-react"
 import Link from "next/link"
 
@@ -62,13 +64,6 @@ export default function Footer() {
     { name: "Get a Free Quote", href: "/inquiry" },
   ]
 
-  const quickLinks = [
-    { name: "Inquiry Form", href: "/inquiry" },
-    { name: "Terms & Conditions", href: "/terms" },
-    { name: "Impressum", href: "/impressum" },
-    { name: "Privacy Policy", href: "/privacy" },
-  ]
-
   const socialLinks = [
     {
       name: "Facebook",
@@ -84,6 +79,16 @@ export default function Footer() {
       name: "Instagram",
       icon: Instagram,
       href: "https://www.instagram.com/obc_care/",
+    },
+    {
+      name: "Twitter",
+      icon: Twitter,
+      href: "https://twitter.com/obc_care",
+    },
+    {
+      name: "Youtube",
+      icon: Youtube,
+      href: "https://www.youtube.com/@obc-care",
     },
   ]
 
@@ -115,10 +120,10 @@ export default function Footer() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 py-16"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 py-16 text-center md:text-left"
         >
           {/* Logo and Brand Section */}
-          <motion.div variants={itemVariants} className="lg:col-span-2">
+          <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 mb-6"
@@ -126,22 +131,22 @@ export default function Footer() {
               <img
                 src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
                 alt="OBC Care Logo"
-                className="w-16 h-16 object-contain rounded-lg bg-white/10 p-2"
+                className="w-20 h-20 object-contain rounded-lg bg-white/10 p-2"
               />
-              <div>
-                <h3 className="text-xl font-bold">OBC Care</h3>
-                <p className="text-sm text-white/80">
+              <div className="text-left">
+                <h3 className="text-2xl font-bold">OBC Care</h3>
+                <p className="text-base text-white/80">
                   Global Logistics Solutions
                 </p>
               </div>
             </motion.div>
 
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#91C73E] flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold mb-1">OBC Care e.K</p>
-                  <p className="text-white text-sm leading-relaxed">
+            <div className="space-y-4 w-full">
+              <div className="flex items-start gap-3 justify-center md:justify-start">
+                <MapPin className="w-6 h-6 text-[#91C73E] flex-shrink-0 mt-1" />
+                <div className="text-left">
+                  <p className="font-semibold mb-1 text-lg">OBC Care e.K</p>
+                  <p className="text-white text-base leading-relaxed">
                     Clemensstrasse 18
                     <br />
                     50169 Kerpen, Germany
@@ -151,33 +156,33 @@ export default function Footer() {
 
               <motion.a
                 href="tel:+4917645922485"
-                className="flex items-center gap-3 text-white hover:text-[#91C73E] transition-colors group"
+                className="flex items-center gap-3 text-white hover:text-[#91C73E] transition-colors group justify-center md:justify-start"
                 whileHover={{ x: 5 }}
               >
-                <Phone className="w-5 h-5 text-[#91C73E] group-hover:scale-110 transition-transform" />
-                <span className="text-sm">+49 176 459 224 85</span>
+                <Phone className="w-6 h-6 text-[#91C73E] group-hover:scale-110 transition-transform" />
+                <span className="text-base">+49 176 459 224 85</span>
               </motion.a>
 
               <motion.a
                 href="mailto:request@obc-care.com"
-                className="flex items-center gap-3 text-white hover:text-[#91C73E] transition-colors group"
+                className="flex items-center gap-3 text-white hover:text-[#91C73E] transition-colors group justify-center md:justify-start"
                 whileHover={{ x: 5 }}
               >
-                <Mail className="w-5 h-5 text-[#91C73E] group-hover:scale-110 transition-transform" />
-                <span className="text-sm">request@obc-care.com</span>
+                <Mail className="w-6 h-6 text-[#91C73E] group-hover:scale-110 transition-transform" />
+                <span className="text-base">request@obc-care.com</span>
               </motion.a>
             </div>
 
             {/* Follow Us Section */}
-            <div className="mt-8 pt-8 border-t border-white/10">
-              <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                <span className="text-2xl">🌐</span>
+            <div className="mt-8 pt-8 border-t border-white/10 w-full">
+              <h3 className="text-xl font-bold mb-3 flex items-center justify-center md:justify-start gap-2">
+                <span className="text-3xl">🌐</span>
                 Follow Us
               </h3>
-              <p className="text-sm text-white mb-4">
+              <p className="text-base text-white mb-6">
                 Stay connected with us for logistics insights and updates:
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center md:justify-start gap-4 flex-wrap">
                 {socialLinks.map((social, index) => {
                   const Icon = social.icon
                   return (
@@ -188,9 +193,9 @@ export default function Footer() {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1, y: -3 }}
                       whileTap={{ scale: 0.95 }}
-                      className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#91C73E] transition-colors group"
+                      className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#91C73E] transition-colors group"
                     >
-                      <Icon className="w-5 h-5 text-white group-hover:text-white transition-colors" />
+                      <Icon className="w-6 h-6 text-white group-hover:text-white transition-colors" />
                     </motion.a>
                   )
                 })}
@@ -199,18 +204,18 @@ export default function Footer() {
           </motion.div>
 
           {/* Our Services Section */}
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
-                <Truck className="w-6 h-6 text-[#91C73E]" />
+              <div className="w-14 h-14 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
+                <Truck className="w-7 h-7 text-[#91C73E]" />
               </div>
-              <h3 className="text-xl font-bold">Our Services</h3>
+              <h3 className="text-2xl font-bold">Our Services</h3>
             </motion.div>
 
-            <ul className="space-y-3">
+            <ul className="space-y-4 w-full">
               {services.map((service, index) => {
                 const Icon = service.icon
                 return (
@@ -221,12 +226,12 @@ export default function Footer() {
                     transition={{ delay: index * 0.1 }}
                     viewport={{ once: true }}
                     whileHover={{ x: 5 }}
-                    className="flex items-start gap-3 group"
+                    className="flex items-start gap-3 group justify-center md:justify-start"
                   >
-                    <Icon className="w-4 h-4 text-[#91C73E] mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                    <Icon className="w-5 h-5 text-[#91C73E] mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
                     <Link
                       href={service.href}
-                      className="text-sm text-white group-hover:text-[#91C73E] transition-colors"
+                      className="text-base text-white group-hover:text-[#91C73E] transition-colors text-left"
                     >
                       {service.name}
                     </Link>
@@ -237,20 +242,20 @@ export default function Footer() {
           </motion.div>
 
           {/* About OBC Care Section */}
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
-                <Info className="w-6 h-6 text-[#91C73E]" />
+              <div className="w-14 h-14 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
+                <Info className="w-7 h-7 text-[#91C73E]" />
               </div>
-              <h3 className="text-xl font-bold whitespace-nowrap">
+              <h3 className="text-2xl font-bold whitespace-nowrap">
                 Quick Links
               </h3>
             </motion.div>
 
-            <ul className="space-y-3">
+            <ul className="space-y-4 w-full">
               {aboutLinks.map((link, index) => (
                 <motion.li
                   key={index}
@@ -258,12 +263,13 @@ export default function Footer() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
+                  className="flex justify-center md:justify-start"
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center gap-2 text-sm text-white hover:text-[#91C73E] transition-colors group"
+                    className="flex items-center gap-2 text-base text-white hover:text-[#91C73E] transition-colors group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#91C73E] opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <span className="w-2 h-2 rounded-full bg-[#91C73E] opacity-0 group-hover:opacity-100 transition-opacity" />
                     <span className="group-hover:translate-x-1 transition-transform">
                       {link.name}
                     </span>
@@ -280,14 +286,14 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="border-t border-white/10 pt-6 pb-8"
+          className="border-t border-white/10 pt-8 pb-10"
         >
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm text-white/80">
-            <p>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-base text-white/80">
+            <p className="text-center md:text-left">
               &copy; {new Date().getFullYear()} OBC Care e.K. All rights
               reserved.
             </p>
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center justify-center md:justify-end gap-6">
               <Link
                 href="/privacy"
                 className="hover:text-[#91C73E] transition-colors"
