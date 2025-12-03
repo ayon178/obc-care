@@ -22,27 +22,33 @@ const textData = [
     secondLine: "You Can Trust",
     smallLine:
       "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
-    buttonText: "View Projects",
-    buttonLink: "#",
+    firstButtonText: "Get a Free Quote",
+    firstButtonLink: "/inquiry",
+    secondButtonText: "Learn More About Our Services",
+    secondButtonLink: "/services",
   },
   {
     // smallLine: 'The Structural Engineers Ltd.',
-    firstLine: "Modern design",
-    secondLine: "with craftsmanship",
+    firstLine: "When Every Minute",
+    secondLine: "Matters, We Deliver",
     smallLine:
-      "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
-    buttonText: "View Projects",
-    buttonLink: "#explore",
+      "Our 24/7 Onboard Courier team ensures the fastest, safest, and most transparent hand-carry delivery from pickup to final handover.",
+    firstButtonText: "Get a Free Quote",
+    firstButtonLink: "/inquiry",
+    secondButtonText: "Explore How OBC Works",
+    secondButtonLink: "/process",
   },
   {
     // smallLine: 'The Structural Engineers Ltd.',
-    firstLine: "Spaces resonating with ",
-    secondLine: "comfort and elegance",
+    firstLine: "Direct, Fast, and Secure",
+    secondLine: "OBC Solutions Worldwide",
     smallLine:
-      "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
+      "Your urgent shipment is personally escorted door-to-door, monitored in real time, and delivered exactly when you need it.",
     // thirdLine: 'reflecting value ',
-    buttonText: "View Projects",
-    buttonLink: "#get-started",
+     firstButtonText: "Book an OBC",
+    firstButtonLink: "/inquiry",
+    secondButtonText: "How OBC Works",
+    secondButtonLink: "/process",
   },
 ]
 
@@ -256,16 +262,16 @@ const Home = () => {
                       variants={headerVariants.viewProjectsButton}
                     >
                       <Link
-                        href="/inquiry"
+                        href={textData[currentImage].firstButtonLink}
                         className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto text-center"
                       >
-                        Get a Free Quote
+                        {textData[currentImage].firstButtonText}
                       </Link>
                       <Link
-                        href="/inquiry"
+                        href={textData[currentImage].secondButtonLink}
                         className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto text-center"
                       >
-                        Learn More About Our Services
+                        {textData[currentImage].secondButtonText}
                       </Link>
                     </motion.div>
                     {/* <motion.button
@@ -319,16 +325,16 @@ const Home = () => {
                       variants={headerVariants.viewProjectsButton}
                     >
                       <Link
-                        href="/inquiry"
+                        href={textData[currentImage].firstButtonLink}
                         className="buttonFont bg-[#194479] hover:bg-[#153666] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto text-center"
                       >
-                        Get a Free Quote
+                        {textData[currentImage].firstButtonText}
                       </Link>
                       <Link
-                        href="/inquiry"
+                        href={textData[currentImage].secondButtonLink}
                         className="buttonFont bg-[#91c73e] hover:bg-[#7bb033] text-white text-sm md:text-base px-4 py-2 rounded-md shadow-lg transition-all duration-300 ease-in-out w-full md:w-auto text-center"
                       >
-                        Learn More About Our Services
+                        {textData[currentImage].secondButtonText}
                       </Link>
                     </motion.div>
                     {/* <motion.button

@@ -32,7 +32,7 @@ const highlights = [
     icon: Bell,
     title: "Real-Time Updates",
     description:
-      "Stay informed at every milestone — our OBC team keeps you updated in real time, from pick-up to final delivery.",
+      "Stay informed at every milestone. Our OBC team keeps you updated in real time, from pick-up to final delivery.",
     color: "#91C73E",
     gradient: "from-[#91C73E] to-[#7bb033]",
   },

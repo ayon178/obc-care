@@ -153,9 +153,7 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                OBC Care provides end-to-end logistics solutions designed for
-                industries that can't afford delays — aviation, automotive, and
-                electronics.
+                OBC Care provides end-to-end logistics solutions designed for industries that can’t afford delays: <span className="font-bold">aviation, automotive, and electronics.</span>
               </motion.p>
 
               <motion.p

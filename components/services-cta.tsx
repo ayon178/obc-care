@@ -83,9 +83,7 @@ export default function ServicesCTA() {
               variants={staggerVariants}
               className="paragraphFont text-white/80 mt-4 text-sm sm:text-base md:text-lg"
             >
-              Whether it’s an urgent aircraft part or a last‑minute production
-              component, we deliver with speed, precision, and full visibility —
-              around the clock.
+              Whether it’s an urgent aircraft part or a last‑minute production component, we deliver with speed, precision, and full visibility, <span className="font-bold">around the clock.</span>
             </motion.p>
 
             <motion.div
@@ -169,8 +167,7 @@ export default function ServicesCTA() {
                 Precision Logistics, Delivered
               </h3>
               <p className="paragraphFont text-white/80 mt-2 text-sm md:text-base">
-                Priority handling, real‑time updates, and dedicated experts for
-                your most critical moves — anywhere in the world.
+                Priority handling, real‑time updates, and dedicated experts for your most critical moves, <span className="font-bold">anywhere in the world.</span>
               </p>
             </div>
           </motion.div>

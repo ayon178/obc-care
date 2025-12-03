@@ -280,9 +280,7 @@ export default function AboutSection() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                At OBC Care, we move what matters most — from production spare
-                parts and AOG shipments to automotive components and electronic
-                equipment.
+                At OBC Care, we move what matters most: from production spare parts and AOG shipments to automotive components and electronic equipment.
               </motion.p>
 
               <motion.p
