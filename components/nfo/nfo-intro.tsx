@@ -84,7 +84,7 @@ export default function NfoIntro() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 relative group"
           >
-            <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/services/shipment.jpeg"
                 alt="Time-Critical Logistics"

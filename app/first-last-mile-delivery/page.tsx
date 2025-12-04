@@ -25,7 +25,7 @@ export default function FirstLastMileDeliveryPage() {
       <FmlmHowItWorks />
       <FmlmWhyChoose />
       <FmlmNetwork />
-      <FmlmQuoteCta />
+      {/* <FmlmQuoteCta /> */}
 
       <FmlmJoin />
       <div className="mt-10">
