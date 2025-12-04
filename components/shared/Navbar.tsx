@@ -61,10 +61,7 @@ const menuItems = [
       },
     ],
   },
-  {
-    label: "Process",
-    path: "/process",
-  },
+  
   {
     label: "About Us",
     path: "/about-us",
@@ -244,20 +241,12 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center p-1.5 md:p-2 group-hover:bg-white/20 transition-colors">
+                <div className={`${isScrolled ? "w-12 h-12" : "w-20 h-20 md:w-24 md:h-24"} rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center p-1.5 md:p-2 group-hover:bg-white/20 transition-all duration-300`}>
                   <img
                     src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
                     alt="OBC Care Logo"
                     className="w-full h-full object-contain"
                   />
-                </div>
-                <div className="hidden sm:block">
-                  <h3 className="font-bold text-base md:text-lg text-white">
-                    OBC Care
-                  </h3>
-                  <p className="text-[10px] md:text-xs text-white/90">
-                    Global Logistics
-                  </p>
                 </div>
               </motion.div>
 
