@@ -62,6 +62,7 @@ export default function Footer() {
     { name: "Industries We Serve", href: "/industries" },
     { name: "Our Process", href: "/process" },
     { name: "Get a Free Quote", href: "/inquiry" },
+    { name: "Become an OBC", href: "/become-obc" },
   ]
 
   const socialLinks = [

@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Globe, Clock, Briefcase, Plane } from "lucide-react"
+import Navbar from "@/components/shared/Navbar"
+import Footer from "@/components/footer"
 
 const BecomeOBCPage = () => {
   const scrollToForm = () => {
@@ -16,8 +18,9 @@ const BecomeOBCPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-[#194479]">
+      <section className="relative h-[100vh] md:h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-[#194479] pt-10 md:pt-20">
         {/* Abstract Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#194479] via-[#12335b] to-[#0d2440]" />
@@ -58,11 +61,11 @@ const BecomeOBCPage = () => {
               </Button>
               <Button 
                 onClick={() => {
-                  const element = document.getElementById("requirements");
+                  const element = document.getElementById("why-become-obc");
                   if (element) element.scrollIntoView({ behavior: "smooth" });
                 }}
                 variant="outline"
-                className="bg-white/5 hover:bg-white/10 text-white border-white/20 text-lg px-10 py-7 h-auto rounded-full backdrop-blur-sm transition-all"
+                className="bg-white/5 hover:bg-white/10 text-white border-white/20 text-lg px-10 py-7 h-auto rounded-full backdrop-blur-sm transition-all cursor-pointer"
               >
                 Learn More
               </Button>
@@ -138,7 +141,7 @@ const BecomeOBCPage = () => {
       </section>
 
       {/* Why Become OBC Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="why-become-obc" className="py-20 bg-gray-50">
         <div className="container px-4 mx-auto">
           <h2 className="headingFont text-3xl md:text-4xl font-bold text-[#194479] text-center mb-16">
             Why You Should Become an Onboard Courier
@@ -207,6 +210,7 @@ const BecomeOBCPage = () => {
           </Button>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }
