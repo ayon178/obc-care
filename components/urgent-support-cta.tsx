@@ -178,7 +178,7 @@ export default function UrgentSupportCTA() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href="/inquiry"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-lg border-2 transition-all backdrop-blur-sm hover:bg-white/10"
                 style={{ 
                   borderColor: "#91C73E",

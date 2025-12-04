@@ -8,6 +8,7 @@ import Link from "next/link"
 import HowItWorks from "@/components/inquary/how-it-work"
 import QuoteForm from "@/components/inquary/quote-form"
 import { ChevronsLeft } from "lucide-react"
+import Footer from "@/components/footer"
 
 export default function InquiryPage() {
   return (
@@ -55,32 +56,14 @@ export default function InquiryPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
-          {/* Back Button with Enhanced Design */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, type: "spring" }}
-            className="mb-10"
-          >
-            <Link
-              href="/"
-              className="group inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm hover:shadow-md transition-all hover:border-[#194479]/30"
-            >
-              <motion.div whileHover={{ x: -5 }} transition={{ duration: 0.2 }}>
-                <ArrowLeft className="w-4 h-4 text-gray-600 group-hover:text-[#194479]" />
-              </motion.div>
-              <span className="text-gray-700 group-hover:text-[#194479] font-medium transition-colors">
-                Back to Home
-              </span>
-            </Link>
-          </motion.div>
+          
 
           {/* Header with Advanced Animations */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, type: "spring" }}
-            className="text-center mb-16"
+            className="text-center mb-16 mt-10"
           >
             {/* Badge with Pulse Effect */}
             <motion.div
@@ -368,6 +351,7 @@ export default function InquiryPage() {
           </motion.div>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

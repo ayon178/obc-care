@@ -109,7 +109,7 @@ export default function ServicesCTA() {
                 <span>Get a Free Quote</span>
               </Link>
               <Link
-                href="/inquiry"
+                href="/contact"
                 className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors flex items-center justify-center gap-2"
               >
                 <Phone className="w-4 h-4" />

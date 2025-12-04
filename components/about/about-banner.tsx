@@ -6,7 +6,7 @@ import { ChevronRight } from "lucide-react"
 
 export default function AboutBanner() {
   return (
-    <section className="relative h-[400px] w-full overflow-hidden bg-[#194479]">
+    <section className="relative pt-20 h-[400px] w-full overflow-hidden bg-[#194479]">
       {/* Background Pattern/Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"

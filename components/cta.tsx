@@ -31,6 +31,7 @@ export default function CTA() {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 rounded-lg font-semibold text-lg border-2 transition-all"
               style={{ borderColor: "#91C73E", color: "#91C73E" }}
+              onClick={() => window.location.href = "/contact"}
             >
               Contact Us
             </motion.button>

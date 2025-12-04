@@ -6,7 +6,7 @@ import { ChevronRight } from "lucide-react"
 
 export default function ContactHero() {
   return (
-    <section className="relative h-[400px] w-full overflow-hidden bg-[#194479]">
+    <section className="relative pt-20 h-[400px] w-full overflow-hidden bg-[#194479]">
       {/* Background Pattern/Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
@@ -27,7 +27,7 @@ export default function ContactHero() {
         >
           {/* Breadcrumb */}
           <div className="flex items-center justify-center gap-2 text-sm md:text-base mb-4 text-gray-300">
-            <Link href="/" className="hover:text-[#91c73e] transition-colors">Home</Link>
+            <Link href="/contact" className="hover:text-[#91c73e] transition-colors">Home</Link>
             <ChevronRight className="h-4 w-4" />
             <span className="text-[#91c73e]">Contact Us</span>
           </div>
