@@ -23,7 +23,7 @@ export default function ServicesPage() {
       {/* Shipment Mission Section */}
       <ShipmentMission />
       {/* Urgent Support CTA Section */}
-      <UrgentSupportCTA />
+      {/* <UrgentSupportCTA /> */}
       <ServicesCTA />
       <Footer />
     </main>

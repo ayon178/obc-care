@@ -42,7 +42,7 @@ const reasons = [
     title: "Guarantees Accountability",
     desc:
       "Every handover and movement is tracked and reported.",
-    image: "https://images.unsplash.com/photo-1601581875101-85c47016a1c2?q=80&w=600&auto=format&fit=crop",
+    image: "/services/gurantees.jpeg",
     color: "#194479",
   },
 ]

@@ -64,7 +64,7 @@ export default function DeliveryOptions() {
           </h2>
           <p className="paragraphFont mt-3 md:mt-4 text-sm sm:text-base md:text-lg text-gray-600 px-1">
             We tailor each transport solution to fit your operation&apos;s needs — whether it&apos;s
-            time-critical, sensitive, or high-value cargo.
+            <span className="whitespace-nowrap"> time-critical</span>, sensitive, or high-value cargo.
           </p>
         </motion.div>
 

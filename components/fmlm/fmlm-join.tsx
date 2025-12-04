@@ -145,14 +145,16 @@ export default function FmlmJoin() {
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
               <Link
-                href="/inquiry"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfWC80Mi-efCNpZFLBif3nK_Bzt5QoFAVct2bTk04lakDk8JQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="buttonFont inline-flex items-center gap-2 bg-[#194479] hover:bg-[#153666] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group"
               >
                 <span>Apply Now</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
-                href="/inquiry"
+                href="/contact"
                 className="buttonFont inline-flex items-center gap-2 bg-white border-2 border-[#194479] hover:bg-[#194479] hover:text-white text-[#194479] px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group"
               >
                 <span>Get in Touch</span>

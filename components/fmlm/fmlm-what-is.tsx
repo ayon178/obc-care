@@ -109,7 +109,7 @@ export default function FmlmWhatIs() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <div className="relative h-[500px] md:h-[600px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1601581875101-85c47016a1c2?q=80&w=1200&auto=format&fit=crop"
+                  src="/services/fast-last.jpeg"
                   alt="First Mile Last Mile Delivery"
                   fill
                   className="object-cover"
