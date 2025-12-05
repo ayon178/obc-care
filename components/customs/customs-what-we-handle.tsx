@@ -7,27 +7,27 @@ const services = [
   {
     icon: FileText,
     title: "Import & Export Declarations",
-    desc: "Meticulous filing and documentation to avoid clearance issues.",
+    desc: "Provides guidance and assistance to help navigate import and export processes efficiently.",
   },
   {
     icon: Calculator,
     title: "Duties, Taxes & Tariff Guidance",
-    desc: "We calculate and communicate all applicable charges upfront — no surprises.",
+    desc: "We advise and communicate applicable duties and taxes, helping you prepare for potential charges.",
   },
   {
     icon: FileCheck,
-    title: "Permit & License Coordination",
-    desc: "We manage everything from commercial invoices to special import permits.",
+    title: "Permit & License Coordination ",
+    desc: "Support the coordination of special permits and licenses required for your shipment.",
   },
   {
     icon: Plane,
-    title: "Airport & Border Handling",
-    desc: "Our team coordinates with airport customs and ground handlers for swift release.",
+    title: "Airport & Border Handling ",
+    desc: "Coordinates with airport customs and ground handlers for swift release.",
   },
   {
     icon: Package,
-    title: "Special Cargo Clearance",
-    desc: "Expert handling of restricted, high-value, or temperature-sensitive shipments.",
+    title: "Special Cargo Clearance ",
+    desc: "Expert handling of restricted, high-value, or temperature-sensitive shipments.",
   },
 ]
 
