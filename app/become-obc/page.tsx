@@ -20,7 +20,7 @@ const BecomeOBCPage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       {/* Hero Section */}
-      <section className="relative h-[100vh] md:h-[70vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-[#194479] pt-10 md:pt-20">
+      <section className="relative h-[100vh] pt-20 md:h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-[#194479] pt-10 md:pt-20">
         {/* Abstract Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#194479] via-[#12335b] to-[#0d2440]" />
@@ -151,23 +151,23 @@ const BecomeOBCPage = () => {
             {[
               {
                 icon: Plane,
-                title: "Every day is a new adventure",
-                description: "No two days are the same. One day you’re delivering essential machinery across Europe, the next you’re hand-carrying vital documents on a short domestic flight. Excitement is part of the job."
+                title: "Every Day Is a New Adventure",
+                description: "No two days are ever the same. One mission may take you across Europe delivering critical machinery; the next may have you hand-carrying urgent documents on a domestic flight. It’s a career built on excitement and purpose."
               },
               {
                 icon: Clock,
                 title: "Think Fast, Act Faster",
-                description: "Flights get delayed, shipments change last minute, and unexpected challenges arise. The best couriers adapt quickly, plan ahead, and turn obstacles into solutions."
+                description: "Delays happen. Plans change. Challenges appear without warning. Great couriers adapt quickly, stay calm under pressure, and always find a solution. If you thrive in fast-moving environments, this role is for you."
               },
               {
                 icon: Globe,
-                title: "A world of experiences",
-                description: "Every mission opens doors to new places, cultures, and professional connections. Gain international experience while making a real impact."
+                title: "A World of Experiences",
+                description: "Each assignment introduces you to new places, cultures, and people. It’s not just a job; it’s a gateway to global exposure, personal growth, and meaningful professional connections."
               },
               {
                 icon: Briefcase,
                 title: "Never a Boring Day",
-                description: "Variety is built into every assignment. From spare parts to urgent legal documents, each delivery is unique—and so is every challenge."
+                description: "Every shipment tells a different story. From aircraft parts to medical samples and urgent legal documents, every delivery is unique, and so is every challenge you overcome."
               }
             ].map((item, index) => (
               <motion.div

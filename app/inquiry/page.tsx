@@ -249,7 +249,8 @@ export default function InquiryPage() {
                   01
                 </div>
                 <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
-                  Request a quote for your shipment
+                  Submit your request. 
+
                 </h3>
                 {/* Decorative Chevron - positioned roughly where it is in the image */}
                 <div className="hidden md:block text-primary mt-4">
@@ -269,7 +270,7 @@ export default function InquiryPage() {
                   02
                 </div>
                 <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
-                  We will provide a quote for the services you need.
+                  Review our quote.
                 </h3>
               </div>
 
@@ -282,8 +283,8 @@ export default function InquiryPage() {
                   03
                 </div>
                 <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
-                  Once the quote is accepted, an agreement will be made on the
-                  terms of payment.
+                  Confirm the mission. 
+
                 </h3>
               </div>
 
@@ -296,7 +297,7 @@ export default function InquiryPage() {
                   04
                 </div>
                 <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
-                  Once the agreement is confirmed, we go straight to work!
+                  Sit back and receive your shipment with complete care.
                 </h3>
               </div>
             </div>
