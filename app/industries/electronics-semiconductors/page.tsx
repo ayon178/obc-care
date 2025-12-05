@@ -20,7 +20,7 @@ export default function ElectronicsSemiconductorsPage() {
       <ElectronicsWhatWeHandle />
       <ElectronicsHowItWorks />
       <ElectronicsWhyChoose />
-      <ElectronicsMission />
+      {/* <ElectronicsMission /> */}
       <div className="mt-10">
         <ShipmentMission />
       </div>

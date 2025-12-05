@@ -20,7 +20,7 @@ export default function HighValueConfidentialDocumentsPage() {
       <ConfidentialWhatWeHandle />
       <ConfidentialHowItWorks />
       <ConfidentialWhyChoose />
-      <ConfidentialMission />
+      {/* <ConfidentialMission /> */}
       <div className="mt-10">
         <ShipmentMission />
       </div>

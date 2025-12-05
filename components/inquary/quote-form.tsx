@@ -148,11 +148,18 @@ const QuoteForm: React.FC = () => {
               <option value="" disabled>
                 Select an inquiry type
               </option>
-              <option value="Air Freight">Air Freight</option>
-              <option value="Ocean Freight">Ocean Freight</option>
-              <option value="Road Freight">Road Freight</option>
-              <option value="Warehousing">Warehousing</option>
-              <option value="Customs Clearance">Customs Clearance</option>
+              <option value="On Board Courier Service">
+                On Board Courier Service
+              </option>
+              <option value="First Mile Delivery">First Mile Delivery</option>
+              <option value="Last Mile Delivery">Last Mile Delivery</option>
+              <option value="Road Freight Service">Road Freight Service</option>
+              <option value="Customs Clearance Assistance">
+                Customs Clearance Assistance
+              </option>
+              <option value="Next Flight Out Service">
+                Next Flight Out Service
+              </option>
             </select>
           </div>
 
