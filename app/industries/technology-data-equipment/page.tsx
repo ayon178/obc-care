@@ -20,7 +20,7 @@ export default function TechnologyDataEquipmentPage() {
       <TechnologyWhatWeHandle />
       <TechnologyHowItWorks />
       <TechnologyWhyChoose />
-      <TechnologyMission />
+      {/* <TechnologyMission /> */}
       <div className="mt-10">
         <ShipmentMission />
       </div>

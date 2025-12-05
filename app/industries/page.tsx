@@ -18,7 +18,7 @@ export default function IndustriesPage() {
       <IndustriesIntro />
       <IndustriesSupported />
       <IndustriesWhyPartner />
-      <IndustriesMission />
+      {/* <IndustriesMission /> */}
       <div className="mt-10">
         <ShipmentMission />
       </div>

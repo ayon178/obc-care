@@ -102,38 +102,7 @@ export default function AviationWhyChoose() {
             })}
           </div>
 
-          {/* Bottom Image Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="relative"
-          >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <div className="relative h-[300px] md:h-[400px]">
-                <Image
-                  src="/industries/avition/img1.png"
-                  alt="Aviation Operations"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/90 via-[#194479]/50 to-transparent" />
-                
-                {/* Overlay Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                  <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl">
-                    <h3 className="headingFont text-[#194479] text-xl md:text-2xl font-bold mb-2">
-                      Your shipment, our mission — 24/7, across the globe.
-                    </h3>
-                    <p className="paragraphFont text-gray-700 text-sm md:text-base">
-                      Trusted by aviation professionals worldwide for critical AOG logistics.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+          
         </div>
       </div>
     </section>

@@ -20,7 +20,7 @@ export default function AviationAogPartsPage() {
       <AviationWhatWeHandle />
       <AviationHowItWorks />
       <AviationWhyChoose />
-      <AviationMission />
+      {/* <AviationMission /> */}
       <div className="mt-10">
         <ShipmentMission />
       </div>

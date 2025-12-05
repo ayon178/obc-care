@@ -23,7 +23,7 @@ export default function IndustriesIntro() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
+          <p className="paragraphFont text-gray-700 text-base md:text-xl leading-relaxed">
             At OBC Care, we specialise in moving mission-critical shipments for industries where speed, precision and reliability are non-negotiable. Whether it's an aircraft on ground, a factory line waiting for parts, or sensitive data that can't be delayed – our global network delivers.
           </p>
         </motion.div>
