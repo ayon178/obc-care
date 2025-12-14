@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Plane, Shield, Globe, Clock, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 const benefits = [
   {
@@ -28,6 +29,14 @@ const benefits = [
 ]
 
 export default function ObcJoin() {
+  const t = useTranslations("ObcJoin")
+
+  const benefitsWithData = benefits.map((b, i) => ({
+    ...b,
+    title: t(`benefits.${i}.title`),
+    description: t(`benefits.${i}.description`),
+  }))
+
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* Background accents */}
@@ -55,7 +64,7 @@ export default function ObcJoin() {
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold"
             >
               <Plane className="w-4 h-4" />
-              <span>Join Our Team</span>
+              <span>{t("badge")}</span>
             </motion.div>
 
             {/* Heading */}
@@ -66,7 +75,7 @@ export default function ObcJoin() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="headingFont text-3xl sm:text-4xl md:text-5xl font-bold text-[#194479] leading-tight"
             >
-              Become an On Board Courier
+              {t("title")}
             </motion.h2>
 
             {/* Description */}
@@ -77,9 +86,7 @@ export default function ObcJoin() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed"
             >
-              Join a global network of professional couriers who deliver critical
-              shipments with precision and care. Be part of missions that matter
-              — from urgent medical supplies to time-sensitive industrial parts.
+              {t("description1")}
             </motion.p>
 
             <motion.p
@@ -89,9 +96,7 @@ export default function ObcJoin() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed"
             >
-              At OBC Care, we value reliability, professionalism, and a
-              commitment to excellence. If you're ready to make a difference
-              while traveling the world, we want to hear from you.
+              {t("description2")}
             </motion.p>
 
             {/* Benefits Grid */}
@@ -102,7 +107,7 @@ export default function ObcJoin() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4"
             >
-              {benefits.map((benefit, index) => {
+              {benefitsWithData.map((benefit, index) => {
                 const Icon = benefit.icon
                 return (
                   <motion.div
@@ -141,7 +146,7 @@ export default function ObcJoin() {
                 href="/inquiry"
                 className="buttonFont inline-flex items-center gap-2 bg-[#194479] hover:bg-[#153666] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group"
               >
-                <span>Start your journey with OBC Care today</span>
+                <span>{t("cta")}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
@@ -161,7 +166,7 @@ export default function ObcJoin() {
               <div className="relative h-[500px] md:h-[600px] overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop"
-                  alt="On Board Courier professional"
+                  alt={t("imageAlt")}
                   className="w-full h-full object-cover"
                 />
                 {/* Gradient overlay */}
@@ -191,7 +196,7 @@ export default function ObcJoin() {
                     1,200+
                   </p>
                   <p className="paragraphFont text-xs text-gray-600">
-                    Active Couriers
+                    {t("stats")}
                   </p>
                 </div>
               </div>

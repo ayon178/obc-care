@@ -252,6 +252,118 @@
         }
       }
     },
-    "imageCaption": "OBC missions, FM/LM or NFO in action — priority handling worldwide."
+    "imageCaption": "OBC missions, FM/LM or NFO in action — priority handling worldwide."     
+  },
+  "ObcBanner": {
+    "badge": "Onboard Courier (OBC) Service",
+    "title": "From airport to doorstep — hand‑carried, monitored, and delivered with care.",
+    "description": "We move your most time‑critical, high‑value shipments with priority handling and full visibility — 24/7, worldwide.",
+    "getQuote": "Get a Free Quote",
+    "talkTeam": "Talk to Our Team"
+  },
+  "ObcWhatIs": {
+    "badge": "What Is an Onboard Courier Service?",
+    "title": "Fastest and most secure way to move urgent shipments worldwide",
+    "p1": "An Onboard Courier (OBC) service is the fastest and most secure way to move urgent shipments across the globe.",
+    "p2": "A professional courier personally carries your shipment as hand luggage on a commercial flight, ensuring it is never left unattended or delayed in cargo.",
+    "p3": "This hand‑carry method is used for time‑critical, high‑value, or sensitive shipments, guaranteeing priority handling, direct supervision, and the shortest possible delivery time.",
+    "imageAlt": "Onboard Courier hand-carry"
+  },
+  "ObcWhyImportant": {
+    "badge": "Why Is OBC Important?",
+    "title": "When every minute counts",
+    "description": "OBC services keep operations running in aviation, automotive, tech, and manufacturing by eliminating delays and maintaining custody at every step.",
+    "items": {
+      "0": { "title": "Zero Room for Error", "description": "Avoid misrouting, loss, or delays common in standard air cargo with hand-carry supervision." },
+      "1": { "title": "Immediate Availability", "description": "Your shipment moves on the next available flight — not in days." },
+      "2": { "title": "Continuous Control", "description": "Courier handles customs, security, and delivery personally — no third‑party handovers." },
+      "3": { "title": "Peace of Mind", "description": "Live status updates ensure full visibility from pickup to final handover." },
+      "4": { "title": "Critical for Urgent Industries", "description": "Ideal for AOG parts, prototypes, sensitive items, and confidential documents." }
+    }
+  },
+  "ObcWhyChoose": {
+    "badge": "Why Choose OBC Care?",
+    "title": "Precision‑driven hand‑carry logistics",
+    "description": "A distinct operating model that pairs rapid mobilization with continuous custody.",
+    "stats": {
+      "quoteSla": { "value": "15m", "label": "Quote SLA" },
+      "activeObc": { "value": "1,200+", "label": "Active OBCs" },
+      "countries": { "value": "70+", "label": "Countries" },
+      "title": "Built for Critical Missions",
+      "subtitle": "Hand‑carry operations with auditable custody and proactive exception handling."
+    },
+    "items": {
+      "0": { "title": "Speed You Can Rely On", "description": "Next available flight — no cargo wait or consolidation delays." },
+      "1": { "title": "Maximum Security", "description": "Continuous custody from check‑in to customs to handover." },
+      "2": { "title": "Real‑Time Updates", "description": "Live notifications for flight status and delivery confirmation." },
+      "3": { "title": "Global Coverage", "description": "Rapid mobilization across Europe, Asia, Middle East, North America." },
+      "4": { "title": "Trained & Verified Couriers", "description": "Professionally trained, background‑checked, OBC‑experienced." }
+    }
+  },
+  "ObcIndustries": {
+    "badge": "Industries We Serve",
+    "title": "Built for operations that can’t afford downtime",
+    "description": "A distinctive mosaic layout highlighting impact across verticals.",
+    "stats": {
+      "dispatch": { "value": "24/7", "label": "Dispatch" },
+      "handling": { "value": "Priority", "label": "Handling" },
+      "custody": { "value": "Secure", "label": "Custody" }
+    },
+    "items": {
+      "0": { "title": "Aviation & AOG", "description": "Urgent aircraft parts, tools, and documents to keep operations flying." },
+      "1": { "title": "Automotive", "description": "Critical components and prototypes delivered to production lines." },
+      "2": { "title": "Technology & Electronics", "description": "Secure movement of chips, prototypes, and sensitive data carriers." },
+      "3": { "title": "Industrial & Manufacturing", "description": "Avoid downtime with fast delivery of essential machinery parts." },
+      "4": { "title": "Documents & Confidential", "description": "Legal, diplomatic, or business‑sensitive items — safely hand‑carried." }
+    }
+  },
+  "ObcHowItWorks": {
+    "badge": "How It Works",
+    "title": "Timeline of an OBC Mission",
+    "description": "A vertical timeline with connected nodes showing custody from quote to delivery.",
+    "steps": {
+      "0": { "title": "Inquiry & Quotation", "description": "Contact us and receive a free quote within minutes." },
+      "1": { "title": "Courier Assignment", "description": "Nearest available OBC deployed for immediate dispatch." },
+      "2": { "title": "Pickup & Verification", "description": "Shipment verified, sealed, and escorted to the airport." },
+      "3": { "title": "In‑Transit Updates", "description": "Live notifications from departure to landing." },
+      "4": { "title": "Final Delivery", "description": "Courier hand‑delivers directly to the consignee — fast and secure." }
+    }
+  },
+  "ObcNetwork": {
+    "badge": "OBC Network",
+    "title": "A global hand‑carry network on standby",
+    "description": "With trained couriers stationed across major hubs, we dispatch the nearest OBC within minutes — ensuring priority handling and continuous custody.",
+    "stats": {
+      "activeObcs": "Active OBCs",
+      "countries": "Countries",
+      "quoteSla": "Quote SLA"
+    },
+    "bullets": {
+      "0": "Nearest‑courier dispatch for time‑critical missions",
+      "1": "Continuous supervision through customs and handover",
+      "2": "Live status updates from pickup to delivery"
+    }
+  },
+  "ObcJoin": {
+    "badge": "Join Our Team",
+    "title": "Become an On Board Courier",
+    "description1": "Join a global network of professional couriers who deliver critical shipments with precision and care. Be part of missions that matter — from urgent medical supplies to time-sensitive industrial parts.",
+    "description2": "At OBC Care, we value reliability, professionalism, and a commitment to excellence. If you're ready to make a difference while traveling the world, we want to hear from you.",
+    "cta": "Start your journey with OBC Care today",
+    "imageAlt": "On Board Courier professional",
+    "stats": "Active Couriers",
+    "benefits": {
+      "0": { "title": "Travel Opportunities", "description": "Explore the world while earning" },
+      "1": { "title": "Flexible Schedule", "description": "Choose missions that fit your lifestyle" },
+      "2": { "title": "Global Network", "description": "Join 1,200+ couriers worldwide" },
+      "3": { "title": "Competitive Pay", "description": "Fair compensation for your expertise" }
+    }
+  },
+  "ObcCta": {
+    "title": "Your Urgent Shipment, Our Immediate Priority",
+    "description": "With 1,200+ professional couriers across 70 countries, we ensure your time-critical shipments receive the attention they deserve. From inquiry to delivery, we're with you every step of the way.",
+    "primary": "Get a Free Quote Today",
+    "secondary": "Talk to Our Team"
   }
 }
+```

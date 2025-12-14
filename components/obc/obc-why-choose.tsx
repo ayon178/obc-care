@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ShieldCheck, Plane, Globe2, Bell, UserCheck, Timer } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const featureList = [
   {
@@ -32,6 +33,15 @@ const featureList = [
 ]
 
 export default function ObcWhyChoose() {
+  const t = useTranslations("ObcWhyChoose")
+
+  // Map features to icons using index to fetch translation
+  const featureListWithData = featureList.map((f, i) => ({
+    ...f,
+    title: t(`items.${i}.title`),
+    desc: t(`items.${i}.description`),
+  }))
+
   return (
     <section
       className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden"
@@ -46,13 +56,13 @@ export default function ObcWhyChoose() {
         {/* Header */}
         <motion.div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
-            Why Choose OBC Care?
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
-            Precision‑driven hand‑carry logistics
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
-            A distinct operating model that pairs rapid mobilization with continuous custody.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -68,25 +78,25 @@ export default function ObcWhyChoose() {
               </div>
               <div>
                 <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg">
-                  Built for Critical Missions
+                  {t("stats.title")}
                 </h3>
                 <p className="paragraphFont mt-1.5 text-gray-600 text-sm">
-                  Hand‑carry operations with auditable custody and proactive exception handling.
+                  {t("stats.subtitle")}
                 </p>
               </div>
             </div>
             <div className="mt-5 grid grid-cols-3 gap-3">
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-base md:text-lg">15m</div>
-                <div className="paragraphFont text-gray-600 text-[11px]">Quote SLA</div>
+                <div className="titleFont text-[#194479] text-base md:text-lg">{t("stats.quoteSla.value")}</div>
+                <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.quoteSla.label")}</div>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-base md:text-lg">1,200+</div>
-                <div className="paragraphFont text-gray-600 text-[11px]">Active OBCs</div>
+                <div className="titleFont text-[#194479] text-base md:text-lg">{t("stats.activeObc.value")}</div>
+                <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.activeObc.label")}</div>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-base md:text-lg">70+</div>
-                <div className="paragraphFont text-gray-600 text-[11px]">Countries</div>
+                <div className="titleFont text-[#194479] text-base md:text-lg">{t("stats.countries.value")}</div>
+                <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.countries.label")}</div>
               </div>
             </div>
           </motion.div>
@@ -99,7 +109,7 @@ export default function ObcWhyChoose() {
             <div className="hidden md:block absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#194479]/30 via-[#194479]/20 to-transparent" />
 
             <div className="space-y-4 md:space-y-5">
-              {featureList.map((f, i) => {
+              {featureListWithData.map((f, i) => {
                 const Icon = f.icon
                 return (
                   <motion.div

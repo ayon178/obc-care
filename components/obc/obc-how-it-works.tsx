@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { FileSearch, UserCheck, ShieldCheck, Radio, CheckCircle2 } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const steps = [
   { title: "Inquiry & Quotation", desc: "Contact us and receive a free quote within minutes.", icon: FileSearch },
@@ -12,6 +13,15 @@ const steps = [
 ]
 
 export default function ObcHowItWorks() {
+  const t = useTranslations("ObcHowItWorks")
+
+  // Map steps to icons using index to fetch translation
+  const stepsWithData = steps.map((s, i) => ({
+    ...s,
+    title: t(`steps.${i}.title`),
+    desc: t(`steps.${i}.description`),
+  }))
+
   return (
     <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* background accents */}
@@ -24,13 +34,13 @@ export default function ObcHowItWorks() {
         {/* Header */}
         <motion.div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
-            How It Works
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
-            Timeline of an OBC Mission
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
-            A vertical timeline with connected nodes showing custody from quote to delivery.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -40,7 +50,7 @@ export default function ObcHowItWorks() {
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#194479]/30 via-[#194479]/20 to-transparent -translate-x-1/2 md:translate-x-0" />
 
           <div className="space-y-6 md:space-y-8">
-            {steps.map((s, i) => {
+            {stepsWithData.map((s, i) => {
               const Icon = s.icon
               const isLeft = i % 2 === 0
               const cardCols = isLeft

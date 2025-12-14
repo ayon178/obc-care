@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { ArrowRight, Phone, Mail } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function ObcCta() {
+  const t = useTranslations("ObcCta")
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
@@ -50,7 +53,7 @@ export default function ObcCta() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="headingFont text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight"
               >
-                Your Urgent Shipment, Our Immediate Priority
+                {t("title")}
               </motion.h2>
 
               {/* Reassurance Paragraph */}
@@ -61,9 +64,7 @@ export default function ObcCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="paragraphFont text-white/90 text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
               >
-                With 1,200+ professional couriers across 70 countries, we ensure
-                your time-critical shipments receive the attention they deserve.
-                From inquiry to delivery, we're with you every step of the way.
+                {t("description")}
               </motion.p>
 
               {/* CTA Buttons */}
@@ -90,7 +91,7 @@ export default function ObcCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg">
-                    Get a Free Quote Today
+                    {t("primary")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -102,7 +103,7 @@ export default function ObcCta() {
                 >
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span className="font-semibold text-base md:text-lg">
-                    Talk to Our Team
+                    {t("secondary")}
                   </span>
                 </Link>
               </motion.div>

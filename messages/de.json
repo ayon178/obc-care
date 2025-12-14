@@ -252,6 +252,118 @@
         }
       }
     },
-    "imageCaption": "OBC-Missionen, FM/LM oder NFO in Aktion — Prioritätsbehandlung weltweit."
+    "imageCaption": "OBC-Missionen, FM/LM oder NFO in Aktion – Prioritätsbehandlung weltweit."
+  },
+  "ObcBanner": {
+    "badge": "On Board Kurier (OBC) Service",
+    "title": "Vom Flughafen bis zur Haustür – persönlich begleitet, überwacht und sorgfältig geliefert.",
+    "description": "Wir bewegen Ihre zeitkritischsten, hochwertigsten Sendungen mit Prioritätsbehandlung und voller Transparenz – 24/7, weltweit.",
+    "getQuote": "Kostenloses Angebot anfordern",
+    "talkTeam": "Sprechen Sie mit unserem Team"
+  },
+  "ObcWhatIs": {
+    "badge": "Was ist ein On Board Kurier Service?",
+    "title": "Der schnellste und sicherste Weg, dringende Sendungen weltweit zu bewegen",
+    "p1": "Ein On Board Kurier (OBC) Service ist der schnellste und sicherste Weg, um dringende Sendungen rund um den Globus zu bewegen.",
+    "p2": "Ein professioneller Kurier transportiert Ihre Sendung persönlich als Handgepäck auf einem kommerziellen Flug und stellt sicher, dass sie niemals unbeaufsichtigt bleibt oder im Frachtraum verzögert wird.",
+    "p3": "Diese Hand-Carry-Methode wird für zeitkritische, hochwertige oder sensible Sendungen verwendet und garantiert Prioritätsbehandlung, direkte Überwachung und die kürzestmögliche Lieferzeit.",
+    "imageAlt": "On Board Kurier Hand-Carry"
+  },
+  "ObcWhyImportant": {
+    "badge": "Warum ist OBC wichtig?",
+    "title": "Wenn jede Minute zählt",
+    "description": "OBC-Dienste halten den Betrieb in Luftfahrt, Automobil, Technologie und Fertigung am Laufen, indem sie Verzögerungen eliminieren und die Obhut bei jedem Schritt aufrechterhalten.",
+    "items": {
+      "0": { "title": "Kein Raum für Fehler", "description": "Vermeiden Sie Fehlleitungen, Verluste oder Verzögerungen, die bei Standard-Luftfracht üblich sind, durch Hand-Carry-Überwachung." },
+      "1": { "title": "Sofortige Verfügbarkeit", "description": "Ihre Sendung wird mit dem nächsten verfügbaren Flug transportiert – nicht erst in Tagen." },
+      "2": { "title": "Kontinuierliche Kontrolle", "description": "Der Kurier kümmert sich persönlich um Zoll, Sicherheit und Zustellung – keine Übergaben an Dritte." },
+      "3": { "title": "Sicherheit", "description": "Live-Status-Updates gewährleisten volle Transparenz von der Abholung bis zur endgültigen Übergabe." },
+      "4": { "title": "Kritisch für dringende Industrien", "description": "Ideal für AOG-Teile, Prototypen, sensible Artikel und vertrauliche Dokumente." }
+    }
+  },
+  "ObcWhyChoose": {
+    "badge": "Warum OBC Care wählen?",
+    "title": "Präzisionsgetriebene Hand-Carry-Logistik",
+    "description": "Ein ausgeprägtes Betriebsmodell, das schnelle Mobilisierung mit kontinuierlicher Obhut verbindet.",
+    "stats": {
+      "quoteSla": { "value": "15m", "label": "Angebot SLA" },
+      "activeObc": { "value": "1.200+", "label": "Aktive OBCs" },
+      "countries": { "value": "70+", "label": "Länder" },
+      "title": "Gebaut für kritische Missionen",
+      "subtitle": "Hand-Carry-Operationen mit überprüfbarer Obhut und proaktiver Ausnahmebehandlung."
+    },
+    "items": {
+      "0": { "title": "Verlässliche Geschwindigkeit", "description": "Nächster verfügbarer Flug – keine Wartezeiten für Fracht oder Konsolidierungsverzögerungen." },
+      "1": { "title": "Maximale Sicherheit", "description": "Kontinuierliche Obhut vom Check-in über den Zoll bis zur Übergabe." },
+      "2": { "title": "Echtzeit-Updates", "description": "Live-Benachrichtigungen für Flugstatus und Zustellbestätigung." },
+      "3": { "title": "Globale Abdeckung", "description": "Schnelle Mobilisierung in Europa, Asien, dem Nahen Osten und Nordamerika." },
+      "4": { "title": "Geschulte & verifizierte Kuriere", "description": "Professionell ausgebildet, hintergrundüberprüft und OBC-erfahren." }
+    }
+  },
+  "ObcIndustries": {
+    "badge": "Branchen, die wir bedienen",
+    "title": "Gebaut für Operationen, die sich keine Ausfallzeiten leisten können",
+    "description": "Ein unverwechselbares Mosaik-Layout, das die Auswirkungen über Vertikale hinweg hervorhebt.",
+    "stats": {
+      "dispatch": { "value": "24/7", "label": "Versand" },
+      "handling": { "value": "Priorität", "label": "Bearbeitung" },
+      "custody": { "value": "Sicher", "label": "Obhut" }
+    },
+    "items": {
+      "0": { "title": "Luftfahrt & AOG", "description": "Dringende Flugzeugteile, Werkzeuge und Dokumente, um den Betrieb am Fliegen zu halten." },
+      "1": { "title": "Automobil", "description": "Kritische Komponenten und Prototypen, die an Produktionslinien geliefert werden." },
+      "2": { "title": "Technologie & Elektronik", "description": "Sicherer Transport von Chips, Prototypen und sensiblen Datenträgern." },
+      "3": { "title": "Industrie & Fertigung", "description": "Vermeidung von Ausfallzeiten durch schnelle Lieferung wesentlicher Maschinenteile." },
+      "4": { "title": "Dokumente & Vertrauliches", "description": "Rechtliche, diplomatische oder geschäftskritische Artikel – sicher handgetragen." }
+    }
+  },
+  "ObcHowItWorks": {
+    "badge": "Wie es funktioniert",
+    "title": "Zeitleiste einer OBC-Mission",
+    "description": "Eine vertikale Zeitleiste mit verbundenen Knoten, die die Obhut vom Angebot bis zur Zustellung zeigt.",
+    "steps": {
+      "0": { "title": "Anfrage & Angebot", "description": "Kontaktieren Sie uns und erhalten Sie innerhalb von Minuten ein kostenloses Angebot." },
+      "1": { "title": "Kurierzuweisung", "description": "Nächstgelegener verfügbarer OBC für sofortigen Einsatz bereitgestellt." },
+      "2": { "title": "Abholung & Verifizierung", "description": "Sendung verifiziert, versiegelt und zum Flughafen begleitet." },
+      "3": { "title": "Updates während des Transports", "description": "Live-Benachrichtigungen vom Abflug bis zur Landung." },
+      "4": { "title": "Endgültige Zustellung", "description": "Kurier liefert persönlich direkt an den Empfänger – schnell und sicher." }
+    }
+  },
+  "ObcNetwork": {
+    "badge": "OBC-Netzwerk",
+    "title": "Ein globales Hand-Carry-Netzwerk auf Abruf",
+    "description": "Mit geschulten Kurieren an wichtigen Knotenpunkten entsenden wir den nächstgelegenen OBC innerhalb von Minuten – für Prioritätsbehandlung und kontinuierliche Obhut.",
+    "stats": {
+      "activeObcs": "Aktive OBCs",
+      "countries": "Länder",
+      "quoteSla": "Angebot SLA"
+    },
+    "bullets": {
+      "0": "Entsendung des nächstgelegenen Kuriers für zeitkritische Missionen",
+      "1": "Kontinuierliche Überwachung durch Zoll und Übergabe",
+      "2": "Live-Status-Updates von der Abholung bis zur Zustellung"
+    }
+  },
+  "ObcJoin": {
+    "badge": "Werden Sie Teil unseres Teams",
+    "title": "Werden Sie On Board Kurier",
+    "description1": "Schließen Sie sich einem globalen Netzwerk professioneller Kuriere an, die kritische Sendungen mit Präzision und Sorgfalt liefern. Seien Sie Teil von Missionen, die zählen – von dringenden medizinischen Hilfsgütern bis zu zeitkritischen Industrieteilen.",
+    "description2": "Bei OBC Care schätzen wir Zuverlässigkeit, Professionalität und Engagement für Exzellenz. Wenn Sie bereit sind, einen Unterschied zu machen, während Sie die Welt bereisen, möchten wir von Ihnen hören.",
+    "cta": "Starten Sie Ihre Reise mit OBC Care noch heute",
+    "imageAlt": "On Board Kurier Profi",
+    "stats": "Aktive Kuriere",
+    "benefits": {
+      "0": { "title": "Reisemöglichkeiten", "description": "Entdecken Sie die Welt, während Sie verdienen" },
+      "1": { "title": "Flexibler Zeitplan", "description": "Wählen Sie Missionen, die zu Ihrem Lebensstil passen" },
+      "2": { "title": "Globales Netzwerk", "description": "Schließen Sie sich 1.200+ Kurieren weltweit an" },
+      "3": { "title": "Wettbewerbsfähige Bezahlung", "description": "Faire Vergütung für Ihre Expertise" }
+    }
+  },
+  "ObcCta": {
+    "title": "Ihre dringende Sendung, unsere sofortige Priorität",
+    "description": "Mit 1.200+ professionellen Kurieren in 70 Ländern stellen wir sicher, dass Ihre zeitkritischen Sendungen die Aufmerksamkeit erhalten, die sie verdienen. Von der Anfrage bis zur Zustellung sind wir bei jedem Schritt an Ihrer Seite.",
+    "primary": "Kostenloses Angebot anfordern",
+    "secondary": "Sprechen Sie mit unserem Team"
   }
 }
+```

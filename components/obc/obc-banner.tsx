@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function ObcBanner() {
+  const t = useTranslations("ObcBanner")
+
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -27,14 +30,13 @@ export default function ObcBanner() {
             className="max-w-4xl text-right ml-auto"
           >
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-white/10 text-white/90 text-[10px] sm:text-[11px] backdrop-blur self-end">
-              Onboard Courier (OBC) Service
+              {t("badge")}
             </span>
             <h1 className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight drop-shadow-2xl">
-              From airport to doorstep — hand‑carried, monitored, and delivered with care.
+              {t("title")}
             </h1>
             <p className="paragraphFont mt-2 text-white/95 text-[11px] sm:text-xs md:text-sm max-w-2xl drop-shadow-lg text-right ml-auto">
-              We move your most time‑critical, high‑value shipments with priority handling and
-              full visibility — 24/7, worldwide.
+              {t("description")}
             </p>
 
             <motion.div
@@ -51,13 +53,13 @@ export default function ObcBanner() {
                   background: "linear-gradient(135deg, #91C73E 0%, #7bb033 60%)",
                 }}
               >
-                <span>Get a Free Quote</span>
+                <span>{t("getQuote")}</span>
               </Link>
               <Link
                 href="/inquiry"
                 className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors text-center"
               >
-                Talk to Our Team
+                {t("talkTeam")}
               </Link>
             </motion.div>
           </motion.div>

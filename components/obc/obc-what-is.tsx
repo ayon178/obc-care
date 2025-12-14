@@ -2,8 +2,11 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { useTranslations } from "next-intl"
 
 export default function ObcWhatIs() {
+  const t = useTranslations("ObcWhatIs")
+
   return (
     <section
       className="relative py-14 md:py-20 bg-white overflow-hidden"
@@ -13,25 +16,20 @@ export default function ObcWhatIs() {
           {/* Text */}
           <div>
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
-              What Is an Onboard Courier Service?
+              {t("badge")}
             </span>
             <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479] leading-tight">
-              Fastest and most secure way to move urgent shipments worldwide
+              {t("title")}
             </h2>
             <div className="paragraphFont mt-3 space-y-3 text-gray-700">
               <p className="text-[13px] sm:text-sm md:text-base">
-                An Onboard Courier (OBC) service is the fastest and most secure
-                way to move urgent shipments across the globe.
+                {t("p1")}
               </p>
               <p className="text-[13px] sm:text-sm md:text-base">
-                A professional courier personally carries your shipment as hand
-                luggage on a commercial flight, ensuring it is never left
-                unattended or delayed in cargo.
+                {t("p2")}
               </p>
               <p className="text-[13px] sm:text-sm md:text-base">
-                This hand‑carry method is used for time‑critical, high‑value, or
-                sensitive shipments, guaranteeing priority handling, direct
-                supervision, and the shortest possible delivery time.
+                {t("p3")}
               </p>
             </div>
           </div>
@@ -42,7 +40,7 @@ export default function ObcWhatIs() {
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:16px_16px]" />
               <Image
                 src="/services/shipment.jpeg"
-                alt="Onboard Courier hand-carry"
+                alt={t("imageAlt")}
                 width={1200}
                 height={900}
                 className="h-[260px] sm:h-[320px] md:h-[380px] w-full object-cover"

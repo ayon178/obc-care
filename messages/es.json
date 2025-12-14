@@ -253,5 +253,116 @@
       }
     },
     "imageCaption": "Misiones OBC, FM/LM o NFO en acción — manejo prioritario en todo el mundo."
+  },
+  "ObcBanner": {
+    "badge": "Servicio de Mensajero a Bordo (OBC)",
+    "title": "Del aeropuerto a la puerta — llevado en mano, monitoreado y entregado con cuidado.",
+    "description": "Movemos sus envíos más críticos y de alto valor con manejo prioritario y visibilidad total — 24/7, en todo el mundo.",
+    "getQuote": "Obtener cotización gratis",
+    "talkTeam": "Hable con nuestro equipo"
+  },
+  "ObcWhatIs": {
+    "badge": "¿Qué es un Servicio de Mensajero a Bordo?",
+    "title": "La forma más rápida y segura de mover envíos urgentes en todo el mundo",
+    "p1": "Un servicio de Mensajero a Bordo (OBC) es la forma más rápida y segura de mover envíos urgentes a través del mundo.",
+    "p2": "Un mensajero profesional lleva personalmente su envío como equipaje de mano en un vuelo comercial, asegurando que nunca se deje desatendido o retrasado en la carga.",
+    "p3": "Este método de transporte manual se utiliza para envíos críticos, de alto valor o sensibles, garantizando un manejo prioritario, supervisión directa y el tiempo de entrega más corto posible.",
+    "imageAlt": "Mensajero a Bordo transporte manual"
+  },
+  "ObcWhyImportant": {
+    "badge": "¿Por qué es importante OBC?",
+    "title": "Cuando cada minuto cuenta",
+    "description": "Los servicios OBC mantienen en funcionamiento las operaciones en aviación, automoción, tecnología y fabricación al eliminar retrasos y mantener la custodia en cada paso.",
+    "items": {
+      "0": { "title": "Cero margen de error", "description": "Evite errores de enrutamiento, pérdidas o retrasos comunes en la carga aérea estándar con supervisión de transporte manual." },
+      "1": { "title": "Disponibilidad inmediata", "description": "Su envío se mueve en el próximo vuelo disponible — no en días." },
+      "2": { "title": "Control continuo", "description": "El mensajero maneja aduanas, seguridad y entrega personalmente — sin traspasos a terceros." },
+      "3": { "title": "Tranquilidad", "description": "Las actualizaciones de estado en vivo aseguran una visibilidad total desde la recogida hasta la entrega final." },
+      "4": { "title": "Crítico para industrias urgentes", "description": "Ideal para piezas AOG, prototipos, artículos sensibles y documentos confidenciales." }
+    }
+  },
+  "ObcWhyChoose": {
+    "badge": "¿Por qué elegir OBC Care?",
+    "title": "Logística de transporte manual impulsada por la precisión",
+    "description": "Un modelo operativo distinto que combina una movilización rápida con una custodia continua.",
+    "stats": {
+      "quoteSla": { "value": "15m", "label": "Cotización SLA" },
+      "activeObc": { "value": "1,200+", "label": "OBCs Activos" },
+      "countries": { "value": "70+", "label": "Países" },
+      "title": "Construido para misiones críticas",
+      "subtitle": "Operaciones de transporte manual con custodia auditable y manejo proactivo de excepciones."
+    },
+    "items": {
+      "0": { "title": "Velocidad en la que puede confiar", "description": "Próximo vuelo disponible — sin esperas de carga o retrasos de consolidación." },
+      "1": { "title": "Máxima seguridad", "description": "Custodia continua desde el check-in hasta la aduana y la entrega." },
+      "2": { "title": "Actualizaciones en tiempo real", "description": "Notificaciones en vivo para el estado del vuelo y la confirmación de la entrega." },
+      "3": { "title": "Cobertura global", "description": "Movilización rápida en Europa, Asia, Medio Oriente, América del Norte." },
+      "4": { "title": "Mensajeros entrenados y verificados", "description": "Profesionalmente entrenados, con antecedentes verificados y experiencia en OBC." }
+    }
+  },
+  "ObcIndustries": {
+    "badge": "Industrias que servimos",
+    "title": "Construido para operaciones que no pueden permitirse tiempo de inactividad",
+    "description": "Un diseño de mosaico distintivo que destaca el impacto en las verticales.",
+    "stats": {
+      "dispatch": { "value": "24/7", "label": "Despacho" },
+      "handling": { "value": "Prioridad", "label": "Manejo" },
+      "custody": { "value": "Segura", "label": "Custodia" }
+    },
+    "items": {
+      "0": { "title": "Aviación y AOG", "description": "Piezas de aviones urgentes, herramientas y documentos para mantener las operaciones volando." },
+      "1": { "title": "Automoción", "description": "Componentes críticos y prototipos entregados a las líneas de producción." },
+      "2": { "title": "Tecnología y Electrónica", "description": "Movimiento seguro de chips, prototipos y soportes de datos sensibles." },
+      "3": { "title": "Industrial y Manufactura", "description": "Evite el tiempo de inactividad con la entrega rápida de piezas de maquinaria esenciales." },
+      "4": { "title": "Documentos y Confidencial", "description": "Artículos legales, diplomáticos o sensibles al negocio — transportados a mano de forma segura." }
+    }
+  },
+  "ObcHowItWorks": {
+    "badge": "Cómo funciona",
+    "title": "Línea de tiempo de una misión OBC",
+    "description": "Una línea de tiempo vertical con nodos conectados que muestra la custodia desde la cotización hasta la entrega.",
+    "steps": {
+      "0": { "title": "Consulta y Cotización", "description": "Contáctenos y reciba una cotización gratuita en minutos." },
+      "1": { "title": "Asignación de mensajero", "description": "OBC disponible más cercano desplegado para despacho inmediato." },
+      "2": { "title": "Recogida y Verificación", "description": "Envío verificado, sellado y escoltado al aeropuerto." },
+      "3": { "title": "Actualizaciones en tránsito", "description": "Notificaciones en vivo desde la salida hasta el aterrizaje." },
+      "4": { "title": "Entrega final", "description": "El mensajero entrega personalmente directamente al consignatario — rápido y seguro." }
+    }
+  },
+  "ObcNetwork": {
+    "badge": "Red OBC",
+    "title": "Una red global de transporte manual en espera",
+    "description": "Con mensajeros entrenados estacionados en los principales centros, enviamos al OBC más cercano en minutos — asegurando manejo prioritario y custodia continua.",
+    "stats": {
+      "activeObcs": "OBCs Activos",
+      "countries": "Países",
+      "quoteSla": "Cotización SLA"
+    },
+    "bullets": {
+      "0": "Despacho del mensajero más cercano para misiones críticas",
+      "1": "Supervisión continua a través de aduanas y entrega",
+      "2": "Actualizaciones de estado en vivo desde la recogida hasta la entrega"
+    }
+  },
+  "ObcJoin": {
+    "badge": "Únete a nuestro equipo",
+    "title": "Conviértete en un Mensajero a Bordo",
+    "description1": "Únete a una red global de mensajeros profesionales que entregan envíos críticos con precisión y cuidado. Sé parte de misiones que importan — desde suministros médicos urgentes hasta piezas industriales sensibles al tiempo.",
+    "description2": "En OBC Care, valoramos la fiabilidad, el profesionalismo y el compromiso con la excelencia. Si estás listo para marcar la diferencia mientras viajas por el mundo, queremos saber de ti.",
+    "cta": "Comienza tu viaje con OBC Care hoy",
+    "imageAlt": "Profesional Mensajero a Bordo",
+    "stats": "Mensajeros Activos",
+    "benefits": {
+      "0": { "title": "Oportunidades de viaje", "description": "Explora el mundo mientras ganas" },
+      "1": { "title": "Horario flexible", "description": "Elige misiones que se adapten a tu estilo de vida" },
+      "2": { "title": "Red global", "description": "Únete a 1,200+ mensajeros en todo el mundo" },
+      "3": { "title": "Pago competitivo", "description": "Compensación justa por tu experiencia" }
+    }
+  },
+  "ObcCta": {
+    "title": "Su envío urgente, nuestra prioridad inmediata",
+    "description": "Con 1,200+ mensajeros profesionales en 70 países, aseguramos que sus envíos críticos reciban la atención que merecen. Desde la consulta hasta la entrega, estamos con usted en cada paso del camino.",
+    "primary": "Obtener una cotización gratuita hoy",
+    "secondary": "Hable con nuestro equipo"
   }
 }

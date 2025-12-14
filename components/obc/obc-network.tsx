@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Globe2, Users, Timer } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const stats = [
   { label: "Active OBCs", value: "1,200+", icon: Users },
@@ -10,6 +11,14 @@ const stats = [
 ]
 
 export default function ObcNetwork() {
+  const t = useTranslations("ObcNetwork")
+
+  const statsWithData = [
+    { label: t("stats.activeObcs"), value: "1,200+", icon: Users },
+    { label: t("stats.countries"), value: "70+", icon: Globe2 },
+    { label: t("stats.quoteSla"), value: "15m", icon: Timer },
+  ]
+
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       {/* subtle light accents for white background */}
@@ -56,14 +65,13 @@ export default function ObcNetwork() {
         {/* Header */}
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
-            OBC Network
+            {t("badge")}
           </span>
           <h2 className="titleFont mt-3 text-[#194479] text-xl sm:text-2xl md:text-3xl leading-tight">
-            A global hand‑carry network on standby
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base max-w-xl">
-            With trained couriers stationed across major hubs, we dispatch the nearest OBC within
-            minutes — ensuring priority handling and continuous custody.
+            {t("description")}
           </p>
         </div>
 
@@ -72,7 +80,7 @@ export default function ObcNetwork() {
           className="mt-8 md:mt-12 rounded-3xl border border-gray-200 bg-white p-6 md:p-8 shadow-[0_6px_20px_rgba(0,0,0,0.06)]"
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
-            {stats.map((s, i) => {
+            {statsWithData.map((s, i) => {
               const Icon = s.icon
               return (
                 <motion.div
@@ -98,13 +106,13 @@ export default function ObcNetwork() {
           {/* Descriptor bullets */}
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 text-gray-700 text-sm">
             <div className="rounded-xl border border-gray-200 bg-white p-4">
-              Nearest‑courier dispatch for time‑critical missions
+              {t("bullets.0")}
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-4">
-              Continuous supervision through customs and handover
+              {t("bullets.1")}
             </div>
             <div className="rounded-xl border border-gray-200 bg-white p-4">
-              Live status updates from pickup to delivery
+              {t("bullets.2")}
             </div>
           </div>
         </div>

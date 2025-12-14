@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ShieldCheck, Plane, Eye, BellRing, Timer } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const reasons = [
   {
@@ -34,6 +35,14 @@ const reasons = [
 ]
 
 export default function ObcWhyImportant() {
+  const t = useTranslations("ObcWhyImportant")
+
+  // Map reasons to icons using index to fetch translation
+  const reasonsWithData = reasons.map((r, i) => ({
+    ...r,
+    title: t(`items.${i}.title`),
+    desc: t(`items.${i}.description`),
+  }))
 
   return (
     <section className="relative py-14 md:py-20 bg-white overflow-hidden">
@@ -46,21 +55,20 @@ export default function ObcWhyImportant() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
-            Why Is OBC Important?
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
-            When every minute counts
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
-            OBC services keep operations running in aviation, automotive, tech, and manufacturing by
-            eliminating delays and maintaining custody at every step.
+            {t("description")}
           </p>
         </motion.div>
 
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-8 max-w-6xl mx-auto"
         >
-          {reasons.map((r, i) => {
+          {reasonsWithData.map((r, i) => {
             const Icon = r.icon
             return (
               <motion.div

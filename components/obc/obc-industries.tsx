@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Plane, Car, Cpu, Factory, FileText } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const industries = [
   { icon: Plane, title: "Aviation & AOG", desc: "Urgent aircraft parts, tools, and documents to keep operations flying." },
@@ -21,6 +22,14 @@ const spans = [
 ]
 
 export default function ObcIndustries() {
+  const t = useTranslations("ObcIndustries")
+
+  const industriesWithData = industries.map((it, i) => ({
+    ...it,
+    title: t(`items.${i}.title`),
+    desc: t(`items.${i}.description`),
+  }))
+
   return (
     <section className="relative py-14 md:py-20 bg-white overflow-hidden">
       {/* background accents */}
@@ -32,13 +41,13 @@ export default function ObcIndustries() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
-            Industries We Serve
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
-            Built for operations that can’t afford downtime
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
-            A distinctive mosaic layout highlighting impact across verticals.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -46,7 +55,7 @@ export default function ObcIndustries() {
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 auto-rows-[minmax(120px,auto)] gap-3 md:gap-4 lg:gap-5 max-w-6xl mx-auto"
         >
-          {industries.map((it, i) => {
+          {industriesWithData.map((it, i) => {
             const Icon = it.icon
             const isHero = i === 0
             return (
@@ -85,16 +94,16 @@ export default function ObcIndustries() {
                   {isHero && (
                     <div className="mt-5 grid grid-cols-3 gap-3">
                       <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                        <div className="titleFont text-[#194479] text-lg">24/7</div>
-                        <div className="paragraphFont text-gray-600 text-[11px]">Dispatch</div>
+                        <div className="titleFont text-[#194479] text-lg">{t("stats.dispatch.value")}</div>
+                        <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.dispatch.label")}</div>
                       </div>
                       <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                        <div className="titleFont text-[#194479] text-lg">Priority</div>
-                        <div className="paragraphFont text-gray-600 text-[11px]">Handling</div>
+                        <div className="titleFont text-[#194479] text-lg">{t("stats.handling.value")}</div>
+                        <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.handling.label")}</div>
                       </div>
                       <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                        <div className="titleFont text-[#194479] text-lg">Secure</div>
-                        <div className="paragraphFont text-gray-600 text-[11px]">Custody</div>
+                        <div className="titleFont text-[#194479] text-lg">{t("stats.custody.value")}</div>
+                        <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.custody.label")}</div>
                       </div>
                     </div>
                   )}
