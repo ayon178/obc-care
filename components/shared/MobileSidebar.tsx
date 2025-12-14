@@ -3,11 +3,24 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { FiX, FiChevronDown } from "react-icons/fi"
+import { Link } from "@/i18n/routing"
 
-const MobileSidebar = ({ isOpen, onClose, menuItems }) => {
-  const [activeDropdown, setActiveDropdown] = useState(null)
+interface MenuItem {
+  label: string
+  path: string
+  subItems?: MenuItem[]
+}
 
-  const toggleDropdown = (menuLabel) => {
+interface MobileSidebarProps {
+  isOpen: boolean
+  onClose: () => void
+  menuItems: MenuItem[]
+}
+
+const MobileSidebar = ({ isOpen, onClose, menuItems }: MobileSidebarProps) => {
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+
+  const toggleDropdown = (menuLabel: string) => {
     setActiveDropdown((prev) => (prev === menuLabel ? null : menuLabel))
   }
 
@@ -60,13 +73,13 @@ const MobileSidebar = ({ isOpen, onClose, menuItems }) => {
                       <>
                         {/* Parent row: left navigates to page, right toggles submenu */}
                         <div className="flex items-center justify-between w-full gap-2">
-                          <a
+                          <Link
                             href={menu.path}
                             className="buttonFont text-white py-2"
                             onClick={onClose}
                           >
                             {menu.label}
-                          </a>
+                          </Link>
                           <button
                             onClick={() => toggleDropdown(menu.label)}
                             className="text-white p-2 aria-expanded:font-semibold"
@@ -93,39 +106,37 @@ const MobileSidebar = ({ isOpen, onClose, menuItems }) => {
                               className="ml-4"
                             >
                               {menu.subItems.map((subItem) => (
-                                <a
-                                  key={subItem.label}
-                                  href={subItem.path}
-                                  className="buttonFont block text-white py-2"
-                                  onClick={onClose}
-                                >
-                                  {subItem.label}
-                                </a>
+                                  <Link
+                                    key={subItem.label}
+                                    href={subItem.path}
+                                    className="buttonFont block text-white py-2"
+                                    onClick={onClose}
+                                  >
+                                    {subItem.label}
+                                  </Link>
                               ))}
                             </motion.div>
                           )}
                         </AnimatePresence>
                       </>
                     ) : (
-                      <a
+                      <Link
                         href={menu.path}
                         className="buttonFont block text-white py-2"
                         onClick={onClose}
                       >
                         {menu.label}
-                      </a>
+                      </Link>
                     )}
                   </div>
                 ))}
-                <a
+                <Link
                   href="/inquiry"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="buttonFont block text-white py-2 mt-4 border border-white rounded-full text-center hover:bg-white hover:text-primary transition-colors duration-300"
                   onClick={onClose}
                 >
                   Get a Quote
-                </a>
+                </Link>
               </nav>
             </div>
           </motion.div>

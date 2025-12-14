@@ -1,7 +1,7 @@
 "use client"
 
 import { useLocale } from "next-intl"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname, useRouter } from "@/i18n/routing"
 import { ChangeEvent, useTransition } from "react"
 import { Globe } from "lucide-react"
 
@@ -14,36 +14,7 @@ export default function LanguageSwitcher() {
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value
     startTransition(() => {
-      // Replace the locale in the pathname
-      // Assumes pathname starts with /en, /de, or /es, or is just /
-      // But pathname from next/navigation might include locale or not depending on middleware.
-      // Actually with next-intl middleware, pathname usually includes locale if we are on a locale path.
-      
-      // Simpler approach: construct new path.
-      // However, if we just swap the prefix, it works.
-      
-      const segments = pathname.split('/')
-      // segments[0] is empty, segments[1] is likely the locale if using prefix routing
-      if (['en', 'de', 'es'].includes(segments[1])) {
-          segments[1] = nextLocale
-      } else {
-          // If no locale prefix (e.g. default locale hidden), we might need to prepend or replace
-          // Check middleware config. If prefix is always there.
-          // For now, let's assume we replace or prepend.
-           segments.splice(1, 0, nextLocale); // This is risky if simpler logic exists.
-      }
-       // Actually next-intl provides a Link and useRouter that handles this automatically, 
-       // but we are using standard router here?
-       // Let's use string manipulation for now as it's robust enough if we assume /locale/... structure.
-       
-       let newPath = pathname;
-       if (newPath.startsWith('/en') || newPath.startsWith('/de') || newPath.startsWith('/es')) {
-           newPath = newPath.replace(/^\/(en|de|es)/, `/${nextLocale}`);
-       } else {
-           newPath = `/${nextLocale}${newPath}`;
-       }
-       
-      router.replace(newPath)
+      router.replace(pathname, {locale: nextLocale})
     })
   }
 

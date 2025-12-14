@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { FiChevronDown, FiMenu } from "react-icons/fi"
-import { useRouter, usePathname } from "next/navigation"
+import { useRouter, usePathname, Link } from "@/i18n/routing"
 import {
   Mail,
   Phone,
@@ -122,13 +122,7 @@ const Navbar = () => {
     setActiveDropdown(null)
   }
 
-  const handleMenuClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    path: string
-  ) => {
-    e.preventDefault()
-    router.push(path)
-  }
+
 
   return (
     <>
@@ -265,9 +259,8 @@ const Navbar = () => {
                   >
                     {menu.subItems ? (
                       <>
-                        <a
+                        <Link
                           href={menu.path}
-                          onClick={(e) => handleMenuClick(e, menu.path)}
                           className={`buttonFont flex items-center space-x-1 py-2 text-white cursor-pointer hover:opacity-80 transition-opacity text-base`}
                         >
                           <span>{menu.label}</span>
@@ -279,7 +272,7 @@ const Navbar = () => {
                           >
                             <FiChevronDown />
                           </motion.div>
-                        </a>
+                        </Link>
                         {activeDropdown === menu.label && (
                           <motion.div
                             initial={{ opacity: 0, y: -10 }}
@@ -291,28 +284,24 @@ const Navbar = () => {
                             onMouseLeave={handleMouseLeave}
                           >
                             {menu.subItems.map((subItem) => (
-                              <a
+                              <Link
                                 key={subItem.label}
                                 href={subItem.path}
-                                onClick={(e) =>
-                                  handleMenuClick(e, subItem.path)
-                                }
                                 className="buttonFont block px-4 py-2 hover:bg-gray-100 transition-colors"
                               >
                                 {subItem.label}
-                              </a>
+                              </Link>
                             ))}
                           </motion.div>
                         )}
                       </>
                     ) : (
-                      <a
+                      <Link
                         href={menu.path}
-                        onClick={(e) => handleMenuClick(e, menu.path)}
                         className={`buttonFont flex items-center py-2 text-white cursor-pointer hover:opacity-80 transition-opacity text-base`}
                       >
                         {menu.label}
-                      </a>
+                      </Link>
                     )}
                   </div>
                 ))}
