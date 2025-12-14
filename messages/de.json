@@ -364,6 +364,119 @@
     "description": "Mit 1.200+ professionellen Kurieren in 70 Ländern stellen wir sicher, dass Ihre zeitkritischen Sendungen die Aufmerksamkeit erhalten, die sie verdienen. Von der Anfrage bis zur Zustellung sind wir bei jedem Schritt an Ihrer Seite.",
     "primary": "Kostenloses Angebot anfordern",
     "secondary": "Sprechen Sie mit unserem Team"
+  },
+  "FmlmBanner": {
+    "badge": "Erste Meile / Letzte Meile Lieferung",
+    "title": "Jeden Kilometer überbrücken — von der Abholung bis zur Zustellung, ohne Verzögerungen.",
+    "description": "Nahtloser Bodentransport verbindet Flughäfen, Lager und Zielorte mit Geschwindigkeit, Präzision und 24/7 Verfügbarkeit — weltweit.",
+    "getQuote": "Kostenloses Angebot anfordern",
+    "talkTeam": "Sprechen Sie mit unserem Team"
+  },
+  "FmlmWhatIs": {
+    "badge": "Was ist First Mile / Last Mile Lieferung?",
+    "title": "Jede Sendung beginnt mit einer ersten Meile und endet mit einer letzten Meile — und beide sind entscheidend.",
+    "firstMile": { "title": "Erste Meile Lieferung", "description": "Transport von Waren vom Standort des Versenders (wie Lager oder Lieferant) zum nächsten Logistikpunkt — oft Flughafen oder Spediteur." },
+    "lastMile": { "title": "Letzte Meile Lieferung", "description": "Die letzte Strecke, Transport der Sendungen vom Flughafen, Zolllager oder Terminal direkt zur Haustür des Empfängers." },
+    "description": "Bei OBC Care stellen wir sicher, dass beide Enden der Reise mit Schnelligkeit, Präzision und Sorgfalt behandelt werden — und verbinden Ihre Fracht nahtlos von Ursprung bis Ziel.",
+    "imageAlt": "Erste Meile Letzte Meile Lieferung",
+    "stats": {
+      "availability": "Verfügbarkeit",
+      "tracked": "Verfolgt"
+    }
+  },
+  "FmlmWhyImportant": {
+    "badge": "Warum ist First & Last Mile Lieferung wichtig?",
+    "title": "Selbst der schnellste Flug ist nur so effizient wie der Bodentransport, der ihn unterstützt.",
+    "description": "Verzögerungen, falsche Handhabung oder schlechte Koordination während der ersten oder letzten Meile können ganze Operationen gefährden, besonders in zeitkritischen Branchen.",
+    "items": {
+      "0": { "title": "Verhindert kostspielige Verzögerungen", "description": "Richtiges Timing stellt sicher, dass Ihre Sendung den nächsten Flug erreicht oder pünktlich bei Ihrem Kunden ankommt." },
+      "1": { "title": "Sichert Sendungsintegrität", "description": "Sichere Bodenabfertigung minimiert Schäden, Verlust oder Fehlleitung." },
+      "2": { "title": "Überbrückt globale Lücken", "description": "FM/LM-Dienste verbinden Flughäfen, Lager und Zielorte in einem reibungslosen Fluss." },
+      "3": { "title": "Unterstützt 24/7 Operationen", "description": "Perfekt für dringende AOG-, Automobil- oder Elektroniksendungen, die nicht warten können." },
+      "4": { "title": "Garantiert Verantwortlichkeit", "description": "Jede Übergabe und Bewegung wird verfolgt und gemeldet." }
+    }
+  },
+  "FmlmSolutions": {
+    "badge": "Unsere FM/LM Lieferlösungen",
+    "title": "Wir verstehen, dass Zeit alles ist.",
+    "description": "Deshalb ist OBC Cares First Mile / Last Mile Lieferung auf Effizienz, Sichtbarkeit und Zuverlässigkeit ausgelegt — von der Abholung bis zur Zustellung.",
+    "builtForSpeed": {
+      "title": "Gebaut für Geschwindigkeit & Zuverlässigkeit",
+      "subtitle": "Bodentransportoperationen mit Echtzeit-Tracking und proaktiver Koordination."
+    },
+    "stats": {
+      "availability": "Verfügbarkeit",
+      "updates": "Updates",
+      "accountable": "Verantwortlich"
+    },
+    "items": {
+      "0": { "title": "Erste Meile Lieferung", "description": "Abholung von Ihrer Einrichtung zum Flughafen oder Frachtpartner — präzise auf Flugpläne abgestimmt." },
+      "1": { "title": "Letzte Meile Lieferung", "description": "Vom Zoll oder Flughafen zur Tür des Empfängers — schnell, sicher und voll koordiniert." },
+      "2": { "title": "Express Bodentransfers", "description": "Dedizierte Fahrzeuge für lokale oder regionale Bewegungen, die Dringlichkeit erfordern." },
+      "3": { "title": "Direktfahrt-Optionen", "description": "Punkt-zu-Punkt-Transport — keine Stopps, keine Umwege, kein Warten." }
+    }
+  },
+  "FmlmHowItWorks": {
+    "badge": "Wie es funktioniert",
+    "title": "Von Abholung bis Zustellung — Nahtlose Koordination",
+    "description": "Ein optimierter Prozess, der sicherstellt, dass sich Ihre Sendung effizient von Ursprung bis Ziel bewegt.",
+    "steps": {
+      "0": { "title": "Abholungskoordination", "description": "Unser Operationsteam identifiziert die schnellste Route und entsendet sofort einen Fahrer." },
+      "1": { "title": "Live-Kommunikation", "description": "Sie erhalten Updates in jeder Phase, von der Abholung bis zur Zustellung." },
+      "2": { "title": "Sicherer Transit", "description": "Alle Fahrzeuge sind GPS-überwacht, und alle Fahrer sind in zeitkritischer Handhabung geschult." },
+      "3": { "title": "Zustellungsbestätigung", "description": "Sofortiger Zustellnachweis wird bereitgestellt, sobald Ihre Sendung ankommt." }
+    }
+  },
+  "FmlmWhyChoose": {
+    "badge": "Warum OBC Care FM/LM Lösungen wählen?",
+    "title": "Exzellenz auf jeder Meile",
+    "description": "Unsere umfassenden Bodentransportlösungen stellen sicher, dass sich Ihre Sendungen mit Präzision, Geschwindigkeit und vollständiger Sichtbarkeit bewegen.",
+    "items": {
+      "0": { "title": "24/7 Verfügbarkeit", "description": "Immer betriebsbereit, über Zeitzonen und Wochenenden hinweg." },
+      "1": { "title": "Geschulte, verifizierte Fahrer", "description": "Profis mit Logistikexpertise und Sicherheitsüberprüfung." },
+      "2": { "title": "Echtzeit-Updates", "description": "Bleiben Sie bei jedem Meilenstein informiert — keine Ungewissheit." },
+      "3": { "title": "Globale Koordination", "description": "Tür-zu-Tür, Flughafen-zu-Flughafen oder gemischte Modi — wir verbinden jedes Glied." }
+    }
+  },
+  "FmlmNetwork": {
+    "badge": "FM/LM Netzwerk",
+    "title": "Globale Bodenkoordination in Ihren Händen",
+    "description1": "Mit Hunderten von professionellen Fahrern und Logistikpartnern in Asien, Europa und Amerika garantiert OBC Care nahtlose globale Bodenkoordination.",
+    "description2": "Ob Tür-zu-Tür, Flughafen-zu-Tür, Tür-zu-Flughafen oder Flughafen-zu-Flughafen, unser FM/LM-Netzwerk ist darauf ausgelegt, Ihre Fracht effizient zu bewegen — jederzeit und überall.",
+    "stats": {
+      "drivers": { "label": "Professionelle Fahrer", "value": "500+" },
+      "coverage": { "label": "Globale Abdeckung", "value": "70+" },
+      "response": { "label": "Reaktionszeit", "value": "<30m" }
+    },
+    "coverage": {
+      "asia": { "region": "Asien", "cities": "Singapur, Hongkong, Tokio, Dubai, Mumbai" },
+      "europe": { "region": "Europa", "cities": "London, Frankfurt, Amsterdam, Paris, Mailand" },
+      "americas": { "region": "Amerika", "cities": "New York, Los Angeles, Miami, Toronto, São Paulo" }
+    }
+  },
+  "FmlmJoin": {
+    "badge": "Werden Sie Teil unseres Teams",
+    "title": "Werden Sie First & Last Mile Fahrer",
+    "description1": "Möchten Sie unserem schnelllebigen Logistikteam beitreten? Jede Meile, die Sie fahren, macht einen Unterschied — und stellt sicher, dass kritische Sendungen ihre Ziele pünktlich erreichen.",
+    "description2": "Als Teil des globalen Netzwerks von OBC Care werden Ihnen hochwertige und zeitkritische Lieferungen anvertraut, unterstützt durch unser 24/7-Supportteam.",
+    "description3": "Ob Sie ein erfahrener Kurier sind oder ein professioneller Fahrer, der in die zeitkritische Logistik einsteigen möchte, wir suchen immer nach zuverlässigen Partnern weltweit, um unser Netzwerk zu erweitern.",
+    "benefits": {
+      "0": { "title": "Kritische Sendungen fahren", "description": "Seien Sie Teil von zeitkritischer Logistik, die zählt" },
+      "1": { "title": "24/7 Support-Team", "description": "Unterstützt durch unser professionelles Operationszentrum" },
+      "2": { "title": "Flexible Möglichkeiten", "description": "Wählen Sie Aufträge, die zu Ihrem Zeitplan passen" },
+      "3": { "title": "Globales Netzwerk", "description": "Schließen Sie sich Hunderten von Fahrern weltweit an" }
+    },
+    "cta": "Jetzt bewerben",
+    "getTouch": "Kontakt aufnehmen",
+    "imageAlt": "Erste & Letzte Meile Fahrer",
+    "stats": "Aktive Fahrer"
+  },
+  "FmlmCta": {
+    "title": "Ihre Sendung, mit Präzision bewegt",
+    "description": "Von der ersten Abholung bis zur letzten Übergabe stellt OBC Care sicher, dass Ihre Sendung nie an Schwung verliert. Wir liefern Geschwindigkeit, Genauigkeit und Verantwortlichkeit — damit Ihre Operationen reibungslos und ohne Unterbrechung laufen.",
+    "subheadline": "Kostenloses Angebot anfordern",
+    "closing": "Lassen Sie uns Ihre Sendung bewegen — schneller, sicherer und intelligenter.",
+    "primary": "Kostenloses Angebot anfordern"
   }
 }
 ```

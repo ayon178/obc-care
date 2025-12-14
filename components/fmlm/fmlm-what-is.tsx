@@ -3,8 +3,10 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Truck, Package, ArrowRight } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function FmlmWhatIs() {
+  const t = useTranslations("FmlmWhatIs")
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-br from-gray-50 via-white to-[#194479]/5 overflow-hidden">
       {/* Decorative background elements */}
@@ -25,11 +27,11 @@ export default function FmlmWhatIs() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
               <Truck className="w-4 h-4" />
-              What Is First Mile / Last Mile Delivery?
+              {t("badge")}
             </div>
             
             <h2 className="headingFont text-3xl sm:text-4xl md:text-5xl font-bold text-[#194479] leading-tight">
-              Every shipment begins with a first mile and ends with a last mile — and both are critical.
+              {t("title")}
             </h2>
 
             {/* First Mile Card */}
@@ -45,9 +47,9 @@ export default function FmlmWhatIs() {
                   <Truck className="w-6 h-6 text-[#194479]" />
                 </div>
                 <div>
-                  <h3 className="titleFont text-[#194479] font-bold text-lg mb-2">First Mile Delivery</h3>
+                  <h3 className="titleFont text-[#194479] font-bold text-lg mb-2">{t("firstMile.title")}</h3>
                   <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                    Transporting goods from the shipper's location (like a warehouse or supplier) to the next logistics point — often the airport or freight forwarder.
+                    {t("firstMile.description")}
                   </p>
                 </div>
               </div>
@@ -79,9 +81,9 @@ export default function FmlmWhatIs() {
                   <Package className="w-6 h-6 text-[#91c73e]" />
                 </div>
                 <div>
-                  <h3 className="titleFont text-[#194479] font-bold text-lg mb-2">Last Mile Delivery</h3>
+                  <h3 className="titleFont text-[#194479] font-bold text-lg mb-2">{t("lastMile.title")}</h3>
                   <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                    The final stretch, moving shipments from the airport, customs warehouse, or terminal directly to the consignee's doorstep.
+                    {t("lastMile.description")}
                   </p>
                 </div>
               </div>
@@ -94,7 +96,7 @@ export default function FmlmWhatIs() {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed pt-4"
             >
-              At OBC Care, we ensure both ends of the journey are handled with speed, precision, and care — connecting your cargo from origin to destination seamlessly.
+              {t("description")}
             </motion.p>
           </motion.div>
 
@@ -110,7 +112,7 @@ export default function FmlmWhatIs() {
               <div className="relative h-[500px] md:h-[600px]">
                 <Image
                   src="/services/fast-last.jpeg"
-                  alt="First Mile Last Mile Delivery"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover"
                   priority={false}
@@ -124,11 +126,11 @@ export default function FmlmWhatIs() {
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <div className="text-3xl font-bold text-[#194479]">24/7</div>
-                        <div className="text-sm text-gray-600">Availability</div>
+                        <div className="text-sm text-gray-600">{t("stats.availability")}</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold text-[#91c73e]">100%</div>
-                        <div className="text-sm text-gray-600">Tracked</div>
+                        <div className="text-sm text-gray-600">{t("stats.tracked")}</div>
                       </div>
                     </div>
                   </div>

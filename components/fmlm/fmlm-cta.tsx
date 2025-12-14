@@ -3,8 +3,10 @@
 import { motion } from "framer-motion"
 import { ArrowRight, Package, CheckCircle2 } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function FmlmCta() {
+  const t = useTranslations("FmlmCta")
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
@@ -54,7 +56,7 @@ export default function FmlmCta() {
                   <Package className="w-6 h-6 text-[#91c73e]" />
                 </div>
                 <h2 className="headingFont text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">
-                  Your Shipment, Moved with Precision
+                  {t("title")}
                 </h2>
               </motion.div>
 
@@ -66,7 +68,7 @@ export default function FmlmCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="paragraphFont text-white/90 text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
               >
-                From the first pickup to the last handover, OBC Care ensures your shipment never loses momentum. We deliver speed, accuracy, and accountability — so your operations run smoothly without interruption.
+                {t("description")}
               </motion.p>
 
               {/* Sub-headline */}
@@ -79,7 +81,7 @@ export default function FmlmCta() {
               >
                 <CheckCircle2 className="w-5 h-5 text-[#91c73e]" />
                 <h3 className="headingFont text-xl md:text-2xl font-semibold text-white">
-                  Get a Free Quote Today
+                  {t("subheadline")}
                 </h3>
               </motion.div>
 
@@ -91,7 +93,7 @@ export default function FmlmCta() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="paragraphFont text-white/80 text-sm md:text-base italic"
               >
-                Let's move your shipment — faster, safer, and smarter.
+                {t("closing")}
               </motion.p>
 
               {/* CTA Button */}
@@ -117,7 +119,7 @@ export default function FmlmCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg">
-                    Get a Free Quote Today
+                    {t("primary")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
                 </Link>
@@ -129,4 +131,3 @@ export default function FmlmCta() {
     </section>
   )
 }
-

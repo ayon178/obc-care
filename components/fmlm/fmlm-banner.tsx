@@ -3,8 +3,10 @@
 import { motion } from "framer-motion"
 import { Truck } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function FmlmBanner() {
+  const t = useTranslations("FmlmBanner")
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -29,15 +31,13 @@ export default function FmlmBanner() {
           >
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-white/10 text-white/90 text-[10px] sm:text-[11px] backdrop-blur self-end">
               <Truck className="w-3 h-3" />
-              First Mile / Last Mile Delivery
+              {t("badge")}
             </span>
             <h1 className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight drop-shadow-2xl">
-              Bridging every mile — from pickup to delivery, with no delays.
+              {t("title")}
             </h1>
             <p className="paragraphFont mt-2 text-white/95 text-[11px] sm:text-xs md:text-sm max-w-2xl drop-shadow-lg text-right ml-auto">
-              Seamless ground transport connecting airports, warehouses, and
-              destinations with speed, precision, and 24/7 availability —
-              worldwide.
+              {t("description")}
             </p>
 
             <motion.div
@@ -55,13 +55,13 @@ export default function FmlmBanner() {
                     "linear-gradient(135deg, #91C73E 0%, #7bb033 60%)",
                 }}
               >
-                <span>Get a Free Quote</span>
+                <span>{t("getQuote")}</span>
               </Link>
               <Link
                 href="/contact"
                 className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors text-center cursor-pointer"
               >
-                Talk to Our Team
+                {t("talkTeam")}
               </Link>
             </motion.div>
           </motion.div>

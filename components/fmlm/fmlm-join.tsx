@@ -1,34 +1,28 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Truck, Shield, Clock, MapPin, ArrowRight } from "lucide-react"
+import { Users, Truck, Clock, Globe, Shield, ArrowRight, MapPin } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 const benefits = [
   {
     icon: Truck,
-    title: "Drive Critical Shipments",
-    description: "Be part of time-sensitive logistics that matter",
-  },
-  {
-    icon: Shield,
-    title: "24/7 Support Team",
-    description: "Backed by our professional operations center",
   },
   {
     icon: Clock,
-    title: "Flexible Opportunities",
-    description: "Choose assignments that fit your schedule",
   },
   {
-    icon: MapPin,
-    title: "Global Network",
-    description: "Join hundreds of drivers worldwide",
+    icon: Clock,
+  },
+  {
+    icon: Globe,
   },
 ]
 
 export default function FmlmJoin() {
+  const t = useTranslations("FmlmJoin")
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       {/* Background accents */}
@@ -76,9 +70,9 @@ export default function FmlmJoin() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed"
+              className="paragraphFont text-blue-50/90 text-sm md:text-lg leading-relaxed"
             >
-              Want to join our fast-moving logistics team? Every mile you drive makes a difference — ensuring critical shipments reach their destinations on time.
+              {t("description1")}
             </motion.p>
 
             <motion.p
@@ -86,9 +80,9 @@ export default function FmlmJoin() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed"
+              className="paragraphFont text-blue-50/90 text-sm md:text-lg leading-relaxed"
             >
-              As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.
+              {t("description2")}
             </motion.p>
 
             <motion.p
@@ -96,9 +90,9 @@ export default function FmlmJoin() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed"
+              className="paragraphFont text-blue-50/90 text-sm md:text-lg leading-relaxed"
             >
-              Whether you're an experienced courier or a professional driver looking to enter time-critical logistics, we're always looking for reliable partners worldwide to grow our network.
+              {t("description3")}
             </motion.p>
 
             {/* Benefits Grid */}
@@ -118,17 +112,17 @@ export default function FmlmJoin() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
-                    className="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-[#91c73e]/60 transition-all"
+                    className="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#194479]/10 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-[#194479]" />
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-[#91c73e]" />
                     </div>
                     <div>
-                      <h3 className="titleFont text-[#194479] font-semibold text-sm sm:text-base mb-1">
-                        {benefit.title}
+                      <h3 className="titleFont text-white font-semibold text-sm sm:text-base mb-1">
+                        {t(`benefits.${index}.title`)}
                       </h3>
-                      <p className="paragraphFont text-gray-600 text-xs sm:text-sm">
-                        {benefit.description}
+                      <p className="paragraphFont text-blue-100/70 text-xs sm:text-sm">
+                        {t(`benefits.${index}.description`)}
                       </p>
                     </div>
                   </motion.div>
@@ -148,16 +142,16 @@ export default function FmlmJoin() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfWC80Mi-efCNpZFLBif3nK_Bzt5QoFAVct2bTk04lakDk8JQ/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="buttonFont inline-flex items-center gap-2 bg-[#194479] hover:bg-[#153666] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group"
+                className="buttonFont inline-flex items-center gap-2 bg-[#91c73e] hover:bg-[#86b83a] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group"
               >
-                <span>Apply Now</span>
+                <span>{t("ctaApply")}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 href="/contact"
                 className="buttonFont inline-flex items-center gap-2 bg-white border-2 border-[#194479] hover:bg-[#194479] hover:text-white text-[#194479] px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group"
               >
-                <span>Get in Touch</span>
+                <span>{t("ctaContact")}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
@@ -176,8 +170,8 @@ export default function FmlmJoin() {
               {/* Image */}
               <div className="relative h-[500px] md:h-[600px] overflow-hidden">
                 <Image
-                  src="/services/on_board_currier.jpeg"
-                  alt="First & Last Mile Driver"
+                  src="/services/join-team.jpeg"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover"
                   priority={false}

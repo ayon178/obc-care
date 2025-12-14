@@ -3,51 +3,38 @@
 import { motion } from "framer-motion"
 import { Clock, Shield, Globe, Zap, CheckCircle2 } from "lucide-react"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 const reasons = [
   {
     icon: Clock,
-    title: "Prevents Costly Delays",
-    desc:
-      "Proper timing ensures your shipment catches the next flight or reaches your client on time.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600&auto=format&fit=crop",
     color: "#194479",
   },
   {
     icon: Shield,
-    title: "Ensures Shipment Integrity",
-    desc:
-      "Secure ground handling minimizes damage, loss, or misrouting.",
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop",
     color: "#91c73e",
   },
   {
     icon: Globe,
-    title: "Bridges Global Gaps",
-    desc:
-      "FM/LM services connect airports, warehouses, and destinations in one smooth flow.",
     image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&auto=format&fit=crop",
     color: "#194479",
   },
   {
     icon: Zap,
-    title: "Supports 24/7 Operations",
-    desc:
-      "Perfect for urgent AOG, automotive, or electronic shipments that can't wait.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop",
     color: "#91c73e",
   },
   {
     icon: CheckCircle2,
-    title: "Guarantees Accountability",
-    desc:
-      "Every handover and movement is tracked and reported.",
     image: "/services/gurantees.jpeg",
     color: "#194479",
   },
 ]
 
 export default function FmlmWhyImportant() {
+  const t = useTranslations("FmlmWhyImportant")
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       {/* Hero Image Background */}
@@ -75,13 +62,13 @@ export default function FmlmWhyImportant() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
-            Why Is First & Last Mile Delivery Important?
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-4 text-3xl sm:text-4xl md:text-5xl font-bold text-[#194479] leading-tight">
-            Even the fastest flight is only as efficient as the ground transport that supports it.
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-4 text-gray-700 text-base md:text-lg">
-            Delays, mishandling, or poor coordination during the first or last mile can jeopardize entire operations, especially in time-critical industries.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -90,7 +77,7 @@ export default function FmlmWhyImportant() {
             const Icon = r.icon
             return (
               <motion.div
-                key={r.title}
+                key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -101,7 +88,7 @@ export default function FmlmWhyImportant() {
                 <div className="relative h-[250px] overflow-hidden">
                   <Image
                     src={r.image}
-                    alt={r.title}
+                    alt={t(`items.${i}.title`)}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -130,10 +117,10 @@ export default function FmlmWhyImportant() {
                     className="titleFont text-xl font-bold mb-2 leading-snug"
                     style={{ color: r.color }}
                   >
-                    {r.title}
+                    {t(`items.${i}.title`)}
                   </h3>
                   <p className="paragraphFont text-gray-600 text-sm md:text-base leading-relaxed">
-                    {r.desc}
+                    {t(`items.${i}.description`)}
                   </p>
                 </div>
               </motion.div>

@@ -2,31 +2,25 @@
 
 import { motion } from "framer-motion"
 import { Truck, Package, Zap, Navigation } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const solutions = [
   {
     icon: Truck,
-    title: "First Mile Delivery",
-    desc: "Pickup from your facility to airport or freight partner — aligned precisely with flight schedules.",
   },
   {
     icon: Package,
-    title: "Last Mile Delivery",
-    desc: "From customs or airport to consignee's door — fast, secure, and fully coordinated.",
   },
   {
     icon: Zap,
-    title: "Express Ground Transfers",
-    desc: "Dedicated vehicles for local or regional movements that demand urgency.",
   },
   {
     icon: Navigation,
-    title: "Direct Drive Options",
-    desc: "Point-to-point transport — no stops, no detours, no waiting.",
   },
 ]
 
 export default function FmlmSolutions() {
+  const t = useTranslations("FmlmSolutions")
   return (
     <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* soft background accents */}
@@ -39,13 +33,13 @@ export default function FmlmSolutions() {
         {/* Header */}
         <motion.div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
-            Our FM/LM Delivery Solutions
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
-            We understand that time is everything.
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
-            That's why OBC Care's First Mile / Last Mile Delivery is designed for efficiency, visibility, and reliability — from pickup to delivery.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -59,25 +53,25 @@ export default function FmlmSolutions() {
               </div>
               <div>
                 <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg">
-                  Built for Speed & Reliability
+                  {t("builtForSpeed.title")}
                 </h3>
                 <p className="paragraphFont mt-1.5 text-gray-600 text-sm">
-                  Ground transport operations with real-time tracking and proactive coordination.
+                  {t("builtForSpeed.subtitle")}
                 </p>
               </div>
             </div>
             <div className="mt-5 grid grid-cols-3 gap-3">
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
                 <div className="titleFont text-[#194479] text-base ">24/7</div>
-                <div className="paragraphFont text-gray-600 text-[11px]">Availability</div>
+                <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.availability")}</div>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
                 <div className="titleFont text-[#194479] text-base ">Real-Time</div>
-                <div className="paragraphFont text-gray-600 text-[11px]">Updates</div>
+                <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.updates")}</div>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
                 <div className="titleFont text-[#194479] text-base ">100%</div>
-                <div className="paragraphFont text-gray-600 text-[11px]">Accountable</div>
+                <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.accountable")}</div>
               </div>
             </div>
           </motion.div>
@@ -92,7 +86,7 @@ export default function FmlmSolutions() {
                 const Icon = solution.icon
                 return (
                   <motion.div
-                    key={solution.title}
+                    key={i}
                     initial={{ opacity: 0, y: 18 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-60px" }}
@@ -108,10 +102,10 @@ export default function FmlmSolutions() {
                     </div>
                     <div>
                       <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg leading-snug">
-                        {solution.title}
+                        {t(`items.${i}.title`)}
                       </h3>
                       <p className="paragraphFont mt-1.5 md:mt-2 text-gray-600 text-sm md:text-base">
-                        {solution.desc}
+                        {t(`items.${i}.description`)}
                       </p>
                     </div>
                   </motion.div>

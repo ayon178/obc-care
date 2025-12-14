@@ -364,6 +364,119 @@
     "description": "With 1,200+ professional couriers across 70 countries, we ensure your time-critical shipments receive the attention they deserve. From inquiry to delivery, we're with you every step of the way.",
     "primary": "Get a Free Quote Today",
     "secondary": "Talk to Our Team"
+  },
+  "FmlmBanner": {
+    "badge": "First Mile / Last Mile Delivery",
+    "title": "Bridging every mile — from pickup to delivery, with no delays.",
+    "description": "Seamless ground transport connecting airports, warehouses, and destinations with speed, precision, and 24/7 availability — worldwide.",
+    "getQuote": "Get a Free Quote",
+    "talkTeam": "Talk to Our Team"
+  },
+  "FmlmWhatIs": {
+    "badge": "What Is First Mile / Last Mile Delivery?",
+    "title": "Every shipment begins with a first mile and ends with a last mile — and both are critical.",
+    "firstMile": { "title": "First Mile Delivery", "description": "Transporting goods from the shipper's location (like a warehouse or supplier) to the next logistics point — often the airport or freight forwarder." },
+    "lastMile": { "title": "Last Mile Delivery", "description": "The final stretch, moving shipments from the airport, customs warehouse, or terminal directly to the consignee's doorstep." },
+    "description": "At OBC Care, we ensure both ends of the journey are handled with speed, precision, and care — connecting your cargo from origin to destination seamlessly.",
+    "imageAlt": "First Mile Last Mile Delivery",
+    "stats": {
+      "availability": "Availability",
+      "tracked": "Tracked"
+    }
+  },
+  "FmlmWhyImportant": {
+    "badge": "Why Is First & Last Mile Delivery Important?",
+    "title": "Even the fastest flight is only as efficient as the ground transport that supports it.",
+    "description": "Delays, mishandling, or poor coordination during the first or last mile can jeopardize entire operations, especially in time-critical industries.",
+    "items": {
+      "0": { "title": "Prevents Costly Delays", "description": "Proper timing ensures your shipment catches the next flight or reaches your client on time." },
+      "1": { "title": "Ensures Shipment Integrity", "description": "Secure ground handling minimizes damage, loss, or misrouting." },
+      "2": { "title": "Bridges Global Gaps", "description": "FM/LM services connect airports, warehouses, and destinations in one smooth flow." },
+      "3": { "title": "Supports 24/7 Operations", "description": "Perfect for urgent AOG, automotive, or electronic shipments that can't wait." },
+      "4": { "title": "Guarantees Accountability", "description": "Every handover and movement is tracked and reported." }
+    }
+  },
+  "FmlmSolutions": {
+    "badge": "Our FM/LM Delivery Solutions",
+    "title": "We understand that time is everything.",
+    "description": "That's why OBC Care's First Mile / Last Mile Delivery is designed for efficiency, visibility, and reliability — from pickup to delivery.",
+    "builtForSpeed": {
+      "title": "Built for Speed & Reliability",
+      "subtitle": "Ground transport operations with real-time tracking and proactive coordination."
+    },
+    "stats": {
+      "availability": "Availability",
+      "updates": "Updates",
+      "accountable": "Accountable"
+    },
+    "items": {
+      "0": { "title": "First Mile Delivery", "description": "Pickup from your facility to airport or freight partner — aligned precisely with flight schedules." },
+      "1": { "title": "Last Mile Delivery", "description": "From customs or airport to consignee's door — fast, secure, and fully coordinated." },
+      "2": { "title": "Express Ground Transfers", "description": "Dedicated vehicles for local or regional movements that demand urgency." },
+      "3": { "title": "Direct Drive Options", "description": "Point-to-point transport — no stops, no detours, no waiting." }
+    }
+  },
+  "FmlmHowItWorks": {
+    "badge": "How It Works",
+    "title": "From Pickup to Delivery — Seamless Coordination",
+    "description": "A streamlined process ensuring your shipment moves efficiently from origin to destination.",
+    "steps": {
+      "0": { "title": "Pickup Coordination", "description": "Our operations team identifies the fastest route and dispatches a driver immediately." },
+      "1": { "title": "Live Communication", "description": "You receive updates at every stage, from pickup to delivery." },
+      "2": { "title": "Secure Transit", "description": "All vehicles are GPS-tracked, and all drivers are trained in time-critical handling." },
+      "3": { "title": "Delivery Confirmation", "description": "Instant proof of delivery is provided once your shipment arrives." }
+    }
+  },
+  "FmlmWhyChoose": {
+    "badge": "Why Choose OBC Care FM/LM Solutions",
+    "title": "Excellence in Every Mile",
+    "description": "Our comprehensive ground transport solutions ensure your shipments move with precision, speed, and complete visibility.",
+    "items": {
+      "0": { "title": "24/7 Availability", "description": "Always operational, across time zones and weekends." },
+      "1": { "title": "Trained, Verified Drivers", "description": "Professionals with logistics expertise and security clearance." },
+      "2": { "title": "Real-Time Updates", "description": "Stay informed at every milestone — no uncertainty." },
+      "3": { "title": "Global Coordination", "description": "Door-to-door, airport-to-airport, or mixed modes — we connect every link." }
+    }
+  },
+  "FmlmNetwork": {
+    "badge": "FM/LM Network",
+    "title": "Global Ground Coordination at Your Fingertips",
+    "description1": "With hundreds of professional drivers and logistics partners across Asia, Europe, and the Americas, OBC Care guarantees seamless global ground coordination.",
+    "description2": "Whether it's door-to-door, airport-to-door, door-to-airport, or airport-to-airport, our FM/LM network is built to move your cargo efficiently — anytime, anywhere.",
+    "stats": {
+      "drivers": { "label": "Professional Drivers", "value": "500+" },
+      "coverage": { "label": "Global Coverage", "value": "70+" },
+      "response": { "label": "Response Time", "value": "<30m" }
+    },
+    "coverage": {
+      "asia": { "region": "Asia", "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai" },
+      "europe": { "region": "Europe", "cities": "London, Frankfurt, Amsterdam, Paris, Milan" },
+      "americas": { "region": "Americas", "cities": "New York, Los Angeles, Miami, Toronto, São Paulo" }
+    }
+  },
+  "FmlmJoin": {
+    "badge": "Join Our Team",
+    "title": "Become a First & Last Mile Driver",
+    "description1": "Want to join our fast-moving logistics team? Every mile you drive makes a difference — ensuring critical shipments reach their destinations on time.",
+    "description2": "As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.",
+    "description3": "Whether you're an experienced courier or a professional driver looking to enter time-critical logistics, we're always looking for reliable partners worldwide to grow our network.",
+    "benefits": {
+      "0": { "title": "Drive Critical Shipments", "description": "Be part of time-sensitive logistics that matter" },
+      "1": { "title": "24/7 Support Team", "description": "Backed by our professional operations center" },
+      "2": { "title": "Flexible Opportunities", "description": "Choose assignments that fit your schedule" },
+      "3": { "title": "Global Network", "description": "Join hundreds of drivers worldwide" }
+    },
+    "cta": "Apply Now",
+    "getTouch": "Get in Touch",
+    "imageAlt": "First & Last Mile Driver",
+    "stats": "Active Drivers"
+  },
+  "FmlmCta": {
+    "title": "Your Shipment, Moved with Precision",
+    "description": "From the first pickup to the last handover, OBC Care ensures your shipment never loses momentum. We deliver speed, accuracy, and accountability — so your operations run smoothly without interruption.",
+    "subheadline": "Get a Free Quote Today",
+    "closing": "Let's move your shipment — faster, safer, and smarter.",
+    "primary": "Get a Free Quote Today"
   }
 }
 ```

@@ -2,31 +2,25 @@
 
 import { motion } from "framer-motion"
 import { Route, Radio, ShieldCheck, CheckCircle2 } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const steps = [
   {
-    title: "Pickup Coordination",
-    desc: "Our operations team identifies the fastest route and dispatches a driver immediately.",
     icon: Route,
   },
   {
-    title: "Live Communication",
-    desc: "You receive updates at every stage, from pickup to delivery.",
     icon: Radio,
   },
   {
-    title: "Secure Transit",
-    desc: "All vehicles are GPS-tracked, and all drivers are trained in time-critical handling.",
     icon: ShieldCheck,
   },
   {
-    title: "Delivery Confirmation",
-    desc: "Instant proof of delivery is provided once your shipment arrives.",
     icon: CheckCircle2,
   },
 ]
 
 export default function FmlmHowItWorks() {
+  const t = useTranslations("FmlmHowItWorks")
   return (
     <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* background accents */}
@@ -39,13 +33,13 @@ export default function FmlmHowItWorks() {
         {/* Header */}
         <motion.div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
-            How It Works
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
-            From Pickup to Delivery — Seamless Coordination
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-3 text-gray-600 text-sm md:text-base">
-            A streamlined process ensuring your shipment moves efficiently from origin to destination.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -63,7 +57,7 @@ export default function FmlmHowItWorks() {
                 : "md:col-start-2 md:col-end-3 md:pl-10"
               return (
                 <motion.div
-                  key={s.title}
+                  key={i}
                   initial={{ opacity: 0, y: 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
@@ -79,10 +73,10 @@ export default function FmlmHowItWorks() {
                   <div className={cardCols}>
                     <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-4 md:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)] transition-all">
                       <h3 className="titleFont text-[#194479] text-sm sm:text-base leading-snug">
-                        {s.title}
+                        {t(`steps.${i}.title`)}
                       </h3>
                       <p className="paragraphFont mt-1.5 text-gray-600 text-sm md:text-base">
-                        {s.desc}
+                        {t(`steps.${i}.description`)}
                       </p>
                     </div>
                   </div>

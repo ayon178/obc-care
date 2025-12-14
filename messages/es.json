@@ -364,5 +364,118 @@
     "description": "Con 1,200+ mensajeros profesionales en 70 países, aseguramos que sus envíos críticos reciban la atención que merecen. Desde la consulta hasta la entrega, estamos con usted en cada paso del camino.",
     "primary": "Obtener una cotización gratuita hoy",
     "secondary": "Hable con nuestro equipo"
+  },
+  "FmlmBanner": {
+    "badge": "Entrega de Primera / Última Milla",
+    "title": "Salvando cada milla — desde la recogida hasta la entrega, sin retrasos.",
+    "description": "Transporte terrestre sin interrupciones conectando aeropuertos, almacenes y destinos con velocidad, precisión y disponibilidad 24/7 — en todo el mundo.",
+    "getQuote": "Obtener cotización gratis",
+    "talkTeam": "Hable con el equipo"
+  },
+  "FmlmWhatIs": {
+    "badge": "¿Qué es la entrega de Primera / Última Milla?",
+    "title": "Cada envío comienza con una primera milla y termina con una última milla — y ambas son críticas.",
+    "firstMile": { "title": "Entrega de Primera Milla", "description": "Transporte de mercancías desde la ubicación del remitente (como un almacén o proveedor) al siguiente punto logístico — a menudo el aeropuerto o transitario." },
+    "lastMile": { "title": "Entrega de Última Milla", "description": "El tramo final, moviendo envíos desde el aeropuerto, almacén de aduanas o terminal directamente a la puerta del consignatario." },
+    "description": "En OBC Care, aseguramos que ambos extremos del viaje se manejen con velocidad, precisión y cuidado — conectando su carga desde el origen hasta el destino sin problemas.",
+    "imageAlt": "Entrega de Primera y Última Milla",
+    "stats": {
+      "availability": "Disponibilidad",
+      "tracked": "Rastreado"
+    }
+  },
+  "FmlmWhyImportant": {
+    "badge": "¿Por qué es importante la entrega de Primera y Última Milla?",
+    "title": "Incluso el vuelo más rápido es tan eficiente como el transporte terrestre que lo respalda.",
+    "description": "Retrasos, mal manejo o mala coordinación durante la primera o última milla pueden poner en peligro operaciones enteras, especialmente en industrias críticas por el tiempo.",
+    "items": {
+      "0": { "title": "Previene retrasos costosos", "description": "El tiempo adecuado asegura que su envío tome el próximo vuelo o llegue a su cliente a tiempo." },
+      "1": { "title": "Asegura la integridad del envío", "description": "El manejo terrestre seguro minimiza daños, pérdidas o errores de ruta." },
+      "2": { "title": "Cierra brechas globales", "description": "Los servicios FM/LM conectan aeropuertos, almacenes y destinos en un flujo fluido." },
+      "3": { "title": "Soporta operaciones 24/7", "description": "Perfecto para envíos urgentes de AOG, automotriz o electrónicos que no pueden esperar." },
+      "4": { "title": "Garantiza responsabilidad", "description": "Cada entrega y movimiento es rastreado y reportado." }
+    }
+  },
+  "FmlmSolutions": {
+    "badge": "Nuestras soluciones de entrega FM/LM",
+    "title": "Entendemos que el tiempo lo es todo.",
+    "description": "Es por eso que la entrega de Primera / Última Milla de OBC Care está diseñada para eficiencia, visibilidad y confiabilidad — desde la recogida hasta la entrega.",
+    "builtForSpeed": {
+      "title": "Construido para velocidad y confiabilidad",
+      "subtitle": "Operaciones de transporte terrestre con seguimiento en tiempo real y coordinación proactiva."
+    },
+    "stats": {
+      "availability": "Disponibilidad",
+      "updates": "Actualizaciones",
+      "accountable": "Responsable"
+    },
+    "items": {
+      "0": { "title": "Entrega de Primera Milla", "description": "Recogida desde su instalación al aeropuerto o socio de carga — alineado precisamente con los horarios de vuelo." },
+      "1": { "title": "Entrega de Última Milla", "description": "Desde aduanas o aeropuerto a la puerta del consignatario — rápido, seguro y totalmente coordinado." },
+      "2": { "title": "Transferencias terrestres urgentes", "description": "Vehículos dedicados para movimientos locales o regionales que exigen urgencia." },
+      "3": { "title": "Opciones de conducción directa", "description": "Transporte punto a punto — sin paradas, sin desvíos, sin espera." }
+    }
+  },
+  "FmlmHowItWorks": {
+    "badge": "Cómo funciona",
+    "title": "Desde la recogida hasta la entrega — Coordinación sin interrupciones",
+    "description": "Un proceso simplificado que asegura que su envío se mueva eficientemente desde el origen hasta el destino.",
+    "steps": {
+      "0": { "title": "Coordinación de recogida", "description": "Nuestro equipo de operaciones identifica la ruta más rápida y envía un conductor inmediatamente." },
+      "1": { "title": "Comunicación en vivo", "description": "Recibe actualizaciones en cada etapa, desde la recogida hasta la entrega." },
+      "2": { "title": "Tránsito seguro", "description": "Todos los vehículos son rastreados por GPS y todos los conductores están capacitados en manejo crítico por el tiempo." },
+      "3": { "title": "Confirmación de entrega", "description": "Se proporciona prueba de entrega instantánea una vez que su envío llega." }
+    }
+  },
+  "FmlmWhyChoose": {
+    "badge": "¿Por qué elegir las soluciones FM/LM de OBC Care?",
+    "title": "Excelencia en cada milla",
+    "description": "Nuestras soluciones integrales de transporte terrestre aseguran que sus envíos se muevan con precisión, velocidad y visibilidad completa.",
+    "items": {
+      "0": { "title": "Disponibilidad 24/7", "description": "Siempre operativo, a través de zonas horarias y fines de semana." },
+      "1": { "title": "Conductores entrenados y verificados", "description": "Profesionales con experiencia en logística y autorización de seguridad." },
+      "2": { "title": "Actualizaciones en tiempo real", "description": "Manténgase informado en cada hito — sin incertidumbre." },
+      "3": { "title": "Coordinación global", "description": "Puerta a puerta, aeropuerto a aeropuerto o modos mixtos — conectamos cada eslabón." }
+    }
+  },
+  "FmlmNetwork": {
+    "badge": "Red FM/LM",
+    "title": "Coordinación global terrestre al alcance de su mano",
+    "description1": "Con cientos de conductores profesionales y socios logísticos en Asia, Europa y América, OBC Care garantiza una coordinación global terrestre sin interrupciones.",
+    "description2": "Ya sea puerta a puerta, aeropuerto a puerta, puerta a aeropuerto o aeropuerto a aeropuerto, nuestra red FM/LM está construida para mover su carga eficientemente — en cualquier momento y lugar.",
+    "stats": {
+      "drivers": { "label": "Conductores Profesionales", "value": "500+" },
+      "coverage": { "label": "Cobertura Global", "value": "70+" },
+      "response": { "label": "Tiempo de respuesta", "value": "<30m" }
+    },
+    "coverage": {
+      "asia": { "region": "Asia", "cities": "Singapur, Hong Kong, Tokio, Dubai, Mumbai" },
+      "europe": { "region": "Europa", "cities": "Londres, Frankfurt, Ámsterdam, París, Milán" },
+      "americas": { "region": "América", "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo" }
+    }
+  },
+  "FmlmJoin": {
+    "badge": "Únete a nuestro equipo",
+    "title": "Conviértete en conductor de Primera y Última Milla",
+    "description1": "¿Quieres unirte a nuestro equipo logístico de rápido movimiento? Cada milla que conduces marca la diferencia — asegurando que los envíos críticos lleguen a sus destinos a tiempo.",
+    "description2": "Como parte de la red global de OBC Care, se te confiarán entregas de alto valor y sensibles al tiempo, respaldadas por nuestro equipo de soporte 24/7.",
+    "description3": "Ya sea que seas un mensajero experimentado o un conductor profesional que busca ingresar a la logística crítica por el tiempo, siempre estamos buscando socios confiables en todo el mundo para hacer crecer nuestra red.",
+    "benefits": {
+      "0": { "title": "Conduce envíos críticos", "description": "Sé parte de la logística sensible al tiempo que importa" },
+      "1": { "title": "Equipo de soporte 24/7", "description": "Respaldado por nuestro centro de operaciones profesional" },
+      "2": { "title": "Oportunidades flexibles", "description": "Elige asignaciones que se adapten a tu horario" },
+      "3": { "title": "Red global", "description": "Únete a cientos de conductores en todo el mundo" }
+    },
+    "cta": "Aplica ahora",
+    "getTouch": "Ponerse en contacto",
+    "imageAlt": "Conductor de Primera y Última Milla",
+    "stats": "Conductores Activos"
+  },
+  "FmlmCta": {
+    "title": "Su envío, movido con precisión",
+    "description": "Desde la primera recogida hasta la última entrega, OBC Care asegura que su envío nunca pierda impulso. Entregamos velocidad, precisión y responsabilidad — para que sus operaciones funcionen sin problemas y sin interrupciones.",
+    "subheadline": "Obtenga una cotización gratuita hoy",
+    "closing": "Movamos su envío — más rápido, más seguro y más inteligente.",
+    "primary": "Obtener cotización gratis hoy"
   }
 }
