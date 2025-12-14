@@ -4,9 +4,7 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // eslint: { ignoreDuringBuilds: true } - removed as it's no longer supported in next.config.mjs
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -51,7 +49,7 @@ const nextConfig = {
       },
     ]
   },
-  swcMinify: true,
+// swcMinify is enabled by default in recent Next.js versions
   productionBrowserSourceMaps: false,
 }
 
