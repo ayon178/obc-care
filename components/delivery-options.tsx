@@ -3,46 +3,38 @@
 import { motion } from "framer-motion"
 import React from "react"
 import { DoorOpen, Plane, MoveRight, Landmark } from "lucide-react"
-
-type DeliveryOption = {
-  id: string
-  icon: React.ReactNode
-  title: string
-  description: string
-}
-
-const options: DeliveryOption[] = [
-  {
-    id: "door-to-door",
-    icon: <DoorOpen className="w-6 h-6 text-[#91c73e]" />,
-    title: "Door-to-Door",
-    description:
-      "Complete pickup and delivery from sender to receiver — full convenience, zero hassle.",
-  },
-  {
-    id: "airport-to-airport",
-    icon: <Plane className="w-6 h-6 text-[#91c73e]" />,
-    title: "Airport-to-Airport",
-    description:
-      "Ideal for international freight — coordination from origin to destination airports efficiently.",
-  },
-  {
-    id: "door-to-airport",
-    icon: <MoveRight className="w-6 h-6 text-[#91c73e]" />,
-    title: "Door-to-Airport",
-    description:
-      "Perfect for shippers sending goods abroad — we handle local pickup, packaging, and airline dispatch.",
-  },
-  {
-    id: "airport-to-door",
-    icon: <Landmark className="w-6 h-6 text-[#91c73e]" />,
-    title: "Airport-to-Door",
-    description:
-      "We take over once your shipment lands — handling customs and fast last-mile delivery to your receiver.",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function DeliveryOptions() {
+  const t = useTranslations("DeliveryOptions")
+
+  const options = [
+    {
+      id: "door-to-door",
+      icon: <DoorOpen className="w-6 h-6 text-[#91c73e]" />,
+      title: t("options.door-to-door.title"),
+      description: t("options.door-to-door.description"),
+    },
+    {
+      id: "airport-to-airport",
+      icon: <Plane className="w-6 h-6 text-[#91c73e]" />,
+      title: t("options.airport-to-airport.title"),
+      description: t("options.airport-to-airport.description"),
+    },
+    {
+      id: "door-to-airport",
+      icon: <MoveRight className="w-6 h-6 text-[#91c73e]" />,
+      title: t("options.door-to-airport.title"),
+      description: t("options.door-to-airport.description"),
+    },
+    {
+      id: "airport-to-door",
+      icon: <Landmark className="w-6 h-6 text-[#91c73e]" />,
+      title: t("options.airport-to-door.title"),
+      description: t("options.airport-to-door.description"),
+    },
+  ]
+
   return (
     <section className="relative py-14 md:py-24 bg-white overflow-hidden">
       {/* subtle background accents */}
@@ -57,14 +49,13 @@ export default function DeliveryOptions() {
         >
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#194479]/10 text-[#194479] text-xs md:text-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-[#91c73e]" />
-            Flexible Delivery Options
+            {t("header.label")}
           </span>
           <h2 className="headingFont mt-4 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#194479]">
-            Built for Every Route and Requirement
+            {t("header.title")}
           </h2>
           <p className="paragraphFont mt-3 md:mt-4 text-sm sm:text-base md:text-lg text-gray-600 px-1">
-            We tailor each transport solution to fit your operation&apos;s needs — whether it&apos;s
-            <span className="whitespace-nowrap"> time-critical</span>, sensitive, or high-value cargo.
+            {t("header.description")}
           </p>
         </motion.div>
 

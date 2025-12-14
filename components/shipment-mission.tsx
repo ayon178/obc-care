@@ -1,38 +1,7 @@
 "use client"
 
 import React, { useState, useEffect, useRef } from "react"
-
-// Sample Data
-const IMAGES = [
-  {
-    id: 1,
-    src: "/images/slider/1.jpeg",
-    alt: "Courier",
-  },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&auto=format&fit=crop",
-    alt: "Family",
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop",
-    alt: "Man standing",
-  },
-  {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=600&auto=format&fit=crop",
-    alt: "Delivery check",
-  },
-  {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop",
-    alt: "Students",
-  },
-]
-
-// Duplicate array to create a seamless-like loop effect
-const SLIDES = [...IMAGES, ...IMAGES]
+import { useTranslations } from "next-intl"
 
 // Dot Grid SVG Pattern
 const DotPattern = ({ className }: { className?: string }) => (
@@ -62,10 +31,39 @@ const DotPattern = ({ className }: { className?: string }) => (
   </svg>
 )
 
-import { useTranslations } from "next-intl"
-
 const ShipmentMission: React.FC = () => {
   const t = useTranslations("ShipmentMission")
+  
+  const IMAGES = [
+    {
+      id: 1,
+      src: "/images/slider/1.jpeg",
+      alt: t("images.courier"),
+    },
+    {
+      id: 2,
+      src: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&auto=format&fit=crop",
+      alt: t("images.family"),
+    },
+    {
+      id: 3,
+      src: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop",
+      alt: t("images.manStanding"),
+    },
+    {
+      id: 4,
+      src: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=600&auto=format&fit=crop",
+      alt: t("images.deliveryCheck"),
+    },
+    {
+      id: 5,
+      src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop",
+      alt: t("images.students"),
+    },
+  ]
+
+  // Duplicate array to create a seamless-like loop effect
+  const SLIDES = [...IMAGES, ...IMAGES]
   const [currentIndex, setCurrentIndex] = useState(0)
   const [itemsPerView, setItemsPerView] = useState(4)
   const [isHovered, setIsHovered] = useState(false)

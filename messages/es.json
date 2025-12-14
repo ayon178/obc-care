@@ -94,7 +94,14 @@
   },
   "ShipmentMission": {
     "title": "Su envío, Nuestra Misión",
-    "subtitle": "24/7, en todo el mundo."
+    "subtitle": "24/7, en todo el mundo.",
+    "images": {
+      "courier": "Mensajero",
+      "family": "Familia",
+      "manStanding": "Hombre de pie",
+      "deliveryCheck": "Verificación de entrega",
+      "students": "Estudiantes"
+    }
   },
   "ServicesCTA": {
     "badge": "Soporte Prioritario 24/7",
@@ -128,5 +135,123 @@
       "getQuote": "Cotización Gratuita",
       "becomeObc": "Ser OBC"
     }
+  },
+  "ServicesBanner": {
+    "title": "Entregando Soluciones Logísticas <br /> <green>Impulsadas por la Precisión</green>",
+    "description": "Para envíos de tiempo crítico en todo el mundo — desde partes AOG y automotrices hasta electrónica y componentes industriales.",
+    "features": {
+      "fast": "Rápido",
+      "secure": "Seguro",
+      "reliable": "Confiable",
+      "alwaysOnTime": "Siempre a tiempo."
+    },
+    "scroll": "Desplazarse"
+  },
+  "CoreServices": {
+    "header": {
+      "label": "Nuestros Servicios Principales",
+      "title": "Soluciones Logísticas <br /> <gradient>Prioritarias</gradient>",
+      "p1": "En OBC Care, entendemos que <bold>el tiempo de inactividad cuesta dinero</bold>. Por eso ofrecemos soluciones logísticas prioritarias adaptadas para industrias que exigen velocidad, seguridad y alcance global.",
+      "p2": "Nuestra experiencia asegura que cada envío — grande o pequeño — llegue <green>de manera segura, rápida y sin problemas</green>."
+    },
+    "items": {
+      "0": {
+        "title": "Entrega de Primera / Última Milla (FM/LM)",
+        "description": "Recolección y entrega sin problemas desde el origen hasta el destino final."
+      },
+      "1": {
+        "title": "Servicio de Courier a Bordo (OBC)",
+        "description": "Cuando cada segundo cuenta, nuestros mensajeros profesionales escoltan personalmente su envío con la máxima prioridad."
+      },
+      "2": {
+        "title": "Asistencia en Despacho de Aduanas",
+        "description": "Simplificamos lo complejo. Nuestros expertos en aduanas manejan cada detalle de la coordinación aduanera internacional."
+      },
+      "3": {
+        "title": "Soluciones de Siguiente Vuelo (NFO)",
+        "description": "Cuando la velocidad lo es todo, NFO asegura que su envío despegue en el siguiente vuelo disponible."
+      }
+    }
+  },
+  "OperatingProcess": {
+    "header": {
+      "label": "Cómo Operamos",
+      "title": "Proceso Eficiente, <br /> <gradient>Resultados Transparentes</gradient>",
+      "p1": "En OBC Care, <bold>cada minuto importa</bold>. Por eso nuestro proceso está diseñado para ser eficiente, transparente y totalmente personalizado para la urgencia, ruta e industria de su envío.",
+      "p2": "Así es como lo hacemos realidad:"
+    },
+    "steps": {
+      "0": {
+        "title": "Solicitud y Evaluación",
+        "description": "Envíe los detalles de su envío — nuestro equipo de operaciones evaluará la ruta más rápida y proporcionará una cotización en 15 minutos."
+      },
+      "1": {
+        "title": "Reserva y Documentación",
+        "description": "Una vez confirmado, reservamos todos los vuelos y preparamos todos los documentos necesarios, incluida la documentación aduanera, para asegurar un transporte fluido."
+      },
+      "2": {
+        "title": "Recolección y Entrega",
+        "description": "Un mensajero capacitado recoge su envío y lo prepara para la salida."
+      },
+      "3": {
+        "title": "Actualizaciones en Tiempo Real",
+        "description": "Desde la recolección hasta la entrega, enviamos actualizaciones de estado en vivo en cada hito."
+      },
+      "4": {
+        "title": "Confirmación de Entrega Final",
+        "description": "Una vez que su envío llega, recibirá una prueba de entrega instantánea — de manera segura y a tiempo."
+      }
+    }
+  },
+  "DeliveryOptions": {
+    "header": {
+      "label": "Opciones de Entrega Flexibles",
+      "title": "Construido para Cada Ruta y Requisito",
+      "description": "Adaptamos cada solución de transporte para satisfacer las necesidades de su operación — ya sea carga de tiempo crítico, sensible o de alto valor."
+    },
+    "options": {
+      "door-to-door": {
+        "title": "Puerta a Puerta",
+        "description": "Recolección y entrega completa del remitente al receptor — total conveniencia, cero molestias."
+      },
+      "airport-to-airport": {
+        "title": "Aeropuerto a Aeropuerto",
+        "description": "Ideal para carga internacional — coordinación eficiente desde el aeropuerto de origen hasta el de destino."
+      },
+      "door-to-airport": {
+        "title": "Puerta a Aeropuerto",
+        "description": "Perfecto para remitentes que envían mercancías al extranjero — manejamos la recolección local, el embalaje y el despacho aéreo."
+      },
+      "airport-to-door": {
+        "title": "Aeropuerto a Puerta",
+        "description": "Nos hacemos cargo una vez que su envío aterriza — manejando aduanas y entrega rápida de última milla a su receptor."
+      }
+    }
+  },
+  "ShipmentMethods": {
+    "header": {
+      "label": "Cómo Movemos Sus Envíos",
+      "title": "Rápido. Seguro. Global.",
+      "description": "Cada entrega es diferente — es por eso que personalizamos nuestro enfoque logístico para la eficiencia y precisión."
+    },
+    "methods": {
+      "air": {
+        "title": "Transporte Aéreo (Vuelos a Bordo y de Carga)",
+        "description": "Nuestros mensajeros viajan con o coordinan su envío a través de la ruta más rápida disponible, asegurando un manejo prioritario y cero retrasos."
+      },
+      "ground": {
+        "title": "Transporte Terrestre",
+        "description": "Para rutas cortas o regionales, ofrecemos entrega terrestre directa puerta a puerta con rastreo GPS y conductores en espera para movimiento continuo."
+      },
+      "security": {
+        "title": "Medidas de Rastreo y Seguridad",
+        "items": {
+          "0": "Monitoreo de extremo a extremo con actualizaciones en tiempo real",
+          "1": "Manejo seguro y custodia en cada punto de transferencia",
+          "2": "Mensajeros verificados y cheques de socios para una responsabilidad total"
+        }
+      }
+    },
+    "imageCaption": "Misiones OBC, FM/LM o NFO en acción — manejo prioritario en todo el mundo."
   }
 }

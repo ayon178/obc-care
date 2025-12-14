@@ -4,8 +4,11 @@ import Image from "next/image"
 import React, { useRef } from "react"
 import { motion } from "framer-motion"
 import { Plane, Truck, ShieldCheck, CheckCircle2 } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function ShipmentMethods() {
+  const t = useTranslations("ShipmentMethods")
+
   return (
     <section className="relative py-14 md:py-24 bg-white overflow-hidden">
       {/* soft background accents */}
@@ -20,14 +23,13 @@ export default function ShipmentMethods() {
           <div className="relative z-10">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#194479]/10 text-[#194479] text-xs md:text-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#91c73e]" />
-              How We Move Your Shipments
+              {t("header.label")}
             </span>
             <h2 className="headingFont mt-4 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#194479]">
-              Fast. Secure. Global.
+              {t("header.title")}
             </h2>
             <p className="paragraphFont mt-3 md:mt-4 text-gray-600 text-sm sm:text-base md:text-lg">
-              Every delivery is different — that’s why we customize our logistics approach for
-              efficiency and precision.
+              {t("header.description")}
             </p>
 
             {/* Methods */}
@@ -38,11 +40,10 @@ export default function ShipmentMethods() {
                 </div>
                 <div>
                   <h3 className="titleFont text-[#194479] text-base sm:text-lg md:text-xl">
-                    Air Transport (Onboard & Cargo Flights)
+                    {t("methods.air.title")}
                   </h3>
                   <p className="paragraphFont mt-1 text-gray-600 text-sm md:text-base">
-                    Our couriers travel with or coordinate your shipment via the fastest route
-                    available, ensuring priority handling and zero delays.
+                    {t("methods.air.description")}
                   </p>
                 </div>
               </div>
@@ -52,10 +53,9 @@ export default function ShipmentMethods() {
                   <Truck className="w-6 h-6 text-[#194479]" />
                 </div>
                 <div>
-                  <h3 className="titleFont text-[#194479] text-base sm:text-lg md:text-xl">Ground Transport</h3>
+                  <h3 className="titleFont text-[#194479] text-base sm:text-lg md:text-xl">{t("methods.ground.title")}</h3>
                   <p className="paragraphFont mt-1 text-gray-600 text-sm md:text-base">
-                    For short or regional routes, we provide direct, door-to-door ground delivery
-                    with GPS tracking and standby drivers for continuous movement.
+                    {t("methods.ground.description")}
                   </p>
                 </div>
               </div>
@@ -66,25 +66,25 @@ export default function ShipmentMethods() {
                 </div>
                 <div>
                   <h3 className="titleFont text-[#194479] text-base sm:text-lg md:text-xl">
-                    Tracking & Security Measures
+                    {t("methods.security.title")}
                   </h3>
                   <ul className="mt-1 space-y-2">
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 mt-0.5 text-[#91c73e]" />
                       <p className="paragraphFont text-gray-600 text-sm md:text-base">
-                        End-to-end monitoring with real-time updates
+                        {t("methods.security.items.0")}
                       </p>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 mt-0.5 text-[#91c73e]" />
                       <p className="paragraphFont text-gray-600 text-sm md:text-base">
-                        Secure handling and custody at every transfer point
+                        {t("methods.security.items.1")}
                       </p>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 mt-0.5 text-[#91c73e]" />
                       <p className="paragraphFont text-gray-600 text-sm md:text-base">
-                        Verified couriers and partner checks for full accountability
+                        {t("methods.security.items.2")}
                       </p>
                     </li>
                   </ul>
@@ -114,7 +114,7 @@ export default function ShipmentMethods() {
               {/* Bottom caption bar */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                 <p className="paragraphFont text-white/90 text-sm sm:text-base">
-                  OBC missions, FM/LM or NFO in action — priority handling worldwide.
+                  {t("imageCaption")}
                 </p>
               </div>
             </div>

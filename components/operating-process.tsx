@@ -8,51 +8,49 @@ import {
   Radio,
   CheckCircle2,
 } from "lucide-react"
-
-const steps = [
-  {
-    number: "01",
-    icon: FileSearch,
-    title: "Request & Assessment",
-    description:
-      "Submit your shipment details — our operations team will evaluate the fastest route and provide a quote within 15 minutes.",
-    color: "#194479",
-  },
-  {
-    number: "02",
-    icon: FileText,
-    title: "Booking & Documentation",
-    description:
-      "Once confirmed, we book all flights and prepare all necessary paperwork, including customs documentation, to ensure a smooth transport.",
-    color: "#91C73E",
-  },
-  {
-    number: "03",
-    icon: Package,
-    title: "Collection & Handover",
-    description:
-      "A trained courier picks up your shipment and prepares it for departure.",
-    color: "#194479",
-  },
-  {
-    number: "04",
-    icon: Radio,
-    title: "Real-Time Updates",
-    description:
-      "From pickup to delivery, we send live status updates at every milestone.",
-    color: "#91C73E",
-  },
-  {
-    number: "05",
-    icon: CheckCircle2,
-    title: "Final Delivery Confirmation",
-    description:
-      "Once your shipment arrives, you'll receive instant proof of delivery — safely and on time.",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function OperatingProcess() {
+  const t = useTranslations("OperatingProcess")
+
+  const steps = [
+    {
+      number: "01",
+      icon: FileSearch,
+      title: t("steps.0.title"),
+      description: t("steps.0.description"),
+      color: "#194479",
+    },
+    {
+      number: "02",
+      icon: FileText,
+      title: t("steps.1.title"),
+      description: t("steps.1.description"),
+      color: "#91C73E",
+    },
+    {
+      number: "03",
+      icon: Package,
+      title: t("steps.2.title"),
+      description: t("steps.2.description"),
+      color: "#194479",
+    },
+    {
+      number: "04",
+      icon: Radio,
+      title: t("steps.3.title"),
+      description: t("steps.3.description"),
+      color: "#91C73E",
+    },
+    {
+      number: "05",
+      icon: CheckCircle2,
+      title: t("steps.4.title"),
+      description: t("steps.4.description"),
+      color: "#194479",
+    },
+  ]
+
   return (
     <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
       {/* Animated Grid Background */}
@@ -111,7 +109,7 @@ export default function OperatingProcess() {
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#194479]"></div>
             <span className="px-4 py-2 rounded-full bg-[#194479]/10 backdrop-blur-sm border border-[#194479]/20">
               <span className="text-sm font-semibold text-[#194479] tracking-wider uppercase">
-                How We Operate
+                {t("header.label")}
               </span>
             </span>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#194479]"></div>
@@ -124,11 +122,10 @@ export default function OperatingProcess() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 leading-tight"
           >
-            <span className="text-gray-900">Efficient Process,</span>
-            <br />
-            <span className="bg-gradient-to-r from-[#194479] via-[#194479] to-[#91C73E] bg-clip-text text-transparent">
-              Transparent Results
-            </span>
+            {t.rich("header.title", {
+              br: () => <br />,
+              gradient: (chunks) => <span className="bg-gradient-to-r from-[#194479] via-[#194479] to-[#91C73E] bg-clip-text text-transparent">{chunks}</span>
+            })}
           </motion.h2>
 
           <motion.div
@@ -139,16 +136,12 @@ export default function OperatingProcess() {
             className="max-w-3xl mx-auto space-y-3 md:space-y-4 px-1"
           >
             <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-light">
-              At OBC Care,{" "}
-              <span className="font-semibold text-[#194479]">
-                every minute matters
-              </span>
-              . That's why our process is designed to be efficient, transparent,
-              and fully customized for your shipment's urgency, route, and
-              industry.
+              {t.rich("header.p1", {
+                bold: (chunks) => <span className="font-semibold text-[#194479]">{chunks}</span>
+              })}
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed font-light">
-              Here's how we make it happen:
+              {t("header.p2")}
             </p>
           </motion.div>
         </div>

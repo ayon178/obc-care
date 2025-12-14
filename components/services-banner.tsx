@@ -2,13 +2,15 @@
 
 import { motion } from "framer-motion"
 import { Truck, Zap, Shield, Clock } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function ServicesBanner() {
+  const t = useTranslations("ServicesBanner")
 
   const features = [
-    { icon: Zap, text: "Fast" },
-    { icon: Shield, text: "Secure" },
-    { icon: Clock, text: "Reliable" },
+    { icon: Zap, text: t("features.fast") },
+    { icon: Shield, text: t("features.secure") },
+    { icon: Clock, text: t("features.reliable") },
   ]
 
   return (
@@ -72,11 +74,10 @@ export default function ServicesBanner() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-3 leading-tight drop-shadow-2xl"
           >
-            Delivering Precision-Driven
-            <br />
-            <span className="bg-gradient-to-r from-[#91C73E] to-white bg-clip-text text-transparent drop-shadow-lg">
-              Logistics Solutions
-            </span>
+            {t.rich("title", {
+              br: () => <br />,
+              green: (chunks) => <span className="bg-gradient-to-r from-[#91C73E] to-white bg-clip-text text-transparent drop-shadow-lg">{chunks}</span>
+            })}
           </motion.h1>
 
           {/* Description */}
@@ -86,8 +87,7 @@ export default function ServicesBanner() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-xs sm:text-sm md:text-base text-white/95 mb-5 leading-relaxed max-w-2xl mx-auto drop-shadow-lg"
           >
-            For time-critical shipments across the globe — from AOG and
-            automotive parts to electronics and industrial components.
+            {t("description")}
           </motion.p>
 
           {/* Tagline with Features */}
@@ -116,7 +116,7 @@ export default function ServicesBanner() {
               )
             })}
             <span className="text-white/80 font-medium text-xs sm:text-sm">
-              Always on time.
+              {t("features.alwaysOnTime")}
             </span>
           </motion.div>
 
@@ -152,7 +152,7 @@ export default function ServicesBanner() {
           }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-white/60 text-sm">Scroll</span>
+          <span className="text-white/60 text-sm">{t("scroll")}</span>
           <div className="w-6 h-10 rounded-full border-2 border-white/40 flex items-start justify-center p-2">
             <motion.div
               className="w-1.5 h-1.5 rounded-full bg-white/60"

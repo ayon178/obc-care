@@ -94,7 +94,14 @@
   },
   "ShipmentMission": {
     "title": "Your shipment, Our Mission",
-    "subtitle": "24/7, across the globe."
+    "subtitle": "24/7, across the globe.",
+    "images": {
+      "courier": "Courier",
+      "family": "Family",
+      "manStanding": "Man standing",
+      "deliveryCheck": "Delivery check",
+      "students": "Students"
+    }
   },
   "ServicesCTA": {
     "badge": "24/7 Priority Support",
@@ -128,5 +135,123 @@
       "getQuote": "Get a Free Quote",
       "becomeObc": "Become an OBC"
     }
+  },
+  "ServicesBanner": {
+    "title": "Delivering Precision-Driven <br /> <green>Logistics Solutions</green>",
+    "description": "For time-critical shipments across the globe — from AOG and automotive parts to electronics and industrial components.",
+    "features": {
+      "fast": "Fast",
+      "secure": "Secure",
+      "reliable": "Reliable",
+      "alwaysOnTime": "Always on time."
+    },
+    "scroll": "Scroll"
+  },
+  "CoreServices": {
+    "header": {
+      "label": "Our Core Services",
+      "title": "Priority <br /> <gradient>Logistics Solutions</gradient>",
+      "p1": "At OBC Care, we understand that <bold>downtime costs money</bold>. That's why we provide priority logistics solutions tailored for industries that demand speed, security, and global reach.",
+      "p2": "Our expertise ensures that every shipment — big or small — arrives <green>safely, swiftly, and seamlessly</green>."
+    },
+    "items": {
+      "0": {
+        "title": "First Mile / Last Mile (FM/LM) Delivery",
+        "description": "Seamless pickup and delivery from origin to final destination."
+      },
+      "1": {
+        "title": "Onboard Courier (OBC) Service",
+        "description": "When every second counts, our professional couriers personally escort your shipment with utmost priority."
+      },
+      "2": {
+        "title": "Customs Clearance Assistance",
+        "description": "We simplify the complex. Our customs experts handle every detail of international customs coordination."
+      },
+      "3": {
+        "title": "Next Flight Out (NFO) Solutions",
+        "description": "When speed is everything, NFO ensures your shipment takes off on the next available flight."
+      }
+    }
+  },
+  "OperatingProcess": {
+    "header": {
+      "label": "How We Operate",
+      "title": "Efficient Process, <br /> <gradient>Transparent Results</gradient>",
+      "p1": "At OBC Care, <bold>every minute matters</bold>. That's why our process is designed to be efficient, transparent, and fully customized for your shipment's urgency, route, and industry.",
+      "p2": "Here's how we make it happen:"
+    },
+    "steps": {
+      "0": {
+        "title": "Request & Assessment",
+        "description": "Submit your shipment details — our operations team will evaluate the fastest route and provide a quote within 15 minutes."
+      },
+      "1": {
+        "title": "Booking & Documentation",
+        "description": "Once confirmed, we book all flights and prepare all necessary paperwork, including customs documentation, to ensure a smooth transport."
+      },
+      "2": {
+        "title": "Collection & Handover",
+        "description": "A trained courier picks up your shipment and prepares it for departure."
+      },
+      "3": {
+        "title": "Real-Time Updates",
+        "description": "From pickup to delivery, we send live status updates at every milestone."
+      },
+      "4": {
+        "title": "Final Delivery Confirmation",
+        "description": "Once your shipment arrives, you'll receive instant proof of delivery — safely and on time."
+      }
+    }
+  },
+  "DeliveryOptions": {
+    "header": {
+      "label": "Flexible Delivery Options",
+      "title": "Built for Every Route and Requirement",
+      "description": "We tailor each transport solution to fit your operation's needs — whether it's time-critical, sensitive, or high-value cargo."
+    },
+    "options": {
+      "door-to-door": {
+        "title": "Door-to-Door",
+        "description": "Complete pickup and delivery from sender to receiver — full convenience, zero hassle."
+      },
+      "airport-to-airport": {
+        "title": "Airport-to-Airport",
+        "description": "Ideal for international freight — coordination from origin to destination airports efficiently."
+      },
+      "door-to-airport": {
+        "title": "Door-to-Airport",
+        "description": "Perfect for shippers sending goods abroad — we handle local pickup, packaging, and airline dispatch."
+      },
+      "airport-to-door": {
+        "title": "Airport-to-Door",
+        "description": "We take over once your shipment lands — handling customs and fast last-mile delivery to your receiver."
+      }
+    }
+  },
+  "ShipmentMethods": {
+    "header": {
+      "label": "How We Move Your Shipments",
+      "title": "Fast. Secure. Global.",
+      "description": "Every delivery is different — that’s why we customize our logistics approach for efficiency and precision."
+    },
+    "methods": {
+      "air": {
+        "title": "Air Transport (Onboard & Cargo Flights)",
+        "description": "Our couriers travel with or coordinate your shipment via the fastest route available, ensuring priority handling and zero delays."
+      },
+      "ground": {
+        "title": "Ground Transport",
+        "description": "For short or regional routes, we provide direct, door-to-door ground delivery with GPS tracking and standby drivers for continuous movement."
+      },
+      "security": {
+        "title": "Tracking & Security Measures",
+        "items": {
+          "0": "End-to-end monitoring with real-time updates",
+          "1": "Secure handling and custody at every transfer point",
+          "2": "Verified couriers and partner checks for full accountability"
+        }
+      }
+    },
+    "imageCaption": "OBC missions, FM/LM or NFO in action — priority handling worldwide."
   }
 }

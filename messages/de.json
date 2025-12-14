@@ -94,7 +94,14 @@
   },
   "ShipmentMission": {
     "title": "Ihre Sendung, Unsere Mission",
-    "subtitle": "24/7, rund um den Globus."
+    "subtitle": "24/7, rund um den Globus.",
+    "images": {
+      "courier": "Kurier",
+      "family": "Familie",
+      "manStanding": "Mann stehend",
+      "deliveryCheck": "Lieferprüfung",
+      "students": "Studenten"
+    }
   },
   "ServicesCTA": {
     "badge": "24/7 Prioritäts-Support",
@@ -128,5 +135,123 @@
       "getQuote": "Kostenloses Angebot",
       "becomeObc": "OBC werden"
     }
+  },
+  "ServicesBanner": {
+    "title": "Präzisionsgetriebene <br /> <green>Logistiklösungen</green> liefern",
+    "description": "Für zeitkritische Sendungen rund um den Globus — von AOG und Automobilteilen bis hin zu Elektronik und Industriekomponenten.",
+    "features": {
+      "fast": "Schnell",
+      "secure": "Sicher",
+      "reliable": "Zuverlässig",
+      "alwaysOnTime": "Immer pünktlich."
+    },
+    "scroll": "Scrollen"
+  },
+  "CoreServices": {
+    "header": {
+      "label": "Unsere Kerndienstleistungen",
+      "title": "Prioritäts <br /> <gradient>Logistiklösungen</gradient>",
+      "p1": "Bei OBC Care verstehen wir, dass <bold>Stillstand Geld kostet</bold>. Deshalb bieten wir Prioritätslogistiklösungen, die auf Branchen zugeschnitten sind, die Geschwindigkeit, Sicherheit und globale Reichweite erfordern.",
+      "p2": "Unsere Expertise stellt sicher, dass jede Sendung — groß oder klein — <green>sicher, schnell und nahtlos</green> ankommt."
+    },
+    "items": {
+      "0": {
+        "title": "Erste Meile / Letzte Meile (FM/LM) Lieferung",
+        "description": "Nahtlose Abholung und Lieferung vom Ursprung bis zum endgültigen Bestimmungsort."
+      },
+      "1": {
+        "title": "Onboard-Kurier (OBC) Service",
+        "description": "Wenn jede Sekunde zählt, begleiten unsere professionellen Kuriere Ihre Sendung persönlich mit höchster Priorität."
+      },
+      "2": {
+        "title": "Zollabfertigungsunterstützung",
+        "description": "Wir vereinfachen das Komplexe. Unsere Zollexperten kümmern sich um jedes Detail der internationalen Zollkoordination."
+      },
+      "3": {
+        "title": "Next Flight Out (NFO) Lösungen",
+        "description": "Wenn Geschwindigkeit alles ist, stellt NFO sicher, dass Ihre Sendung mit dem nächsten verfügbaren Flug abhebt."
+      }
+    }
+  },
+  "OperatingProcess": {
+    "header": {
+      "label": "Wie wir arbeiten",
+      "title": "Effizienter Prozess, <br /> <gradient>Transparente Ergebnisse</gradient>",
+      "p1": "Bei OBC Care <bold>zählt jede Minute</bold>. Deshalb ist unser Prozess effizient, transparent und vollständig auf die Dringlichkeit, Route und Branche Ihrer Sendung zugeschnitten.",
+      "p2": "So machen wir es möglich:"
+    },
+    "steps": {
+      "0": {
+        "title": "Anfrage & Bewertung",
+        "description": "Senden Sie Ihre Sendungsdetails — unser Operationsteam bewertet die schnellste Route und erstellt innerhalb von 15 Minuten ein Angebot."
+      },
+      "1": {
+        "title": "Buchung & Dokumentation",
+        "description": "Nach Bestätigung buchen wir alle Flüge und bereiten alle erforderlichen Papiere, einschließlich Zollunterlagen, vor, um einen reibungslosen Transport zu gewährleisten."
+      },
+      "2": {
+        "title": "Abholung & Übergabe",
+        "description": "Ein geschulter Kurier holt Ihre Sendung ab und bereitet sie für den Abflug vor."
+      },
+      "3": {
+        "title": "Echtzeit-Updates",
+        "description": "Von der Abholung bis zur Lieferung senden wir Live-Status-Updates bei jedem Meilenstein."
+      },
+      "4": {
+        "title": "Endgültige Lieferbestätigung",
+        "description": "Sobald Ihre Sendung ankommt, erhalten Sie eine sofortige Lieferbestätigung — sicher und pünktlich."
+      }
+    }
+  },
+  "DeliveryOptions": {
+    "header": {
+      "label": "Flexible Lieferoptionen",
+      "title": "Gebaut für jede Route und Anforderung",
+      "description": "Wir passen jede Transportlösung an die Bedürfnisse Ihres Betriebs an — egal ob zeitkritisch, sensibel oder hochwertige Fracht."
+    },
+    "options": {
+      "door-to-door": {
+        "title": "Tür-zu-Tür",
+        "description": "Komplette Abholung und Lieferung vom Absender zum Empfänger — voller Komfort, kein Aufwand."
+      },
+      "airport-to-airport": {
+        "title": "Flughafen-zu-Flughafen",
+        "description": "Ideal für internationale Fracht — effiziente Koordination vom Ursprungs- zum Zielflughafen."
+      },
+      "door-to-airport": {
+        "title": "Tür-zu-Flughafen",
+        "description": "Perfekt für Versender, die Waren ins Ausland schicken — wir kümmern uns um die lokale Abholung, Verpackung und den Versand per Flugzeug."
+      },
+      "airport-to-door": {
+        "title": "Flughafen-zu-Tür",
+        "description": "Wir übernehmen, sobald Ihre Sendung landet — kümmern uns um den Zoll und die schnelle Lieferung auf der letzten Meile zu Ihrem Empfänger."
+      }
+    }
+  },
+  "ShipmentMethods": {
+    "header": {
+      "label": "Wie wir Ihre Sendungen bewegen",
+      "title": "Schnell. Sicher. Global.",
+      "description": "Jede Lieferung ist anders — deshalb passen wir unseren Logistikansatz für Effizienz und Präzision an."
+    },
+    "methods": {
+      "air": {
+        "title": "Lufttransport (Onboard & Frachtflüge)",
+        "description": "Unsere Kuriere reisen mit oder koordinieren Ihre Sendung über die schnellste verfügbare Route und gewährleisten Prioritätsbehandlung und null Verzögerungen."
+      },
+      "ground": {
+        "title": "Bodentransport",
+        "description": "Für kurze oder regionale Routen bieten wir direkte Tür-zu-Tür-Bodenlieferungen mit GPS-Tracking und Bereitschaftsfahrern für kontinuierliche Bewegung."
+      },
+      "security": {
+        "title": "Tracking & Sicherheitsmaßnahmen",
+        "items": {
+          "0": "End-to-End-Überwachung mit Echtzeit-Updates",
+          "1": "Sichere Handhabung und Verwahrung an jedem Übergabepunkt",
+          "2": "Überprüfte Kuriere und Partnerchecks für volle Rechenschaftspflicht"
+        }
+      }
+    },
+    "imageCaption": "OBC-Missionen, FM/LM oder NFO in Aktion — Prioritätsbehandlung weltweit."
   }
 }
