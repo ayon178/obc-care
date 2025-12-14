@@ -16,61 +16,63 @@ import {
 import MobileSidebar from "./MobileSidebar"
 import { Button } from "@/components/ui/button"
 
-const menuItems = [
-  { label: "Home", path: "/" },
-  {
-    label: "Services",
-    path: "/services",
-    subItems: [
-      {
-        label: "On Board Courier Services",
-        path: "/on-board-courier-services",
-      },
-      {
-        label: "First & Last Mile Delivery",
-        path: "/first-last-mile-delivery",
-      },
-      { label: "Customs Clearance", path: "/customer-clearance" },
-      { label: "Next Flight Out (NFO)", path: "/next-flight-out" },
-    ],
-  },
-  {
-    label: "Industries",
-    path: "/industries",
-    subItems: [
-      { label: "Aviation & AOG Parts", path: "/industries/aviation-aog-parts" },
-      {
-        label: "Automotive & Manufacturing",
-        path: "/industries/automotive-manufacturing",
-      },
-      {
-        label: "Electronics & Semiconductors",
-        path: "/industries/electronics-semiconductors",
-      },
-      {
-        label: "Industrial Machinery & Engineering",
-        path: "/industries/industrial-machinery-engineering",
-      },
-      {
-        label: "Technology & Data Equipment",
-        path: "/industries/technology-data-equipment",
-      },
-      {
-        label: "High-Value / Confidential Documents",
-        path: "/industries/high-value-confidential-documents",
-      },
-    ],
-  },
-  
-  {
-    label: "About Us",
-    path: "/about-us",
-  },
-
-  { label: "Contact", path: "/contact" },
-]
+import { useTranslations } from "next-intl"
+import LanguageSwitcher from "./LanguageSwitcher"
 
 const Navbar = () => {
+  const t = useTranslations("Navbar")
+  
+  const menuItems = [
+    { label: t("home"), path: "/" },
+    {
+      label: t("services"),
+      path: "/services",
+      subItems: [
+        {
+          label: t("subItems.onBoardCourier"),
+          path: "/on-board-courier-services",
+        },
+        {
+          label: t("subItems.firstLastMile"),
+          path: "/first-last-mile-delivery",
+        },
+        { label: t("subItems.customsClearance"), path: "/customer-clearance" },
+        { label: t("subItems.nextFlightOut"), path: "/next-flight-out" },
+      ],
+    },
+    {
+      label: t("industries"),
+      path: "/industries",
+      subItems: [
+        { label: t("subItems.aviation"), path: "/industries/aviation-aog-parts" },
+        {
+          label: t("subItems.automotive"),
+          path: "/industries/automotive-manufacturing",
+        },
+        {
+          label: t("subItems.electronics"),
+          path: "/industries/electronics-semiconductors",
+        },
+        {
+          label: t("subItems.industrial"),
+          path: "/industries/industrial-machinery-engineering",
+        },
+        {
+          label: t("subItems.technology"),
+          path: "/industries/technology-data-equipment",
+        },
+        {
+          label: t("subItems.documents"),
+          path: "/industries/high-value-confidential-documents",
+        },
+      ],
+    },
+    {
+      label: t("about"),
+      path: "/about-us",
+    },
+    { label: t("contact"), path: "/contact" },
+  ]
   const [isNavbarVisible, setIsNavbarVisible] = useState(true)
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
@@ -322,18 +324,14 @@ const Navbar = () => {
               {/* Search Icon */}
               <button
                 className="text-white hover:opacity-80 transition-opacity"
-                aria-label="Search"
+                aria-label={t("search")}
               >
                 <Search className="w-5 h-5 md:w-6 md:h-6" />
               </button>
 
               {/* Globe/Earth Icon */}
-              <button
-                className="text-white hover:opacity-80 transition-opacity"
-                aria-label="Language"
-              >
-                <Globe className="w-5 h-5 md:w-6 md:h-6" />
-              </button>
+              {/* Language Switcher */}
+              <LanguageSwitcher />
 
 
               {/* Get a Quote Button */}
@@ -342,7 +340,7 @@ const Navbar = () => {
                 className="hidden cursor-pointer sm:flex bg-[#91C73E] hover:bg-[#91C73E]/90 text-white"
                 size="sm"
               >
-                Get a Quote
+                {t("getQuote")}
               </Button>
 
               
@@ -352,7 +350,7 @@ const Navbar = () => {
                 className="hidden cursor-pointer sm:flex bg-transparent border border-white text-white hover:bg-white hover:text-[#194479] transition-colors"
                 size="sm"
               >
-                Become an OBC
+                {t("becomeObc")}
               </Button>
 
               {/* Mobile Hamburger Menu */}

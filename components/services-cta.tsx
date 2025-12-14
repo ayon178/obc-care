@@ -8,7 +8,10 @@ import Link from "next/link"
 import { Send, Phone } from "lucide-react"
 import React from "react"
 
+import { useTranslations } from "next-intl"
+
 export default function ServicesCTA() {
+  const t = useTranslations("ServicesCTA")
 
   const containerVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
@@ -68,7 +71,7 @@ export default function ServicesCTA() {
             variants={staggerVariants}
             className="absolute right-4 top-4 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-medium tracking-wide text-white/80 backdrop-blur-md"
           >
-            24/7 Priority Support
+            {t("badge")}
           </motion.div>
 
           {/* Left: Content */}
@@ -77,14 +80,13 @@ export default function ServicesCTA() {
               variants={staggerVariants}
               className="titleFont text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight"
             >
-              Need a Time‑Critical Delivery?
+              {t("title")}
             </motion.h2>
             <motion.p
               variants={staggerVariants}
               className="paragraphFont text-white/80 mt-4 text-sm sm:text-base md:text-lg"
-            >
-              Whether it’s an urgent aircraft part or a last‑minute production component, we deliver with speed, precision, and full visibility, <span className="font-bold">around the clock.</span>
-            </motion.p>
+              dangerouslySetInnerHTML={{ __html: t.raw("description") }}
+            />
 
             <motion.div
               variants={staggerVariants}
@@ -106,14 +108,14 @@ export default function ServicesCTA() {
                   transition={{ duration: 1.6, ease: "easeInOut" }}
                 />
                 <Send className="w-4 h-4" />
-                <span>Get a Free Quote</span>
+                <span>{t("getQuote")}</span>
               </Link>
               <Link
                 href="/contact"
                 className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors flex items-center justify-center gap-2"
               >
                 <Phone className="w-4 h-4" />
-                <span>Contact Us</span>
+                <span>{t("contactUs")}</span>
               </Link>
             </motion.div>
           </div>
@@ -164,11 +166,12 @@ export default function ServicesCTA() {
             {/* copy on right card */}
             <div className="relative">
               <h3 className="titleFont text-white text-lg md:text-xl">
-                Precision Logistics, Delivered
+                {t("cardTitle")}
               </h3>
-              <p className="paragraphFont text-white/80 mt-2 text-sm md:text-base">
-                Priority handling, real‑time updates, and dedicated experts for your most critical moves, <span className="font-bold">anywhere in the world.</span>
-              </p>
+              <p 
+                className="paragraphFont text-white/80 mt-2 text-sm md:text-base"
+                dangerouslySetInnerHTML={{ __html: t.raw("cardDescription") }}
+              />
             </div>
           </motion.div>
         </motion.div>

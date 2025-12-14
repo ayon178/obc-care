@@ -30,7 +30,11 @@ const WordReveal = ({ text, className }: { text: string; className?: string }) =
   )
 }
 
+import { useTranslations } from "next-intl"
+
 export default function LogisticsAdvantage() {
+  const t = useTranslations("LogisticsAdvantage")
+
 
   const features = [
     { icon: Zap, text: "Fast Delivery" },
@@ -93,6 +97,7 @@ export default function LogisticsAdvantage() {
           {/* Content Section - Left Side */}
           <motion.div className="space-y-6 relative z-10">
             {/* Small Label */}
+            {/* Small Label */}
             <motion.div
               initial={{ opacity: 0, x: -30, clipPath: "inset(0 100% 0 0)" }}
               whileInView={{ opacity: 1, x: 0, clipPath: "inset(0 0% 0 0)" }}
@@ -114,14 +119,14 @@ export default function LogisticsAdvantage() {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   viewport={{ once: true }}
                 />
-                Our Advantage
+                {t("label")}
               </span>
             </motion.div>
 
             {/* Main Title with Word-by-Word Reveal */}
             <div className="overflow-hidden">
               <WordReveal
-                text="Fast, Secure, and Global — Our Logistics Advantage"
+                text={t("title")}
                 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight"
               />
             </div>
@@ -135,7 +140,7 @@ export default function LogisticsAdvantage() {
               className="text-xl md:text-2xl font-semibold"
               style={{ color: "#91C73E" }}
             >
-              Your deadlines drive us.
+              {t("subtitle")}
             </motion.h3>
 
             {/* Description Paragraphs */}
@@ -152,9 +157,8 @@ export default function LogisticsAdvantage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
-              >
-                OBC Care provides end-to-end logistics solutions designed for industries that can’t afford delays: <span className="font-bold">aviation, automotive, and electronics.</span>
-              </motion.p>
+                dangerouslySetInnerHTML={{ __html: t.raw("p1") }}
+              />
 
               <motion.p
                 initial={{ opacity: 0, x: -30 }}
@@ -163,9 +167,7 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                We coordinate first and last mile deliveries, onboard couriers,
-                customs clearance, and next-flight-out (NFO) arrangements to
-                ensure every shipment arrives when it's needed most.
+                {t("p2")}
               </motion.p>
 
               <motion.p
@@ -175,8 +177,7 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                Whether it's across the city or across the world, we move
-                faster, think smarter, and deliver with care.
+                {t("p3")}
               </motion.p>
             </motion.div>
 

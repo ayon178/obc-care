@@ -3,40 +3,7 @@
 import { motion } from "framer-motion"
 import { Plane, Truck, Globe, Bell } from "lucide-react"
 
-const highlights = [
-  {
-    icon: Plane,
-    title: "Multi-Industry Logistics Solutions",
-    description:
-      "We specialize in mission-critical deliveries for aircraft parts, industrial spares, electronics, fashion items, and sensitive documents worldwide.",
-    color: "#194479",
-    gradient: "from-[#194479] to-[#1d5a96]",
-  },
-  {
-    icon: Truck,
-    title: "Complete Door-to-Door Service",
-    description:
-      "From pickup to handover, every stage is managed by our professional team with care and accuracy.",
-    color: "#91C73E",
-    gradient: "from-[#91C73E] to-[#7bb033]",
-  },
-  {
-    icon: Globe,
-    title: "Global Reach, Local Expertise",
-    description:
-      "With a worldwide network of trusted partners, we deliver seamlessly across continents and time zones.",
-    color: "#194479",
-    gradient: "from-[#194479] to-[#1d5a96]",
-  },
-  {
-    icon: Bell,
-    title: "Real-Time Updates",
-    description:
-      "Stay informed at every milestone. Our OBC team keeps you updated in real time, from pick-up to final delivery.",
-    color: "#91C73E",
-    gradient: "from-[#91C73E] to-[#7bb033]",
-  },
-]
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -66,7 +33,42 @@ const cardVariants = {
   },
 }
 
+import { useTranslations } from "next-intl"
+
 export default function KeyHighlights() {
+  const t = useTranslations("KeyHighlights")
+
+  const highlights = [
+    {
+      icon: Plane,
+      title: t("items.0.title"),
+      description: t("items.0.description"),
+      color: "#194479",
+      gradient: "from-[#194479] to-[#1d5a96]",
+    },
+    {
+      icon: Truck,
+      title: t("items.1.title"),
+      description: t("items.1.description"),
+      color: "#91C73E",
+      gradient: "from-[#91C73E] to-[#7bb033]",
+    },
+    {
+      icon: Globe,
+      title: t("items.2.title"),
+      description: t("items.2.description"),
+      color: "#194479",
+      gradient: "from-[#194479] to-[#1d5a96]",
+    },
+    {
+      icon: Bell,
+      title: t("items.3.title"),
+      description: t("items.3.description"),
+      color: "#91C73E",
+      gradient: "from-[#91C73E] to-[#7bb033]",
+    },
+  ]
+
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -117,7 +119,7 @@ export default function KeyHighlights() {
             className="text-sm font-semibold tracking-wider uppercase inline-block mb-4"
             style={{ color: "#91C73E" }}
           >
-            Key Highlights
+            {t("label")}
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -127,7 +129,7 @@ export default function KeyHighlights() {
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ color: "#194479" }}
           >
-            Why Choose OBC Care?
+            {t("title")}
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, scaleX: 0 }}

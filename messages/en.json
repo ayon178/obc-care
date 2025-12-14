@@ -1,0 +1,132 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "services": "Services",
+    "industries": "Industries",
+    "about": "About Us",
+    "contact": "Contact",
+    "getQuote": "Get a Quote",
+    "becomeObc": "Become an OBC",
+    "search": "Search",
+    "language": "Language",
+    "subItems": {
+      "onBoardCourier": "On Board Courier Services",
+      "firstLastMile": "First & Last Mile Delivery",
+      "customsClearance": "Customs Clearance",
+      "nextFlightOut": "Next Flight Out (NFO)",
+      "aviation": "Aviation & AOG Parts",
+      "automotive": "Automotive & Manufacturing",
+      "electronics": "Electronics & Semiconductors",
+      "industrial": "Industrial Machinery & Engineering",
+      "technology": "Technology & Data Equipment",
+      "documents": "High-Value / Confidential Documents"
+    }
+  },
+  "Home": {
+    "slides": {
+      "0": {
+        "firstLine": "Global Logistics Solutions",
+        "secondLine": "You Can Trust",
+        "smallLine": "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
+        "firstButtonText": "Get a Free Quote",
+        "secondButtonText": "Learn More About Our Services"
+      },
+      "1": {
+        "firstLine": "When Every Minute",
+        "secondLine": "Matters, We Deliver",
+        "smallLine": "Our 24/7 Onboard Courier team ensures the fastest, safest, and most transparent hand-carry delivery from pickup to final handover.",
+        "firstButtonText": "Get a Free Quote",
+        "secondButtonText": "Explore How OBC Works"
+      },
+      "2": {
+        "firstLine": "Direct, Fast, and Secure",
+        "secondLine": "OBC Solutions Worldwide",
+        "smallLine": "Your urgent shipment is personally escorted door-to-door, monitored in real time, and delivered exactly when you need it.",
+        "firstButtonText": "Book an OBC",
+        "secondButtonText": "How OBC Works"
+      }
+    }
+  },
+  "AboutSection": {
+    "stats": {
+      "globalNetwork": "Global Network",
+      "trustedPartners": "Trusted Partners",
+      "fastDelivery": "Fast Delivery",
+      "successRate": "Success Rate"
+    },
+    "label": "About Us",
+    "title": "About OBC Care",
+    "subtitle": "Your Global Partner in Time-Critical Logistics",
+    "p1": "At OBC Care, we move what matters most: from production spare parts and AOG shipments to automotive components and electronic equipment.",
+    "p2": "We're trusted by businesses worldwide to handle high-value, urgent shipments with precision, reliability, and full transparency.",
+    "trustedWorldwide": "Trusted Worldwide",
+    "globalExcellence": "Global Excellence"
+  },
+  "KeyHighlights": {
+    "label": "Key Highlights",
+    "title": "Why Choose OBC Care?",
+    "items": {
+      "0": {
+        "title": "Multi-Industry Logistics Solutions",
+        "description": "We specialize in mission-critical deliveries for aircraft parts, industrial spares, electronics, fashion items, and sensitive documents worldwide."
+      },
+      "1": {
+        "title": "Complete Door-to-Door Service",
+        "description": "From pickup to handover, every stage is managed by our professional team with care and accuracy."
+      },
+      "2": {
+        "title": "Global Reach, Local Expertise",
+        "description": "With a worldwide network of trusted partners, we deliver seamlessly across continents and time zones."
+      },
+      "3": {
+        "title": "Real-Time Updates",
+        "description": "Stay informed at every milestone. Our OBC team keeps you updated in real time, from pick-up to final delivery."
+      }
+    }
+  },
+  "LogisticsAdvantage": {
+    "label": "Our Advantage",
+    "title": "Fast, Secure, and Global — Our Logistics Advantage",
+    "subtitle": "Your deadlines drive us.",
+    "p1": "OBC Care provides end-to-end logistics solutions designed for industries that can’t afford delays: <bold>aviation, automotive, and electronics.</bold>",
+    "p2": "We coordinate first and last mile deliveries, onboard couriers, customs clearance, and next-flight-out (NFO) arrangements to ensure every shipment arrives when it's needed most.",
+    "p3": "Whether it's across the city or across the world, we move faster, think smarter, and deliver with care."
+  },
+  "ShipmentMission": {
+    "title": "Your shipment, Our Mission",
+    "subtitle": "24/7, across the globe."
+  },
+  "ServicesCTA": {
+    "badge": "24/7 Priority Support",
+    "title": "Need a Time-Critical Delivery?",
+    "description": "Whether it’s an urgent aircraft part or a last-minute production component, we deliver with speed, precision, and full visibility, <bold>around the clock.</bold>",
+    "getQuote": "Get a Free Quote",
+    "contactUs": "Contact Us",
+    "cardTitle": "Precision Logistics, Delivered",
+    "cardDescription": "Priority handling, real-time updates, and dedicated experts for your most critical moves, <bold>anywhere in the world.</bold>"
+  },
+  "Footer": {
+    "logoSubtitle": "Global Logistics Solutions",
+    "addressName": "OBC Care e.K",
+    "address": "Clemensstrasse 18<br />50169 Kerpen, Germany",
+    "followUs": "Follow Us",
+    "followText": "Stay connected with us for logistics insights and updates:",
+    "servicesTitle": "Our Services",
+    "quickLinksTitle": "Quick Links",
+    "copyright": "&copy; {year} OBC Care e.K. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "impressum": "Impressum",
+    "links": {
+      "firstLastMile": "First Mile / Last Mile Delivery",
+      "obcService": "Onboard Courier (OBC) Service",
+      "customsClearance": "Customs Clearance Assistance",
+      "nfoSolutions": "Next Flight Out (NFO) Solutions",
+      "aboutUs": "About Us",
+      "industries": "Industries We Serve",
+      "ourProcess": "Our Process",
+      "getQuote": "Get a Free Quote",
+      "becomeObc": "Become an OBC"
+    }
+  }
+}

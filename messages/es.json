@@ -1,0 +1,132 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "industries": "Industrias",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "getQuote": "Obtener cotización",
+    "becomeObc": "Ser OBC",
+    "search": "Buscar",
+    "language": "Idioma",
+    "subItems": {
+      "onBoardCourier": "Servicios de Courier a Bordo",
+      "firstLastMile": "Entrega de Primera y Última Milla",
+      "customsClearance": "Despacho de Aduanas",
+      "nextFlightOut": "Siguiente Vuelo (NFO)",
+      "aviation": "Aviación y Partes AOG",
+      "automotive": "Automotriz y Manufactura",
+      "electronics": "Electrónica y Semiconductores",
+      "industrial": "Maquinaria Industrial e Ingeniería",
+      "technology": "Tecnología y Equipos de Datos",
+      "documents": "Documentos de Alto Valor / Confidenciales"
+    }
+  },
+  "Home": {
+    "slides": {
+      "0": {
+        "firstLine": "Soluciones Logísticas Globales",
+        "secondLine": "En las que puede confiar",
+        "smallLine": "Rápido. Seguro. Confiable. — Movemos sus envíos críticos en todo el mundo, 24/7.",
+        "firstButtonText": "Cotización Gratuita",
+        "secondButtonText": "Conozca Nuestros Servicios"
+      },
+      "1": {
+        "firstLine": "Cuando Cada Minuto",
+        "secondLine": "Cuenta, Nosotros Entregamos",
+        "smallLine": "Nuestro equipo de Courier a Bordo 24/7 garantiza la entrega en mano más rápida, segura y transparente desde la recolección hasta la entrega final.",
+        "firstButtonText": "Cotización Gratuita",
+        "secondButtonText": "Cómo funciona OBC"
+      },
+      "2": {
+        "firstLine": "Directo, Rápido y Seguro",
+        "secondLine": "Soluciones OBC en todo el mundo",
+        "smallLine": "Su envío urgente es escoltado personalmente puerta a puerta, monitoreado en tiempo real y entregado exactamente cuando lo necesita.",
+        "firstButtonText": "Reservar un OBC",
+        "secondButtonText": "Cómo funciona OBC"
+      }
+    }
+  },
+  "AboutSection": {
+    "stats": {
+      "globalNetwork": "Red Global",
+      "trustedPartners": "Socios de Confianza",
+      "fastDelivery": "Entrega Rápida",
+      "successRate": "Tasa de Éxito"
+    },
+    "label": "Sobre Nosotros",
+    "title": "Sobre OBC Care",
+    "subtitle": "Su socio global en logística crítica",
+    "p1": "En OBC Care, movemos lo más importante: desde repuestos de producción y envíos AOG hasta componentes automotrices y equipos electrónicos.",
+    "p2": "Empresas de todo el mundo confían en nosotros para manejar envíos urgentes de alto valor con precisión, fiabilidad y total transparencia.",
+    "trustedWorldwide": "Confianza Mundial",
+    "globalExcellence": "Excelencia Global"
+  },
+  "KeyHighlights": {
+    "label": "Puntos Clave",
+    "title": "¿Por qué elegir OBC Care?",
+    "items": {
+      "0": {
+        "title": "Soluciones Logísticas Multi-Industria",
+        "description": "Nos especializamos en entregas de misión crítica para partes de aviones, repuestos industriales, electrónica, artículos de moda y documentos confidenciales en todo el mundo."
+      },
+      "1": {
+        "title": "Servicio Completo Puerta a Puerta",
+        "description": "Desde la recolección hasta la entrega, cada etapa es gestionada por nuestro equipo profesional con cuidado y precisión."
+      },
+      "2": {
+        "title": "Alcance Global, Experiencia Local",
+        "description": "Con una red mundial de socios de confianza, entregamos sin problemas a través de continentes y zonas horarias."
+      },
+      "3": {
+        "title": "Actualizaciones en Tiempo Real",
+        "description": "Manténgase informado en cada hito. Nuestro equipo OBC le mantiene actualizado en tiempo real, desde la recolección hasta la entrega final."
+      }
+    }
+  },
+  "LogisticsAdvantage": {
+    "label": "Nuestra Ventaja",
+    "title": "Rápido, Seguro y Global — Nuestra Ventaja Logística",
+    "subtitle": "Sus plazos nos impulsan.",
+    "p1": "OBC Care ofrece soluciones logísticas integrales diseñadas para industrias que no pueden permitirse retrasos: <bold>aviación, automotriz y electrónica.</bold>",
+    "p2": "Coordinamos entregas de primera y última milla, mensajeros a bordo, despacho de aduanas y arreglos de siguiente vuelo (NFO) para asegurar que cada envío llegue cuando más se necesita.",
+    "p3": "Ya sea a través de la ciudad o del mundo, nos movemos más rápido, pensamos más inteligentemente y entregamos con cuidado."
+  },
+  "ShipmentMission": {
+    "title": "Su envío, Nuestra Misión",
+    "subtitle": "24/7, en todo el mundo."
+  },
+  "ServicesCTA": {
+    "badge": "Soporte Prioritario 24/7",
+    "title": "¿Necesita una entrega crítica?",
+    "description": "Ya sea una pieza de avión urgente o un componente de producción de última hora, entregamos con velocidad, precisión y visibilidad total, <bold>las 24 horas.</bold>",
+    "getQuote": "Cotización Gratuita",
+    "contactUs": "Contáctenos",
+    "cardTitle": "Logística de Precisión, Entregada",
+    "cardDescription": "Manejo prioritario, actualizaciones en tiempo real y expertos dedicados para sus movimientos más críticos, <bold>en cualquier parte del mundo.</bold>"
+  },
+  "Footer": {
+    "logoSubtitle": "Soluciones Logísticas Globales",
+    "addressName": "OBC Care e.K",
+    "address": "Clemensstrasse 18<br />50169 Kerpen, Alemania",
+    "followUs": "Síguenos",
+    "followText": "Manténgase conectado con nosotros para obtener información y actualizaciones logísticas:",
+    "servicesTitle": "Nuestros Servicios",
+    "quickLinksTitle": "Enlaces Rápidos",
+    "copyright": "&copy; {year} OBC Care e.K. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "impressum": "Aviso Legal",
+    "links": {
+      "firstLastMile": "Entrega de Primera / Última Milla",
+      "obcService": "Servicio de Courier a Bordo (OBC)",
+      "customsClearance": "Asistencia en Despacho de Aduanas",
+      "nfoSolutions": "Soluciones de Siguiente Vuelo (NFO)",
+      "aboutUs": "Sobre Nosotros",
+      "industries": "Industrias que Servimos",
+      "ourProcess": "Nuestro Proceso",
+      "getQuote": "Cotización Gratuita",
+      "becomeObc": "Ser OBC"
+    }
+  }
+}

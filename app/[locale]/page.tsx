@@ -14,45 +14,20 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"
 import Link from "next/link"
 import ServicesCTA from "@/components/services-cta"
 
-const textData = [
-  {
-    // smallLine: 'The Structural Engineers Ltd.',
-    // firstLine: 'Dedicated to  ',
-    firstLine: "Global Logistics Solutions",
-    secondLine: "You Can Trust",
-    smallLine:
-      "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
-    firstButtonText: "Get a Free Quote",
-    firstButtonLink: "/inquiry",
-    secondButtonText: "Learn More About Our Services",
-    secondButtonLink: "/services",
-  },
-  {
-    // smallLine: 'The Structural Engineers Ltd.',
-    firstLine: "When Every Minute",
-    secondLine: "Matters, We Deliver",
-    smallLine:
-      "Our 24/7 Onboard Courier team ensures the fastest, safest, and most transparent hand-carry delivery from pickup to final handover.",
-    firstButtonText: "Get a Free Quote",
-    firstButtonLink: "/inquiry",
-    secondButtonText: "Explore How OBC Works",
-    secondButtonLink: "/process",
-  },
-  {
-    // smallLine: 'The Structural Engineers Ltd.',
-    firstLine: "Direct, Fast, and Secure",
-    secondLine: "OBC Solutions Worldwide",
-    smallLine:
-      "Your urgent shipment is personally escorted door-to-door, monitored in real time, and delivered exactly when you need it.",
-    // thirdLine: 'reflecting value ',
-     firstButtonText: "Book an OBC",
-    firstButtonLink: "/inquiry",
-    secondButtonText: "How OBC Works",
-    secondButtonLink: "/process",
-  },
-]
+import { useTranslations } from "next-intl"
 
 const Home = () => {
+    const t = useTranslations("Home");
+
+    const textData = [0, 1, 2].map((index: number) => ({
+        firstLine: t(`slides.${index}.firstLine`),
+        secondLine: t(`slides.${index}.secondLine`),
+        smallLine: t(`slides.${index}.smallLine`),
+        firstButtonText: t(`slides.${index}.firstButtonText`),
+        firstButtonLink: index === 0 ? "/inquiry" : index === 1 ? "/inquiry" : "/inquiry",
+        secondButtonText: t(`slides.${index}.secondButtonText`),
+        secondButtonLink: index === 0 ? "/services" : "/process"
+    }));
   const [isOpen, setIsOpen] = useState(false)
   const [currentImage, setCurrentImage] = useState(0)
   const [variantIndex, setVariantIndex] = useState(0)

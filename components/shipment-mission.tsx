@@ -62,7 +62,10 @@ const DotPattern = ({ className }: { className?: string }) => (
   </svg>
 )
 
+import { useTranslations } from "next-intl"
+
 const ShipmentMission: React.FC = () => {
+  const t = useTranslations("ShipmentMission")
   const [currentIndex, setCurrentIndex] = useState(0)
   const [itemsPerView, setItemsPerView] = useState(4)
   const [isHovered, setIsHovered] = useState(false)
@@ -165,10 +168,10 @@ const ShipmentMission: React.FC = () => {
           {/* Header Section */}
           <div className="mb-12 px-4 md:px-4 relative z-10">
             <h1 className="text-[#194479] text-3xl md:text-[2.5rem] font-bold leading-tight">
-              Your shipment, Our Mission
+              {t("title")}
             </h1>
             <p className="text-[#194479] text-lg mt-2 font-medium">
-              24/7, across the globe.
+              {t("subtitle")}
             </p>
           </div>
 

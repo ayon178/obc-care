@@ -36,12 +36,16 @@ const WordReveal = ({
   )
 }
 
+import { useTranslations } from "next-intl"
+
 export default function AboutSection() {
+  const t = useTranslations("AboutSection")
+  
   const stats = [
-    { icon: Globe, label: "Global Network", value: "150+" },
-    { icon: Shield, label: "Trusted Partners", value: "500+" },
-    { icon: Zap, label: "Fast Delivery", value: "24/7" },
-    { icon: TrendingUp, label: "Success Rate", value: "99%" },
+    { icon: Globe, label: t("stats.globalNetwork"), value: "150+" },
+    { icon: Shield, label: t("stats.trustedPartners"), value: "500+" },
+    { icon: Zap, label: t("stats.fastDelivery"), value: "24/7" },
+    { icon: TrendingUp, label: t("stats.successRate"), value: "99%" },
   ]
 
   return (
@@ -158,13 +162,13 @@ export default function AboutSection() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
-                      Trusted Worldwide
+                      {t("trustedWorldwide")}
                     </p>
                     <p
                       className="text-2xl font-bold"
                       style={{ color: "#194479" }}
                     >
-                      Global Excellence
+                      {t("globalExcellence")}
                     </p>
                   </div>
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#194479] to-[#1d5a96] flex items-center justify-center shadow-lg">
@@ -239,7 +243,7 @@ export default function AboutSection() {
                   className="text-sm font-bold tracking-wider uppercase"
                   style={{ color: "#91C73E" }}
                 >
-                  About Us
+                   {t("label")}
                 </span>
                 <div className="h-px flex-1 bg-gradient-to-r from-[#91C73E] to-transparent"></div>
               </div>
@@ -248,7 +252,7 @@ export default function AboutSection() {
             {/* Main Title */}
             <div className="overflow-hidden -mt-1">
               <WordReveal
-                text="About OBC Care"
+                text={t("title")}
                 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.1] mb-0.5"
               />
             </div>
@@ -262,7 +266,7 @@ export default function AboutSection() {
               className="text-xl md:text-2xl font-semibold mb-2 leading-tight"
               style={{ color: "#91C73E" }}
             >
-              Your Global Partner in Time-Critical Logistics
+              {t("subtitle")}
             </motion.h3>
 
             {/* Description */}
@@ -280,7 +284,7 @@ export default function AboutSection() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                At OBC Care, we move what matters most: from production spare parts and AOG shipments to automotive components and electronic equipment.
+                {t("p1")}
               </motion.p>
 
               <motion.p
@@ -290,9 +294,7 @@ export default function AboutSection() {
                 viewport={{ once: true }}
                 className="text-base md:text-lg text-gray-700 leading-relaxed"
               >
-                We're trusted by businesses worldwide to handle high-value,
-                urgent shipments with precision, reliability, and full
-                transparency.
+                {t("p2")}
               </motion.p>
             </motion.div>
 

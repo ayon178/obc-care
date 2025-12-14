@@ -22,7 +22,12 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 
+import { useTranslations } from "next-intl"
+
 export default function Footer() {
+  const t = useTranslations("Footer")
+  const currentYear = new Date().getFullYear()
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -43,26 +48,26 @@ export default function Footer() {
   }
 
   const services = [
-    { name: "First Mile / Last Mile Delivery", icon: Truck, href: "/services" },
+    { name: t("links.firstLastMile"), icon: Truck, href: "/services" },
     {
-      name: "Onboard Courier (OBC) Service",
+      name: t("links.obcService"),
       icon: Plane,
       href: "/on-board-courier-services",
     },
     {
-      name: "Customs Clearance Assistance",
+      name: t("links.customsClearance"),
       icon: FileCheck,
       href: "/services",
     },
-    { name: "Next Flight Out (NFO) Solutions", icon: Zap, href: "/services" },
+    { name: t("links.nfoSolutions"), icon: Zap, href: "/services" },
   ]
 
   const aboutLinks = [
-    { name: "About Us", href: "/about-us" },
-    { name: "Industries We Serve", href: "/industries" },
-    { name: "Our Process", href: "/process" },
-    { name: "Get a Free Quote", href: "/inquiry" },
-    { name: "Become an OBC", href: "/become-obc" },
+    { name: t("links.aboutUs"), href: "/about-us" },
+    { name: t("links.industries"), href: "/industries" },
+    { name: t("links.ourProcess"), href: "/process" },
+    { name: t("links.getQuote"), href: "/inquiry" },
+    { name: t("links.becomeObc"), href: "/become-obc" },
   ]
 
   const socialLinks = [
@@ -137,7 +142,7 @@ export default function Footer() {
               <div className="text-left">
                 <h3 className="text-2xl font-bold">OBC Care</h3>
                 <p className="text-base text-white/80">
-                  Global Logistics Solutions
+                  {t("logoSubtitle")}
                 </p>
               </div>
             </motion.div>
@@ -146,12 +151,11 @@ export default function Footer() {
               <div className="flex items-start gap-3 justify-center md:justify-start">
                 <MapPin className="w-6 h-6 text-[#91C73E] flex-shrink-0 mt-1" />
                 <div className="text-left">
-                  <p className="font-semibold mb-1 text-lg">OBC Care e.K</p>
-                  <p className="text-white text-base leading-relaxed">
-                    Clemensstrasse 18
-                    <br />
-                    50169 Kerpen, Germany
-                  </p>
+                  <p className="font-semibold mb-1 text-lg">{t("addressName")}</p>
+                  <p 
+                    className="text-white text-base leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: t.raw("address") }}
+                  />
                 </div>
               </div>
 
@@ -178,10 +182,10 @@ export default function Footer() {
             <div className="mt-8 pt-8 border-t border-white/10 w-full">
               <h3 className="text-xl font-bold mb-3 flex items-center justify-center md:justify-start gap-2">
                 <span className="text-3xl">🌐</span>
-                Follow Us
+                {t("followUs")}
               </h3>
               <p className="text-base text-white mb-6">
-                Stay connected with us for logistics insights and updates:
+                {t("followText")}
               </p>
               <div className="flex items-center justify-center md:justify-start gap-4 flex-wrap">
                 {socialLinks.map((social, index) => {
@@ -213,7 +217,7 @@ export default function Footer() {
               <div className="w-14 h-14 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center px-3 py-0">
                 <Truck className="w-7 h-7 text-[#91C73E]" />
               </div>
-              <h3 className="text-2xl font-bold">Our Services</h3>
+              <h3 className="text-2xl font-bold">{t("servicesTitle")}</h3>
             </motion.div>
 
             <ul className="space-y-4 w-full">
@@ -252,7 +256,7 @@ export default function Footer() {
                 <Info className="w-7 h-7 text-[#91C73E]" />
               </div>
               <h3 className="text-2xl font-bold whitespace-nowrap">
-                Quick Links
+                {t("quickLinksTitle")}
               </h3>
             </motion.div>
 
@@ -290,30 +294,30 @@ export default function Footer() {
           className="border-t border-white/10 pt-8 pb-10"
         >
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-base text-white/80">
-            <p className="text-center md:text-left">
-              &copy; {new Date().getFullYear()} OBC Care e.K. All rights
-              reserved.
-            </p>
+            <p 
+              className="text-center md:text-left"
+              dangerouslySetInnerHTML={{ __html: t.raw("copyright", { year: currentYear }) }}
+            />
             <div className="flex flex-wrap items-center justify-center md:justify-end gap-6">
               <Link
                 href="/privacy"
                 className="hover:text-[#91C73E] transition-colors"
               >
-                Privacy Policy
+                {t("privacy")}
               </Link>
               <span className="text-white/40">•</span>
               <Link
                 href="/terms"
                 className="hover:text-[#91C73E] transition-colors"
               >
-                Terms & Conditions
+                {t("terms")}
               </Link>
               <span className="text-white/40">•</span>
               <Link
                 href="/impressum"
                 className="hover:text-[#91C73E] transition-colors"
               >
-                Impressum
+                {t("impressum")}
               </Link>
             </div>
           </div>

@@ -1,0 +1,132 @@
+{
+  "Navbar": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "industries": "Branchen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "getQuote": "Angebot anfordern",
+    "becomeObc": "OBC werden",
+    "search": "Suche",
+    "language": "Sprache",
+    "subItems": {
+      "onBoardCourier": "On-Board-Kurierdienste",
+      "firstLastMile": "Erste & Letzte Meile Lieferung",
+      "customsClearance": "Zollabfertigung",
+      "nextFlightOut": "Next Flight Out (NFO)",
+      "aviation": "Luftfahrt & AOG-Teile",
+      "automotive": "Automobil & Fertigung",
+      "electronics": "Elektronik & Halbleiter",
+      "industrial": "Industriemaschinen & Technik",
+      "technology": "Technologie & Datentechnik",
+      "documents": "Hochwertige / Vertrauliche Dokumente"
+    }
+  },
+  "Home": {
+    "slides": {
+      "0": {
+        "firstLine": "Globale Logistiklösungen",
+        "secondLine": "Denen Sie vertrauen können",
+        "smallLine": "Schnell. Sicher. Zuverlässig. — Wir transportieren Ihre zeitkritischen Sendungen rund um die Uhr weltweit.",
+        "firstButtonText": "Kostenloses Angebot",
+        "secondButtonText": "Mehr über unsere Dienste"
+      },
+      "1": {
+        "firstLine": "Wenn jede Minute",
+        "secondLine": "Zählt, liefern wir",
+        "smallLine": "Unser 24/7 Onboard-Kurier-Team garantiert die schnellste, sicherste und transparenteste Handcarry-Lieferung von der Abholung bis zur Übergabe.",
+        "firstButtonText": "Kostenloses Angebot",
+        "secondButtonText": "Wie OBC funktioniert"
+      },
+      "2": {
+        "firstLine": "Direkt, Schnell und Sicher",
+        "secondLine": "Weltweite OBC-Lösungen",
+        "smallLine": "Ihre eilige Sendung wird persönlich von Tür zu Tür begleitet, in Echtzeit überwacht und genau dann geliefert, wenn Sie sie brauchen.",
+        "firstButtonText": "OBC buchen",
+        "secondButtonText": "Wie OBC funktioniert"
+      }
+    }
+  },
+  "AboutSection": {
+    "stats": {
+      "globalNetwork": "Globales Netzwerk",
+      "trustedPartners": "Vertrauenswürdige Partner",
+      "fastDelivery": "Schnelle Lieferung",
+      "successRate": "Erfolgsrate"
+    },
+    "label": "Über uns",
+    "title": "Über OBC Care",
+    "subtitle": "Ihr globaler Partner für zeitkritische Logistik",
+    "p1": "Bei OBC Care bewegen wir das Wichtigste: von Ersatzteilen für die Produktion und AOG-Sendungen bis hin zu Automobilkomponenten und elektronischen Geräten.",
+    "p2": "Unternehmen weltweit vertrauen uns bei der Abwicklung hochwertiger, dringender Sendungen mit Präzision, Zuverlässigkeit und voller Transparenz.",
+    "trustedWorldwide": "Weltweit vertraut",
+    "globalExcellence": "Globale Exzellenz"
+  },
+  "KeyHighlights": {
+    "label": "Highlights",
+    "title": "Warum OBC Care wählen?",
+    "items": {
+      "0": {
+        "title": "Branchenübergreifende Logistiklösungen",
+        "description": "Wir sind spezialisiert auf missionskritische Lieferungen für Flugzeugteile, Industrieersatzteile, Elektronik, Modeartikel und vertrauliche Dokumente weltweit."
+      },
+      "1": {
+        "title": "Kompletter Tür-zu-Tür-Service",
+        "description": "Von der Abholung bis zur Übergabe wird jede Phase von unserem professionellen Team mit Sorgfalt und Genauigkeit verwaltet."
+      },
+      "2": {
+        "title": "Globale Reichweite, lokale Expertise",
+        "description": "Mit einem weltweiten Netzwerk vertrauenswürdiger Partner liefern wir nahtlos über Kontinente und Zeitzonen hinweg."
+      },
+      "3": {
+        "title": "Echtzeit-Updates",
+        "description": "Bleiben Sie bei jedem Meilenstein informiert. Unser OBC-Team hält Sie in Echtzeit auf dem Laufenden, von der Abholung bis zur endgültigen Lieferung."
+      }
+    }
+  },
+  "LogisticsAdvantage": {
+    "label": "Unser Vorteil",
+    "title": "Schnell, Sicher und Global — Unser Logistikvorteil",
+    "subtitle": "Ihre Deadlines treiben uns an.",
+    "p1": "OBC Care bietet End-to-End-Logistiklösungen für Branchen, die sich keine Verzögerungen leisten können: <bold>Luftfahrt, Automobil und Elektronik.</bold>",
+    "p2": "Wir koordinieren Erste- und Letzte-Meile-Lieferungen, Onboard-Kuriere, Zollabfertigung und Next-Flight-Out (NFO)-Arrangements, um sicherzustellen, dass jede Sendung genau dann ankommt, wenn sie am dringendsten benötigt wird.",
+    "p3": "Egal ob quer durch die Stadt oder um die Welt, wir bewegen uns schneller, denken smarter und liefern mit Sorgfalt."
+  },
+  "ShipmentMission": {
+    "title": "Ihre Sendung, Unsere Mission",
+    "subtitle": "24/7, rund um den Globus."
+  },
+  "ServicesCTA": {
+    "badge": "24/7 Prioritäts-Support",
+    "title": "Benötigen Sie eine zeitkritische Lieferung?",
+    "description": "Ob es sich um ein dringendes Flugzeugteil oder eine Last-Minute-Produktionskomponente handelt, wir liefern mit Geschwindigkeit, Präzision und voller Sichtbarkeit, <bold>rund um die Uhr.</bold>",
+    "getQuote": "Kostenloses Angebot",
+    "contactUs": "Kontaktieren Sie uns",
+    "cardTitle": "Präzisionslogistik, Geliefert",
+    "cardDescription": "Prioritätsbehandlung, Echtzeit-Updates und engagierte Experten für Ihre kritischsten Transporte, <bold>überall auf der Welt.</bold>"
+  },
+  "Footer": {
+    "logoSubtitle": "Globale Logistiklösungen",
+    "addressName": "OBC Care e.K",
+    "address": "Clemensstraße 18<br />50169 Kerpen, Deutschland",
+    "followUs": "Folgen Sie uns",
+    "followText": "Bleiben Sie mit uns in Verbindung für Logistik-Einblicke und Updates:",
+    "servicesTitle": "Unsere Dienstleistungen",
+    "quickLinksTitle": "Schnelllinks",
+    "copyright": "&copy; {year} OBC Care e.K. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung",
+    "terms": "AGB",
+    "impressum": "Impressum",
+    "links": {
+      "firstLastMile": "Erste / Letzte Meile Lieferung",
+      "obcService": "Onboard-Kurier (OBC) Service",
+      "customsClearance": "Zollabfertigungsunterstützung",
+      "nfoSolutions": "Next Flight Out (NFO) Lösungen",
+      "aboutUs": "Über uns",
+      "industries": "Branchen, die wir bedienen",
+      "ourProcess": "Unser Prozess",
+      "getQuote": "Kostenloses Angebot",
+      "becomeObc": "OBC werden"
+    }
+  }
+}
