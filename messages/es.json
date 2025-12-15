@@ -743,5 +743,63 @@
     "badge": "¿Listo para hablar sobre las necesidades logísticas de su industria?",
     "primary": "Obtener Cotización Gratis",
     "secondary": "Contacte a Nuestro Equipo de Industria"
+  },
+  "AviationBanner": {
+    "badge": "OBC Care – Logística de Aviación y AOG",
+    "title": "Cuando un avión está en tierra, cada segundo cuenta.",
+    "description": "OBC Care entrega piezas críticas AOG (Avión en Tierra) y materiales de aviación — rápido, seguro y coordinado globalmente.",
+    "ctaRequest": "Solicitar Soporte Inmediato",
+    "ctaQuote": "Obtener Cotización Gratis"
+  },
+  "AviationIntro": {
+    "title": "Manteniendo los Aviones en Movimiento, Una Entrega a la Vez",
+    "p1": "Una situación AOG puede costar miles por hora — pero con OBC Care, el tiempo de inactividad se minimiza.",
+    "p2": "Nuestro equipo dedicado de logística de aviación se especializa en envíos de respuesta rápida, asegurando que sus componentes críticos, repuestos o documentos lleguen a su destino en el primer vuelo disponible.",
+    "p3": "Entendemos las demandas de precisión de la industria de la aviación — desde el despacho de aduanas hasta el acceso a la zona de operaciones — y entregamos sus piezas de manera segura, eficiente y sin demora.",
+    "stats": {
+      "desk": "Escritorio AOG",
+      "priority": "Prioridad de Vuelo"
+    }
+  },
+  "AviationWhatWeHandle": {
+    "title": "Lo Que Manejamos",
+    "description": "Logística de aviación integral para cada componente crítico y documento que su avión necesita.",
+    "items": {
+      "0": { "title": "Piezas y Herramientas AOG" },
+      "1": { "title": "Componentes de Motor y Aviónica" },
+      "2": { "title": "Documentos y Certificados de Aeronaves" },
+      "3": { "title": "Suministros de Mantenimiento, Reparación y Revisión (MRO)" },
+      "4": { "title": "Equipos de Apoyo en Tierra y Accesorios" }
+    }
+  },
+  "AviationHowItWorks": {
+    "title": "Cómo Funciona",
+    "description": "Un proceso simplificado de 5 pasos que asegura que sus piezas AOG lleguen a su avión en la ruta más rápida posible.",
+    "steps": {
+      "0": { "title": "Respuesta Inmediata", "desc": "Una vez que recibimos su alerta AOG, nuestro equipo de operaciones se moviliza en minutos." },
+      "1": { "title": "Reserva del Próximo Vuelo", "desc": "Su envío se prioriza en la ruta disponible más rápida." },
+      "2": { "title": "Coordinación de Aduanas y Aeropuertos", "desc": "Manejamos todos los procedimientos aeroportuarios y aduaneros para un despacho rápido." },
+      "3": { "title": "Monitoreo en Tránsito", "desc": "Reciba actualizaciones en tiempo real desde la recogida hasta la entrega." },
+      "4": { "title": "Entrega Final", "desc": "El envío se entrega personalmente a su hangar, técnico o equipo de operaciones." }
+    }
+  },
+  "AviationWhyChoose": {
+    "title": "Por Qué los Líderes de Aviación Eligen OBC Care",
+    "description": "Confiado por profesionales de la aviación en todo el mundo para la logística crítica de AOG.",
+    "benefits": {
+      "0": { "title": "Escritorio AOG 24/7", "desc": "Siempre de guardia para emergencias críticas de aviación." },
+      "1": { "title": "Opciones de Próximo Vuelo y a Bordo", "desc": "Elegimos la ruta más rápida disponible — NFO o transporte manual." },
+      "2": { "title": "Mensajeros Aprobados por Aerolíneas", "desc": "Nuestro equipo está capacitado en el manejo de carga aérea y operaciones en la zona de operaciones." },
+      "3": { "title": "Cumplimiento Total y Documentación", "desc": "Aseguramos que todos los conocimientos de embarque, certificados y documentos de aduana sean correctos y estén listos." },
+      "4": { "title": "Visibilidad de Extremo a Extremo", "desc": "Rastree cada movimiento con comunicación en tiempo real." }
+    }
+  },
+  "AviationCta": {
+    "heading": "Su AOG, Nuestra Prioridad",
+    "description": "Cuando su avión no puede moverse, nosotros lo hacemos — a través de fronteras, aeropuertos y zonas horarias.",
+    "subDescription": "Con OBC Care, sus operaciones se mantienen en el aire, su horario intacto y su confianza segura.",
+    "subHeadline": "Obtenga una Cotización Gratis Hoy",
+    "subHeadlineItalic": "Llevemos su avión de vuelta al cielo — rápido, seguro y sin compromisos.",
+    "button": "Obtenga una Cotización Gratis Hoy"
   }
 }

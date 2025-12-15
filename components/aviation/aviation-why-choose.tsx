@@ -3,41 +3,25 @@
 import { motion } from "framer-motion"
 import { Phone, Zap, Shield, FileText, Eye } from "lucide-react"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
-const benefits = [
-  {
-    icon: Phone,
-    title: "24/7 AOG Desk",
-    description: "Always on call for critical aviation emergencies.",
-    color: "#194479",
-  },
-  {
-    icon: Zap,
-    title: "Next Flight & Onboard Options",
-    description: "We choose the fastest route available — NFO or hand-carry.",
-    color: "#91c73e",
-  },
-  {
-    icon: Shield,
-    title: "Airline-Approved Couriers",
-    description: "Our team is trained in handling aviation cargo and airside operations.",
-    color: "#194479",
-  },
-  {
-    icon: FileText,
-    title: "Full Compliance & Documentation",
-    description: "We ensure all airway bills, certificates, and customs papers are correct and ready.",
-    color: "#91c73e",
-  },
-  {
-    icon: Eye,
-    title: "End-to-End Visibility",
-    description: "Track every movement with real-time communication.",
-    color: "#194479",
-  },
+const benefitsData = [
+  { icon: Phone, color: "#194479" },
+  { icon: Zap, color: "#91c73e" },
+  { icon: Shield, color: "#194479" },
+  { icon: FileText, color: "#91c73e" },
+  { icon: Eye, color: "#194479" },
 ]
 
 export default function AviationWhyChoose() {
+  const t = useTranslations("AviationWhyChoose")
+
+  const benefits = benefitsData.map((benefit, index) => ({
+    ...benefit,
+    title: t(`benefits.${index}.title`),
+    description: t(`benefits.${index}.desc`),
+  }))
+
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-[#194479] via-[#1a4a7f] to-[#194479] overflow-hidden">
       {/* Decorative Elements */}
@@ -57,10 +41,10 @@ export default function AviationWhyChoose() {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-4">
-              Why Aviation Leaders Choose OBC Care
+              {t("title")}
             </h2>
             <p className="paragraphFont text-white/90 text-sm md:text-base max-w-2xl mx-auto">
-              Trusted by aviation professionals worldwide for critical AOG logistics.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -70,7 +54,7 @@ export default function AviationWhyChoose() {
               const Icon = benefit.icon
               return (
                 <motion.div
-                  key={benefit.title}
+                  key={index}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -83,9 +67,7 @@ export default function AviationWhyChoose() {
                         className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0"
                         style={{ backgroundColor: `${benefit.color}20` }}
                       >
-                        <Icon
-                          className="w-7 h-7 text-white"
-                        />
+                        <Icon className="w-7 h-7 text-white" />
                       </div>
                       <div className="flex-1">
                         <h3 className="titleFont text-white font-bold text-lg md:text-xl mb-2">
@@ -101,8 +83,6 @@ export default function AviationWhyChoose() {
               )
             })}
           </div>
-
-          
         </div>
       </div>
     </section>

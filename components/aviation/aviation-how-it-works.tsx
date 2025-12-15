@@ -3,51 +3,32 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Clock, Plane, FileCheck, Radio, Truck } from "lucide-react"
+import { useTranslations } from "next-intl"
 
-const steps = [
-  {
-    number: "01",
-    title: "Immediate Response",
-    desc: "Once we receive your AOG alert, our operations team mobilizes within minutes.",
-    icon: Clock,
-    color: "#194479",
-  },
-  {
-    number: "02",
-    title: "Next Flight Booking",
-    desc: "Your shipment is prioritized on the fastest available route.",
-    icon: Plane,
-    color: "#91c73e",
-  },
-  {
-    number: "03",
-    title: "Customs & Airport Coordination",
-    desc: "We handle all airport and customs procedures for quick clearance.",
-    icon: FileCheck,
-    color: "#194479",
-  },
-  {
-    number: "04",
-    title: "In-Transit Monitoring",
-    desc: "Receive real-time updates from pickup to delivery.",
-    icon: Radio,
-    color: "#91c73e",
-  },
-  {
-    number: "05",
-    title: "Final Handover",
-    desc: "Shipment is personally delivered to your hangar, technician, or operations team.",
-    icon: Truck,
-    color: "#194479",
-  },
+const stepsData = [
+  { icon: Clock, color: "#194479" },
+  { icon: Plane, color: "#91c73e" },
+  { icon: FileCheck, color: "#194479" },
+  { icon: Radio, color: "#91c73e" },
+  { icon: Truck, color: "#194479" },
 ]
 
 export default function AviationHowItWorks() {
+  const t = useTranslations("AviationHowItWorks")
+
+  const steps = stepsData.map((step, index) => ({
+    ...step,
+    number: `0${index + 1}`,
+    title: t(`steps.${index}.title`),
+    desc: t(`steps.${index}.desc`),
+  }))
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 opacity-[0.03]"
+        <div
+          className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage: `
               radial-gradient(circle at 2px 2px, #194479 1px, transparent 0)
@@ -67,10 +48,10 @@ export default function AviationHowItWorks() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            How It Works
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            A streamlined 5-step process ensuring your AOG parts reach your aircraft on the fastest route possible.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -83,7 +64,7 @@ export default function AviationHowItWorks() {
             {steps.map((step, i) => {
               const Icon = step.icon
               const isLeft = i % 2 === 0
-              
+
               return (
                 <motion.div
                   key={step.number}
@@ -96,10 +77,12 @@ export default function AviationHowItWorks() {
                   }`}
                 >
                   {/* Timeline Node - Desktop Only - Positioned relative to step container */}
-                  <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border-4 shadow-xl z-30 pointer-events-none"
+                  <div
+                    className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border-4 shadow-xl z-30 pointer-events-none"
                     style={{ borderColor: step.color }}
                   >
-                    <div className="w-full h-full rounded-full flex items-center justify-center"
+                    <div
+                      className="w-full h-full rounded-full flex items-center justify-center"
                       style={{ backgroundColor: step.color }}
                     >
                       <Icon className="w-6 h-6 text-white" />
@@ -125,7 +108,9 @@ export default function AviationHowItWorks() {
                         </div>
                         <div className="flex-1">
                           <div className="flex items-center gap-3 mb-2">
-                            <span className="text-2xl font-bold text-[#194479]">{step.number}</span>
+                            <span className="text-2xl font-bold text-[#194479]">
+                              {step.number}
+                            </span>
                             <h3 className="titleFont text-[#194479] font-bold text-xl md:text-2xl leading-tight">
                               {step.title}
                             </h3>
@@ -139,7 +124,11 @@ export default function AviationHowItWorks() {
                   </motion.div>
 
                   {/* Spacer for alternating layout */}
-                  <div className={`hidden md:block order-2 ${isLeft ? "md:order-2" : "md:order-1"}`} />
+                  <div
+                    className={`hidden md:block order-2 ${
+                      isLeft ? "md:order-2" : "md:order-1"
+                    }`}
+                  />
                 </motion.div>
               )
             })}

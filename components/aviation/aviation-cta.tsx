@@ -3,13 +3,16 @@
 import { motion } from "framer-motion"
 import { ArrowRight, Plane } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function AviationCta() {
+  const t = useTranslations("AviationCta")
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#194479] via-[#1a4a7f] to-[#194479]" />
-      
+
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#91c73e]/10 blur-3xl" />
@@ -63,7 +66,7 @@ export default function AviationCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight"
               >
-                Your AOG, Our Priority
+                {t("heading")}
               </motion.h2>
 
               {/* Description */}
@@ -74,7 +77,7 @@ export default function AviationCta() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                When your aircraft can't move, we do — across borders, airports, and time zones.
+                {t("description")}
               </motion.p>
 
               {/* Sub-description */}
@@ -85,7 +88,7 @@ export default function AviationCta() {
                 transition={{ duration: 0.6, delay: 0.45 }}
                 className="paragraphFont text-white/85 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                With OBC Care, your operations stay airborne, your schedule intact, and your confidence secure.
+                {t("subDescription")}
               </motion.p>
 
               {/* Sub-headline */}
@@ -97,10 +100,10 @@ export default function AviationCta() {
                 className="pt-2"
               >
                 <p className="paragraphFont text-white font-semibold text-base md:text-lg mb-4">
-                  Get a Free Quote Today
+                  {t("subHeadline")}
                 </p>
                 <p className="paragraphFont text-white/80 text-xs md:text-sm italic mb-4">
-                  Let's get your aircraft back in the sky — fast, safe, and without compromise.
+                  {t("subHeadlineItalic")}
                 </p>
               </motion.div>
 
@@ -127,7 +130,7 @@ export default function AviationCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg whitespace-nowrap">
-                    Get a Free Quote Today
+                    {t("button")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>

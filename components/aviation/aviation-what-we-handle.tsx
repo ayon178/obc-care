@@ -1,37 +1,32 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CheckCircle2, Wrench, Cpu, FileText, Cog, Settings } from "lucide-react"
+import {
+  CheckCircle2,
+  Wrench,
+  Cpu,
+  FileText,
+  Cog,
+  Settings,
+} from "lucide-react"
+import { useTranslations } from "next-intl"
 
-const items = [
-  {
-    icon: Wrench,
-    title: "AOG Parts & Tools",
-    color: "#194479",
-  },
-  {
-    icon: Cpu,
-    title: "Engine Components & Avionics",
-    color: "#91c73e",
-  },
-  {
-    icon: FileText,
-    title: "Aircraft Documents & Certificates",
-    color: "#194479",
-  },
-  {
-    icon: Cog,
-    title: "Maintenance, Repair & Overhaul (MRO) Supplies",
-    color: "#91c73e",
-  },
-  {
-    icon: Settings,
-    title: "Ground Support Equipment & Accessories",
-    color: "#194479",
-  },
+const itemsData = [
+  { icon: Wrench, color: "#194479" },
+  { icon: Cpu, color: "#91c73e" },
+  { icon: FileText, color: "#194479" },
+  { icon: Cog, color: "#91c73e" },
+  { icon: Settings, color: "#194479" },
 ]
 
 export default function AviationWhatWeHandle() {
+  const t = useTranslations("AviationWhatWeHandle")
+
+  const items = itemsData.map((item, index) => ({
+    ...item,
+    title: t(`items.${index}.title`),
+  }))
+
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-gray-50 via-white to-gray-50/50 overflow-hidden">
       {/* Animated Background Elements */}
@@ -75,10 +70,10 @@ export default function AviationWhatWeHandle() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            What We Handle
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            Comprehensive aviation logistics for every critical component and document your aircraft needs.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -88,7 +83,7 @@ export default function AviationWhatWeHandle() {
             const Icon = item.icon
             return (
               <motion.div
-                key={item.title}
+                key={index}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -107,7 +102,7 @@ export default function AviationWhatWeHandle() {
                         style={{ color: item.color }}
                       />
                     </div>
-                    
+
                     {/* Content */}
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">

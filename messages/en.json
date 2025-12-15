@@ -743,6 +743,64 @@
     "badge": "Ready to talk about your industry's logistics needs?",
     "primary": "Get a Free Quote",
     "secondary": "Contact Our Industry Team"
+  },
+  "AviationBanner": {
+    "badge": "OBC Care – Aviation & AOG Logistics",
+    "title": "When an aircraft is grounded, every second counts.",
+    "description": "OBC Care delivers critical AOG (Aircraft on Ground) parts and aviation materials — fast, secure, and globally coordinated.",
+    "ctaRequest": "Request Immediate Support",
+    "ctaQuote": "Get a Free Quote"
+  },
+  "AviationIntro": {
+    "title": "Keeping Aircraft in Motion, One Delivery at a Time",
+    "p1": "An AOG situation can cost thousands per hour — but with OBC Care, downtime is minimized.",
+    "p2": "Our dedicated aviation logistics team specializes in rapid response shipments, ensuring your critical components, spare parts, or documents reach their destination on the very next flight out.",
+    "p3": "We understand the aviation industry's precision demands — from customs clearance to airside access — and deliver your parts safely, efficiently, and without delay.",
+    "stats": {
+      "desk": "AOG Desk",
+      "priority": "Flight Priority"
+    }
+  },
+  "AviationWhatWeHandle": {
+    "title": "What We Handle",
+    "description": "Comprehensive aviation logistics for every critical component and document your aircraft needs.",
+    "items": {
+      "0": { "title": "AOG Parts & Tools" },
+      "1": { "title": "Engine Components & Avionics" },
+      "2": { "title": "Aircraft Documents & Certificates" },
+      "3": { "title": "Maintenance, Repair & Overhaul (MRO) Supplies" },
+      "4": { "title": "Ground Support Equipment & Accessories" }
+    }
+  },
+  "AviationHowItWorks": {
+    "title": "How It Works",
+    "description": "A streamlined 5-step process ensuring your AOG parts reach your aircraft on the fastest route possible.",
+    "steps": {
+      "0": { "title": "Immediate Response", "desc": "Once we receive your AOG alert, our operations team mobilizes within minutes." },
+      "1": { "title": "Next Flight Booking", "desc": "Your shipment is prioritized on the fastest available route." },
+      "2": { "title": "Customs & Airport Coordination", "desc": "We handle all airport and customs procedures for quick clearance." },
+      "3": { "title": "In-Transit Monitoring", "desc": "Receive real-time updates from pickup to delivery." },
+      "4": { "title": "Final Handover", "desc": "Shipment is personally delivered to your hangar, technician, or operations team." }
+    }
+  },
+  "AviationWhyChoose": {
+    "title": "Why Aviation Leaders Choose OBC Care",
+    "description": "Trusted by aviation professionals worldwide for critical AOG logistics.",
+    "benefits": {
+      "0": { "title": "24/7 AOG Desk", "desc": "Always on call for critical aviation emergencies." },
+      "1": { "title": "Next Flight & Onboard Options", "desc": "We choose the fastest route available — NFO or hand-carry." },
+      "2": { "title": "Airline-Approved Couriers", "desc": "Our team is trained in handling aviation cargo and airside operations." },
+      "3": { "title": "Full Compliance & Documentation", "desc": "We ensure all airway bills, certificates, and customs papers are correct and ready." },
+      "4": { "title": "End-to-End Visibility", "desc": "Track every movement with real-time communication." }
+    }
+  },
+  "AviationCta": {
+    "heading": "Your AOG, Our Priority",
+    "description": "When your aircraft can't move, we do — across borders, airports, and time zones.",
+    "subDescription": "With OBC Care, your operations stay airborne, your schedule intact, and your confidence secure.",
+    "subHeadline": "Get a Free Quote Today",
+    "subHeadlineItalic": "Let's get your aircraft back in the sky — fast, safe, and without compromise.",
+    "button": "Get a Free Quote Today"
   }
 }
 ```
