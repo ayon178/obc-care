@@ -3,13 +3,16 @@
 import { motion } from "framer-motion"
 import { ArrowRight, MessageSquare } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function IndustriesCta() {
+  const t = useTranslations("IndustriesCta")
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#194479] via-[#1a4a7f] to-[#194479]" />
-      
+
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#91c73e]/10 blur-3xl" />
@@ -63,7 +66,7 @@ export default function IndustriesCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-sm font-semibold">
-                  Ready to talk about your industry's logistics needs?
+                  {t("badge")}
                 </span>
               </motion.div>
 
@@ -91,7 +94,7 @@ export default function IndustriesCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg whitespace-nowrap">
-                    Get a Free Quote
+                    {t("primary")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>
@@ -102,7 +105,7 @@ export default function IndustriesCta() {
                   className="buttonFont group relative inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-lg border border-white/30 transition-all duration-300 hover:border-white/50 whitespace-nowrap"
                 >
                   <span className="font-semibold text-base md:text-lg whitespace-nowrap">
-                    Contact Our Industry Team
+                    {t("secondary")}
                   </span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>

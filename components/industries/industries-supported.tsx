@@ -1,54 +1,51 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Plane, Car, Cpu, Cog, Server, FileText, ArrowRight } from "lucide-react"
+import {
+  Plane,
+  Car,
+  Cpu,
+  Cog,
+  Server,
+  FileText,
+  ArrowRight,
+} from "lucide-react"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
-const industries = [
+const industriesData = [
   {
     icon: Plane,
-    title: "Aviation & AOG Parts",
-    description: "Urgent spare parts, tools, and components dispatched instantly to keep aircraft airborne and operations uninterrupted.",
     color: "#194479",
     gradient: "from-[#194479] to-[#1a4a7f]",
     image: "/services/shipment.jpeg",
   },
   {
     icon: Car,
-    title: "Automotive & Manufacturing",
-    description: "Just-in-time deliveries of parts, moulds and tools that power production lines and prevent costly stoppages.",
     color: "#91c73e",
     gradient: "from-[#91c73e] to-[#7bb033]",
     image: "/services/shipment.jpeg",
   },
   {
     icon: Cpu,
-    title: "Electronics & Semiconductors",
-    description: "Secure, high-priority logistics for fragile, high-value components in tech hubs and manufacturing centres.",
     color: "#194479",
     gradient: "from-[#194479] to-[#1a4a7f]",
     image: "/services/shipment.jpeg",
   },
   {
     icon: Cog,
-    title: "Industrial Machinery & Engineering",
-    description: "Heavy or specialised machinery parts transported with precision so your plant keeps running without disruption.",
     color: "#91c73e",
     gradient: "from-[#91c73e] to-[#7bb033]",
     image: "/services/shipment.jpeg",
   },
   {
     icon: Server,
-    title: "Technology & Data Equipment",
-    description: "From servers to prototypes, we protect your high-value hardware with discrete, timed delivery and full visibility.",
     color: "#194479",
     gradient: "from-[#194479] to-[#1a4a7f]",
     image: "/services/shipment.jpeg",
   },
   {
     icon: FileText,
-    title: "High-Value / Confidential Documents",
-    description: "Critical contracts, prototypes and sensitive documents handled discreetly through secure hand-carry and direct delivery.",
     color: "#91c73e",
     gradient: "from-[#91c73e] to-[#7bb033]",
     image: "/services/shipment.jpeg",
@@ -56,8 +53,19 @@ const industries = [
 ]
 
 export default function IndustriesSupported() {
+  const t = useTranslations("IndustriesSupported")
+
+  const industries = industriesData.map((ind, index) => ({
+    ...ind,
+    title: t(`industries.${index}.title`),
+    description: t(`industries.${index}.desc`),
+  }))
+
   return (
-    <section id="industries" className="relative py-20 md:py-28 bg-gradient-to-br from-gray-50 via-white to-gray-50/50 overflow-hidden">
+    <section
+      id="industries"
+      className="relative py-20 md:py-28 bg-gradient-to-br from-gray-50 via-white to-gray-50/50 overflow-hidden"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -100,13 +108,13 @@ export default function IndustriesSupported() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold mb-6">
             <Plane className="w-4 h-4" />
-            Industry We Support
+            {t("badge")}
           </div>
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            Serving Every Sector with Precision
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            From aviation to technology, we deliver mission-critical shipments across industries where downtime isn't an option.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -132,8 +140,10 @@ export default function IndustriesSupported() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className={`absolute inset-0 bg-gradient-to-br ${industry.gradient} opacity-80 group-hover:opacity-70 transition-opacity duration-300`} />
-                    
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-br ${industry.gradient} opacity-80 group-hover:opacity-70 transition-opacity duration-300`}
+                    />
+
                     {/* Icon Badge */}
                     <div className="absolute top-4 left-4">
                       <motion.div
@@ -147,7 +157,9 @@ export default function IndustriesSupported() {
                     {/* Number Badge */}
                     <div className="absolute top-4 right-4">
                       <div className="w-10 h-10 rounded-lg bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center">
-                        <span className="text-white font-bold text-sm">{index + 1}</span>
+                        <span className="text-white font-bold text-sm">
+                          {index + 1}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -160,7 +172,7 @@ export default function IndustriesSupported() {
                     <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed mb-4">
                       {industry.description}
                     </p>
-                    
+
                     {/* Accent Line */}
                     <div
                       className="h-1 rounded-full"

@@ -701,5 +701,47 @@
     "subDescription": "Combinamos velocidad, confiabilidad y transparencia, asegurando que su envío llegue cuando más se necesita.",
     "button": "Obtenga una Cotización Gratis Ahora",
     "closing": "Nuestro equipo responde en minutos, porque cada segundo cuenta."
+  },
+  "IndustriesBanner": {
+    "badge": "Industrias",
+    "title": "Ofreciendo fiabilidad en todos los sectores — desde motores de aviones hasta microchips, OBC Care asegura que los envíos críticos lleguen a su destino de forma segura y a tiempo.",
+    "description": "Cuando la velocidad se encuentra con la precisión, cada industria avanza.",
+    "ctaExplore": "Explore Nuestras Industrias",
+    "ctaQuote": "Obtener Cotización Gratis"
+  },
+  "IndustriesIntro": {
+    "text": "En OBC Care, nos especializamos en mover envíos de misión crítica para industrias donde la velocidad, precisión y fiabilidad no son negociables. Ya sea un avión en tierra, una línea de fábrica esperando piezas, o datos sensibles que no pueden retrasarse – nuestra red global cumple."
+  },
+  "IndustriesSupported": {
+    "badge": "Industria Que Apoyamos",
+    "title": "Sirviendo a Cada Sector con Precisión",
+    "description": "Desde la aviación hasta la tecnología, entregamos envíos de misión crítica a través de industrias donde el tiempo de inactividad no es una opción.",
+    "industries": {
+      "0": { "title": "Aviación y Piezas AOG", "desc": "Repuestos urgentes, herramientas y componentes despachados al instante para mantener los aviones en el aire y las operaciones ininterrumpidas." },
+      "1": { "title": "Automotriz y Manufactura", "desc": "Entregas justo a tiempo de piezas, moldes y herramientas que impulsan las líneas de producción y previenen paradas costosas." },
+      "2": { "title": "Electrónica y Semiconductores", "desc": "Logística segura y de alta prioridad para componentes frágiles y de alto valor en centros tecnológicos y de fabricación." },
+      "3": { "title": "Maquinaria Industrial e Ingeniería", "desc": "Piezas de maquinaria pesada o especializada transportadas con precisión para que su planta siga funcionando sin interrupciones." },
+      "4": { "title": "Tecnología y Equipo de Datos", "desc": "Desde servidores hasta prototipos, protegemos su hardware de alto valor con entrega discreta y programada y visibilidad total." },
+      "5": { "title": "Documentos de Alto Valor / Confidenciales", "desc": "Contratos críticos, prototipos y documentos sensibles manejados discretamente a través de transporte manual seguro y entrega directa." }
+    }
+  },
+  "IndustriesWhyPartner": {
+    "badge": "Por qué asociarse con OBC Care en estas industrias",
+    "title": "Construido para industrias que no pueden permitirse retrasos",
+    "benefits": {
+      "0": { "title": "Presencia global con expertos en logística dedicados en zonas industriales clave" },
+      "1": { "title": "Operaciones 24/7 y respuesta inmediata para escenarios urgentes" },
+      "2": { "title": "Actualizaciones en tiempo real y transparencia total en cada hito" },
+      "3": { "title": "Soluciones a medida construidas para industrias con margen de error cero" }
+    },
+    "stats": {
+      "operations": "Operaciones",
+      "visibility": "Visibilidad"
+    }
+  },
+  "IndustriesCta": {
+    "badge": "¿Listo para hablar sobre las necesidades logísticas de su industria?",
+    "primary": "Obtener Cotización Gratis",
+    "secondary": "Contacte a Nuestro Equipo de Industria"
   }
 }

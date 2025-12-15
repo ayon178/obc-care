@@ -701,6 +701,48 @@
     "subDescription": "Wir kombinieren Geschwindigkeit, Zuverlässigkeit und Transparenz – und stellen sicher, dass Ihre Sendung dann ankommt, wenn sie am dringendsten benötigt wird.",
     "button": "Jetzt kostenloses Angebot erhalten",
     "closing": "Unser Team antwortet innerhalb von Minuten – denn jede Sekunde zählt."
+  },
+  "IndustriesBanner": {
+    "badge": "Branchen",
+    "title": "Zuverlässigkeit in jedem Sektor – von Flugzeugtriebwerken bis zu Mikrochips, OBC Care sorgt dafür, dass zeitkritische Sendungen sicher und pünktlich ankommen.",
+    "description": "Wenn Geschwindigkeit auf Präzision trifft, bewegt sich jede Branche vorwärts.",
+    "ctaExplore": "Unsere Branchen erkunden",
+    "ctaQuote": "Kostenloses Angebot erhalten"
+  },
+  "IndustriesIntro": {
+    "text": "Bei OBC Care haben wir uns auf den Transport missionskritischer Sendungen für Branchen spezialisiert, in denen Geschwindigkeit, Präzision und Zuverlässigkeit nicht verhandelbar sind. Ob ein Flugzeug am Boden, eine Produktionslinie, die auf Teile wartet, oder sensible Daten, die nicht verzögert werden dürfen – unser globales Netzwerk liefert."
+  },
+  "IndustriesSupported": {
+    "badge": "Branchen, die wir unterstützen",
+    "title": "Jeden Sektor mit Präzision bedienen",
+    "description": "Von der Luftfahrt bis zur Technologie liefern wir missionskritische Sendungen über Branchen hinweg, in denen Ausfallzeiten keine Option sind.",
+    "industries": {
+      "0": { "title": "Luftfahrt & AOG-Teile", "desc": "Dringende Ersatzteile, Werkzeuge und Komponenten, die sofort versendet werden, um Flugzeuge in der Luft und den Betrieb ununterbrochen zu halten." },
+      "1": { "title": "Automobil & Fertigung", "desc": "Just-in-Time-Lieferungen von Teilen, Formen und Werkzeugen, die Produktionslinien antreiben und kostspielige Stopps verhindern." },
+      "2": { "title": "Elektronik & Halbleiter", "desc": "Sichere, hochpriorisierte Logistik für zerbrechliche, hochwertige Komponenten in Technologiezentren und Fertigungszentren." },
+      "3": { "title": "Industriemaschinen & Engineering", "desc": "Schwere oder spezialisierte Maschinenteile, die mit Präzision transportiert werden, damit Ihre Anlage ohne Unterbrechung läuft." },
+      "4": { "title": "Technologie & Datenausrüstung", "desc": "Von Servern bis zu Prototypen schützen wir Ihre hochwertige Hardware mit diskreter, zeitgesteuerter Lieferung und voller Transparenz." },
+      "5": { "title": "Hochwertige / Vertrauliche Dokumente", "desc": "Kritische Verträge, Prototypen und sensible Dokumente, die diskret durch sicheren Hand-Carry und direkte Lieferung behandelt werden." }
+    }
+  },
+  "IndustriesWhyPartner": {
+    "badge": "Warum mit OBC Care zusammenarbeiten",
+    "title": "Gebaut für Branchen, die sich keine Verzögerungen leisten können",
+    "benefits": {
+      "0": { "title": "Globale Präsenz mit engagierten Logistikexperten in wichtigen Industriezonen" },
+      "1": { "title": "24/7 Betrieb und sofortige Reaktion auf dringende Szenarien" },
+      "2": { "title": "Echtzeit-Updates und volle Transparenz bei jedem Meilenstein" },
+      "3": { "title": "Maßgeschneiderte Lösungen für Branchen mit null Spielraum für Fehler" }
+    },
+    "stats": {
+      "operations": "Betrieb",
+      "visibility": "Transparenz"
+    }
+  },
+  "IndustriesCta": {
+    "badge": "Bereit, über die Logistikanforderungen Ihrer Branche zu sprechen?",
+    "primary": "Kostenloses Angebot erhalten",
+    "secondary": "Kontaktieren Sie unser Branchenteam"
   }
 }
 ```

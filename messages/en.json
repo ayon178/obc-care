@@ -701,6 +701,48 @@
     "subDescription": "We combine speed, reliability, and transparency — ensuring your shipment arrives when it's needed most.",
     "button": "Get a Free Quote Now",
     "closing": "Our team responds within minutes — because every second counts."
+  },
+  "IndustriesBanner": {
+    "badge": "Industries",
+    "title": "Delivering reliability across every sector — from aircraft engines to microchips, OBC Care ensures time-critical shipments reach their destination safely and on time.",
+    "description": "When speed meets precision, every industry moves forward.",
+    "ctaExplore": "Explore Our Industries",
+    "ctaQuote": "Get a Free Quote"
+  },
+  "IndustriesIntro": {
+    "text": "At OBC Care, we specialise in moving mission-critical shipments for industries where speed, precision and reliability are non-negotiable. Whether it's an aircraft on ground, a factory line waiting for parts, or sensitive data that can't be delayed – our global network delivers."
+  },
+  "IndustriesSupported": {
+    "badge": "Industry We Support",
+    "title": "Serving Every Sector with Precision",
+    "description": "From aviation to technology, we deliver mission-critical shipments across industries where downtime isn't an option.",
+    "industries": {
+      "0": { "title": "Aviation & AOG Parts", "desc": "Urgent spare parts, tools, and components dispatched instantly to keep aircraft airborne and operations uninterrupted." },
+      "1": { "title": "Automotive & Manufacturing", "desc": "Just-in-time deliveries of parts, moulds and tools that power production lines and prevent costly stoppages." },
+      "2": { "title": "Electronics & Semiconductors", "desc": "Secure, high-priority logistics for fragile, high-value components in tech hubs and manufacturing centres." },
+      "3": { "title": "Industrial Machinery & Engineering", "desc": "Heavy or specialised machinery parts transported with precision so your plant keeps running without disruption." },
+      "4": { "title": "Technology & Data Equipment", "desc": "From servers to prototypes, we protect your high-value hardware with discrete, timed delivery and full visibility." },
+      "5": { "title": "High-Value / Confidential Documents", "desc": "Critical contracts, prototypes and sensitive documents handled discreetly through secure hand-carry and direct delivery." }
+    }
+  },
+  "IndustriesWhyPartner": {
+    "badge": "Why Partner with OBC Care in These Industries",
+    "title": "Built for Industries That Can't Afford Delays",
+    "benefits": {
+      "0": { "title": "Global presence with dedicated logistics experts in key industrial zones" },
+      "1": { "title": "24/7 operations and immediate response for urgent scenarios" },
+      "2": { "title": "Real-time updates and full transparency at every milestone" },
+      "3": { "title": "Tailored solutions built for industries with zero margin for error" }
+    },
+    "stats": {
+      "operations": "Operations",
+      "visibility": "Visibility"
+    }
+  },
+  "IndustriesCta": {
+    "badge": "Ready to talk about your industry's logistics needs?",
+    "primary": "Get a Free Quote",
+    "secondary": "Contact Our Industry Team"
   }
 }
 ```
