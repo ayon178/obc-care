@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { ArrowRight, MessageSquare, CheckCircle2 } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function CustomsCta() {
+  const t = useTranslations("CustomsCta")
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
@@ -54,7 +57,7 @@ export default function CustomsCta() {
                   <MessageSquare className="w-6 h-6 text-[#91c73e]" />
                 </div>
                 <h2 className="headingFont text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">
-                  Simplify Your Global Deliveries
+                  {t("title")}
                 </h2>
               </motion.div>
 
@@ -66,7 +69,7 @@ export default function CustomsCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="paragraphFont text-white/90 text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
               >
-                Avoid the hassle, save time, and stay compliant. With OBC Care, you get a customs clearance partner that works as fast as your business moves.
+                {t("description")}
               </motion.p>
 
               {/* Sub-headline */}
@@ -79,7 +82,7 @@ export default function CustomsCta() {
               >
                 <CheckCircle2 className="w-5 h-5 text-[#91c73e]" />
                 <h3 className="headingFont text-xl md:text-2xl font-semibold text-white">
-                  Get a Free Quote Today
+                  {t("subheadline")}
                 </h3>
               </motion.div>
 
@@ -91,7 +94,7 @@ export default function CustomsCta() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="paragraphFont text-white/80 text-sm md:text-base italic"
               >
-                Let us handle your customs — you focus on what matters most.
+                {t("closing")}
               </motion.p>
 
               {/* CTA Button */}
@@ -117,7 +120,7 @@ export default function CustomsCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg whitespace-nowrap">
-                    Get a Free Quote Today
+                    {t("primary")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>

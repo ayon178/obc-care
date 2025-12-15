@@ -3,39 +3,34 @@
 import { motion } from "framer-motion"
 import { Clock, Shield, Zap, Package } from "lucide-react"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
-const reasons = [
+const reasonIcons = [
   {
     icon: Clock,
-    title: "Prevents Costly Delays",
-    desc: "Avoids demurrage fees and storage penalties by ensuring timely clearance.",
     color: "#194479",
     gradient: "from-[#194479] to-[#1a4a7f]",
   },
   {
     icon: Shield,
-    title: "Ensures Legal Compliance",
-    desc: "Avoids fines or seizure by meeting all import/export regulations.",
     color: "#91c73e",
     gradient: "from-[#91c73e] to-[#7bb033]",
   },
   {
     icon: Zap,
-    title: "Speeds Up Release",
-    desc: "Time-critical shipments can proceed to delivery without unnecessary delays.",
     color: "#194479",
     gradient: "from-[#194479] to-[#1a4a7f]",
   },
   {
     icon: Package,
-    title: "Protects High-Value Cargo",
-    desc: "Proper classification and handling for sensitive or valuable shipments.",
     color: "#91c73e",
     gradient: "from-[#91c73e] to-[#7bb033]",
   },
 ]
 
 export default function CustomsWhyImportant() {
+  const t = useTranslations("CustomsWhyImportant")
+  
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       {/* Animated Background Pattern */}
@@ -87,10 +82,10 @@ export default function CustomsWhyImportant() {
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#194479]/10 to-[#194479]/5 text-[#194479] text-xs sm:text-sm font-semibold border border-[#194479]/20"
           >
-            Why Is Customs Clearance Important?
+            {t("badge")}
           </motion.span>
           <h2 className="headingFont mt-6 text-2xl sm:text-3xl md:text-4xl font-bold text-[#194479] leading-tight">
-            Customs clearance is critical because it:
+            {t("title")}
           </h2>
         </motion.div>
 
@@ -109,7 +104,7 @@ export default function CustomsWhyImportant() {
               <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <Image
                   src="/services/shipment.jpeg"
-                  alt="Customs Clearance"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover"
                 />
@@ -136,7 +131,7 @@ export default function CustomsWhyImportant() {
               <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <Image
                   src="/services/shipment.jpeg"
-                  alt="Customs Clearance"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover"
                 />
@@ -154,7 +149,7 @@ export default function CustomsWhyImportant() {
 
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 relative md:min-h-[700px] md:py-24 md:px-8">
-              {reasons.map((r, i) => {
+              {reasonIcons.map((r, i) => {
                 const Icon = r.icon
                 // Desktop positions with proper margins to avoid image overlap
                 const desktopPositions = [
@@ -167,7 +162,7 @@ export default function CustomsWhyImportant() {
 
                 return (
                   <motion.div
-                    key={r.title}
+                    key={i}
                     initial={{ opacity: 0, scale: 0.8, y: 50 }}
                     whileInView={{ opacity: 1, scale: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
@@ -200,10 +195,10 @@ export default function CustomsWhyImportant() {
 
                         {/* Content */}
                         <h3 className="titleFont text-[#194479] font-bold text-base md:text-lg mb-2">
-                          {r.title}
+                          {t(`reasons.${i}.title`)}
                         </h3>
                         <p className="paragraphFont text-gray-700 text-sm leading-relaxed">
-                          {r.desc}
+                          {t(`reasons.${i}.desc`)}
                         </p>
 
                         {/* Decorative Element */}

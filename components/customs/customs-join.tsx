@@ -4,31 +4,17 @@ import { motion } from "framer-motion"
 import { Handshake, FileCheck, Globe, Shield, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
-const benefits = [
-  {
-    icon: FileCheck,
-    title: "Licensed Expertise",
-    description: "Work with certified customs professionals",
-  },
-  {
-    icon: Globe,
-    title: "Global Network",
-    description: "Support shipments across continents",
-  },
-  {
-    icon: Shield,
-    title: "24/7 Operations",
-    description: "Backed by our professional team",
-  },
-  {
-    icon: Handshake,
-    title: "Partnership Benefits",
-    description: "Grow your business with reliable partners",
-  },
+const benefitIcons = [
+  FileCheck,
+  Globe,
+  Shield,
+  Handshake,
 ]
 
 export default function CustomsJoin() {
+  const t = useTranslations("CustomsJoin")
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* Background accents */}
@@ -56,7 +42,7 @@ export default function CustomsJoin() {
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold"
             >
               <Handshake className="w-4 h-4" />
-              <span>Join Our Network</span>
+              <span>{t("badge")}</span>
             </motion.div>
 
             {/* Heading */}
@@ -67,7 +53,7 @@ export default function CustomsJoin() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="headingFont text-2xl sm:text-3xl md:text-4xl font-bold text-[#194479] leading-tight"
             >
-              Become a Customs Liaison Partner
+              {t("title")}
             </motion.h2>
 
             {/* Question */}
@@ -78,7 +64,7 @@ export default function CustomsJoin() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed font-semibold"
             >
-              Are you a licensed customs broker or clearance specialist?
+              {t("question")}
             </motion.p>
 
             {/* Description */}
@@ -89,7 +75,7 @@ export default function CustomsJoin() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed"
             >
-              Join OBC Care's network to support time-critical shipments globally.
+              {t("description1")}
             </motion.p>
 
             <motion.p
@@ -99,7 +85,7 @@ export default function CustomsJoin() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed"
             >
-              Help us deliver faster, compliant, and more reliable solutions to our clients.
+              {t("description2")}
             </motion.p>
 
             {/* Benefits Grid */}
@@ -110,15 +96,14 @@ export default function CustomsJoin() {
               transition={{ duration: 0.6, delay: 0.7 }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4"
             >
-              {benefits.map((benefit, index) => {
-                const Icon = benefit.icon
+              {benefitIcons.map((Icon, i) => {
                 return (
                   <motion.div
-                    key={index}
+                    key={i}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
+                    transition={{ duration: 0.4, delay: 0.8 + i * 0.1 }}
                     className="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-[#91c73e]/60 transition-all"
                   >
                     <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#194479]/10 flex items-center justify-center">
@@ -126,10 +111,10 @@ export default function CustomsJoin() {
                     </div>
                     <div>
                       <h3 className="titleFont text-[#194479] font-semibold text-sm sm:text-base mb-1">
-                        {benefit.title}
+                        {t(`benefits.${i}.title`)}
                       </h3>
                       <p className="paragraphFont text-gray-600 text-xs sm:text-sm">
-                        {benefit.description}
+                        {t(`benefits.${i}.description`)}
                       </p>
                     </div>
                   </motion.div>
@@ -149,14 +134,14 @@ export default function CustomsJoin() {
                 href="/inquiry"
                 className="buttonFont inline-flex items-center gap-2 bg-[#194479] hover:bg-[#153666] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group whitespace-nowrap"
               >
-                <span className="whitespace-nowrap">Apply as a Partner</span>
+                <span className="whitespace-nowrap">{t("ctaApply")}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
               </Link>
               <Link
                 href="/contact"
                 className="buttonFont inline-flex items-center gap-2 bg-white border-2 border-[#194479] hover:bg-[#194479] hover:text-white text-[#194479] px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group whitespace-nowrap"
               >
-                <span className="whitespace-nowrap">Contact Our Operations Team</span>
+                <span className="whitespace-nowrap">{t("ctaContact")}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
               </Link>
             </motion.div>
@@ -173,7 +158,7 @@ export default function CustomsJoin() {
             <div className="relative rounded-3xl overflow-hidden border border-gray-200 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
               <Image
                 src="/services/shipment.jpeg"
-                alt="Become a Customs Liaison Partner"
+                alt={t("imageAlt")}
                 width={1200}
                 height={900}
                 className="h-[400px] sm:h-[500px] md:h-[600px] w-full object-cover"
@@ -202,10 +187,10 @@ export default function CustomsJoin() {
                 </div>
                 <div>
                   <p className="titleFont text-2xl font-bold text-[#194479]">
-                    200+
+                    {t("stats.value")}
                   </p>
                   <p className="paragraphFont text-xs text-gray-600">
-                    Partners Worldwide
+                    {t("stats.label")}
                   </p>
                 </div>
               </div>

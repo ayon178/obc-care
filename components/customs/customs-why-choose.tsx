@@ -3,35 +3,17 @@
 import { motion } from "framer-motion"
 import { Globe, Clock, Zap, Package } from "lucide-react"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
-const features = [
-  {
-    icon: Globe,
-    title: "Global Expertise, Local Compliance",
-    desc: "Our knowledge of both international and country-specific customs ensures fast and lawful clearance.",
-    image: "/services/shipment.jpeg",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Monitoring & Updates",
-    desc: "Stay informed with live progress reports and milestone updates.",
-    image: "/services/shipment.jpeg",
-  },
-  {
-    icon: Zap,
-    title: "Zero Delay Commitment",
-    desc: "We act fast to prevent demurrage fees and storage penalties.",
-    image: "/services/shipment.jpeg",
-  },
-  {
-    icon: Package,
-    title: "All-in-One Logistics Partner",
-    desc: "From pickup to final handover — OBC Care manages it all with precision and transparency.",
-    image: "/services/shipment.jpeg",
-  },
+const featureIcons = [
+  Globe,
+  Clock,
+  Zap,
+  Package,
 ]
 
 export default function CustomsWhyChoose() {
+  const t = useTranslations("CustomsWhyChoose")
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       {/* Background accents */}
@@ -50,23 +32,22 @@ export default function CustomsWhyChoose() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
-            Why Choose OBC Care for Customs Clearance
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#194479] leading-tight">
-            Excellence in Every Clearance
+            {t("title")}
           </h2>
           <p className="paragraphFont mt-4 text-gray-700 text-base md:text-lg">
-            Our comprehensive customs solutions ensure your shipments clear borders with speed, compliance, and complete transparency.
+            {t("description")}
           </p>
         </motion.div>
 
         {/* Features Grid with Images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
-          {features.map((feature, index) => {
-            const Icon = feature.icon
+          {featureIcons.map((Icon, index) => {
             return (
               <motion.div
-                key={feature.title}
+                key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -76,8 +57,8 @@ export default function CustomsWhyChoose() {
                 {/* Image Background */}
                 <div className="relative h-[200px] overflow-hidden">
                   <Image
-                    src={feature.image}
-                    alt={feature.title}
+                    src="/services/shipment.jpeg"
+                    alt={t(`features.${index}.title`)}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -93,10 +74,10 @@ export default function CustomsWhyChoose() {
                 {/* Content Card */}
                 <div className="relative bg-white p-6 border-t-4 border-[#194479] group-hover:border-[#91c73e] transition-colors duration-300">
                   <h3 className="titleFont text-[#194479] font-bold text-lg md:text-xl mb-2">
-                    {feature.title}
+                    {t(`features.${index}.title`)}
                   </h3>
                   <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                    {feature.desc}
+                    {t(`features.${index}.desc`)}
                   </p>
                 </div>
               </motion.div>

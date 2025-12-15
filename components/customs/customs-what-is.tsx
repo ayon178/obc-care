@@ -3,8 +3,10 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { FileText, CheckCircle2 } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function CustomsWhatIs() {
+  const t = useTranslations("CustomsWhatIs")
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-br from-gray-50 via-white to-[#194479]/5 overflow-hidden">
       {/* Decorative background elements */}
@@ -25,19 +27,19 @@ export default function CustomsWhatIs() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
               <FileText className="w-4 h-4" />
-              What Is Customs Clearance Assistance?
+              {t("badge")}
             </div>
             
             <h2 className="headingFont text-2xl sm:text-3xl md:text-4xl font-bold text-[#194479] leading-tight">
-              Clearing Borders, Simplifying Logistics
+              {t("title")}
             </h2>
 
             <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-              International trade can be complex — but with OBC Care, customs clearance becomes simple, swift, and worry-free.
+              {t("description1")}
             </p>
 
             <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-              Our dedicated team handles all import and export requirements with precision and full compliance, ensuring your shipments move seamlessly from one country to the next without costly delays or document errors.
+              {t("description2")}
             </p>
 
             <motion.div
@@ -53,10 +55,10 @@ export default function CustomsWhatIs() {
                 </div>
                 <div>
                   <h3 className="titleFont text-[#194479] font-bold text-lg mb-2">
-                    Full-Service Solution
+                    {t("solutionTitle")}
                   </h3>
                   <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                    Customs Clearance Assistance is a full-service solution that manages the legal and administrative steps required to move goods across international borders.
+                    {t("solutionDesc")}
                   </p>
                 </div>
               </div>
@@ -71,7 +73,7 @@ export default function CustomsWhatIs() {
             >
               <CheckCircle2 className="w-5 h-5 text-[#91c73e] flex-shrink-0 mt-0.5" />
               <p className="paragraphFont text-gray-700 text-sm md:text-base">
-                Our team prepares and files documentation, coordinates with customs authorities, and ensures shipments meet all import/export regulations so they can be released quickly and legally.
+                {t("checkText")}
               </p>
             </motion.div>
           </motion.div>
@@ -88,7 +90,7 @@ export default function CustomsWhatIs() {
               <div className="relative h-[500px] md:h-[600px]">
                 <Image
                   src="/services/shipment.jpeg"
-                  alt="Customs Clearance Assistance"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover"
                   priority={false}
@@ -102,11 +104,11 @@ export default function CustomsWhatIs() {
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <div className="text-3xl font-bold text-[#194479]">24/7</div>
-                        <div className="text-sm text-gray-600">Support</div>
+                        <div className="text-sm text-gray-600">{t("stats.support")}</div>
                       </div>
                       <div>
                         <div className="text-3xl font-bold text-[#91c73e]">100%</div>
-                        <div className="text-sm text-gray-600">Compliant</div>
+                        <div className="text-sm text-gray-600">{t("stats.compliant")}</div>
                       </div>
                     </div>
                   </div>

@@ -477,6 +477,115 @@
     "subheadline": "Get a Free Quote Today",
     "closing": "Let's move your shipment — faster, safer, and smarter.",
     "primary": "Get a Free Quote Today"
+  },
+  "CustomsBanner": {
+    "badge": "Customs Clearance Assistance",
+    "title": "Fast. Compliant. Stress-free.",
+    "description": "We handle the paperwork so your shipment crosses borders without a hitch.",
+    "ctaQuote": "Get a Free Quote",
+    "ctaTalk": "Talk to Our Team"
+  },
+  "CustomsWhatIs": {
+    "badge": "What Is Customs Clearance Assistance?",
+    "title": "Clearing Borders, Simplifying Logistics",
+    "description1": "International trade can be complex — but with OBC Care, customs clearance becomes simple, swift, and worry-free.",
+    "description2": "Our dedicated team handles all import and export requirements with precision and full compliance, ensuring your shipments move seamlessly from one country to the next without costly delays or document errors.",
+    "solutionTitle": "Full-Service Solution",
+    "solutionDesc": "Customs Clearance Assistance is a full-service solution that manages the legal and administrative steps required to move goods across international borders.",
+    "checkText": "Our team prepares and files documentation, coordinates with customs authorities, and ensures shipments meet all import/export regulations so they can be released quickly and legally.",
+    "imageAlt": "Customs Clearance Assistance",
+    "stats": {
+      "support": "Support",
+      "compliant": "Compliant"
+    }
+  },
+  "CustomsWhyImportant": {
+    "badge": "Why Is Customs Clearance Important?",
+    "title": "Customs clearance is critical because it:",
+    "reasons": {
+      "0": { "title": "Prevents Costly Delays", "desc": "Avoids demurrage fees and storage penalties by ensuring timely clearance." },
+      "1": { "title": "Ensures Legal Compliance", "desc": "Avoids fines or seizure by meeting all import/export regulations." },
+      "2": { "title": "Speeds Up Release", "desc": "Time-critical shipments can proceed to delivery without unnecessary delays." },
+      "3": { "title": "Protects High-Value Cargo", "desc": "Proper classification and handling for sensitive or valuable shipments." }
+    },
+    "imageAlt": "Customs Clearance"
+  },
+  "CustomsWhatWeHandle": {
+    "badge": "What We Handle",
+    "title": "Comprehensive Customs Solutions",
+    "services": {
+      "0": { "title": "Import & Export Declarations", "desc": "Provides guidance and assistance to help navigate import and export processes efficiently." },
+      "1": { "title": "Duties, Taxes & Tariff Guidance", "desc": "We advise and communicate applicable duties and taxes, helping you prepare for potential charges." },
+      "2": { "title": "Permit & License Coordination", "desc": "Support the coordination of special permits and licenses required for your shipment." },
+      "3": { "title": "Airport & Border Handling", "desc": "Coordinates with airport customs and ground handlers for swift release." },
+      "4": { "title": "Special Cargo Clearance", "desc": "Expert handling of restricted, high-value, or temperature-sensitive shipments." }
+    }
+  },
+  "CustomsProcess": {
+    "badge": "Our Process",
+    "title": "From Documentation to Delivery",
+    "description": "A streamlined process ensuring your shipment clears customs efficiently and reaches its destination.",
+    "steps": {
+      "0": { "title": "Document Verification", "desc": "We pre-check all paperwork before dispatch to avoid any clearance rejection." },
+      "1": { "title": "Customs Submission", "desc": "Our licensed agents handle filing, coordination, and customs communication." },
+      "2": { "title": "Real-Time Updates", "desc": "Receive instant status updates every step of the way." },
+      "3": { "title": "Final Release & Delivery", "desc": "Once cleared, we arrange immediate transport to your destination." }
+    }
+  },
+  "CustomsWhyChoose": {
+    "badge": "Why Choose OBC Care for Customs Clearance",
+    "title": "Excellence in Every Clearance",
+    "description": "Our comprehensive customs solutions ensure your shipments clear borders with speed, compliance, and complete transparency.",
+    "features": {
+      "0": { "title": "Global Expertise, Local Compliance", "desc": "Our knowledge of both international and country-specific customs ensures fast and lawful clearance." },
+      "1": { "title": "24/7 Monitoring & Updates", "desc": "Stay informed with live progress reports and milestone updates." },
+      "2": { "title": "Zero Delay Commitment", "desc": "We act fast to prevent demurrage fees and storage penalties." },
+      "3": { "title": "All-in-One Logistics Partner", "desc": "From pickup to final handover — OBC Care manages it all with precision and transparency." }
+    }
+  },
+  "CustomsNetwork": {
+    "badge": "Customs Network",
+    "title": "Global Customs Partners, Local Expertise",
+    "description1": "Our customs partners and licensed agents operate across major trade lanes and key airports worldwide — ensuring fast, compliant clearance across regions.",
+    "description2": "We coordinate local expertise with global oversight so your shipment doesn't stop at the border.",
+    "stats": {
+      "agents": { "label": "Licensed Agents", "value": "200+" },
+      "coverage": { "label": "Global Coverage", "value": "50+" },
+      "time": { "label": "Clearance Time", "value": "<24h" }
+    },
+    "coverage": {
+      "asia": { "region": "Asia", "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai" },
+      "europe": { "region": "Europe", "cities": "London, Frankfurt, Amsterdam, Paris, Milan" },
+      "americas": { "region": "Americas", "cities": "New York, Los Angeles, Miami, Toronto, São Paulo" }
+    },
+    "imageAlt": "Global Customs Network"
+  },
+  "CustomsJoin": {
+    "badge": "Join Our Network",
+    "title": "Become a Customs Liaison Partner",
+    "question": "Are you a licensed customs broker or clearance specialist?",
+    "description1": "Join OBC Care's network to support time-critical shipments globally.",
+    "description2": "Help us deliver faster, compliant, and more reliable solutions to our clients.",
+    "imageAlt": "Become a Customs Liaison Partner",
+    "ctaApply": "Apply as a Partner",
+    "ctaContact": "Contact Our Operations Team",
+    "stats": {
+      "value": "200+",
+      "label": "Partners Worldwide"
+    },
+    "benefits": {
+      "0": { "title": "Licensed Expertise", "description": "Work with certified customs professionals" },
+      "1": { "title": "Global Network", "description": "Support shipments across continents" },
+      "2": { "title": "24/7 Operations", "description": "Backed by our professional team" },
+      "3": { "title": "Partnership Benefits", "description": "Grow your business with reliable partners" }
+    }
+  },
+  "CustomsCta": {
+    "title": "Simplify Your Global Deliveries",
+    "description": "Avoid the hassle, save time, and stay compliant. With OBC Care, you get a customs clearance partner that works as fast as your business moves.",
+    "subheadline": "Get a Free Quote Today",
+    "closing": "Let us handle your customs — you focus on what matters most.",
+    "primary": "Get a Free Quote Today"
   }
 }
 ```

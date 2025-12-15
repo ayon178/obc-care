@@ -477,5 +477,114 @@
     "subheadline": "Obtenga una cotización gratuita hoy",
     "closing": "Movamos su envío — más rápido, más seguro y más inteligente.",
     "primary": "Obtener cotización gratis hoy"
+  },
+  "CustomsBanner": {
+    "badge": "Asistencia en Despacho de Aduanas",
+    "title": "Rápido. Cumplidor. Sin estrés.",
+    "description": "Nos encargamos del papeleo para que su envío cruce fronteras sin problemas.",
+    "ctaQuote": "Obtener cotización gratis",
+    "ctaTalk": "Hable con nuestro equipo"
+  },
+  "CustomsWhatIs": {
+    "badge": "¿Qué es la Asistencia en Despacho de Aduanas?",
+    "title": "Despejando fronteras, simplificando la logística",
+    "description1": "El comercio internacional puede ser complejo, pero con OBC Care, el despacho de aduanas se vuelve simple, rápido y sin preocupaciones.",
+    "description2": "Nuestro equipo dedicado maneja todos los requisitos de importación y exportación con precisión y cumplimiento total, asegurando que sus envíos se muevan sin problemas de un país a otro sin retrasos costosos ni errores documentales.",
+    "solutionTitle": "Solución de Servicio Completo",
+    "solutionDesc": "La Asistencia en Despacho de Aduanas es una solución integral que gestiona los pasos legales y administrativos necesarios para mover mercancías a través de fronteras internacionales.",
+    "checkText": "Nuestro equipo prepara y presenta la documentación, coordina con las autoridades aduaneras y asegura que los envíos cumplan con todas las regulaciones de importación/exportación para que puedan ser liberados rápida y legalmente.",
+    "imageAlt": "Asistencia en Despacho de Aduanas",
+    "stats": {
+      "support": "Soporte",
+      "compliant": "Cumplimiento"
+    }
+  },
+  "CustomsWhyImportant": {
+    "badge": "¿Por qué es importante el despacho de aduanas?",
+    "title": "El despacho de aduanas es crítico porque:",
+    "reasons": {
+      "0": { "title": "Previene Retrasos Costosos", "desc": "Evita tarifas de demora y penalizaciones de almacenamiento asegurando un despacho oportuno." },
+      "1": { "title": "Asegura Cumplimiento Legal", "desc": "Evita multas o incautaciones cumpliendo con todas las regulaciones de importación/exportación." },
+      "2": { "title": "Acelera la Liberación", "desc": "Los envíos críticos pueden proceder a la entrega sin retrasos innecesarios." },
+      "3": { "title": "Protege Carga de Alto Valor", "desc": "Clasificación y manejo adecuados para envíos sensibles o valiosos." }
+    },
+    "imageAlt": "Despacho de Aduanas"
+  },
+  "CustomsWhatWeHandle": {
+    "badge": "Lo que manejamos",
+    "title": "Soluciones Aduaneras Integrales",
+    "services": {
+      "0": { "title": "Declaraciones de Importación y Exportación", "desc": "Proporciona orientación y asistencia para navegar eficientemente los procesos de importación y exportación." },
+      "1": { "title": "Aranceles, Impuestos y Orientación Tarifaria", "desc": "Asesoramos y comunicamos los aranceles e impuestos aplicables, ayudándole a prepararse para posibles cargos." },
+      "2": { "title": "Coordinación de Permisos y Licencias", "desc": "Apoyo en la coordinación de permisos especiales y licencias requeridas para su envío." },
+      "3": { "title": "Manejo en Aeropuertos y Fronteras", "desc": "Coordina con aduanas aeroportuarias y operadores en tierra para una liberación rápida." },
+      "4": { "title": "Despacho de Carga Especial", "desc": "Manejo experto de envíos restringidos, de alto valor o sensibles a la temperatura." }
+    }
+  },
+  "CustomsProcess": {
+    "badge": "Nuestro Proceso",
+    "title": "De la Documentación a la Entrega",
+    "description": "Un proceso simplificado que asegura que su envío pase la aduana eficientemente y llegue a su destino.",
+    "steps": {
+      "0": { "title": "Verificación de Documentos", "desc": "Verificamos todo el papeleo antes del despacho para evitar cualquier rechazo en aduana." },
+      "1": { "title": "Presentación Aduanera", "desc": "Nuestros agentes con licencia manejan la presentación, coordinación y comunicación aduanera." },
+      "2": { "title": "Actualizaciones en Tiempo Real", "desc": "Reciba actualizaciones de estado instantáneas en cada paso del camino." },
+      "3": { "title": "Liberación Final y Entrega", "desc": "Una vez liberado, organizamos el transporte inmediato a su destino." }
+    }
+  },
+  "CustomsWhyChoose": {
+    "badge": "¿Por qué elegir OBC Care para Despacho de Aduanas?",
+    "title": "Excelencia en Cada Despacho",
+    "description": "Nuestras soluciones aduaneras integrales aseguran que sus envíos crucen fronteras con velocidad, cumplimiento y total transparencia.",
+    "features": {
+      "0": { "title": "Experiencia Global, Cumplimiento Local", "desc": "Nuestro conocimiento de las aduanas internacionales y específicas de cada país asegura un despacho rápido y legal." },
+      "1": { "title": "Monitoreo y Actualizaciones 24/7", "desc": "Manténgase informado con informes de progreso en vivo y actualizaciones de hitos." },
+      "2": { "title": "Compromiso de Cero Retrasos", "desc": "Actuamos rápido para prevenir tarifas de demora y penalizaciones de almacenamiento." },
+      "3": { "title": "Socio Logístico Todo en Uno", "desc": "Desde la recolección hasta la entrega final — OBC Care lo gestiona todo con precisión y transparencia." }
+    }
+  },
+  "CustomsNetwork": {
+    "badge": "Red Aduanera",
+    "title": "Socios Aduaneros Globales, Experiencia Local",
+    "description1": "Nuestros socios aduaneros y agentes con licencia operan en las principales rutas comerciales y aeropuertos clave en todo el mundo — asegurando un despacho rápido y conforme en todas las regiones.",
+    "description2": "Coordinamos la experiencia local con supervisión global para que su envío no se detenga en la frontera.",
+    "stats": {
+      "agents": { "label": "Agentes con Licencia", "value": "200+" },
+      "coverage": { "label": "Cobertura Global", "value": "50+" },
+      "time": { "label": "Tiempo de Despacho", "value": "<24h" }
+    },
+    "coverage": {
+      "asia": { "region": "Asia", "cities": "Singapur, Hong Kong, Tokio, Dubái, Bombay" },
+      "europe": { "region": "Europa", "cities": "Londres, Fráncfort, Ámsterdam, París, Milán" },
+      "americas": { "region": "Américas", "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo" }
+    },
+    "imageAlt": "Red Aduanera Global"
+  },
+  "CustomsJoin": {
+    "badge": "Únase a Nuestra Red",
+    "title": "Conviértase en Socio de Enlace Aduanero",
+    "question": "¿Es usted un agente de aduanas con licencia o especialista en despachos?",
+    "description1": "Únase a la red de OBC Care para apoyar envíos críticos en todo el mundo.",
+    "description2": "Ayúdenos a entregar soluciones más rápidas, conformes y confiables a nuestros clientes.",
+    "imageAlt": "Conviértase en Socio de Enlace Aduanero",
+    "ctaApply": "Aplicar como Socio",
+    "ctaContact": "Contacte a Nuestro Equipo",
+    "stats": {
+      "value": "200+",
+      "label": "Socios en Todo el Mundo"
+    },
+    "benefits": {
+      "0": { "title": "Experiencia Licenciada", "description": "Trabaje con profesionales aduaneros certificados" },
+      "1": { "title": "Red Global", "description": "Apoye envíos a través de continentes" },
+      "2": { "title": "Operaciones 24/7", "description": "Respaldado por nuestro equipo profesional" },
+      "3": { "title": "Beneficios de Asociación", "description": "Haga crecer su negocio con socios confiables" }
+    }
+  },
+  "CustomsCta": {
+    "title": "Simplifique sus Entregas Globales",
+    "description": "Evite molestias, ahorre tiempo y cumpla con las normas. Con OBC Care, obtiene un socio de despacho de aduanas que trabaja tan rápido como se mueve su negocio.",
+    "subheadline": "Obtenga una Cotización Gratis Hoy",
+    "closing": "Deje que manejemos sus aduanas — usted concéntrese en lo que más importa.",
+    "primary": "Obtenga una Cotización Gratis Hoy"
   }
 }

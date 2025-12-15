@@ -477,6 +477,115 @@
     "subheadline": "Kostenloses Angebot anfordern",
     "closing": "Lassen Sie uns Ihre Sendung bewegen — schneller, sicherer und intelligenter.",
     "primary": "Kostenloses Angebot anfordern"
+  },
+  "CustomsBanner": {
+    "badge": "Zollabfertigungshilfe",
+    "title": "Schnell. Konform. Stressfrei.",
+    "description": "Wir kümmern uns um den Papierkram, damit Ihre Sendung die Grenzen reibungslos passiert.",
+    "ctaQuote": "Angebot anfordern",
+    "ctaTalk": "Mit uns sprechen"
+  },
+  "CustomsWhatIs": {
+    "badge": "Was ist Zollabfertigungshilfe?",
+    "title": "Grenzen überwinden, Logistik vereinfachen",
+    "description1": "Internationaler Handel kann komplex sein – mit OBC Care wird die Zollabfertigung einfach, schnell und sorgenfrei.",
+    "description2": "Unser engagiertes Team kümmert sich präzise und konform um alle Import- und Exportanforderungen, damit Ihre Sendungen nahtlos von einem Land ins andere gelangen, ohne kostspielige Verzögerungen oder Dokumentenfehler.",
+    "solutionTitle": "Full-Service-Lösung",
+    "solutionDesc": "Zollabfertigungshilfe ist eine Full-Service-Lösung, die die rechtlichen und administrativen Schritte für den grenzüberschreitenden Warenverkehr verwaltet.",
+    "checkText": "Unser Team bereitet Dokumente vor und reicht sie ein, koordiniert mit Zollbehörden und stellt sicher, dass Sendungen alle Import-/Exportbestimmungen erfüllen, um schnell und legal freigegeben zu werden.",
+    "imageAlt": "Zollabfertigungshilfe",
+    "stats": {
+      "support": "Support",
+      "compliant": "Konform"
+    }
+  },
+  "CustomsWhyImportant": {
+    "badge": "Warum ist Zollabfertigung wichtig?",
+    "title": "Zollabfertigung ist entscheidend, weil sie:",
+    "reasons": {
+      "0": { "title": "Kostspielige Verzögerungen verhindert", "desc": "Vermeidet Standgelder und Lagergebühren durch rechtzeitige Abfertigung." },
+      "1": { "title": "Rechtliche Konformität sichert", "desc": "Vermeidet Bußgelder oder Beschlagnahmungen durch Einhaltung aller Vorschriften." },
+      "2": { "title": "Freigabe beschleunigt", "desc": "Zeitkritische Sendungen können ohne unnötige Verzögerungen ausgeliefert werden." },
+      "3": { "title": "Hochwertige Fracht schützt", "desc": "Richtige Klassifizierung und Handhabung für sensible oder wertvolle Sendungen." }
+    },
+    "imageAlt": "Zollabfertigung"
+  },
+  "CustomsWhatWeHandle": {
+    "badge": "Was wir handhaben",
+    "title": "Umfassende Zolllösungen",
+    "services": {
+      "0": { "title": "Import- & Exportanmeldungen", "desc": "Bietet Anleitung und Unterstützung für effiziente Import- und Exportprozesse." },
+      "1": { "title": "Zölle, Steuern & Tarifberatung", "desc": "Wir beraten und kommunizieren anfallende Zölle und Steuern, damit Sie sich vorbereiten können." },
+      "2": { "title": "Genehmigungs- & Lizenzkoordination", "desc": "Unterstützung bei der Koordination spezieller Genehmigungen und Lizenzen für Ihre Sendung." },
+      "3": { "title": "Flughafen- & Grenzabfertigung", "desc": "Koordiniert mit Flughafenzoll und Bodenabfertigern für eine schnelle Freigabe." },
+      "4": { "title": "Spezialfrachtabfertigung", "desc": "Expertenhandling für beschränkte, hochwertige oder temperaturempfindliche Sendungen." }
+    }
+  },
+  "CustomsProcess": {
+    "badge": "Unser Prozess",
+    "title": "Von der Dokumentation bis zur Lieferung",
+    "description": "Ein optimierter Prozess, der sicherstellt, dass Ihre Sendung den Zoll effizient passiert und ihr Ziel erreicht.",
+    "steps": {
+      "0": { "title": "Dokumentenprüfung", "desc": "Wir prüfen alle Papiere vor dem Versand, um Ablehnungen bei der Abfertigung zu vermeiden." },
+      "1": { "title": "Zolleinreichung", "desc": "Unsere lizenzierten Agenten kümmern sich um Einreichung, Koordination und Zollkommunikation." },
+      "2": { "title": "Echtzeit-Updates", "desc": "Erhalten Sie sofortige Status-Updates bei jedem Schritt." },
+      "3": { "title": "Endgültige Freigabe & Lieferung", "desc": "Sobald freigegeben, organisieren wir den sofortigen Transport zu Ihrem Zielort." }
+    }
+  },
+  "CustomsWhyChoose": {
+    "badge": "Warum OBC Care für Zollabfertigung wählen",
+    "title": "Exzellenz bei jeder Abfertigung",
+    "description": "Unsere umfassenden Zolllösungen sorgen dafür, dass Ihre Sendungen Grenzen mit Geschwindigkeit, Konformität und voller Transparenz passieren.",
+    "features": {
+      "0": { "title": "Globale Expertise, Lokale Konformität", "desc": "Unser Wissen über internationale und landesspezifische Zölle sichert schnelle und rechtmäßige Abfertigung." },
+      "1": { "title": "24/7 Überwachung & Updates", "desc": "Bleiben Sie informiert mit Live-Fortschrittsberichten und Meilenstein-Updates." },
+      "2": { "title": "Verpflichtung zu Null Verzögerung", "desc": "Wir handeln schnell, um Standgelder und Lagergebühren zu vermeiden." },
+      "3": { "title": "All-in-One Logistikpartner", "desc": "Von Abholung bis Übergabe — OBC Care managt alles mit Präzision und Transparenz." }
+    }
+  },
+  "CustomsNetwork": {
+    "badge": "Zollnetzwerk",
+    "title": "Globale Zollpartner, Lokale Expertise",
+    "description1": "Unsere Zollpartner und lizenzierten Agenten operieren weltweit an wichtigen Handelsrouten und Flughäfen — für schnelle, konforme Abfertigung.",
+    "description2": "Wir koordinieren lokale Expertise mit globaler Übersicht, damit Ihre Sendung nicht an der Grenze stoppt.",
+    "stats": {
+      "agents": { "label": "Lizenzierte Agenten", "value": "200+" },
+      "coverage": { "label": "Globale Abdeckung", "value": "50+" },
+      "time": { "label": "Abfertigungszeit", "value": "<24Std" }
+    },
+    "coverage": {
+      "asia": { "region": "Asien", "cities": "Singapur, Hongkong, Tokio, Dubai, Mumbai" },
+      "europe": { "region": "Europa", "cities": "London, Frankfurt, Amsterdam, Paris, Mailand" },
+      "americas": { "region": "Amerika", "cities": "New York, Los Angeles, Miami, Toronto, São Paulo" }
+    },
+    "imageAlt": "Globales Zollnetzwerk"
+  },
+  "CustomsJoin": {
+    "badge": "Netzwerk beitreten",
+    "title": "Werden Sie Zollverbindungspartner",
+    "question": "Sind Sie lizenzierter Zollmakler oder Abfertigungsspezialist?",
+    "description1": "Treten Sie dem Netzwerk von OBC Care bei, um zeitkritische Sendungen weltweit zu unterstützen.",
+    "description2": "Helfen Sie uns, schnellere, konforme und zuverlässigere Lösungen für unsere Kunden zu liefern.",
+    "imageAlt": "Werden Sie Zollverbindungspartner",
+    "ctaApply": "Als Partner bewerben",
+    "ctaContact": "Kontaktieren Sie unser Team",
+    "stats": {
+      "value": "200+",
+      "label": "Partner weltweit"
+    },
+    "benefits": {
+      "0": { "title": "Lizenzierte Expertise", "description": "Arbeiten Sie mit zertifizierten Zollprofis" },
+      "1": { "title": "Globales Netzwerk", "description": "Unterstützen Sie Sendungen über Kontinente hinweg" },
+      "2": { "title": "24/7 Betrieb", "description": "Unterstützt durch unser professionelles Team" },
+      "3": { "title": "Partnerschaftsvorteile", "description": "Wachsen Sie mit zuverlässigen Partnern" }
+    }
+  },
+  "CustomsCta": {
+    "title": "Vereinfachen Sie Ihre globalen Lieferungen",
+    "description": "Vermeiden Sie Ärger, sparen Sie Zeit und bleiben Sie konform. Mit OBC Care erhalten Sie einen Zollpartner, der so schnell arbeitet wie Ihr Geschäft.",
+    "subheadline": "Angebot heute anfordern",
+    "closing": "Lassen Sie uns Ihre Zoll abwickeln — konzentrieren Sie sich auf das Wesentliche.",
+    "primary": "Angebot heute anfordern"
   }
 }
 ```

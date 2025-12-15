@@ -3,23 +3,19 @@
 import { motion } from "framer-motion"
 import { Globe2, FileCheck, MapPin, Clock } from "lucide-react"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
-const stats = [
-  { label: "Licensed Agents", value: "200+", icon: FileCheck },
-  { label: "Global Coverage", value: "50+", icon: Globe2 },
-  { label: "Clearance Time", value: "<24h", icon: Clock },
+const statsConfig = [
+  { key: "agents", icon: FileCheck },
+  { key: "coverage", icon: Globe2 },
+  { key: "time", icon: Clock },
 ]
 
-const coverageAreas = [
-  { region: "Asia", cities: "Singapore, Hong Kong, Tokyo, Dubai, Mumbai" },
-  { region: "Europe", cities: "London, Frankfurt, Amsterdam, Paris, Milan" },
-  {
-    region: "Americas",
-    cities: "New York, Los Angeles, Miami, Toronto, São Paulo",
-  },
-]
+const coverageKeys = ["asia", "europe", "americas"]
 
 export default function CustomsNetwork() {
+  const t = useTranslations("CustomsNetwork")
+
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       {/* Background accents */}
@@ -40,28 +36,28 @@ export default function CustomsNetwork() {
           >
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
               <MapPin className="w-4 h-4" />
-              Customs Network
+              {t("badge")}
             </span>
 
             <h2 className="headingFont text-2xl sm:text-3xl md:text-4xl font-bold text-[#194479] leading-tight">
-              Global Customs Partners, Local Expertise
+              {t("title")}
             </h2>
 
             <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-              Our customs partners and licensed agents operate across major trade lanes and key airports worldwide — ensuring fast, compliant clearance across regions.
+              {t("description1")}
             </p>
 
             <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-              We coordinate local expertise with global oversight so your shipment doesn't stop at the border.
+              {t("description2")}
             </p>
 
             {/* Stats Grid */}
             <div className="grid grid-cols-3 gap-4 pt-4">
-              {stats.map((stat, index) => {
+              {statsConfig.map((stat, index) => {
                 const Icon = stat.icon
                 return (
                   <motion.div
-                    key={stat.label}
+                    key={stat.key}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -74,10 +70,10 @@ export default function CustomsNetwork() {
                       </div>
                     </div>
                     <div className="titleFont text-[#194479] text-xl md:text-2xl font-bold mb-1">
-                      {stat.value}
+                      {t(`stats.${stat.key}.value`)}
                     </div>
                     <div className="paragraphFont text-gray-600 text-xs md:text-sm">
-                      {stat.label}
+                      {t(`stats.${stat.key}.label`)}
                     </div>
                   </motion.div>
                 )
@@ -97,7 +93,7 @@ export default function CustomsNetwork() {
               <div className="relative h-[500px] md:h-[600px]">
                 <Image
                   src="/services/shipment.jpeg"
-                  alt="Global Customs Network"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover"
                 />
@@ -107,9 +103,9 @@ export default function CustomsNetwork() {
                 {/* Coverage Cards Overlay */}
                 <div className="absolute inset-0 flex items-center justify-end pr-0 md:pr-0">
                   <div className="space-y-2 max-w-[200px] md:max-w-[240px]">
-                    {coverageAreas.map((area, index) => (
+                    {coverageKeys.map((key, index) => (
                       <motion.div
-                        key={area.region}
+                        key={key}
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -117,10 +113,10 @@ export default function CustomsNetwork() {
                         className="bg-black/60 backdrop-blur-sm rounded-l-lg rounded-r-none p-2 md:p-2.5 shadow-lg border border-white/20 border-r-0"
                       >
                         <h3 className="titleFont text-white font-bold text-xs md:text-sm mb-0.5">
-                          {area.region}
+                          {t(`coverage.${key}.region`)}
                         </h3>
                         <p className="paragraphFont text-white/90 text-[10px] md:text-xs leading-tight">
-                          {area.cities}
+                          {t(`coverage.${key}.cities`)}
                         </p>
                       </motion.div>
                     ))}

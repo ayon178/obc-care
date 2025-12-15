@@ -2,36 +2,18 @@
 
 import { motion } from "framer-motion"
 import { FileText, Calculator, FileCheck, Plane, Package } from "lucide-react"
+import { useTranslations } from "next-intl"
 
-const services = [
-  {
-    icon: FileText,
-    title: "Import & Export Declarations",
-    desc: "Provides guidance and assistance to help navigate import and export processes efficiently.",
-  },
-  {
-    icon: Calculator,
-    title: "Duties, Taxes & Tariff Guidance",
-    desc: "We advise and communicate applicable duties and taxes, helping you prepare for potential charges.",
-  },
-  {
-    icon: FileCheck,
-    title: "Permit & License Coordination ",
-    desc: "Support the coordination of special permits and licenses required for your shipment.",
-  },
-  {
-    icon: Plane,
-    title: "Airport & Border Handling ",
-    desc: "Coordinates with airport customs and ground handlers for swift release.",
-  },
-  {
-    icon: Package,
-    title: "Special Cargo Clearance ",
-    desc: "Expert handling of restricted, high-value, or temperature-sensitive shipments.",
-  },
+const serviceIcons = [
+  FileText,
+  Calculator,
+  FileCheck,
+  Plane,
+  Package,
 ]
 
 export default function CustomsWhatWeHandle() {
+  const t = useTranslations("CustomsWhatWeHandle")
   return (
     <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* Background accents */}
@@ -50,21 +32,20 @@ export default function CustomsWhatWeHandle() {
           className="text-center max-w-3xl mx-auto mb-8 md:mb-12"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
-            What We Handle
+            {t("badge")}
           </span>
           <h2 className="headingFont mt-4 text-2xl sm:text-3xl md:text-4xl font-bold text-[#194479] leading-tight">
-            Comprehensive Customs Solutions
+            {t("title")}
           </h2>
         </motion.div>
 
         {/* Vertical Feature List */}
         <div className="max-w-4xl mx-auto">
           <div className="space-y-4 md:space-y-5">
-            {services.map((service, i) => {
-              const Icon = service.icon
+            {serviceIcons.map((Icon, i) => {
               return (
                 <motion.div
-                  key={service.title}
+                  key={i}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
@@ -80,10 +61,10 @@ export default function CustomsWhatWeHandle() {
                     {/* Content */}
                     <div className="flex-1">
                       <h3 className="titleFont text-[#194479] font-bold text-base md:text-lg mb-2">
-                        {service.title}
+                        {t(`services.${i}.title`)}
                       </h3>
                       <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                        {service.desc}
+                        {t(`services.${i}.desc`)}
                       </p>
                     </div>
 

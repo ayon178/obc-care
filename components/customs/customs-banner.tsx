@@ -1,10 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Globe, FileText } from "lucide-react"
+import { Globe } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function CustomsBanner() {
+  const t = useTranslations("CustomsBanner")
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -29,14 +31,13 @@ export default function CustomsBanner() {
           >
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-white/10 text-white/90 text-[10px] sm:text-[11px] backdrop-blur self-end">
               <Globe className="w-3 h-3" />
-              Customs Clearance Assistance
+              {t("badge")}
             </span>
             <h1 className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight drop-shadow-2xl">
-              Fast. Compliant. Stress-free.
+              {t("title")}
             </h1>
             <p className="paragraphFont mt-2 text-white/95 text-[11px] sm:text-xs md:text-sm max-w-2xl drop-shadow-lg text-right ml-auto">
-              We handle the paperwork so your shipment crosses borders without
-              a hitch.
+              {t("description")}
             </p>
 
             <motion.div
@@ -54,13 +55,13 @@ export default function CustomsBanner() {
                     "linear-gradient(135deg, #91C73E 0%, #7bb033 60%)",
                 }}
               >
-                <span>Get a Free Quote</span>
+                <span>{t("ctaQuote")}</span>
               </Link>
               <Link
                 href="/contact"
                 className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors text-center cursor-pointer"
               >
-                Talk to Our Team
+                {t("ctaTalk")}
               </Link>
             </motion.div>
           </motion.div>
@@ -69,4 +70,3 @@ export default function CustomsBanner() {
     </section>
   )
 }
-
