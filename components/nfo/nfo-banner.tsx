@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { Plane } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function NfoBanner() {
+  const t = useTranslations("NfoBanner")
+
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -35,7 +38,7 @@ export default function NfoBanner() {
               className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-white/10 text-white/90 text-[10px] sm:text-[11px] backdrop-blur self-end"
             >
               <Plane className="w-3 h-3" />
-              OBC Care – Next Flight Out (NFO) Solutions
+              {t("badge")}
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -44,8 +47,7 @@ export default function NfoBanner() {
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight drop-shadow-2xl"
             >
-              When every minute counts, we get your shipment on the very next
-              flight.
+              {t("title")}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
@@ -54,9 +56,7 @@ export default function NfoBanner() {
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               className="paragraphFont mt-2 text-white/95 text-[11px] sm:text-xs md:text-sm max-w-2xl drop-shadow-lg text-right ml-auto"
             >
-              From AOG emergencies to urgent production parts, OBC Care delivers
-              the fastest possible transport solution — with 24/7 coordination
-              and full shipment visibility.
+              {t("description")}
             </motion.p>
 
             <motion.div
@@ -74,13 +74,13 @@ export default function NfoBanner() {
                     "linear-gradient(135deg, #91C73E 0%, #7bb033 60%)",
                 }}
               >
-                <span>Book an NFO Shipment</span>
+                <span>{t("primaryCta")}</span>
               </Link>
               <Link
                 href="/inquiry"
                 className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors text-center"
               >
-                Get a Free Quote
+                {t("secondaryCta")}
               </Link>
             </motion.div>
           </motion.div>

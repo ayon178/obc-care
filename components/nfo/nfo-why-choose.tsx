@@ -3,51 +3,54 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Zap, Clock, Globe, Shield, Radio } from "lucide-react"
-
-const features = [
-  {
-    icon: Zap,
-    title: "Fastest Global Option",
-    description: "Your shipment is prioritized on the next available flight — guaranteed.",
-    image: "/services/shipment.jpeg",
-    color: "#194479",
-    gradient: "from-[#194479] to-[#1a4a7f]",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Operations Team",
-    description: "Our logistics experts monitor global routes and coordinate across time zones for uninterrupted service.",
-    image: "/services/shipment.jpeg",
-    color: "#91c73e",
-    gradient: "from-[#91c73e] to-[#7bb033]",
-  },
-  {
-    icon: Globe,
-    title: "Integrated Customs & Ground Support",
-    description: "We manage all clearances, airport handling, and last-mile arrangements — no handoffs or delays.",
-    image: "/services/shipment.jpeg",
-    color: "#194479",
-    gradient: "from-[#194479] to-[#1a4a7f]",
-  },
-  {
-    icon: Radio,
-    title: "Real-Time Updates",
-    description: "Receive immediate status alerts for every milestone until delivery is confirmed.",
-    image: "/services/shipment.jpeg",
-    color: "#91c73e",
-    gradient: "from-[#91c73e] to-[#7bb033]",
-  },
-  {
-    icon: Shield,
-    title: "Flexible & Secure Handling",
-    description: "From small parcels to high-value cargo, each shipment is handled with accuracy and care.",
-    image: "/services/shipment.jpeg",
-    color: "#194479",
-    gradient: "from-[#194479] to-[#1a4a7f]",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function NfoWhyChoose() {
+  const t = useTranslations("NfoWhyChoose")
+
+  const features = [
+    {
+      icon: Zap,
+      title: t("features.0.title"),
+      description: t("features.0.desc"),
+      image: "/services/shipment.jpeg",
+      color: "#194479",
+      gradient: "from-[#194479] to-[#1a4a7f]",
+    },
+    {
+      icon: Clock,
+      title: t("features.1.title"),
+      description: t("features.1.desc"),
+      image: "/services/shipment.jpeg",
+      color: "#91c73e",
+      gradient: "from-[#91c73e] to-[#7bb033]",
+    },
+    {
+      icon: Globe,
+      title: t("features.2.title"),
+      description: t("features.2.desc"),
+      image: "/services/shipment.jpeg",
+      color: "#194479",
+      gradient: "from-[#194479] to-[#1a4a7f]",
+    },
+    {
+      icon: Radio,
+      title: t("features.3.title"),
+      description: t("features.3.desc"),
+      image: "/services/shipment.jpeg",
+      color: "#91c73e",
+      gradient: "from-[#91c73e] to-[#7bb033]",
+    },
+    {
+      icon: Shield,
+      title: t("features.4.title"),
+      description: t("features.4.desc"),
+      image: "/services/shipment.jpeg",
+      color: "#194479",
+      gradient: "from-[#194479] to-[#1a4a7f]",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       {/* Animated Background */}
@@ -99,7 +102,7 @@ export default function NfoWhyChoose() {
           className="text-center max-w-4xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6">
-            Why Choose OBC Care for NFO Shipments
+            {t("title")}
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-[#91c73e] to-[#194479] mx-auto rounded-full" />
         </motion.div>
@@ -235,10 +238,10 @@ export default function NfoWhyChoose() {
                 </div>
                 <div className="flex-1 text-center md:text-left">
                   <h3 className="headingFont text-white text-2xl md:text-3xl font-bold mb-3">
-                    Experience the Fastest Air Freight Solution
+                    {t("highlightTitle")}
                   </h3>
                   <p className="paragraphFont text-white/90 text-base md:text-lg">
-                    Join thousands of businesses that trust OBC Care for their time-critical shipments. Get your cargo on the next flight — guaranteed.
+                    {t("highlightDesc")}
                   </p>
                 </div>
               </div>

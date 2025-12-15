@@ -3,8 +3,11 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Zap, Plane, Clock, CheckCircle2 } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function NfoWhatIs() {
+  const t = useTranslations("NfoWhatIs")
+
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-[#194479]/5 via-white to-gray-50 overflow-hidden">
       {/* Animated Background Elements */}
@@ -50,10 +53,10 @@ export default function NfoWhatIs() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold mb-6">
               <Zap className="w-4 h-4" />
-              What Is a Next Flight Out (NFO) Service?
+              {t("badge")}
             </div>
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6 max-w-4xl mx-auto">
-              Next Flight Out (NFO) is the fastest air freight solution for time-critical shipments.
+              {t("title")}
             </h2>
           </motion.div>
 
@@ -91,8 +94,8 @@ export default function NfoWhatIs() {
                           <Plane className="w-6 h-6 text-[#194479]" />
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-[#194479]">Next</div>
-                          <div className="text-sm text-gray-600">Flight</div>
+                          <div className="text-2xl font-bold text-[#194479]">{t("stats.flight.value")}</div>
+                          <div className="text-sm text-gray-600">{t("stats.flight.label")}</div>
                         </div>
                       </div>
                     </motion.div>
@@ -108,8 +111,8 @@ export default function NfoWhatIs() {
                           <Clock className="w-6 h-6 text-[#91c73e]" />
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-[#91c73e]">24/7</div>
-                          <div className="text-sm text-gray-600">Support</div>
+                          <div className="text-2xl font-bold text-[#91c73e]">{t("stats.support.value")}</div>
+                          <div className="text-sm text-gray-600">{t("stats.support.label")}</div>
                         </div>
                       </div>
                     </motion.div>
@@ -135,10 +138,10 @@ export default function NfoWhatIs() {
                     </div>
                     <div>
                       <h3 className="titleFont text-[#194479] font-bold text-lg mb-2">
-                        Fastest Booking
+                        {t("card1.title")}
                       </h3>
                       <p className="paragraphFont text-gray-700 text-sm leading-relaxed">
-                        Your cargo is booked on the very next available commercial or cargo flight.
+                        {t("card1.desc")}
                       </p>
                     </div>
                   </div>
@@ -165,8 +168,8 @@ export default function NfoWhatIs() {
                     <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-3 group-hover:bg-[#91c73e] transition-colors duration-300">
                       <Zap className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-white font-bold text-lg mb-1">Real-Time Routing</h3>
-                    <p className="text-white/90 text-sm">Expert coordination for record speed.</p>
+                    <h3 className="text-white font-bold text-lg mb-1">{t("card2.title")}</h3>
+                    <p className="text-white/90 text-sm">{t("card2.desc")}</p>
                   </div>
                 </div>
               </motion.div>
@@ -186,10 +189,10 @@ export default function NfoWhatIs() {
                     </div>
                     <div>
                       <h3 className="titleFont text-white font-bold text-lg mb-2">
-                        Minimize Downtime
+                        {t("card3.title")}
                       </h3>
                       <p className="paragraphFont text-white/90 text-sm leading-relaxed">
-                        Avoiding operational losses with guaranteed speed and reliability.
+                        {t("card3.desc")}
                       </p>
                     </div>
                   </div>
@@ -206,10 +209,10 @@ export default function NfoWhatIs() {
               className="mt-12 text-center max-w-3xl mx-auto"
             >
               <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-                It ensures that your cargo is booked on the very next available commercial or cargo flight — minimizing downtime and avoiding operational losses.
+                {t("description1")}
               </p>
               <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed mt-4">
-                At OBC Care, we combine real-time routing, dedicated handling, and expert coordination to move your shipment across borders at record speed.
+                {t("description2")}
               </p>
             </motion.div>
           </div>

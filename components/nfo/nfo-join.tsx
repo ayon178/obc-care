@@ -4,15 +4,18 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { User, ArrowRight, CheckCircle2, Plane, Clock, Globe } from "lucide-react"
 import Link from "next/link"
-
-const benefits = [
-  { icon: Plane, text: "Work with time-critical shipments" },
-  { icon: Clock, text: "24/7 support team backing" },
-  { icon: Globe, text: "Global network opportunities" },
-  { icon: CheckCircle2, text: "Professional growth" },
-]
+import { useTranslations } from "next-intl"
 
 export default function NfoJoin() {
+  const t = useTranslations("NfoJoin")
+
+  const benefits = [
+    { icon: Plane, text: t("benefits.0") },
+    { icon: Clock, text: t("benefits.1") },
+    { icon: Globe, text: t("benefits.2") },
+    { icon: CheckCircle2, text: t("benefits.3") },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
       {/* Animated Background Elements */}
@@ -61,26 +64,26 @@ export default function NfoJoin() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold">
                 <User className="w-4 h-4" />
-                Become an NFO Operations Partner
+                {t("badge")}
               </div>
 
               {/* Heading */}
               <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight">
-                Join our network of logistics professionals and help us move time-critical shipments worldwide.
+                {t("title")}
               </h2>
 
               {/* Question */}
               <p className="paragraphFont text-gray-700 text-lg md:text-xl font-medium">
-                Ready to make a difference in global logistics?
+                {t("question")}
               </p>
 
               {/* Description */}
               <div className="space-y-4">
                 <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-                  From dispatch coordination to airport handling, we're always looking for reliable partners dedicated to fast and secure logistics.
+                  {t("description1")}
                 </p>
                 <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-                  As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.
+                  {t("description2")}
                 </p>
               </div>
 
@@ -114,14 +117,14 @@ export default function NfoJoin() {
                   href="/inquiry"
                   className="buttonFont group relative inline-flex items-center justify-center gap-2 bg-[#91c73e] hover:bg-[#7bb033] text-white px-6 py-4 rounded-xl font-semibold text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden whitespace-nowrap"
                 >
-                  <span className="relative z-10 whitespace-nowrap">Apply as a Partner</span>
+                  <span className="relative z-10 whitespace-nowrap">{t("ctaPrimary")}</span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>
                 <Link
                   href="/inquiry"
                   className="buttonFont group relative inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#194479] border-2 border-[#194479] px-6 py-4 rounded-xl font-semibold text-base md:text-lg shadow-md hover:shadow-lg transition-all duration-300 whitespace-nowrap"
                 >
-                  <span className="relative z-10 whitespace-nowrap">Contact Our NFO Team</span>
+                  <span className="relative z-10 whitespace-nowrap">{t("ctaSecondary")}</span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>
               </div>
@@ -159,12 +162,12 @@ export default function NfoJoin() {
                           <Plane className="w-7 h-7 text-white" />
                         </div>
                         <div>
-                          <div className="text-2xl md:text-3xl font-bold text-[#194479]">24/7</div>
-                          <div className="text-sm text-gray-600">Operations</div>
+                          <div className="text-2xl md:text-3xl font-bold text-[#194479]">{t("stats.operations.value")}</div>
+                          <div className="text-sm text-gray-600">{t("stats.operations.label")}</div>
                         </div>
                       </div>
                       <p className="paragraphFont text-gray-700 text-sm md:text-base">
-                        Join a team that moves critical shipments around the clock
+                        {t("stats.operations.desc")}
                       </p>
                     </div>
                   </motion.div>

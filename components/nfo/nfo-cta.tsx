@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { ArrowRight, MessageSquare, CheckCircle2, Clock } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function NfoCta() {
+  const t = useTranslations("NfoCta")
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
@@ -63,7 +66,7 @@ export default function NfoCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight"
               >
-                Your Urgent Shipment, Airborne in Hours
+                {t("title")}
               </motion.h2>
 
               {/* Description */}
@@ -74,7 +77,7 @@ export default function NfoCta() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                When urgency is non-negotiable, trust OBC Care's NFO Solutions to keep your business moving.
+                {t("description1")}
               </motion.p>
 
               {/* Sub-description */}
@@ -85,7 +88,7 @@ export default function NfoCta() {
                 transition={{ duration: 0.6, delay: 0.45 }}
                 className="paragraphFont text-white/85 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                We combine speed, reliability, and transparency — ensuring your shipment arrives when it's needed most.
+                {t("description2")}
               </motion.p>
 
               {/* CTA Button */}
@@ -111,7 +114,7 @@ export default function NfoCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg whitespace-nowrap">
-                    Get a Free Quote Now
+                    {t("button")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>
@@ -125,7 +128,7 @@ export default function NfoCta() {
                 transition={{ duration: 0.6, delay: 0.55 }}
                 className="paragraphFont text-white/80 text-xs md:text-sm italic pt-1"
               >
-                Our team responds within minutes — because every second counts.
+                {t("closing")}
               </motion.p>
             </div>
           </div>

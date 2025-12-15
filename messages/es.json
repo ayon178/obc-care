@@ -586,5 +586,120 @@
     "subheadline": "Obtenga una Cotización Gratis Hoy",
     "closing": "Deje que manejemos sus aduanas — usted concéntrese en lo que más importa.",
     "primary": "Obtenga una Cotización Gratis Hoy"
+  },
+  "NfoBanner": {
+    "badge": "OBC Care – Soluciones Next Flight Out (NFO)",
+    "title": "Cuando cada minuto cuenta, ponemos su envío en el próximo vuelo.",
+    "description": "Desde emergencias AOG hasta piezas de producción urgentes, OBC Care entrega la solución de transporte más rápida posible, con coordinación 24/7 y visibilidad total del envío.",
+    "primaryCta": "Reservar un envío NFO",
+    "secondaryCta": "Obtener cotización gratis"
+  },
+  "NfoIntro": {
+    "title": "Logística Crítica sin Compromisos",
+    "imageCardText1": "Los retrasos no son una opción cuando las operaciones críticas dependen de la llegada de su envío.",
+    "imageCardText2": "Es por eso que el servicio Next Flight Out (NFO) de OBC Care prioriza su carga en el primer vuelo disponible, asegurando cero tiempo de inactividad, visibilidad total y velocidad garantizada.",
+    "textCard1": "Nuestro equipo global monitorea cada ruta, horario de vuelo y requisito aduanero en tiempo real, organizando el camino más rápido y confiable desde la recolección hasta la entrega.",
+    "textCard2": "Ya sean piezas de aviación, componentes automotrices o equipos electrónicos, nuestro servicio NFO mantiene su negocio en movimiento, sin importar dónde se encuentre en el mundo.",
+    "features": {
+      "0": { "title": "Monitoreo 24/7" },
+      "1": { "title": "Cobertura Global" },
+      "2": { "title": "Cero Inactividad" },
+      "3": { "title": "Velocidad Garantizada" }
+    }
+  },
+  "NfoWhatIs": {
+    "badge": "¿Qué es un servicio Next Flight Out (NFO)?",
+    "title": "Next Flight Out (NFO) es la solución de carga aérea más rápida para envíos críticos.",
+    "stats": {
+      "flight": { "label": "Vuelo", "value": "Próximo" },
+      "support": { "label": "Soporte", "value": "24/7" }
+    },
+    "card1": { "title": "Reserva Más Rápida", "desc": "Su carga se reserva en el próximo vuelo comercial o de carga disponible." },
+    "card2": { "title": "Rutas en Tiempo Real", "desc": "Coordinación experta para una velocidad récord." },
+    "card3": { "title": "Minimizar Inactividad", "desc": "Evitando pérdidas operativas con velocidad y confiabilidad garantizadas." },
+    "description1": "Asegura que su carga se reserve en el próximo vuelo comercial o de carga disponible, minimizando el tiempo de inactividad y evitando pérdidas operativas.",
+    "description2": "En OBC Care, combinamos rutas en tiempo real, manejo dedicado y coordinación experta para mover su envío a través de fronteras a una velocidad récord."
+  },
+  "NfoWhyImportant": {
+    "badge": "¿Por qué es importante NFO?",
+    "title": "En industrias sensibles al tiempo, incluso un pequeño retraso puede provocar interrupciones importantes.",
+    "subtitle": "Nuestro servicio NFO está diseñado para:",
+    "benefits": {
+      "0": { "title": "Despacho el Mismo Día", "desc": "Garantizar el despacho el mismo día en el próximo vuelo disponible." },
+      "1": { "title": "Prevenir Paradas", "desc": "Prevenir costosas paradas de producción u operativas." },
+      "2": { "title": "Visibilidad en Tiempo Real", "desc": "Asegurar visibilidad en tiempo real durante todo el viaje." },
+      "3": { "title": "Transporte Global", "desc": "Proporcionar transporte confiable, seguro y totalmente conforme, en cualquier lugar del mundo." }
+    },
+    "ctaTitle": "¿Listo para experimentar logística sin retrasos?",
+    "ctaDesc": "Ponga su envío en el próximo vuelo disponible con nuestro servicio NFO 24/7."
+  },
+  "NfoHowItWorks": {
+    "badge": "Cómo funciona NFO",
+    "title": "Desde la Solicitud hasta la Entrega — En Tiempo Récord",
+    "description": "Un proceso simplificado de 5 pasos que asegura que su envío crítico llegue a su destino en el próximo vuelo disponible.",
+    "steps": {
+      "0": { "title": "Reserva Inmediata y Planificación de Rutas", "desc": "Nuestro equipo de operaciones identifica la opción de vuelo más rápida disponible, comercial o de carga, a minutos de su solicitud." },
+      "1": { "title": "Recolección Prioritaria y Documentación", "desc": "Organizamos la recolección inmediata y verificamos todo el papeleo para un despacho sin problemas." },
+      "2": { "title": "Coordinación a Bordo o de Carga", "desc": "Dependiendo de la urgencia, reservamos el envío en el próximo vuelo o asignamos un mensajero a bordo para escolta directa." },
+      "3": { "title": "Actualizaciones en Tiempo Real", "desc": "Obtenga notificaciones de hitos en cada etapa, desde la aceptación hasta la llegada." },
+      "4": { "title": "Entrega Final Rápida", "desc": "Una vez aterrizado, manejamos el despacho de aduanas y entregamos su envío directamente a su destino." }
+    },
+    "cta": "¿Listo para comenzar? Reserve su envío NFO ahora"
+  },
+  "NfoWhyChoose": {
+    "title": "Por qué elegir OBC Care para envíos NFO",
+    "features": {
+      "0": { "title": "Opción Global Más Rápida", "desc": "Su envío se prioriza en el próximo vuelo disponible, garantizado." },
+      "1": { "title": "Equipo de Operaciones 24/7", "desc": "Nuestros expertos en logística monitorean rutas globales y coordinan a través de zonas horarias para un servicio ininterrumpido." },
+      "2": { "title": "Soporte de Aduanas y Terrestre Integrado", "desc": "Gestionamos todos los despachos, manejo en aeropuertos y arreglos de última milla, sin traspasos ni retrasos." },
+      "3": { "title": "Actualizaciones en Tiempo Real", "desc": "Reciba alertas de estado inmediatas para cada hito hasta que se confirme la entrega." },
+      "4": { "title": "Manejo Flexible y Seguro", "desc": "Desde paquetes pequeños hasta carga de alto valor, cada envío se maneja con precisión y cuidado." }
+    },
+    "highlightTitle": "Experimente la Solución de Carga Aérea Más Rápida",
+    "highlightDesc": "Únase a miles de empresas que confían en OBC Care para sus envíos críticos. Ponga su carga en el próximo vuelo, garantizado."
+  },
+  "NfoNetwork": {
+    "badge": "Red Global NFO",
+    "title": "Con acceso a miles de vuelos comerciales y de carga en todo el mundo, OBC Care asegura la ruta más rápida posible, en cualquier momento y lugar.",
+    "description": "Nuestra torre de control opera 24/7 para monitorear rutas, clima, aduanas y disponibilidad de vuelos en tiempo real.",
+    "stats": {
+      "flights": { "label": "Vuelos Diarios", "value": "1000+" },
+      "tower": { "label": "Torre de Control", "value": "24/7" },
+      "coverage": { "label": "Cobertura", "value": "Global" }
+    },
+    "card1Title": "Acceso a Vuelos Mundiales",
+    "card1Desc": "Miles de vuelos comerciales y de carga a su disposición, asegurando la ruta más rápida para sus envíos críticos.",
+    "card2Title": "Torre de Control 24/7",
+    "card2Desc": "Monitoreo en tiempo real de rutas, clima, aduanas y disponibilidad de vuelos en todas las zonas horarias.",
+    "footerTitle": "Alcance Global, Experiencia Local",
+    "footerDesc": "Conectando sus envíos a las rutas de vuelo más rápidas del mundo",
+    "coverage": {
+      "asia": { "region": "Asia", "cities": "Singapur, Hong Kong, Tokio, Dubái, Bombay" },
+      "europe": { "region": "Europa", "cities": "Londres, Fráncfort, Ámsterdam, París, Milán" },
+      "americas": { "region": "Américas", "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo" }
+    }
+  },
+  "NfoJoin": {
+    "badge": "Conviértase en Socio de Operaciones NFO",
+    "title": "Únase a nuestra red de profesionales de logística y ayúdenos a mover envíos críticos en todo el mundo.",
+    "question": "¿Listo para marcar la diferencia en la logística global?",
+    "desc1": "Desde la coordinación de despachos hasta el manejo en aeropuertos, siempre buscamos socios confiables dedicados a una logística rápida y segura.",
+    "desc2": "Como parte de la red global de OBC Care, se le confiarán entregas de alto valor y sensibles al tiempo, respaldadas por nuestro equipo de soporte 24/7.",
+    "benefits": {
+      "0": "Trabajar con envíos críticos",
+      "1": "Respaldo del equipo de soporte 24/7",
+      "2": "Oportunidades de red global",
+      "3": "Crecimiento profesional"
+    },
+    "ctaApply": "Aplicar como Socio",
+    "ctaContact": "Contacte a Nuestro Equipo NFO",
+    "stats": { "value": "24/7", "label": "Operaciones", "desc": "Únase a un equipo que mueve envíos críticos las 24 horas" }
+  },
+  "NfoCta": {
+    "title": "Su Envío Urgente, en el Aire en Horas",
+    "description": "Cuando la urgencia no es negociable, confíe en las soluciones NFO de OBC Care para mantener su negocio en movimiento.",
+    "subDescription": "Combinamos velocidad, confiabilidad y transparencia, asegurando que su envío llegue cuando más se necesita.",
+    "button": "Obtenga una Cotización Gratis Ahora",
+    "closing": "Nuestro equipo responde en minutos, porque cada segundo cuenta."
   }
 }

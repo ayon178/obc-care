@@ -3,27 +3,30 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Clock, Globe, Zap, Shield } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function NfoIntro() {
+  const t = useTranslations("NfoIntro")
+
   const features = [
     {
       icon: Clock,
-      title: "24/7 Monitoring",
+      title: t("features.0.title"),
       image: "/services/shipment.jpeg",
     },
     {
       icon: Globe,
-      title: "Global Coverage",
+      title: t("features.1.title"),
       image: "/services/shipment.jpeg",
     },
     {
       icon: Zap,
-      title: "Zero Downtime",
+      title: t("features.2.title"),
       image: "/services/shipment.jpeg",
     },
     {
       icon: Shield,
-      title: "Guaranteed Speed",
+      title: t("features.3.title"),
       image: "/services/shipment.jpeg",
     },
   ]
@@ -69,7 +72,7 @@ export default function NfoIntro() {
           className="text-center max-w-4xl mx-auto mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6">
-            Time-Critical Logistics Without Compromise
+            {t("title")}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#91c73e] to-[#194479] mx-auto rounded-full" />
         </motion.div>
@@ -103,10 +106,10 @@ export default function NfoIntro() {
               >
                 <div className="bg-black/10 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/10">
                   <p className="paragraphFont text-white text-sm md:text-base leading-relaxed mb-4">
-                    Delays aren't an option when critical operations depend on your shipment's arrival.
+                    {t("imageCardText1")}
                   </p>
                   <p className="paragraphFont text-white text-sm md:text-base leading-relaxed">
-                    That's why OBC Care's Next Flight Out (NFO) service prioritizes your cargo on the earliest available flight — ensuring zero downtime, full visibility, and guaranteed speed.
+                    {t("imageCardText2")}
                   </p>
                 </div>
               </motion.div>
@@ -124,10 +127,10 @@ export default function NfoIntro() {
               className="bg-gradient-to-br from-[#194479] to-[#1a4a7f] rounded-3xl p-6 md:p-8 shadow-xl text-white"
             >
               <p className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed mb-4">
-                Our global team monitors every route, flight schedule, and customs requirement in real time, arranging the quickest and most reliable path from pickup to delivery.
+                {t("textCard1")}
               </p>
               <p className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed">
-                Whether it's aviation parts, automotive components, or electronic equipment, our NFO service keeps your business moving — no matter where you are in the world.
+                {t("textCard2")}
               </p>
             </motion.div>
 

@@ -3,51 +3,54 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Calendar, Package, Plane, Radio, Truck } from "lucide-react"
-
-const steps = [
-  {
-    number: "01",
-    title: "Immediate Booking & Route Planning",
-    desc: "Our operations team identifies the fastest flight option available — commercial or cargo — within minutes of your request.",
-    icon: Calendar,
-    image: "/services/shipment.jpeg",
-    color: "#194479",
-  },
-  {
-    number: "02",
-    title: "Priority Pickup & Documentation",
-    desc: "We arrange immediate pickup and verify all paperwork for seamless dispatch.",
-    icon: Package,
-    image: "/services/shipment.jpeg",
-    color: "#91c73e",
-  },
-  {
-    number: "03",
-    title: "Onboard or Cargo Coordination",
-    desc: "Depending on urgency, we either book the shipment on the next flight or assign an onboard courier for direct escort.",
-    icon: Plane,
-    image: "/services/shipment.jpeg",
-    color: "#194479",
-  },
-  {
-    number: "04",
-    title: "Real-Time Updates",
-    desc: "Get milestone notifications at every stage — from acceptance to arrival.",
-    icon: Radio,
-    image: "/services/shipment.jpeg",
-    color: "#91c73e",
-  },
-  {
-    number: "05",
-    title: "Fast Final Delivery",
-    desc: "Once landed, we handle customs clearance and deliver your shipment straight to its destination.",
-    icon: Truck,
-    image: "/services/shipment.jpeg",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function NfoHowItWorks() {
+  const t = useTranslations("NfoHowItWorks")
+
+  const steps = [
+    {
+      number: "01",
+      title: t("steps.0.title"),
+      desc: t("steps.0.desc"),
+      icon: Calendar,
+      image: "/services/shipment.jpeg",
+      color: "#194479",
+    },
+    {
+      number: "02",
+      title: t("steps.1.title"),
+      desc: t("steps.1.desc"),
+      icon: Package,
+      image: "/services/shipment.jpeg",
+      color: "#91c73e",
+    },
+    {
+      number: "03",
+      title: t("steps.2.title"),
+      desc: t("steps.2.desc"),
+      icon: Plane,
+      image: "/services/shipment.jpeg",
+      color: "#194479",
+    },
+    {
+      number: "04",
+      title: t("steps.3.title"),
+      desc: t("steps.3.desc"),
+      icon: Radio,
+      image: "/services/shipment.jpeg",
+      color: "#91c73e",
+    },
+    {
+      number: "05",
+      title: t("steps.4.title"),
+      desc: t("steps.4.desc"),
+      icon: Truck,
+      image: "/services/shipment.jpeg",
+      color: "#194479",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-gray-50 via-white to-[#194479]/5 overflow-hidden">
       {/* Animated Background Elements */}
@@ -91,13 +94,13 @@ export default function NfoHowItWorks() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold mb-6">
-            How NFO Works
+            {t("badge")}
           </span>
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            From Request to Delivery — In Record Time
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-base md:text-lg max-w-2xl mx-auto">
-            A streamlined 5-step process ensuring your time-critical shipment reaches its destination on the next available flight.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -223,7 +226,7 @@ export default function NfoHowItWorks() {
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-[#194479] to-[#1a4a7f] text-white shadow-lg">
             <Plane className="w-5 h-5" />
             <span className="paragraphFont font-semibold text-base md:text-lg">
-              Ready to get started? Book your NFO shipment now
+              {t("cta")}
             </span>
           </div>
         </motion.div>

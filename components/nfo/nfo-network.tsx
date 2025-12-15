@@ -2,21 +2,36 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Globe, Plane, Clock, MapPin } from "lucide-react"
-
-const stats = [
-  { icon: Plane, value: "1000+", label: "Flights Daily" },
-  { icon: Globe, value: "24/7", label: "Control Tower" },
-  { icon: Clock, value: "Global", label: "Coverage" },
-]
-
-const coverageAreas = [
-  { region: "Asia", cities: ["Singapore", "Hong Kong", "Tokyo", "Dubai", "Mumbai"] },
-  { region: "Europe", cities: ["London", "Frankfurt", "Amsterdam", "Paris", "Milan"] },
-  { region: "Americas", cities: ["New York", "Los Angeles", "Miami", "Toronto", "São Paulo"] },
-]
+import { Globe, Plane, Clock, MapPin, Radio } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function NfoNetwork() {
+  const t = useTranslations("NfoNetwork")
+
+  const stats = [
+    { icon: Plane, value: t("stats.flights.value"), label: t("stats.flights.label") },
+    { icon: Globe, value: t("stats.tower.value"), label: t("stats.tower.label") },
+    { icon: Clock, value: t("stats.coverage.value"), label: t("stats.coverage.label") },
+  ]
+
+  const coverageAreas = [
+    {
+      region: t("coverage.asia.region"),
+      cities: t("coverage.asia.cities").split(", "),
+      color: "#91c73e",
+    },
+    {
+      region: t("coverage.europe.region"),
+      cities: t("coverage.europe.cities").split(", "),
+      color: "#194479",
+    },
+    {
+      region: t("coverage.americas.region"),
+      cities: t("coverage.americas.cities").split(", "),
+      color: "#91c73e",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
       {/* Animated Background Elements */}
@@ -62,13 +77,13 @@ export default function NfoNetwork() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold mb-6">
               <Globe className="w-4 h-4" />
-              Global NFO Network
+              {t("badge")}
             </div>
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6 max-w-4xl mx-auto">
-              With access to thousands of commercial and cargo flights worldwide, OBC Care ensures the fastest routing possible — anytime, anywhere.
+              {t("title")}
             </h2>
             <p className="paragraphFont text-gray-700 text-base md:text-lg max-w-3xl mx-auto">
-              Our control tower operates 24/7 to monitor routes, weather, customs, and flight availability in real time.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -119,10 +134,10 @@ export default function NfoNetwork() {
                   className="bg-gradient-to-br from-[#194479] to-[#1a4a7f] rounded-2xl p-6 md:p-8 text-white shadow-xl"
                 >
                   <h3 className="titleFont text-xl md:text-2xl font-bold mb-3">
-                    Worldwide Flight Access
+                    {t("card1Title")}
                   </h3>
                   <p className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed">
-                    Thousands of commercial and cargo flights at your disposal, ensuring the fastest routing for your time-critical shipments.
+                    {t("card1Desc")}
                   </p>
                 </motion.div>
 
@@ -139,10 +154,10 @@ export default function NfoNetwork() {
                     </div>
                     <div>
                       <h3 className="titleFont text-[#194479] font-bold text-lg md:text-xl mb-2">
-                        24/7 Control Tower
+                        {t("card2Title")}
                       </h3>
                       <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                        Real-time monitoring of routes, weather, customs, and flight availability across all time zones.
+                        {t("card2Desc")}
                       </p>
                     </div>
                   </div>
@@ -216,10 +231,10 @@ export default function NfoNetwork() {
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="text-center md:text-left">
                   <h3 className="headingFont text-white text-2xl md:text-3xl font-bold mb-2">
-                    Global Reach, Local Expertise
+                    {t("footerTitle")}
                   </h3>
                   <p className="paragraphFont text-white/90 text-base md:text-lg">
-                    Connecting your shipments to the world's fastest flight routes
+                    {t("footerDesc")}
                   </p>
                 </div>
                 <div className="flex items-center gap-3">

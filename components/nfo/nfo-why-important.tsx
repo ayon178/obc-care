@@ -3,34 +3,37 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Clock, Shield, Eye, Globe2, CheckCircle2 } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function NfoWhyImportant() {
+  const t = useTranslations("NfoWhyImportant")
+
   const benefits = [
     {
       icon: Clock,
-      title: "Same-Day Dispatch",
-      description: "Guarantee same-day dispatch on the next available flight.",
+      title: t("benefits.0.title"),
+      description: t("benefits.0.desc"),
       image: "/services/shipment.jpeg",
       color: "#194479",
     },
     {
       icon: Shield,
-      title: "Prevent Halts",
-      description: "Prevent costly production or operational halts.",
+      title: t("benefits.1.title"),
+      description: t("benefits.1.desc"),
       image: "/services/shipment.jpeg",
       color: "#91c73e",
     },
     {
       icon: Eye,
-      title: "Real-Time Visibility",
-      description: "Ensure real-time visibility throughout the journey.",
+      title: t("benefits.2.title"),
+      description: t("benefits.2.desc"),
       image: "/services/shipment.jpeg",
       color: "#194479",
     },
     {
       icon: Globe2,
-      title: "Global Transport",
-      description: "Provide reliable, secure, and fully compliant transport — anywhere in the world.",
+      title: t("benefits.3.title"),
+      description: t("benefits.3.desc"),
       image: "/services/shipment.jpeg",
       color: "#91c73e",
     },
@@ -88,13 +91,13 @@ export default function NfoWhyImportant() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold mb-6">
               <Clock className="w-4 h-4" />
-              Why Is NFO Important?
+              {t("badge")}
             </div>
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6 max-w-4xl mx-auto">
-              In time-sensitive industries, even a short delay can lead to major disruptions.
+              {t("title")}
             </h2>
             <p className="paragraphFont text-gray-700 text-lg md:text-xl max-w-3xl mx-auto">
-              Our NFO service is designed to:
+              {t("subtitle")}
             </p>
           </motion.div>
 
@@ -196,10 +199,10 @@ export default function NfoWhyImportant() {
               <div className="absolute inset-0 bg-[url('/services/shipment.jpeg')] opacity-10 bg-cover bg-center" />
               <div className="relative z-10 text-center text-white">
                 <h3 className="headingFont text-2xl md:text-3xl font-bold mb-4">
-                  Ready to Experience Zero-Delay Logistics?
+                  {t("ctaTitle")}
                 </h3>
                 <p className="paragraphFont text-white/90 text-base md:text-lg max-w-2xl mx-auto">
-                  Get your shipment on the next available flight with our 24/7 NFO service.
+                  {t("ctaDesc")}
                 </p>
               </div>
             </div>

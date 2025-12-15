@@ -586,6 +586,121 @@
     "subheadline": "Get a Free Quote Today",
     "closing": "Let us handle your customs — you focus on what matters most.",
     "primary": "Get a Free Quote Today"
+  },
+  "NfoBanner": {
+    "badge": "OBC Care – Next Flight Out (NFO) Solutions",
+    "title": "When every minute counts, we get your shipment on the very next flight.",
+    "description": "From AOG emergencies to urgent production parts, OBC Care delivers the fastest possible transport solution — with 24/7 coordination and full shipment visibility.",
+    "primaryCta": "Book an NFO Shipment",
+    "secondaryCta": "Get a Free Quote"
+  },
+  "NfoIntro": {
+    "title": "Time-Critical Logistics Without Compromise",
+    "imageCardText1": "Delays aren't an option when critical operations depend on your shipment's arrival.",
+    "imageCardText2": "That's why OBC Care's Next Flight Out (NFO) service prioritizes your cargo on the earliest available flight — ensuring zero downtime, full visibility, and guaranteed speed.",
+    "textCard1": "Our global team monitors every route, flight schedule, and customs requirement in real time, arranging the quickest and most reliable path from pickup to delivery.",
+    "textCard2": "Whether it's aviation parts, automotive components, or electronic equipment, our NFO service keeps your business moving — no matter where you are in the world.",
+    "features": {
+      "0": { "title": "24/7 Monitoring" },
+      "1": { "title": "Global Coverage" },
+      "2": { "title": "Zero Downtime" },
+      "3": { "title": "Guaranteed Speed" }
+    }
+  },
+  "NfoWhatIs": {
+    "badge": "What Is a Next Flight Out (NFO) Service?",
+    "title": "Next Flight Out (NFO) is the fastest air freight solution for time-critical shipments.",
+    "stats": {
+      "flight": { "label": "Flight", "value": "Next" },
+      "support": { "label": "Support", "value": "24/7" }
+    },
+    "card1": { "title": "Fastest Booking", "desc": "Your cargo is booked on the very next available commercial or cargo flight." },
+    "card2": { "title": "Real-Time Routing", "desc": "Expert coordination for record speed." },
+    "card3": { "title": "Minimize Downtime", "desc": "Avoiding operational losses with guaranteed speed and reliability." },
+    "description1": "It ensures that your cargo is booked on the very next available commercial or cargo flight — minimizing downtime and avoiding operational losses.",
+    "description2": "At OBC Care, we combine real-time routing, dedicated handling, and expert coordination to move your shipment across borders at record speed."
+  },
+  "NfoWhyImportant": {
+    "badge": "Why Is NFO Important?",
+    "title": "In time-sensitive industries, even a short delay can lead to major disruptions.",
+    "subtitle": "Our NFO service is designed to:",
+    "benefits": {
+      "0": { "title": "Same-Day Dispatch", "desc": "Guarantee same-day dispatch on the next available flight." },
+      "1": { "title": "Prevent Halts", "desc": "Prevent costly production or operational halts." },
+      "2": { "title": "Real-Time Visibility", "desc": "Ensure real-time visibility throughout the journey." },
+      "3": { "title": "Global Transport", "desc": "Provide reliable, secure, and fully compliant transport — anywhere in the world." }
+    },
+    "ctaTitle": "Ready to Experience Zero-Delay Logistics?",
+    "ctaDesc": "Get your shipment on the next available flight with our 24/7 NFO service."
+  },
+  "NfoHowItWorks": {
+    "badge": "How NFO Works",
+    "title": "From Request to Delivery — In Record Time",
+    "description": "A streamlined 5-step process ensuring your time-critical shipment reaches its destination on the next available flight.",
+    "steps": {
+      "0": { "title": "Immediate Booking & Route Planning", "desc": "Our operations team identifies the fastest flight option available — commercial or cargo — within minutes of your request." },
+      "1": { "title": "Priority Pickup & Documentation", "desc": "We arrange immediate pickup and verify all paperwork for seamless dispatch." },
+      "2": { "title": "Onboard or Cargo Coordination", "desc": "Depending on urgency, we either book the shipment on the next flight or assign an onboard courier for direct escort." },
+      "3": { "title": "Real-Time Updates", "desc": "Get milestone notifications at every stage — from acceptance to arrival." },
+      "4": { "title": "Fast Final Delivery", "desc": "Once landed, we handle customs clearance and deliver your shipment straight to its destination." }
+    },
+    "cta": "Ready to get started? Book your NFO shipment now"
+  },
+  "NfoWhyChoose": {
+    "title": "Why Choose OBC Care for NFO Shipments",
+    "features": {
+      "0": { "title": "Fastest Global Option", "desc": "Your shipment is prioritized on the next available flight — guaranteed." },
+      "1": { "title": "24/7 Operations Team", "desc": "Our logistics experts monitor global routes and coordinate across time zones for uninterrupted service." },
+      "2": { "title": "Integrated Customs & Ground Support", "desc": "We manage all clearances, airport handling, and last-mile arrangements — no handoffs or delays." },
+      "3": { "title": "Real-Time Updates", "desc": "Receive immediate status alerts for every milestone until delivery is confirmed." },
+      "4": { "title": "Flexible & Secure Handling", "desc": "From small parcels to high-value cargo, each shipment is handled with accuracy and care." }
+    },
+    "highlightTitle": "Experience the Fastest Air Freight Solution",
+    "highlightDesc": "Join thousands of businesses that trust OBC Care for their time-critical shipments. Get your cargo on the next flight — guaranteed."
+  },
+  "NfoNetwork": {
+    "badge": "Global NFO Network",
+    "title": "With access to thousands of commercial and cargo flights worldwide, OBC Care ensures the fastest routing possible — anytime, anywhere.",
+    "description": "Our control tower operates 24/7 to monitor routes, weather, customs, and flight availability in real time.",
+    "stats": {
+      "flights": { "label": "Flights Daily", "value": "1000+" },
+      "tower": { "label": "Control Tower", "value": "24/7" },
+      "coverage": { "label": "Coverage", "value": "Global" }
+    },
+    "card1Title": "Worldwide Flight Access",
+    "card1Desc": "Thousands of commercial and cargo flights at your disposal, ensuring the fastest routing for your time-critical shipments.",
+    "card2Title": "24/7 Control Tower",
+    "card2Desc": "Real-time monitoring of routes, weather, customs, and flight availability across all time zones.",
+    "footerTitle": "Global Reach, Local Expertise",
+    "footerDesc": "Connecting your shipments to the world's fastest flight routes",
+    "coverage": {
+      "asia": { "region": "Asia", "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai" },
+      "europe": { "region": "Europe", "cities": "London, Frankfurt, Amsterdam, Paris, Milan" },
+      "americas": { "region": "Americas", "cities": "New York, Los Angeles, Miami, Toronto, São Paulo" }
+    }
+  },
+  "NfoJoin": {
+    "badge": "Become an NFO Operations Partner",
+    "title": "Join our network of logistics professionals and help us move time-critical shipments worldwide.",
+    "question": "Ready to make a difference in global logistics?",
+    "desc1": "From dispatch coordination to airport handling, we're always looking for reliable partners dedicated to fast and secure logistics.",
+    "desc2": "As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.",
+    "benefits": {
+      "0": "Work with time-critical shipments",
+      "1": "24/7 support team backing",
+      "2": "Global network opportunities",
+      "3": "Professional growth"
+    },
+    "ctaApply": "Apply as a Partner",
+    "ctaContact": "Contact Our NFO Team",
+    "stats": { "value": "24/7", "label": "Operations", "desc": "Join a team that moves critical shipments around the clock" }
+  },
+  "NfoCta": {
+    "title": "Your Urgent Shipment, Airborne in Hours",
+    "description": "When urgency is non-negotiable, trust OBC Care's NFO Solutions to keep your business moving.",
+    "subDescription": "We combine speed, reliability, and transparency — ensuring your shipment arrives when it's needed most.",
+    "button": "Get a Free Quote Now",
+    "closing": "Our team responds within minutes — because every second counts."
   }
 }
 ```
