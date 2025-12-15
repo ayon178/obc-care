@@ -801,6 +801,132 @@
     "subHeadline": "Holen Sie sich noch heute ein kostenloses Angebot",
     "subHeadlineItalic": "Lassen Sie uns Ihr Flugzeug wieder in den Himmel bringen — schnell, sicher und kompromisslos.",
     "button": "Holen Sie sich noch heute ein kostenloses Angebot"
+  },
+  "AutomotiveBanner": {
+    "badge": "OBC Care – Automobil- & Fertigungslösungen",
+    "title": "Wenn Produktionslinien nicht stillstehen dürfen, hält OBC Care Ihre Lieferkette in Bewegung – schnell, präzise und global koordiniert.",
+    "ctaRequest": "Dringende Abholung anfordern",
+    "ctaQuote": "Kostenloses Angebot erhalten"
+  },
+  "AutomotiveIntro": {
+    "title": "Effizienz steigern, Leistung liefern",
+    "p1": "In der Automobil- und Fertigungsindustrie kostet jede Verzögerung Zeit, Geld und das Vertrauen der Kunden.",
+    "p2": "Deshalb bietet OBC Care zeitkritische Logistik für Just-in-Time-Abläufe – damit Teile, Werkzeuge und Prototypen genau dann und dort ankommen, wo sie benötigt werden.",
+    "p3": "Von der Fabrik bis zum Fließband oder vom Lieferanten zum OEM – unsere Experten bearbeiten jede Sendung mit Präzision und Echtzeitkoordination, reduzieren Ausfallzeiten und halten Ihre Produktion reibungslos am Laufen.",
+    "stats": {
+      "downtime": "Ausfallzeit",
+      "control": "Kontrolle"
+    }
+  },
+  "AutomotiveWhatWeHandle": {
+    "title": "Was wir handhaben",
+    "description": "Umfassende Logistik für jede kritische Komponente, die Ihre Produktionslinie benötigt.",
+    "items": {
+      "0": { "title": "Automobil-Ersatzteile & Komponenten" },
+      "1": { "title": "Werkzeuge, Matrizen und Formen" },
+      "2": { "title": "Prototypenmaterialien & Testeinheiten" },
+      "3": { "title": "Montagelinienausrüstung" },
+      "4": { "title": "Dringende technische Dokumente" }
+    }
+  },
+  "AutomotiveHowItWorks": {
+    "title": "Wie es funktioniert",
+    "description": "Ein optimierter 5-Schritte-Prozess, der sicherstellt, dass Ihre kritischen Materialien jedes Mal pünktlich Ihre Produktionslinie erreichen.",
+    "steps": {
+      "0": { "title": "Schnelle Bewertung", "desc": "Wir analysieren Ihre Route, Flugoptionen und das Lieferfenster innerhalb von Minuten." },
+      "1": { "title": "Nächster Flug oder Direktfahrt", "desc": "Ihre Sendung bewegt sich sofort – per Luftfracht oder speziellem Bodenfahrzeug." },
+      "2": { "title": "Zoll & Dokumentation", "desc": "Wir kümmern uns um alle Import-/Exportformalitäten für reibungslose Übergänge." },
+      "3": { "title": "Echtzeit-Updates", "desc": "Werden Sie über jeden Meilenstein vom Versand bis zur Lieferung informiert." },
+      "4": { "title": "Direkte Übergabe", "desc": "Die Sendung wird persönlich an Ihr Werk oder Ihren Techniker übergeben." }
+    }
+  },
+  "AutomotiveWhyChoose": {
+    "title": "Warum Automobilführer OBC Care wählen",
+    "description": "Vertraut von Automobilherstellern weltweit für kritische Lieferkettenlogistik.",
+    "benefits": {
+      "0": { "title": "Null-Ausfallzeit-Verpflichtung", "desc": "Wir stellen sicher, dass es aufgrund von Logistikverzögerungen zu keinem Produktionsstopp kommt." },
+      "1": { "title": "Multimodale Flexibilität", "desc": "Luft-, Straßen- und OBC-Handcarry-Optionen für maximale Geschwindigkeit." },
+      "2": { "title": "24/7 Kontrolle", "desc": "Kontinuierliche globale Koordination und Updates." },
+      "3": { "title": "Volle Transparenz", "desc": "Echtzeit-Sichtbarkeit und Lieferbestätigung." }
+    },
+    "bottomCard": {
+        "title": "Ihre Sendung, unsere Mission – 24/7, weltweit.",
+        "desc": "Vertraut von Automobilherstellern weltweit für kritische Lieferkettenlogistik."
+    }
+  },
+  "AutomotiveMission": {
+    "title": "Ihre Sendung, unsere Mission – 24/7, weltweit.",
+    "description": "Jede Branche ist auf pünktliche Lieferung angewiesen. Wir stellen sicher, dass Ihre geschäftskritischen Sendungen ihr Ziel erreichen, wenn es darauf ankommt, mit voller Transparenz und engagierter Unterstützung bei jedem Schritt."
+  },
+  "AutomotiveCta": {
+    "heading": "Ihre Produktion auf Kurs halten",
+    "description": "In der Fertigung zählt jede Minute – und wir sorgen dafür, dass keine verloren geht.",
+    "subDescription": "Mit OBC Care kommen Ihre kritischen Materialien jedes Mal pünktlich an – für reibungslose Abläufe, reduzierte Kosten und unterbrechungsfreien Arbeitsfluss.",
+    "subHeadline": "Holen Sie sich noch heute ein kostenloses Angebot",
+    "subHeadlineItalic": "Lassen Sie uns Ihre Linien am Laufen und Ihre Verpflichtungen im Zeitplan halten.",
+    "button": "Holen Sie sich noch heute ein kostenloses Angebot"
+  },
+  "ElectronicsBanner": {
+    "badge": "OBC Care – Elektronik- & Halbleiterlösungen",
+    "title": "Präzision, Schutz und Leistung – wir liefern Ihre empfindlichen Komponenten schnell und sicher an jeden Ort der Welt.",
+    "ctaRequest": "Dringende Abholung anfordern",
+    "ctaQuote": "Kostenloses Angebot erhalten"
+  },
+  "ElectronicsIntro": {
+    "title": "Präzisionslogistik für eine High-Tech-Welt",
+    "p1": "In der schnelllebigen Welt der Elektronik und Halbleiter kann selbst die kleinste Verzögerung ganze Produktionslinien stören.",
+    "p2": "Deshalb spezialisiert sich OBC Care auf zeitkritische Logistik für empfindliche, hochwertige und temperaturgeführte Komponenten – und stellt sicher, dass jede Lieferung mit Geschwindigkeit, Sicherheit und Präzision behandelt wird.",
+    "p3": "Von Prototypen-Chips über Testgeräte bis hin zu Produktionswafern koordiniert unser Expertenteam jeden Schritt – von der Abholung über den Zoll bis zur endgültigen Lieferung – mit Echtzeit-Updates und globaler Compliance.",
+    "stats": {
+      "esd": "ESD",
+      "safe": "Sicher",
+      "control": "Kontrolle"
+    }
+  },
+  "ElectronicsWhatWeHandle": {
+    "title": "Was wir handhaben",
+    "description": "Umfassende Logistik für jede empfindliche Komponente, die Ihre Produktion und F&E benötigt.",
+    "items": {
+      "0": { "title": "Halbleiterwafer & Mikrochips" },
+      "1": { "title": "Leiterplatten & Elektronikmodule" },
+      "2": { "title": "Prototypen & F&E-Ausrüstung" },
+      "3": { "title": "Reinraum-gehandhabte Komponenten" },
+      "4": { "title": "Sensible Datenträger & vertrauliche Geräte" }
+    }
+  },
+  "ElectronicsHowItWorks": {
+    "title": "Wie es funktioniert",
+    "description": "Ein optimierter 5-Schritte-Prozess, der sicherstellt, dass Ihre empfindlichen Komponenten Ihre Einrichtung sicher und pünktlich erreichen.",
+    "steps": {
+      "0": { "title": "Sofortige Koordination", "desc": "Unser Control Tower identifiziert die schnellste und sicherste verfügbare Route." },
+      "1": { "title": "Sichere Verpackung & Handhabung", "desc": "Komponenten werden unter Einhaltung von ESD- und Reinraumstandards vorbereitet." },
+      "2": { "title": "Nächster Flug / Hand-Carry Option", "desc": "Sendungen werden mit dem nächsten verfügbaren Flug geflogen oder von einem Onboard Courier (OBC) begleitet." },
+      "3": { "title": "Zoll & Compliance", "desc": "Alle Exportdokumente, Lizenzen und Erklärungen werden nahtlos verwaltet." },
+      "4": { "title": "Direkte Übergabe", "desc": "Schnelle, sichere und verifizierte Lieferung an Ihre Produktions- oder F&E-Einrichtung." }
+    }
+  },
+  "ElectronicsWhyChoose": {
+    "title": "Warum Technologieführer OBC Care vertrauen",
+    "description": "Vertraut von Elektronik- und Halbleiterunternehmen weltweit für Präzisionslogistik.",
+    "benefits": {
+      "0": { "title": "ESD-sichere Handhabung", "desc": "Geschulte Fachleute handhaben empfindliche Materialien unter strengen antistatischen Standards." },
+      "1": { "title": "Zeitkritische Expertise", "desc": "Entwickelt für Branchen, in denen jede Minute zählt." },
+      "2": { "title": "Sichere Lieferkette", "desc": "Von der Abholung bis zur Lieferung bleibt Ihre Sendung lückenlos rückverfolgbar." },
+      "3": { "title": "24/7 Kontrolle", "desc": "Globale Überwachung und Echtzeitkommunikation bei jedem Meilenstein." },
+      "4": { "title": "Einhaltung gesetzlicher Vorschriften", "desc": "Volle Einhaltung der Export-, ITAR- und Halbleiterlogistikvorschriften." }
+    }
+  },
+  "ElectronicsMission": {
+    "title": "Ihre Sendung, unsere Mission – 24/7, weltweit.",
+    "description": "Jede Branche ist auf pünktliche Lieferung angewiesen. Wir stellen sicher, dass Ihre geschäftskritischen Sendungen ihr Ziel erreichen, wenn es darauf ankommt, mit voller Transparenz und engagierter Unterstützung bei jedem Schritt."
+  },
+  "ElectronicsCta": {
+    "heading": "Ihre Innovation, schnell geliefert",
+    "description": "OBC Care stärkt Ihre Produktions- und F&E-Zeitpläne mit Logistikpräzision, auf die Sie zählen können.",
+    "subDescription": "Vom Labor zur Linie, vom Prototyp zur Produktion – Ihre Technologie bewegt sich schneller mit uns.",
+    "subHeadline": "Holen Sie sich noch heute ein kostenloses Angebot",
+    "subHeadlineItalic": "Lassen Sie uns Ihre empfindliche Elektronik sicher, geschützt und pünktlich bewegen.",
+    "button": "Holen Sie sich noch heute ein kostenloses Angebot"
   }
 }
 ```

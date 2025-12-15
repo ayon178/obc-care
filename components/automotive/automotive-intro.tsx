@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 export default function AutomotiveIntro() {
+  const t = useTranslations("AutomotiveIntro")
+
   return (
     <section className="relative py-16 md:py-20 bg-white overflow-hidden">
       {/* Subtle background pattern */}
@@ -29,19 +32,19 @@ export default function AutomotiveIntro() {
               className="space-y-6"
             >
               <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight">
-                Driving Efficiency, Delivering Performance
+                {t("title")}
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[#91c73e] to-[#194479] rounded-full" />
               
               <div className="space-y-4">
                 <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                  In automotive and manufacturing, every delay costs time, money, and customer trust.
+                  {t("p1")}
                 </p>
                 <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                  That's why OBC Care provides time-critical logistics designed for just-in-time operations — ensuring parts, tools, and prototypes arrive exactly when and where they're needed.
+                  {t("p2")}
                 </p>
                 <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                  From factory to assembly line, or supplier to OEM, our experts handle each shipment with precision and real-time coordination, reducing downtime and keeping your production running seamlessly.
+                  {t("p3")}
                 </p>
               </div>
             </motion.div>
@@ -69,11 +72,11 @@ export default function AutomotiveIntro() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl text-center">
                         <div className="text-3xl font-bold text-[#194479] mb-1">Zero</div>
-                        <div className="text-xs text-gray-600">Downtime</div>
+                        <div className="text-xs text-gray-600">{t("stats.downtime")}</div>
                       </div>
                       <div className="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl text-center">
                         <div className="text-3xl font-bold text-[#91c73e] mb-1">24/7</div>
-                        <div className="text-xs text-gray-600">Control</div>
+                        <div className="text-xs text-gray-600">{t("stats.control")}</div>
                       </div>
                     </div>
                   </div>

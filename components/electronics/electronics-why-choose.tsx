@@ -2,45 +2,47 @@
 
 import { motion } from "framer-motion"
 import { Shield, Zap, Lock, Clock, FileText } from "lucide-react"
-import Image from "next/image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-
-const benefits = [
-  {
-    icon: Shield,
-    title: "ESD-Safe Handling",
-    description: "Trained professionals manage sensitive materials under strict anti-static standards.",
-    color: "#194479",
-  },
-  {
-    icon: Zap,
-    title: "Time-Critical Expertise",
-    description: "Designed for industries where every minute counts.",
-    color: "#91c73e",
-  },
-  {
-    icon: Lock,
-    title: "Secure Chain of Custody",
-    description: "From pickup to delivery, your shipment remains fully traceable.",
-    color: "#194479",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Control",
-    description: "Global monitoring and real-time communication at every milestone.",
-    color: "#91c73e",
-  },
-  {
-    icon: FileText,
-    title: "Regulatory Compliance",
-    description: "Full adherence to export, ITAR, and semiconductor logistics regulations.",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function ElectronicsWhyChoose() {
+  const t = useTranslations("ElectronicsWhyChoose")
+
+  const benefits = [
+    {
+      icon: Shield,
+      title: t("benefits.0.title"),
+      description: t("benefits.0.desc"),
+      color: "#194479",
+    },
+    {
+      icon: Zap,
+      title: t("benefits.1.title"),
+      description: t("benefits.1.desc"),
+      color: "#91c73e",
+    },
+    {
+      icon: Lock,
+      title: t("benefits.2.title"),
+      description: t("benefits.2.desc"),
+      color: "#194479",
+    },
+    {
+      icon: Clock,
+      title: t("benefits.3.title"),
+      description: t("benefits.3.desc"),
+      color: "#91c73e",
+    },
+    {
+      icon: FileText,
+      title: t("benefits.4.title"),
+      description: t("benefits.4.desc"),
+      color: "#194479",
+    },
+  ]
+
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -75,10 +77,10 @@ export default function ElectronicsWhyChoose() {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-4">
-              Why Technology Leaders Trust OBC Care
+              {t("title")}
             </h2>
             <p className="paragraphFont text-white/90 text-sm md:text-base max-w-2xl mx-auto">
-              Trusted by electronics and semiconductor companies worldwide for precision logistics.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -88,7 +90,7 @@ export default function ElectronicsWhyChoose() {
               {benefits.map((benefit, index) => {
                 const Icon = benefit.icon
                 return (
-                  <div key={benefit.title} className="px-4">
+                  <div key={index} className="px-4">
                     <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/20 hover:border-white/30 transition-all duration-500 shadow-2xl group">
                       {/* Professional Layout */}
                       <div className="flex items-start gap-6 md:gap-8">

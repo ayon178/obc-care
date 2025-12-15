@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { Car } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function AutomotiveBanner() {
+  const t = useTranslations("AutomotiveBanner")
+
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -38,7 +41,7 @@ export default function AutomotiveBanner() {
               style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}
             >
               <Car className="w-3 h-3" />
-              OBC Care – Automotive & Manufacturing Solutions
+              {t("badge")}
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -48,7 +51,7 @@ export default function AutomotiveBanner() {
               className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-white leading-tight"
               style={{ textShadow: '0 4px 12px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)' }}
             >
-              When production lines can't afford to stop, OBC Care keeps your supply chain moving — fast, precise, and globally coordinated.
+              {t("title")}
             </motion.h1>
 
             <motion.div
@@ -65,13 +68,13 @@ export default function AutomotiveBanner() {
                   background: "linear-gradient(135deg, #91C73E 0%, #7bb033 60%)",
                 }}
               >
-                <span>Request Urgent Pickup</span>
+                <span>{t("ctaRequest")}</span>
               </Link>
               <Link
                 href="/inquiry"
                 className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors text-center"
               >
-                Get a Free Quote
+                {t("ctaQuote")}
               </Link>
             </motion.div>
           </motion.div>

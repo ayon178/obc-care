@@ -2,36 +2,39 @@
 
 import { motion } from "framer-motion"
 import { CheckCircle2, Wrench, Cog, Package, Settings, FileText } from "lucide-react"
-
-const items = [
-  {
-    icon: Package,
-    title: "Automotive Spare Parts & Components",
-    color: "#194479",
-  },
-  {
-    icon: Wrench,
-    title: "Tools, Dies, and Molds",
-    color: "#91c73e",
-  },
-  {
-    icon: Cog,
-    title: "Prototype Materials & Test Units",
-    color: "#194479",
-  },
-  {
-    icon: Settings,
-    title: "Assembly Line Equipment",
-    color: "#91c73e",
-  },
-  {
-    icon: FileText,
-    title: "Urgent Technical Documents",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function AutomotiveWhatWeHandle() {
+  const t = useTranslations("AutomotiveWhatWeHandle")
+
+  const items = [
+    {
+      icon: Package,
+      title: t("items.0.title"),
+      color: "#194479",
+    },
+    {
+      icon: Wrench,
+      title: t("items.1.title"),
+      color: "#91c73e",
+    },
+    {
+      icon: Cog,
+      title: t("items.2.title"),
+      color: "#194479",
+    },
+    {
+      icon: Settings,
+      title: t("items.3.title"),
+      color: "#91c73e",
+    },
+    {
+      icon: FileText,
+      title: t("items.4.title"),
+      color: "#194479",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-gray-50 via-white to-gray-50/50 overflow-hidden">
       {/* Animated Background Elements */}
@@ -75,10 +78,10 @@ export default function AutomotiveWhatWeHandle() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            What We Handle
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            Comprehensive logistics for every critical component your production line needs.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -90,7 +93,7 @@ export default function AutomotiveWhatWeHandle() {
               
               return (
                 <motion.div
-                  key={item.title}
+                  key={index} // Changed key to index as title is dynamic
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}

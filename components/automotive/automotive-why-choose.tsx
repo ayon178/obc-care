@@ -3,35 +3,38 @@
 import { motion } from "framer-motion"
 import { Shield, Zap, Clock, Eye } from "lucide-react"
 import Image from "next/image"
-
-const benefits = [
-  {
-    icon: Shield,
-    title: "Zero Downtime Commitment",
-    description: "We ensure no production halt due to logistics delay.",
-    color: "#194479",
-  },
-  {
-    icon: Zap,
-    title: "Multi-Modal Flexibility",
-    description: "Air, road, and OBC hand-carry options for maximum speed.",
-    color: "#91c73e",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Control",
-    description: "Continuous global coordination and updates.",
-    color: "#194479",
-  },
-  {
-    icon: Eye,
-    title: "Full Transparency",
-    description: "Real-time visibility and delivery confirmation.",
-    color: "#91c73e",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function AutomotiveWhyChoose() {
+  const t = useTranslations("AutomotiveWhyChoose")
+
+  const benefits = [
+    {
+      icon: Shield,
+      title: t("benefits.0.title"),
+      description: t("benefits.0.desc"),
+      color: "#194479",
+    },
+    {
+      icon: Zap,
+      title: t("benefits.1.title"),
+      description: t("benefits.1.desc"),
+      color: "#91c73e",
+    },
+    {
+      icon: Clock,
+      title: t("benefits.2.title"),
+      description: t("benefits.2.desc"),
+      color: "#194479",
+    },
+    {
+      icon: Eye,
+      title: t("benefits.3.title"),
+      description: t("benefits.3.desc"),
+      color: "#91c73e",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-[#194479] via-[#1a4a7f] to-[#194479] overflow-hidden">
       {/* Decorative Elements */}
@@ -51,10 +54,10 @@ export default function AutomotiveWhyChoose() {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-4">
-              Why Automotive Leaders Choose OBC Care
+              {t("title")}
             </h2>
             <p className="paragraphFont text-white/90 text-sm md:text-base max-w-2xl mx-auto">
-              Trusted by automotive manufacturers worldwide for critical supply chain logistics.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -67,7 +70,7 @@ export default function AutomotiveWhyChoose() {
                 
                 return (
                   <motion.div
-                    key={benefit.title}
+                    key={index} // Changed key to index
                     initial={{ opacity: 0, y: 40, rotateX: -15 }}
                     whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                     viewport={{ once: true }}
@@ -154,10 +157,10 @@ export default function AutomotiveWhyChoose() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                   <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl">
                     <h3 className="headingFont text-[#194479] text-xl md:text-2xl font-bold mb-2">
-                      Your shipment, our mission — 24/7, across the globe.
+                      {t("bottomCard.title")}
                     </h3>
                     <p className="paragraphFont text-gray-700 text-sm md:text-base">
-                      Trusted by automotive manufacturers worldwide for critical supply chain logistics.
+                      {t("bottomCard.desc")}
                     </p>
                   </div>
                 </div>

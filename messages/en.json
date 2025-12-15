@@ -801,6 +801,132 @@
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's get your aircraft back in the sky — fast, safe, and without compromise.",
     "button": "Get a Free Quote Today"
+  },
+  "AutomotiveBanner": {
+    "badge": "OBC Care – Automotive & Manufacturing Solutions",
+    "title": "When production lines can't afford to stop, OBC Care keeps your supply chain moving — fast, precise, and globally coordinated.",
+    "ctaRequest": "Request Urgent Pickup",
+    "ctaQuote": "Get a Free Quote"
+  },
+  "AutomotiveIntro": {
+    "title": "Driving Efficiency, Delivering Performance",
+    "p1": "In automotive and manufacturing, every delay costs time, money, and customer trust.",
+    "p2": "That's why OBC Care provides time-critical logistics designed for just-in-time operations — ensuring parts, tools, and prototypes arrive exactly when and where they're needed.",
+    "p3": "From factory to assembly line, or supplier to OEM, our experts handle each shipment with precision and real-time coordination, reducing downtime and keeping your production running seamlessly.",
+    "stats": {
+      "downtime": "Downtime",
+      "control": "Control"
+    }
+  },
+  "AutomotiveWhatWeHandle": {
+    "title": "What We Handle",
+    "description": "Comprehensive logistics for every critical component your production line needs.",
+    "items": {
+      "0": { "title": "Automotive Spare Parts & Components" },
+      "1": { "title": "Tools, Dies, and Molds" },
+      "2": { "title": "Prototype Materials & Test Units" },
+      "3": { "title": "Assembly Line Equipment" },
+      "4": { "title": "Urgent Technical Documents" }
+    }
+  },
+  "AutomotiveHowItWorks": {
+    "title": "How It Works",
+    "description": "A streamlined 5-step process ensuring your critical materials reach your production line on time, every time.",
+    "steps": {
+      "0": { "title": "Rapid Assessment", "desc": "We analyze your route, flight options, and delivery window within minutes." },
+      "1": { "title": "Next Flight or Direct Drive", "desc": "Your shipment moves immediately — by air or dedicated ground vehicle." },
+      "2": { "title": "Customs & Documentation", "desc": "We handle all import/export formalities for smooth transitions." },
+      "3": { "title": "Real Time Updates", "desc": "Get updated with every milestone from dispatch to delivery." },
+      "4": { "title": "Direct Handover", "desc": "Shipment is personally delivered to your plant or technician." }
+    }
+  },
+  "AutomotiveWhyChoose": {
+    "title": "Why Automotive Leaders Choose OBC Care",
+    "description": "Trusted by automotive manufacturers worldwide for critical supply chain logistics.",
+    "benefits": {
+      "0": { "title": "Zero Downtime Commitment", "desc": "We ensure no production halt due to logistics delay." },
+      "1": { "title": "Multi-Modal Flexibility", "desc": "Air, road, and OBC hand-carry options for maximum speed." },
+      "2": { "title": "24/7 Control", "desc": "Continuous global coordination and updates." },
+      "3": { "title": "Full Transparency", "desc": "Real-time visibility and delivery confirmation." }
+    },
+    "bottomCard": {
+        "title": "Your shipment, our mission — 24/7, across the globe.",
+        "desc": "Trusted by automotive manufacturers worldwide for critical supply chain logistics."
+    }
+  },
+  "AutomotiveMission": {
+    "title": "Your shipment, our mission — 24/7, across the globe.",
+    "description": "Every industry relies on timely delivery. We ensure your mission-critical shipments reach their destination when it matters most, with full transparency and dedicated support every step of the way."
+  },
+  "AutomotiveCta": {
+    "heading": "Keeping Your Production on Track",
+    "description": "In manufacturing, every minute matters — and we make sure none are lost.",
+    "subDescription": "With OBC Care, your critical materials arrive on time, every time — ensuring smooth operations, reduced costs, and uninterrupted workflow.",
+    "subHeadline": "Get a Free Quote Today",
+    "subHeadlineItalic": "Let's keep your lines running and your commitments on schedule.",
+    "button": "Get a Free Quote Today"
+  },
+  "ElectronicsBanner": {
+    "badge": "OBC Care – Electronics & Semiconductor Solutions",
+    "title": "Precision, protection, and performance — delivering your sensitive components fast and safely, anywhere in the world.",
+    "ctaRequest": "Request Urgent Pickup",
+    "ctaQuote": "Get a Free Quote"
+  },
+  "ElectronicsIntro": {
+    "title": "Precision Logistics for a High-Tech World",
+    "p1": "In the fast-moving world of electronics and semiconductors, even the smallest delay can disrupt entire production lines.",
+    "p2": "That's why OBC Care specializes in time-critical logistics for sensitive, high-value, and temperature-controlled components — ensuring every delivery is handled with speed, security, and precision.",
+    "p3": "From prototype chips to testing equipment and production wafers, our expert team coordinates every step — from pickup to customs to final delivery — with real-time updates and global compliance.",
+    "stats": {
+      "esd": "ESD",
+      "safe": "Safe",
+      "control": "Control"
+    }
+  },
+  "ElectronicsWhatWeHandle": {
+    "title": "What We Handle",
+    "description": "Comprehensive logistics for every sensitive component your production and R&D needs.",
+    "items": {
+      "0": { "title": "Semiconductor Wafers & Microchips" },
+      "1": { "title": "Circuit Boards & Electronic Modules" },
+      "2": { "title": "Prototypes & R&D Equipment" },
+      "3": { "title": "Cleanroom-Handled Components" },
+      "4": { "title": "Sensitive Data Carriers & Confidential Devices" }
+    }
+  },
+  "ElectronicsHowItWorks": {
+    "title": "How It Works",
+    "description": "A streamlined 5-step process ensuring your sensitive components reach your facility safely and on time.",
+    "steps": {
+      "0": { "title": "Immediate Coordination", "desc": "Our control tower identifies the fastest and safest route available." },
+      "1": { "title": "Secure Packaging & Handling", "desc": "Components are prepared in compliance with ESD and cleanroom standards." },
+      "2": { "title": "Next Flight Out / Hand-Carry Option", "desc": "Shipments are flown on the next available flight or escorted by an Onboard Courier (OBC)." },
+      "3": { "title": "Customs & Compliance", "desc": "All export documents, licenses, and declarations are managed seamlessly." },
+      "4": { "title": "Direct Handover", "desc": "Fast, safe, and verified delivery to your production or R&D facility." }
+    }
+  },
+  "ElectronicsWhyChoose": {
+    "title": "Why Technology Leaders Trust OBC Care",
+    "description": "Trusted by electronics and semiconductor companies worldwide for precision logistics.",
+    "benefits": {
+      "0": { "title": "ESD-Safe Handling", "desc": "Trained professionals manage sensitive materials under strict anti-static standards." },
+      "1": { "title": "Time-Critical Expertise", "desc": "Designed for industries where every minute counts." },
+      "2": { "title": "Secure Chain of Custody", "desc": "From pickup to delivery, your shipment remains fully traceable." },
+      "3": { "title": "24/7 Control", "desc": "Global monitoring and real-time communication at every milestone." },
+      "4": { "title": "Regulatory Compliance", "desc": "Full adherence to export, ITAR, and semiconductor logistics regulations." }
+    }
+  },
+  "ElectronicsMission": {
+    "title": "Your shipment, our mission — 24/7, across the globe.",
+    "description": "Every industry relies on timely delivery. We ensure your mission-critical shipments reach their destination when it matters most, with full transparency and dedicated support every step of the way."
+  },
+  "ElectronicsCta": {
+    "heading": "Your Innovation, Delivered Fast",
+    "description": "OBC Care empowers your production and R&D timelines with logistics precision you can count on.",
+    "subDescription": "From lab to line, from prototype to production — your technology moves faster with us.",
+    "subHeadline": "Get a Free Quote Today",
+    "subHeadlineItalic": "Let's move your sensitive electronics safely, securely, and right on time.",
+    "button": "Get a Free Quote Today"
   }
 }
 ```

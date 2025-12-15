@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { ArrowRight, Zap } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function ElectronicsCta() {
+  const t = useTranslations("ElectronicsCta")
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
@@ -63,7 +66,7 @@ export default function ElectronicsCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight"
               >
-                Your Innovation, Delivered Fast
+                {t("heading")}
               </motion.h2>
 
               {/* Description */}
@@ -74,7 +77,7 @@ export default function ElectronicsCta() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                OBC Care empowers your production and R&D timelines with logistics precision you can count on.
+                {t("description")}
               </motion.p>
 
               {/* Sub-description */}
@@ -85,7 +88,7 @@ export default function ElectronicsCta() {
                 transition={{ duration: 0.6, delay: 0.45 }}
                 className="paragraphFont text-white/85 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                From lab to line, from prototype to production — your technology moves faster with us.
+                {t("subDescription")}
               </motion.p>
 
               {/* Sub-headline */}
@@ -97,10 +100,10 @@ export default function ElectronicsCta() {
                 className="pt-2"
               >
                 <p className="paragraphFont text-white font-semibold text-base md:text-lg mb-4">
-                  Get a Free Quote Today
+                  {t("subHeadline")}
                 </p>
                 <p className="paragraphFont text-white/80 text-xs md:text-sm italic mb-4">
-                  Let's move your sensitive electronics safely, securely, and right on time.
+                  {t("subHeadlineItalic")}
                 </p>
               </motion.div>
 
@@ -127,7 +130,7 @@ export default function ElectronicsCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg whitespace-nowrap">
-                    Get a Free Quote Today
+                    {t("button")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>

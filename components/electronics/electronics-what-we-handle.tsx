@@ -2,36 +2,39 @@
 
 import { motion } from "framer-motion"
 import { Cpu, CircuitBoard, FlaskConical, Shield, HardDrive } from "lucide-react"
-
-const items = [
-  {
-    icon: Cpu,
-    title: "Semiconductor Wafers & Microchips",
-    color: "#194479",
-  },
-  {
-    icon: CircuitBoard,
-    title: "Circuit Boards & Electronic Modules",
-    color: "#91c73e",
-  },
-  {
-    icon: FlaskConical,
-    title: "Prototypes & R&D Equipment",
-    color: "#194479",
-  },
-  {
-    icon: Shield,
-    title: "Cleanroom-Handled Components",
-    color: "#91c73e",
-  },
-  {
-    icon: HardDrive,
-    title: "Sensitive Data Carriers & Confidential Devices",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function ElectronicsWhatWeHandle() {
+  const t = useTranslations("ElectronicsWhatWeHandle")
+
+  const items = [
+    {
+      icon: Cpu,
+      title: t("items.0.title"),
+      color: "#194479",
+    },
+    {
+      icon: CircuitBoard,
+      title: t("items.1.title"),
+      color: "#91c73e",
+    },
+    {
+      icon: FlaskConical,
+      title: t("items.2.title"),
+      color: "#194479",
+    },
+    {
+      icon: Shield,
+      title: t("items.3.title"),
+      color: "#91c73e",
+    },
+    {
+      icon: HardDrive,
+      title: t("items.4.title"),
+      color: "#194479",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -44,10 +47,10 @@ export default function ElectronicsWhatWeHandle() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            What We Handle
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            Comprehensive logistics for every sensitive component your production and R&D needs.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -59,7 +62,7 @@ export default function ElectronicsWhatWeHandle() {
               
               return (
                 <motion.div
-                  key={item.title}
+                  key={index} // Changed key to index
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}

@@ -2,46 +2,49 @@
 
 import { motion } from "framer-motion"
 import { Search, Plane, Truck, FileCheck, Radio, Factory } from "lucide-react"
-
-const steps = [
-  {
-    number: "01",
-    title: "Rapid Assessment",
-    desc: "We analyze your route, flight options, and delivery window within minutes.",
-    icon: Search,
-    color: "#194479",
-  },
-  {
-    number: "02",
-    title: "Next Flight or Direct Drive",
-    desc: "Your shipment moves immediately — by air or dedicated ground vehicle.",
-    icon: Plane,
-    color: "#91c73e",
-  },
-  {
-    number: "03",
-    title: "Customs & Documentation",
-    desc: "We handle all import/export formalities for smooth transitions.",
-    icon: FileCheck,
-    color: "#194479",
-  },
-  {
-    number: "04",
-    title: "Real Time Updates",
-    desc: "Get updated with every milestone from dispatch to delivery.",
-    icon: Radio,
-    color: "#91c73e",
-  },
-  {
-    number: "05",
-    title: "Direct Handover",
-    desc: "Shipment is personally delivered to your plant or technician.",
-    icon: Factory,
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function AutomotiveHowItWorks() {
+  const t = useTranslations("AutomotiveHowItWorks")
+
+  const steps = [
+    {
+      number: "01",
+      title: t("steps.0.title"),
+      desc: t("steps.0.desc"),
+      icon: Search,
+      color: "#194479",
+    },
+    {
+      number: "02",
+      title: t("steps.1.title"),
+      desc: t("steps.1.desc"),
+      icon: Plane,
+      color: "#91c73e",
+    },
+    {
+      number: "03",
+      title: t("steps.2.title"),
+      desc: t("steps.2.desc"),
+      icon: FileCheck,
+      color: "#194479",
+    },
+    {
+      number: "04",
+      title: t("steps.3.title"),
+      desc: t("steps.3.desc"),
+      icon: Radio,
+      color: "#91c73e",
+    },
+    {
+      number: "05",
+      title: t("steps.4.title"),
+      desc: t("steps.4.desc"),
+      icon: Factory,
+      color: "#194479",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       {/* Animated Background */}
@@ -66,10 +69,10 @@ export default function AutomotiveHowItWorks() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            How It Works
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            A streamlined 5-step process ensuring your critical materials reach your production line on time, every time.
+            {t("description")}
           </p>
         </motion.div>
 
