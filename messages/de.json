@@ -8,6 +8,7 @@
     "getQuote": "Angebot anfordern",
     "becomeObc": "OBC werden",
     "search": "Suche",
+    "searchPlaceholder": "Suche nach Dienstleistungen...",
     "language": "Sprache",
     "subItems": {
       "onBoardCourier": "On-Board-Kurierdienste",

@@ -8,6 +8,7 @@
     "getQuote": "Get a Quote",
     "becomeObc": "Become an OBC",
     "search": "Search",
+    "searchPlaceholder": "Search services, industries...",
     "language": "Language",
     "subItems": {
       "onBoardCourier": "On Board Courier Services",
@@ -135,7 +136,7 @@
       "getQuote": "Get a Free Quote",
       "becomeObc": "Become an OBC"
     },
-    "searchPlaceholder": "Search..."
+    "searchPlaceholder": "Search services, industries..."
   },
   "ServicesBanner": {
     "title": "Delivering Precision-Driven <br /> <green>Logistics Solutions</green>",

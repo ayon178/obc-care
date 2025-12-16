@@ -8,6 +8,7 @@
     "getQuote": "Obtener cotización",
     "becomeObc": "Ser OBC",
     "search": "Buscar",
+    "searchPlaceholder": "Buscar servicios, sectores...",
     "language": "Idioma",
     "subItems": {
       "onBoardCourier": "Servicios de Courier a Bordo",
