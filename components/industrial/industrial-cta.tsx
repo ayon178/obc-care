@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { ArrowRight, Cog } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function IndustrialCta() {
+  const t = useTranslations("IndustrialCta")
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
@@ -63,7 +66,7 @@ export default function IndustrialCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight"
               >
-                Keep Your Operations Running Smoothly
+                {t("heading")}
               </motion.h2>
 
               {/* Description */}
@@ -74,7 +77,7 @@ export default function IndustrialCta() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                OBC Care ensures your machinery and engineering parts reach their destination — fast, safe, and ready for work.
+                {t("description")}
               </motion.p>
 
               {/* Sub-description */}
@@ -85,7 +88,7 @@ export default function IndustrialCta() {
                 transition={{ duration: 0.6, delay: 0.45 }}
                 className="paragraphFont text-white/85 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                From urgent replacements to project-critical deliveries, we deliver performance on time, every time.
+                {t("subDescription")}
               </motion.p>
 
               {/* Sub-headline */}
@@ -97,10 +100,10 @@ export default function IndustrialCta() {
                 className="pt-2"
               >
                 <p className="paragraphFont text-white font-semibold text-base md:text-lg mb-4">
-                  Get a Free Quote Today
+                  {t("subHeadline")}
                 </p>
                 <p className="paragraphFont text-white/80 text-xs md:text-sm italic mb-4">
-                  Let's move your industrial parts securely and without delay.
+                  {t("subHeadlineItalic")}
                 </p>
               </motion.div>
 
@@ -127,7 +130,7 @@ export default function IndustrialCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg whitespace-nowrap">
-                    Get a Free Quote Today
+                    {t("button")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>

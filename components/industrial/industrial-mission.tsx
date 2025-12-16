@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 export default function IndustrialMission() {
+  const t = useTranslations("IndustrialMission")
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -18,11 +21,11 @@ export default function IndustrialMission() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6">
-                Your shipment, our mission — 24/7, across the globe.
+                {t("title")}
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[#91c73e] to-[#194479] rounded-full mb-6" />
               <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                Every industry relies on timely delivery. We ensure your mission-critical shipments reach their destination when it matters most, with full transparency and dedicated support every step of the way.
+                {t("description")}
               </p>
             </motion.div>
 

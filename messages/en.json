@@ -927,6 +927,66 @@
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's move your sensitive electronics safely, securely, and right on time.",
     "button": "Get a Free Quote Today"
+  },
+  "IndustrialBanner": {
+    "badge": "OBC Care – Industrial Machinery & Engineering Solutions",
+    "title": "Powering productivity through precision logistics — delivering heavy-duty parts, tools, and equipment safely and on time, anywhere in the world.",
+    "ctaRequest": "Request Urgent Pickup",
+    "ctaQuote": "Get a Free Quote"
+  },
+  "IndustrialIntro": {
+    "title": "Reliable Logistics for Heavy Industries",
+    "p1": "In the world of industrial manufacturing and engineering, every minute of downtime counts.",
+    "p2": "That's why OBC Care provides time-critical logistics for machinery, spare parts, and specialized tools — ensuring your operations stay running, no matter where you are.",
+    "p3": "From production lines to construction sites, our logistics experts coordinate every shipment with speed, accuracy, and full visibility — minimizing disruption and maximizing productivity."
+  },
+  "IndustrialWhatWeHandle": {
+    "title": "What We Handle",
+    "description": "Comprehensive logistics for every industrial component your operations need.",
+    "items": {
+      "0": { "title": "Heavy Machinery Parts & Equipment" },
+      "1": { "title": "Maintenance, Repair & Operations (MRO) Components" },
+      "2": { "title": "Industrial Tools & Calibration Instruments" },
+      "3": { "title": "Manufacturing Line Replacements" },
+      "4": { "title": "Oversized or Custom-Engineered Components" }
+    }
+  },
+  "IndustrialHowItWorks": {
+    "title": "How It Works",
+    "description": "A streamlined 5-step process ensuring your industrial components reach your facility safely and on time.",
+    "steps": {
+      "0": { "title": "Immediate Coordination", "desc": "Our logistics control team identifies the fastest route and optimal transport method." },
+      "1": { "title": "Specialized Packaging & Handling", "desc": "Industrial cargo is secured with vibration-resistant, moisture-proof, or custom crating as needed." },
+      "2": { "title": "Next Flight Out / Hand-Carry Option", "desc": "Urgent parts are shipped on the next available flight or escorted by an Onboard Courier (OBC)." },
+      "3": { "title": "Customs & Compliance", "desc": "We handle all trade documents and ensure full compliance with import/export and safety standards." },
+      "4": { "title": "Direct Handover", "desc": "Fast and verified delivery to your plant, job site, or engineering facility." }
+    }
+  },
+  "IndustrialWhyChoose": {
+    "title": "Why Manufacturers Trust OBC Care",
+    "description": "Trusted by industrial manufacturers worldwide for reliable logistics.",
+    "benefits": {
+      "0": { "title": "Zero-Delay Commitment", "description": "We act fast to keep your production moving." },
+      "1": { "title": "Expert Handling", "description": "Couriers trained in managing high-value industrial and engineering goods." },
+      "2": { "title": "Global Coverage", "description": "From factory floors to construction hubs, we deliver worldwide." },
+      "3": { "title": "24/7 Tracking", "description": "Real-time visibility at every stage of transport." },
+      "4": { "title": "Safety First", "description": "Compliance with all handling, labeling, and safety standards." }
+    },
+    "imageCardTitle": "Your shipment, our mission — 24/7, across the globe.",
+    "imageCardDesc": "Trusted by industrial manufacturers worldwide for reliable logistics."
+  },
+  "IndustrialMission": {
+    "title": "Your shipment, our mission — 24/7, across the globe.",
+    "description": "Every industry relies on timely delivery. We ensure your mission-critical shipments reach their destination when it matters most, with full transparency and dedicated support every step of the way."
+  },
+  "IndustrialCta": {
+    "heading": "Keep Your Operations Running Smoothly",
+    "description": "OBC Care ensures your machinery and engineering parts reach their destination — fast, safe, and ready for work.",
+    "subDescription": "From urgent replacements to project-critical deliveries, we deliver performance on time, every time.",
+    "subHeadline": "Get a Free Quote Today",
+    "subHeadlineItalic": "Let's move your industrial parts securely and without delay.",
+    "button": "Get a Free Quote Today"
   }
+}
 }
 ```

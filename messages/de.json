@@ -927,6 +927,66 @@
     "subHeadline": "Holen Sie sich noch heute ein kostenloses Angebot",
     "subHeadlineItalic": "Lassen Sie uns Ihre empfindliche Elektronik sicher, geschützt und pünktlich bewegen.",
     "button": "Holen Sie sich noch heute ein kostenloses Angebot"
+  },
+  "IndustrialBanner": {
+    "badge": "OBC Care – Lösungen für Industriemaschinen & Maschinenbau",
+    "title": "Produktivität steigern durch Präzisionslogistik – Lieferung von schweren Teilen, Werkzeugen und Ausrüstung sicher und pünktlich, überall auf der Welt.",
+    "ctaRequest": "Dringende Abholung anfordern",
+    "ctaQuote": "Kostenloses Angebot erhalten"
+  },
+  "IndustrialIntro": {
+    "title": "Zuverlässige Logistik für die Schwerindustrie",
+    "p1": "In der Welt der industriellen Fertigung und des Maschinenbaus zählt jede Minute Stillstand.",
+    "p2": "Deshalb bietet OBC Care zeitkritische Logistik für Maschinen, Ersatzteile und Spezialwerkzeuge – damit Ihr Betrieb läuft, egal wo Sie sind.",
+    "p3": "Von Produktionslinien bis zu Baustellen koordinieren unsere Logistikexperten jede Sendung mit Schnelligkeit, Genauigkeit und voller Transparenz – für minimale Störungen und maximale Produktivität."
+  },
+  "IndustrialWhatWeHandle": {
+    "title": "Was wir handhaben",
+    "description": "Umfassende Logistik für jede industrielle Komponente, die Ihr Betrieb benötigt.",
+    "items": {
+      "0": { "title": "Schwere Maschinenteile & Ausrüstung" },
+      "1": { "title": "Wartungs-, Reparatur- & Betriebskomponenten (MRO)" },
+      "2": { "title": "Industriewerkzeuge & Kalibrierinstrumente" },
+      "3": { "title": "Ersatzteile für Fertigungslinien" },
+      "4": { "title": "Übergroße oder kundenspezifische Komponenten" }
+    }
+  },
+  "IndustrialHowItWorks": {
+    "title": "Wie es funktioniert",
+    "description": "Ein optimierter 5-Schritte-Prozess, der sicherstellt, dass Ihre Industriekomponenten sicher und pünktlich in Ihrem Werk ankommen.",
+    "steps": {
+      "0": { "title": "Sofortige Koordination", "desc": "Unser Logistik-Kontrollteam ermittelt die schnellste Route und das optimale Transportmittel." },
+      "1": { "title": "Spezialisierte Verpackung & Handhabung", "desc": "Industriefracht wird bei Bedarf mit vibrationsfesten, feuchtigkeitsbeständigen oder kundenspezifischen Kisten gesichert." },
+      "2": { "title": "Next Flight Out / Hand-Carry Option", "desc": "Dringende Teile werden mit dem nächsten verfügbaren Flug versendet oder von einem Onboard Kurier (OBC) begleitet." },
+      "3": { "title": "Zoll & Compliance", "desc": "Wir kümmern uns um alle Handelsdokumente und gewährleisten die vollständige Einhaltung der Import-/Export- und Sicherheitsstandards." },
+      "4": { "title": "Direkte Übergabe", "desc": "Schnelle und verifizierte Lieferung an Ihr Werk, Ihre Baustelle oder Ihre technische Einrichtung." }
+    }
+  },
+  "IndustrialWhyChoose": {
+    "title": "Warum Hersteller OBC Care vertrauen",
+    "description": "Vertraut von Industrieherstellern weltweit für zuverlässige Logistik.",
+    "benefits": {
+      "0": { "title": "Null-Verzögerungs-Verpflichtung", "description": "Wir handeln schnell, um Ihre Produktion am Laufen zu halten." },
+      "1": { "title": "Experten-Handhabung", "description": "Kuriere, die im Umgang mit hochwertigen Industrie- und Maschinenbauwaren geschult sind." },
+      "2": { "title": "Globale Abdeckung", "description": "Von Fabrikhallen bis zu Bauzentren liefern wir weltweit." },
+      "3": { "title": "24/7 Tracking", "description": "Echtzeit-Sichtbarkeit in jeder Transportphase." },
+      "4": { "title": "Sicherheit geht vor", "description": "Einhaltung aller Handhabungs-, Kennzeichnungs- und Sicherheitsstandards." }
+    },
+    "imageCardTitle": "Ihre Sendung, unsere Mission – 24/7, weltweit.",
+    "imageCardDesc": "Vertraut von Industrieherstellern weltweit für zuverlässige Logistik."
+  },
+  "IndustrialMission": {
+    "title": "Ihre Sendung, unsere Mission – 24/7, weltweit.",
+    "description": "Jede Branche ist auf pünktliche Lieferung angewiesen. Wir stellen sicher, dass Ihre geschäftskritischen Sendungen ihr Ziel erreichen, wenn es darauf ankommt, mit voller Transparenz und engagierter Unterstützung bei jedem Schritt."
+  },
+  "IndustrialCta": {
+    "heading": "Halten Sie Ihren Betrieb reibungslos am Laufen",
+    "description": "OBC Care stellt sicher, dass Ihre Maschinen- und Maschinenteile ihr Ziel erreichen – schnell, sicher und einsatzbereit.",
+    "subDescription": "Von dringenden Ersatzteilen bis zu projektkritischen Lieferungen liefern wir Leistung pünktlich, jedes Mal.",
+    "subHeadline": "Holen Sie sich heute ein kostenloses Angebot",
+    "subHeadlineItalic": "Lassen Sie uns Ihre Industrieteile sicher und ohne Verzögerung bewegen.",
+    "button": "Holen Sie sich heute ein kostenloses Angebot"
   }
+}
 }
 ```

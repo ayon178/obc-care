@@ -927,5 +927,65 @@
     "subHeadline": "Obtenga una Cotización Gratis Hoy",
     "subHeadlineItalic": "Movamos su electrónica sensible de manera segura, protegida y justo a tiempo.",
     "button": "Obtenga una Cotización Gratis Hoy"
+  },
+  "IndustrialBanner": {
+    "badge": "OBC Care – Soluciones de Maquinaria Industrial e Ingeniería",
+    "title": "Impulsando la productividad a través de la logística de precisión — entregando piezas, herramientas y equipos pesados de forma segura y a tiempo, en cualquier lugar del mundo.",
+    "ctaRequest": "Solicitar Recogida Urgente",
+    "ctaQuote": "Obtener una Cotización Gratuita"
+  },
+  "IndustrialIntro": {
+    "title": "Logística Confiable para Industrias Pesadas",
+    "p1": "En el mundo de la fabricación industrial y la ingeniería, cada minuto de inactividad cuenta.",
+    "p2": "Es por eso que OBC Care ofrece logística de tiempo crítico para maquinaria, repuestos y herramientas especializadas — asegurando que sus operaciones sigan funcionando, sin importar dónde se encuentre.",
+    "p3": "Desde líneas de producción hasta sitios de construcción, nuestros expertos en logística coordinan cada envío con velocidad, precisión y visibilidad total — minimizando interrupciones y maximizando la productividad."
+  },
+  "IndustrialWhatWeHandle": {
+    "title": "Lo Que Manejamos",
+    "description": "Logística integral para cada componente industrial que sus operaciones necesitan.",
+    "items": {
+      "0": { "title": "Piezas y Equipos de Maquinaria Pesada" },
+      "1": { "title": "Componentes de Mantenimiento, Reparación y Operaciones (MRO)" },
+      "2": { "title": "Herramientas Industriales e Instrumentos de Calibración" },
+      "3": { "title": "Reemplazos de Línea de Fabricación" },
+      "4": { "title": "Componentes de Gran Tamaño o Diseñados a Medida" }
+    }
+  },
+  "IndustrialHowItWorks": {
+    "title": "Cómo Funciona",
+    "description": "Un proceso simplificado de 5 pasos que asegura que sus componentes industriales lleguen a sus instalaciones de forma segura y a tiempo.",
+    "steps": {
+      "0": { "title": "Coordinación Inmediata", "desc": "Nuestro equipo de control logístico identifica la ruta más rápida y el método de transporte óptimo." },
+      "1": { "title": "Embalaje y Manejo Especializado", "desc": "La carga industrial se asegura con embalajes resistentes a vibraciones, a prueba de humedad o personalizados según sea necesario." },
+      "2": { "title": "Próximo Vuelo de Salida / Opción Hand-Carry", "desc": "Las piezas urgentes se envían en el próximo vuelo disponible o son escoltadas por un Mensajero a Bordo (OBC)." },
+      "3": { "title": "Aduanas y Cumplimiento", "desc": "Manejamos todos los documentos comerciales y aseguramos el cumplimiento total de los estándares de importación/exportación y seguridad." },
+      "4": { "title": "Entrega Directa", "desc": "Entrega rápida y verificada en su planta, sitio de trabajo o instalación de ingeniería." }
+    }
+  },
+  "IndustrialWhyChoose": {
+    "title": "Por Qué los Fabricantes Confían en OBC Care",
+    "description": "De confianza por fabricantes industriales en todo el mundo para logística confiable.",
+    "benefits": {
+      "0": { "title": "Compromiso de Cero Retrasos", "description": "Actuamos rápido para mantener su producción en movimiento." },
+      "1": { "title": "Manejo Experto", "description": "Mensajeros capacitados en el manejo de bienes industriales y de ingeniería de alto valor." },
+      "2": { "title": "Cobertura Global", "description": "Desde pisos de fábrica hasta centros de construcción, entregamos en todo el mundo." },
+      "3": { "title": "Rastreo 24/7", "description": "Visibilidad en tiempo real en cada etapa del transporte." },
+      "4": { "title": "Seguridad Primero", "description": "Cumplimiento con todos los estándares de manejo, etiquetado y seguridad." }
+    },
+    "imageCardTitle": "Su envío, nuestra misión — 24/7, en todo el mundo.",
+    "imageCardDesc": "De confianza por fabricantes industriales en todo el mundo para logística confiable."
+  },
+  "IndustrialMission": {
+    "title": "Su envío, nuestra misión — 24/7, en todo el mundo.",
+    "description": "Cada industria depende de la entrega a tiempo. Aseguramos que sus envíos de misión crítica lleguen a su destino cuando más importa, con total transparencia y soporte dedicado en cada paso del camino."
+  },
+  "IndustrialCta": {
+    "heading": "Mantenga Sus Operaciones Funcionando Sin Problemas",
+    "description": "OBC Care asegura que sus piezas de maquinaria e ingeniería lleguen a su destino — rápido, seguro y listo para trabajar.",
+    "subDescription": "Desde reemplazos urgentes hasta entregas críticas de proyectos, entregamos rendimiento a tiempo, cada vez.",
+    "subHeadline": "Obtenga una Cotización Gratuita Hoy",
+    "subHeadlineItalic": "Vamos a mover sus piezas industriales de forma segura y sin demora.",
+    "button": "Obtenga una Cotización Gratuita Hoy"
   }
+}
 }

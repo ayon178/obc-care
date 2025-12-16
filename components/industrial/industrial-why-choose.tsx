@@ -6,41 +6,44 @@ import Image from "next/image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-
-const benefits = [
-  {
-    icon: Zap,
-    title: "Zero-Delay Commitment",
-    description: "We act fast to keep your production moving.",
-    color: "#194479",
-  },
-  {
-    icon: Shield,
-    title: "Expert Handling",
-    description: "Couriers trained in managing high-value industrial and engineering goods.",
-    color: "#91c73e",
-  },
-  {
-    icon: Globe,
-    title: "Global Coverage",
-    description: "From factory floors to construction hubs, we deliver worldwide.",
-    color: "#194479",
-  },
-  {
-    icon: Eye,
-    title: "24/7 Tracking",
-    description: "Real-time visibility at every stage of transport.",
-    color: "#91c73e",
-  },
-  {
-    icon: CheckCircle,
-    title: "Safety First",
-    description: "Compliance with all handling, labeling, and safety standards.",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function IndustrialWhyChoose() {
+  const t = useTranslations("IndustrialWhyChoose")
+
+  const benefits = [
+    {
+      icon: Zap,
+      title: t("benefits.0.title"),
+      description: t("benefits.0.description"),
+      color: "#194479",
+    },
+    {
+      icon: Shield,
+      title: t("benefits.1.title"),
+      description: t("benefits.1.description"),
+      color: "#91c73e",
+    },
+    {
+      icon: Globe,
+      title: t("benefits.2.title"),
+      description: t("benefits.2.description"),
+      color: "#194479",
+    },
+    {
+      icon: Eye,
+      title: t("benefits.3.title"),
+      description: t("benefits.3.description"),
+      color: "#91c73e",
+    },
+    {
+      icon: CheckCircle,
+      title: t("benefits.4.title"),
+      description: t("benefits.4.description"),
+      color: "#194479",
+    },
+  ]
+
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -75,10 +78,10 @@ export default function IndustrialWhyChoose() {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-4">
-              Why Manufacturers Trust OBC Care
+              {t("title")}
             </h2>
             <p className="paragraphFont text-white/90 text-sm md:text-base max-w-2xl mx-auto">
-              Trusted by industrial manufacturers worldwide for reliable logistics.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -192,10 +195,10 @@ export default function IndustrialWhyChoose() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                   <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl">
                     <h3 className="headingFont text-[#194479] text-xl md:text-2xl font-bold mb-2">
-                      Your shipment, our mission — 24/7, across the globe.
+                      {t("imageCardTitle")}
                     </h3>
                     <p className="paragraphFont text-gray-700 text-sm md:text-base">
-                      Trusted by industrial manufacturers worldwide for reliable logistics.
+                      {t("imageCardDesc")}
                     </p>
                   </div>
                 </div>
