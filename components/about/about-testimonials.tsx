@@ -5,8 +5,11 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { Quote } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function AboutTestimonials() {
+  const t = useTranslations("AboutTestimonials")
+
   const settings = {
     dots: true,
     infinite: true,
@@ -20,19 +23,19 @@ export default function AboutTestimonials() {
 
   const testimonials = [
     {
-      quote: "OBC Care handled our urgent AOG shipment flawlessly — every update was real-time, and every promise was kept.",
-      author: "Aviation Client",
-      location: "USA",
+      quote: t("items.0.quote"),
+      author: t("items.0.author"),
+      location: t("items.0.location"),
     },
     {
-      quote: "Fast, reliable, and always professional. The peace of mind they provide is priceless.",
-      author: "Automotive Client",
-      location: "Germany",
+      quote: t("items.1.quote"),
+      author: t("items.1.author"),
+      location: t("items.1.location"),
     },
     {
-      quote: "When every minute counted, OBC Care delivered. Their personal touch makes all the difference.",
-      author: "Electronics Client",
-      location: "Singapore",
+      quote: t("items.2.quote"),
+      author: t("items.2.author"),
+      location: t("items.2.location"),
     },
   ]
 
@@ -46,8 +49,8 @@ export default function AboutTestimonials() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-[#91c73e] font-semibold tracking-wider uppercase">Testimonials</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">What Our Clients Say</h2>
+          <span className="text-[#91c73e] font-semibold tracking-wider uppercase">{t("label")}</span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2">{t("title")}</h2>
         </div>
 
         <div className="max-w-4xl mx-auto">

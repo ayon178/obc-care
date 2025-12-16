@@ -1094,6 +1094,105 @@
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's secure your most important documents — with the precision and privacy they deserve.",
     "button": "Get a Free Quote Today"
+  },
+  "AboutBanner": {
+    "breadcrumbHome": "Home",
+    "breadcrumbAbout": "About Us",
+    "title": "ABOUT US",
+    "description": "About OBC Care: Your Trusted Global Courier Partner"
+  },
+  "AboutIntro": {
+    "whoWeAre": "Who We Are",
+    "title": "Welcome to OBC Care",
+    "subtitle": "Global Logistics Solutions",
+    "p1": "OBC Care was founded in 2018 by Eugen Reimer, who began with a simple but powerful vision — to bridge the world through dependable, human-centered logistics. What started as a small, passionate team determined to deliver shipments that truly matter, has now grown into a global network trusted by industries from aviation to technology.",
+    "p2": "We specialize in On Board Courier (OBC) services, ensuring your critical shipments are hand-carried and delivered with the utmost speed and security. Our dedicated team works 24/7 to provide seamless logistics solutions tailored to your urgent needs.",
+    "features": {
+      "globalNetwork": "Global Network",
+      "support": "24/7 Support",
+      "secureDelivery": "Secure Delivery",
+      "realTimeTracking": "Real-time Tracking"
+    },
+    "imageOverlay": {
+      "network": { "title": "Extensive Network", "desc": "Connecting businesses worldwide." },
+      "secure": { "title": "Reliable & Secure", "desc": "Your shipment is safe with us." }
+    }
+  },
+  "AboutWhyChooseUs": {
+    "label": "Features",
+    "title": "Why Choose Us",
+    "items": {
+      "0": { "title": "Global Reach", "description": "Connecting you to over 200 countries worldwide with our extensive logistics network." },
+      "1": { "title": "100% Safe Delivery", "description": "Your shipments are handled with the highest level of security and care from pickup to delivery." },
+      "2": { "title": "Fastest Delivery", "description": "We prioritize speed and efficiency to ensure your urgent shipments arrive on time, every time." },
+      "3": { "title": "Expert Team", "description": "Our dedicated team of logistics professionals is ready to handle your most complex requirements." },
+      "4": { "title": "Door-to-Door", "description": "Seamless door-to-door service, managing every step of the logistics chain for you." },
+      "5": { "title": "24/7 Support", "description": "Round-the-clock customer support to keep you informed and assist with any queries." }
+    }
+  },
+  "AboutMissionVision": {
+    "mission": { "title": "Our Mission", "description": "To deliver critical shipments with care, accuracy, and heart — ensuring businesses keep moving no matter the distance or the deadline. We strive to be the backbone of your logistics operations." },
+    "vision": { "title": "Our Vision", "description": "To be the world's most trusted partner in urgent logistics — where every hand-carry, every mile, and every moment represents excellence, integrity, and human connection." }
+  },
+  "AboutStats": {
+    "title": "We Make Strongest Services Above World",
+    "description": "Experience the pinnacle of logistics excellence with our world-class services designed to exceed your expectations.",
+    "stats": {
+      "0": { "title": "Trusted Services", "description": "Reliable solutions you can count on." },
+      "1": { "title": "100% Safe", "description": "Security is our top priority." },
+      "2": { "title": "Global Reach", "description": "Connecting you to the world." }
+    }
+  },
+  "AboutTeam": {
+    "label": "Dedicated Team",
+    "title": "Meet Our Special Team Members!",
+    "roles": {
+      "0": "CEO, Founder & General Manager",
+      "1": "Accounting Manager",
+      "2": "Operations Manager",
+      "3": "Project Manager",
+      "4": "Project Manager",
+      "5": "Project Manager"
+    }
+  },
+  "AboutTestimonials": {
+    "label": "Testimonials",
+    "title": "What Our Clients Say",
+    "items": {
+      "0": { "quote": "OBC Care handled our urgent AOG shipment flawlessly — every update was real-time, and every promise was kept.", "author": "Aviation Client", "location": "USA" },
+      "1": { "quote": "Fast, reliable, and always professional. The peace of mind they provide is priceless.", "author": "Automotive Client", "location": "Germany" },
+      "2": { "quote": "When every minute counted, OBC Care delivered. Their personal touch makes all the difference.", "author": "Electronics Client", "location": "Singapore" }
+    }
+  },
+  "AboutCta": {
+    "title": "Ready to Experience Our Service?",
+    "description": "Let's move your shipment — fast, secure, and stress-free. Get a free quote in just 15 minutes.",
+    "btnQuote": "Get a Free Quote",
+    "btnContact": "Contact Us"
+  },
+  "InquiryPage": {
+    "badge": "Get in Touch",
+    "title": "Inquiry Form",
+    "description": "Fill out the form below and we'll get back to you within minutes. Our team is available 24/7 to assist you.",
+    "contactCards": {
+      "support": { "title": "24/7 Support", "desc": "Available round the clock" },
+      "response": { "title": "Quick Response", "desc": "Response within minutes" },
+      "direct": { "title": "Direct Contact", "desc": "Call us anytime" }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "stepLabel": "STEP",
+      "steps": {
+        "0": "Submit your request.",
+        "1": "Review our quote.",
+        "2": "Confirm the mission.",
+        "3": "Sit back and receive your shipment with complete care."
+      }
+    },
+    "privacy": {
+      "label": "Privacy Notice:",
+      "text": "Your information is secure and will only be used to respond to your inquiry. We respect your privacy and never share your data with third parties."
+    }
   }
 }
 

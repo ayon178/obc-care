@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function AboutBanner() {
+  const t = useTranslations("AboutBanner")
+
   return (
     <section className="relative pt-20 h-[400px] w-full overflow-hidden bg-[#194479]">
       {/* Background Pattern/Image */}
@@ -27,17 +30,17 @@ export default function AboutBanner() {
         >
           {/* Breadcrumb */}
           <div className="flex items-center justify-center gap-2 text-sm md:text-base mb-4 text-gray-300">
-            <Link href="/" className="hover:text-[#91c73e] transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#91c73e] transition-colors">{t("breadcrumbHome")}</Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-[#91c73e]">About Us</span>
+            <span className="text-[#91c73e]">{t("breadcrumbAbout")}</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            ABOUT US
+            {t("title")}
           </h1>
           
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
-            About OBC Care: Your Trusted Global Courier Partner
+            {t("description")}
           </p>
         </motion.div>
       </div>

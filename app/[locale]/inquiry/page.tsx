@@ -9,8 +9,35 @@ import HowItWorks from "@/components/inquary/how-it-work"
 import QuoteForm from "@/components/inquary/quote-form"
 import { ChevronsLeft } from "lucide-react"
 import Footer from "@/components/footer"
+import { useTranslations } from "next-intl"
 
 export default function InquiryPage() {
+  const t = useTranslations("InquiryPage")
+
+  const contactCards = [
+    {
+      icon: Clock,
+      title: t("contactCards.support.title"),
+      description: t("contactCards.support.desc"),
+      gradient: "from-[#91C73E]/20 to-[#91C73E]/5",
+      iconBg: "#91C73E",
+    },
+    {
+      icon: Mail,
+      title: t("contactCards.response.title"),
+      description: t("contactCards.response.desc"),
+      gradient: "from-[#194479]/20 to-[#194479]/5",
+      iconBg: "#194479",
+    },
+    {
+      icon: Phone,
+      title: t("contactCards.direct.title"),
+      description: t("contactCards.direct.desc"),
+      gradient: "from-[#91C73E]/20 to-[#91C73E]/5",
+      iconBg: "#91C73E",
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
       <Navbar />
@@ -96,7 +123,7 @@ export default function InquiryPage() {
                   className="text-sm font-bold relative z-10"
                   style={{ color: "#91C73E" }}
                 >
-                  Get in Touch
+                  {t("badge")}
                 </span>
               </motion.div>
             </motion.div>
@@ -109,7 +136,7 @@ export default function InquiryPage() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-[#194479] via-[#1d5a96] to-[#194479] bg-clip-text text-transparent"
               >
-                Inquiry Form
+                {t("title")}
               </motion.h1>
             </div>
 
@@ -119,8 +146,7 @@ export default function InquiryPage() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             >
-              Fill out the form below and we'll get back to you within minutes.
-              Our team is available 24/7 to assist you.
+              {t("description")}
             </motion.p>
           </motion.div>
 
@@ -131,29 +157,7 @@ export default function InquiryPage() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
           >
-            {[
-              {
-                icon: Clock,
-                title: "24/7 Support",
-                description: "Available round the clock",
-                gradient: "from-[#91C73E]/20 to-[#91C73E]/5",
-                iconBg: "#91C73E",
-              },
-              {
-                icon: Mail,
-                title: "Quick Response",
-                description: "Response within minutes",
-                gradient: "from-[#194479]/20 to-[#194479]/5",
-                iconBg: "#194479",
-              },
-              {
-                icon: Phone,
-                title: "Direct Contact",
-                description: "Call us anytime",
-                gradient: "from-[#91C73E]/20 to-[#91C73E]/5",
-                iconBg: "#91C73E",
-              },
-            ].map((item, index) => {
+            {contactCards.map((item, index) => {
               const Icon = item.icon
               return (
                 <motion.div
@@ -236,21 +240,20 @@ export default function InquiryPage() {
           {/* How it works */}
           <div className="relative z-10 pt-6 px-4 sm:pt-8 sm:px-6 md:pt-10 md:pr-10 lg:pr-12">
             <h2 className="text-2xl text-primary sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 tracking-tight">
-              How It Works
+              {t("howItWorks.title")}
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-x-6 sm:gap-y-8 md:gap-x-8 md:gap-y-12">
               {/* Step 1 */}
               <div className="space-y-2">
                 <span className="text-slate-500 font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
-                  STEP
+                  {t("howItWorks.stepLabel")}
                 </span>
                 <div className="text-4xl sm:text-5xl font-bold text-primary mb-2 sm:mb-3">
                   01
                 </div>
                 <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
-                  Submit your request. 
-
+                  {t("howItWorks.steps.0")}
                 </h3>
                 {/* Decorative Chevron - positioned roughly where it is in the image */}
                 <div className="hidden md:block text-primary mt-4">
@@ -264,40 +267,39 @@ export default function InquiryPage() {
               {/* Step 2 */}
               <div className="space-y-2">
                 <span className="text-slate-500 font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
-                  STEP
+                  {t("howItWorks.stepLabel")}
                 </span>
                 <div className="text-4xl sm:text-5xl font-bold text-primary mb-2 sm:mb-3">
                   02
                 </div>
                 <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
-                  Review our quote.
+                  {t("howItWorks.steps.1")}
                 </h3>
               </div>
 
               {/* Step 3 */}
               <div className="space-y-2">
                 <span className="text-slate-500 font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
-                  STEP
+                  {t("howItWorks.stepLabel")}
                 </span>
                 <div className="text-4xl sm:text-5xl font-bold text-primary mb-2 sm:mb-3">
                   03
                 </div>
                 <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
-                  Confirm the mission. 
-
+                  {t("howItWorks.steps.2")}
                 </h3>
               </div>
 
               {/* Step 4 */}
               <div className="space-y-2">
                 <span className="text-slate-500 font-bold text-sm sm:text-base md:text-lg tracking-widest block mb-1">
-                  STEP
+                  {t("howItWorks.stepLabel")}
                 </span>
                 <div className="text-4xl sm:text-5xl font-bold text-primary mb-2 sm:mb-3">
                   04
                 </div>
                 <h3 className="text-slate-900 font-semibold text-base sm:text-lg mb-2 leading-tight">
-                  Sit back and receive your shipment with complete care.
+                  {t("howItWorks.steps.3")}
                 </h3>
               </div>
             </div>
@@ -342,10 +344,8 @@ export default function InquiryPage() {
               </motion.div>
               <div>
                 <p className="text-gray-700 font-medium">
-                  <strong className="text-[#194479]">Privacy Notice:</strong>{" "}
-                  Your information is secure and will only be used to respond to
-                  your inquiry. We respect your privacy and never share your
-                  data with third parties.
+                  <strong className="text-[#194479]">{t("privacy.label")}</strong>{" "}
+                  {t("privacy.text")}
                 </p>
               </div>
             </div>

@@ -2,38 +2,41 @@
 
 import { motion } from "framer-motion"
 import { Globe, ShieldCheck, Clock, Users, Truck, Headphones } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function AboutWhyChooseUs() {
+  const t = useTranslations("AboutWhyChooseUs")
+
   const features = [
     {
       icon: Globe,
-      title: "Global Reach",
-      description: "Connecting you to over 200 countries worldwide with our extensive logistics network.",
+      title: t("items.0.title"),
+      description: t("items.0.description"),
     },
     {
       icon: ShieldCheck,
-      title: "100% Safe Delivery",
-      description: "Your shipments are handled with the highest level of security and care from pickup to delivery.",
+      title: t("items.1.title"),
+      description: t("items.1.description"),
     },
     {
       icon: Clock,
-      title: "Fastest Delivery",
-      description: "We prioritize speed and efficiency to ensure your urgent shipments arrive on time, every time.",
+      title: t("items.2.title"),
+      description: t("items.2.description"),
     },
     {
       icon: Users,
-      title: "Expert Team",
-      description: "Our dedicated team of logistics professionals is ready to handle your most complex requirements.",
+      title: t("items.3.title"),
+      description: t("items.3.description"),
     },
     {
       icon: Truck,
-      title: "Door-to-Door",
-      description: "Seamless door-to-door service, managing every step of the logistics chain for you.",
+      title: t("items.4.title"),
+      description: t("items.4.description"),
     },
     {
       icon: Headphones,
-      title: "24/7 Support",
-      description: "Round-the-clock customer support to keep you informed and assist with any queries.",
+      title: t("items.5.title"),
+      description: t("items.5.description"),
     },
   ]
 
@@ -41,8 +44,8 @@ export default function AboutWhyChooseUs() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-[#91c73e] font-bold tracking-wider uppercase">Features</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#194479] mt-2">Why Choose Us</h2>
+          <span className="text-[#91c73e] font-bold tracking-wider uppercase">{t("label")}</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#194479] mt-2">{t("title")}</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

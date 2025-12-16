@@ -1,8 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useTranslations } from "next-intl"
 
 export default function AboutMissionVision() {
+  const t = useTranslations("AboutMissionVision")
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -15,9 +18,9 @@ export default function AboutMissionVision() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold text-[#194479] mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">Our Mission</h3>
+            <h3 className="text-2xl font-bold text-[#194479] mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">{t("mission.title")}</h3>
             <p className="text-gray-600 leading-relaxed text-lg">
-              To deliver critical shipments with care, accuracy, and heart — ensuring businesses keep moving no matter the distance or the deadline. We strive to be the backbone of your logistics operations.
+              {t("mission.description")}
             </p>
           </motion.div>
 
@@ -28,9 +31,9 @@ export default function AboutMissionVision() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold text-[#194479] mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">Our Vision</h3>
+            <h3 className="text-2xl font-bold text-[#194479] mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">{t("vision.title")}</h3>
             <p className="text-gray-600 leading-relaxed text-lg">
-              To be the world's most trusted partner in urgent logistics — where every hand-carry, every mile, and every moment represents excellence, integrity, and human connection.
+              {t("vision.description")}
             </p>
           </motion.div>
 

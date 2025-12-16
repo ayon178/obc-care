@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function AboutCTA() {
+  const t = useTranslations("AboutCta")
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -20,10 +23,10 @@ export default function AboutCTA() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                Ready to Experience Our Service?
+                {t("title")}
               </h2>
               <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
-                Let's move your shipment — fast, secure, and stress-free. Get a free quote in just 15 minutes.
+                {t("description")}
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -31,14 +34,14 @@ export default function AboutCTA() {
                   href="/inquiry" 
                   className="w-full sm:w-auto px-8 py-4 bg-[#91c73e] text-white font-bold rounded-full hover:bg-[#82b336] transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
-                  Get a Free Quote
+                  {t("btnQuote")}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
                 <Link 
                   href="/contact" 
                   className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-bold rounded-full border border-white/30 hover:bg-white/20 transition-colors flex items-center justify-center"
                 >
-                  Contact Us
+                  {t("btnContact")}
                 </Link>
               </div>
             </motion.div>

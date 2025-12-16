@@ -1094,5 +1094,104 @@
     "subHeadline": "Obtenga una Cotización Gratuita Hoy",
     "subHeadlineItalic": "Aseguremos sus documentos más importantes — con la precisión y privacidad que merecen.",
     "button": "Obtenga una Cotización Gratuita Hoy"
+  },
+  "AboutBanner": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbAbout": "Sobre Nosotros",
+    "title": "SOBRE NOSOTROS",
+    "description": "Sobre OBC Care: Su Socio de Mensajería Global de Confianza"
+  },
+  "AboutIntro": {
+    "whoWeAre": "Quiénes Somos",
+    "title": "Bienvenido a OBC Care",
+    "subtitle": "Soluciones Logísticas Globales",
+    "p1": "OBC Care fue fundada en 2018 por Eugen Reimer, quien comenzó con una visión simple pero poderosa — conectar el mundo a través de una logística confiable y centrada en el ser humano. Lo que comenzó como un equipo pequeño y apasionado decidido a entregar envíos que realmente importan, ha crecido hasta convertirse en una red global confiada por industrias desde la aviación hasta la tecnología.",
+    "p2": "Nos especializamos en servicios de Mensajero a Bordo (OBC), asegurando que sus envíos críticos sean llevados en mano y entregados con la máxima velocidad y seguridad. Nuestro equipo dedicado trabaja 24/7 para proporcionar soluciones logísticas perfectas adaptadas a sus necesidades urgentes.",
+    "features": {
+      "globalNetwork": "Red Global",
+      "support": "Soporte 24/7",
+      "secureDelivery": "Entrega Segura",
+      "realTimeTracking": "Rastreo en Tiempo Real"
+    },
+    "imageOverlay": {
+      "network": { "title": "Red Extensa", "desc": "Conectando negocios en todo el mundo." },
+      "secure": { "title": "Confiable y Seguro", "desc": "Su envío está seguro con nosotros." }
+    }
+  },
+  "AboutWhyChooseUs": {
+    "label": "Características",
+    "title": "Por Qué Elegirnos",
+    "items": {
+      "0": { "title": "Alcance Global", "description": "Conectándole a más de 200 países en todo el mundo con nuestra extensa red logística." },
+      "1": { "title": "Entrega 100% Segura", "description": "Sus envíos son manejados con el más alto nivel de seguridad y cuidado desde la recogida hasta la entrega." },
+      "2": { "title": "Entrega Más Rápida", "description": "Priorizamos la velocidad y la eficiencia para asegurar que sus envíos urgentes lleguen a tiempo, cada vez." },
+      "3": { "title": "Equipo Experto", "description": "Nuestro equipo dedicado de profesionales logísticos está listo para manejar sus requisitos más complejos." },
+      "4": { "title": "Puerta a Puerta", "description": "Servicio puerta a puerta sin interrupciones, gestionando cada paso de la cadena logística por usted." },
+      "5": { "title": "Soporte 24/7", "description": "Atención al cliente las 24 horas para mantenerle informado y asistirle con cualquier consulta." }
+    }
+  },
+  "AboutMissionVision": {
+    "mission": { "title": "Nuestra Misión", "description": "Entregar envíos críticos con cuidado, precisión y corazón — asegurando que las empresas sigan moviéndose sin importar la distancia o el plazo. Nos esforzamos por ser la columna vertebral de sus operaciones logísticas." },
+    "vision": { "title": "Nuestra Visión", "description": "Ser el socio más confiable del mundo en logística urgente — donde cada hand-carry, cada milla y cada momento represente excelencia, integridad y conexión humana." }
+  },
+  "AboutStats": {
+    "title": "Hacemos los Servicios Más Fuertes del Mundo",
+    "description": "Experimente la cima de la excelencia logística con nuestros servicios de clase mundial diseñados para superar sus expectativas.",
+    "stats": {
+      "0": { "title": "Servicios de Confianza", "description": "Soluciones confiables con las que puede contar." },
+      "1": { "title": "100% Seguro", "description": "La seguridad es nuestra máxima prioridad." },
+      "2": { "title": "Alcance Global", "description": "Conectándole con el mundo." }
+    }
+  },
+  "AboutTeam": {
+    "label": "Equipo Dedicado",
+    "title": "¡Conozca a los Miembros de Nuestro Equipo Especial!",
+    "roles": {
+      "0": "CEO, Fundador y Gerente General",
+      "1": "Gerente de Contabilidad",
+      "2": "Gerente de Operaciones",
+      "3": "Gerente de Proyecto",
+      "4": "Gerente de Proyecto",
+      "5": "Gerente de Proyecto"
+    }
+  },
+  "AboutTestimonials": {
+    "label": "Testimonios",
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "items": {
+      "0": { "quote": "OBC Care manejó nuestro envío urgente AOG impecablemente — cada actualización fue en tiempo real, y cada promesa se cumplió.", "author": "Cliente de Aviación", "location": "EE. UU." },
+      "1": { "quote": "Rápido, confiable y siempre profesional. La tranquilidad que brindan no tiene precio.", "author": "Cliente Automotriz", "location": "Alemania" },
+      "2": { "quote": "Cuando cada minuto contaba, OBC Care cumplió. Su toque personal hace toda la diferencia.", "author": "Cliente de Electrónica", "location": "Singapur" }
+    }
+  },
+  "AboutCta": {
+    "title": "¿Listo para Experimentar Nuestro Servicio?",
+    "description": "Vamos a mover su envío — rápido, seguro y sin estrés. Obtenga una cotización gratuita en solo 15 minutos.",
+    "btnQuote": "Obtener una Cotización Gratuita",
+    "btnContact": "Contáctenos"
+  },
+  "InquiryPage": {
+    "badge": "Póngase en Contacto",
+    "title": "Formulario de Consulta",
+    "description": "Complete el siguiente formulario y nos pondremos en contacto con usted en cuestión de minutos. Nuestro equipo está disponible las 24 horas para ayudarle.",
+    "contactCards": {
+      "support": { "title": "Soporte 24/7", "desc": "Disponible todo el día" },
+      "response": { "title": "Respuesta Rápida", "desc": "Respuesta en minutos" },
+      "direct": { "title": "Contacto Directo", "desc": "Llámenos en cualquier momento" }
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "stepLabel": "PASO",
+      "steps": {
+        "0": "Envíe su solicitud.",
+        "1": "Revise nuestra cotización.",
+        "2": "Confirme la misión.",
+        "3": "Relájese y reciba su envío con total cuidado."
+      }
+    },
+    "privacy": {
+      "label": "Aviso de Privacidad:",
+      "text": "Su información está segura y solo se utilizará para responder a su consulta. Respetamos su privacidad y nunca compartimos sus datos con terceros."
+    }
   }
 }

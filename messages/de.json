@@ -1094,6 +1094,105 @@
     "subHeadline": "Holen Sie sich heute ein kostenloses Angebot",
     "subHeadlineItalic": "Sichern Sie Ihre wichtigsten Dokumente – mit der Präzision und Privatsphäre, die sie verdienen.",
     "button": "Holen Sie sich heute ein kostenloses Angebot"
+  },
+  "AboutBanner": {
+    "breadcrumbHome": "Startseite",
+    "breadcrumbAbout": "Über uns",
+    "title": "ÜBER UNS",
+    "description": "Über OBC Care: Ihr vertrauenswürdiger globaler Kurierpartner"
+  },
+  "AboutIntro": {
+    "whoWeAre": "Wer wir sind",
+    "title": "Willkommen bei OBC Care",
+    "subtitle": "Globale Logistiklösungen",
+    "p1": "OBC Care wurde 2018 von Eugen Reimer gegründet, der mit einer einfachen, aber kraftvollen Vision begann – die Welt durch zuverlässige, menschenzentrierte Logistik zu verbinden. Was als kleines, leidenschaftliches Team begann, das entschlossen war, Sendungen zu liefern, die wirklich zählen, ist heute zu einem globalen Netzwerk gewachsen, dem Branchen von der Luftfahrt bis zur Technologie vertrauen.",
+    "p2": "Wir spezialisieren uns auf On Board Courier (OBC) Dienste und stellen sicher, dass Ihre kritischen Sendungen persönlich überbracht und mit höchster Geschwindigkeit und Sicherheit geliefert werden. Unser engagiertes Team arbeitet rund um die Uhr, um nahtlose Logistiklösungen anzubieten, die auf Ihre dringenden Bedürfnisse zugeschnitten sind.",
+    "features": {
+      "globalNetwork": "Globales Netzwerk",
+      "support": "24/7 Support",
+      "secureDelivery": "Sichere Lieferung",
+      "realTimeTracking": "Echtzeit-Tracking"
+    },
+    "imageOverlay": {
+      "network": { "title": "Umfangreiches Netzwerk", "desc": "Verbindet Unternehmen weltweit." },
+      "secure": { "title": "Zuverlässig & Sicher", "desc": "Ihre Sendung ist bei uns sicher." }
+    }
+  },
+  "AboutWhyChooseUs": {
+    "label": "Funktionen",
+    "title": "Warum uns wählen",
+    "items": {
+      "0": { "title": "Globale Reichweite", "description": "Verbindet Sie mit über 200 Ländern weltweit durch unser umfangreiches Logistiknetzwerk." },
+      "1": { "title": "100% Sichere Lieferung", "description": "Ihre Sendungen werden vom Abholen bis zur Zustellung mit höchster Sicherheit und Sorgfalt behandelt." },
+      "2": { "title": "Schnellste Lieferung", "description": "Wir priorisieren Geschwindigkeit und Effizienz, um sicherzustellen, dass Ihre dringenden Sendungen immer pünktlich ankommen." },
+      "3": { "title": "Experten-Team", "description": "Unser engagiertes Team von Logistikprofis steht bereit, um Ihre komplexesten Anforderungen zu erfüllen." },
+      "4": { "title": "Tür-zu-Tür", "description": "Nahtloser Tür-zu-Tür-Service, der jeden Schritt der Logistikkette für Sie verwaltet." },
+      "5": { "title": "24/7 Support", "description": "Kundensupport rund um die Uhr, um Sie auf dem Laufenden zu halten und bei Fragen zu unterstützen." }
+    }
+  },
+  "AboutMissionVision": {
+    "mission": { "title": "Unsere Mission", "description": "Kritische Sendungen mit Sorgfalt, Genauigkeit und Herz zu liefern – um sicherzustellen, dass Unternehmen unabhängig von Entfernung oder Frist in Bewegung bleiben. Wir streben danach, das Rückgrat Ihrer Logistikoperationen zu sein." },
+    "vision": { "title": "Unsere Vision", "description": "Der weltweit vertrauenswürdigste Partner in der dringenden Logistik zu sein – wo jeder Hand-Carry, jede Meile und jeder Moment für Exzellenz, Integrität und menschliche Verbindung steht." }
+  },
+  "AboutStats": {
+    "title": "Wir bieten die stärksten Dienstleistungen weltweit",
+    "description": "Erleben Sie den Gipfel der Logistikexzellenz mit unseren erstklassigen Dienstleistungen, die Ihre Erwartungen übertreffen sollen.",
+    "stats": {
+      "0": { "title": "Vertrauenswürdige Dienste", "description": "Zuverlässige Lösungen, auf die Sie zählen können." },
+      "1": { "title": "100% Sicher", "description": "Sicherheit ist unsere oberste Priorität." },
+      "2": { "title": "Globale Reichweite", "description": "Verbindet Sie mit der Welt." }
+    }
+  },
+  "AboutTeam": {
+    "label": "Engagiertes Team",
+    "title": "Treffen Sie unsere speziellen Teammitglieder!",
+    "roles": {
+      "0": "CEO, Gründer & Geschäftsführer",
+      "1": "Buchhaltungsleiterin",
+      "2": "Betriebsleiter",
+      "3": "Projektmanager",
+      "4": "Projektmanager",
+      "5": "Projektmanager"
+    }
+  },
+  "AboutTestimonials": {
+    "label": "Referenzen",
+    "title": "Was unsere Kunden sagen",
+    "items": {
+      "0": { "quote": "OBC Care hat unsere dringende AOG-Sendung tadellos abgewickelt – jedes Update erfolgte in Echtzeit und jedes Versprechen wurde eingehalten.", "author": "Luftfahrtkunde", "location": "USA" },
+      "1": { "quote": "Schnell, zuverlässig und immer professionell. Die Sicherheit, die sie bieten, ist unbezahlbar.", "author": "Automobilkunde", "location": "Deutschland" },
+      "2": { "quote": "Als jede Minute zählte, hat OBC Care geliefert. Ihre persönliche Note macht den Unterschied.", "author": "Elektronikkunde", "location": "Singapur" }
+    }
+  },
+  "AboutCta": {
+    "title": "Bereit, unseren Service zu erleben?",
+    "description": "Lassen Sie uns Ihre Sendung bewegen – schnell, sicher und stressfrei. Erhalten Sie in nur 15 Minuten ein kostenloses Angebot.",
+    "btnQuote": "Kostenloses Angebot erhalten",
+    "btnContact": "Kontaktieren Sie uns"
+  },
+  "InquiryPage": {
+    "badge": "Kontakt aufnehmen",
+    "title": "Anfrageformular",
+    "description": "Füllen Sie das untenstehende Formular aus und wir melden uns innerhalb weniger Minuten bei Ihnen. Unser Team steht Ihnen rund um die Uhr zur Verfügung.",
+    "contactCards": {
+      "support": { "title": "24/7 Support", "desc": "Rund um die Uhr verfügbar" },
+      "response": { "title": "Schnelle Antwort", "desc": "Antwort innerhalb von Minuten" },
+      "direct": { "title": "Direkter Kontakt", "desc": "Rufen Sie uns jederzeit an" }
+    },
+    "howItWorks": {
+      "title": "Wie es funktioniert",
+      "stepLabel": "SCHRITT",
+      "steps": {
+        "0": "Senden Sie Ihre Anfrage.",
+        "1": "Prüfen Sie unser Angebot.",
+        "2": "Bestätigen Sie den Auftrag.",
+        "3": "Lehnen Sie sich zurück und empfangen Sie Ihre Sendung mit absoluter Sorgfalt."
+      }
+    },
+    "privacy": {
+      "label": "Datenschutz:",
+      "text": "Ihre Informationen sind sicher und werden nur zur Beantwortung Ihrer Anfrage verwendet. Wir respektieren Ihre Privatsphäre und geben Ihre Daten niemals an Dritte weiter."
+    }
   }
 }
 

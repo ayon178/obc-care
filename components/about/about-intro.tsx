@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { CheckCircle2, Globe2, ShieldCheck } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function AboutIntro() {
+  const t = useTranslations("AboutIntro")
+
   return (
     <section className="py-20 md:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
@@ -17,37 +20,37 @@ export default function AboutIntro() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h4 className="text-[#91c73e] font-bold tracking-wider uppercase mb-2">Who We Are</h4>
+            <h4 className="text-[#91c73e] font-bold tracking-wider uppercase mb-2">{t("whoWeAre")}</h4>
             <h2 className="text-3xl md:text-4xl font-bold text-[#194479] mb-6 leading-tight">
-              Welcome to OBC Care <br />
-              <span className="text-gray-700 font-normal text-2xl">Global Logistics Solutions</span>
+              {t("title")} <br />
+              <span className="text-gray-700 font-normal text-2xl">{t("subtitle")}</span>
             </h2>
 
             <div className="space-y-6 text-gray-600 leading-relaxed text-justify">
               <p>
-                OBC Care was founded in 2018 by Eugen Reimer, who began with a simple but powerful vision — to bridge the world through dependable, human-centered logistics. What started as a small, passionate team determined to deliver shipments that truly matter, has now grown into a global network trusted by industries from aviation to technology.
+                {t("p1")}
               </p>
               <p>
-                We specialize in On Board Courier (OBC) services, ensuring your critical shipments are hand-carried and delivered with the utmost speed and security. Our dedicated team works 24/7 to provide seamless logistics solutions tailored to your urgent needs.
+                {t("p2")}
               </p>
             </div>
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="h-5 w-5 text-[#91c73e]" />
-                <span className="text-[#194479] font-semibold">Global Network</span>
+                <span className="text-[#194479] font-semibold">{t("features.globalNetwork")}</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="h-5 w-5 text-[#91c73e]" />
-                <span className="text-[#194479] font-semibold">24/7 Support</span>
+                <span className="text-[#194479] font-semibold">{t("features.support")}</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="h-5 w-5 text-[#91c73e]" />
-                <span className="text-[#194479] font-semibold">Secure Delivery</span>
+                <span className="text-[#194479] font-semibold">{t("features.secureDelivery")}</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="h-5 w-5 text-[#91c73e]" />
-                <span className="text-[#194479] font-semibold">Real-time Tracking</span>
+                <span className="text-[#194479] font-semibold">{t("features.realTimeTracking")}</span>
               </div>
             </div>
           </motion.div>
@@ -77,8 +80,8 @@ export default function AboutIntro() {
                     <Globe2 className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-lg">Extensive Network</h4>
-                    <p className="text-sm text-gray-300">Connecting businesses worldwide.</p>
+                    <h4 className="font-bold text-lg">{t("imageOverlay.network.title")}</h4>
+                    <p className="text-sm text-gray-300">{t("imageOverlay.network.desc")}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -86,8 +89,8 @@ export default function AboutIntro() {
                     <ShieldCheck className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-lg">Reliable & Secure</h4>
-                    <p className="text-sm text-gray-300">Your shipment is safe with us.</p>
+                    <h4 className="font-bold text-lg">{t("imageOverlay.secure.title")}</h4>
+                    <p className="text-sm text-gray-300">{t("imageOverlay.secure.desc")}</p>
                   </div>
                 </div>
               </div>
