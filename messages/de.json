@@ -1039,6 +1039,61 @@
     "subHeadline": "Holen Sie sich heute ein kostenloses Angebot",
     "subHeadlineItalic": "Lassen Sie uns Ihre Technologie mit Präzision, Schutz und Geschwindigkeit bewegen.",
     "button": "Holen Sie sich heute ein kostenloses Angebot"
+  },
+  "ConfidentialBanner": {
+    "badge": "OBC Care – Hochwertiger & vertraulicher Dokumentenversand",
+    "title": "Diskretion. Präzision. Geschwindigkeit.",
+    "description": "Ihre sensiblen Dokumente und sicheren Daten werden persönlich übergeben – vertraut von globalen Kunden, die absolute Vertraulichkeit benötigen.",
+    "ctaRequest": "Dringende Abholung anfordern",
+    "ctaQuote": "Kostenloses Angebot erhalten"
+  },
+  "ConfidentialIntro": {
+    "title": "Vertrauenswürdiger Kurierversand für vertrauliche Sendungen",
+    "p1": "Wenn es um hochwertige oder vertrauliche Dokumente geht, sind Sicherheit und Vertrauen nicht verhandelbar.",
+    "p2": "OBC Care bietet Hand-Carry-Kurierdienste für zeitkritische, vertrauliche und sensible Materialien – so stellen wir sicher, dass Ihre Dokumente nie aus den Augen gelassen werden, nie gefährdet sind und immer pünktlich geliefert werden.",
+    "p3": "Von rechtlichen Verträgen über Finanzunterlagen bis hin zu Regierungsdokumenten schützen wir Ihre Informationen mit vollständiger Kontrollkette und Echtzeit-Transparenz."
+  },
+  "ConfidentialWhatWeHandle": {
+    "title": "Was wir handhaben",
+    "description": "Umfassende sichere Lieferung für jede Art von vertraulichem Dokument.",
+    "items": {
+      "0": { "title": "Rechtliche und Unternehmensdokumente" },
+      "1": { "title": "Bank-, Finanz- & Audit-Akten" },
+      "2": { "title": "Diplomatische oder Regierungsunterlagen" },
+      "3": { "title": "Geistiges Eigentum & Geschäftsgeheimnisse" },
+      "4": { "title": "Akademische, wissenschaftliche & Forschungsunterlagen" },
+      "5": { "title": "Versiegelte oder beglaubigte physische Datenträger" }
+    }
+  },
+  "ConfidentialHowItWorks": {
+    "title": "Wie es funktioniert",
+    "description": "Ein optimierter 5-Schritte-Prozess, der sicherstellt, dass Ihre vertraulichen Dokumente sicher und geschützt an ihrem Ziel ankommen.",
+    "steps": {
+      "0": { "title": "Sofortige Reaktion", "desc": "Auf Anfrage arrangiert unser Operationsteam innerhalb von Minuten einen Hand-Carry-Kurier." },
+      "1": { "title": "Verifizierte Abholung", "desc": "Dokumente werden persönlich abgeholt und für den direkten Transit versiegelt." },
+      "2": { "title": "Hand-Carry-Begleitung", "desc": "Ein dedizierter Onboard-Kurier (OBC) reist jederzeit mit Ihren Dokumenten – keine Handhabung durch Dritte." },
+      "3": { "title": "Echtzeit-Tracking", "desc": "Sie erhalten Meilenstein-Updates von der Abholung bis zur Lieferbestätigung." },
+      "4": { "title": "Zustellnachweis", "desc": "Unterzeichnete, mit Zeitstempel versehene Übergabebestätigung gewährleistet vollständige Rechenschaftspflicht." }
+    }
+  },
+  "ConfidentialWhyChoose": {
+    "title": "Warum Kunden OBC Care für vertrauliche Lieferungen vertrauen",
+    "description": "Vertraut von Fachleuten weltweit für sichere Dokumentenlieferung.",
+    "benefits": {
+      "0": { "title": "Absolute Diskretion", "description": "Die Details Ihrer Sendung bleiben in jeder Phase vertraulich." },
+      "1": { "title": "Nur direkter Hand-Carry", "description": "Keine Frachträume oder geteilte Logistik – nur persönliche Lieferung." },
+      "2": { "title": "24/7 Verfügbarkeit", "description": "Globale Koordination für dringende rechtliche, finanzielle oder diplomatische Sendungen." },
+      "3": { "title": "Vollständige Kontrollkette", "description": "Jede Übergabe wird dokumentiert und verifiziert." },
+      "4": { "title": "Vertraut von Fachleuten", "description": "Ausgewählt von Anwaltskanzleien, Finanzinstituten und Unternehmen weltweit." }
+    }
+  },
+  "ConfidentialCta": {
+    "heading": "Ihr Partner für vertrauliche Lieferungen",
+    "description": "Von vertraulichen Verträgen bis zu Regierungsausschreibungen liefert OBC Care mit Integrität, Geschwindigkeit und unübertroffener Zuverlässigkeit.",
+    "subDescription": "",
+    "subHeadline": "Holen Sie sich heute ein kostenloses Angebot",
+    "subHeadlineItalic": "Sichern Sie Ihre wichtigsten Dokumente – mit der Präzision und Privatsphäre, die sie verdienen.",
+    "button": "Holen Sie sich heute ein kostenloses Angebot"
   }
-}}
-```
+}
+

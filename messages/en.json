@@ -1039,6 +1039,61 @@
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's move your technology with precision, protection, and speed.",
     "button": "Get a Free Quote Today"
+  },
+  "ConfidentialBanner": {
+    "badge": "OBC Care – High-Value & Confidential Document Delivery",
+    "title": "Discretion. Precision. Speed.",
+    "description": "Your sensitive documents and secure data are delivered hand-to-hand — trusted by global clients who require absolute confidentiality.",
+    "ctaRequest": "Request Urgent Pickup",
+    "ctaQuote": "Get a Free Quote"
+  },
+  "ConfidentialIntro": {
+    "title": "Trusted Hand-Carry Delivery for Confidential Shipments",
+    "p1": "When it comes to high-value or confidential documents, security and trust are non-negotiable.",
+    "p2": "OBC Care provides hand-carry courier services for time-critical, confidential, and sensitive materials — ensuring that your documents are never out of sight, never at risk, and always delivered on time.",
+    "p3": "From legal contracts to financial records and government papers, we protect your information with complete chain-of-custody control and real-time transparency."
+  },
+  "ConfidentialWhatWeHandle": {
+    "title": "What We Handle",
+    "description": "Comprehensive secure delivery for every type of confidential document.",
+    "items": {
+      "0": { "title": "Legal and Corporate Documents" },
+      "1": { "title": "Banking, Financial & Audit Files" },
+      "2": { "title": "Diplomatic or Government Papers" },
+      "3": { "title": "Intellectual Property & Trade Secrets" },
+      "4": { "title": "Academic, Scientific & Research Records" },
+      "5": { "title": "Sealed or Notarized Physical Data Media" }
+    }
+  },
+  "ConfidentialHowItWorks": {
+    "title": "How It Works",
+    "description": "A streamlined 5-step process ensuring your confidential documents reach their destination safely and securely.",
+    "steps": {
+      "0": { "title": "Immediate Response", "desc": "Upon inquiry, our operations team arranges a hand-carry courier within minutes." },
+      "1": { "title": "Verified Pickup", "desc": "Documents are personally collected and sealed for direct transit." },
+      "2": { "title": "Hand-Carry Escort", "desc": "A dedicated Onboard Courier (OBC) travels with your documents at all times — no third-party handling." },
+      "3": { "title": "Real-Time Tracking", "desc": "You receive milestone updates from pickup to delivery confirmation." },
+      "4": { "title": "Proof of Delivery", "desc": "Signed, timestamped handover confirmation ensures complete accountability." }
+    }
+  },
+  "ConfidentialWhyChoose": {
+    "title": "Why Clients Trust OBC Care for Confidential Deliveries",
+    "description": "Trusted by professionals worldwide for secure document delivery.",
+    "benefits": {
+      "0": { "title": "Absolute Discretion", "description": "Your shipment's details remain confidential at every stage." },
+      "1": { "title": "Direct Hand-Carry Only", "description": "No cargo holds or shared logistics — only person-to-person delivery." },
+      "2": { "title": "24/7 Availability", "description": "Global coordination for urgent legal, financial, or diplomatic shipments." },
+      "3": { "title": "Full Chain-of-Custody", "description": "Every handover is documented and verified." },
+      "4": { "title": "Trusted by Professionals", "description": "Chosen by law firms, financial institutions, and corporations worldwide." }
+    }
+  },
+  "ConfidentialCta": {
+    "heading": "Your Confidential Delivery Partner",
+    "description": "From confidential contracts to government tenders, OBC Care delivers with integrity, speed, and unmatched reliability.",
+    "subDescription": "",
+    "subHeadline": "Get a Free Quote Today",
+    "subHeadlineItalic": "Let's secure your most important documents — with the precision and privacy they deserve.",
+    "button": "Get a Free Quote Today"
   }
-}}
-```
+}
+

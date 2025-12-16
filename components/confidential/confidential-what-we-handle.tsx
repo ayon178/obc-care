@@ -2,41 +2,44 @@
 
 import { motion } from "framer-motion"
 import { FileText, DollarSign, Shield, Lock, GraduationCap, Stamp } from "lucide-react"
-
-const items = [
-  {
-    icon: FileText,
-    title: "Legal and Corporate Documents",
-    color: "#194479",
-  },
-  {
-    icon: DollarSign,
-    title: "Banking, Financial & Audit Files",
-    color: "#91c73e",
-  },
-  {
-    icon: Shield,
-    title: "Diplomatic or Government Papers",
-    color: "#194479",
-  },
-  {
-    icon: Lock,
-    title: "Intellectual Property & Trade Secrets",
-    color: "#91c73e",
-  },
-  {
-    icon: GraduationCap,
-    title: "Academic, Scientific & Research Records",
-    color: "#194479",
-  },
-  {
-    icon: Stamp,
-    title: "Sealed or Notarized Physical Data Media",
-    color: "#91c73e",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function ConfidentialWhatWeHandle() {
+  const t = useTranslations("ConfidentialWhatWeHandle")
+
+  const items = [
+    {
+      icon: FileText,
+      title: t("items.0.title"),
+      color: "#194479",
+    },
+    {
+      icon: DollarSign,
+      title: t("items.1.title"),
+      color: "#91c73e",
+    },
+    {
+      icon: Shield,
+      title: t("items.2.title"),
+      color: "#194479",
+    },
+    {
+      icon: Lock,
+      title: t("items.3.title"),
+      color: "#91c73e",
+    },
+    {
+      icon: GraduationCap,
+      title: t("items.4.title"),
+      color: "#194479",
+    },
+    {
+      icon: Stamp,
+      title: t("items.5.title"),
+      color: "#91c73e",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -49,10 +52,10 @@ export default function ConfidentialWhatWeHandle() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            What We Handle
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            Comprehensive secure delivery for every type of confidential document.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -64,7 +67,7 @@ export default function ConfidentialWhatWeHandle() {
               
               return (
                 <motion.div
-                  key={item.title}
+                  key={index}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}

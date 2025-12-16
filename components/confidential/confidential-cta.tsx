@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { ArrowRight, FileText } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function ConfidentialCta() {
+  const t = useTranslations("ConfidentialCta")
+
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Gradient Background Band */}
@@ -63,7 +66,7 @@ export default function ConfidentialCta() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight"
               >
-                Your Confidential Delivery Partner
+                {t("heading")}
               </motion.h2>
 
               {/* Description */}
@@ -74,7 +77,7 @@ export default function ConfidentialCta() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
               >
-                From confidential contracts to government tenders, OBC Care delivers with integrity, speed, and unmatched reliability.
+                {t("description")}
               </motion.p>
 
               {/* Sub-headline */}
@@ -86,10 +89,10 @@ export default function ConfidentialCta() {
                 className="pt-2"
               >
                 <p className="paragraphFont text-white font-semibold text-base md:text-lg mb-4">
-                  Get a Free Quote Today
+                  {t("subHeadline")}
                 </p>
                 <p className="paragraphFont text-white/80 text-xs md:text-sm italic mb-4">
-                  Let's secure your most important documents — with the precision and privacy they deserve.
+                  {t("subHeadlineItalic")}
                 </p>
               </motion.div>
 
@@ -116,7 +119,7 @@ export default function ConfidentialCta() {
                     }}
                   />
                   <span className="relative z-10 font-semibold text-base md:text-lg whitespace-nowrap">
-                    Get a Free Quote Today
+                    {t("button")}
                   </span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>

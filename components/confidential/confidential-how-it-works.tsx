@@ -3,45 +3,48 @@
 import { motion } from "framer-motion"
 import { Radio, FileCheck, User, Eye, CheckCircle } from "lucide-react"
 
-const steps = [
-  {
-    number: "01",
-    title: "Immediate Response",
-    desc: "Upon inquiry, our operations team arranges a hand-carry courier within minutes.",
-    icon: Radio,
-    color: "#194479",
-  },
-  {
-    number: "02",
-    title: "Verified Pickup",
-    desc: "Documents are personally collected and sealed for direct transit.",
-    icon: FileCheck,
-    color: "#91c73e",
-  },
-  {
-    number: "03",
-    title: "Hand-Carry Escort",
-    desc: "A dedicated Onboard Courier (OBC) travels with your documents at all times — no third-party handling.",
-    icon: User,
-    color: "#194479",
-  },
-  {
-    number: "04",
-    title: "Real-Time Tracking",
-    desc: "You receive milestone updates from pickup to delivery confirmation.",
-    icon: Eye,
-    color: "#91c73e",
-  },
-  {
-    number: "05",
-    title: "Proof of Delivery",
-    desc: "Signed, timestamped handover confirmation ensures complete accountability.",
-    icon: CheckCircle,
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function ConfidentialHowItWorks() {
+  const t = useTranslations("ConfidentialHowItWorks")
+
+  const steps = [
+    {
+      number: "01",
+      title: t("steps.0.title"),
+      desc: t("steps.0.desc"),
+      icon: Radio,
+      color: "#194479",
+    },
+    {
+      number: "02",
+      title: t("steps.1.title"),
+      desc: t("steps.1.desc"),
+      icon: FileCheck,
+      color: "#91c73e",
+    },
+    {
+      number: "03",
+      title: t("steps.2.title"),
+      desc: t("steps.2.desc"),
+      icon: User,
+      color: "#194479",
+    },
+    {
+      number: "04",
+      title: t("steps.3.title"),
+      desc: t("steps.3.desc"),
+      icon: Eye,
+      color: "#91c73e",
+    },
+    {
+      number: "05",
+      title: t("steps.4.title"),
+      desc: t("steps.4.desc"),
+      icon: CheckCircle,
+      color: "#194479",
+    },
+  ]
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       {/* Background Pattern */}
@@ -66,10 +69,10 @@ export default function ConfidentialHowItWorks() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            How It Works
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            A streamlined 5-step process ensuring your confidential documents reach their destination safely and securely.
+            {t("description")}
           </p>
         </motion.div>
 

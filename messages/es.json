@@ -1039,5 +1039,60 @@
     "subHeadline": "Obtenga una Cotización Gratuita Hoy",
     "subHeadlineItalic": "Vamos a mover su tecnología con precisión, protección y velocidad.",
     "button": "Obtenga una Cotización Gratuita Hoy"
+  },
+  "ConfidentialBanner": {
+    "badge": "OBC Care – Entrega de Documentos de Alto Valor y Confidenciales",
+    "title": "Discreción. Precisión. Velocidad.",
+    "description": "Sus documentos confidenciales y datos seguros se entregan mano a mano — confiado por clientes globales que requieren confidencialidad absoluta.",
+    "ctaRequest": "Solicitar Recogida Urgente",
+    "ctaQuote": "Obtener una Cotización Gratuita"
+  },
+  "ConfidentialIntro": {
+    "title": "Entrega de Mensajería de Confianza para Envíos Confidenciales",
+    "p1": "Cuando se trata de documentos de alto valor o confidenciales, la seguridad y la confianza no son negociables.",
+    "p2": "OBC Care ofrece servicios de mensajería hand-carry para materiales críticos, confidenciales y sensibles — asegurando que sus documentos nunca estén fuera de vista, nunca en riesgo y siempre se entreguen a tiempo.",
+    "p3": "Desde contratos legales hasta registros financieros y documentos gubernamentales, protegemos su información con control total de cadena de custodia y transparencia en tiempo real."
+  },
+  "ConfidentialWhatWeHandle": {
+    "title": "Lo Que Manejamos",
+    "description": "Entrega segura integral para cada tipo de documento confidencial.",
+    "items": {
+      "0": { "title": "Documentos Legales y Corporativos" },
+      "1": { "title": "Archivos Bancarios, Financieros y de Auditoría" },
+      "2": { "title": "Papeles Diplomáticos o Gubernamentales" },
+      "3": { "title": "Propiedad Intelectual y Secretos Comerciales" },
+      "4": { "title": "Registros Académicos, Científicos y de Investigación" },
+      "5": { "title": "Medios de Datos Físicos Sellados o Notariados" }
+    }
+  },
+  "ConfidentialHowItWorks": {
+    "title": "Cómo Funciona",
+    "description": "Un proceso simplificado de 5 pasos que asegura que su documentos confidenciales lleguen a su destino de forma segura y protegida.",
+    "steps": {
+      "0": { "title": "Respuesta Inmediata", "desc": "Tras la consulta, nuestro equipo de operaciones organiza un mensajero hand-carry en minutos." },
+      "1": { "title": "Recogida Verificada", "desc": "Los documentos se recogen personalmente y se sellan para tránsito directo." },
+      "2": { "title": "Escolta Hand-Carry", "desc": "Un Mensajero a Bordo (OBC) dedicado viaja con sus documentos en todo momento — sin manipulación de terceros." },
+      "3": { "title": "Rastreo en Tiempo Real", "desc": "Recibe actualizaciones de hitos desde la recogida hasta la confirmación de entrega." },
+      "4": { "title": "Prueba de Entrega", "desc": "La confirmación de entrega firmada y con marca de tiempo garantiza la responsabilidad total." }
+    }
+  },
+  "ConfidentialWhyChoose": {
+    "title": "Por Qué los Clientes Confían en OBC Care para Entregas Confidenciales",
+    "description": "Confiado por profesionales en todo el mundo para la entrega segura de documentos.",
+    "benefits": {
+      "0": { "title": "Discreción Absoluta", "description": "Los detalles de su envío permanecen confidenciales en cada etapa." },
+      "1": { "title": "Solo Hand-Carry Directo", "description": "Sin bodegas de carga o logística compartida — solo entrega persona a persona." },
+      "2": { "title": "Disponibilidad 24/7", "description": "Coordinación global para envíos legales, financieros o diplomáticos urgentes." },
+      "3": { "title": "Cadena de Custodia Completa", "description": "Cada entrega está documentada y verificada." },
+      "4": { "title": "Confiado por Profesionales", "description": "Elegido por bufetes de abogados, instituciones financieras y corporaciones en todo el mundo." }
+    }
+  },
+  "ConfidentialCta": {
+    "heading": "Su Socio de Entrega Confidencial",
+    "description": "Desde contratos confidenciales hasta licitaciones gubernamentales, OBC Care entrega con integridad, velocidad y confiabilidad inigualable.",
+    "subDescription": "",
+    "subHeadline": "Obtenga una Cotización Gratuita Hoy",
+    "subHeadlineItalic": "Aseguremos sus documentos más importantes — con la precisión y privacidad que merecen.",
+    "button": "Obtenga una Cotización Gratuita Hoy"
   }
-}}
+}

@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { FileText } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export default function ConfidentialBanner() {
+  const t = useTranslations("ConfidentialBanner")
+
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -37,7 +40,7 @@ export default function ConfidentialBanner() {
               style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}
             >
               <FileText className="w-3 h-3" />
-              OBC Care – High-Value & Confidential Document Delivery
+              {t("badge")}
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -47,7 +50,7 @@ export default function ConfidentialBanner() {
               className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-white leading-tight"
               style={{ textShadow: '0 4px 12px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)' }}
             >
-              Discretion. Precision. Speed.
+              {t("title")}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
@@ -57,7 +60,7 @@ export default function ConfidentialBanner() {
               className="paragraphFont mt-4 text-white/90 text-sm md:text-base leading-relaxed"
               style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}
             >
-              Your sensitive documents and secure data are delivered hand-to-hand — trusted by global clients who require absolute confidentiality.
+              {t("description")}
             </motion.p>
 
             <motion.div
@@ -74,13 +77,13 @@ export default function ConfidentialBanner() {
                   background: "linear-gradient(135deg, #91C73E 0%, #7bb033 60%)",
                 }}
               >
-                <span>Request Urgent Pickup</span>
+                <span>{t("ctaRequest")}</span>
               </Link>
               <Link
                 href="/inquiry"
                 className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors text-center"
               >
-                Get a Free Quote
+                {t("ctaQuote")}
               </Link>
             </motion.div>
           </motion.div>
@@ -89,4 +92,5 @@ export default function ConfidentialBanner() {
     </section>
   )
 }
+
 

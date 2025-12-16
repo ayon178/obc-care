@@ -7,40 +7,43 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-const benefits = [
-  {
-    icon: Lock,
-    title: "Absolute Discretion",
-    description: "Your shipment's details remain confidential at every stage.",
-    color: "#194479",
-  },
-  {
-    icon: User,
-    title: "Direct Hand-Carry Only",
-    description: "No cargo holds or shared logistics — only person-to-person delivery.",
-    color: "#91c73e",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Availability",
-    description: "Global coordination for urgent legal, financial, or diplomatic shipments.",
-    color: "#194479",
-  },
-  {
-    icon: Eye,
-    title: "Full Chain-of-Custody",
-    description: "Every handover is documented and verified.",
-    color: "#91c73e",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Trusted by Professionals",
-    description: "Chosen by law firms, financial institutions, and corporations worldwide.",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function ConfidentialWhyChoose() {
+  const t = useTranslations("ConfidentialWhyChoose")
+
+  const benefits = [
+    {
+      icon: Lock,
+      title: t("benefits.0.title"),
+      description: t("benefits.0.description"),
+      color: "#194479",
+    },
+    {
+      icon: User,
+      title: t("benefits.1.title"),
+      description: t("benefits.1.description"),
+      color: "#91c73e",
+    },
+    {
+      icon: Clock,
+      title: t("benefits.2.title"),
+      description: t("benefits.2.description"),
+      color: "#194479",
+    },
+    {
+      icon: Eye,
+      title: t("benefits.3.title"),
+      description: t("benefits.3.description"),
+      color: "#91c73e",
+    },
+    {
+      icon: ShieldCheck,
+      title: t("benefits.4.title"),
+      description: t("benefits.4.description"),
+      color: "#194479",
+    },
+  ]
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -75,10 +78,10 @@ export default function ConfidentialWhyChoose() {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-4">
-              Why Clients Trust OBC Care for Confidential Deliveries
+              {t("title")}
             </h2>
             <p className="paragraphFont text-white/90 text-sm md:text-base max-w-2xl mx-auto">
-              Trusted by professionals worldwide for secure document delivery.
+              {t("description")}
             </p>
           </motion.div>
 
