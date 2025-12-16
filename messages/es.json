@@ -1206,7 +1206,8 @@
     "joinNetwork": {
       "title": "Únase a Nuestra Red de más de 1,200 Mensajeros en todo el Mundo",
       "description": "Gracias por su interés en convertirse en un Mensajero a Bordo (OBC). Ya sea que sea un mensajero experimentado o alguien que busque ser parte de la logística de tiempo crítico, lo invitamos a registrar sus datos a través de nuestro Portal OBC. Simplemente haga clic en el botón a continuación y complete el formulario de registro.",
-      "btnBecomeObc": "Conviértase en un OBC",
+      "becomeObc": "Convertirse en un OBC",
+      "searchPlaceholder": "Buscar...",
       "requirementsTitle": "Requisitos",
       "requirements": {
         "0": "Tener al menos 18 años",

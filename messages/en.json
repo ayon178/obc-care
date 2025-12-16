@@ -134,7 +134,8 @@
       "ourProcess": "Our Process",
       "getQuote": "Get a Free Quote",
       "becomeObc": "Become an OBC"
-    }
+    },
+    "searchPlaceholder": "Search..."
   },
   "ServicesBanner": {
     "title": "Delivering Precision-Driven <br /> <green>Logistics Solutions</green>",

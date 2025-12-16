@@ -77,6 +77,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
   const navbarRef = useRef<HTMLDivElement>(null)
 
   const router = useRouter()
@@ -310,13 +311,58 @@ const Navbar = () => {
 
             {/* Right Section: Search, Globe, Get a Quote Button, and Mobile Menu */}
             <div className="flex items-center gap-3 md:gap-4">
-              {/* Search Icon */}
-              <button
-                className="text-white hover:opacity-80 transition-opacity"
-                aria-label={t("search")}
-              >
-                <Search className="w-5 h-5 md:w-6 md:h-6" />
-              </button>
+              <div className="flex items-center">
+                <motion.div
+                  initial={false}
+                  animate={{
+                    width: isSearchOpen ? "200px" : "0px",
+                    opacity: isSearchOpen ? 1 : 0
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
+                  <input
+                    type="text"
+                    placeholder={t("searchPlaceholder")}
+                    className={`bg-white/10 backdrop-blur-sm border border-white/20 rounded-full py-1.5 px-4 text-sm text-white placeholder:text-white/60 focus:outline-none w-full ${isSearchOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        const bgKeywords = [
+                          "onboard courier",
+                          "on board courier",
+                          "hand carry courier",
+                          "hand-carry",
+                          "hand carry delivery",
+                          "next flight out",
+                          "nfo",
+                          "urgent shipping",
+                          "express logistics",
+                          "same day delivery",
+                          "global courier",
+                          "time critical shipment",
+                          "emergency shipment",
+                          "international courier"
+                        ]
+                        
+                        const value = e.currentTarget.value.toLowerCase().trim()
+                        
+                        if (value === "obc" || value.includes("obc")) {
+                          router.push("/")
+                        } else if (bgKeywords.some(keyword => value.includes(keyword))) {
+                          router.push("/services")
+                        }
+                      }
+                    }}
+                  />
+                </motion.div>
+                <button
+                  onClick={() => setIsSearchOpen(!isSearchOpen)}
+                  className="text-white cursor-pointer hover:opacity-80 transition-opacity p-2"
+                  aria-label={t("search")}
+                >
+                  <Search className="w-5 h-5 md:w-6 md:h-6" />
+                </button>
+              </div>
 
               {/* Globe/Earth Icon */}
               {/* Language Switcher */}
