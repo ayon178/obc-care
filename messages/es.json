@@ -1193,5 +1193,42 @@
       "label": "Aviso de Privacidad:",
       "text": "Su información está segura y solo se utilizará para responder a su consulta. Respetamos su privacidad y nunca compartimos sus datos con terceros."
     }
+  },
+  "BecomeObcPage": {
+    "hero": {
+      "badge": "Red Logística Global",
+      "titlePrefix": "Conviértase en un",
+      "titleSuffix": "Mensajero a Bordo",
+      "description": "Únase a nuestra red global de élite de mensajeros profesionales. Entregue envíos urgentes en todo el mundo y convierta sus viajes en una carrera.",
+      "btnApply": "Aplicar Ahora",
+      "btnLearnMore": "Saber Más"
+    },
+    "joinNetwork": {
+      "title": "Únase a Nuestra Red de más de 1,200 Mensajeros en todo el Mundo",
+      "description": "Gracias por su interés en convertirse en un Mensajero a Bordo (OBC). Ya sea que sea un mensajero experimentado o alguien que busque ser parte de la logística de tiempo crítico, lo invitamos a registrar sus datos a través de nuestro Portal OBC. Simplemente haga clic en el botón a continuación y complete el formulario de registro.",
+      "btnBecomeObc": "Conviértase en un OBC",
+      "requirementsTitle": "Requisitos",
+      "requirements": {
+        "0": "Tener al menos 18 años",
+        "1": "Tener un pasaporte válido",
+        "2": "Poseer una tarjeta de crédito activa"
+      },
+      "note": "* Tener visas válidas es una gran ventaja.",
+      "imagePlaceholder": "Imagen de Mensajero Profesional"
+    },
+    "whyBecomeObc": {
+      "title": "Por Qué Debería Convertirse en un Mensajero a Bordo",
+      "items": {
+        "0": { "title": "Cada Día Es una Nueva Aventura", "description": "No hay dos días iguales. Una misión puede llevarlo por toda Europa entregando maquinaria crítica; la siguiente puede hacer que lleve documentos urgentes en un vuelo nacional. Es una carrera construida sobre la emoción y el propósito." },
+        "1": { "title": "Piense Rápido, Actúe Más Rápido", "description": "Los retrasos ocurren. Los planes cambian. Los desafíos aparecen sin previo aviso. Los grandes mensajeros se adaptan rápidamente, mantienen la calma bajo presión y siempre encuentran una solución. Si prospera en entornos de ritmo rápido, este rol es para usted." },
+        "2": { "title": "Un Mundo de Experiencias", "description": "Cada asignación le presenta nuevos lugares, culturas y personas. No es solo un trabajo; es una puerta de entrada a la exposición global, el crecimiento personal y conexiones profesionales significativas." },
+        "3": { "title": "Nunca un Día Aburrido", "description": "Cada envío cuenta una historia diferente. Desde piezas de aviones hasta muestras médicas y documentos legales urgentes, cada entrega es única, y también lo es cada desafío que supera." }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Convertirse en un OBC?",
+      "description": "Únase a un equipo global de confianza y experimente el mundo mientras entrega envíos de tiempo crítico de manera segura y profesional.",
+      "btnApply": "👉 Aplicar Ahora"
+    }
   }
 }

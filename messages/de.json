@@ -1193,6 +1193,43 @@
       "label": "Datenschutz:",
       "text": "Ihre Informationen sind sicher und werden nur zur Beantwortung Ihrer Anfrage verwendet. Wir respektieren Ihre Privatsphäre und geben Ihre Daten niemals an Dritte weiter."
     }
+  },
+  "BecomeObcPage": {
+    "hero": {
+      "badge": "Globales Logistiknetzwerk",
+      "titlePrefix": "Werden Sie ein",
+      "titleSuffix": "Onboard Courier",
+      "description": "Treten Sie unserem elitären globalen Netzwerk professioneller Kuriere bei. Liefern Sie dringende Sendungen weltweit und machen Sie Ihre Reisen zum Beruf.",
+      "btnApply": "Jetzt bewerben",
+      "btnLearnMore": "Mehr erfahren"
+    },
+    "joinNetwork": {
+      "title": "Treten Sie unserem Netzwerk von über 1.200 Kurieren weltweit bei",
+      "description": "Vielen Dank für Ihr Interesse, ein Onboard Courier (OBC) zu werden. Ob Sie ein erfahrener Kurier sind oder jemand, der Teil der zeitkritischen Logistik werden möchte, wir laden Sie ein, Ihre Daten über unser OBC-Portal zu registrieren. Klicken Sie einfach auf den untenstehenden Button und füllen Sie das Registrierungsformular aus.",
+      "btnBecomeObc": "Werden Sie ein OBC",
+      "requirementsTitle": "Anforderungen",
+      "requirements": {
+        "0": "Mindestens 18 Jahre alt",
+        "1": "Gültiger Reisepass",
+        "2": "Besitz einer aktiven Kreditkarte"
+      },
+      "note": "* Der Besitz gültiger Visa ist ein großer Vorteil.",
+      "imagePlaceholder": "Professionelles Kurierbild"
+    },
+    "whyBecomeObc": {
+      "title": "Warum Sie ein Onboard Courier werden sollten",
+      "items": {
+        "0": { "title": "Jeder Tag ist ein neues Abenteuer", "description": "Kein Tag gleicht dem anderen. Eine Mission führt Sie vielleicht quer durch Europa, um wichtige Maschinen zu liefern; die nächste lässt Sie dringende Dokumente auf einem Inlandsflug persönlich überbringen. Es ist eine Karriere, die auf Aufregung und Bestimmung basiert." },
+        "1": { "title": "Schnell denken, schneller handeln", "description": "Verzögerungen passieren. Pläne ändern sich. Herausforderungen tauchen ohne Warnung auf. Großartige Kuriere passen sich schnell an, bleiben unter Druck ruhig und finden immer eine Lösung. Wenn Sie in schnelllebigen Umgebungen aufblühen, ist diese Rolle für Sie." },
+        "2": { "title": "Eine Welt voller Erfahrungen", "description": "Jeder Auftrag führt Sie an neue Orte, Kulturen und Menschen. Es ist nicht nur ein Job; es ist ein Tor zu globaler Erfahrung, persönlichem Wachstum und sinnvollen beruflichen Verbindungen." },
+        "3": { "title": "Niemals ein langweiliger Tag", "description": "Jede Sendung erzählt eine andere Geschichte. Von Flugzeugteilen bis zu medizinischen Proben und dringenden juristischen Dokumenten ist jede Lieferung einzigartig, genauso wie jede Herausforderung, die Sie überwinden." }
+      }
+    },
+    "cta": {
+      "title": "Bereit, ein OBC zu werden?",
+      "description": "Treten Sie einem vertrauenswürdigen globalen Team bei und erleben Sie die Welt, während Sie zeitkritische Sendungen sicher und professionell liefern.",
+      "btnApply": "👉 Jetzt bewerben"
+    }
   }
 }
 

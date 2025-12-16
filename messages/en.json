@@ -1193,6 +1193,43 @@
       "label": "Privacy Notice:",
       "text": "Your information is secure and will only be used to respond to your inquiry. We respect your privacy and never share your data with third parties."
     }
+  },
+  "BecomeObcPage": {
+    "hero": {
+      "badge": "Global Logistics Network",
+      "titlePrefix": "Become an",
+      "titleSuffix": "Onboard Courier",
+      "description": "Join our elite global network of professional couriers. Deliver urgent shipments worldwide and turn your travel into a career.",
+      "btnApply": "Apply Now",
+      "btnLearnMore": "Learn More"
+    },
+    "joinNetwork": {
+      "title": "Join Our Network of 1,200+ Couriers Worldwide",
+      "description": "Thank you for your interest in becoming an Onboard Courier (OBC). Whether you are an experienced courier or someone looking to be part of time-critical logistics, we invite you to register your details through our OBC Portal. Simply click the button below and complete the registration form.",
+      "btnBecomeObc": "Become an OBC",
+      "requirementsTitle": "Requirements",
+      "requirements": {
+        "0": "Must be at least 18 years old",
+        "1": "Have a valid passport",
+        "2": "Possess an active credit card"
+      },
+      "note": "* Holding valid visas is a strong advantage.",
+      "imagePlaceholder": "Professional Courier Image"
+    },
+    "whyBecomeObc": {
+      "title": "Why You Should Become an Onboard Courier",
+      "items": {
+        "0": { "title": "Every Day Is a New Adventure", "description": "No two days are ever the same. One mission may take you across Europe delivering critical machinery; the next may have you hand-carrying urgent documents on a domestic flight. It’s a career built on excitement and purpose." },
+        "1": { "title": "Think Fast, Act Faster", "description": "Delays happen. Plans change. Challenges appear without warning. Great couriers adapt quickly, stay calm under pressure, and always find a solution. If you thrive in fast-moving environments, this role is for you." },
+        "2": { "title": "A World of Experiences", "description": "Each assignment introduces you to new places, cultures, and people. It’s not just a job; it’s a gateway to global exposure, personal growth, and meaningful professional connections." },
+        "3": { "title": "Never a Boring Day", "description": "Every shipment tells a different story. From aircraft parts to medical samples and urgent legal documents, every delivery is unique, and so is every challenge you overcome." }
+      }
+    },
+    "cta": {
+      "title": "Ready to Become an OBC?",
+      "description": "Join a trusted global team and experience the world while delivering time-critical shipments safely and professionally.",
+      "btnApply": "👉 Apply Now"
+    }
   }
 }
 

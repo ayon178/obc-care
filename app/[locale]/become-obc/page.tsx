@@ -5,8 +5,11 @@ import { Button } from "@/components/ui/button"
 import { CheckCircle, Globe, Clock, Briefcase, Plane } from "lucide-react"
 import Navbar from "@/components/shared/Navbar"
 import Footer from "@/components/footer"
+import { useTranslations } from "next-intl"
 
 const BecomeOBCPage = () => {
+  const t = useTranslations("BecomeObcPage")
+
   const scrollToForm = () => {
     const element = document.getElementById("registration-form")
     if (element) {
@@ -15,6 +18,29 @@ const BecomeOBCPage = () => {
         window.open("https://bit.ly/OBCCARERegistration", "_blank")
     }
   }
+
+  const perks = [
+    {
+      icon: Plane,
+      title: t("whyBecomeObc.items.0.title"),
+      description: t("whyBecomeObc.items.0.description")
+    },
+    {
+      icon: Clock,
+      title: t("whyBecomeObc.items.1.title"),
+      description: t("whyBecomeObc.items.1.description")
+    },
+    {
+      icon: Globe,
+      title: t("whyBecomeObc.items.2.title"),
+      description: t("whyBecomeObc.items.2.description")
+    },
+    {
+      icon: Briefcase,
+      title: t("whyBecomeObc.items.3.title"),
+      description: t("whyBecomeObc.items.3.description")
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-background">
@@ -38,13 +64,13 @@ const BecomeOBCPage = () => {
             className="max-w-4xl mx-auto"
           >
             <span className="inline-block py-1 px-3 rounded-full bg-[#91C73E]/20 text-[#91C73E] text-sm font-semibold mb-6 border border-[#91C73E]/30 backdrop-blur-sm">
-              Global Logistics Network
+              {t("hero.badge")}
             </span>
             <h1 className="headingFont text-5xl md:text-7xl font-bold mb-6 text-white leading-tight tracking-tight">
-              Become an <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#91C73E] to-[#b8e075]">Onboard Courier</span>
+              {t("hero.titlePrefix")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#91C73E] to-[#b8e075]">{t("hero.titleSuffix")}</span>
             </h1>
             <p className="paragraphFont text-lg md:text-2xl max-w-2xl mx-auto mb-10 text-gray-300 leading-relaxed font-light">
-              Join our elite global network of professional couriers. Deliver urgent shipments worldwide and turn your travel into a career.
+              {t("hero.description")}
             </p>
             
             <motion.div
@@ -57,7 +83,7 @@ const BecomeOBCPage = () => {
                 onClick={scrollToForm}
                 className="bg-[#91C73E] hover:bg-[#82b336] text-white text-lg px-10 py-7 h-auto rounded-full shadow-[0_0_20px_rgba(145,199,62,0.3)] hover:shadow-[0_0_30px_rgba(145,199,62,0.5)] transition-all transform hover:-translate-y-1 font-semibold"
               >
-                Apply Now
+                {t("hero.btnApply")}
               </Button>
               <Button 
                 onClick={() => {
@@ -67,7 +93,7 @@ const BecomeOBCPage = () => {
                 variant="outline"
                 className="bg-white/5 hover:bg-white/10 text-white border-white/20 text-lg px-10 py-7 h-auto rounded-full backdrop-blur-sm transition-all cursor-pointer"
               >
-                Learn More
+                {t("hero.btnLearnMore")}
               </Button>
             </motion.div>
           </motion.div>
@@ -92,39 +118,39 @@ const BecomeOBCPage = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <h2 className="headingFont text-3xl md:text-4xl font-bold text-[#194479] mb-6">
-                Join Our Network of 1,200+ Couriers Worldwide
+                {t("joinNetwork.title")}
               </h2>
               <p className="paragraphFont text-gray-600 text-lg mb-8 leading-relaxed">
-                Thank you for your interest in becoming an Onboard Courier (OBC). Whether you are an experienced courier or someone looking to be part of time-critical logistics, we invite you to register your details through our OBC Portal. Simply click the button below and complete the registration form.
+                {t("joinNetwork.description")}
               </p>
               
               <Button 
                 onClick={scrollToForm}
                 className="bg-[#194479] hover:bg-[#194479]/90 text-white text-lg px-8 py-4 h-auto mb-12"
               >
-                Become an OBC
+                {t("joinNetwork.btnBecomeObc")}
               </Button>
 
               <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
                 <h3 className="headingFont text-xl font-semibold text-[#194479] mb-4">
-                  Requirements
+                  {t("joinNetwork.requirementsTitle")}
                 </h3>
                 <div className="grid gap-4 text-left">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-[#91C73E] flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Must be at least 18 years old</span>
+                    <span className="text-gray-700">{t("joinNetwork.requirements.0")}</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-[#91C73E] flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Have a valid passport</span>
+                    <span className="text-gray-700">{t("joinNetwork.requirements.1")}</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-[#91C73E] flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Possess an active credit card</span>
+                    <span className="text-gray-700">{t("joinNetwork.requirements.2")}</span>
                   </div>
                 </div>
                 <p className="mt-6 text-sm text-gray-500 italic">
-                  * Holding valid visas is a strong advantage.
+                  {t("joinNetwork.note")}
                 </p>
               </div>
             </div>
@@ -132,7 +158,7 @@ const BecomeOBCPage = () => {
                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] bg-gray-200">
                   {/* Placeholder for professional courier image */}
                   <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                    <span className="text-lg">Professional Courier Image</span>
+                    <span className="text-lg">{t("joinNetwork.imagePlaceholder")}</span>
                   </div>
                </div>
             </div>
@@ -144,32 +170,11 @@ const BecomeOBCPage = () => {
       <section id="why-become-obc" className="py-20 bg-gray-50">
         <div className="container px-4 mx-auto">
           <h2 className="headingFont text-3xl md:text-4xl font-bold text-[#194479] text-center mb-16">
-            Why You Should Become an Onboard Courier
+            {t("whyBecomeObc.title")}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                icon: Plane,
-                title: "Every Day Is a New Adventure",
-                description: "No two days are ever the same. One mission may take you across Europe delivering critical machinery; the next may have you hand-carrying urgent documents on a domestic flight. It’s a career built on excitement and purpose."
-              },
-              {
-                icon: Clock,
-                title: "Think Fast, Act Faster",
-                description: "Delays happen. Plans change. Challenges appear without warning. Great couriers adapt quickly, stay calm under pressure, and always find a solution. If you thrive in fast-moving environments, this role is for you."
-              },
-              {
-                icon: Globe,
-                title: "A World of Experiences",
-                description: "Each assignment introduces you to new places, cultures, and people. It’s not just a job; it’s a gateway to global exposure, personal growth, and meaningful professional connections."
-              },
-              {
-                icon: Briefcase,
-                title: "Never a Boring Day",
-                description: "Every shipment tells a different story. From aircraft parts to medical samples and urgent legal documents, every delivery is unique, and so is every challenge you overcome."
-              }
-            ].map((item, index) => (
+            {perks.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -197,16 +202,16 @@ const BecomeOBCPage = () => {
       <section className="py-20 bg-[#194479] text-white">
         <div className="container px-4 mx-auto text-center">
           <h2 className="headingFont text-3xl md:text-4xl font-bold mb-6">
-            Ready to Become an OBC?
+            {t("cta.title")}
           </h2>
           <p className="paragraphFont text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
-            Join a trusted global team and experience the world while delivering time-critical shipments safely and professionally.
+            {t("cta.description")}
           </p>
           <Button 
             onClick={() => window.open("https://bit.ly/OBCCARERegistration", "_blank")}
             className="bg-[#91C73E] hover:bg-[#91C73E]/90 text-white text-lg px-10 py-6 h-auto rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
           >
-            👉 Apply Now
+            {t("cta.btnApply")}
           </Button>
         </div>
       </section>
