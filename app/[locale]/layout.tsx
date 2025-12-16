@@ -7,6 +7,7 @@ import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import SmoothScroll from "@/components/smooth-scroll"
+import { Toaster } from "@/components/ui/sonner"
 import "../globals.css"
 
 // Inter for body text and paragraphs (highly readable, professional)
@@ -54,6 +55,7 @@ export default async function RootLayout({
           <SmoothScroll>
             {children}
           </SmoothScroll>
+          <Toaster />
           <Analytics />
         </NextIntlClientProvider>
       </body>

@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button"
 
 import { useTranslations } from "next-intl"
 import LanguageSwitcher from "./LanguageSwitcher"
+import { toast } from "sonner"
 
 const Navbar = () => {
   const t = useTranslations("Navbar")
@@ -79,9 +80,156 @@ const Navbar = () => {
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const navbarRef = useRef<HTMLDivElement>(null)
-
+  
   const router = useRouter()
   const pathname = usePathname()
+
+  // Move redirections outside or useMemo to avoid recreation
+  const redirections = [
+    {
+      path: "/",
+      keywords: ["obc", "obc care"]
+    },
+    {
+      path: "/industries/aviation-aog-parts",
+      keywords: [
+        "aog shipments",
+        "aog parts",
+        "aviation logistics",
+        "aircraft on ground",
+        "spare parts shipping",
+        "aircraft parts",
+        "aog repair",
+        "critical aviation logistics"
+      ]
+    },
+    {
+      path: "/industries/automotive-manufacturing",
+      keywords: [
+        "demonstration units",
+        "prototypes",
+        "automotive parts",
+        "car parts",
+        "powertrain components",
+        "urgent manufacturing parts"
+      ]
+    },
+    {
+      path: "/industries/high-value-confidential-documents",
+      keywords: [
+        "confidential documents",
+        "high value documents",
+        "diplomatic courier",
+        "legal documents",
+        "contracts",
+        "nda",
+        "government papers",
+        "audit files",
+        "financial records"
+      ]
+    },
+    {
+      path: "/industries/industrial-machinery-engineering",
+      keywords: [
+        "industrial machinery shipping",
+        "heavy machinery parts",
+        "engineering parts",
+        "maintenance spares"
+      ]
+    },
+    {
+      path: "/industries/electronics-semiconductors",
+      keywords: [
+        "semiconductor shipping",
+        "semiconductor wafers",
+        "pcb",
+        "chips",
+        "electronic components"
+      ]
+    },
+    {
+      path: "/industries/technology-data-equipment",
+      keywords: [
+        "it equipment",
+        "data servers",
+        "networking devices",
+        "hard drives",
+        "secure data courier"
+      ]
+    },
+    {
+      path: "/services",
+      keywords: [
+        "onboard courier",
+        "on board courier",
+        "hand carry courier",
+        "hand-carry",
+        "hand carry delivery",
+        "next flight out",
+        "nfo",
+        "urgent shipping",
+        "express logistics",
+        "same day delivery",
+        "global courier",
+        "time critical shipment",
+        "emergency shipment",
+        "international courier",
+        "express courier service",
+        "global logistics",
+        "urgent delivery",
+        "international rush courier"
+      ]
+    }
+  ]
+  const [suggestions, setSuggestions] = useState<string[]>([])
+  const [searchValue, setSearchValue] = useState("")
+  
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value
+    setSearchValue(value)
+    if (value.length > 0) {
+      const allKeywords = redirections.flatMap(r => r.keywords)
+      const filtered = allKeywords.filter(k => k.toLowerCase().includes(value.toLowerCase())).slice(0, 5) // Limit to 5 suggestions
+      setSuggestions(filtered)
+    } else {
+      setSuggestions([])
+    }
+  }
+
+  const handleSuggestionClick = (keyword: string) => {
+     setSearchValue(keyword)
+     setSuggestions([])
+     // Small delay to allow user to see the selection or immediate redirect? Immediate is better.
+     const value = keyword.toLowerCase()
+     for (const item of redirections) {
+       if (item.keywords.some(k => value.includes(k))) {
+         router.push(item.path)
+         setIsSearchOpen(false)
+         return
+       }
+     }
+  }
+
+  const handleSearchSubmit = (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (e.key === "Enter") {
+        const value = searchValue.toLowerCase().trim()
+        let found = false
+        
+        for (const item of redirections) {
+          if (item.keywords.some(keyword => value.includes(keyword))) {
+            router.push(item.path)
+            setIsSearchOpen(false)
+            setSuggestions([])
+            found = true
+            return
+          }
+        }
+        
+        if (!found) {
+            toast.error("Sorry, we did not find anything.")
+        }
+      }
+  }
 
   // Determine if we're on inquiry page (white background) or home page (dark background)
   const isInquiryPage = pathname === "/inquiry"
@@ -315,127 +463,34 @@ const Navbar = () => {
                 <motion.div
                   initial={false}
                   animate={{
-                    width: isSearchOpen ? "200px" : "0px",
+                    width: isSearchOpen ? "250px" : "0px",
                     opacity: isSearchOpen ? 1 : 0
                   }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="overflow-hidden"
+                  className="relative"
                 >
                   <input
                     type="text"
                     placeholder={t("searchPlaceholder")}
                     className={`bg-white/10 backdrop-blur-sm border border-white/20 rounded-full py-1.5 px-4 text-sm text-white placeholder:text-white/60 focus:outline-none w-full ${isSearchOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
-                        const value = e.currentTarget.value.toLowerCase().trim()
-                        
-                        const redirections = [
-                          {
-                            path: "/",
-                            keywords: ["obc", "obc care"]
-                          },
-                          {
-                            path: "/industries/aviation-aog-parts",
-                            keywords: [
-                              "aog shipments",
-                              "aog parts",
-                              "aviation logistics",
-                              "aircraft on ground",
-                              "spare parts shipping",
-                              "aircraft parts",
-                              "aog repair",
-                              "critical aviation logistics"
-                            ]
-                          },
-                          {
-                            path: "/industries/automotive-manufacturing",
-                            keywords: [
-                              "demonstration units",
-                              "prototypes",
-                              "automotive parts",
-                              "car parts",
-                              "powertrain components",
-                              "urgent manufacturing parts"
-                            ]
-                          },
-                          {
-                            path: "/industries/high-value-confidential-documents",
-                            keywords: [
-                              "confidential documents",
-                              "high value documents",
-                              "diplomatic courier",
-                              "legal documents",
-                              "contracts",
-                              "nda",
-                              "government papers",
-                              "audit files",
-                              "financial records"
-                            ]
-                          },
-                          {
-                            path: "/industries/industrial-machinery-engineering",
-                            keywords: [
-                              "industrial machinery shipping",
-                              "heavy machinery parts",
-                              "engineering parts",
-                              "maintenance spares"
-                            ]
-                          },
-                          {
-                            path: "/industries/electronics-semiconductors",
-                            keywords: [
-                              "semiconductor shipping",
-                              "semiconductor wafers",
-                              "pcb",
-                              "chips",
-                              "electronic components"
-                            ]
-                          },
-                          {
-                            path: "/industries/technology-data-equipment",
-                            keywords: [
-                              "it equipment",
-                              "data servers",
-                              "networking devices",
-                              "hard drives",
-                              "secure data courier"
-                            ]
-                          },
-                          {
-                            path: "/services",
-                            keywords: [
-                              "onboard courier",
-                              "on board courier",
-                              "hand carry courier",
-                              "hand-carry",
-                              "hand carry delivery",
-                              "next flight out",
-                              "nfo",
-                              "urgent shipping",
-                              "express logistics",
-                              "same day delivery",
-                              "global courier",
-                              "time critical shipment",
-                              "emergency shipment",
-                              "international courier",
-                              "express courier service",
-                              "global logistics",
-                              "urgent delivery",
-                              "international rush courier"
-                            ]
-                          }
-                        ]
-
-                        for (const item of redirections) {
-                          if (item.keywords.some(keyword => value.includes(keyword))) {
-                            router.push(item.path)
-                            setIsSearchOpen(false)
-                            return
-                          }
-                        }
-                      }
-                    }}
+                    value={searchValue}
+                    onChange={handleSearchChange}
+                    onKeyDown={handleSearchSubmit}
                   />
+                  {/* Suggestions Dropdown */}
+                  {suggestions.length > 0 && isSearchOpen && (
+                    <div className="absolute top-full left-0 w-full mt-2 bg-white rounded-md shadow-lg overflow-hidden z-50">
+                      {suggestions.map((suggestion, index) => (
+                        <div
+                          key={index}
+                          className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm text-gray-800"
+                          onClick={() => handleSuggestionClick(suggestion)}
+                        >
+                          {suggestion}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </motion.div>
                 <button
                   onClick={() => setIsSearchOpen(!isSearchOpen)}
