@@ -2,46 +2,49 @@
 
 import { motion } from "framer-motion"
 import { Radio, Package, Plane, FileCheck, Building2 } from "lucide-react"
-
-const steps = [
-  {
-    number: "01",
-    title: "Rapid Response & Coordination",
-    desc: "Our 24/7 control center arranges immediate pickup and fastest routing worldwide.",
-    icon: Radio,
-    color: "#194479",
-  },
-  {
-    number: "02",
-    title: "Secure Handling & Packaging",
-    desc: "ESD-safe, shock-proof, and moisture-protected packaging for sensitive electronics.",
-    icon: Package,
-    color: "#91c73e",
-  },
-  {
-    number: "03",
-    title: "Next Flight Out / Hand-Carry Service",
-    desc: "Urgent deliveries escorted by trained Onboard Couriers (OBCs) for maximum security.",
-    icon: Plane,
-    color: "#194479",
-  },
-  {
-    number: "04",
-    title: "Customs & ITAR Compliance",
-    desc: "We manage all regulatory and documentation requirements for international tech shipments.",
-    icon: FileCheck,
-    color: "#91c73e",
-  },
-  {
-    number: "05",
-    title: "Verified Handover",
-    desc: "Door-to-door delivery with proof of receipt and chain-of-custody tracking.",
-    icon: Building2,
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function TechnologyHowItWorks() {
+  const t = useTranslations("TechnologyHowItWorks")
+
+  const steps = [
+    {
+      number: "01",
+      title: t("steps.0.title"),
+      desc: t("steps.0.desc"),
+      icon: Radio,
+      color: "#194479",
+    },
+    {
+      number: "02",
+      title: t("steps.1.title"),
+      desc: t("steps.1.desc"),
+      icon: Package,
+      color: "#91c73e",
+    },
+    {
+      number: "03",
+      title: t("steps.2.title"),
+      desc: t("steps.2.desc"),
+      icon: Plane,
+      color: "#194479",
+    },
+    {
+      number: "04",
+      title: t("steps.3.title"),
+      desc: t("steps.3.desc"),
+      icon: FileCheck,
+      color: "#91c73e",
+    },
+    {
+      number: "05",
+      title: t("steps.4.title"),
+      desc: t("steps.4.desc"),
+      icon: Building2,
+      color: "#194479",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       {/* Background Pattern */}
@@ -66,10 +69,10 @@ export default function TechnologyHowItWorks() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            How It Works
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            A streamlined 5-step process ensuring your technology reaches your facility safely and on time.
+            {t("description")}
           </p>
         </motion.div>
 

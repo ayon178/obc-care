@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 export default function TechnologyIntro() {
+  const t = useTranslations("TechnologyIntro")
+
   return (
     <section className="relative py-16 md:py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -19,19 +22,19 @@ export default function TechnologyIntro() {
               className="space-y-6"
             >
               <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight">
-                Secure and Swift Logistics for the Digital Age
+                {t("title")}
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-[#91c73e] to-[#194479] rounded-full" />
               
               <div className="space-y-4">
                 <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                  In today's connected world, data-driven operations can't afford downtime.
+                  {t("p1")}
                 </p>
                 <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                  That's why OBC Care specializes in time-critical logistics for servers, networking devices, storage systems, and high-performance computing equipment — ensuring your technology moves fast, safe, and without compromise.
+                  {t("p2")}
                 </p>
                 <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                  From IT infrastructure for data centers to field-deployed tech gear, we deliver end-to-end transport with care, security, and full traceability.
+                  {t("p3")}
                 </p>
               </div>
             </motion.div>

@@ -986,6 +986,58 @@
     "subHeadline": "Obtenga una Cotización Gratuita Hoy",
     "subHeadlineItalic": "Vamos a mover sus piezas industriales de forma segura y sin demora.",
     "button": "Obtenga una Cotización Gratuita Hoy"
+  },
+  "TechnologyBanner": {
+    "badge": "OBC Care – Logística de Tecnología y Equipos de Datos",
+    "title": "Velocidad, seguridad y precisión — entregando su tecnología de alto valor y equipos de TI de forma segura, donde sea que ocurra la innovación.",
+    "ctaRequest": "Solicitar Recogida Urgente",
+    "ctaQuote": "Obtener una Cotización Gratuita"
+  },
+  "TechnologyIntro": {
+    "title": "Logística Segura y Rápida para la Era Digital",
+    "p1": "En el mundo conectado de hoy, las operaciones basadas en datos no pueden permitirse tiempo de inactividad.",
+    "p2": "Es por eso que OBC Care se especializa en logística de tiempo crítico para servidores, dispositivos de red, sistemas de almacenamiento y equipos de computación de alto rendimiento — asegurando que su tecnología se mueva rápido, segura y sin compromisos.",
+    "p3": "Desde infraestructura de TI para centros de datos hasta equipos tecnológicos desplegados en el campo, entregamos transporte de extremo a extremo con cuidado, seguridad y trazabilidad total."
+  },
+  "TechnologyWhatWeHandle": {
+    "title": "Lo Que Manejamos",
+    "description": "Logística integral para cada componente tecnológico que sus operaciones necesitan.",
+    "items": {
+      "0": { "title": "Servidores, Redes y Dispositivos de Almacenamiento" },
+      "1": { "title": "Laptops, Estaciones de Trabajo y Hardware de TI de Alto Valor" },
+      "2": { "title": "Unidades de Respaldo de Datos y Equipos Digitales Sensibles" },
+      "3": { "title": "Instrumentos de Prueba, Calibración e Investigación" },
+      "4": { "title": "Activos Tecnológicos Confidenciales o Encriptados" }
+    }
+  },
+  "TechnologyHowItWorks": {
+    "title": "Cómo Funciona",
+    "description": "Un proceso simplificado de 5 pasos que asegura que su tecnología llegue a sus instalaciones de forma segura y a tiempo.",
+    "steps": {
+      "0": { "title": "Respuesta Rápida y Coordinación", "desc": "Nuestro centro de control 24/7 organiza la recogida inmediata y la ruta más rápida en todo el mundo." },
+      "1": { "title": "Manejo y Embalaje Seguro", "desc": "Embalaje seguro contra descargas electrostáticas (ESD), a prueba de golpes y protegido contra la humedad para electrónica sensible." },
+      "2": { "title": "Próximo Vuelo de Salida / Servicio Hand-Carry", "desc": "Entregas urgentes escoltadas por Mensajeros a Bordo (OBC) capacitados para máxima seguridad." },
+      "3": { "title": "Aduanas y Cumplimiento ITAR", "desc": "Gestionamos todos los requisitos regulatorios y de documentación para envíos tecnológicos internacionales." },
+      "4": { "title": "Entrega Verificada", "desc": "Entrega puerta a puerta con prueba de recepción y seguimiento de cadena de custodia." }
+    }
+  },
+  "TechnologyWhyChoose": {
+    "title": "Por Qué los Líderes Tecnológicos Confían en OBC Care",
+    "description": "De confianza por empresas de tecnología en todo el mundo para logística segura.",
+    "benefits": {
+      "0": { "title": "Cero Compromiso de Datos", "description": "Estricta confidencialidad y transferencias selladas para activos de TI sensibles." },
+      "1": { "title": "Soporte de Implementación Rápida", "description": "Ideal para despliegues tecnológicos urgentes o reemplazos de equipos." },
+      "2": { "title": "Rastreo en Tiempo Real", "description": "Monitoreo transparente desde el origen hasta el destino." },
+      "3": { "title": "Alcance Global", "description": "Experiencia en centros tecnológicos, centros de datos e instalaciones de I+D en todo el mundo." },
+      "4": { "title": "Mensajeros Especializados", "description": "Profesionales capacitados en el manejo y aseguramiento de electrónica digital y de alto valor." }
+    }
+  },
+  "TechnologyCta": {
+    "heading": "Su Tecnología, Nuestra Prioridad",
+    "description": "Entendemos la urgencia de las operaciones tecnológicas modernas.",
+    "subDescription": "Ya sea una migración de servidor, entrega de prototipo o misión de recuperación de datos — OBC Care ofrece tranquilidad con cada envío.",
+    "subHeadline": "Obtenga una Cotización Gratuita Hoy",
+    "subHeadlineItalic": "Vamos a mover su tecnología con precisión, protección y velocidad.",
+    "button": "Obtenga una Cotización Gratuita Hoy"
   }
-}
-}
+}}

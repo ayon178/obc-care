@@ -2,45 +2,47 @@
 
 import { motion } from "framer-motion"
 import { Shield, Zap, Eye, Globe, User } from "lucide-react"
-import Image from "next/image"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-
-const benefits = [
-  {
-    icon: Shield,
-    title: "Zero Data Compromise",
-    description: "Strict confidentiality and sealed transfers for sensitive IT assets.",
-    color: "#194479",
-  },
-  {
-    icon: Zap,
-    title: "Fast Deployment Support",
-    description: "Ideal for urgent tech rollouts or equipment replacements.",
-    color: "#91c73e",
-  },
-  {
-    icon: Eye,
-    title: "Real-Time Tracking",
-    description: "Transparent monitoring from origin to destination.",
-    color: "#194479",
-  },
-  {
-    icon: Globe,
-    title: "Global Reach",
-    description: "Expertise across tech hubs, data centers, and R&D facilities worldwide.",
-    color: "#91c73e",
-  },
-  {
-    icon: User,
-    title: "Specialized Couriers",
-    description: "Professionals trained in handling and securing digital and high-value electronics.",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function TechnologyWhyChoose() {
+  const t = useTranslations("TechnologyWhyChoose")
+
+  const benefits = [
+    {
+      icon: Shield,
+      title: t("benefits.0.title"),
+      description: t("benefits.0.description"),
+      color: "#194479",
+    },
+    {
+      icon: Zap,
+      title: t("benefits.1.title"),
+      description: t("benefits.1.description"),
+      color: "#91c73e",
+    },
+    {
+      icon: Eye,
+      title: t("benefits.2.title"),
+      description: t("benefits.2.description"),
+      color: "#194479",
+    },
+    {
+      icon: Globe,
+      title: t("benefits.3.title"),
+      description: t("benefits.3.description"),
+      color: "#91c73e",
+    },
+    {
+      icon: User,
+      title: t("benefits.4.title"),
+      description: t("benefits.4.description"),
+      color: "#194479",
+    },
+  ]
+
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -75,10 +77,10 @@ export default function TechnologyWhyChoose() {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-4">
-              Why Tech Leaders Trust OBC Care
+              {t("title")}
             </h2>
             <p className="paragraphFont text-white/90 text-sm md:text-base max-w-2xl mx-auto">
-              Trusted by technology companies worldwide for secure logistics.
+              {t("description")}
             </p>
           </motion.div>
 

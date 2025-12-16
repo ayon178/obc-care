@@ -2,36 +2,39 @@
 
 import { motion } from "framer-motion"
 import { Server, Laptop, HardDrive, Settings, Lock } from "lucide-react"
-
-const items = [
-  {
-    icon: Server,
-    title: "Servers, Networking & Storage Devices",
-    color: "#194479",
-  },
-  {
-    icon: Laptop,
-    title: "Laptops, Workstations, and High-Value IT Hardware",
-    color: "#91c73e",
-  },
-  {
-    icon: HardDrive,
-    title: "Data Backup Drives & Sensitive Digital Equipment",
-    color: "#194479",
-  },
-  {
-    icon: Settings,
-    title: "Testing, Calibration & Research Instruments",
-    color: "#91c73e",
-  },
-  {
-    icon: Lock,
-    title: "Confidential or Encrypted Technology Assets",
-    color: "#194479",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export default function TechnologyWhatWeHandle() {
+  const t = useTranslations("TechnologyWhatWeHandle")
+
+  const items = [
+    {
+      icon: Server,
+      title: t("items.0.title"),
+      color: "#194479",
+    },
+    {
+      icon: Laptop,
+      title: t("items.1.title"),
+      color: "#91c73e",
+    },
+    {
+      icon: HardDrive,
+      title: t("items.2.title"),
+      color: "#194479",
+    },
+    {
+      icon: Settings,
+      title: t("items.3.title"),
+      color: "#91c73e",
+    },
+    {
+      icon: Lock,
+      title: t("items.4.title"),
+      color: "#194479",
+    },
+  ]
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -44,10 +47,10 @@ export default function TechnologyWhatWeHandle() {
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
-            What We Handle
+            {t("title")}
           </h2>
           <p className="paragraphFont text-gray-700 text-sm md:text-base max-w-2xl mx-auto">
-            Comprehensive logistics for every technology component your operations need.
+            {t("description")}
           </p>
         </motion.div>
 

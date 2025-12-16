@@ -986,7 +986,59 @@
     "subHeadline": "Holen Sie sich heute ein kostenloses Angebot",
     "subHeadlineItalic": "Lassen Sie uns Ihre Industrieteile sicher und ohne Verzögerung bewegen.",
     "button": "Holen Sie sich heute ein kostenloses Angebot"
+  },
+  "TechnologyBanner": {
+    "badge": "OBC Care – Logistik für Technologie & Datenausrüstung",
+    "title": "Geschwindigkeit, Sicherheit und Präzision – Lieferung Ihrer hochwertigen Technologie- und IT-Ausrüstung sicher, wo immer Innovation stattfindet.",
+    "ctaRequest": "Dringende Abholung anfordern",
+    "ctaQuote": "Kostenloses Angebot erhalten"
+  },
+  "TechnologyIntro": {
+    "title": "Sichere und schnelle Logistik für das digitale Zeitalter",
+    "p1": "In der heutigen vernetzten Welt können sich datengesteuerte Operationen keine Ausfallzeiten leisten.",
+    "p2": "Deshalb spezialisiert sich OBC Care auf zeitkritische Logistik für Server, Netzwerkgeräte, Speichersysteme und Hochleistungsrechner – damit Ihre Technologie schnell, sicher und kompromisslos bewegt wird.",
+    "p3": "Von der IT-Infrastruktur für Rechenzentren bis hin zu im Feld eingesetzter technischer Ausrüstung liefern wir End-to-End-Transport mit Sorgfalt, Sicherheit und vollständiger Rückverfolgbarkeit."
+  },
+  "TechnologyWhatWeHandle": {
+    "title": "Was wir handhaben",
+    "description": "Umfassende Logistik für jede Technologiekomponente, die Ihr Betrieb benötigt.",
+    "items": {
+      "0": { "title": "Server, Netzwerk- & Speichergeräte" },
+      "1": { "title": "Laptops, Workstations und hochwertige IT-Hardware" },
+      "2": { "title": "Datensicherungslaufwerke & empfindliche digitale Ausrüstung" },
+      "3": { "title": "Test-, Kalibrier- & Forschungsinstrumente" },
+      "4": { "title": "Vertrauliche oder verschlüsselte Vermögenswerte" }
+    }
+  },
+  "TechnologyHowItWorks": {
+    "title": "Wie es funktioniert",
+    "description": "Ein optimierter 5-Schritte-Prozess, der sicherstellt, dass Ihre Technologie sicher und pünktlich in Ihrem Werk ankommt.",
+    "steps": {
+      "0": { "title": "Schnelle Reaktion & Koordination", "desc": "Unser 24/7 Kontrollzentrum arrangiert sofortige Abholung und schnellstes Routing weltweit." },
+      "1": { "title": "Sichere Handhabung & Verpackung", "desc": "ESD-sichere, stoßfeste und feuchtigkeitsgeschützte Verpackung für empfindliche Elektronik." },
+      "2": { "title": "Next Flight Out / Hand-Carry Service", "desc": "Dringende Lieferungen werden von geschulten Onboard-Kurieren (OBCs) für maximale Sicherheit begleitet." },
+      "3": { "title": "Zoll & ITAR-Compliance", "desc": "Wir kümmern uns um alle regulatorischen und dokumentarischen Anforderungen für internationale Tech-Sendungen." },
+      "4": { "title": "Verifizierte Übergabe", "desc": "Tür-zu-Tür-Lieferung mit Empfangsbestätigung und lückenloser Rückverfolgbarkeit." }
+    }
+  },
+  "TechnologyWhyChoose": {
+    "title": "Warum Tech-Führer OBC Care vertrauen",
+    "description": "Vertraut von Technologieunternehmen weltweit für sichere Logistik.",
+    "benefits": {
+      "0": { "title": "Keine Datenkompromittierung", "description": "Strenge Vertraulichkeit und versiegelte Transfers für sensible IT-Assets." },
+      "1": { "title": "Schneller Bereitstellungssupport", "description": "Ideal für dringende technische Rollouts oder Geräteaustausch." },
+      "2": { "title": "Echtzeit-Tracking", "description": "Transparente Überwachung vom Ursprung bis zum Ziel." },
+      "3": { "title": "Globale Reichweite", "description": "Expertise in Tech-Hubs, Rechenzentren und F&E-Einrichtungen weltweit." },
+      "4": { "title": "Spezialisierte Kuriere", "description": "Fachleute, die im Umgang mit und der Sicherung digitaler und hochwertiger Elektronik geschult sind." }
+    }
+  },
+  "TechnologyCta": {
+    "heading": "Ihre Technologie, unsere Priorität",
+    "description": "Wir verstehen die Dringlichkeit moderner technischer Operationen.",
+    "subDescription": "Ob es sich um eine Servermigration, Prototypenlieferung oder Datenrettungsmission handelt – OBC Care liefert Sicherheit mit jeder Sendung.",
+    "subHeadline": "Holen Sie sich heute ein kostenloses Angebot",
+    "subHeadlineItalic": "Lassen Sie uns Ihre Technologie mit Präzision, Schutz und Geschwindigkeit bewegen.",
+    "button": "Holen Sie sich heute ein kostenloses Angebot"
   }
-}
-}
+}}
 ```

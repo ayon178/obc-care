@@ -986,7 +986,59 @@
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's move your industrial parts securely and without delay.",
     "button": "Get a Free Quote Today"
+  },
+  "TechnologyBanner": {
+    "badge": "OBC Care – Technology & Data Equipment Logistics",
+    "title": "Speed, security, and precision — delivering your high-value tech and IT equipment safely, wherever innovation happens.",
+    "ctaRequest": "Request Urgent Pickup",
+    "ctaQuote": "Get a Free Quote"
+  },
+  "TechnologyIntro": {
+    "title": "Secure and Swift Logistics for the Digital Age",
+    "p1": "In today's connected world, data-driven operations can't afford downtime.",
+    "p2": "That's why OBC Care specializes in time-critical logistics for servers, networking devices, storage systems, and high-performance computing equipment — ensuring your technology moves fast, safe, and without compromise.",
+    "p3": "From IT infrastructure for data centers to field-deployed tech gear, we deliver end-to-end transport with care, security, and full traceability."
+  },
+  "TechnologyWhatWeHandle": {
+    "title": "What We Handle",
+    "description": "Comprehensive logistics for every technology component your operations need.",
+    "items": {
+      "0": { "title": "Servers, Networking & Storage Devices" },
+      "1": { "title": "Laptops, Workstations, and High-Value IT Hardware" },
+      "2": { "title": "Data Backup Drives & Sensitive Digital Equipment" },
+      "3": { "title": "Testing, Calibration & Research Instruments" },
+      "4": { "title": "Confidential or Encrypted Technology Assets" }
+    }
+  },
+  "TechnologyHowItWorks": {
+    "title": "How It Works",
+    "description": "A streamlined 5-step process ensuring your technology reaches your facility safely and on time.",
+    "steps": {
+      "0": { "title": "Rapid Response & Coordination", "desc": "Our 24/7 control center arranges immediate pickup and fastest routing worldwide." },
+      "1": { "title": "Secure Handling & Packaging", "desc": "ESD-safe, shock-proof, and moisture-protected packaging for sensitive electronics." },
+      "2": { "title": "Next Flight Out / Hand-Carry Service", "desc": "Urgent deliveries escorted by trained Onboard Couriers (OBCs) for maximum security." },
+      "3": { "title": "Customs & ITAR Compliance", "desc": "We manage all regulatory and documentation requirements for international tech shipments." },
+      "4": { "title": "Verified Handover", "desc": "Door-to-door delivery with proof of receipt and chain-of-custody tracking." }
+    }
+  },
+  "TechnologyWhyChoose": {
+    "title": "Why Tech Leaders Trust OBC Care",
+    "description": "Trusted by technology companies worldwide for secure logistics.",
+    "benefits": {
+      "0": { "title": "Zero Data Compromise", "description": "Strict confidentiality and sealed transfers for sensitive IT assets." },
+      "1": { "title": "Fast Deployment Support", "description": "Ideal for urgent tech rollouts or equipment replacements." },
+      "2": { "title": "Real-Time Tracking", "description": "Transparent monitoring from origin to destination." },
+      "3": { "title": "Global Reach", "description": "Expertise across tech hubs, data centers, and R&D facilities worldwide." },
+      "4": { "title": "Specialized Couriers", "description": "Professionals trained in handling and securing digital and high-value electronics." }
+    }
+  },
+  "TechnologyCta": {
+    "heading": "Your Technology, Our Priority",
+    "description": "We understand the urgency of modern tech operations.",
+    "subDescription": "Whether it's a server migration, prototype delivery, or data recovery mission — OBC Care delivers peace of mind with every shipment.",
+    "subHeadline": "Get a Free Quote Today",
+    "subHeadlineItalic": "Let's move your technology with precision, protection, and speed.",
+    "button": "Get a Free Quote Today"
   }
-}
-}
+}}
 ```
