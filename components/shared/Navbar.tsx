@@ -327,29 +327,111 @@ const Navbar = () => {
                     className={`bg-white/10 backdrop-blur-sm border border-white/20 rounded-full py-1.5 px-4 text-sm text-white placeholder:text-white/60 focus:outline-none w-full ${isSearchOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
                     onKeyDown={(e) => {
                       if (e.key === "Enter") {
-                        const bgKeywords = [
-                          "onboard courier",
-                          "on board courier",
-                          "hand carry courier",
-                          "hand-carry",
-                          "hand carry delivery",
-                          "next flight out",
-                          "nfo",
-                          "urgent shipping",
-                          "express logistics",
-                          "same day delivery",
-                          "global courier",
-                          "time critical shipment",
-                          "emergency shipment",
-                          "international courier"
-                        ]
-                        
                         const value = e.currentTarget.value.toLowerCase().trim()
                         
-                        if (value === "obc" || value.includes("obc")) {
-                          router.push("/")
-                        } else if (bgKeywords.some(keyword => value.includes(keyword))) {
-                          router.push("/services")
+                        const redirections = [
+                          {
+                            path: "/",
+                            keywords: ["obc", "obc care"]
+                          },
+                          {
+                            path: "/industries/aviation-aog-parts",
+                            keywords: [
+                              "aog shipments",
+                              "aog parts",
+                              "aviation logistics",
+                              "aircraft on ground",
+                              "spare parts shipping",
+                              "aircraft parts",
+                              "aog repair",
+                              "critical aviation logistics"
+                            ]
+                          },
+                          {
+                            path: "/industries/automotive-manufacturing",
+                            keywords: [
+                              "demonstration units",
+                              "prototypes",
+                              "automotive parts",
+                              "car parts",
+                              "powertrain components",
+                              "urgent manufacturing parts"
+                            ]
+                          },
+                          {
+                            path: "/industries/high-value-confidential-documents",
+                            keywords: [
+                              "confidential documents",
+                              "high value documents",
+                              "diplomatic courier",
+                              "legal documents",
+                              "contracts",
+                              "nda",
+                              "government papers",
+                              "audit files",
+                              "financial records"
+                            ]
+                          },
+                          {
+                            path: "/industries/industrial-machinery-engineering",
+                            keywords: [
+                              "industrial machinery shipping",
+                              "heavy machinery parts",
+                              "engineering parts",
+                              "maintenance spares"
+                            ]
+                          },
+                          {
+                            path: "/industries/electronics-semiconductors",
+                            keywords: [
+                              "semiconductor shipping",
+                              "semiconductor wafers",
+                              "pcb",
+                              "chips",
+                              "electronic components"
+                            ]
+                          },
+                          {
+                            path: "/industries/technology-data-equipment",
+                            keywords: [
+                              "it equipment",
+                              "data servers",
+                              "networking devices",
+                              "hard drives",
+                              "secure data courier"
+                            ]
+                          },
+                          {
+                            path: "/services",
+                            keywords: [
+                              "onboard courier",
+                              "on board courier",
+                              "hand carry courier",
+                              "hand-carry",
+                              "hand carry delivery",
+                              "next flight out",
+                              "nfo",
+                              "urgent shipping",
+                              "express logistics",
+                              "same day delivery",
+                              "global courier",
+                              "time critical shipment",
+                              "emergency shipment",
+                              "international courier",
+                              "express courier service",
+                              "global logistics",
+                              "urgent delivery",
+                              "international rush courier"
+                            ]
+                          }
+                        ]
+
+                        for (const item of redirections) {
+                          if (item.keywords.some(keyword => value.includes(keyword))) {
+                            router.push(item.path)
+                            setIsSearchOpen(false)
+                            return
+                          }
                         }
                       }
                     }}
