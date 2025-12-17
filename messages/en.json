@@ -20,7 +20,71 @@
       "electronics": "Electronics & Semiconductors",
       "industrial": "Industrial Machinery & Engineering",
       "technology": "Technology & Data Equipment",
-      "documents": "High-Value / Confidential Documents"
+      "documents": "High-Value / Confidential Documents",
+      "medical": "Stem Cell, Bone Marrow & Critical Medical Transport"
+    }
+  },
+  "MedicalTransportPage": {
+    "hero": {
+      "badge": "OBC Life Care",
+      "titlePrefix": "Time-Critical",
+      "titleSuffix": "Medical Transport",
+      "description": "Precision. Urgency. Reliability. Specialized transport for life-saving medical shipments.",
+      "btnDetails": "Learn More"
+    },
+    "intro": {
+      "title": "Introducing OBC Life Care",
+      "description1": "At OBC Care, we specialize in delivering time-critical shipments across industries. While we are widely trusted for AOG parts, aviation components, and critical logistics, we also provide specialized services for life-saving medical shipments such as stem cells, bone marrow, and other biological materials.",
+      "description2": "To ensure these critical medical shipments are handled with the care and expertise they require, we have introduced OBC Life Care, our dedicated division focused exclusively on medical and biological transport.",
+      "description3": "OBC Life Care is designed to meet the unique needs of hospitals, research labs, donor registries, and biotechnology companies. We plan and execute rapid, temperature controlled, and fully compliant transport solutions for life saving medical shipments.",
+      "description4": "Every shipment is a mission to save lives. We carefully plan each transport, ensuring temperature controlled handling, regulatory compliance, and real-time monitoring, so these vital materials reach patients and research facilities safely and on time. With OBC Life Care, your stem cells, bone marrow, and other critical medical shipments are always in expert hands."
+    },
+    "whatWeHandle": {
+      "title": "What We Handle",
+      "description": "At OBC Life Care, every transport we manage supports life-saving treatments, scientific research, and medical innovation. We specialize in the secure, time sensitive, and temperature-controlled transportation of critical medical materials, including:",
+      "items": {
+        "0": "Stem Cells & Bone Marrow",
+        "1": "Cord Blood",
+        "2": "Biological Samples & Specimens",
+        "3": "Medical Equipment & Components",
+        "4": "Cryogenic Transport"
+      }
+    },
+    "howWeSaveLives": {
+      "title": "How We Save Lives",
+      "items": {
+        "0": {
+          "title": "Coordination & Planning",
+          "description": "Every transport begins with meticulous planning. We handle permits, customs clearance, and courier scheduling, ensuring full compliance and providing clients with all necessary documentation."
+        },
+        "1": {
+          "title": "Real-Time Tracking",
+          "description": "Clients stay informed at every stage with automatic updates, dedicated contacts, and full transparency from pickup to delivery."
+        },
+        "2": {
+          "title": "Urgent & Same-Day Solutions",
+          "description": "When time is critical, we offer same day delivery for urgent collections, including second apheresis if needed, adjusting quickly to flight schedules and optimized routes."
+        },
+        "3": {
+          "title": "Temperature-Controlled Transit",
+          "description": "Using validated systems and data loggers, we maintain precise temperature stability for stem cells, bone marrow, and biological materials, with real-time alerts to protect shipment integrity."
+        },
+        "4": {
+          "title": "Compliance & Security",
+          "description": "All shipments adhere to international health, safety, and ethical regulations. Strict security protocols safeguard materials against loss, theft, or unauthorized access."
+        },
+        "5": {
+          "title": "Emergency Contingencies",
+          "description": "Predefined protocols allow us to respond swiftly to delays or equipment issues, ensuring viability under any circumstance."
+        }
+      },
+      "closing": "Plan. Execute. Save Lives.\nWith OBC Life Care, every stem cell, bone marrow, and cord blood shipment is carefully planned, securely transported, and closely monitored, ensuring that life saving materials reach those who need them most."
+    },
+    "cta": {
+      "title": "Learn More About OBC Life Care",
+      "description": "For detailed information on our specialized medical transport services, click here to visit the OBC Life Care website and see how we combine speed, safety, and medical expertise to deliver life-saving biological materials.",
+      "btnPrimary": "Get a Free Quote Today",
+      "subtext": "Ensure your critical medical shipments are delivered with precision, care, and urgency."
     }
   },
   "Home": {

@@ -20,7 +20,71 @@
       "electronics": "Elektronik & Halbleiter",
       "industrial": "Industriemaschinen & Technik",
       "technology": "Technologie & Datentechnik",
-      "documents": "Hochwertige / Vertrauliche Dokumente"
+      "documents": "Hochwertige / Vertrauliche Dokumente",
+      "medical": "Stammzellen, Knochenmark & Kritischer Medizinischer Transport"
+    }
+  },
+  "MedicalTransportPage": {
+    "hero": {
+      "badge": "OBC Life Care",
+      "titlePrefix": "Zeitkritischer",
+      "titleSuffix": "Medizinischer Transport",
+      "description": "Präzision. Dringlichkeit. Zuverlässigkeit. Spezialisierter Transport für lebensrettende medizinische Sendungen.",
+      "btnDetails": "Mehr erfahren"
+    },
+    "intro": {
+      "title": "Wir stellen vor: OBC Life Care",
+      "description1": "Bei OBC Care haben wir uns auf die Lieferung zeitkritischer Sendungen in verschiedenen Branchen spezialisiert. Während wir für AOG-Teile, Luftfahrtkomponenten und kritische Logistik weithin geschätzt werden, bieten wir auch spezialisierte Dienstleistungen für lebensrettende medizinische Sendungen wie Stammzellen, Knochenmark und andere biologische Materialien an.",
+      "description2": "Um sicherzustellen, dass diese kritischen medizinischen Sendungen mit der erforderlichen Sorgfalt und Expertise behandelt werden, haben wir OBC Life Care eingeführt, unsere eigene Abteilung, die sich ausschließlich auf medizinische und biologische Transporte konzentriert.",
+      "description3": "OBC Life Care ist auf die einzigartigen Bedürfnisse von Krankenhäusern, Forschungslabors, Spenderregistern und Biotechnologieunternehmen zugeschnitten. Wir planen und führen schnelle, temperaturgeführte und vollständig konforme Transportlösungen für lebensrettende medizinische Sendungen durch.",
+      "description4": "Jede Sendung ist eine Mission, Leben zu retten. Wir planen jeden Transport sorgfältig und gewährleisten eine temperaturgeführte Handhabung, die Einhaltung gesetzlicher Vorschriften und eine Echtzeitüberwachung, damit diese lebenswichtigen Materialien Patienten und Forschungseinrichtungen sicher und pünktlich erreichen. Mit OBC Life Care sind Ihre Stammzellen, Knochenmark und andere kritische medizinische Sendungen immer in kompetenten Händen."
+    },
+    "whatWeHandle": {
+      "title": "Was wir transportieren",
+      "description": "Bei OBC Life Care unterstützt jeder von uns organisierte Transport lebensrettende Behandlungen, wissenschaftliche Forschung und medizinische Innovationen. Wir sind spezialisiert auf den sicheren, zeitkritischen und temperaturgeführten Transport kritischer medizinischer Materialien, einschließlich:",
+      "items": {
+        "0": "Stammzellen & Knochenmark",
+        "1": "Nabelschnurblut",
+        "2": "Biologische Proben & Präparate",
+        "3": "Medizinische Ausrüstung & Komponenten",
+        "4": "Kryogener Transport"
+      }
+    },
+    "howWeSaveLives": {
+      "title": "Wie wir Leben retten",
+      "items": {
+        "0": {
+          "title": "Koordination & Planung",
+          "description": "Jeder Transport beginnt mit einer sorgfältigen Planung. Wir kümmern uns um Genehmigungen, Zollabwicklung und Kurierplanung, gewährleisten die vollständige Einhaltung aller Vorschriften und stellen den Kunden alle erforderlichen Unterlagen zur Verfügung."
+        },
+        "1": {
+          "title": "Echtzeit-Tracking",
+          "description": "Kunden bleiben in jeder Phase informiert – mit automatischen Updates, persönlichen Ansprechpartnern und voller Transparenz von der Abholung bis zur Zustellung."
+        },
+        "2": {
+          "title": "Dringende & Same-Day Lösungen",
+          "description": "Wenn Zeit entscheidend ist, bieten wir Same-Day-Zustellungen für dringende Abholungen an, einschließlich einer zweiten Apherese falls erforderlich, und passen uns schnell an Flugpläne und optimierte Routen an."
+        },
+        "3": {
+          "title": "Temperaturgeführter Transit",
+          "description": "Mit validierten Systemen und Datenloggern halten wir eine präzise Temperaturstabilität für Stammzellen, Knochenmark und biologische Materialien aufrecht, inklusive Echtzeit-Warnungen zum Schutz der Sendungsintegrität."
+        },
+        "4": {
+          "title": "Compliance & Sicherheit",
+          "description": "Alle Sendungen entsprechen den internationalen Gesundheits-, Sicherheits- und Ethikvorschriften. Strenge Sicherheitsprotokolle schützen Materialien vor Verlust, Diebstahl oder unbefugtem Zugriff."
+        },
+        "5": {
+          "title": "Notfallpläne",
+          "description": "Vordefinierte Protokolle ermöglichen es uns, schnell auf Verzögerungen oder Ausrüstungsprobleme zu reagieren, um die Nutzbarkeit unter allen Umständen zu gewährleisten."
+        }
+      },
+      "closing": "Planen. Ausführen. Leben retten.\nMit OBC Life Care wird jede Stammzellen-, Knochenmark- und Nabelschnurblut-Sendung sorgfältig geplant, sicher transportiert und engmaschig überwacht, um sicherzustellen, dass lebensrettende Materialien diejenigen erreichen, die sie am dringendsten benötigen."
+    },
+    "cta": {
+      "title": "Erfahren Sie mehr über OBC Life Care",
+      "description": "Für detaillierte Informationen zu unseren spezialisierten medizinischen Transportdiensten klicken Sie hier, um die OBC Life Care Website zu besuchen und zu sehen, wie wir Geschwindigkeit, Sicherheit und medizinische Expertise kombinieren, um lebensrettende biologische Materialien zu liefern.",
+      "btnPrimary": "Kostenloses Angebot anfordern",
+      "subtext": "Stellen Sie sicher, dass Ihre kritischen medizinischen Sendungen mit Präzision, Sorgfalt und Dringlichkeit geliefert werden."
     }
   },
   "Home": {

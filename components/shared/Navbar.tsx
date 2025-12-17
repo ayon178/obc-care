@@ -66,6 +66,10 @@ const Navbar = () => {
           label: t("subItems.documents"),
           path: "/industries/high-value-confidential-documents",
         },
+        {
+          label: t("subItems.medical"),
+          path: "/industries/medical-transport",
+        },
       ],
     },
     {
@@ -89,6 +93,19 @@ const Navbar = () => {
     {
       path: "/",
       keywords: ["obc", "obc care"]
+    },
+    {
+      path: "/industries/medical-transport",
+      keywords: [
+        "stem cell",
+        "bone marrow",
+        "medical transport",
+        "cord blood",
+        "biological samples",
+        "cryogenic transport",
+        "cell therapy shipping",
+        "life science logistics"
+      ]
     },
     {
       path: "/industries/aviation-aog-parts",

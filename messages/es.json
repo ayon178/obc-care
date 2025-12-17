@@ -20,7 +20,71 @@
       "electronics": "Electrónica y Semiconductores",
       "industrial": "Maquinaria Industrial e Ingeniería",
       "technology": "Tecnología y Equipos de Datos",
-      "documents": "Documentos de Alto Valor / Confidenciales"
+      "documents": "Documentos de Alto Valor / Confidenciales",
+      "medical": "Células Madre, Médula Ósea y Transporte Médico Crítico"
+    }
+  },
+  "MedicalTransportPage": {
+    "hero": {
+      "badge": "OBC Life Care",
+      "titlePrefix": "Crítico",
+      "titleSuffix": "Transporte Médico",
+      "description": "Precisión. Urgencia. Fiabilidad. Transporte especializado para envíos médicos que salvan vidas.",
+      "btnDetails": "Saber Más"
+    },
+    "intro": {
+      "title": "Presentando OBC Life Care",
+      "description1": "En OBC Care, nos especializamos en la entrega de envíos críticos en todas las industrias. Si bien somos ampliamente confiables para piezas AOG, componentes de aviación y logística crítica, también brindamos servicios especializados para envíos médicos que salvan vidas, como células madre, médula ósea y otros materiales biológicos.",
+      "description2": "Para garantizar que estos envíos médicos críticos se manejen con el cuidado y la experiencia que requieren, hemos introducido OBC Life Care, nuestra división dedicada centrada exclusivamente en el transporte médico y biológico.",
+      "description3": "OBC Life Care está diseñado para satisfacer las necesidades únicas de hospitales, laboratorios de investigación, registros de donantes y empresas de biotecnología. Planificamos y ejecutamos soluciones de transporte rápido, con temperatura controlada y totalmente conformes para envíos médicos que salvan vidas.",
+      "description4": "Cada envío es una misión para salvar vidas. Planificamos cuidadosamente cada transporte, asegurando el manejo con temperatura controlada, el cumplimiento normativo y el monitoreo en tiempo real, para que estos materiales vitales lleguen a los pacientes y las instalaciones de investigación de manera segura y a tiempo. Con OBC Life Care, sus células madre, médula ósea y otros envíos médicos críticos están siempre en manos expertas."
+    },
+    "whatWeHandle": {
+      "title": "Qué Manejamos",
+      "description": "En OBC Life Care, cada transporte que gestionamos respalda tratamientos que salvan vidas, investigaciones científicas e innovación médica. Nos especializamos en el transporte seguro, sensible al tiempo y con temperatura controlada de materiales médicos críticos, que incluyen:",
+      "items": {
+        "0": "Células Madre y Médula Ósea",
+        "1": "Sangre de Cordón Umbilical",
+        "2": "Muestras Biológicas y Especímenes",
+        "3": "Equipos y Componentes Médicos",
+        "4": "Transporte Criogénico"
+      }
+    },
+    "howWeSaveLives": {
+      "title": "Cómo Salvamos Vidas",
+      "items": {
+        "0": {
+          "title": "Coordinación y Planificación",
+          "description": "Cada transporte comienza con una planificación meticulosa. Nos encargamos de los permisos, el despacho de aduanas y la programación del servicio de mensajería, asegurando el cumplimiento total y proporcionando a los clientes toda la documentación necesaria."
+        },
+        "1": {
+          "title": "Seguimiento en Tiempo Real",
+          "description": "Los clientes se mantienen informados en cada etapa con actualizaciones automáticas, contactos dedicados y total transparencia desde la recogida hasta la entrega."
+        },
+        "2": {
+          "title": "Soluciones Urgentes y en el Mismo Día",
+          "description": "Cuando el tiempo es crítico, ofrecemos entrega en el mismo día para recolecciones urgentes, incluida una segunda aféresis si es necesario, ajustándonos rápidamente a los horarios de vuelo y rutas optimizadas."
+        },
+        "3": {
+          "title": "Tránsito con Temperatura Controlada",
+          "description": "Utilizando sistemas validados y registradores de datos, mantenemos una estabilidad de temperatura precisa para células madre, médula ósea y materiales biológicos, con alertas en tiempo real para proteger la integridad del envío."
+        },
+        "4": {
+          "title": "Cumplimiento y Seguridad",
+          "description": "Todos los envíos cumplen con las normas internacionales de salud, seguridad y ética. Los estrictos protocolos de seguridad protegen los materiales contra pérdidas, robos o accesos no autorizados."
+        },
+        "5": {
+          "title": "Contingencias de Emergencia",
+          "description": "Los protocolos predefinidos nos permiten responder rápidamente a retrasos o problemas de equipos, asegurando la viabilidad bajo cualquier circunstancia."
+        }
+      },
+      "closing": "Planificar. Ejecutar. Salvar Vidas.\nCon OBC Life Care, cada envío de células madre, médula ósea y sangre de cordón umbilical se planifica cuidadosamente, se transporta de forma segura y se supervisa de cerca, asegurando que los materiales que salvan vidas lleguen a quienes más los necesitan."
+    },
+    "cta": {
+      "title": "Obtenga más información sobre OBC Life Care",
+      "description": "Para obtener información detallada sobre nuestros servicios de transporte médico especializado, haga clic aquí para visitar el sitio web de OBC Life Care y ver cómo combinamos velocidad, seguridad y experiencia médica para entregar materiales biológicos que salvan vidas.",
+      "btnPrimary": "Obtenga una Cotización Gratuita Hoy",
+      "subtext": "Asegúrese de que sus envíos médicos críticos se entreguen con precisión, cuidado y urgencia."
     }
   },
   "Home": {
