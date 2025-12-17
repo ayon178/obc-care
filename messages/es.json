@@ -1054,7 +1054,7 @@
   },
   "TechnologyBanner": {
     "badge": "OBC Care – Logística de Tecnología y Equipos de Datos",
-    "title": "Velocidad, seguridad y precisión — entregando su tecnología de alto valor y equipos de TI de forma segura, donde sea que ocurra la innovación.",
+    "title": "Velocidad, seguridad y precisión entregando su tecnología de alto valor y equipos de TI de forma segura, donde sea que ocurra la innovación.",
     "ctaRequest": "Solicitar Recogida Urgente",
     "ctaQuote": "Obtener una Cotización Gratuita"
   },
@@ -1108,7 +1108,7 @@
   "ConfidentialBanner": {
     "badge": "OBC Care – Entrega de Documentos de Alto Valor y Confidenciales",
     "title": "Discreción. Precisión. Velocidad.",
-    "description": "Sus documentos confidenciales y datos seguros se entregan mano a mano — confiado por clientes globales que requieren confidencialidad absoluta.",
+    "description": "Sus documentos confidenciales y datos seguros se entregan en mano, con la confianza de clientes globales que requieren absoluta confidencialidad.",
     "ctaRequest": "Solicitar Recogida Urgente",
     "ctaQuote": "Obtener una Cotización Gratuita"
   },
@@ -1164,14 +1164,17 @@
     "breadcrumbHome": "Inicio",
     "breadcrumbAbout": "Sobre Nosotros",
     "title": "SOBRE NOSOTROS",
-    "description": "Sobre OBC Care: Su Socio de Mensajería Global de Confianza"
+    "description": "Driven by Passion. Defined by Precision. Delivered with Care.",
+    "description2": "At OBC Care, we move more than shipments — we move trust, reliability, and human dedication across borders"
   },
   "AboutIntro": {
-    "whoWeAre": "Quiénes Somos",
-    "title": "Bienvenido a OBC Care",
-    "subtitle": "Soluciones Logísticas Globales",
-    "p1": "OBC Care fue fundada en 2018 por Eugen Reimer, quien comenzó con una visión simple pero poderosa — conectar el mundo a través de una logística confiable y centrada en el ser humano. Lo que comenzó como un equipo pequeño y apasionado decidido a entregar envíos que realmente importan, ha crecido hasta convertirse en una red global confiada por industrias desde la aviación hasta la tecnología.",
-    "p2": "Nos especializamos en servicios de Mensajero a Bordo (OBC), asegurando que sus envíos críticos sean llevados en mano y entregados con la máxima velocidad y seguridad. Nuestro equipo dedicado trabaja 24/7 para proporcionar soluciones logísticas perfectas adaptadas a sus necesidades urgentes.",
+    "whoWeAre": "about us",
+    "title": "Company Background",
+    "subtitle": "",
+    "p1": "OBC Care was founded in 2018 by Eugen Reimer with a clear and strategic vision: to connect global markets through dependable, time-critical logistics solutions built on precision, accountability, and operational excellence. From the outset, the company focused on providing reliable on-board courier and urgent shipping services designed to meet the most demanding deadlines.",
+    "p2": "What began as a small, dedicated team has evolved into a trusted global logistics network, serving clients across multiple industries, including aviation, technology, and other mission critical sectors. Today, OBC Care is recognized for its ability to manage complex, urgent shipments with consistency, professionalism, and a strong commitment to service quality.",
+    "quote": "“Urgent logistics isn’t just about speed, it’s about trust, precision, and people who care.”",
+    "p3": "Today, OBC Care continues that legacy, ensuring every delivery reflects the same passion and reliability that started it all.",
     "features": {
       "globalNetwork": "Red Global",
       "support": "Soporte 24/7",
@@ -1187,17 +1190,23 @@
     "label": "Características",
     "title": "Por Qué Elegirnos",
     "items": {
-      "0": { "title": "Alcance Global", "description": "Conectándole a más de 200 países en todo el mundo con nuestra extensa red logística." },
-      "1": { "title": "Entrega 100% Segura", "description": "Sus envíos son manejados con el más alto nivel de seguridad y cuidado desde la recogida hasta la entrega." },
-      "2": { "title": "Entrega Más Rápida", "description": "Priorizamos la velocidad y la eficiencia para asegurar que sus envíos urgentes lleguen a tiempo, cada vez." },
-      "3": { "title": "Equipo Experto", "description": "Nuestro equipo dedicado de profesionales logísticos está listo para manejar sus requisitos más complejos." },
-      "4": { "title": "Puerta a Puerta", "description": "Servicio puerta a puerta sin interrupciones, gestionando cada paso de la cadena logística por usted." },
-      "5": { "title": "Soporte 24/7", "description": "Atención al cliente las 24 horas para mantenerle informado y asistirle con cualquier consulta." }
+      "0": { "title": "Alcance Global", "description": "Conectándolo con más de 200 países en todo el mundo con nuestra extensa red logística." },
+      "1": { "title": "Entrega 100% Segura", "description": "Sus envíos se manejan con el más alto nivel de seguridad y cuidado desde la recolección hasta la entrega." },
+      "2": { "title": "Entrega Más Rápida", "description": "Priorizamos la velocidad y la eficiencia para garantizar que sus envíos urgentes lleguen a tiempo, siempre." },
+      "3": { "title": "Equipo Experto", "description": "Nuestro equipo dedicado de profesionales de la logística está listo para manejar sus requisitos más complejos." },
+      "4": { "title": "Puerta a Puerta", "description": "Servicio puerta a puerta sin problemas, gestionando cada paso de la cadena logística por usted." },
+      "5": { "title": "Soporte 24/7", "description": "Atención al cliente las 24 horas para mantenerlo informado y ayudarlo con cualquier consulta." }
     }
   },
   "AboutMissionVision": {
-    "mission": { "title": "Nuestra Misión", "description": "Entregar envíos críticos con cuidado, precisión y corazón — asegurando que las empresas sigan moviéndose sin importar la distancia o el plazo. Nos esforzamos por ser la columna vertebral de sus operaciones logísticas." },
-    "vision": { "title": "Nuestra Visión", "description": "Ser el socio más confiable del mundo en logística urgente — donde cada hand-carry, cada milla y cada momento represente excelencia, integridad y conexión humana." }
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Entregar soluciones logísticas de tiempo crítico y de mano con los más altos estándares de precisión, seguridad y fiabilidad, asegurando que los envíos urgentes lleguen a su destino de manera eficiente y sin compromiso."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirnos en el proveedor global líder de servicios de mensajería a bordo y logística urgente, reconocido por la excelencia operativa, la integridad y un compromiso constante con la calidad del servicio en cada envío y cada ruta."
+    }
   },
   "AboutStats": {
     "title": "Hacemos los Servicios Más Fuertes del Mundo",
@@ -1209,8 +1218,8 @@
     }
   },
   "AboutTeam": {
-    "label": "Equipo Dedicado",
-    "title": "¡Conozca a los Miembros de Nuestro Equipo Especial!",
+    "label": "Conozca al Equipo",
+    "title": "Juntos, nuestro equipo combina experiencia internacional y conocimiento local para impulsar los envíos y los negocios.",
     "roles": {
       "0": "CEO, Fundador y Gerente General",
       "1": "Gerente de Contabilidad",
@@ -1221,17 +1230,24 @@
     }
   },
   "AboutTestimonials": {
-    "label": "Testimonios",
-    "title": "Lo Que Dicen Nuestros Clientes",
+    "label": "Testimonials",
+    "title": "What Our Clients Say",
     "items": {
-      "0": { "quote": "OBC Care manejó nuestro envío urgente AOG impecablemente — cada actualización fue en tiempo real, y cada promesa se cumplió.", "author": "Cliente de Aviación", "location": "EE. UU." },
-      "1": { "quote": "Rápido, confiable y siempre profesional. La tranquilidad que brindan no tiene precio.", "author": "Cliente Automotriz", "location": "Alemania" },
-      "2": { "quote": "Cuando cada minuto contaba, OBC Care cumplió. Su toque personal hace toda la diferencia.", "author": "Cliente de Electrónica", "location": "Singapur" }
+      "0": {
+        "quote": "OBC Care handled our urgent AOG shipment flawlessly every update was real time, and every promise was kept.",
+        "author": "Aviation Client",
+        "location": "USA"
+      },
+      "1": {
+        "quote": "Fast, reliable, and always professional. The peace of mind they provide is priceless.",
+        "author": "Automotive Client",
+        "location": "Electronics Sector"
+      }
     }
   },
   "AboutCta": {
     "title": "¿Listo para Experimentar Nuestro Servicio?",
-    "description": "Vamos a mover su envío — rápido, seguro y sin estrés. Obtenga una cotización gratuita en solo 15 minutos.",
+    "description": "Permítanos mover su envío de forma rápida, segura y sin estrés. Obtenga una cotización gratuita en solo 15 minutos o contacte a nuestro equipo de operaciones para soporte inmediato.",
     "btnQuote": "Obtener una Cotización Gratuita",
     "btnContact": "Contáctenos"
   },

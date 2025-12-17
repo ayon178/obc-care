@@ -1054,7 +1054,7 @@
   },
   "TechnologyBanner": {
     "badge": "OBC Care – Logistik für Technologie & Datenausrüstung",
-    "title": "Geschwindigkeit, Sicherheit und Präzision – Lieferung Ihrer hochwertigen Technologie- und IT-Ausrüstung sicher, wo immer Innovation stattfindet.",
+    "title": "Geschwindigkeit, Sicherheit und Präzision Lieferung Ihrer hochwertigen Technologie und IT-Ausrüstung sicher, wo immer Innovation stattfindet.",
     "ctaRequest": "Dringende Abholung anfordern",
     "ctaQuote": "Kostenloses Angebot erhalten"
   },
@@ -1108,7 +1108,7 @@
   "ConfidentialBanner": {
     "badge": "OBC Care – Hochwertiger & vertraulicher Dokumentenversand",
     "title": "Diskretion. Präzision. Geschwindigkeit.",
-    "description": "Ihre sensiblen Dokumente und sicheren Daten werden persönlich übergeben – vertraut von globalen Kunden, die absolute Vertraulichkeit benötigen.",
+    "description": "Ihre sensiblen Dokumente und sicheren Daten werden persönlich von Hand zu Hand übergeben, darauf vertrauen globale Kunden, die absolute Vertraulichkeit benötigen.",
     "ctaRequest": "Dringende Abholung anfordern",
     "ctaQuote": "Kostenloses Angebot erhalten"
   },
@@ -1161,26 +1161,29 @@
     "button": "Holen Sie sich heute ein kostenloses Angebot"
   },
   "AboutBanner": {
-    "breadcrumbHome": "Startseite",
-    "breadcrumbAbout": "Über uns",
-    "title": "ÜBER UNS",
-    "description": "Über OBC Care: Ihr vertrauenswürdiger globaler Kurierpartner"
+    "breadcrumbHome": "Home",
+    "breadcrumbAbout": "About Us",
+    "title": "ABOUT US",
+    "description": "Driven by Passion. Defined by Precision. Delivered with Care.",
+    "description2": "At OBC Care, we move more than shipments — we move trust, reliability, and human dedication across borders"
   },
   "AboutIntro": {
-    "whoWeAre": "Wer wir sind",
-    "title": "Willkommen bei OBC Care",
-    "subtitle": "Globale Logistiklösungen",
-    "p1": "OBC Care wurde 2018 von Eugen Reimer gegründet, der mit einer einfachen, aber kraftvollen Vision begann – die Welt durch zuverlässige, menschenzentrierte Logistik zu verbinden. Was als kleines, leidenschaftliches Team begann, das entschlossen war, Sendungen zu liefern, die wirklich zählen, ist heute zu einem globalen Netzwerk gewachsen, dem Branchen von der Luftfahrt bis zur Technologie vertrauen.",
-    "p2": "Wir spezialisieren uns auf On Board Courier (OBC) Dienste und stellen sicher, dass Ihre kritischen Sendungen persönlich überbracht und mit höchster Geschwindigkeit und Sicherheit geliefert werden. Unser engagiertes Team arbeitet rund um die Uhr, um nahtlose Logistiklösungen anzubieten, die auf Ihre dringenden Bedürfnisse zugeschnitten sind.",
+    "whoWeAre": "about us",
+    "title": "Company Background",
+    "subtitle": "",
+    "p1": "OBC Care was founded in 2018 by Eugen Reimer with a clear and strategic vision: to connect global markets through dependable, time-critical logistics solutions built on precision, accountability, and operational excellence. From the outset, the company focused on providing reliable on-board courier and urgent shipping services designed to meet the most demanding deadlines.",
+    "p2": "What began as a small, dedicated team has evolved into a trusted global logistics network, serving clients across multiple industries, including aviation, technology, and other mission critical sectors. Today, OBC Care is recognized for its ability to manage complex, urgent shipments with consistency, professionalism, and a strong commitment to service quality.",
+    "quote": "“Urgent logistics isn’t just about speed, it’s about trust, precision, and people who care.”",
+    "p3": "Today, OBC Care continues that legacy, ensuring every delivery reflects the same passion and reliability that started it all.",
     "features": {
-      "globalNetwork": "Globales Netzwerk",
+      "globalNetwork": "Global Network",
       "support": "24/7 Support",
-      "secureDelivery": "Sichere Lieferung",
-      "realTimeTracking": "Echtzeit-Tracking"
+      "secureDelivery": "Secure Delivery",
+      "realTimeTracking": "Real-time Tracking"
     },
     "imageOverlay": {
-      "network": { "title": "Umfangreiches Netzwerk", "desc": "Verbindet Unternehmen weltweit." },
-      "secure": { "title": "Zuverlässig & Sicher", "desc": "Ihre Sendung ist bei uns sicher." }
+      "network": { "title": "Extensive Network", "desc": "Connecting businesses worldwide." },
+      "secure": { "title": "Reliable & Secure", "desc": "Your shipment is safe with us." }
     }
   },
   "AboutWhyChooseUs": {
@@ -1196,8 +1199,14 @@
     }
   },
   "AboutMissionVision": {
-    "mission": { "title": "Unsere Mission", "description": "Kritische Sendungen mit Sorgfalt, Genauigkeit und Herz zu liefern – um sicherzustellen, dass Unternehmen unabhängig von Entfernung oder Frist in Bewegung bleiben. Wir streben danach, das Rückgrat Ihrer Logistikoperationen zu sein." },
-    "vision": { "title": "Unsere Vision", "description": "Der weltweit vertrauenswürdigste Partner in der dringenden Logistik zu sein – wo jeder Hand-Carry, jede Meile und jeder Moment für Exzellenz, Integrität und menschliche Verbindung steht." }
+    "mission": {
+        "title": "Our Mission",
+        "description": "To deliver time critical and hand carry logistics solutions with the highest standards of accuracy, security, and reliability, ensuring that urgent shipments reach their destination efficiently and without compromise."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "description": "To become the leading global provider of Onboard courier and urgent logistics services, recognized for operational excellence, integrity, and a consistent commitment to service quality across every shipment and every route."
+    }
   },
   "AboutStats": {
     "title": "Wir bieten die stärksten Dienstleistungen weltweit",
@@ -1209,31 +1218,38 @@
     }
   },
   "AboutTeam": {
-    "label": "Engagiertes Team",
-    "title": "Treffen Sie unsere speziellen Teammitglieder!",
+    "label": "Meet the Team",
+    "title": "Together, our team combines international expertise and local insight to move shipments and businesses forward.",
     "roles": {
-      "0": "CEO, Gründer & Geschäftsführer",
-      "1": "Buchhaltungsleiterin",
-      "2": "Betriebsleiter",
-      "3": "Projektmanager",
-      "4": "Projektmanager",
-      "5": "Projektmanager"
+        "0": "CEO, Founder & General Manager",
+        "1": "Accounting Manager",
+        "2": "Operations Manager",
+        "3": "Project Manager",
+        "4": "Project Manager",
+        "5": "Project Manager"
     }
   },
   "AboutTestimonials": {
-    "label": "Referenzen",
-    "title": "Was unsere Kunden sagen",
+    "label": "Testimonials",
+    "title": "What Our Clients Say",
     "items": {
-      "0": { "quote": "OBC Care hat unsere dringende AOG-Sendung tadellos abgewickelt – jedes Update erfolgte in Echtzeit und jedes Versprechen wurde eingehalten.", "author": "Luftfahrtkunde", "location": "USA" },
-      "1": { "quote": "Schnell, zuverlässig und immer professionell. Die Sicherheit, die sie bieten, ist unbezahlbar.", "author": "Automobilkunde", "location": "Deutschland" },
-      "2": { "quote": "Als jede Minute zählte, hat OBC Care geliefert. Ihre persönliche Note macht den Unterschied.", "author": "Elektronikkunde", "location": "Singapur" }
+      "0": {
+        "quote": "OBC Care handled our urgent AOG shipment flawlessly every update was real time, and every promise was kept.",
+        "author": "Aviation Client",
+        "location": "USA"
+      },
+      "1": {
+        "quote": "Fast, reliable, and always professional. The peace of mind they provide is priceless.",
+        "author": "Automotive Client",
+        "location": "Electronics Sector"
+      }
     }
   },
   "AboutCta": {
-    "title": "Bereit, unseren Service zu erleben?",
-    "description": "Lassen Sie uns Ihre Sendung bewegen – schnell, sicher und stressfrei. Erhalten Sie in nur 15 Minuten ein kostenloses Angebot.",
-    "btnQuote": "Kostenloses Angebot erhalten",
-    "btnContact": "Kontaktieren Sie uns"
+    "title": "Ready to Experience Our Service?",
+    "description": "Let’s move your shipment fast, secure, and stress-free. Get a free quote in just 15 minutes or contact our operations team for immediate support.",
+    "btnQuote": "Get a Free Quote",
+    "btnContact": "Contact Us"
   },
   "InquiryPage": {
     "badge": "Kontakt aufnehmen",

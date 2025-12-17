@@ -1055,7 +1055,7 @@
   },
   "TechnologyBanner": {
     "badge": "OBC Care – Technology & Data Equipment Logistics",
-    "title": "Speed, security, and precision — delivering your high-value tech and IT equipment safely, wherever innovation happens.",
+    "title": "Speed, security, and precision delivering your high value tech and IT equipment safely, wherever innovation happens.",
     "ctaRequest": "Request Urgent Pickup",
     "ctaQuote": "Get a Free Quote"
   },
@@ -1109,7 +1109,7 @@
   "ConfidentialBanner": {
     "badge": "OBC Care – High-Value & Confidential Document Delivery",
     "title": "Discretion. Precision. Speed.",
-    "description": "Your sensitive documents and secure data are delivered hand-to-hand — trusted by global clients who require absolute confidentiality.",
+    "description": "Your sensitive documents and secure data are delivered hand to hand trusted by global clients who require absolute confidentiality.",
     "ctaRequest": "Request Urgent Pickup",
     "ctaQuote": "Get a Free Quote"
   },
@@ -1165,14 +1165,17 @@
     "breadcrumbHome": "Home",
     "breadcrumbAbout": "About Us",
     "title": "ABOUT US",
-    "description": "About OBC Care: Your Trusted Global Courier Partner"
+    "description": "Driven by Passion. Defined by Precision. Delivered with Care.",
+    "description2": "At OBC Care, we move more than shipments — we move trust, reliability, and human dedication across borders"
   },
   "AboutIntro": {
-    "whoWeAre": "Who We Are",
-    "title": "Welcome to OBC Care",
-    "subtitle": "Global Logistics Solutions",
-    "p1": "OBC Care was founded in 2018 by Eugen Reimer, who began with a simple but powerful vision — to bridge the world through dependable, human-centered logistics. What started as a small, passionate team determined to deliver shipments that truly matter, has now grown into a global network trusted by industries from aviation to technology.",
-    "p2": "We specialize in On Board Courier (OBC) services, ensuring your critical shipments are hand-carried and delivered with the utmost speed and security. Our dedicated team works 24/7 to provide seamless logistics solutions tailored to your urgent needs.",
+    "whoWeAre": "about us",
+    "title": "Company Background",
+    "subtitle": "",
+    "p1": "OBC Care was founded in 2018 by Eugen Reimer with a clear and strategic vision: to connect global markets through dependable, time-critical logistics solutions built on precision, accountability, and operational excellence. From the outset, the company focused on providing reliable on-board courier and urgent shipping services designed to meet the most demanding deadlines.",
+    "p2": "What began as a small, dedicated team has evolved into a trusted global logistics network, serving clients across multiple industries, including aviation, technology, and other mission critical sectors. Today, OBC Care is recognized for its ability to manage complex, urgent shipments with consistency, professionalism, and a strong commitment to service quality.",
+    "quote": "“Urgent logistics isn’t just about speed, it’s about trust, precision, and people who care.”",
+    "p3": "Today, OBC Care continues that legacy, ensuring every delivery reflects the same passion and reliability that started it all.",
     "features": {
       "globalNetwork": "Global Network",
       "support": "24/7 Support",
@@ -1196,10 +1199,6 @@
       "5": { "title": "24/7 Support", "description": "Round-the-clock customer support to keep you informed and assist with any queries." }
     }
   },
-  "AboutMissionVision": {
-    "mission": { "title": "Our Mission", "description": "To deliver critical shipments with care, accuracy, and heart — ensuring businesses keep moving no matter the distance or the deadline. We strive to be the backbone of your logistics operations." },
-    "vision": { "title": "Our Vision", "description": "To be the world's most trusted partner in urgent logistics — where every hand-carry, every mile, and every moment represents excellence, integrity, and human connection." }
-  },
   "AboutStats": {
     "title": "We Make Strongest Services Above World",
     "description": "Experience the pinnacle of logistics excellence with our world-class services designed to exceed your expectations.",
@@ -1209,30 +1208,47 @@
       "2": { "title": "Global Reach", "description": "Connecting you to the world." }
     }
   },
+  "AboutMissionVision": {
+    "mission": {
+        "title": "Our Mission",
+        "description": "To deliver time critical and hand carry logistics solutions with the highest standards of accuracy, security, and reliability, ensuring that urgent shipments reach their destination efficiently and without compromise."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "description": "To become the leading global provider of Onboard courier and urgent logistics services, recognized for operational excellence, integrity, and a consistent commitment to service quality across every shipment and every route."
+    }
+  },
   "AboutTeam": {
-    "label": "Dedicated Team",
-    "title": "Meet Our Special Team Members!",
+    "label": "Meet the Team",
+    "title": "Together, our team combines international expertise and local insight to move shipments and businesses forward.",
     "roles": {
-      "0": "CEO, Founder & General Manager",
-      "1": "Accounting Manager",
-      "2": "Operations Manager",
-      "3": "Project Manager",
-      "4": "Project Manager",
-      "5": "Project Manager"
+        "0": "CEO, Founder & General Manager",
+        "1": "Accounting Manager",
+        "2": "Operations Manager",
+        "3": "Project Manager",
+        "4": "Project Manager",
+        "5": "Project Manager"
     }
   },
   "AboutTestimonials": {
     "label": "Testimonials",
     "title": "What Our Clients Say",
     "items": {
-      "0": { "quote": "OBC Care handled our urgent AOG shipment flawlessly — every update was real-time, and every promise was kept.", "author": "Aviation Client", "location": "USA" },
-      "1": { "quote": "Fast, reliable, and always professional. The peace of mind they provide is priceless.", "author": "Automotive Client", "location": "Germany" },
-      "2": { "quote": "When every minute counted, OBC Care delivered. Their personal touch makes all the difference.", "author": "Electronics Client", "location": "Singapore" }
+      "0": {
+        "quote": "OBC Care handled our urgent AOG shipment flawlessly every update was real time, and every promise was kept.",
+        "author": "Aviation Client",
+        "location": "USA"
+      },
+      "1": {
+        "quote": "Fast, reliable, and always professional. The peace of mind they provide is priceless.",
+        "author": "Automotive Client",
+        "location": "Electronics Sector"
+      }
     }
   },
   "AboutCta": {
     "title": "Ready to Experience Our Service?",
-    "description": "Let's move your shipment — fast, secure, and stress-free. Get a free quote in just 15 minutes.",
+    "description": "Let’s move your shipment fast, secure, and stress-free. Get a free quote in just 15 minutes or contact our operations team for immediate support.",
     "btnQuote": "Get a Free Quote",
     "btnContact": "Contact Us"
   },

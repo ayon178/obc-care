@@ -9,7 +9,7 @@ export default function AboutBanner() {
   const t = useTranslations("AboutBanner")
 
   return (
-    <section className="relative pt-20 h-[400px] w-full overflow-hidden bg-[#194479]">
+    <section className="relative pt-20 h-[450px] w-full overflow-hidden bg-[#194479]">
       {/* Background Pattern/Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
@@ -39,8 +39,11 @@ export default function AboutBanner() {
             {t("title")}
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light mb-3">
             {t("description")}
+          </p>
+          <p className="text-sm md:text-md text-gray-300 max-w-2xl mx-auto font-light">
+            {t("description2")}
           </p>
         </motion.div>
       </div>

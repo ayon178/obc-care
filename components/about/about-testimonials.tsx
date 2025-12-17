@@ -32,11 +32,6 @@ export default function AboutTestimonials() {
       author: t("items.1.author"),
       location: t("items.1.location"),
     },
-    {
-      quote: t("items.2.quote"),
-      author: t("items.2.author"),
-      location: t("items.2.location"),
-    },
   ]
 
   return (

@@ -27,32 +27,18 @@ export default function AboutIntro() {
             </h2>
 
             <div className="space-y-6 text-gray-600 leading-relaxed text-justify">
-              <p>
-                {t("p1")}
-              </p>
-              <p>
-                {t("p2")}
-              </p>
+              <p>{t("p1")}</p>
+              <p>{t("p2")}</p>
+              
+              {/* Quote Block */}
+              <div className="border-l-4 border-[#91c73e] pl-4 italic text-[#194479] font-medium text-lg my-6">
+                {t("quote")}
+              </div>
+
+              <p>{t("p3")}</p>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-[#91c73e]" />
-                <span className="text-[#194479] font-semibold">{t("features.globalNetwork")}</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-[#91c73e]" />
-                <span className="text-[#194479] font-semibold">{t("features.support")}</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-[#91c73e]" />
-                <span className="text-[#194479] font-semibold">{t("features.secureDelivery")}</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-[#91c73e]" />
-                <span className="text-[#194479] font-semibold">{t("features.realTimeTracking")}</span>
-              </div>
-            </div>
+            {/* Features removed to match user content */}
           </motion.div>
 
           {/* Image Content */}
@@ -70,8 +56,6 @@ export default function AboutIntro() {
                 fill
                 className="object-cover"
               />
-            </div>
-
             {/* Overlay Shape */}
             <div className="absolute bottom-0 right-0 w-3/4 bg-[#194479]/90 backdrop-blur-sm p-8 rounded-tl-[100px] text-white">
               <div className="flex flex-col gap-6 pl-8">
@@ -94,6 +78,7 @@ export default function AboutIntro() {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </motion.div>
 
