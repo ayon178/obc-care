@@ -63,14 +63,17 @@ const BecomeOBCPage = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-[#91C73E]/20 text-[#91C73E] text-sm font-semibold mb-6 border border-[#91C73E]/30 backdrop-blur-sm">
+            <span className="inline-block py-1 px-3 rounded-full bg-[#91C73E]/20 text-[#91C73E] text-sm font-semibold mb-3 border border-[#91C73E]/30 backdrop-blur-sm">
               {t("hero.badge")}
             </span>
-            <h1 className="headingFont text-5xl md:text-7xl font-bold mb-6 text-white leading-tight tracking-tight">
+            <h1 className="headingFont text-3xl md:text-5xl font-bold mb-3 text-white leading-tight tracking-tight">
               {t("hero.titlePrefix")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#91C73E] to-[#b8e075]">{t("hero.titleSuffix")}</span>
             </h1>
-            <p className="paragraphFont text-lg md:text-2xl max-w-2xl mx-auto mb-10 text-gray-300 leading-relaxed font-light">
+            <p className="paragraphFont text-lg md:text-xl max-w-2xl mx-auto mb-10 text-gray-300 leading-relaxed font-light">
               {t("hero.description")}
+            </p>
+            <p className="paragraphFont text-base max-w-2xl mx-auto mb-10 text-gray-300 leading-relaxed font-light">
+              {t("hero.description2")}
             </p>
             
             <motion.div
@@ -81,7 +84,7 @@ const BecomeOBCPage = () => {
             >
               <Button 
                 onClick={scrollToForm}
-                className="bg-[#91C73E] hover:bg-[#82b336] text-white text-lg px-10 py-7 h-auto rounded-full shadow-[0_0_20px_rgba(145,199,62,0.3)] hover:shadow-[0_0_30px_rgba(145,199,62,0.5)] transition-all transform hover:-translate-y-1 font-semibold"
+                className="bg-[#91C73E] hover:bg-[#82b336] text-white text-lg px-10 py-5 h-auto rounded-full shadow-[0_0_20px_rgba(145,199,62,0.3)] hover:shadow-[0_0_30px_rgba(145,199,62,0.5)] transition-all transform hover:-translate-y-1 font-semibold"
               >
                 {t("hero.btnApply")}
               </Button>
@@ -91,7 +94,7 @@ const BecomeOBCPage = () => {
                   if (element) element.scrollIntoView({ behavior: "smooth" });
                 }}
                 variant="outline"
-                className="bg-white/5 hover:bg-white/10 text-white border-white/20 text-lg px-10 py-7 h-auto rounded-full backdrop-blur-sm transition-all cursor-pointer"
+                className="bg-white/5 hover:bg-white/10 text-white border-white/20 text-lg px-10 py-5 h-auto rounded-full backdrop-blur-sm transition-all cursor-pointer"
               >
                 {t("hero.btnLearnMore")}
               </Button>
