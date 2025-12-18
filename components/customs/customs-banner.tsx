@@ -11,7 +11,7 @@ export default function CustomsBanner() {
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/services/shipment.jpeg')",
+        backgroundImage: "url('/services/custom_banner.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

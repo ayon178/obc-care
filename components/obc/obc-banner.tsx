@@ -11,7 +11,7 @@ export default function ObcBanner() {
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/services/on_board_currier.jpeg')",
+        backgroundImage: "url('/services/onboard_banner.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

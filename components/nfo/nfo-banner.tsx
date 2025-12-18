@@ -12,13 +12,13 @@ export default function NfoBanner() {
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/services/night-flight-out-banner.jpg')",
+        backgroundImage: "url('/services/next_flight_banner.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       {/* gradient overlays */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(10,26,42,0.85),rgba(10,26,42,0.4)_40%,rgba(10,26,42,0.85))]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(10,26,42,0.85),rgba(10,26,42,0.5)_40%,rgba(10,26,42,0.85))]" />
       <div className="absolute inset-0 bg-[radial-gradient(80%_50%_at_80%_10%,rgba(145,199,62,0.18),transparent)]" />
 
       <div className="container relative z-10 mx-auto h-full px-4 sm:px-6 lg:px-8">
