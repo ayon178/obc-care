@@ -63,7 +63,7 @@ export default function NfoWhatIs() {
           {/* Creative Layout: Central Image with Floating Cards */}
           <div className="relative">
             {/* Main Central Image */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -79,7 +79,7 @@ export default function NfoWhatIs() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/80 via-[#194479]/40 to-transparent" />
                 
-                {/* Stats Overlay */}
+                
                 <div className="absolute bottom-8 left-8 right-8">
                   <div className="grid grid-cols-2 gap-4">
                     <motion.div
@@ -119,7 +119,7 @@ export default function NfoWhatIs() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Floating Feature Cards Around Image */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -157,13 +157,13 @@ export default function NfoWhatIs() {
                 className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <div className="relative h-[200px]">
-                  <Image
+                  {/* <Image
                     src="/services/shipment.jpeg"
                     alt="Real-time Routing"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/90 via-[#194479]/60 to-transparent" />
+                  /> */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/90 via-[#194479]/60 to-[#194479]/60" />
                   <div className="absolute bottom-0 left-0 right-0 p-5">
                     <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-3 group-hover:bg-[#91c73e] transition-colors duration-300">
                       <Zap className="w-6 h-6 text-white" />

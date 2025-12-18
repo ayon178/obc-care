@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { Calendar, Package, Plane, Radio, Truck } from "lucide-react"
 import { useTranslations } from "next-intl"
@@ -14,7 +13,6 @@ export default function NfoHowItWorks() {
       title: t("steps.0.title"),
       desc: t("steps.0.desc"),
       icon: Calendar,
-      image: "/services/shipment.jpeg",
       color: "#194479",
     },
     {
@@ -22,7 +20,6 @@ export default function NfoHowItWorks() {
       title: t("steps.1.title"),
       desc: t("steps.1.desc"),
       icon: Package,
-      image: "/services/shipment.jpeg",
       color: "#91c73e",
     },
     {
@@ -30,7 +27,6 @@ export default function NfoHowItWorks() {
       title: t("steps.2.title"),
       desc: t("steps.2.desc"),
       icon: Plane,
-      image: "/services/shipment.jpeg",
       color: "#194479",
     },
     {
@@ -38,7 +34,6 @@ export default function NfoHowItWorks() {
       title: t("steps.3.title"),
       desc: t("steps.3.desc"),
       icon: Radio,
-      image: "/services/shipment.jpeg",
       color: "#91c73e",
     },
     {
@@ -46,7 +41,6 @@ export default function NfoHowItWorks() {
       title: t("steps.4.title"),
       desc: t("steps.4.desc"),
       icon: Truck,
-      image: "/services/shipment.jpeg",
       color: "#194479",
     },
   ]
@@ -105,7 +99,7 @@ export default function NfoHowItWorks() {
         </motion.div>
 
         {/* Steps Timeline - Responsive Layout */}
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-5xl mx-auto">
           {/* Vertical Connecting Line - Desktop Only */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#194479]/20 via-[#91c73e]/30 to-[#194479]/20 -translate-x-1/2" />
 
@@ -121,92 +115,54 @@ export default function NfoHowItWorks() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: i * 0.15 }}
-                  className={`relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center ${
-                    isLeft ? "md:grid-flow-col" : "md:grid-flow-col-dense"
-                  }`}
+                  className="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center"
                 >
-                  {/* Timeline Node - Desktop Only - Positioned relative to step container */}
+                  {/* Timeline Node - Desktop Only */}
                   <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border-4 shadow-xl z-30 pointer-events-none"
                     style={{ borderColor: step.color }}
                   >
                     <div className="w-full h-full rounded-full flex items-center justify-center"
                       style={{ backgroundColor: step.color }}
                     >
-                      <Icon className="w-6 h-6 text-white" />
+                      <span className="text-white font-bold text-sm">{step.number}</span>
                     </div>
                   </div>
 
-                  {/* Image Card - Alternating Sides */}
+                  {/* Content Card */}
                   <motion.div
-                    className={`relative order-2 z-10 ${
-                      isLeft ? "md:order-1 md:pr-8" : "md:order-2 md:pl-8"
+                    className={`relative z-10 ${
+                      isLeft ? "md:col-start-2 md:pl-0" : "md:col-start-1 md:text-right"
                     }`}
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ duration: 0.3 }}
                   >
-                    <div className="relative h-[250px] sm:h-[300px] md:h-[350px] rounded-3xl overflow-hidden shadow-2xl group">
-                      <Image
-                        src={step.image}
-                        alt={step.title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div
-                        className="absolute inset-0"
-                        style={{
-                          background: `linear-gradient(to bottom, ${step.color}00, ${step.color}E6)`,
-                        }}
-                      />
+                    <div className={`relative bg-white rounded-3xl p-6 md:p-8 shadow-xl border-2 border-transparent hover:border-[#91c73e]/30 transition-all duration-300 h-full z-10 group
+                       ${!isLeft ? "md:items-end" : ""}
+                    `}>
+                       {/* Icon Bubble - Mobile Only (or keep inline for both) */}
+                       <div className={`flex items-center gap-4 mb-4 ${!isLeft ? "md:flex-row-reverse" : ""}`}>
+                          <div
+                            className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110 duration-300"
+                            style={{ backgroundColor: `${step.color}15` }}
+                          >
+                            <Icon
+                              className="w-7 h-7"
+                              style={{ color: step.color }}
+                            />
+                          </div>
+                          <div className={`flex-1 ${!isLeft ? "md:text-right" : ""}`}>
+                            <h3 className="titleFont text-[#194479] font-bold text-xl md:text-2xl leading-tight">
+                              {step.title}
+                            </h3>
+                          </div>
+                      </div>
                       
-                      {/* Number Badge - Top Left */}
-                      <div className="absolute top-6 left-6">
-                        <div
-                          className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md border-2 border-white/30 flex items-center justify-center shadow-xl"
-                          style={{ backgroundColor: `${step.color}40` }}
-                        >
-                          <span className="text-2xl font-bold text-white">{step.number}</span>
-                        </div>
-                      </div>
-
-                      {/* Icon Badge - Bottom Right */}
-                      <div className="absolute bottom-6 right-6">
-                        <motion.div
-                          whileHover={{ scale: 1.1, rotate: 5 }}
-                          className="w-14 h-14 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover:bg-white/30 transition-all duration-300"
-                        >
-                          <Icon className="w-7 h-7 text-white" />
-                        </motion.div>
-                      </div>
-                    </div>
-                  </motion.div>
-
-                  {/* Content Card - Alternating Sides */}
-                  <motion.div
-                    className={`relative order-1 z-10 ${
-                      isLeft ? "md:order-2 md:pl-8" : "md:order-1 md:pr-8"
-                    }`}
-                  >
-                    {/* Content Card */}
-                    <div className="relative bg-white rounded-3xl p-6 md:p-8 shadow-xl border-2 border-transparent hover:border-[#91c73e]/30 transition-all duration-300 h-full z-10">
-                      <div className="flex flex-row items-center gap-4 mb-4">
-                        <div
-                          className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0"
-                          style={{ backgroundColor: `${step.color}15` }}
-                        >
-                          <Icon
-                            className="w-7 h-7"
-                            style={{ color: step.color }}
-                          />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="titleFont text-[#194479] font-bold text-xl md:text-2xl leading-tight">
-                            {step.title}
-                          </h3>
-                        </div>
-                      </div>
-                      <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
+                      <p className={`paragraphFont text-gray-700 text-base md:text-lg leading-relaxed ${!isLeft ? "md:text-right" : ""}`}>
                         {step.desc}
                       </p>
+
+                       {/* Mobile Number Badge */}
+                       <div className="md:hidden absolute -top-3 -right-3 w-10 h-10 rounded-full bg-[#194479] flex items-center justify-center shadow-lg border-2 border-white">
+                          <span className="text-white font-bold text-sm">{step.number}</span>
+                       </div>
                     </div>
                   </motion.div>
                 </motion.div>
