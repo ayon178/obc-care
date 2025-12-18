@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { Clock, Globe, Zap, Shield } from "lucide-react"
 import { useTranslations } from "next-intl"
@@ -12,22 +11,18 @@ export default function NfoIntro() {
     {
       icon: Clock,
       title: t("features.0.title"),
-      image: "/services/shipment.jpeg",
     },
     {
       icon: Globe,
       title: t("features.1.title"),
-      image: "/services/shipment.jpeg",
     },
     {
       icon: Zap,
       title: t("features.2.title"),
-      image: "/services/shipment.jpeg",
     },
     {
       icon: Shield,
       title: t("features.3.title"),
-      image: "/services/shipment.jpeg",
     },
   ]
 
@@ -79,7 +74,7 @@ export default function NfoIntro() {
 
         {/* Creative Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 max-w-7xl mx-auto">
-          {/* Large Image Card - Left Side */}
+          {/* Large Box Card - Left Side (Replaces Image) */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -87,15 +82,21 @@ export default function NfoIntro() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 relative group"
           >
-            <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden shadow-2xl">
-              <Image
-                src="/services/shipment.jpeg"
-                alt="Time-Critical Logistics"
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/90 via-[#194479]/50 to-transparent" />
+            <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#194479] to-[#1a4a7f]">
+              {/* Abstract decorative elements */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#91c73e]/10 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3" />
               
+              <div className="absolute inset-x-0 top-16 flex items-center justify-center">
+                 <motion.div 
+                    animate={{ scale: [1, 1.1, 1], opacity: [0.5, 0.8, 0.5] }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                    className="w-32 h-32 rounded-full bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-center"
+                 >
+                    <Globe className="w-16 h-16 text-white/50" />
+                 </motion.div>
+              </div>
+
               {/* Floating Content Card */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -104,7 +105,7 @@ export default function NfoIntro() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="absolute bottom-6 left-6 right-6"
               >
-                <div className="bg-black/10 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/10">
+                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/10">
                   <p className="paragraphFont text-white text-sm md:text-base leading-relaxed mb-4">
                     {t("imageCardText1")}
                   </p>
@@ -124,17 +125,17 @@ export default function NfoIntro() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-gradient-to-br from-[#194479] to-[#1a4a7f] rounded-3xl p-6 md:p-8 shadow-xl text-white"
+              className="bg-white rounded-3xl p-6 md:p-8 shadow-xl border border-gray-100"
             >
-              <p className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed mb-4">
+              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed mb-4">
                 {t("textCard1")}
               </p>
-              <p className="paragraphFont text-white/90 text-sm md:text-base leading-relaxed">
+              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
                 {t("textCard2")}
               </p>
             </motion.div>
 
-            {/* Feature Image Cards Grid */}
+            {/* Feature Cards Grid (Replaces Feature Images) */}
             <div className="grid grid-cols-2 gap-4">
               {features.map((feature, index) => {
                 const Icon = feature.icon
@@ -147,23 +148,16 @@ export default function NfoIntro() {
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                     className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                   >
-                    <div className="relative h-[140px] md:h-[160px]">
-                      <Image
-                        src={feature.image}
-                        alt={feature.title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/90 via-[#194479]/60 to-transparent" />
+                    <div className="relative h-[110px] md:h-[120px] bg-gradient-to-br from-[#f8fafc] to-[#e2e8f0] group-hover:from-[#194479] group-hover:to-[#1a4a7f] transition-colors duration-500">
                       
                       {/* Icon Badge */}
-                      <div className="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center group-hover:bg-[#91c73e] transition-colors duration-300">
-                        <Icon className="w-5 h-5 text-white" />
+                      <div className="absolute top-4 right-4 w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center group-hover:bg-white/20 group-hover:backdrop-blur-sm transition-all duration-300">
+                        <Icon className="w-6 h-6 text-[#194479] group-hover:text-white transition-colors duration-300" />
                       </div>
                       
                       {/* Title */}
-                      <div className="absolute bottom-0 left-0 right-0 p-3">
-                        <h3 className="text-white text-sm font-bold drop-shadow-lg">
+                      <div className="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 className="headingFont text-[#194479] text-base font-bold group-hover:text-white transition-colors duration-300">
                           {feature.title}
                         </h3>
                       </div>

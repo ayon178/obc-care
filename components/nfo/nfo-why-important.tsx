@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { Clock, Shield, Eye, Globe2, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
@@ -13,28 +12,24 @@ export default function NfoWhyImportant() {
       icon: Clock,
       title: t("benefits.0.title"),
       description: t("benefits.0.desc"),
-      image: "/services/shipment.jpeg",
       color: "#194479",
     },
     {
       icon: Shield,
       title: t("benefits.1.title"),
       description: t("benefits.1.desc"),
-      image: "/services/shipment.jpeg",
       color: "#91c73e",
     },
     {
       icon: Eye,
       title: t("benefits.2.title"),
       description: t("benefits.2.desc"),
-      image: "/services/shipment.jpeg",
       color: "#194479",
     },
     {
       icon: Globe2,
       title: t("benefits.3.title"),
       description: t("benefits.3.desc"),
-      image: "/services/shipment.jpeg",
       color: "#91c73e",
     },
   ]
@@ -115,30 +110,21 @@ export default function NfoWhyImportant() {
                   className="group relative"
                 >
                   {/* Card Container */}
-                  <div className="relative h-full rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white">
-                    {/* Image Section */}
-                    <div className="relative h-[200px] sm:h-[220px] md:h-[240px] overflow-hidden">
-                      <Image
-                        src={benefit.image}
-                        alt={benefit.title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      {/* Gradient Overlay */}
-                      <div
-                        className="absolute inset-0"
-                        style={{
-                          background: `linear-gradient(to bottom, ${benefit.color}00, ${benefit.color}E6)`,
-                        }}
-                      />
-                      
+                  <div className="relative h-full rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white border border-gray-100">
+                    {/* Image/Box Section */}
+                    <div className="relative h-[200px] sm:h-[180px] md:h-[200px] overflow-hidden bg-gradient-to-br from-[#194479] to-[#1a4a7f] transition-colors duration-500">
+                      {/* Decorative Background Icon */}
+                      <div className="absolute -bottom-4 -left-4">
+                         <Icon className="w-32 h-32 text-white/5 group-hover:text-white/10 transition-colors duration-500 rotate-12 transform" />
+                      </div>
+
                       {/* Icon Badge - Top Right */}
                       <div className="absolute top-4 right-4">
                         <motion.div
                           whileHover={{ scale: 1.1, rotate: 5 }}
-                          className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center group-hover:bg-white/30 transition-all duration-300"
+                          className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300"
                         >
-                          <Icon className="w-7 h-7 text-white" />
+                          <Icon className="w-7 h-7 text-white transition-colors duration-300" />
                         </motion.div>
                       </div>
 
@@ -196,7 +182,7 @@ export default function NfoWhyImportant() {
             className="mt-12 md:mt-16 max-w-4xl mx-auto"
           >
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#194479] to-[#1a4a7f] p-8 md:p-10 shadow-2xl">
-              <div className="absolute inset-0 bg-[url('/services/shipment.jpeg')] opacity-10 bg-cover bg-center" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
               <div className="relative z-10 text-center text-white">
                 <h3 className="headingFont text-2xl md:text-3xl font-bold mb-4">
                   {t("ctaTitle")}

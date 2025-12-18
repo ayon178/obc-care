@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { User, ArrowRight, CheckCircle2, Plane, Clock, Globe } from "lucide-react"
 import Link from "next/link"
@@ -51,7 +50,7 @@ export default function NfoJoin() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
-          {/* Split Layout: Text Left, Image Right */}
+          {/* Split Layout: Text Left, Box Right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left: Text Content */}
             <motion.div
@@ -130,7 +129,7 @@ export default function NfoJoin() {
               </div>
             </motion.div>
 
-            {/* Right: Image with Decorative Elements */}
+            {/* Right: Box with Decorative Elements (Replaces Image) */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -138,35 +137,34 @@ export default function NfoJoin() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <div className="relative h-[500px] md:h-[600px]">
-                  <Image
-                    src="/services/shipment.jpeg"
-                    alt="NFO Operations Partner"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/80 via-[#194479]/40 to-transparent" />
-                  
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#194479] to-[#1a4a7f]">
+                <div className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
+                   {/* Abstract Decorative Background */}
+                   <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
+                   <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#91c73e]/10 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3" />
+                   
+                   {/* Large Rotated Icon */}
+                   <Plane className="absolute w-[400px] h-[400px] text-white/5 -rotate-12" />
+
                   {/* Floating Stats Card */}
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    className="absolute top-6 left-6 right-6"
+                    className="absolute top-8 left-8 right-8"
                   >
-                    <div className="bg-white/95 backdrop-blur-md rounded-2xl p-5 md:p-6 shadow-xl border border-white/20">
+                    <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 md:p-6 shadow-xl border border-white/20">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#91c73e] to-[#7bb033] flex items-center justify-center">
+                        <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#91c73e] to-[#7bb033] flex items-center justify-center shadow-lg">
                           <Plane className="w-7 h-7 text-white" />
                         </div>
                         <div>
-                          <div className="text-2xl md:text-3xl font-bold text-[#194479]">{t("stats.operations.value")}</div>
-                          <div className="text-sm text-gray-600">{t("stats.operations.label")}</div>
+                          <div className="text-2xl md:text-3xl font-bold text-white">{t("stats.operations.value")}</div>
+                          <div className="text-sm text-white/80">{t("stats.operations.label")}</div>
                         </div>
                       </div>
-                      <p className="paragraphFont text-gray-700 text-sm md:text-base">
+                      <p className="paragraphFont text-white/90 text-sm md:text-base">
                         {t("stats.operations.desc")}
                       </p>
                     </div>
@@ -180,8 +178,8 @@ export default function NfoJoin() {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     className="absolute bottom-6 right-6"
                   >
-                    <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md border-2 border-white/30 flex items-center justify-center shadow-xl">
-                      <User className="w-8 h-8 text-white" />
+                    <div className="w-20 h-20 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-xl">
+                      <User className="w-10 h-10 text-white" />
                     </div>
                   </motion.div>
                 </div>
