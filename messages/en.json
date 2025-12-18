@@ -92,7 +92,7 @@
       "0": {
         "firstLine": "Global Logistics Solutions",
         "secondLine": "You Can Trust",
-        "smallLine": "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
+        "smallLine": "Fast. Secure. Reliable. We move your time-critical shipments across the globe, 24/7.",
         "firstButtonText": "Get a Free Quote",
         "secondButtonText": "Learn More About Our Services"
       },
@@ -151,7 +151,7 @@
   },
   "LogisticsAdvantage": {
     "label": "Our Advantage",
-    "title": "Fast, Secure, and Global — Our Logistics Advantage",
+    "title": "Fast, Secure, and Global Our Logistics Advantage",
     "subtitle": "Your deadlines drive us.",
     "p1": "OBC Care provides end-to-end logistics solutions designed for industries that can’t afford delays: <bold>aviation, automotive, and electronics.</bold>",
     "p2": "We coordinate first and last mile deliveries, onboard couriers, customs clearance, and next-flight-out (NFO) arrangements to ensure every shipment arrives when it's needed most.",
@@ -204,7 +204,7 @@
   },
   "ServicesBanner": {
     "title": "Delivering Precision-Driven <br /> <green>Logistics Solutions</green>",
-    "description": "For time-critical shipments across the globe — from AOG and automotive parts to electronics and industrial components.",
+    "description": "For time-critical shipments across the globe from AOG and automotive parts to electronics and industrial components.",
     "features": {
       "fast": "Fast",
       "secure": "Secure",
@@ -218,7 +218,7 @@
       "label": "Our Core Services",
       "title": "Priority <br /> <gradient>Logistics Solutions</gradient>",
       "p1": "At OBC Care, we understand that <bold>downtime costs money</bold>. That's why we provide priority logistics solutions tailored for industries that demand speed, security, and global reach.",
-      "p2": "Our expertise ensures that every shipment — big or small — arrives <green>safely, swiftly, and seamlessly</green>."
+      "p2": "Our expertise ensures that every shipment big or small arrives <green>safely, swiftly, and seamlessly</green>."
     },
     "items": {
       "0": {
@@ -249,7 +249,7 @@
     "steps": {
       "0": {
         "title": "Request & Assessment",
-        "description": "Submit your shipment details — our operations team will evaluate the fastest route and provide a quote within 15 minutes."
+        "description": "Submit your shipment details our operations team will evaluate the fastest route and provide a quote within 15 minutes."
       },
       "1": {
         "title": "Booking & Documentation",
@@ -265,7 +265,7 @@
       },
       "4": {
         "title": "Final Delivery Confirmation",
-        "description": "Once your shipment arrives, you'll receive instant proof of delivery — safely and on time."
+        "description": "Once your shipment arrives, you'll receive instant proof of delivery safely and on time."
       }
     }
   },
@@ -273,24 +273,24 @@
     "header": {
       "label": "Flexible Delivery Options",
       "title": "Built for Every Route and Requirement",
-      "description": "We tailor each transport solution to fit your operation's needs — whether it's time-critical, sensitive, or high-value cargo."
+      "description": "We tailor each transport solution to fit your operation's needs whether it's time-critical, sensitive, or high-value cargo."
     },
     "options": {
       "door-to-door": {
         "title": "Door-to-Door",
-        "description": "Complete pickup and delivery from sender to receiver — full convenience, zero hassle."
+        "description": "Complete pickup and delivery from sender to receiver full convenience, zero hassle."
       },
       "airport-to-airport": {
         "title": "Airport-to-Airport",
-        "description": "Ideal for international freight — coordination from origin to destination airports efficiently."
+        "description": "Ideal for international freight coordination from origin to destination airports efficiently."
       },
       "door-to-airport": {
         "title": "Door-to-Airport",
-        "description": "Perfect for shippers sending goods abroad — we handle local pickup, packaging, and airline dispatch."
+        "description": "Perfect for shippers sending goods abroad we handle local pickup, packaging, and airline dispatch."
       },
       "airport-to-door": {
         "title": "Airport-to-Door",
-        "description": "We take over once your shipment lands — handling customs and fast last-mile delivery to your receiver."
+        "description": "We take over once your shipment lands handling customs and fast last-mile delivery to your receiver."
       }
     }
   },
@@ -298,7 +298,7 @@
     "header": {
       "label": "How We Move Your Shipments",
       "title": "Fast. Secure. Global.",
-      "description": "Every delivery is different — that’s why we customize our logistics approach for efficiency and precision."
+      "description": "Every delivery is different that’s why we customize our logistics approach for efficiency and precision."
     },
     "methods": {
       "air": {
@@ -318,12 +318,12 @@
         }
       }
     },
-    "imageCaption": "OBC missions, FM/LM or NFO in action — priority handling worldwide."     
+    "imageCaption": "OBC missions, FM/LM or NFO in action priority handling worldwide."     
   },
   "ObcBanner": {
     "badge": "Onboard Courier (OBC) Service",
-    "title": "From airport to doorstep — hand‑carried, monitored, and delivered with care.",
-    "description": "We move your most time‑critical, high‑value shipments with priority handling and full visibility — 24/7, worldwide.",
+    "title": "From airport to doorstep hand‑carried, monitored, and delivered with care.",
+    "description": "We move your most time‑critical, high‑value shipments with priority handling and full visibility 24/7, worldwide.",
     "getQuote": "Get a Free Quote",
     "talkTeam": "Talk to Our Team"
   },
@@ -341,8 +341,8 @@
     "description": "OBC services keep operations running in aviation, automotive, tech, and manufacturing by eliminating delays and maintaining custody at every step.",
     "items": {
       "0": { "title": "Zero Room for Error", "description": "Avoid misrouting, loss, or delays common in standard air cargo with hand-carry supervision." },
-      "1": { "title": "Immediate Availability", "description": "Your shipment moves on the next available flight — not in days." },
-      "2": { "title": "Continuous Control", "description": "Courier handles customs, security, and delivery personally — no third‑party handovers." },
+      "1": { "title": "Immediate Availability", "description": "Your shipment moves on the next available flight not in days." },
+      "2": { "title": "Continuous Control", "description": "Courier handles customs, security, and delivery personally no third‑party handovers." },
       "3": { "title": "Peace of Mind", "description": "Live status updates ensure full visibility from pickup to final handover." },
       "4": { "title": "Critical for Urgent Industries", "description": "Ideal for AOG parts, prototypes, sensitive items, and confidential documents." }
     }
@@ -359,7 +359,7 @@
       "subtitle": "Hand‑carry operations with auditable custody and proactive exception handling."
     },
     "items": {
-      "0": { "title": "Speed You Can Rely On", "description": "Next available flight — no cargo wait or consolidation delays." },
+      "0": { "title": "Speed You Can Rely On", "description": "Next available flight no cargo wait or consolidation delays." },
       "1": { "title": "Maximum Security", "description": "Continuous custody from check‑in to customs to handover." },
       "2": { "title": "Real‑Time Updates", "description": "Live notifications for flight status and delivery confirmation." },
       "3": { "title": "Global Coverage", "description": "Rapid mobilization across Europe, Asia, Middle East, North America." },
@@ -380,7 +380,7 @@
       "1": { "title": "Automotive", "description": "Critical components and prototypes delivered to production lines." },
       "2": { "title": "Technology & Electronics", "description": "Secure movement of chips, prototypes, and sensitive data carriers." },
       "3": { "title": "Industrial & Manufacturing", "description": "Avoid downtime with fast delivery of essential machinery parts." },
-      "4": { "title": "Documents & Confidential", "description": "Legal, diplomatic, or business‑sensitive items — safely hand‑carried." }
+      "4": { "title": "Documents & Confidential", "description": "Legal, diplomatic, or business‑sensitive items safely hand‑carried." }
     }
   },
   "ObcHowItWorks": {
@@ -392,13 +392,13 @@
       "1": { "title": "Courier Assignment", "description": "Nearest available OBC deployed for immediate dispatch." },
       "2": { "title": "Pickup & Verification", "description": "Shipment verified, sealed, and escorted to the airport." },
       "3": { "title": "In‑Transit Updates", "description": "Live notifications from departure to landing." },
-      "4": { "title": "Final Delivery", "description": "Courier hand‑delivers directly to the consignee — fast and secure." }
+      "4": { "title": "Final Delivery", "description": "Courier hand‑delivers directly to the consignee fast and secure." }
     }
   },
   "ObcNetwork": {
     "badge": "OBC Network",
     "title": "A global hand‑carry network on standby",
-    "description": "With trained couriers stationed across major hubs, we dispatch the nearest OBC within minutes — ensuring priority handling and continuous custody.",
+    "description": "With trained couriers stationed across major hubs, we dispatch the nearest OBC within minutes ensuring priority handling and continuous custody.",
     "stats": {
       "activeObcs": "Active OBCs",
       "countries": "Countries",
@@ -413,7 +413,7 @@
   "ObcJoin": {
     "badge": "Join Our Team",
     "title": "Become an On Board Courier",
-    "description1": "Join a global network of professional couriers who deliver critical shipments with precision and care. Be part of missions that matter — from urgent medical supplies to time-sensitive industrial parts.",
+    "description1": "Join a global network of professional couriers who deliver critical shipments with precision and care. Be part of missions that matter from urgent medical supplies to time-sensitive industrial parts.",
     "description2": "At OBC Care, we value reliability, professionalism, and a commitment to excellence. If you're ready to make a difference while traveling the world, we want to hear from you.",
     "cta": "Start your journey with OBC Care today",
     "imageAlt": "On Board Courier professional",
@@ -433,17 +433,17 @@
   },
   "FmlmBanner": {
     "badge": "First Mile / Last Mile Delivery",
-    "title": "Bridging every mile — from pickup to delivery, with no delays.",
-    "description": "Seamless ground transport connecting airports, warehouses, and destinations with speed, precision, and 24/7 availability — worldwide.",
+    "title": "Bridging every mile from pickup to delivery, with no delays.",
+    "description": "Seamless ground transport connecting airports, warehouses, and destinations with speed, precision, and 24/7 availability worldwide.",
     "getQuote": "Get a Free Quote",
     "talkTeam": "Talk to Our Team"
   },
   "FmlmWhatIs": {
     "badge": "What Is First Mile / Last Mile Delivery?",
-    "title": "Every shipment begins with a first mile and ends with a last mile — and both are critical.",
-    "firstMile": { "title": "First Mile Delivery", "description": "Transporting goods from the shipper's location (like a warehouse or supplier) to the next logistics point — often the airport or freight forwarder." },
+    "title": "Every shipment begins with a first mile and ends with a last mile and both are critical.",
+    "firstMile": { "title": "First Mile Delivery", "description": "Transporting goods from the shipper's location (like a warehouse or supplier) to the next logistics point often the airport or freight forwarder." },
     "lastMile": { "title": "Last Mile Delivery", "description": "The final stretch, moving shipments from the airport, customs warehouse, or terminal directly to the consignee's doorstep." },
-    "description": "At OBC Care, we ensure both ends of the journey are handled with speed, precision, and care — connecting your cargo from origin to destination seamlessly.",
+    "description": "At OBC Care, we ensure both ends of the journey are handled with speed, precision, and care connecting your cargo from origin to destination seamlessly.",
     "imageAlt": "First Mile Last Mile Delivery",
     "stats": {
       "availability": "Availability",
@@ -465,7 +465,7 @@
   "FmlmSolutions": {
     "badge": "Our FM/LM Delivery Solutions",
     "title": "We understand that time is everything.",
-    "description": "That's why OBC Care's First Mile / Last Mile Delivery is designed for efficiency, visibility, and reliability — from pickup to delivery.",
+    "description": "That's why OBC Care's First Mile / Last Mile Delivery is designed for efficiency, visibility, and reliability from pickup to delivery.",
     "builtForSpeed": {
       "title": "Built for Speed & Reliability",
       "subtitle": "Ground transport operations with real-time tracking and proactive coordination."
@@ -476,15 +476,15 @@
       "accountable": "Accountable"
     },
     "items": {
-      "0": { "title": "First Mile Delivery", "description": "Pickup from your facility to airport or freight partner — aligned precisely with flight schedules." },
-      "1": { "title": "Last Mile Delivery", "description": "From customs or airport to consignee's door — fast, secure, and fully coordinated." },
+      "0": { "title": "First Mile Delivery", "description": "Pickup from your facility to airport or freight partner aligned precisely with flight schedules." },
+      "1": { "title": "Last Mile Delivery", "description": "From customs or airport to consignee's door fast secure and fully coordinated." },
       "2": { "title": "Express Ground Transfers", "description": "Dedicated vehicles for local or regional movements that demand urgency." },
-      "3": { "title": "Direct Drive Options", "description": "Point-to-point transport — no stops, no detours, no waiting." }
+      "3": { "title": "Direct Drive Options", "description": "Point-to-point transport no stops no detours no waiting." }
     }
   },
   "FmlmHowItWorks": {
     "badge": "How It Works",
-    "title": "From Pickup to Delivery — Seamless Coordination",
+    "title": "From Pickup to Delivery Seamless Coordination",
     "description": "A streamlined process ensuring your shipment moves efficiently from origin to destination.",
     "steps": {
       "0": { "title": "Pickup Coordination", "description": "Our operations team identifies the fastest route and dispatches a driver immediately." },
@@ -500,15 +500,15 @@
     "items": {
       "0": { "title": "24/7 Availability", "description": "Always operational, across time zones and weekends." },
       "1": { "title": "Trained, Verified Drivers", "description": "Professionals with logistics expertise and security clearance." },
-      "2": { "title": "Real-Time Updates", "description": "Stay informed at every milestone — no uncertainty." },
-      "3": { "title": "Global Coordination", "description": "Door-to-door, airport-to-airport, or mixed modes — we connect every link." }
+      "2": { "title": "Real-Time Updates", "description": "Stay informed at every milestone no uncertainty." },
+      "3": { "title": "Global Coordination", "description": "Door-to-door, airport-to-airport, or mixed modes we connect every link." }
     }
   },
   "FmlmNetwork": {
     "badge": "FM/LM Network",
     "title": "Global Ground Coordination at Your Fingertips",
     "description1": "With hundreds of professional drivers and logistics partners across Asia, Europe, and the Americas, OBC Care guarantees seamless global ground coordination.",
-    "description2": "Whether it's door-to-door, airport-to-door, door-to-airport, or airport-to-airport, our FM/LM network is built to move your cargo efficiently — anytime, anywhere.",
+    "description2": "Whether it's door-to-door, airport-to-door, door-to-airport, or airport-to-airport, our FM/LM network is built to move your cargo efficiently anytime, anywhere.",
     "stats": {
       "drivers": { "label": "Professional Drivers", "value": "500+" },
       "coverage": { "label": "Global Coverage", "value": "70+" },
@@ -523,7 +523,7 @@
   "FmlmJoin": {
     "badge": "Join Our Team",
     "title": "Become a First & Last Mile Driver",
-    "description1": "Want to join our fast-moving logistics team? Every mile you drive makes a difference — ensuring critical shipments reach their destinations on time.",
+    "description1": "Want to join our fast-moving logistics team? Every mile you drive makes a difference ensuring critical shipments reach their destinations on time.",
     "description2": "As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.",
     "description3": "Whether you're an experienced courier or a professional driver looking to enter time-critical logistics, we're always looking for reliable partners worldwide to grow our network.",
     "benefits": {
@@ -539,9 +539,9 @@
   },
   "FmlmCta": {
     "title": "Your Shipment, Moved with Precision",
-    "description": "From the first pickup to the last handover, OBC Care ensures your shipment never loses momentum. We deliver speed, accuracy, and accountability — so your operations run smoothly without interruption.",
+    "description": "From the first pickup to the last handover, OBC Care ensures your shipment never loses momentum. We deliver speed, accuracy, and accountability so your operations run smoothly without interruption.",
     "subheadline": "Get a Free Quote Today",
-    "closing": "Let's move your shipment — faster, safer, and smarter.",
+    "closing": "Let's move your shipment faster, safer, and smarter.",
     "primary": "Get a Free Quote Today"
   },
   "CustomsBanner": {
@@ -554,7 +554,7 @@
   "CustomsWhatIs": {
     "badge": "What Is Customs Clearance Assistance?",
     "title": "Clearing Borders, Simplifying Logistics",
-    "description1": "International trade can be complex — but with OBC Care, customs clearance becomes simple, swift, and worry-free.",
+    "description1": "International trade can be complex but with OBC Care, customs clearance becomes simple, swift, and worry-free.",
     "description2": "Our dedicated team handles all import and export requirements with precision and full compliance, ensuring your shipments move seamlessly from one country to the next without costly delays or document errors.",
     "solutionTitle": "Full-Service Solution",
     "solutionDesc": "Customs Clearance Assistance is a full-service solution that manages the legal and administrative steps required to move goods across international borders.",
@@ -606,13 +606,13 @@
       "0": { "title": "Global Expertise, Local Compliance", "desc": "Our knowledge of both international and country-specific customs ensures fast and lawful clearance." },
       "1": { "title": "24/7 Monitoring & Updates", "desc": "Stay informed with live progress reports and milestone updates." },
       "2": { "title": "Zero Delay Commitment", "desc": "We act fast to prevent demurrage fees and storage penalties." },
-      "3": { "title": "All-in-One Logistics Partner", "desc": "From pickup to final handover — OBC Care manages it all with precision and transparency." }
+      "3": { "title": "All-in-One Logistics Partner", "desc": "From pickup to final handover OBC Care manages it all with precision and transparency." }
     }
   },
   "CustomsNetwork": {
     "badge": "Customs Network",
     "title": "Global Customs Partners, Local Expertise",
-    "description1": "Our customs partners and licensed agents operate across major trade lanes and key airports worldwide — ensuring fast, compliant clearance across regions.",
+    "description1": "Our customs partners and licensed agents operate across major trade lanes and key airports worldwide ensuring fast, compliant clearance across regions.",
     "description2": "We coordinate local expertise with global oversight so your shipment doesn't stop at the border.",
     "stats": {
       "agents": { "label": "Licensed Agents", "value": "200+" },
@@ -650,22 +650,22 @@
     "title": "Simplify Your Global Deliveries",
     "description": "Avoid the hassle, save time, and stay compliant. With OBC Care, you get a customs clearance partner that works as fast as your business moves.",
     "subheadline": "Get a Free Quote Today",
-    "closing": "Let us handle your customs — you focus on what matters most.",
+    "closing": "Let us handle your customs you focus on what matters most.",
     "primary": "Get a Free Quote Today"
   },
   "NfoBanner": {
     "badge": "OBC Care – Next Flight Out (NFO) Solutions",
     "title": "When every minute counts, we get your shipment on the very next flight.",
-    "description": "From AOG emergencies to urgent production parts, OBC Care delivers the fastest possible transport solution — with 24/7 coordination and full shipment visibility.",
+    "description": "From AOG emergencies to urgent production parts, OBC Care delivers the fastest possible transport solution with 24/7 coordination and full shipment visibility.",
     "primaryCta": "Book an NFO Shipment",
     "secondaryCta": "Get a Free Quote"
   },
   "NfoIntro": {
     "title": "Time-Critical Logistics Without Compromise",
     "imageCardText1": "Delays aren't an option when critical operations depend on your shipment's arrival.",
-    "imageCardText2": "That's why OBC Care's Next Flight Out (NFO) service prioritizes your cargo on the earliest available flight — ensuring zero downtime, full visibility, and guaranteed speed.",
+    "imageCardText2": "That's why OBC Care's Next Flight Out (NFO) service prioritizes your cargo on the earliest available flight ensuring zero downtime, full visibility, and guaranteed speed.",
     "textCard1": "Our global team monitors every route, flight schedule, and customs requirement in real time, arranging the quickest and most reliable path from pickup to delivery.",
-    "textCard2": "Whether it's aviation parts, automotive components, or electronic equipment, our NFO service keeps your business moving — no matter where you are in the world.",
+    "textCard2": "Whether it's aviation parts, automotive components, or electronic equipment, our NFO service keeps your business moving no matter where you are in the world.",
     "features": {
       "0": { "title": "24/7 Monitoring" },
       "1": { "title": "Global Coverage" },
@@ -683,7 +683,7 @@
     "card1": { "title": "Fastest Booking", "desc": "Your cargo is booked on the very next available commercial or cargo flight." },
     "card2": { "title": "Real-Time Routing", "desc": "Expert coordination for record speed." },
     "card3": { "title": "Minimize Downtime", "desc": "Avoiding operational losses with guaranteed speed and reliability." },
-    "description1": "It ensures that your cargo is booked on the very next available commercial or cargo flight — minimizing downtime and avoiding operational losses.",
+    "description1": "It ensures that your cargo is booked on the very next available commercial or cargo flight minimizing downtime and avoiding operational losses.",
     "description2": "At OBC Care, we combine real-time routing, dedicated handling, and expert coordination to move your shipment across borders at record speed."
   },
   "NfoWhyImportant": {
@@ -694,20 +694,20 @@
       "0": { "title": "Same-Day Dispatch", "desc": "Guarantee same-day dispatch on the next available flight." },
       "1": { "title": "Prevent Halts", "desc": "Prevent costly production or operational halts." },
       "2": { "title": "Real-Time Visibility", "desc": "Ensure real-time visibility throughout the journey." },
-      "3": { "title": "Global Transport", "desc": "Provide reliable, secure, and fully compliant transport — anywhere in the world." }
+      "3": { "title": "Global Transport", "desc": "Provide reliable, secure, and fully compliant transport anywhere in the world." }
     },
     "ctaTitle": "Ready to Experience Zero-Delay Logistics?",
     "ctaDesc": "Get your shipment on the next available flight with our 24/7 NFO service."
   },
   "NfoHowItWorks": {
     "badge": "How NFO Works",
-    "title": "From Request to Delivery — In Record Time",
+    "title": "From Request to Delivery In Record Time",
     "description": "A streamlined 5-step process ensuring your time-critical shipment reaches its destination on the next available flight.",
     "steps": {
-      "0": { "title": "Immediate Booking & Route Planning", "desc": "Our operations team identifies the fastest flight option available — commercial or cargo — within minutes of your request." },
+      "0": { "title": "Immediate Booking & Route Planning", "desc": "Our operations team identifies the fastest flight option available commercial or cargo within minutes of your request." },
       "1": { "title": "Priority Pickup & Documentation", "desc": "We arrange immediate pickup and verify all paperwork for seamless dispatch." },
       "2": { "title": "Onboard or Cargo Coordination", "desc": "Depending on urgency, we either book the shipment on the next flight or assign an onboard courier for direct escort." },
-      "3": { "title": "Real-Time Updates", "desc": "Get milestone notifications at every stage — from acceptance to arrival." },
+      "3": { "title": "Real-Time Updates", "desc": "Get milestone notifications at every stage from acceptance to arrival." },
       "4": { "title": "Fast Final Delivery", "desc": "Once landed, we handle customs clearance and deliver your shipment straight to its destination." }
     },
     "cta": "Ready to get started? Book your NFO shipment now"
@@ -715,18 +715,18 @@
   "NfoWhyChoose": {
     "title": "Why Choose OBC Care for NFO Shipments",
     "features": {
-      "0": { "title": "Fastest Global Option", "desc": "Your shipment is prioritized on the next available flight — guaranteed." },
+      "0": { "title": "Fastest Global Option", "desc": "Your shipment is prioritized on the next available flight guaranteed." },
       "1": { "title": "24/7 Operations Team", "desc": "Our logistics experts monitor global routes and coordinate across time zones for uninterrupted service." },
-      "2": { "title": "Integrated Customs & Ground Support", "desc": "We manage all clearances, airport handling, and last-mile arrangements — no handoffs or delays." },
+      "2": { "title": "Integrated Customs & Ground Support", "desc": "We manage all clearances, airport handling, and last-mile arrangements no handoffs or delays." },
       "3": { "title": "Real-Time Updates", "desc": "Receive immediate status alerts for every milestone until delivery is confirmed." },
       "4": { "title": "Flexible & Secure Handling", "desc": "From small parcels to high-value cargo, each shipment is handled with accuracy and care." }
     },
     "highlightTitle": "Experience the Fastest Air Freight Solution",
-    "highlightDesc": "Join thousands of businesses that trust OBC Care for their time-critical shipments. Get your cargo on the next flight — guaranteed."
+    "highlightDesc": "Join thousands of businesses that trust OBC Care for their time-critical shipments. Get your cargo on the next flight guaranteed."
   },
   "NfoNetwork": {
     "badge": "Global NFO Network",
-    "title": "With access to thousands of commercial and cargo flights worldwide, OBC Care ensures the fastest routing possible — anytime, anywhere.",
+    "title": "With access to thousands of commercial and cargo flights worldwide, OBC Care ensures the fastest routing possible anytime, anywhere.",
     "description": "Our control tower operates 24/7 to monitor routes, weather, customs, and flight availability in real time.",
     "stats": {
       "flights": { "label": "Flights Daily", "value": "1000+" },
@@ -764,13 +764,13 @@
   "NfoCta": {
     "title": "Your Urgent Shipment, Airborne in Hours",
     "description": "When urgency is non-negotiable, trust OBC Care's NFO Solutions to keep your business moving.",
-    "subDescription": "We combine speed, reliability, and transparency — ensuring your shipment arrives when it's needed most.",
+    "subDescription": "We combine speed, reliability, and transparency ensuring your shipment arrives when it's needed most.",
     "button": "Get a Free Quote Now",
-    "closing": "Our team responds within minutes — because every second counts."
+    "closing": "Our team responds within minutes because every second counts."
   },
   "IndustriesBanner": {
     "badge": "Industries",
-    "title": "Delivering reliability across every sector — from aircraft engines to microchips, OBC Care ensures time-critical shipments reach their destination safely and on time.",
+    "title": "Delivering reliability across every sector from aircraft engines to microchips, OBC Care ensures time critical shipments reach their destination safely and on time.",
     "description": "When speed meets precision, every industry moves forward.",
     "ctaExplore": "Explore Our Industries",
     "ctaQuote": "Get a Free Quote"
@@ -813,15 +813,15 @@
   "AviationBanner": {
     "badge": "OBC Care – Aviation & AOG Logistics",
     "title": "When an aircraft is grounded, every second counts.",
-    "description": "OBC Care delivers critical AOG (Aircraft on Ground) parts and aviation materials — fast, secure, and globally coordinated.",
+    "description": "OBC Care delivers critical AOG (Aircraft on Ground) parts and aviation materials fast, secure, and globally coordinated.",
     "ctaRequest": "Request Immediate Support",
     "ctaQuote": "Get a Free Quote"
   },
   "AviationIntro": {
     "title": "Keeping Aircraft in Motion, One Delivery at a Time",
-    "p1": "An AOG situation can cost thousands per hour — but with OBC Care, downtime is minimized.",
+    "p1": "An AOG situation can cost thousands per hour but with OBC Care, downtime is minimized.",
     "p2": "Our dedicated aviation logistics team specializes in rapid response shipments, ensuring your critical components, spare parts, or documents reach their destination on the very next flight out.",
-    "p3": "We understand the aviation industry's precision demands — from customs clearance to airside access — and deliver your parts safely, efficiently, and without delay.",
+    "p3": "We understand the aviation industry's precision demands from customs clearance to airside access and deliver your parts safely, efficiently, and without delay.",
     "stats": {
       "desk": "AOG Desk",
       "priority": "Flight Priority"
@@ -854,7 +854,7 @@
     "description": "Trusted by aviation professionals worldwide for critical AOG logistics.",
     "benefits": {
       "0": { "title": "24/7 AOG Desk", "desc": "Always on call for critical aviation emergencies." },
-      "1": { "title": "Next Flight & Onboard Options", "desc": "We choose the fastest route available — NFO or hand-carry." },
+      "1": { "title": "Next Flight & Onboard Options", "desc": "We choose the fastest route available NFO or hand-carry." },
       "2": { "title": "Airline-Approved Couriers", "desc": "Our team is trained in handling aviation cargo and airside operations." },
       "3": { "title": "Full Compliance & Documentation", "desc": "We ensure all airway bills, certificates, and customs papers are correct and ready." },
       "4": { "title": "End-to-End Visibility", "desc": "Track every movement with real-time communication." }
@@ -862,22 +862,22 @@
   },
   "AviationCta": {
     "heading": "Your AOG, Our Priority",
-    "description": "When your aircraft can't move, we do — across borders, airports, and time zones.",
+    "description": "When your aircraft can't move, we do across borders, airports, and time zones.",
     "subDescription": "With OBC Care, your operations stay airborne, your schedule intact, and your confidence secure.",
     "subHeadline": "Get a Free Quote Today",
-    "subHeadlineItalic": "Let's get your aircraft back in the sky — fast, safe, and without compromise.",
+    "subHeadlineItalic": "Let's get your aircraft back in the sky fast, safe, and without compromise.",
     "button": "Get a Free Quote Today"
   },
   "AutomotiveBanner": {
     "badge": "OBC Care – Automotive & Manufacturing Solutions",
-    "title": "When production lines can't afford to stop, OBC Care keeps your supply chain moving — fast, precise, and globally coordinated.",
+    "title": "When production lines can't afford to stop, OBC Care keeps your supply chain moving fast, precise, and globally coordinated.",
     "ctaRequest": "Request Urgent Pickup",
     "ctaQuote": "Get a Free Quote"
   },
   "AutomotiveIntro": {
     "title": "Driving Efficiency, Delivering Performance",
     "p1": "In automotive and manufacturing, every delay costs time, money, and customer trust.",
-    "p2": "That's why OBC Care provides time-critical logistics designed for just-in-time operations — ensuring parts, tools, and prototypes arrive exactly when and where they're needed.",
+    "p2": "That's why OBC Care provides time-critical logistics designed for just-in-time operations ensuring parts, tools, and prototypes arrive exactly when and where they're needed.",
     "p3": "From factory to assembly line, or supplier to OEM, our experts handle each shipment with precision and real-time coordination, reducing downtime and keeping your production running seamlessly.",
     "stats": {
       "downtime": "Downtime",
@@ -900,7 +900,7 @@
     "description": "A streamlined 5-step process ensuring your critical materials reach your production line on time, every time.",
     "steps": {
       "0": { "title": "Rapid Assessment", "desc": "We analyze your route, flight options, and delivery window within minutes." },
-      "1": { "title": "Next Flight or Direct Drive", "desc": "Your shipment moves immediately — by air or dedicated ground vehicle." },
+      "1": { "title": "Next Flight or Direct Drive", "desc": "Your shipment moves immediately by air or dedicated ground vehicle." },
       "2": { "title": "Customs & Documentation", "desc": "We handle all import/export formalities for smooth transitions." },
       "3": { "title": "Real Time Updates", "desc": "Get updated with every milestone from dispatch to delivery." },
       "4": { "title": "Direct Handover", "desc": "Shipment is personally delivered to your plant or technician." }
@@ -916,33 +916,33 @@
       "3": { "title": "Full Transparency", "desc": "Real-time visibility and delivery confirmation." }
     },
     "bottomCard": {
-        "title": "Your shipment, our mission — 24/7, across the globe.",
+        "title": "Your shipment, our mission 24/7, across the globe.",
         "desc": "Trusted by automotive manufacturers worldwide for critical supply chain logistics."
     }
   },
   "AutomotiveMission": {
-    "title": "Your shipment, our mission — 24/7, across the globe.",
+    "title": "Your shipment, our mission 24/7, across the globe.",
     "description": "Every industry relies on timely delivery. We ensure your mission-critical shipments reach their destination when it matters most, with full transparency and dedicated support every step of the way."
   },
   "AutomotiveCta": {
     "heading": "Keeping Your Production on Track",
-    "description": "In manufacturing, every minute matters — and we make sure none are lost.",
-    "subDescription": "With OBC Care, your critical materials arrive on time, every time — ensuring smooth operations, reduced costs, and uninterrupted workflow.",
+    "description": "In manufacturing, every minute matters and we make sure none are lost.",
+    "subDescription": "With OBC Care, your critical materials arrive on time, every time ensuring smooth operations, reduced costs, and uninterrupted workflow.",
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's keep your lines running and your commitments on schedule.",
     "button": "Get a Free Quote Today"
   },
   "ElectronicsBanner": {
-    "badge": "OBC Care – Electronics & Semiconductor Solutions",
-    "title": "Precision, protection, and performance — delivering your sensitive components fast and safely, anywhere in the world.",
+    "badge": "OBC Care Electronics & Semiconductor Solutions",
+    "title": "Precision, protection, and performance delivering your sensitive components fast and safely, anywhere in the world.",
     "ctaRequest": "Request Urgent Pickup",
     "ctaQuote": "Get a Free Quote"
   },
   "ElectronicsIntro": {
     "title": "Precision Logistics for a High-Tech World",
     "p1": "In the fast-moving world of electronics and semiconductors, even the smallest delay can disrupt entire production lines.",
-    "p2": "That's why OBC Care specializes in time-critical logistics for sensitive, high-value, and temperature-controlled components — ensuring every delivery is handled with speed, security, and precision.",
-    "p3": "From prototype chips to testing equipment and production wafers, our expert team coordinates every step — from pickup to customs to final delivery — with real-time updates and global compliance.",
+    "p2": "That's why OBC Care specializes in time-critical logistics for sensitive, high-value, and temperature-controlled components ensuring every delivery is handled with speed, security, and precision.",
+    "p3": "From prototype chips to testing equipment and production wafers, our expert team coordinates every step from pickup to customs to final delivery with real-time updates and global compliance.",
     "stats": {
       "esd": "ESD",
       "safe": "Safe",
@@ -983,28 +983,28 @@
     }
   },
   "ElectronicsMission": {
-    "title": "Your shipment, our mission — 24/7, across the globe.",
+    "title": "Your shipment, our mission 24/7, across the globe.",
     "description": "Every industry relies on timely delivery. We ensure your mission-critical shipments reach their destination when it matters most, with full transparency and dedicated support every step of the way."
   },
   "ElectronicsCta": {
     "heading": "Your Innovation, Delivered Fast",
     "description": "OBC Care empowers your production and R&D timelines with logistics precision you can count on.",
-    "subDescription": "From lab to line, from prototype to production — your technology moves faster with us.",
+    "subDescription": "From lab to line, from prototype to production your technology moves faster with us.",
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's move your sensitive electronics safely, securely, and right on time.",
     "button": "Get a Free Quote Today"
   },
   "IndustrialBanner": {
     "badge": "OBC Care – Industrial Machinery & Engineering Solutions",
-    "title": "Powering productivity through precision logistics — delivering heavy-duty parts, tools, and equipment safely and on time, anywhere in the world.",
+    "title": "Powering productivity through precision logistics delivering heavy-duty parts, tools, and equipment safely and on time, anywhere in the world.",
     "ctaRequest": "Request Urgent Pickup",
     "ctaQuote": "Get a Free Quote"
   },
   "IndustrialIntro": {
     "title": "Reliable Logistics for Heavy Industries",
     "p1": "In the world of industrial manufacturing and engineering, every minute of downtime counts.",
-    "p2": "That's why OBC Care provides time-critical logistics for machinery, spare parts, and specialized tools — ensuring your operations stay running, no matter where you are.",
-    "p3": "From production lines to construction sites, our logistics experts coordinate every shipment with speed, accuracy, and full visibility — minimizing disruption and maximizing productivity."
+    "p2": "That's why OBC Care provides time-critical logistics for machinery, spare parts, and specialized tools ensuring your operations stay running, no matter where you are.",
+    "p3": "From production lines to construction sites, our logistics experts coordinate every shipment with speed, accuracy, and full visibility minimizing disruption and maximizing productivity."
   },
   "IndustrialWhatWeHandle": {
     "title": "What We Handle",
@@ -1038,16 +1038,16 @@
       "3": { "title": "24/7 Tracking", "description": "Real-time visibility at every stage of transport." },
       "4": { "title": "Safety First", "description": "Compliance with all handling, labeling, and safety standards." }
     },
-    "imageCardTitle": "Your shipment, our mission — 24/7, across the globe.",
+    "imageCardTitle": "Your shipment, our mission 24/7, across the globe.",
     "imageCardDesc": "Trusted by industrial manufacturers worldwide for reliable logistics."
   },
   "IndustrialMission": {
-    "title": "Your shipment, our mission — 24/7, across the globe.",
+    "title": "Your shipment, our mission 24/7, across the globe.",
     "description": "Every industry relies on timely delivery. We ensure your mission-critical shipments reach their destination when it matters most, with full transparency and dedicated support every step of the way."
   },
   "IndustrialCta": {
     "heading": "Keep Your Operations Running Smoothly",
-    "description": "OBC Care ensures your machinery and engineering parts reach their destination — fast, safe, and ready for work.",
+    "description": "OBC Care ensures your machinery and engineering parts reach their destination fast, safe, and ready for work.",
     "subDescription": "From urgent replacements to project-critical deliveries, we deliver performance on time, every time.",
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's move your industrial parts securely and without delay.",
@@ -1062,7 +1062,7 @@
   "TechnologyIntro": {
     "title": "Secure and Swift Logistics for the Digital Age",
     "p1": "In today's connected world, data-driven operations can't afford downtime.",
-    "p2": "That's why OBC Care specializes in time-critical logistics for servers, networking devices, storage systems, and high-performance computing equipment — ensuring your technology moves fast, safe, and without compromise.",
+    "p2": "That's why OBC Care specializes in time-critical logistics for servers, networking devices, storage systems, and high-performance computing equipment ensuring your technology moves fast, safe, and without compromise.",
     "p3": "From IT infrastructure for data centers to field-deployed tech gear, we deliver end-to-end transport with care, security, and full traceability."
   },
   "TechnologyWhatWeHandle": {
@@ -1101,7 +1101,7 @@
   "TechnologyCta": {
     "heading": "Your Technology, Our Priority",
     "description": "We understand the urgency of modern tech operations.",
-    "subDescription": "Whether it's a server migration, prototype delivery, or data recovery mission — OBC Care delivers peace of mind with every shipment.",
+    "subDescription": "Whether it's a server migration, prototype delivery, or data recovery mission OBC Care delivers peace of mind with every shipment.",
     "subHeadline": "Get a Free Quote Today",
     "subHeadlineItalic": "Let's move your technology with precision, protection, and speed.",
     "button": "Get a Free Quote Today"
@@ -1116,7 +1116,7 @@
   "ConfidentialIntro": {
     "title": "Trusted Hand-Carry Delivery for Confidential Shipments",
     "p1": "When it comes to high-value or confidential documents, security and trust are non-negotiable.",
-    "p2": "OBC Care provides hand-carry courier services for time-critical, confidential, and sensitive materials — ensuring that your documents are never out of sight, never at risk, and always delivered on time.",
+    "p2": "OBC Care provides hand-carry courier services for time-critical, confidential, and sensitive materials ensuring that your documents are never out of sight, never at risk, and always delivered on time.",
     "p3": "From legal contracts to financial records and government papers, we protect your information with complete chain-of-custody control and real-time transparency."
   },
   "ConfidentialWhatWeHandle": {
@@ -1137,7 +1137,7 @@
     "steps": {
       "0": { "title": "Immediate Response", "desc": "Upon inquiry, our operations team arranges a hand-carry courier within minutes." },
       "1": { "title": "Verified Pickup", "desc": "Documents are personally collected and sealed for direct transit." },
-      "2": { "title": "Hand-Carry Escort", "desc": "A dedicated Onboard Courier (OBC) travels with your documents at all times — no third-party handling." },
+      "2": { "title": "Hand-Carry Escort", "desc": "A dedicated Onboard Courier (OBC) travels with your documents at all times no third-party handling." },
       "3": { "title": "Real-Time Tracking", "desc": "You receive milestone updates from pickup to delivery confirmation." },
       "4": { "title": "Proof of Delivery", "desc": "Signed, timestamped handover confirmation ensures complete accountability." }
     }
@@ -1147,7 +1147,7 @@
     "description": "Trusted by professionals worldwide for secure document delivery.",
     "benefits": {
       "0": { "title": "Absolute Discretion", "description": "Your shipment's details remain confidential at every stage." },
-      "1": { "title": "Direct Hand-Carry Only", "description": "No cargo holds or shared logistics — only person-to-person delivery." },
+      "1": { "title": "Direct Hand-Carry Only", "description": "No cargo holds or shared logistics only person-to-person delivery." },
       "2": { "title": "24/7 Availability", "description": "Global coordination for urgent legal, financial, or diplomatic shipments." },
       "3": { "title": "Full Chain-of-Custody", "description": "Every handover is documented and verified." },
       "4": { "title": "Trusted by Professionals", "description": "Chosen by law firms, financial institutions, and corporations worldwide." }
@@ -1158,7 +1158,7 @@
     "description": "From confidential contracts to government tenders, OBC Care delivers with integrity, speed, and unmatched reliability.",
     "subDescription": "",
     "subHeadline": "Get a Free Quote Today",
-    "subHeadlineItalic": "Let's secure your most important documents — with the precision and privacy they deserve.",
+    "subHeadlineItalic": "Let's secure your most important documents with the precision and privacy they deserve.",
     "button": "Get a Free Quote Today"
   },
   "AboutBanner": {
@@ -1166,7 +1166,7 @@
     "breadcrumbAbout": "About Us",
     "title": "ABOUT US",
     "description": "Driven by Passion. Defined by Precision. Delivered with Care.",
-    "description2": "At OBC Care, we move more than shipments — we move trust, reliability, and human dedication across borders"
+    "description2": "At OBC Care, we move more than shipments we move trust, reliability, and human dedication across borders"
   },
   "AboutIntro": {
     "whoWeAre": "about us",

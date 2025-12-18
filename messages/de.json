@@ -92,7 +92,7 @@
       "0": {
         "firstLine": "Globale Logistiklösungen",
         "secondLine": "Denen Sie vertrauen können",
-        "smallLine": "Schnell. Sicher. Zuverlässig. — Wir transportieren Ihre zeitkritischen Sendungen rund um die Uhr weltweit.",
+        "smallLine": "Schnell. Sicher. Zuverlässig. Wir transportieren Ihre zeitkritischen Sendungen rund um die Uhr weltweit.",
         "firstButtonText": "Kostenloses Angebot",
         "secondButtonText": "Mehr über unsere Dienste"
       },
@@ -151,7 +151,7 @@
   },
   "LogisticsAdvantage": {
     "label": "Unser Vorteil",
-    "title": "Schnell, Sicher und Global — Unser Logistikvorteil",
+    "title": "Schnell, Sicher und Global Unser Logistikvorteil",
     "subtitle": "Ihre Deadlines treiben uns an.",
     "p1": "OBC Care bietet End-to-End-Logistiklösungen für Branchen, die sich keine Verzögerungen leisten können: <bold>Luftfahrt, Automobil und Elektronik.</bold>",
     "p2": "Wir koordinieren Erste- und Letzte-Meile-Lieferungen, Onboard-Kuriere, Zollabfertigung und Next-Flight-Out (NFO)-Arrangements, um sicherzustellen, dass jede Sendung genau dann ankommt, wenn sie am dringendsten benötigt wird.",
@@ -203,7 +203,7 @@
   },
   "ServicesBanner": {
     "title": "Präzisionsgetriebene <br /> <green>Logistiklösungen</green> liefern",
-    "description": "Für zeitkritische Sendungen rund um den Globus — von AOG und Automobilteilen bis hin zu Elektronik und Industriekomponenten.",
+    "description": "Für zeitkritische Sendungen rund um den Globus von AOG und Automobilteilen bis hin zu Elektronik und Industriekomponenten.",
     "features": {
       "fast": "Schnell",
       "secure": "Sicher",
@@ -217,7 +217,7 @@
       "label": "Unsere Kerndienstleistungen",
       "title": "Prioritäts <br /> <gradient>Logistiklösungen</gradient>",
       "p1": "Bei OBC Care verstehen wir, dass <bold>Stillstand Geld kostet</bold>. Deshalb bieten wir Prioritätslogistiklösungen, die auf Branchen zugeschnitten sind, die Geschwindigkeit, Sicherheit und globale Reichweite erfordern.",
-      "p2": "Unsere Expertise stellt sicher, dass jede Sendung — groß oder klein — <green>sicher, schnell und nahtlos</green> ankommt."
+      "p2": "Unsere Expertise stellt sicher, dass jede Sendung groß oder klein <green>sicher, schnell und nahtlos</green> ankommt."
     },
     "items": {
       "0": {
@@ -248,7 +248,7 @@
     "steps": {
       "0": {
         "title": "Anfrage & Bewertung",
-        "description": "Senden Sie Ihre Sendungsdetails — unser Operationsteam bewertet die schnellste Route und erstellt innerhalb von 15 Minuten ein Angebot."
+        "description": "Senden Sie Ihre Sendungsdetails unser Operationsteam bewertet die schnellste Route und erstellt innerhalb von 15 Minuten ein Angebot."
       },
       "1": {
         "title": "Buchung & Dokumentation",
@@ -264,7 +264,7 @@
       },
       "4": {
         "title": "Endgültige Lieferbestätigung",
-        "description": "Sobald Ihre Sendung ankommt, erhalten Sie eine sofortige Lieferbestätigung — sicher und pünktlich."
+        "description": "Sobald Ihre Sendung ankommt, erhalten Sie eine sofortige Lieferbestätigung sicher und pünktlich."
       }
     }
   },
@@ -272,24 +272,24 @@
     "header": {
       "label": "Flexible Lieferoptionen",
       "title": "Gebaut für jede Route und Anforderung",
-      "description": "Wir passen jede Transportlösung an die Bedürfnisse Ihres Betriebs an — egal ob zeitkritisch, sensibel oder hochwertige Fracht."
+      "description": "Wir passen jede Transportlösung an die Bedürfnisse Ihres Betriebs an egal ob zeitkritisch, sensibel oder hochwertige Fracht."
     },
     "options": {
       "door-to-door": {
         "title": "Tür-zu-Tür",
-        "description": "Komplette Abholung und Lieferung vom Absender zum Empfänger — voller Komfort, kein Aufwand."
+        "description": "Komplette Abholung und Lieferung vom Absender zum Empfänger voller Komfort, kein Aufwand."
       },
       "airport-to-airport": {
         "title": "Flughafen-zu-Flughafen",
-        "description": "Ideal für internationale Fracht — effiziente Koordination vom Ursprungs- zum Zielflughafen."
+        "description": "Ideal für internationale Fracht effiziente Koordination vom Ursprungs- zum Zielflughafen."
       },
       "door-to-airport": {
         "title": "Tür-zu-Flughafen",
-        "description": "Perfekt für Versender, die Waren ins Ausland schicken — wir kümmern uns um die lokale Abholung, Verpackung und den Versand per Flugzeug."
+        "description": "Perfekt für Versender, die Waren ins Ausland schicken wir kümmern uns um die lokale Abholung, Verpackung und den Versand per Flugzeug."
       },
       "airport-to-door": {
         "title": "Flughafen-zu-Tür",
-        "description": "Wir übernehmen, sobald Ihre Sendung landet — kümmern uns um den Zoll und die schnelle Lieferung auf der letzten Meile zu Ihrem Empfänger."
+        "description": "Wir übernehmen, sobald Ihre Sendung landet kümmern uns um den Zoll und die schnelle Lieferung auf der letzten Meile zu Ihrem Empfänger."
       }
     }
   },
@@ -297,7 +297,7 @@
     "header": {
       "label": "Wie wir Ihre Sendungen bewegen",
       "title": "Schnell. Sicher. Global.",
-      "description": "Jede Lieferung ist anders — deshalb passen wir unseren Logistikansatz für Effizienz und Präzision an."
+      "description": "Jede Lieferung ist anders deshalb passen wir unseren Logistikansatz für Effizienz und Präzision an."
     },
     "methods": {
       "air": {
@@ -432,17 +432,17 @@
   },
   "FmlmBanner": {
     "badge": "Erste Meile / Letzte Meile Lieferung",
-    "title": "Jeden Kilometer überbrücken — von der Abholung bis zur Zustellung, ohne Verzögerungen.",
-    "description": "Nahtloser Bodentransport verbindet Flughäfen, Lager und Zielorte mit Geschwindigkeit, Präzision und 24/7 Verfügbarkeit — weltweit.",
+    "title": "Jeden Kilometer überbrücken von der Abholung bis zur Zustellung, ohne Verzögerungen.",
+    "description": "Nahtloser Bodentransport verbindet Flughäfen, Lager und Zielorte mit Geschwindigkeit, Präzision und 24/7 Verfügbarkeit weltweit.",
     "getQuote": "Kostenloses Angebot anfordern",
     "talkTeam": "Sprechen Sie mit unserem Team"
   },
   "FmlmWhatIs": {
     "badge": "Was ist First Mile / Last Mile Lieferung?",
-    "title": "Jede Sendung beginnt mit einer ersten Meile und endet mit einer letzten Meile — und beide sind entscheidend.",
-    "firstMile": { "title": "Erste Meile Lieferung", "description": "Transport von Waren vom Standort des Versenders (wie Lager oder Lieferant) zum nächsten Logistikpunkt — oft Flughafen oder Spediteur." },
+    "title": "Jede Sendung beginnt mit einer ersten Meile und endet mit einer letzten Meile und beide sind entscheidend.",
+    "firstMile": { "title": "Erste Meile Lieferung", "description": "Transport von Waren vom Standort des Versenders (wie Lager oder Lieferant) zum nächsten Logistikpunkt oft Flughafen oder Spediteur." },
     "lastMile": { "title": "Letzte Meile Lieferung", "description": "Die letzte Strecke, Transport der Sendungen vom Flughafen, Zolllager oder Terminal direkt zur Haustür des Empfängers." },
-    "description": "Bei OBC Care stellen wir sicher, dass beide Enden der Reise mit Schnelligkeit, Präzision und Sorgfalt behandelt werden — und verbinden Ihre Fracht nahtlos von Ursprung bis Ziel.",
+    "description": "Bei OBC Care stellen wir sicher, dass beide Enden der Reise mit Schnelligkeit, Präzision und Sorgfalt behandelt werden und verbinden Ihre Fracht nahtlos von Ursprung bis Ziel.",
     "imageAlt": "Erste Meile Letzte Meile Lieferung",
     "stats": {
       "availability": "Verfügbarkeit",
@@ -464,7 +464,7 @@
   "FmlmSolutions": {
     "badge": "Unsere FM/LM Lieferlösungen",
     "title": "Wir verstehen, dass Zeit alles ist.",
-    "description": "Deshalb ist OBC Cares First Mile / Last Mile Lieferung auf Effizienz, Sichtbarkeit und Zuverlässigkeit ausgelegt — von der Abholung bis zur Zustellung.",
+    "description": "Deshalb ist OBC Cares First Mile / Last Mile Lieferung auf Effizienz, Sichtbarkeit und Zuverlässigkeit ausgelegt von der Abholung bis zur Zustellung.",
     "builtForSpeed": {
       "title": "Gebaut für Geschwindigkeit & Zuverlässigkeit",
       "subtitle": "Bodentransportoperationen mit Echtzeit-Tracking und proaktiver Koordination."
@@ -475,15 +475,15 @@
       "accountable": "Verantwortlich"
     },
     "items": {
-      "0": { "title": "Erste Meile Lieferung", "description": "Abholung von Ihrer Einrichtung zum Flughafen oder Frachtpartner — präzise auf Flugpläne abgestimmt." },
-      "1": { "title": "Letzte Meile Lieferung", "description": "Vom Zoll oder Flughafen zur Tür des Empfängers — schnell, sicher und voll koordiniert." },
+      "0": { "title": "Erste Meile Lieferung", "description": "Abholung von Ihrer Einrichtung zum Flughafen oder Frachtpartner präzise auf Flugpläne abgestimmt." },
+      "1": { "title": "Letzte Meile Lieferung", "description": "Vom Zoll oder Flughafen zur Tür des Empfängers schnell, sicher und voll koordiniert." },
       "2": { "title": "Express Bodentransfers", "description": "Dedizierte Fahrzeuge für lokale oder regionale Bewegungen, die Dringlichkeit erfordern." },
-      "3": { "title": "Direktfahrt-Optionen", "description": "Punkt-zu-Punkt-Transport — keine Stopps, keine Umwege, kein Warten." }
+      "3": { "title": "Direktfahrt-Optionen", "description": "Punkt-zu-Punkt-Transport keine Stopps, keine Umwege, kein Warten." }
     }
   },
   "FmlmHowItWorks": {
     "badge": "Wie es funktioniert",
-    "title": "Von Abholung bis Zustellung — Nahtlose Koordination",
+    "title": "Von Abholung bis Zustellung Nahtlose Koordination",
     "description": "Ein optimierter Prozess, der sicherstellt, dass sich Ihre Sendung effizient von Ursprung bis Ziel bewegt.",
     "steps": {
       "0": { "title": "Abholungskoordination", "description": "Unser Operationsteam identifiziert die schnellste Route und entsendet sofort einen Fahrer." },
@@ -499,15 +499,15 @@
     "items": {
       "0": { "title": "24/7 Verfügbarkeit", "description": "Immer betriebsbereit, über Zeitzonen und Wochenenden hinweg." },
       "1": { "title": "Geschulte, verifizierte Fahrer", "description": "Profis mit Logistikexpertise und Sicherheitsüberprüfung." },
-      "2": { "title": "Echtzeit-Updates", "description": "Bleiben Sie bei jedem Meilenstein informiert — keine Ungewissheit." },
-      "3": { "title": "Globale Koordination", "description": "Tür-zu-Tür, Flughafen-zu-Flughafen oder gemischte Modi — wir verbinden jedes Glied." }
+      "2": { "title": "Echtzeit-Updates", "description": "Bleiben Sie bei jedem Meilenstein informiert keine Ungewissheit." },
+      "3": { "title": "Globale Koordination", "description": "Tür-zu-Tür, Flughafen-zu-Flughafen oder gemischte Modi wir verbinden jedes Glied." }
     }
   },
   "FmlmNetwork": {
     "badge": "FM/LM Netzwerk",
     "title": "Globale Bodenkoordination in Ihren Händen",
     "description1": "Mit Hunderten von professionellen Fahrern und Logistikpartnern in Asien, Europa und Amerika garantiert OBC Care nahtlose globale Bodenkoordination.",
-    "description2": "Ob Tür-zu-Tür, Flughafen-zu-Tür, Tür-zu-Flughafen oder Flughafen-zu-Flughafen, unser FM/LM-Netzwerk ist darauf ausgelegt, Ihre Fracht effizient zu bewegen — jederzeit und überall.",
+    "description2": "Ob Tür-zu-Tür, Flughafen-zu-Tür, Tür-zu-Flughafen oder Flughafen-zu-Flughafen, unser FM/LM-Netzwerk ist darauf ausgelegt, Ihre Fracht effizient zu bewegen jederzeit und überall.",
     "stats": {
       "drivers": { "label": "Professionelle Fahrer", "value": "500+" },
       "coverage": { "label": "Globale Abdeckung", "value": "70+" },
@@ -522,7 +522,7 @@
   "FmlmJoin": {
     "badge": "Werden Sie Teil unseres Teams",
     "title": "Werden Sie First & Last Mile Fahrer",
-    "description1": "Möchten Sie unserem schnelllebigen Logistikteam beitreten? Jede Meile, die Sie fahren, macht einen Unterschied — und stellt sicher, dass kritische Sendungen ihre Ziele pünktlich erreichen.",
+    "description1": "Möchten Sie unserem schnelllebigen Logistikteam beitreten? Jede Meile, die Sie fahren, macht einen Unterschied und stellt sicher, dass kritische Sendungen ihre Ziele pünktlich erreichen.",
     "description2": "Als Teil des globalen Netzwerks von OBC Care werden Ihnen hochwertige und zeitkritische Lieferungen anvertraut, unterstützt durch unser 24/7-Supportteam.",
     "description3": "Ob Sie ein erfahrener Kurier sind oder ein professioneller Fahrer, der in die zeitkritische Logistik einsteigen möchte, wir suchen immer nach zuverlässigen Partnern weltweit, um unser Netzwerk zu erweitern.",
     "benefits": {
@@ -538,9 +538,9 @@
   },
   "FmlmCta": {
     "title": "Ihre Sendung, mit Präzision bewegt",
-    "description": "Von der ersten Abholung bis zur letzten Übergabe stellt OBC Care sicher, dass Ihre Sendung nie an Schwung verliert. Wir liefern Geschwindigkeit, Genauigkeit und Verantwortlichkeit — damit Ihre Operationen reibungslos und ohne Unterbrechung laufen.",
+    "description": "Von der ersten Abholung bis zur letzten Übergabe stellt OBC Care sicher, dass Ihre Sendung nie an Schwung verliert. Wir liefern Geschwindigkeit, Genauigkeit und Verantwortlichkeit damit Ihre Operationen reibungslos und ohne Unterbrechung laufen.",
     "subheadline": "Kostenloses Angebot anfordern",
-    "closing": "Lassen Sie uns Ihre Sendung bewegen — schneller, sicherer und intelligenter.",
+    "closing": "Lassen Sie uns Ihre Sendung bewegen schneller, sicherer und intelligenter.",
     "primary": "Kostenloses Angebot anfordern"
   },
   "CustomsBanner": {
@@ -553,7 +553,7 @@
   "CustomsWhatIs": {
     "badge": "Was ist Zollabfertigungshilfe?",
     "title": "Grenzen überwinden, Logistik vereinfachen",
-    "description1": "Internationaler Handel kann komplex sein – mit OBC Care wird die Zollabfertigung einfach, schnell und sorgenfrei.",
+    "description1": "Internationaler Handel kann komplex sein mit OBC Care wird die Zollabfertigung einfach, schnell und sorgenfrei.",
     "description2": "Unser engagiertes Team kümmert sich präzise und konform um alle Import- und Exportanforderungen, damit Ihre Sendungen nahtlos von einem Land ins andere gelangen, ohne kostspielige Verzögerungen oder Dokumentenfehler.",
     "solutionTitle": "Full-Service-Lösung",
     "solutionDesc": "Zollabfertigungshilfe ist eine Full-Service-Lösung, die die rechtlichen und administrativen Schritte für den grenzüberschreitenden Warenverkehr verwaltet.",
@@ -605,13 +605,13 @@
       "0": { "title": "Globale Expertise, Lokale Konformität", "desc": "Unser Wissen über internationale und landesspezifische Zölle sichert schnelle und rechtmäßige Abfertigung." },
       "1": { "title": "24/7 Überwachung & Updates", "desc": "Bleiben Sie informiert mit Live-Fortschrittsberichten und Meilenstein-Updates." },
       "2": { "title": "Verpflichtung zu Null Verzögerung", "desc": "Wir handeln schnell, um Standgelder und Lagergebühren zu vermeiden." },
-      "3": { "title": "All-in-One Logistikpartner", "desc": "Von Abholung bis Übergabe — OBC Care managt alles mit Präzision und Transparenz." }
+      "3": { "title": "All-in-One Logistikpartner", "desc": "Von Abholung bis Übergabe OBC Care managt alles mit Präzision und Transparenz." }
     }
   },
   "CustomsNetwork": {
     "badge": "Zollnetzwerk",
     "title": "Globale Zollpartner, Lokale Expertise",
-    "description1": "Unsere Zollpartner und lizenzierten Agenten operieren weltweit an wichtigen Handelsrouten und Flughäfen — für schnelle, konforme Abfertigung.",
+    "description1": "Unsere Zollpartner und lizenzierten Agenten operieren weltweit an wichtigen Handelsrouten und Flughäfen für schnelle, konforme Abfertigung.",
     "description2": "Wir koordinieren lokale Expertise mit globaler Übersicht, damit Ihre Sendung nicht an der Grenze stoppt.",
     "stats": {
       "agents": { "label": "Lizenzierte Agenten", "value": "200+" },
@@ -649,7 +649,7 @@
     "title": "Vereinfachen Sie Ihre globalen Lieferungen",
     "description": "Vermeiden Sie Ärger, sparen Sie Zeit und bleiben Sie konform. Mit OBC Care erhalten Sie einen Zollpartner, der so schnell arbeitet wie Ihr Geschäft.",
     "subheadline": "Angebot heute anfordern",
-    "closing": "Lassen Sie uns Ihre Zoll abwickeln — konzentrieren Sie sich auf das Wesentliche.",
+    "closing": "Lassen Sie uns Ihre Zoll abwickeln konzentrieren Sie sich auf das Wesentliche.",
     "primary": "Angebot heute anfordern"
   },
   "NfoBanner": {
@@ -769,7 +769,7 @@
   },
   "IndustriesBanner": {
     "badge": "Branchen",
-    "title": "Zuverlässigkeit in jedem Sektor – von Flugzeugtriebwerken bis zu Mikrochips, OBC Care sorgt dafür, dass zeitkritische Sendungen sicher und pünktlich ankommen.",
+    "title": "Zuverlässigkeit in jedem Sektor von Flugzeugtriebwerken bis zu Mikrochips, OBC Care sorgt dafür, dass zeitkritische Sendungen sicher und pünktlich ankommen.",
     "description": "Wenn Geschwindigkeit auf Präzision trifft, bewegt sich jede Branche vorwärts.",
     "ctaExplore": "Unsere Branchen erkunden",
     "ctaQuote": "Kostenloses Angebot erhalten"
@@ -812,15 +812,15 @@
   "AviationBanner": {
     "badge": "OBC Care – Luftfahrt & AOG Logistik",
     "title": "Wenn ein Flugzeug am Boden ist, zählt jede Sekunde.",
-    "description": "OBC Care liefert kritische AOG (Aircraft on Ground) Teile und Luftfahrtmaterialien — schnell, sicher und global koordiniert.",
+    "description": "OBC Care liefert kritische AOG (Aircraft on Ground) Teile und Luftfahrtmaterialien schnell, sicher und global koordiniert.",
     "ctaRequest": "Sofortige Unterstützung anfordern",
     "ctaQuote": "Kostenloses Angebot erhalten"
   },
   "AviationIntro": {
     "title": "Flugzeuge in Bewegung halten, eine Lieferung nach der anderen",
-    "p1": "Eine AOG-Situation kann Tausende pro Stunde kosten — aber mit OBC Care wird die Ausfallzeit minimiert.",
-    "p2": "Unser engagiertes Luftfahrtlogistik-Team ist auf schnelle Reaktionslieferungen spezialisiert und stellt sicher, dass Ihre kritischen Komponenten, Ersatzteile oder Dokumente ihr Ziel mit dem allerersten verfügbaren Flug erreichen.",
-    "p3": "Wir verstehen die Präzisionsanforderungen der Luftfahrtindustrie — von der Zollabfertigung bis zum Zugang zum Vorfeld — und liefern Ihre Teile sicher, effizient und ohne Verzögerung.",
+    "p1": "Eine AOG-Situation kann Tausende pro Stunde kosten aber mit OBC Care wird die Ausfallzeit minimiert.",
+    "p2": "Unser engagiertes Luftfahrtlogistik Team ist auf schnelle Reaktionslieferungen spezialisiert und stellt sicher, dass Ihre kritischen Komponenten, Ersatzteile oder Dokumente ihr Ziel mit dem allerersten verfügbaren Flug erreichen.",
+    "p3": "Wir verstehen die Präzisionsanforderungen der Luftfahrtindustrie von der Zollabfertigung bis zum Zugang zum Vorfeld und liefern Ihre Teile sicher, effizient und ohne Verzögerung.",
     "stats": {
       "desk": "AOG Desk",
       "priority": "Flugpriorität"
@@ -853,7 +853,7 @@
     "description": "Vertraut von Luftfahrtprofis weltweit für kritische AOG-Logistik.",
     "benefits": {
       "0": { "title": "24/7 AOG Desk", "desc": "Immer auf Abruf für kritische Luftfahrtnotfälle." },
-      "1": { "title": "Nächster Flug & Onboard Optionen", "desc": "Wir wählen die schnellste verfügbare Route — NFO oder Hand-Carry." },
+      "1": { "title": "Nächster Flug & Onboard Optionen", "desc": "Wir wählen die schnellste verfügbare Route NFO oder Hand-Carry." },
       "2": { "title": "Airline-geprüfte Kuriere", "desc": "Unser Team ist im Umgang mit Luftfracht und Vorfeldoperationen geschult." },
       "3": { "title": "Volle Compliance & Dokumentation", "desc": "Wir stellen sicher, dass alle Luftfrachtbriefe, Zertifikate und Zollpapiere korrekt und bereit sind." },
       "4": { "title": "End-to-End Transparenz", "desc": "Verfolgen Sie jede Bewegung mit Echtzeit-Kommunikation." }
@@ -861,10 +861,10 @@
   },
   "AviationCta": {
     "heading": "Ihr AOG, Unsere Priorität",
-    "description": "Wenn sich Ihr Flugzeug nicht bewegen kann, tun wir es — über Grenzen, Flughäfen und Zeitzonen hinweg.",
+    "description": "Wenn sich Ihr Flugzeug nicht bewegen kann, tun wir es über Grenzen, Flughäfen und Zeitzonen hinweg.",
     "subDescription": "Mit OBC Care bleiben Ihre Operationen in der Luft, Ihr Zeitplan intakt und Ihr Vertrauen sicher.",
     "subHeadline": "Holen Sie sich noch heute ein kostenloses Angebot",
-    "subHeadlineItalic": "Lassen Sie uns Ihr Flugzeug wieder in den Himmel bringen — schnell, sicher und kompromisslos.",
+    "subHeadlineItalic": "Lassen Sie uns Ihr Flugzeug wieder in den Himmel bringen schnell, sicher und kompromisslos.",
     "button": "Holen Sie sich noch heute ein kostenloses Angebot"
   },
   "AutomotiveBanner": {
@@ -932,8 +932,8 @@
     "button": "Holen Sie sich noch heute ein kostenloses Angebot"
   },
   "ElectronicsBanner": {
-    "badge": "OBC Care – Elektronik- & Halbleiterlösungen",
-    "title": "Präzision, Schutz und Leistung – wir liefern Ihre empfindlichen Komponenten schnell und sicher an jeden Ort der Welt.",
+    "badge": "OBC Care Elektronik & Halbleiterlösungen",
+    "title": "Präzision, Schutz und Leistung wir liefern Ihre empfindlichen Komponenten schnell und sicher an jeden Ort der Welt.",
     "ctaRequest": "Dringende Abholung anfordern",
     "ctaQuote": "Kostenloses Angebot erhalten"
   },
@@ -1165,7 +1165,7 @@
     "breadcrumbAbout": "About Us",
     "title": "ABOUT US",
     "description": "Driven by Passion. Defined by Precision. Delivered with Care.",
-    "description2": "At OBC Care, we move more than shipments — we move trust, reliability, and human dedication across borders"
+    "description2": "At OBC Care, we move more than shipments we move trust, reliability, and human dedication across borders"
   },
   "AboutIntro": {
     "whoWeAre": "about us",

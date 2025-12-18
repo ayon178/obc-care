@@ -36,9 +36,9 @@ export default function FmlmBanner() {
             <h1 className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight drop-shadow-2xl">
               {t("title")}
             </h1>
-            <p className="paragraphFont mt-2 text-white/95 text-[11px] sm:text-xs md:text-sm max-w-2xl drop-shadow-lg text-right ml-auto">
+            {/* <p className="paragraphFont mt-2 text-white/95 text-[11px] sm:text-xs md:text-sm max-w-2xl drop-shadow-lg text-right ml-auto">
               {t("description")}
-            </p>
+            </p> */}
 
             <motion.div
               initial={{ opacity: 0, y: 16 }}
