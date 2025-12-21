@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { Globe, Clock, Radio, Target } from "lucide-react"
-import Image from "next/image"
 import { useTranslations } from "next-intl"
 
 const benefitsData = [
@@ -115,13 +114,32 @@ export default function IndustriesWhyPartner() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <div className="relative h-[500px] md:h-[600px]">
-                  <Image
-                    src="/services/shipment.jpeg"
-                    alt="Industry Logistics"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/80 via-[#194479]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-[#194479] overflow-hidden">
+                    {/* Gradient Mesh */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#194479] via-[#1e528f] to-[#12335b]" />
+                    
+                    {/* Grid Pattern */}
+                    <div 
+                      className="absolute inset-0 opacity-[0.08]" 
+                      style={{ 
+                        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px)',
+                        backgroundSize: '50px 50px'
+                      }} 
+                    />
+
+                    {/* Abstract Shapes */}
+                    <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#91c73e]/20 rounded-full blur-3xl mix-blend-soft-light" />
+                    <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl mix-blend-soft-light" />
+                    
+                    {/* Decorative Concentric Rings */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] border border-white/5 rounded-full" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] border border-white/5 rounded-full" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] border border-white/10 rounded-full" />
+                    
+                    {/* Floating Particles (Static representation) */}
+                    <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-[#91c73e]/60 rounded-full shadow-[0_0_10px_rgba(145,199,62,0.5)]" />
+                    <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-white/40 rounded-full blur-[1px]" />
+                  </div>
 
                   {/* Stats Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">

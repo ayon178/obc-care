@@ -12,7 +12,7 @@ export default function IndustriesBanner() {
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/industries/banner.jpg')",
+        backgroundImage: "url('/industries/banner.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
