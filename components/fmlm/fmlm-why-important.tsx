@@ -8,27 +8,27 @@ import { useTranslations } from "next-intl"
 const reasons = [
   {
     icon: Clock,
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600&auto=format&fit=crop",
+    image: "/services/prevent_cost.png",
     color: "#194479",
   },
   {
     icon: Shield,
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop",
+    image: "/services/ensure_shipment.png",
     color: "#91c73e",
   },
   {
     icon: Globe,
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&auto=format&fit=crop",
+    image: "/services/bridgs_global.png",
     color: "#194479",
   },
   {
     icon: Zap,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop",
+    image: "/services/support.png",
     color: "#91c73e",
   },
   {
     icon: CheckCircle2,
-    image: "/services/gurantees.jpeg",
+    image: "/services/gurantee.png",
     color: "#194479",
   },
 ]

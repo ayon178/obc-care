@@ -13,7 +13,7 @@ export default function FmlmBanner() {
       style={{
         backgroundImage: "url('/services/first_and_last_banner.png')",
         backgroundSize: "cover",
-        backgroundPosition: "center center",
+        backgroundPosition: "center top",
       }}
     >
       {/* gradient overlays */}

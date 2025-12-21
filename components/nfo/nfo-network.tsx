@@ -176,7 +176,7 @@ export default function NfoNetwork() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <div className="relative h-[500px] md:h-[600px]">
                   <Image
-                    src="/services/shipment.jpeg"
+                    src="/services/global_network.png"
                     alt="Global NFO Network"
                     fill
                     className="object-cover"

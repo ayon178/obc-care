@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { User, ArrowRight, CheckCircle2, Plane, Clock, Globe } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { useTranslations } from "next-intl"
 
 export default function NfoJoin() {
@@ -137,14 +138,15 @@ export default function NfoJoin() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#194479] to-[#1a4a7f]">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <div className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
-                   {/* Abstract Decorative Background */}
-                   <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
-                   <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#91c73e]/10 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3" />
-                   
-                   {/* Large Rotated Icon */}
-                   <Plane className="absolute w-[400px] h-[400px] text-white/5 -rotate-12" />
+                   <Image
+                      src="/services/become_nfo.png"
+                      alt={t("title")}
+                      fill
+                      className="object-cover"
+                   />
+                   <div className="absolute inset-0 bg-black/20" />
 
                   {/* Floating Stats Card */}
                   <motion.div

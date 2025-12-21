@@ -12,6 +12,13 @@ const featureIcons = [
   Package,
 ]
 
+const featureImages = [
+  "/services/global_experties.png",
+  "/services/monitoring.png",
+  "/services/zero_delay.png",
+  "/services/all_in_one.png",
+]
+
 export default function CustomsWhyChoose() {
   const t = useTranslations("CustomsWhyChoose")
   return (
@@ -57,7 +64,7 @@ export default function CustomsWhyChoose() {
                 {/* Image Background */}
                 <div className="relative h-[200px] overflow-hidden">
                   <Image
-                    src="/services/shipment.jpeg"
+                    src={featureImages[index]}
                     alt={t(`features.${index}.title`)}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"

@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { Clock, Globe, Zap, Shield } from "lucide-react"
 import { useTranslations } from "next-intl"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function NfoIntro() {
   const t = useTranslations("NfoIntro")
@@ -82,20 +84,14 @@ export default function NfoIntro() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 relative group"
           >
-            <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#194479] to-[#1a4a7f]">
-              {/* Abstract decorative elements */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#91c73e]/10 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3" />
-              
-              <div className="absolute inset-x-0 top-16 flex items-center justify-center">
-                 <motion.div 
-                    animate={{ scale: [1, 1.1, 1], opacity: [0.5, 0.8, 0.5] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                    className="w-32 h-32 rounded-full bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-center"
-                 >
-                    <Globe className="w-16 h-16 text-white/50" />
-                 </motion.div>
-              </div>
+            <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden shadow-2xl">
+              <Image 
+                src="/services/next_flight_first.png" 
+                alt={t("title")}
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-black/20" />
 
               {/* Floating Content Card */}
               <motion.div

@@ -89,7 +89,7 @@ export default function CustomsWhatIs() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <div className="relative h-[500px] md:h-[600px]">
                 <Image
-                  src="/services/shipment.jpeg"
+                  src="/services/custom_first.png"
                   alt={t("imageAlt")}
                   fill
                   className="object-cover"

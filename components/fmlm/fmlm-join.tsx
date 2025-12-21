@@ -70,7 +70,7 @@ export default function FmlmJoin() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="paragraphFont text-blue-50/90 text-sm md:text-lg leading-relaxed"
+              className="paragraphFont text-gray-600 text-sm md:text-lg leading-relaxed"
             >
               {t("description1")}
             </motion.p>
@@ -80,7 +80,7 @@ export default function FmlmJoin() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="paragraphFont text-blue-50/90 text-sm md:text-lg leading-relaxed"
+              className="paragraphFont text-gray-600 text-sm md:text-lg leading-relaxed"
             >
               {t("description2")}
             </motion.p>
@@ -90,7 +90,7 @@ export default function FmlmJoin() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="paragraphFont text-blue-50/90 text-sm md:text-lg leading-relaxed"
+              className="paragraphFont text-gray-600 text-sm md:text-lg leading-relaxed"
             >
               {t("description3")}
             </motion.p>
@@ -112,16 +112,16 @@ export default function FmlmJoin() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
-                    className="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+                    className="flex items-start gap-3 p-4 rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#194479]/10 flex items-center justify-center">
                       <Icon className="w-5 h-5 text-[#91c73e]" />
                     </div>
                     <div>
-                      <h3 className="titleFont text-white font-semibold text-sm sm:text-base mb-1">
+                      <h3 className="titleFont text-[#194479] font-semibold text-sm sm:text-base mb-1">
                         {t(`benefits.${index}.title`)}
                       </h3>
-                      <p className="paragraphFont text-blue-100/70 text-xs sm:text-sm">
+                      <p className="paragraphFont text-gray-600 text-xs sm:text-sm">
                         {t(`benefits.${index}.description`)}
                       </p>
                     </div>
@@ -170,7 +170,7 @@ export default function FmlmJoin() {
               {/* Image */}
               <div className="relative h-[500px] md:h-[600px] overflow-hidden">
                 <Image
-                  src="/services/join-team.jpeg"
+                  src="/services/apply_flm.png"
                   alt={t("imageAlt")}
                   fill
                   className="object-cover"

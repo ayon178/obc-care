@@ -103,7 +103,7 @@ export default function CustomsWhyImportant() {
             >
               <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <Image
-                  src="/services/shipment.jpeg"
+                  src="/services/complience.png"
                   alt={t("imageAlt")}
                   fill
                   className="object-cover"
@@ -130,7 +130,7 @@ export default function CustomsWhyImportant() {
             >
               <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <Image
-                  src="/services/shipment.jpeg"
+                  src="/services/complience.png"
                   alt={t("imageAlt")}
                   fill
                   className="object-cover"

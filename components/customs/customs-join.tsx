@@ -157,11 +157,11 @@ export default function CustomsJoin() {
           >
             <div className="relative rounded-3xl overflow-hidden border border-gray-200 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
               <Image
-                src="/services/shipment.jpeg"
+                src="/services/become_a_customer.png"
                 alt={t("imageAlt")}
                 width={1200}
                 height={900}
-                className="h-[400px] sm:h-[500px] md:h-[600px] w-full object-cover"
+                className="h-[400px] sm:h-[500px] md:h-[600px] w-full object-cover object-right"
                 priority={false}
               />
               {/* Gradient overlay */}

@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import { Clock, Shield, Eye, Globe2, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
 
+import Image from "next/image"
+
 export default function NfoWhyImportant() {
   const t = useTranslations("NfoWhyImportant")
 
@@ -13,24 +15,28 @@ export default function NfoWhyImportant() {
       title: t("benefits.0.title"),
       description: t("benefits.0.desc"),
       color: "#194479",
+      image: "/services/some_day.png",
     },
     {
       icon: Shield,
       title: t("benefits.1.title"),
       description: t("benefits.1.desc"),
       color: "#91c73e",
+      image: "/services/prevent.png",
     },
     {
       icon: Eye,
       title: t("benefits.2.title"),
       description: t("benefits.2.desc"),
       color: "#194479",
+      image: "/services/real_time_visibility.png",
     },
     {
       icon: Globe2,
       title: t("benefits.3.title"),
       description: t("benefits.3.desc"),
       color: "#91c73e",
+      image: "/services/global_transport.png",
     },
   ]
 
@@ -112,14 +118,18 @@ export default function NfoWhyImportant() {
                   {/* Card Container */}
                   <div className="relative h-full rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 bg-white border border-gray-100">
                     {/* Image/Box Section */}
-                    <div className="relative h-[200px] sm:h-[180px] md:h-[200px] overflow-hidden bg-gradient-to-br from-[#194479] to-[#1a4a7f] transition-colors duration-500">
-                      {/* Decorative Background Icon */}
-                      <div className="absolute -bottom-4 -left-4">
-                         <Icon className="w-32 h-32 text-white/5 group-hover:text-white/10 transition-colors duration-500 rotate-12 transform" />
-                      </div>
+                    <div className="relative h-[200px] sm:h-[180px] md:h-[200px] overflow-hidden">
+                      <Image
+                        src={benefit.image || "/placeholder.jpg"}
+                        alt={benefit.title}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      {/* Gradient Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
 
                       {/* Icon Badge - Top Right */}
-                      <div className="absolute top-4 right-4">
+                      <div className="absolute top-4 right-4 z-10">
                         <motion.div
                           whileHover={{ scale: 1.1, rotate: 5 }}
                           className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-white/20 transition-all duration-300"
@@ -129,7 +139,7 @@ export default function NfoWhyImportant() {
                       </div>
 
                       {/* Checkmark Badge - Top Left */}
-                      <div className="absolute top-4 left-4">
+                      <div className="absolute top-4 left-4 z-10">
                         <div className="w-8 h-8 rounded-full bg-[#91c73e] flex items-center justify-center shadow-lg">
                           <CheckCircle2 className="w-5 h-5 text-white" />
                         </div>

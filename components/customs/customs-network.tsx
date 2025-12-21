@@ -92,7 +92,7 @@ export default function CustomsNetwork() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <div className="relative h-[500px] md:h-[600px]">
                 <Image
-                  src="/services/shipment.jpeg"
+                  src="/services/custom_network.png"
                   alt={t("imageAlt")}
                   fill
                   className="object-cover"
