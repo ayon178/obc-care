@@ -12,7 +12,7 @@ export default function ConfidentialBanner() {
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/industries/industries/1.png')",
+        backgroundImage: "url('/industries/high_value/banner.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

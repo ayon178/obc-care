@@ -12,7 +12,7 @@ export default function TechnologyBanner() {
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
       style={{
-        backgroundImage: "url('/industries/industries/1.png')",
+        backgroundImage: "url('/industries/tech/tech_banner.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

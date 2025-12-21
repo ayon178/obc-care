@@ -50,7 +50,7 @@ export default function ConfidentialIntro() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <div className="relative h-[400px] md:h-[500px]">
                   <Image
-                    src="/industries/industries/2.png"
+                    src="/industries/high_value/1.png"
                     alt="Confidential Document Delivery"
                     fill
                     className="object-cover"
