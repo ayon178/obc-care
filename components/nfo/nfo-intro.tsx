@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Clock, Globe, Zap, Shield } from "lucide-react"
 import { useTranslations } from "next-intl"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import Image from "next/image"
 
 export default function NfoIntro() {

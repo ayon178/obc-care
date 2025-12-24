@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Handshake, FileCheck, Globe, Shield, ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 

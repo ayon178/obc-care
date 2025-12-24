@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Plane, Shield, Globe, Clock, ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
 
 const benefits = [

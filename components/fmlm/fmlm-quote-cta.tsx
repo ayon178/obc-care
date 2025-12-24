@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ArrowRight, Phone, Clock } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 
 export default function FmlmQuoteCta() {
   return (
