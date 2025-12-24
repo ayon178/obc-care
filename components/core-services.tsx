@@ -16,7 +16,7 @@ export default function CoreServices() {
       iconColor: "#194479",
       link: "/services",
       image:
-        "https://images.unsplash.com/photo-1601581875101-85c47016a1c2?q=80&w=800&auto=format&fit=crop",
+        "/services/fast_last.png",
     },
     {
       icon: Plane,
@@ -25,7 +25,7 @@ export default function CoreServices() {
       iconColor: "#91C73E",
       link: "/on-board-courier-services",
       image:
-        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop",
+        "/services/onboard.png",
     },
     {
       icon: FileCheck,
@@ -34,7 +34,7 @@ export default function CoreServices() {
       iconColor: "#194479",
       link: "/services",
       image:
-        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&auto=format&fit=crop",
+        "/services/customs.png",
     },
     {
       icon: Zap,
@@ -43,7 +43,7 @@ export default function CoreServices() {
       iconColor: "#91C73E",
       link: "/services",
       image:
-        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop",
+        "/services/next_flight.png",
     },
   ]
 
