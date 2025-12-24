@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Server } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
 
 export default function TechnologyBanner() {
@@ -18,9 +18,9 @@ export default function TechnologyBanner() {
       }}
     >
       {/* Gradient overlays for text visibility */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(10,26,42,0.92),rgba(10,26,42,0.75)_40%,rgba(10,26,42,0.92))]" />
-      <div className="absolute inset-0 bg-[radial-gradient(80%_50%_at_80%_10%,rgba(145,199,62,0.15),transparent)]" />
-      <div className="absolute inset-0 bg-gradient-to-l from-[#0a1a2a]/60 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(10,26,42,0.92),rgba(10,26,42,0.75)_40%,rgba(10,26,42,0.92))] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(80%_50%_at_80%_10%,rgba(145,199,62,0.15),transparent)] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-l from-[#0a1a2a]/60 via-transparent to-transparent pointer-events-none" />
 
       <div className="container mx-auto h-full px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
@@ -61,7 +61,7 @@ export default function TechnologyBanner() {
               className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-end"
             >
               <Link
-                href="/inquiry"
+                href="/contact"
                 className="buttonFont group relative w-full sm:w-auto py-3 px-5 rounded-xl font-semibold text-white text-sm md:text-base shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 overflow-hidden"
                 style={{
                   background: "linear-gradient(135deg, #91C73E 0%, #7bb033 60%)",
@@ -71,7 +71,7 @@ export default function TechnologyBanner() {
               </Link>
               <Link
                 href="/inquiry"
-                className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors text-center"
+                className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors flex items-center justify-center gap-2"
               >
                 {t("ctaQuote")}
               </Link>
