@@ -123,7 +123,7 @@ export default function OperatingProcess() {
             className="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 leading-tight"
           >
             {t.rich("header.title", {
-              br: () => <br />,
+
               gradient: (chunks) => <span className="bg-gradient-to-r from-[#194479] via-[#194479] to-[#91C73E] bg-clip-text text-transparent">{chunks}</span>
             })}
           </motion.h2>

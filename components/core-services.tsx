@@ -64,7 +64,7 @@ export default function CoreServices() {
 
           <h2 className="text-lg md:text-2xl lg:text-3xl font-bold mb-2 md:mb-3 leading-tight">
             {t.rich("header.title", {
-              br: () => <br />,
+
               gradient: (chunks) => <span className="bg-gradient-to-r from-[#194479] via-[#194479] to-[#91C73E] bg-clip-text text-transparent">{chunks}</span>
             })}
           </h2>

@@ -216,7 +216,7 @@
   "CoreServices": {
     "header": {
       "label": "Our Core Services",
-      "title": "Priority <br> <gradient>Logistics Solutions</gradient>",
+      "title": "Priority <gradient>Logistics Solutions</gradient>",
       "p1": "At OBC Care, we understand that <bold>downtime costs money</bold>. That's why we provide priority logistics solutions tailored for industries that demand speed, security, and global reach.",
       "p2": "Our expertise ensures that every shipment big or small arrives <green>safely, swiftly, and seamlessly</green>."
     },
@@ -242,7 +242,7 @@
   "OperatingProcess": {
     "header": {
       "label": "How We Operate",
-      "title": "Efficient Process, <br /> <gradient>Transparent Results</gradient>",
+      "title": "Efficient Process, <gradient>Transparent Results</gradient>",
       "p1": "At OBC Care, <bold>every minute matters</bold>. That's why our process is designed to be efficient, transparent, and fully customized for your shipment's urgency, route, and industry.",
       "p2": "Here's how we make it happen:"
     },
