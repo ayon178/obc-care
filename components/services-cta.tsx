@@ -4,7 +4,7 @@ import {
   motion,
   type Variants,
 } from "framer-motion"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import { Send, Phone } from "lucide-react"
 import React from "react"
 
