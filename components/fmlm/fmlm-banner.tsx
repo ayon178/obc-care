@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Truck } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
 
 export default function FmlmBanner() {
@@ -17,8 +17,8 @@ export default function FmlmBanner() {
       }}
     >
       {/* gradient overlays */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(10,26,42,0.85),rgba(10,26,42,0.4)_40%,rgba(10,26,42,0.85))]" />
-      <div className="absolute inset-0 bg-[radial-gradient(80%_50%_at_80%_10%,rgba(145,199,62,0.18),transparent)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(10,26,42,0.85),rgba(10,26,42,0.4)_40%,rgba(10,26,42,0.85))] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(80%_50%_at_80%_10%,rgba(145,199,62,0.18),transparent)] pointer-events-none" />
 
       <div className="relative z-10 container mx-auto h-full px-4 sm:px-6 lg:px-8">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
@@ -59,7 +59,7 @@ export default function FmlmBanner() {
               </Link>
               <Link
                 href="/contact"
-                className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors text-center cursor-pointer"
+                className="buttonFont w-full sm:w-auto py-3 px-5 rounded-xl text-sm md:text-base font-semibold text-[#194479] bg-white hover:bg-white/90 transition-colors flex items-center justify-center gap-2 cursor-pointer"
               >
                 {t("talkTeam")}
               </Link>
