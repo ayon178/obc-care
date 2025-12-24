@@ -532,8 +532,8 @@
       "2": { "title": "Flexible Opportunities", "description": "Choose assignments that fit your schedule" },
       "3": { "title": "Global Network", "description": "Join hundreds of drivers worldwide" }
     },
-    "cta": "Apply Now",
-    "getTouch": "Get in Touch",
+    "ctaApply": "Apply Now",
+    "ctaContact": "Contact Us",
     "imageAlt": "First & Last Mile Driver",
     "stats": "Active Drivers"
   },

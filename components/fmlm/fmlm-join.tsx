@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Users, Truck, Clock, Globe, Shield, ArrowRight, MapPin } from "lucide-react"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 
@@ -50,7 +50,7 @@ export default function FmlmJoin() {
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold"
             >
               <Truck className="w-4 h-4" />
-              <span>Join Our Team</span>
+              <span>{t("badge")}</span>
             </motion.div>
 
             {/* Heading */}
@@ -61,7 +61,7 @@ export default function FmlmJoin() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="headingFont text-3xl sm:text-4xl md:text-5xl font-bold text-[#194479] leading-tight"
             >
-              Become a First & Last Mile Driver
+              {t("title")}
             </motion.h2>
 
             {/* Description */}
@@ -203,7 +203,7 @@ export default function FmlmJoin() {
                     500+
                   </p>
                   <p className="paragraphFont text-xs text-gray-600">
-                    Active Drivers
+                    {t("stats")}
                   </p>
                 </div>
               </div>

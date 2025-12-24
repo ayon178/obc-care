@@ -531,8 +531,8 @@
       "2": { "title": "Flexible Möglichkeiten", "description": "Wählen Sie Aufträge, die zu Ihrem Zeitplan passen" },
       "3": { "title": "Globales Netzwerk", "description": "Schließen Sie sich Hunderten von Fahrern weltweit an" }
     },
-    "cta": "Jetzt bewerben",
-    "getTouch": "Kontakt aufnehmen",
+    "ctaApply": "Jetzt bewerben",
+    "ctaContact": "Kontakt aufnehmen",
     "imageAlt": "Erste & Letzte Meile Fahrer",
     "stats": "Aktive Fahrer"
   },

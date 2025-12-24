@@ -531,8 +531,8 @@
       "2": { "title": "Oportunidades flexibles", "description": "Elige asignaciones que se adapten a tu horario" },
       "3": { "title": "Red global", "description": "Únete a cientos de conductores en todo el mundo" }
     },
-    "cta": "Aplica ahora",
-    "getTouch": "Ponerse en contacto",
+    "ctaApply": "Aplica ahora",
+    "ctaContact": "Ponerse en contacto",
     "imageAlt": "Conductor de Primera y Última Milla",
     "stats": "Conductores Activos"
   },
