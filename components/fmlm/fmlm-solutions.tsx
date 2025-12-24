@@ -62,15 +62,15 @@ export default function FmlmSolutions() {
             </div>
             <div className="mt-5 grid grid-cols-3 gap-3">
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-base ">24/7</div>
+                <div className="titleFont text-[#194479] text-sm ">24/7</div>
                 <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.availability")}</div>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-base ">Real-Time</div>
+                <div className="titleFont text-[#194479] whitespace-nowrap text-sm ">Real-Time</div>
                 <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.updates")}</div>
               </div>
               <div className="rounded-2xl border border-gray-200 bg-white/60 p-3 text-center">
-                <div className="titleFont text-[#194479] text-base ">100%</div>
+                <div className="titleFont text-[#194479] text-sm ">100%</div>
                 <div className="paragraphFont text-gray-600 text-[11px]">{t("stats.accountable")}</div>
               </div>
             </div>
