@@ -11,7 +11,7 @@ import Footer from "@/components/footer"
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import ServicesCTA from "@/components/services-cta"
 
 import { useTranslations } from "next-intl"
@@ -24,9 +24,9 @@ const Home = () => {
         secondLine: t(`slides.${index}.secondLine`),
         smallLine: t(`slides.${index}.smallLine`),
         firstButtonText: t(`slides.${index}.firstButtonText`),
-        firstButtonLink: index === 0 ? "/inquiry" : index === 1 ? "/inquiry" : "/inquiry",
+        firstButtonLink: index !== 2 ? "/inquiry" : "/become-obc",
         secondButtonText: t(`slides.${index}.secondButtonText`),
-        secondButtonLink: index === 0 ? "/services" : "/process"
+        secondButtonLink: index === 0 ? "/services" : "/services#how-we-operate"
     }));
   const [isOpen, setIsOpen] = useState(false)
   const [currentImage, setCurrentImage] = useState(0)

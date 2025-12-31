@@ -296,7 +296,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-base text-white/80">
             <p 
               className="text-center md:text-left"
-              dangerouslySetInnerHTML={{ __html: t.raw("copyright", { year: currentYear }) }}
+              dangerouslySetInnerHTML={{ __html: t("copyright", { year: currentYear }) }}
             />
             <div className="flex flex-wrap items-center justify-center md:justify-end gap-6">
               <Link

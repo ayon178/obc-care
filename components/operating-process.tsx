@@ -52,7 +52,7 @@ export default function OperatingProcess() {
   ]
 
   return (
-    <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+    <section id="how-we-operate" className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-30">
         <div

@@ -48,7 +48,7 @@ export default function CoreServices() {
   ]
 
   return (
-    <section className="relative py-10 md:py-14 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden">
+    <section id="our-core" className="relative py-10 md:py-14 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header Section */}
         <div className="text-center mb-6 md:mb-8">
