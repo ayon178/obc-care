@@ -131,16 +131,7 @@ export default function IndustrialHowItWorks() {
           {/* Desktop: Horizontal Flow with Center Hub */}
           <div className="hidden lg:block">
             <div className="relative">
-              {/* Center Hub - OBC */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-gradient-to-br from-[#194479] to-[#91c73e] shadow-2xl border-4 border-white flex items-center justify-center z-30"
-              >
-                <div className="text-white font-bold text-xl">OBC</div>
-              </motion.div>
+
 
               {/* Steps Grid - 2 rows */}
               <div className="grid grid-cols-5 gap-6 relative">
@@ -186,30 +177,17 @@ export default function IndustrialHowItWorks() {
                             </p>
                           </div>
 
-                          {/* Connection Line to Center */}
-                          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0.5 h-12 opacity-20"
-                            style={{ backgroundColor: step.color }}
-                          />
+
                         </div>
                       </motion.div>
                     )
                   })}
                 </div>
 
-                {/* Spacer for center hub */}
-                <div className="col-span-5 h-24 flex items-center justify-center relative">
-                  {/* Connection lines from center to bottom steps */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-full flex justify-between px-12">
-                      <div className="w-0.5 h-12 opacity-20" style={{ backgroundColor: steps[3].color }} />
-                      <div className="w-0.5 h-12 opacity-20" style={{ backgroundColor: steps[4].color }} />
-                    </div>
-                  </div>
-                </div>
+
 
                 {/* Bottom Row - Steps 4, 5 */}
-                <div className="col-span-5 grid grid-cols-5 gap-6 mt-4">
-                  <div className="col-span-1" /> {/* Spacer */}
+                <div className="col-span-5 flex justify-center gap-6 mt-4">
                   {steps.slice(3, 5).map((step, i) => {
                     const Icon = step.icon
                     return (
@@ -219,7 +197,8 @@ export default function IndustrialHowItWorks() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.6, delay: (i + 3) * 0.15 }}
-                        className="relative col-span-2"
+                        className="relative"
+                        style={{ width: "calc((100% - 3rem) / 3)" }}
                       >
                         <div className="relative bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-[#91c73e]/30 transition-all duration-300 group h-full">
                           {/* Icon */}
@@ -250,15 +229,10 @@ export default function IndustrialHowItWorks() {
                             </p>
                           </div>
 
-                          {/* Connection Line to Center */}
-                          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-12 opacity-20"
-                            style={{ backgroundColor: step.color }}
-                          />
                         </div>
                       </motion.div>
                     )
                   })}
-                  <div className="col-span-1" /> {/* Spacer */}
                 </div>
               </div>
             </div>

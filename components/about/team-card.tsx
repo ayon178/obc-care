@@ -1,16 +1,22 @@
 "use client"
 
 import Image from "next/image"
-import { Facebook, Twitter, Instagram, Linkedin, Package, Truck, User, HardHat } from "lucide-react"
+import { Facebook, Twitter, Instagram, Linkedin, Package, Truck, User, HardHat, Phone } from "lucide-react"
 
 interface TeamCardProps {
   name: string
   role: string
   image: string
   icon?: React.ReactNode
+  contact?: string
+  socials?: {
+    linkedin?: string
+    facebook?: string
+    instagram?: string
+  }
 }
 
-export default function TeamCard({ name, role, image, icon }: TeamCardProps) {
+export default function TeamCard({ name, role, image, icon, contact, socials }: TeamCardProps) {
   return (
     <div className="group relative w-full">
       {/* Image Container */}
@@ -31,25 +37,47 @@ export default function TeamCard({ name, role, image, icon }: TeamCardProps) {
              {icon}
         </div>
 
-        {/* Content Container - Relative to hold absolute positioned elements if needed, or just stack them */}
-        <div className="relative h-14 overflow-hidden">
+        {/* Content Container */}
+        <div className="relative h-24 overflow-hidden">
             {/* Default Content (Name & Role) */}
             <div className="absolute inset-0 flex flex-col items-center justify-center transition-all duration-500 group-hover:translate-y-10 group-hover:opacity-0">
                 <h3 className="text-xl font-bold text-[#194479]">{name}</h3>
                 <p className="text-sm text-gray-500 mt-1">{role}</p>
+                {contact && (
+                  <div className="flex items-center gap-1.5 text-[#194479] font-medium mt-2 opacity-100 md:opacity-0 md:group-hover:opacity-0 transition-opacity">
+                    <Phone className="h-3 w-3" />
+                    <span className="text-xs">{contact}</span>
+                  </div>
+                )}
             </div>
 
-            {/* Hover Content (Social Icons) */}
-            <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 translate-y-10">
-              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#194479] transition-colors hover:bg-[#91c73e] hover:text-white">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#194479] transition-colors hover:bg-[#91c73e] hover:text-white">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#194479] transition-colors hover:bg-[#91c73e] hover:text-white">
-                <Instagram className="h-5 w-5" />
-              </a>
+            {/* Hover Content (Social Icons & Contact) */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 translate-y-10">
+              
+              {contact && (
+                <div className="flex items-center gap-2 text-white font-medium mb-1">
+                  <Phone className="h-4 w-4" />
+                  <span className="text-sm">{contact}</span>
+                </div>
+              )}
+
+              <div className="flex items-center gap-3">
+                {socials?.linkedin && (
+                  <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#194479] transition-colors hover:bg-[#91c73e] hover:text-white border border-gray-100">
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                )}
+                {socials?.facebook && (
+                  <a href={socials.facebook} target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#194479] transition-colors hover:bg-[#91c73e] hover:text-white border border-gray-100">
+                    <Facebook className="h-4 w-4" />
+                  </a>
+                )}
+                {socials?.instagram && (
+                  <a href={socials.instagram} target="_blank" rel="noopener noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#194479] transition-colors hover:bg-[#91c73e] hover:text-white border border-gray-100">
+                    <Instagram className="h-4 w-4" />
+                  </a>
+                )}
+              </div>
             </div>
         </div>
       </div>

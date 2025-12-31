@@ -149,29 +149,7 @@ export default function NfoJoin() {
                    <div className="absolute inset-0 bg-black/20" />
 
                   {/* Floating Stats Card */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.5 }}
-                    className="absolute top-8 left-8 right-8"
-                  >
-                    <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 md:p-6 shadow-xl border border-white/20">
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#91c73e] to-[#7bb033] flex items-center justify-center shadow-lg">
-                          <Plane className="w-7 h-7 text-white" />
-                        </div>
-                        <div>
-                          <div className="text-2xl md:text-3xl font-bold text-white">{t("stats.operations.value")}</div>
-                          <div className="text-sm text-white/80">{t("stats.operations.label")}</div>
-                        </div>
-                      </div>
-                      <p className="paragraphFont text-white/90 text-sm md:text-base">
-                        {t("stats.operations.desc")}
-                      </p>
-                    </div>
-                  </motion.div>
-
+                
                   {/* Icon Badge - Bottom Right */}
                   <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}

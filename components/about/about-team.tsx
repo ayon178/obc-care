@@ -13,36 +13,55 @@ export default function AboutTeam() {
       role: t("roles.0"),
       image: "/images/about/team-1.png",
       icon: <Truck className="h-8 w-8" />,
+      contact: "+49 176 45922485",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/timecriticallogistics-eugene-reimer-obccare/",
+        facebook: "https://web.facebook.com/EugenReimerBF/",
+        instagram: "https://www.instagram.com/eugenreimer_bf/",
+      },
     },
     {
-      name: "Tanya Reimer",
+      name: "Tatiana Reimer",
       role: t("roles.1"),
       image: "/images/about/team-2.png",
       icon: <Package className="h-8 w-8" />,
+      contact: "+49 179 1394318",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/tatiana-reimer-053431288/",
+        instagram: "https://www.instagram.com/tanya_reimer/",
+      },
     },
     {
       name: "Alexander Reimer",
       role: t("roles.2"),
       image: "/images/about/team-3.png",
       icon: <User className="h-8 w-8" />,
+      contact: "+44 7488 818707",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/alexanderreimer/",
+        instagram: "https://www.instagram.com/al3ks11/",
+      },
     },
     {
       name: "Cristine Acosta",
       role: t("roles.3"),
       image: "/images/about/team-4.png",
       icon: <HardHat className="h-8 w-8" />,
+      contact: "+1 (610) 245-8815",
     },
     {
       name: "Noreleen Neypes",
       role: t("roles.4"),
       image: "/images/about/team-1.png", // Reusing image for now
       icon: <Package className="h-8 w-8" />,
+      contact: "+44 7700 183290",
     },
     {
       name: "Renz Abad",
       role: t("roles.5"),
       image: "/images/about/team-2.png", // Reusing image for now
       icon: <Truck className="h-8 w-8" />,
+      contact: "+44 7700 183458",
     },
   ]
 
@@ -66,6 +85,8 @@ export default function AboutTeam() {
               role={member.role}
               image={member.image}
               icon={member.icon}
+              contact={member.contact}
+              socials={member.socials}
             />
           ))}
         </div>

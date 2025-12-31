@@ -37,7 +37,7 @@ export default function ObcWhatIs() {
           {/* Image */}
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden border border-gray-200 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
-              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:16px_16px]" />
+              <div className="pointer-events-none absolute " />
               <Image
                 src="/services/onboard_1.png"
                 alt={t("imageAlt")}

@@ -44,12 +44,20 @@ const MedicalBanner = () => {
             {t("description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <Button 
+              <Button 
                 onClick={() => document.getElementById('medical-intro')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-[#91C73E] hover:bg-[#82b336] text-white text-sm md:text-base px-6 py-5 h-auto rounded-full shadow-[0_0_20px_rgba(145,199,62,0.3)] transition-all font-semibold"
               >
                 {t("btnDetails")}
               </Button>
+              <a 
+                href="https://obc-lifecare.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 hover:scale-105 backdrop-blur-md text-white text-sm md:text-base px-6 py-5 h-auto rounded-full border border-white/30 transition-all font-semibold"
+              >
+                {t("btnVisit")}
+              </a>
           </div>
         </motion.div>
       </div>

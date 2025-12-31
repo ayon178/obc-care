@@ -131,7 +131,7 @@ export default function NfoWhatIs() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="relative group"
               >
-                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-[#194479]/20 h-full">
+                <div className="rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-[#194479]/20 h-full">
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#194479] to-[#1a4a7f] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <Plane className="w-7 h-7 text-white" />
@@ -156,20 +156,19 @@ export default function NfoWhatIs() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="relative h-[200px]">
-                  {/* <Image
-                    src="/services/shipment.jpeg"
-                    alt="Real-time Routing"
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  /> */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/90 via-[#194479]/60 to-[#194479]/60" />
-                  <div className="absolute bottom-0 left-0 right-0 p-5">
-                    <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center mb-3 group-hover:bg-[#91c73e] transition-colors duration-300">
-                      <Zap className="w-6 h-6 text-white" />
+                <div className="rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-[#194479]/20 h-full">
+                  <div className="flex items-start gap-4">
+                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#194479] to-[#1a4a7f] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Zap className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="text-white font-bold text-lg mb-1">{t("card2.title")}</h3>
-                    <p className="text-white/90 text-sm">{t("card2.desc")}</p>
+                    <div>
+                      <h3 className="titleFont text-[#194479] font-bold text-lg mb-2">
+                        {t("card2.title")}
+                      </h3>
+                      <p className="paragraphFont text-gray-700 text-sm leading-relaxed">
+                        {t("card2.desc")}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -182,16 +181,16 @@ export default function NfoWhatIs() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="relative group"
               >
-                <div className="bg-gradient-to-br from-[#91c73e] to-[#7bb033] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                <div className="rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-[#194479]/20 h-full">
                   <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#194479] to-[#1a4a7f] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <CheckCircle2 className="w-7 h-7 text-white" />
                     </div>
                     <div>
-                      <h3 className="titleFont text-white font-bold text-lg mb-2">
+                      <h3 className="titleFont text-[#194479] font-bold text-lg mb-2">
                         {t("card3.title")}
                       </h3>
-                      <p className="paragraphFont text-white/90 text-sm leading-relaxed">
+                      <p className="paragraphFont text-gray-700 text-sm leading-relaxed">
                         {t("card3.desc")}
                       </p>
                     </div>
