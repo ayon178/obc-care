@@ -21,18 +21,11 @@ export default function AboutTestimonials() {
     arrows: false,
   }
 
-  const testimonials = [
-    {
-      quote: t("items.0.quote"),
-      author: t("items.0.author"),
-      location: t("items.0.location"),
-    },
-    {
-      quote: t("items.1.quote"),
-      author: t("items.1.author"),
-      location: t("items.1.location"),
-    },
-  ]
+  const testimonials = Array.from({ length: 8 }).map((_, i) => ({
+    quote: t(`items.${i}.quote`),
+    author: t(`items.${i}.author`),
+    location: t(`items.${i}.location`),
+  }))
 
   return (
     <section className="py-20 bg-[#194479] text-white overflow-hidden relative">

@@ -5,18 +5,21 @@ import { Factory } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
 
+import Image from "next/image"
+
 export default function IndustriesBanner() {
   const t = useTranslations("IndustriesBanner")
 
   return (
-    <section
-      className="relative h-screen min-h-[600px] w-full overflow-hidden"
-      style={{
-        backgroundImage: "url('/industries/banner.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="relative h-screen min-h-[600px] w-full overflow-hidden">
+      <Image
+        src="/industries/banner.png"
+        alt="Industries Banner"
+        fill
+        className="object-cover object-center"
+        quality={100}
+        priority
+      />
       {/* gradient overlays */}
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(10,26,42,0.85),rgba(10,26,42,0.4)_40%,rgba(10,26,42,0.85))] pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(80%_50%_at_80%_10%,rgba(145,199,62,0.18),transparent)] pointer-events-none" />

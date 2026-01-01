@@ -11,7 +11,7 @@ export default function AboutTeam() {
     {
       name: "Eugen Reimer",
       role: t("roles.0"),
-      image: "/images/about/team-1.png",
+      image: "/about/team/eugen.png",
       icon: <Truck className="h-8 w-8" />,
       contact: "+49 176 45922485",
       socials: {
@@ -23,7 +23,7 @@ export default function AboutTeam() {
     {
       name: "Tatiana Reimer",
       role: t("roles.1"),
-      image: "/images/about/team-2.png",
+      image: "/about/team/Tanya.png",
       icon: <Package className="h-8 w-8" />,
       contact: "+49 179 1394318",
       socials: {
@@ -34,7 +34,7 @@ export default function AboutTeam() {
     {
       name: "Alexander Reimer",
       role: t("roles.2"),
-      image: "/images/about/team-3.png",
+      image: "/about/team/alexander.png",
       icon: <User className="h-8 w-8" />,
       contact: "+44 7488 818707",
       socials: {
@@ -45,21 +45,21 @@ export default function AboutTeam() {
     {
       name: "Cristine Acosta",
       role: t("roles.3"),
-      image: "/images/about/team-4.png",
+      image: "/about/team/cristine.png",
       icon: <HardHat className="h-8 w-8" />,
       contact: "+1 (610) 245-8815",
     },
     {
       name: "Noreleen Neypes",
       role: t("roles.4"),
-      image: "/images/about/team-1.png", // Reusing image for now
+      image: "/about/team/noreleen.jpeg", // Reusing image for now
       icon: <Package className="h-8 w-8" />,
       contact: "+44 7700 183290",
     },
     {
       name: "Renz Abad",
       role: t("roles.5"),
-      image: "/images/about/team-2.png", // Reusing image for now
+      image: "/about/team/renz.png", // Reusing image for now
       icon: <Truck className="h-8 w-8" />,
       contact: "+44 7700 183458",
     },

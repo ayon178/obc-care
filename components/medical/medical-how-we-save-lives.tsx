@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
 import {  ClipboardCheck, Radio, Clock, Thermometer, ShieldCheck, AlertTriangle } from "lucide-react"
+import { Link } from "@/i18n/routing"
 
 const MedicalHowWeSaveLives = () => {
   const t = useTranslations("MedicalTransportPage.howWeSaveLives")
@@ -51,15 +52,38 @@ const MedicalHowWeSaveLives = () => {
           ))}
         </div>
 
+        {/* Closing Section 1 */}
         <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mt-12 text-center max-w-4xl mx-auto bg-[#194479] text-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow"
         >
-            <p className="text-lg md:text-xl font-bold leading-relaxed whitespace-pre-line">
-                {t("closing")}
+            <h3 className="text-xl md:text-2xl font-bold mb-4">{t("closingTitle")}</h3>
+            <p className="text-lg md:text-xl font-medium leading-relaxed">
+                {t("closingDesc")}
             </p>
+        </motion.div>
+
+        {/* Closing Section 2 - CTA */}
+        <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="mt-8 text-center max-w-4xl mx-auto bg-white border-2 border-[#194479]/10 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all"
+        >
+            <h3 className="text-xl md:text-2xl font-bold text-[#194479] mb-4">{t("learnMoreTitle")}</h3>
+            <p className="text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                {t("learnMoreDesc")}
+            </p>
+            <Link 
+              href="https://obclifecare.com/" 
+              target="_blank"
+              className="inline-flex items-center justify-center px-8 py-3 bg-[#91C73E] hover:bg-[#7bb033] text-white font-semibold rounded-full transition-colors duration-300 shadow-md hover:shadow-lg"
+            >
+              {t("learnMoreBtn")}
+            </Link>
         </motion.div>
       </div>
     </section>

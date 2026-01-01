@@ -5,21 +5,25 @@ import { Link } from "@/i18n/routing"
 import { ChevronRight } from "lucide-react"
 import { useTranslations } from "next-intl"
 
+import Image from "next/image"
+
 export default function AboutBanner() {
   const t = useTranslations("AboutBanner")
 
   return (
-    <section className="relative pt-20 h-[450px] w-full overflow-hidden bg-[#194479]">
+    <section className="relative pt-20 h-[500px] w-full overflow-hidden bg-[#194479]">
       {/* Background Pattern/Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{
-          backgroundImage: "url('/images/world_map.jpg')", // Using existing map image if available, or placeholder
-        }}
+      <Image
+        src="/about/banner.png"
+        alt="About Banner"
+        fill
+        className="object-cover object-center"
+        quality={100}
+        priority
       />
       
       {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#194479]/80 to-[#194479]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#000]/50 to-[#000]/75" />
 
       {/* Content */}
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center text-center text-white">

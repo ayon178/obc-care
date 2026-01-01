@@ -78,7 +78,11 @@
           "description": "Vordefinierte Protokolle ermöglichen es uns, schnell auf Verzögerungen oder Ausrüstungsprobleme zu reagieren, um die Nutzbarkeit unter allen Umständen zu gewährleisten."
         }
       },
-      "closing": "Planen. Ausführen. Leben retten.\nMit OBC Life Care wird jede Stammzellen-, Knochenmark- und Nabelschnurblut-Sendung sorgfältig geplant, sicher transportiert und engmaschig überwacht, um sicherzustellen, dass lebensrettende Materialien diejenigen erreichen, die sie am dringendsten benötigen."
+      "closingTitle": "Plan. Execute. Save Lives.",
+      "closingDesc": "With OBC Life Care, every stem cell, bone marrow, and cord blood shipment is carefully planned, securely transported, and closely monitored, ensuring that life saving materials reach those who need them most.",
+      "learnMoreTitle": "Learn More About OBC Life Care",
+      "learnMoreDesc": "For detailed information on our specialized medical transport services, click here to visit the OBC Life Care website and see how we combine speed, safety, and medical expertise to deliver life-saving biological materials.",
+      "learnMoreBtn": "Learn More about OBC Life Care"
     },
     "cta": {
       "title": "Erfahren Sie mehr über OBC Life Care",
@@ -1235,13 +1239,43 @@
     "items": {
       "0": {
         "quote": "OBC Care handled our urgent AOG shipment flawlessly every update was real time, and every promise was kept.",
-        "author": "Aviation Client",
-        "location": "USA"
+        "author": "Aviation",
+        "location": "USA Client"
       },
       "1": {
         "quote": "Fast, reliable, and always professional. The peace of mind they provide is priceless.",
-        "author": "Automotive Client",
-        "location": "Electronics Sector"
+        "author": "Automotive",
+        "location": "Electronics Client"
+      },
+      "2": {
+        "quote": "Great team, 24/7 reachable, very professional. Looking forward to the next collaboration.",
+        "author": "AOG parts",
+        "location": "Aviation Client"
+      },
+      "3": {
+        "quote": "OBC Care team is doing excellent work in time critical domain. They have wide ranging experience and collaborates with most professional OBCs. If you have any time critical shipments, I would encourage you to hand it over to OBC Care to take care of it.",
+        "author": "AOG parts",
+        "location": "Client"
+      },
+      "4": {
+        "quote": "Used them for shipping samples to my customer in Far East . OBC Care team were closely monitoring every step of my shipment so I could inform my customer with every step taken in delivery process. Customer received samples just in time for the start of their promotion. All money well spent!",
+        "author": "AOG parts",
+        "location": "Client"
+      },
+      "5": {
+        "quote": "Dedicated and top-notch customer service. Thank you to the OBC team for the timely delivery to Malaysia.",
+        "author": "AOG parts",
+        "location": "Client"
+      },
+      "6": {
+        "quote": "I had a very good experience working with this company, very professional and well organised it is the proof that “Deutsche Gründlichkeit und Pünktlichkeit“ still exist.",
+        "author": "AOG parts",
+        "location": "Germany Client"
+      },
+      "7": {
+        "quote": "A very reliable and resposive logistics company for time critical shipments. It took only 12 hours from the order, pick up of shipment in Spain to delivery at plant in the US",
+        "author": "AOG parts",
+        "location": "Spain Client"
       }
     }
   },

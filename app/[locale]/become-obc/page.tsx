@@ -6,6 +6,7 @@ import { CheckCircle, Globe, Clock, Briefcase, Plane } from "lucide-react"
 import Navbar from "@/components/shared/Navbar"
 import Footer from "@/components/footer"
 import { useTranslations } from "next-intl"
+import Image from "next/image"
 
 const BecomeOBCPage = () => {
   const t = useTranslations("BecomeObcPage")
@@ -160,9 +161,12 @@ const BecomeOBCPage = () => {
             <div className="lg:w-1/2">
                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] bg-gray-200">
                   {/* Placeholder for professional courier image */}
-                  <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                    <span className="text-lg">{t("joinNetwork.imagePlaceholder")}</span>
-                  </div>
+                  <Image 
+                    src="/becomeObc.png" 
+                    alt="Become OBC" 
+                    fill 
+                    className="object-cover"
+                  />
                </div>
             </div>
           </div>
