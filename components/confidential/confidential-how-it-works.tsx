@@ -130,137 +130,102 @@ export default function ConfidentialHowItWorks() {
 
           {/* Desktop: Horizontal Flow with Center Hub */}
           <div className="hidden lg:block">
-            <div className="relative">
-              {/* Center Hub - OBC */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-gradient-to-br from-[#194479] to-[#91c73e] shadow-2xl border-4 border-white flex items-center justify-center z-30"
-              >
-                <div className="text-white font-bold text-xl">OBC</div>
-              </motion.div>
-
-              {/* Steps Grid - 2 rows */}
-              <div className="grid grid-cols-5 gap-6 relative">
-                {/* Top Row - Steps 1, 2, 3 */}
-                <div className="col-span-5 grid grid-cols-3 gap-6 mb-4">
-                  {steps.slice(0, 3).map((step, i) => {
-                    const Icon = step.icon
-                    return (
-                      <motion.div
-                        key={step.number}
-                        initial={{ opacity: 0, y: -30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
-                        transition={{ duration: 0.6, delay: i * 0.15 }}
-                        className="relative"
-                      >
-                        <div className="relative bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-[#91c73e]/30 transition-all duration-300 group h-full">
-                          {/* Icon */}
-                          <div className="relative mb-4 flex justify-center">
-                            <div className="relative w-16 h-16 rounded-full bg-white shadow-md border-4 flex items-center justify-center"
-                              style={{ borderColor: step.color }}
-                            >
-                              <div className="absolute inset-0 rounded-full"
-                                style={{ backgroundColor: step.color }}
-                              />
-                              <Icon className="w-8 h-8 text-white relative z-10" />
-                            </div>
-                            {/* Number Badge */}
-                            <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2"
-                              style={{ borderColor: step.color }}
-                            >
-                              <span className="text-xs font-bold" style={{ color: step.color }}>{step.number}</span>
-                            </div>
+            <div className="flex flex-col gap-8">
+              
+              {/* Top Row - Steps 1, 2, 3 */}
+              <div className="grid grid-cols-3 gap-8">
+                {steps.slice(0, 3).map((step, i) => {
+                  const Icon = step.icon
+                  return (
+                    <motion.div
+                      key={step.number}
+                      initial={{ opacity: 0, y: -30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ duration: 0.6, delay: i * 0.15 }}
+                      className="relative h-full"
+                    >
+                      <div className="relative bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-[#91c73e]/30 transition-all duration-300 group h-full flex flex-col">
+                        {/* Icon */}
+                        <div className="relative mb-4 flex justify-center">
+                          <div className="relative w-16 h-16 rounded-full bg-white shadow-md border-4 flex items-center justify-center"
+                            style={{ borderColor: step.color }}
+                          >
+                            <div className="absolute inset-0 rounded-full"
+                              style={{ backgroundColor: step.color }}
+                            />
+                            <Icon className="w-8 h-8 text-white relative z-10" />
                           </div>
-                          
-                          {/* Content */}
-                          <div className="text-center">
-                            <h3 className="titleFont text-[#194479] font-bold text-base mb-2 group-hover:text-[#91c73e] transition-colors duration-300">
-                              {step.title}
-                            </h3>
-                            <p className="paragraphFont text-gray-700 text-xs leading-relaxed">
-                              {step.desc}
-                            </p>
+                          {/* Number Badge */}
+                          <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2"
+                            style={{ borderColor: step.color }}
+                          >
+                            <span className="text-xs font-bold" style={{ color: step.color }}>{step.number}</span>
                           </div>
-
-                          {/* Connection Line to Center */}
-                          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0.5 h-12 opacity-20"
-                            style={{ backgroundColor: step.color }}
-                          />
                         </div>
-                      </motion.div>
-                    )
-                  })}
-                </div>
-
-                {/* Spacer for center hub */}
-                <div className="col-span-5 h-24 flex items-center justify-center relative">
-                  {/* Connection lines from center to bottom steps */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-full flex justify-between px-12">
-                      <div className="w-0.5 h-12 opacity-20" style={{ backgroundColor: steps[3].color }} />
-                      <div className="w-0.5 h-12 opacity-20" style={{ backgroundColor: steps[4].color }} />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Row - Steps 4, 5 */}
-                <div className="col-span-5 grid grid-cols-5 gap-6 mt-4">
-                  <div className="col-span-1" /> {/* Spacer */}
-                  {steps.slice(3, 5).map((step, i) => {
-                    const Icon = step.icon
-                    return (
-                      <motion.div
-                        key={step.number}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
-                        transition={{ duration: 0.6, delay: (i + 3) * 0.15 }}
-                        className="relative col-span-2"
-                      >
-                        <div className="relative bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-[#91c73e]/30 transition-all duration-300 group h-full">
-                          {/* Icon */}
-                          <div className="relative mb-4 flex justify-center">
-                            <div className="relative w-16 h-16 rounded-full bg-white shadow-md border-4 flex items-center justify-center"
-                              style={{ borderColor: step.color }}
-                            >
-                              <div className="absolute inset-0 rounded-full"
-                                style={{ backgroundColor: step.color }}
-                              />
-                              <Icon className="w-8 h-8 text-white relative z-10" />
-                            </div>
-                            {/* Number Badge */}
-                            <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2"
-                              style={{ borderColor: step.color }}
-                            >
-                              <span className="text-xs font-bold" style={{ color: step.color }}>{step.number}</span>
-                            </div>
-                          </div>
-                          
-                          {/* Content */}
-                          <div className="text-center">
-                            <h3 className="titleFont text-[#194479] font-bold text-base mb-2 group-hover:text-[#91c73e] transition-colors duration-300">
-                              {step.title}
-                            </h3>
-                            <p className="paragraphFont text-gray-700 text-xs leading-relaxed">
-                              {step.desc}
-                            </p>
-                          </div>
-
-                          {/* Connection Line to Center */}
-                          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-12 opacity-20"
-                            style={{ backgroundColor: step.color }}
-                          />
+                        
+                        {/* Content */}
+                        <div className="text-center mt-auto flex-1 flex flex-col">
+                          <h3 className="titleFont text-[#194479] font-bold text-base mb-2 group-hover:text-[#91c73e] transition-colors duration-300">
+                            {step.title}
+                          </h3>
+                          <p className="paragraphFont text-gray-700 text-xs leading-relaxed">
+                            {step.desc}
+                          </p>
                         </div>
-                      </motion.div>
-                    )
-                  })}
-                  <div className="col-span-1" /> {/* Spacer */}
-                </div>
+                      </div>
+                    </motion.div>
+                  )
+                })}
               </div>
+
+              {/* Bottom Row - Steps 4, 5 - Centered */}
+              <div className="flex justify-center gap-8">
+                {steps.slice(3, 5).map((step, i) => {
+                  const Icon = step.icon
+                  return (
+                    <motion.div
+                      key={step.number}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ duration: 0.6, delay: (i + 3) * 0.15 }}
+                      className="relative w-full max-w-[calc(33.33%-1.33rem)]" // Matches grid column width roughly
+                    >
+                      <div className="relative bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-[#91c73e]/30 transition-all duration-300 group h-full flex flex-col">
+                        {/* Icon */}
+                        <div className="relative mb-4 flex justify-center">
+                          <div className="relative w-16 h-16 rounded-full bg-white shadow-md border-4 flex items-center justify-center"
+                            style={{ borderColor: step.color }}
+                          >
+                            <div className="absolute inset-0 rounded-full"
+                              style={{ backgroundColor: step.color }}
+                            />
+                            <Icon className="w-8 h-8 text-white relative z-10" />
+                          </div>
+                          {/* Number Badge */}
+                          <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center border-2"
+                            style={{ borderColor: step.color }}
+                          >
+                            <span className="text-xs font-bold" style={{ color: step.color }}>{step.number}</span>
+                          </div>
+                        </div>
+                        
+                        {/* Content */}
+                        <div className="text-center mt-auto flex-1 flex flex-col">
+                          <h3 className="titleFont text-[#194479] font-bold text-base mb-2 group-hover:text-[#91c73e] transition-colors duration-300">
+                            {step.title}
+                          </h3>
+                          <p className="paragraphFont text-gray-700 text-xs leading-relaxed">
+                            {step.desc}
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )
+                })}
+              </div>
+
             </div>
           </div>
         </div>
