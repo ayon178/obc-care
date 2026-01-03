@@ -7,13 +7,20 @@ import {
   MessageSquare,
   Send,
   Loader2,
+  Building,
+  Factory,
+  Package,
 } from "lucide-react"
 
 export interface QuoteFormData {
   name: string
-  email: string
   phone: string
+  company: string
+  email: string
   inquiryType: string
+  industry: string
+  dimensions: string
+  weight: string
   message: string
 }
 
@@ -27,9 +34,13 @@ export interface QuoteAnalysis {
 const QuoteForm: React.FC = () => {
   const [formData, setFormData] = useState<QuoteFormData>({
     name: "",
-    email: "",
     phone: "",
+    company: "",
+    email: "",
     inquiryType: "",
+    industry: "",
+    dimensions: "",
+    weight: "",
     message: "",
   })
 
@@ -54,9 +65,6 @@ const QuoteForm: React.FC = () => {
     try {
       // In a real app, you'd submit to your backend here.
       // We will assume success and then run the AI analysis.
-
-    //   const result = await analyzeQuoteRequest(formData)
-    //   setAnalysis(result)
     } catch (error) {
       console.error("Submission failed", error)
     } finally {
@@ -65,8 +73,8 @@ const QuoteForm: React.FC = () => {
   }
 
   return (
-    <div className="w-full bg-transparent border-r-2 border-primary flex flex-col justify-center min-h-screen relative">
-      <div className="max-w-xl mx-auto w-full">
+    <div className="w-full bg-transparent border-r-2 border-primary/10 flex flex-col justify-center min-h-screen relative">
+      <div className="max-w-2xl mx-auto w-full">
         {/* Header Section */}
         <div className="mb-10 pt-10 px-10">
           <div className="inline-block border-b-[3px] border-primary pb-1 mb-4">
@@ -80,8 +88,9 @@ const QuoteForm: React.FC = () => {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 lg:p-16 ">
-          {/* Name */}
+        <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 lg:p-10 rounded-2xl shadow-sm border border-gray-100 mx-6">
+          
+          {/* Row 1: Name */}
           <div className="space-y-2">
             <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
               <User size={18} className="text-primary" />
@@ -94,15 +103,48 @@ const QuoteForm: React.FC = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Enter your full name"
-              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors"
+              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors outline-none"
             />
           </div>
 
-          {/* Email */}
+          {/* Row 2: Phone & Company */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+                <Phone size={18} className="text-primary" />
+                Contact Number
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="+1 ..."
+                className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors outline-none"
+              />
+            </div>
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+                <Building size={18} className="text-primary" />
+                Company Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="company"
+                required
+                value={formData.company}
+                onChange={handleChange}
+                placeholder="Company Ltd."
+                className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors outline-none"
+              />
+            </div>
+          </div>
+
+          {/* Row 3: Email */}
           <div className="space-y-2">
             <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
               <Mail size={18} className="text-primary" />
-              Email <span className="text-red-500">*</span>
+              Business Email <span className="text-red-500">*</span>
             </label>
             <input
               type="email"
@@ -111,56 +153,85 @@ const QuoteForm: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="your.email@example.com"
-              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors"
+              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors outline-none"
             />
           </div>
 
-          {/* Phone */}
-          <div className="space-y-2">
-            <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
-              <Phone size={18} className="text-primary" />
-              Contact Number <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="tel"
-              name="phone"
-              required
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="+1 (555) 123-4567"
-              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors"
-            />
+          {/* Row 4: Service & Industries */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+                <FileText size={18} className="text-primary" />
+                Service
+              </label>
+              <select
+                name="inquiryType"
+                value={formData.inquiryType}
+                onChange={handleChange}
+                className="w-full bg-gray-50 border border-gray-200 text-slate-500 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors outline-none"
+              >
+                <option value="" disabled>Choose the service</option>
+                <option>On Board Courier Service</option>
+                <option>First Mile Delivery</option>
+                <option>Last Mile Delivery</option>
+                <option>Road Freight Service</option>
+                <option>Next Flight Out Service</option>
+                <option>Air Freight Service</option>
+                <option>Customs Clearance Assistance</option>
+              </select>
+            </div>
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+                <Factory size={18} className="text-primary" />
+                Industries
+              </label>
+              <select
+                name="industry"
+                value={formData.industry}
+                onChange={handleChange}
+                className="w-full bg-gray-50 border border-gray-200 text-slate-500 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors outline-none"
+              >
+                <option value="" disabled>Choose the industry</option>
+                <option>AOG</option>
+                <option>Automotive</option>
+                <option>Machine & Spare Parts</option>
+                <option>Fashion & Luxury</option>
+                <option>Prototypes & Electronics</option>
+                <option>Sensitive Documents</option>
+              </select>
+            </div>
           </div>
 
-          {/* Inquiry Type */}
-          <div className="space-y-2">
-            <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
-              <FileText size={18} className="text-primary" />
-              Select Your Inquiry Type <span className="text-red-500">*</span>
-            </label>
-            <select
-              name="inquiryType"
-              required
-              value={formData.inquiryType}
-              onChange={handleChange}
-              className="w-full bg-gray-50 border border-gray-200 text-slate-500 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors"
-            >
-              <option value="" disabled>
-                Select an inquiry type
-              </option>
-              <option value="On Board Courier Service">
-                On Board Courier Service
-              </option>
-              <option value="First Mile Delivery">First Mile Delivery</option>
-              <option value="Last Mile Delivery">Last Mile Delivery</option>
-              <option value="Road Freight Service">Road Freight Service</option>
-              <option value="Customs Clearance Assistance">
-                Customs Clearance Assistance
-              </option>
-              <option value="Next Flight Out Service">
-                Next Flight Out Service
-              </option>
-            </select>
+          {/* Row 5: Dimensions & Weight */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+                <Package size={18} className="text-primary" />
+                Dimensions
+              </label>
+              <input
+                type="text"
+                name="dimensions"
+                value={formData.dimensions}
+                onChange={handleChange}
+                placeholder="L x W x H (cm)"
+                className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors outline-none"
+              />
+            </div>
+            <div className="space-y-2">
+              <label className="flex items-center gap-2 text-base font-semibold text-slate-700">
+                <Package size={18} className="text-primary" />
+                Weight
+              </label>
+              <input
+                type="text"
+                name="weight"
+                value={formData.weight}
+                onChange={handleChange}
+                placeholder="kg"
+                className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors outline-none"
+              />
+            </div>
           </div>
 
           {/* Message */}
@@ -171,11 +242,11 @@ const QuoteForm: React.FC = () => {
             </label>
             <textarea
               name="message"
-              rows={4}
+              rows={5}
               value={formData.message}
               onChange={handleChange}
               placeholder="Tell us more about your inquiry..."
-              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors resize-none"
+              className="w-full bg-gray-50 border border-gray-200 text-slate-900 text-base rounded-md focus:ring-primary focus:border-primary block p-4 transition-colors resize-none outline-none"
             />
             <p className="text-sm text-slate-400 mt-1">
               Optional - Provide additional details about your inquiry
@@ -201,60 +272,6 @@ const QuoteForm: React.FC = () => {
             )}
           </button>
         </form>
-
-        {/* AI Result Section */}
-        {analysis && (
-          <div className="mt-8 p-6 bg-slate-50 border border-slate-200 rounded-xl animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="bg-primary p-1.5 rounded text-white">
-                <FileText size={16} />
-              </div>
-              <h3 className="text-lg font-bold text-slate-800">
-                Instant Quote Estimate
-              </h3>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-              <div className="bg-white p-3 rounded border border-slate-100 shadow-sm">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">
-                  Estimated Cost
-                </p>
-                <p className="text-xl font-bold text-green-600">
-                  {analysis.estimatedRange}
-                </p>
-              </div>
-              <div className="bg-white p-3 rounded border border-slate-100 shadow-sm">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">
-                  Recommended Mode
-                </p>
-                <p className="text-lg font-semibold text-brand-blue">
-                  {analysis.recommendedMode}
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              <div>
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">
-                  Logistics Plan
-                </p>
-                <ul className="space-y-1">
-                  {analysis.logisticsPlan.map((step, idx) => (
-                    <li
-                      key={idx}
-                      className="text-sm text-slate-700 flex items-start gap-2"
-                    >
-                      <span className="min-w-[16px] text-primary font-bold">
-                        {idx + 1}.
-                      </span>
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   )
