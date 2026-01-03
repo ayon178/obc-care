@@ -49,12 +49,19 @@ const BecomeOBCPage = () => {
       {/* Hero Section */}
       <section className="relative h-[100vh] pt-20 md:h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-[#194479] pt-10 md:pt-20">
         {/* Abstract Background Elements */}
+        {/* Background Image */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#194479] via-[#12335b] to-[#0d2440]" />
-          <div className="absolute -top-[20%] -right-[10%] w-[800px] h-[800px] rounded-full bg-[#91C73E]/10 blur-3xl" />
-          <div className="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] rounded-full bg-white/5 blur-3xl" />
-          {/* Optional: Add a subtle pattern or map overlay here if available */}
-          <div className="absolute inset-0 opacity-10 bg-[url('/images/world_map.avif')] bg-cover bg-center mix-blend-overlay" />
+          <Image
+            src="/become_obc_banner.png"
+            alt="Become OBC Banner"
+            fill
+            className="object-cover object-center"
+            priority
+            quality={100}
+          />
+          {/* Gradient Overlays */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.7)_40%,rgba(0,0,0,0.8))] pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(145,199,62,0.1),transparent_50%)] pointer-events-none" />
         </div>
         
         <div className="container relative z-20 px-4 text-center">
