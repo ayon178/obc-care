@@ -14,7 +14,7 @@ const MedicalBanner = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-t from-[#000] to-[#000]/50 z-10" />
         <img
-          src="/industries/life/banner.png"
+          src="/industries/life/image.png"
           alt="Time-Critical Medical Transport"
           className="w-full h-full object-cover"
         />

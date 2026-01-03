@@ -20,7 +20,7 @@ export default function IndustrialMachineryEngineeringPage() {
       <IndustrialWhatWeHandle />
       <IndustrialHowItWorks />
       <IndustrialWhyChoose />
-      <IndustrialMission />
+      {/* <IndustrialMission /> */}
       <div className="mt-10">
         <ShipmentMission />
       </div>

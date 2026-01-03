@@ -38,18 +38,18 @@ const MedicalIntro = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+                className="relative rounded-3xl overflow-hidden shadow-2xl"
             >
                 <img
-                    src="/industries/life/man.png"
+                    src="/industries/life/banner.png"
                     alt="Medical Transport Courier"
-                    className="object-cover w-full h-full"
+                    className="w-full h-auto object-top"
                 />
                  <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/80 via-transparent to-transparent" />
-                 <div className="absolute bottom-6 left-6 right-6 text-white p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
+                 {/* <div className="absolute top-6 left-6 right-6 text-white p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
                     <p className="font-bold text-lg mb-1">OBC Life Care</p>
                     <p className="text-xs opacity-90">Specialized Medical Logistics</p>
-                 </div>
+                 </div> */}
             </motion.div>
         </div>
       </div>

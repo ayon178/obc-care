@@ -184,7 +184,7 @@
   "Footer": {
     "logoSubtitle": "Soluciones Logísticas Globales",
     "addressName": "OBC Care",
-    "address": "Clemensstrasse 18<br />50169 Kerpen, Alemania",
+    "address": "Birkenhöhenweg 17<br />51465 Bergisch Gladbach, Germany",
     "followUs": "Síguenos",
     "followText": "Manténgase conectado con nosotros para obtener información y actualizaciones logísticas:",
     "servicesTitle": "Nuestros Servicios",
@@ -1347,5 +1347,74 @@
       "description": "Únase a un equipo global de confianza y experimente el mundo mientras entrega envíos de tiempo crítico de manera segura y profesional.",
       "btnApply": "👉 Aplicar Ahora"
     }
+  },
+  "ContactForm": {
+    "title": "Formulario de Consulta",
+    "description": "Si tiene consultas sobre nuestros servicios, solicitudes de On Board Courier u oportunidades de asociación, complete el formulario a continuación: nuestro equipo responderá en breve.",
+    "labels": {
+      "name": "Su Nombre",
+      "phone": "Número de teléfono comercial",
+      "company": "Nombre de la empresa*",
+      "email": "Correo electrónico comercial*",
+      "service": "Servicio",
+      "industry": "Industrias",
+      "dimensions": "Dimensiones del envío",
+      "weight": "Peso del envío",
+      "message": "Cuadro de mensaje"
+    },
+    "placeholders": {
+      "name": "Ingrese su nombre completo",
+      "phone": "+34 ...",
+      "company": "Texto",
+      "email": "su correo electrónico comercial",
+      "dimensions": "cm",
+      "weight": "kg",
+      "message": "Cuéntenos más sobre su consulta...",
+      "chooseService": "Elija el servicio",
+      "chooseIndustry": "Elija la industria"
+    },
+    "hints": {
+      "company": "Pista: Empresa S.A.",
+      "email": "Pista: su mejor correo electrónico",
+      "message": "Opcional - Proporcione detalles adicionales sobre su consulta"
+    },
+    "button": "Enviar Consulta",
+    "office": {
+      "title": "Oficina Central",
+      "name": "OBC Care e.K",
+      "address": "Birkenhöhenweg 17<br />51465 Bergisch Gladbach, Germany",
+      "hotline": "Línea directa",
+      "email": "Correo electrónico",
+      "hoursTitle": "Horario de oficina",
+      "days": "Lunes – Domingo",
+      "availability": "Estamos abiertos 24/7 (CET)"
+    },
+    "options": {
+      "services": {
+        "obc": "Servicio de On Board Courier",
+        "firstMile": "Entrega de Primera Milla",
+        "lastMile": "Entrega de Última Milla",
+        "roadFreight": "Servicio de Transporte por Carretera",
+        "nfo": "Servicio Next Flight Out",
+        "airFreight": "Servicio de Carga Aérea",
+        "customs": "Asistencia en Despacho de Aduanas"
+      },
+      "industries": {
+        "aog": "AOG",
+        "automotive": "Automotriz",
+        "machinery": "Máquinas y Repuestos",
+        "fashion": "Moda y Lujo",
+        "electronics": "Prototipos y Electrónica",
+        "documents": "Documentos Confidenciales"
+      }
+    }
+  },
+  "ContactHero": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "contact": "Contacto"
+    },
+    "title": "CONTÁCTENOS",
+    "subtitle": "Envíenos un mensaje"
   }
 }

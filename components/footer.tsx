@@ -169,6 +169,15 @@ export default function Footer() {
               </motion.a>
 
               <motion.a
+                href="tel:+4922739431564"
+                className="flex items-center gap-3 text-white hover:text-[#91C73E] transition-colors group justify-center md:justify-start"
+                whileHover={{ x: 5 }}
+              >
+                <Phone className="w-6 h-6 text-[#91C73E] group-hover:scale-110 transition-transform" />
+                <span className="text-base">+49 227 394 315 64</span>
+              </motion.a>
+
+              <motion.a
                 href="mailto:request@obc-care.com"
                 className="flex items-center gap-3 text-white hover:text-[#91C73E] transition-colors group justify-center md:justify-start"
                 whileHover={{ x: 5 }}

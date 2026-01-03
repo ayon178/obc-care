@@ -185,7 +185,7 @@
   "Footer": {
     "logoSubtitle": "Global Logistics Solutions",
     "addressName": "OBC Care",
-    "address": "Clemensstrasse 18<br />50169 Kerpen, Germany",
+    "address": "Birkenhöhenweg 17<br />51465 Bergisch Gladbach, Germany",
     "followUs": "Follow Us",
     "followText": "Stay connected with us for logistics insights and updates:",
     "servicesTitle": "Our Services",
@@ -1344,6 +1344,76 @@
       "description": "Join a trusted global team and experience the world while delivering time-critical shipments safely and professionally.",
       "btnApply": "👉 Apply Now"
     }
+  }
+  ,
+  "ContactForm": {
+    "title": "Inquiry Form",
+    "description": "If you have inquiries about our services, On Board Courier requests, or partnership opportunities, please fill out the form below — our team will respond shortly.",
+    "labels": {
+      "name": "Your Name",
+      "phone": "Business telephone number",
+      "company": "Company name*",
+      "email": "Business email*",
+      "service": "Service",
+      "industry": "Industries",
+      "dimensions": "Shipment Dimensions",
+      "weight": "Shipment Weight",
+      "message": "Message Box"
+    },
+    "placeholders": {
+      "name": "Enter your full name",
+      "phone": "+44 ...",
+      "company": "Text",
+      "email": "your business email",
+      "dimensions": "cm",
+      "weight": "kg",
+      "message": "Tell us more about your inquiry...",
+      "chooseService": "Choose the service",
+      "chooseIndustry": "Choose the industry"
+    },
+    "hints": {
+      "company": "Hint: Company s.p.a.",
+      "email": "Hint: your best email",
+      "message": "Optional - Provide additional details about your inquiry"
+    },
+    "button": "Submit Inquiry",
+    "office": {
+      "title": "Head Office",
+      "name": "OBC Care e.K",
+      "address": "Birkenhöhenweg 17<br />51465 Bergisch Gladbach, Germany",
+      "hotline": "Hotline",
+      "email": "Email",
+      "hoursTitle": "Office Hours",
+      "days": "Monday – Sunday",
+      "availability": "We are open 24/7 (CET)"
+    },
+    "options": {
+      "services": {
+        "obc": "On Board Courier Service",
+        "firstMile": "First Mile Delivery",
+        "lastMile": "Last Mile Delivery",
+        "roadFreight": "Road Freight Service",
+        "nfo": "Next Flight Out Service",
+        "airFreight": "Air Freight Service",
+        "customs": "Customs Clearance Assistance"
+      },
+      "industries": {
+        "aog": "AOG",
+        "automotive": "Automotive",
+        "machinery": "Machine & Spare Parts",
+        "fashion": "Fashion & Luxury",
+        "electronics": "Prototypes & Electronics",
+        "documents": "Sensitive Documents"
+      }
+    }
+  },
+  "ContactHero": {
+    "breadcrumb": {
+      "home": "Home",
+      "contact": "Contact Us"
+    },
+    "title": "CONTACT US",
+    "subtitle": "Send Us a Message"
   }
 }
 

@@ -20,7 +20,7 @@ export default function AutomotiveManufacturingPage() {
       <AutomotiveWhatWeHandle />
       <AutomotiveHowItWorks />
       <AutomotiveWhyChoose />
-      <AutomotiveMission />
+      {/* <AutomotiveMission /> */}
       <div className="mt-10">
         <ShipmentMission />
       </div>

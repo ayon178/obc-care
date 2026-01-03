@@ -33,7 +33,7 @@ const MedicalWhatWeHandle = () => {
                 className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-xl lg:order-1"
             >
                 <img 
-                    src="/industries/life/image.png"
+                    src="/industries/life/man.png"
                     alt="Medical Equipment Handling"
                     className="w-full h-full object-cover"
                 />

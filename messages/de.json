@@ -184,7 +184,7 @@
   "Footer": {
     "logoSubtitle": "Globale Logistiklösungen",
     "addressName": "OBC Care",
-    "address": "Clemensstraße 18<br />50169 Kerpen, Deutschland",
+    "address": "Birkenhöhenweg 17<br />51465 Bergisch Gladbach, Germany",
     "followUs": "Folgen Sie uns",
     "followText": "Bleiben Sie mit uns in Verbindung für Logistik-Einblicke und Updates:",
     "servicesTitle": "Unsere Dienstleistungen",
@@ -1347,6 +1347,75 @@
       "description": "Treten Sie einem vertrauenswürdigen globalen Team bei und erleben Sie die Welt, während Sie zeitkritische Sendungen sicher und professionell liefern.",
       "btnApply": "👉 Jetzt bewerben"
     }
+  },
+  "ContactForm": {
+    "title": "Anrageformular",
+    "description": "Wenn Sie Fragen zu unseren Dienstleistungen, On Board Courier-Anfragen oder Partnerschaftsmöglichkeiten haben, füllen Sie bitte das folgende Formular aus – unser Team wird Ihnen in Kürze antworten.",
+    "labels": {
+      "name": "Ihr Name",
+      "phone": "Geschäftstelefonnummer",
+      "company": "Firmenname*",
+      "email": "Geschäfts-E-Mail*",
+      "service": "Dienstleistung",
+      "industry": "Branchen",
+      "dimensions": "Abmessungen der Sendung",
+      "weight": "Gewicht der Sendung",
+      "message": "Nachrichtenfeld"
+    },
+    "placeholders": {
+      "name": "Geben Sie Ihren vollständigen Namen ein",
+      "phone": "+49 ...",
+      "company": "Text",
+      "email": "Ihre Geschäfts-E-Mail",
+      "dimensions": "cm",
+      "weight": "kg",
+      "message": "Erzählen Sie uns mehr über Ihre Anfrage...",
+      "chooseService": "Wählen Sie die Dienstleistung",
+      "chooseIndustry": "Wählen Sie die Branche"
+    },
+    "hints": {
+      "company": "Hinweis: Firma GmbH",
+      "email": "Hinweis: Ihre beste E-Mail",
+      "message": "Optional - Geben Sie zusätzliche Details zu Ihrer Anfrage an"
+    },
+    "button": "Anfrage absenden",
+    "office": {
+      "title": "Hauptsitz",
+      "name": "OBC Care e.K",
+      "address": "Birkenhöhenweg 17<br />51465 Bergisch Gladbach, Germany",
+      "hotline": "Hotline",
+      "email": "E-Mail",
+      "hoursTitle": "Bürozeiten",
+      "days": "Montag – Sonntag",
+      "availability": "Wir sind 24/7 erreichbar (MEZ)"
+    },
+    "options": {
+      "services": {
+        "obc": "On Board Courier Service",
+        "firstMile": "First Mile Lieferung",
+        "lastMile": "Last Mile Lieferung",
+        "roadFreight": "Straßenfrachtservice",
+        "nfo": "Next Flight Out Service",
+        "airFreight": "Luftfrachtservice",
+        "customs": "Zollabfertigungsunterstützung"
+      },
+      "industries": {
+        "aog": "AOG",
+        "automotive": "Automobil",
+        "machinery": "Maschinen & Ersatzteile",
+        "fashion": "Mode & Luxus",
+        "electronics": "Prototypen & Elektronik",
+        "documents": "Sensible Dokumente"
+      }
+    }
+  },
+  "ContactHero": {
+    "breadcrumb": {
+      "home": "Startseite",
+      "contact": "Kontakt"
+    },
+    "title": "KONTAKT",
+    "subtitle": "Senden Sie uns eine Nachricht"
   }
 }
 

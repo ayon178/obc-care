@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { Link } from "@/i18n/routing"
 import { ChevronRight } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function ContactHero() {
+  const t = useTranslations("ContactHero")
+
   return (
     <section className="relative pt-20 h-[400px] w-full overflow-hidden bg-[#194479]">
       {/* Background Pattern/Image */}
@@ -27,17 +30,17 @@ export default function ContactHero() {
         >
           {/* Breadcrumb */}
           <div className="flex items-center justify-center gap-2 text-sm md:text-base mb-4 text-gray-300">
-            <Link href="/contact" className="hover:text-[#91c73e] transition-colors">Home</Link>
+            <Link href="/contact" className="hover:text-[#91c73e] transition-colors">{t("breadcrumb.home")}</Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-[#91c73e]">Contact Us</span>
+            <span className="text-[#91c73e]">{t("breadcrumb.contact")}</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            CONTACT US
+            {t("title")}
           </h1>
           
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
-            Send Us a Message
+            {t("subtitle")}
           </p>
         </motion.div>
       </div>
