@@ -97,7 +97,7 @@ export default function ShipmentMethods() {
           <div className="relative z-0">
             <div className="relative rounded-3xl overflow-hidden border border-gray-200 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
               {/* Decorative grid overlay */}
-              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:16px_16px]" />
+              <div className="pointer-events-none absolute" />
               {/* Image */}
               <Image
                 src="/services/sec_4.png"

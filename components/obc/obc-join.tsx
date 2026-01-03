@@ -143,7 +143,7 @@ export default function ObcJoin() {
               className="pt-4"
             >
               <Link
-                href="/inquiry"
+                href="/become-obc"
                 className="buttonFont inline-flex items-center gap-2 bg-[#194479] hover:bg-[#153666] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl group"
               >
                 <span>{t("cta")}</span>
@@ -165,7 +165,7 @@ export default function ObcJoin() {
               {/* Image */}
               <div className="relative h-[500px] md:h-[600px] overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop"
+                  src="/becomeObc.png"
                   alt={t("imageAlt")}
                   className="w-full h-full object-cover"
                 />

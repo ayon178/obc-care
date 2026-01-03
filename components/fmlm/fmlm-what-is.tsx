@@ -109,12 +109,13 @@ export default function FmlmWhatIs() {
             className="relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <div className="relative h-[500px] md:h-[600px]">
+              <div className="relative w-full h-auto">
                 <Image
-                  src="/services/fast-last.jpeg"
+                  src="/services/what_is.png"
                   alt={t("imageAlt")}
-                  fill
-                  className="object-cover"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto object-cover"
                   priority={false}
                 />
                 {/* Gradient Overlay */}
