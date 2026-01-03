@@ -210,13 +210,9 @@
   "ServicesBanner": {
     "title": "Delivering Precision-Driven <green>Logistics</green>",
     "description": "For time-critical shipments across the globe from AOG and automotive parts to electronics and industrial components.",
-    "features": {
-      "fast": "Fast",
-      "secure": "Secure",
-      "reliable": "Reliable",
-      "alwaysOnTime": "Always on time."
-    },
-    "scroll": "Scroll"
+    "badge": "Our Services",
+    "ctaExplore": "Explore Services",
+    "ctaQuote": "Get a Quote"
   },
   "CoreServices": {
     "header": {
