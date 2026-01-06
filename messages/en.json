@@ -750,16 +750,16 @@
     "badge": "Become an NFO Operations Partner",
     "title": "Join our network of logistics professionals and help us move time-critical shipments worldwide.",
     "question": "Ready to make a difference in global logistics?",
-    "desc1": "From dispatch coordination to airport handling, we're always looking for reliable partners dedicated to fast and secure logistics.",
-    "desc2": "As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.",
+    "description1": "From dispatch coordination to airport handling, we're always looking for reliable partners dedicated to fast and secure logistics.",
+    "description2": "As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.",
     "benefits": {
       "0": "Work with time-critical shipments",
       "1": "24/7 support team backing",
       "2": "Global network opportunities",
       "3": "Professional growth"
     },
-    "ctaApply": "Apply as a Partner",
-    "ctaContact": "Contact Our NFO Team",
+    "ctaPrimary": "Apply as a Partner",
+    "ctaSecondary": "Contact Our NFO Team",
     "stats": { "value": "24/7", "label": "Operations", "desc": "Join a team that moves critical shipments around the clock" }
   },
   "NfoCta": {

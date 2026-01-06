@@ -752,16 +752,16 @@
     "badge": "Werden Sie NFO-Operationspartner",
     "title": "Treten Sie unserem Netzwerk von Logistikprofis bei und helfen Sie uns, zeitkritische Sendungen weltweit zu bewegen.",
     "question": "Bereit, einen Unterschied in der globalen Logistik zu machen?",
-    "desc1": "Von der Versandkoordination bis zum Flughafenhandling suchen wir immer nach zuverlässigen Partnern, die sich der schnellen und sicheren Logistik verschrieben haben.",
-    "desc2": "Als Teil des globalen Netzwerks von OBC Care werden Ihnen hochwertige und zeitsensible Lieferungen anvertraut, unterstützt durch unser 24/7-Supportteam.",
+    "description1": "Von der Versandkoordination bis zum Flughafenhandling suchen wir immer nach zuverlässigen Partnern, die sich der schnellen und sicheren Logistik verschrieben haben.",
+    "description2": "Als Teil des globalen Netzwerks von OBC Care werden Ihnen hochwertige und zeitsensible Lieferungen anvertraut, unterstützt durch unser 24/7-Supportteam.",
     "benefits": {
       "0": "Arbeit mit zeitkritischen Sendungen",
       "1": "24/7 Support-Team-Unterstützung",
       "2": "Globale Netzwerkmöglichkeiten",
       "3": "Professionelles Wachstum"
     },
-    "ctaApply": "Als Partner bewerben",
-    "ctaContact": "Kontaktieren Sie unser NFO-Team",
+    "ctaPrimary": "Als Partner bewerben",
+    "ctaSecondary": "Kontaktieren Sie unser NFO-Team",
     "stats": { "value": "24/7", "label": "Betrieb", "desc": "Schließen Sie sich einem Team an, das kritische Sendungen rund um die Uhr bewegt" }
   },
   "NfoCta": {

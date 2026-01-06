@@ -752,16 +752,16 @@
     "badge": "Conviértase en Socio de Operaciones NFO",
     "title": "Únase a nuestra red de profesionales de logística y ayúdenos a mover envíos críticos en todo el mundo.",
     "question": "¿Listo para marcar la diferencia en la logística global?",
-    "desc1": "Desde la coordinación de despachos hasta el manejo en aeropuertos, siempre buscamos socios confiables dedicados a una logística rápida y segura.",
-    "desc2": "Como parte de la red global de OBC Care, se le confiarán entregas de alto valor y sensibles al tiempo, respaldadas por nuestro equipo de soporte 24/7.",
+    "description1": "Desde la coordinación de despachos hasta el manejo en aeropuertos, siempre buscamos socios confiables dedicados a una logística rápida y segura.",
+    "description2": "Como parte de la red global de OBC Care, se le confiarán entregas de alto valor y sensibles al tiempo, respaldadas por nuestro equipo de soporte 24/7.",
     "benefits": {
       "0": "Trabajar con envíos críticos",
       "1": "Respaldo del equipo de soporte 24/7",
       "2": "Oportunidades de red global",
       "3": "Crecimiento profesional"
     },
-    "ctaApply": "Aplicar como Socio",
-    "ctaContact": "Contacte a Nuestro Equipo NFO",
+    "ctaPrimary": "Aplicar como Socio",
+    "ctaSecondary": "Contacte a Nuestro Equipo NFO",
     "stats": { "value": "24/7", "label": "Operaciones", "desc": "Únase a un equipo que mueve envíos críticos las 24 horas" }
   },
   "NfoCta": {

@@ -115,17 +115,17 @@ export default function NfoJoin() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   href="/inquiry"
-                  className="buttonFont group relative inline-flex items-center justify-center gap-2 bg-[#91c73e] hover:bg-[#7bb033] text-white px-6 py-4 rounded-xl font-semibold text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden whitespace-nowrap"
+                  className="buttonFont group relative inline-flex items-center justify-center gap-2 bg-[#91c73e] hover:bg-[#7bb033] text-white px-5 py-3 rounded-xl font-semibold text-sm md:text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center"
                 >
-                  <span className="relative z-10 whitespace-nowrap">{t("ctaPrimary")}</span>
-                  <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  <span className="relative z-10">{t("ctaPrimary")}</span>
+                  <ArrowRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>
                 <Link
                   href="/inquiry"
-                  className="buttonFont group relative inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#194479] border-2 border-[#194479] px-6 py-4 rounded-xl font-semibold text-base md:text-lg shadow-md hover:shadow-lg transition-all duration-300 whitespace-nowrap"
+                  className="buttonFont group relative inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#194479] border-2 border-[#194479] px-5 py-3 rounded-xl font-semibold text-sm md:text-base shadow-md hover:shadow-lg transition-all duration-300 text-center"
                 >
-                  <span className="relative z-10 whitespace-nowrap">{t("ctaSecondary")}</span>
-                  <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  <span className="relative z-10">{t("ctaSecondary")}</span>
+                  <ArrowRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </Link>
               </div>
             </motion.div>
