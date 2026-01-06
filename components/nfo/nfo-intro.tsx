@@ -134,16 +134,16 @@ export default function NfoIntro() {
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                     className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                   >
-                    <div className="relative h-[110px] md:h-[120px] bg-gradient-to-br from-[#f8fafc] to-[#e2e8f0] group-hover:from-[#194479] group-hover:to-[#1a4a7f] transition-colors duration-500">
+                    <div className="relative h-[90px] md:h-[100px] bg-gradient-to-br from-[#91c73e] to-[#88bc3a] transition-colors duration-500">
                       
                       {/* Icon Badge */}
-                      <div className="absolute top-4 right-4 w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center group-hover:bg-white/20 group-hover:backdrop-blur-sm transition-all duration-300">
-                        <Icon className="w-6 h-6 text-[#194479] group-hover:text-white transition-colors duration-300" />
+                      <div className="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300">
+                        <Icon className="w-5 h-5 text-white transition-colors duration-300" />
                       </div>
                       
                       {/* Title */}
                       <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <h3 className="headingFont text-[#194479] text-base font-bold group-hover:text-white transition-colors duration-300">
+                        <h3 className="headingFont text-white text-sm sm:text-base font-bold transition-colors duration-300">
                           {feature.title}
                         </h3>
                       </div>
