@@ -71,7 +71,7 @@ export default function ServicesBanner() {
               className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-end sm:justify-end sm:self-end"
             >
               <Link
-                href="#services"
+                href="#our-core"
                 className="buttonFont group relative w-full sm:w-auto py-3 px-5 rounded-xl font-semibold text-white text-sm md:text-base shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 overflow-hidden"
                 style={{
                   background:
