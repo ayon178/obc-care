@@ -93,23 +93,7 @@ export default function NfoIntro() {
               />
               <div className="absolute inset-0 bg-black/20" />
 
-              {/* Floating Content Card */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="absolute bottom-6 left-6 right-6"
-              >
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/10">
-                  <p className="paragraphFont text-white text-sm md:text-base leading-relaxed mb-4">
-                    {t("imageCardText1")}
-                  </p>
-                  <p className="paragraphFont text-white text-sm md:text-base leading-relaxed">
-                    {t("imageCardText2")}
-                  </p>
-                </div>
-              </motion.div>
+
             </div>
           </motion.div>
 
@@ -126,8 +110,14 @@ export default function NfoIntro() {
               <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed mb-4">
                 {t("textCard1")}
               </p>
-              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
+              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed mb-4">
                 {t("textCard2")}
+              </p>
+              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+                {t("imageCardText1")}
+              </p>
+              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
+                {t("imageCardText2")}
               </p>
             </motion.div>
 
