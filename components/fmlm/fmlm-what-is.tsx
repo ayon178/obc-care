@@ -130,7 +130,7 @@ export default function FmlmWhatIs() {
                         <div className="text-sm text-gray-600">{t("stats.availability")}</div>
                       </div>
                       <div>
-                        <div className="text-3xl font-bold text-[#91c73e]">100%</div>
+                        <div className="text-2xl md:text-3xl font-bold text-[#91c73e]">Real Time</div>
                         <div className="text-sm text-gray-600">{t("stats.tracked")}</div>
                       </div>
                     </div>
