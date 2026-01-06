@@ -66,15 +66,15 @@ export default function ObcHowItWorks() {
                   className="relative grid grid-cols-1 md:grid-cols-2 items-start gap-3 pl-14 md:pl-0"
                 >
                   {/* Node - positioned relative to the whole row, centered on desktop, aligned to left track on mobile */}
-                  <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-1 w-8 h-8 rounded-full bg-white border border-[#194479]/40 shadow flex items-center justify-center">
-                    <Icon className="w-4 h-4 text-[#194479]" />
+                  <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-1 w-8 h-8 rounded-full bg-white border border-[#91c73e]/60 shadow flex items-center justify-center transition-color duration-300 z-10">
+                    <Icon className="w-4 h-4 text-[#91c73e]" />
                   </div>
 
                   {/* Card */}
                   <div className={cardCols}>
-                    <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-4 md:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)] transition-all">
-                      <h3 className="titleFont text-[#194479] text-sm sm:text-base leading-snug">{s.title}</h3>
-                      <p className="paragraphFont mt-1.5 text-gray-600 text-sm md:text-base">{s.desc}</p>
+                    <div className="group rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-4 md:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.12)] hover:border-[#91c73e] transition-all duration-300 hover:scale-[1.02] hover:bg-[#91c73e]">
+                      <h3 className="titleFont text-[#194479] text-sm sm:text-base leading-snug group-hover:text-white transition-colors">{s.title}</h3>
+                      <p className="paragraphFont mt-1.5 text-gray-600 text-sm md:text-base group-hover:text-white/90 transition-colors">{s.desc}</p>
                     </div>
                   </div>
                 </motion.div>
