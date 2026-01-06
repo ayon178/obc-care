@@ -62,22 +62,22 @@ export default function CustomsProcess() {
                   className="relative grid grid-cols-1 md:grid-cols-2 items-start gap-3 pl-14 md:pl-0"
                 >
                   {/* Node - positioned relative to the whole row, centered on desktop, aligned to left track on mobile */}
-                  <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-1 w-8 h-8 rounded-full bg-white border-2 border-[#194479]/40 shadow flex items-center justify-center z-10">
-                    <Icon className="w-4 h-4 text-[#194479]" />
+                  <div className={`absolute left-4 md:left-1/2 md:-translate-x-1/2 top-1 w-8 h-8 rounded-full bg-white border-2 border-[#91c73e] shadow flex items-center justify-center z-10 duration-300 transition-colors`}>
+                    <Icon className="w-4 h-4 text-[#91c73e]" />
                   </div>
 
                   {/* Numbered Badge - Top Right */}
-                  <div className="absolute top-0 right-0 md:right-auto md:left-full md:ml-4 w-8 h-8 rounded-full bg-gradient-to-br from-[#194479] to-[#1a4a7f] text-white flex items-center justify-center text-sm font-bold shadow-lg z-20">
+                  <div className="hidden md:flex absolute top-0 md:left-full md:ml-4 w-8 h-8 rounded-full bg-gradient-to-br from-[#194479] to-[#1a4a7f] text-white  items-center justify-center text-sm font-bold shadow-lg z-20">
                     {i + 1}
                   </div>
 
                   {/* Card */}
                   <div className={cardCols}>
-                    <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-4 md:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)] hover:border-[#91c73e]/60 transition-all">
-                      <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg font-bold leading-snug mb-2">
+                    <div className="group rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-4 md:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.12)] hover:border-[#91c73e] transition-all duration-300 hover:scale-[1.03] hover:bg-[#91c73e]">
+                      <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg font-bold leading-snug mb-2 group-hover:text-white transition-colors">
                         {t(`steps.${i}.title`)}
                       </h3>
-                      <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
+                      <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed group-hover:text-white/90 transition-colors">
                         {t(`steps.${i}.desc`)}
                       </p>
                     </div>
