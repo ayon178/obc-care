@@ -80,8 +80,8 @@ export default function ObcWhyImportant() {
                 className="group rounded-2xl p-4 md:p-6 bg-white/70 backdrop-blur-md border border-gray-200 hover:border-[#91c73e]/60 transition-all duration-300 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)]"
               >
                 <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 rounded-xl bg-[#194479]/10 p-3">
-                    <Icon className="w-6 h-6 text-[#194479]" />
+                  <div className="flex-shrink-0 rounded-xl bg-[#91c73e]/10 p-3 transition-colors duration-300 group-hover:bg-[#91c73e]">
+                    <Icon className="w-6 h-6 text-[#91c73e] transition-colors duration-300 group-hover:text-white" />
                   </div>
                   <div>
                     <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg leading-snug">
