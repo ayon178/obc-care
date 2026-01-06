@@ -88,9 +88,7 @@ export default function ConfidentialCta() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="pt-2"
               >
-                <p className="paragraphFont text-white font-semibold text-base md:text-lg mb-4">
-                  {t("subHeadline")}
-                </p>
+               
                 <p className="paragraphFont text-white/80 text-xs md:text-sm italic mb-4">
                   {t("subHeadlineItalic")}
                 </p>
