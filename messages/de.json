@@ -379,11 +379,13 @@
       "custody": { "value": "Sicher", "label": "Obhut" }
     },
     "items": {
-      "0": { "title": "Luftfahrt & AOG", "description": "Dringende Flugzeugteile, Werkzeuge und Dokumente, um den Betrieb am Fliegen zu halten." },
-      "1": { "title": "Automobil", "description": "Kritische Komponenten und Prototypen, die an Produktionslinien geliefert werden." },
-      "2": { "title": "Technologie & Elektronik", "description": "Sicherer Transport von Chips, Prototypen und sensiblen Datenträgern." },
-      "3": { "title": "Industrie & Fertigung", "description": "Vermeidung von Ausfallzeiten durch schnelle Lieferung wesentlicher Maschinenteile." },
-      "4": { "title": "Dokumente & Vertrauliches", "description": "Rechtliche, diplomatische oder geschäftskritische Artikel – sicher handgetragen." }
+      "aviation": "Luftfahrt & AOG-Teile",
+      "automotive": "Automobil & Fertigung",
+      "electronics": "Elektronik & Halbleiter",
+      "industrial": "Industriemaschinen & Technik",
+      "technology": "Technologie & Datenausrüstung",
+      "documents": "Hochwertige / Vertrauliche Dokumente",
+      "medical": "Stammzellen, Knochenmark & Kritischer medizinischer Transport"
     }
   },
   "ObcHowItWorks": {

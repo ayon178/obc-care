@@ -377,11 +377,13 @@
       "custody": { "value": "Secure", "label": "Custody" }
     },
     "items": {
-      "0": { "title": "Aviation & AOG", "description": "Urgent aircraft parts, tools, and documents to keep operations flying." },
-      "1": { "title": "Automotive", "description": "Critical components and prototypes delivered to production lines." },
-      "2": { "title": "Technology & Electronics", "description": "Secure movement of chips, prototypes, and sensitive data carriers." },
-      "3": { "title": "Industrial & Manufacturing", "description": "Avoid downtime with fast delivery of essential machinery parts." },
-      "4": { "title": "Documents & Confidential", "description": "Legal, diplomatic, or business‑sensitive items safely hand‑carried." }
+      "aviation": "Aviation & AOG Parts",
+      "automotive": "Automotive & Manufacturing",
+      "electronics": "Electronics & Semiconductors",
+      "industrial": "Industrial Machinery & Engineering",
+      "technology": "Technology & Data Equipment",
+      "documents": "High-Value / Confidential Documents",
+      "medical": "Stem Cell, Bone Marrow & Critical Medical Transport"
     }
   },
   "ObcHowItWorks": {

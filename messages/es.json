@@ -379,11 +379,13 @@
       "custody": { "value": "Segura", "label": "Custodia" }
     },
     "items": {
-      "0": { "title": "Aviación y AOG", "description": "Piezas de aviones urgentes, herramientas y documentos para mantener las operaciones volando." },
-      "1": { "title": "Automoción", "description": "Componentes críticos y prototipos entregados a las líneas de producción." },
-      "2": { "title": "Tecnología y Electrónica", "description": "Movimiento seguro de chips, prototipos y soportes de datos sensibles." },
-      "3": { "title": "Industrial y Manufactura", "description": "Evite el tiempo de inactividad con la entrega rápida de piezas de maquinaria esenciales." },
-      "4": { "title": "Documentos y Confidencial", "description": "Artículos legales, diplomáticos o sensibles al negocio  transportados a mano de forma segura." }
+      "aviation": "Aviación y Piezas AOG",
+      "automotive": "Automoción y Manufactura",
+      "electronics": "Electrónica y Semiconductores",
+      "industrial": "Maquinaria Industrial e Ingeniería",
+      "technology": "Tecnología y Equipos de Datos",
+      "documents": "Alto Valor / Documentos Confidenciales",
+      "medical": "Células Madre, Médula Ósea y Transporte Médico Crítico"
     }
   },
   "ObcHowItWorks": {

@@ -54,7 +54,7 @@ export default function ObcWhyImportant() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
-          <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
+          <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#91c73e]/10 text-[#91c73e] text-[10px] sm:text-[11px]">
             {t("badge")}
           </span>
           <h2 className="headingFont mt-3 text-lg sm:text-xl md:text-2xl font-semibold text-[#194479]">
