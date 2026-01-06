@@ -48,8 +48,8 @@ export default function FmlmSolutions() {
           {/* Left: Trust & stats card */}
           <motion.div className="order-2 lg:order-1 lg:sticky lg:top-28 rounded-3xl border border-gray-200 bg-white/70 backdrop-blur-md p-5 md:p-6 shadow-[0_6px_20px_rgba(0,0,0,0.06)]">
             <div className="flex items-start gap-3">
-              <div className="rounded-xl bg-[#194479]/10 p-3">
-                <Truck className="w-6 h-6 text-[#194479]" />
+              <div className="rounded-xl bg-[#91c73e]/10 p-3">
+                <Truck className="w-6 h-6 text-[#91c73e]" />
               </div>
               <div>
                 <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg">
@@ -91,14 +91,14 @@ export default function FmlmSolutions() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-60px" }}
                     transition={{ duration: 0.45, delay: i * 0.07 }}
-                    className={`relative flex items-start gap-3 rounded-2xl p-4 md:p-5 bg-white/70 backdrop-blur-md border border-gray-200 hover:border-[#91c73e]/60 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)] ${
+                    className={`group relative flex items-start gap-3 rounded-2xl p-4 md:p-5 bg-white/70 backdrop-blur-md border border-gray-200 hover:border-[#91c73e]/60 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)] ${
                       i % 2 === 0 ? "md:ml-0" : "md:ml-8"
                     }`}
                   >
                     {/* Node marker */}
-                    <div className="hidden md:block absolute -left-[7px] top-5 w-3 h-3 rounded-full bg-white border border-[#194479]/40" />
-                    <div className="flex-shrink-0 rounded-xl bg-[#194479]/10 p-3">
-                      <Icon className="w-6 h-6 text-[#194479]" />
+                    <div className="hidden md:block absolute -left-[7px] top-5 w-3 h-3 rounded-full bg-white border border-[#91c73e]/40 transition-colors duration-300 group-hover:bg-[#91c73e] group-hover:border-[#91c73e]" />
+                    <div className="flex-shrink-0 rounded-xl bg-[#91c73e]/10 p-3 transition-colors duration-300 group-hover:bg-[#91c73e]">
+                      <Icon className="w-6 h-6 text-[#91c73e] transition-colors duration-300 group-hover:text-white" />
                     </div>
                     <div>
                       <h3 className="titleFont text-[#194479] text-sm sm:text-base md:text-lg leading-snug">
