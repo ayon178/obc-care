@@ -1418,6 +1418,26 @@
     },
     "title": "KONTAKT",
     "subtitle": "Senden Sie uns eine Nachricht"
+  },
+  "Impressum": {
+    "title": "Impressum / Rechtliche Hinweise",
+    "copyright": "© {year} OBC Care e.K",
+    "address": "Birkenhöhenweg 17<br />51465 Bergisch Gladbach,<br />Deutschland",
+    "responsibleTitle": "Verantwortliche Personen:",
+    "responsibleName": "Eugen Reimer, Gründer & CEO",
+    "contactTitle": "Kontaktdaten:",
+    "contact": {
+      "phoneLabel": "Telefon:",
+      "emailLabel": "E-Mail:"
+    },
+    "registrationTitle": "Registerinformationen:",
+    "registeredOfficeLabel": "Sitz der Gesellschaft:",
+    "registeredOfficeValue": "Köln",
+    "commercialRegisterLabel": "Handelsregister:",
+    "commercialRegisterValue": "Amtsgericht Köln, HRA 37284",
+    "vatIdLabel": "USt-IdNr.:",
+    "editorialTitle": "Verantwortlich für den Inhalt nach § 55 RStV:",
+    "editorialPerson": "Eugen Reimer"
   }
 }
 

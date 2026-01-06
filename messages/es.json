@@ -1418,5 +1418,25 @@
     },
     "title": "CONTÁCTENOS",
     "subtitle": "Envíenos un mensaje"
+  },
+  "Impressum": {
+    "title": "Aviso Legal / Impressum",
+    "copyright": "© {year} OBC Care e.K",
+    "address": "Birkenhöhenweg 17<br />51465 Bergisch Gladbach,<br />Alemania",
+    "responsibleTitle": "Personas responsables:",
+    "responsibleName": "Eugen Reimer, Fundador y CEO",
+    "contactTitle": "Datos de contacto:",
+    "contact": {
+      "phoneLabel": "Teléfono:",
+      "emailLabel": "Correo electrónico:"
+    },
+    "registrationTitle": "Información de registro:",
+    "registeredOfficeLabel": "Domicilio social:",
+    "registeredOfficeValue": "Colonia",
+    "commercialRegisterLabel": "Registro comercial:",
+    "commercialRegisterValue": "Juzgado Local de Colonia, HRA 37284",
+    "vatIdLabel": "NIF-IVA:",
+    "editorialTitle": "Responsabilidad editorial del contenido según §55 RStV:",
+    "editorialPerson": "Eugen Reimer"
   }
 }
