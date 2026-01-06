@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { Quote } from "lucide-react"
+import { Star } from "lucide-react"
 import { useTranslations } from "next-intl"
 
 export default function AboutTestimonials() {
@@ -46,7 +46,11 @@ export default function AboutTestimonials() {
             {testimonials.map((item, index) => (
               <div key={index} className="px-4 outline-none">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 md:p-14 text-center relative">
-                  <Quote className="h-12 w-12 text-[#91c73e] mx-auto mb-8 opacity-50" />
+                  <div className="flex justify-center gap-1 mb-8">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-6 w-6 text-[#91c73e] fill-[#91c73e]" />
+                    ))}
+                  </div>
                   <p className="text-xl md:text-2xl font-light italic mb-8 leading-relaxed">
                     "{item.quote}"
                   </p>

@@ -17,9 +17,10 @@ export default function AboutMissionVision() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="bg-[#194479] p-8 rounded-2xl shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-[#194479] mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">{t("mission.title")}</h3>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">{t("mission.title")}</h3>
+            <p className="text-white/90 leading-relaxed text-lg">
               {t("mission.description")}
             </p>
           </motion.div>
@@ -30,9 +31,10 @@ export default function AboutMissionVision() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-[#194479] p-8 rounded-2xl shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-[#194479] mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">{t("vision.title")}</h3>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">{t("vision.title")}</h3>
+            <p className="text-white/90 leading-relaxed text-lg">
               {t("vision.description")}
             </p>
           </motion.div>

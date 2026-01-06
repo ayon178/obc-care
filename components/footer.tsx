@@ -140,7 +140,7 @@ export default function Footer() {
                 className="w-20 h-20 object-contain rounded-lg bg-white/10 p-2"
               />
               <div className="text-left">
-                <h3 className="text-2xl font-bold">OBC Care</h3>
+                <h3 className="text-2xl font-bold">OBC Care e.K</h3>
                 <p className="text-base text-white/80">
                   {t("logoSubtitle")}
                 </p>
@@ -151,7 +151,7 @@ export default function Footer() {
               <div className="flex items-start gap-3 justify-center md:justify-start">
                 <MapPin className="w-6 h-6 text-[#91C73E] flex-shrink-0 mt-1" />
                 <div className="text-left">
-                  <p className="font-semibold mb-1 text-lg">{t("addressName")}</p>
+                  <p className="font-semibold mb-1 text-lg">{t("addressName")} e.K</p>
                   <p 
                     className="text-white text-base leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: t.raw("address") }}
@@ -159,14 +159,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <motion.a
-                href="tel:+4917645922485"
-                className="flex items-center gap-3 text-white hover:text-[#91C73E] transition-colors group justify-center md:justify-start"
-                whileHover={{ x: 5 }}
-              >
-                <Phone className="w-6 h-6 text-[#91C73E] group-hover:scale-110 transition-transform" />
-                <span className="text-base">+49 176 459 224 85</span>
-              </motion.a>
+              
 
               <motion.a
                 href="tel:+4922739431564"
