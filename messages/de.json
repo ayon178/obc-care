@@ -1416,8 +1416,8 @@
       "home": "Startseite",
       "contact": "Kontakt"
     },
-    "title": "KONTAKT",
-    "subtitle": "Senden Sie uns eine Nachricht"
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Kontaktieren Sie unser Team für Anfragen oder Unterstützung."
   },
   "Impressum": {
     "title": "Impressum / Rechtliche Hinweise",
@@ -1488,6 +1488,156 @@
       "Aussagen auf dieser Website bezüglich zukünftiger Geschäftsmöglichkeiten, Pläne, Wachstum, finanzieller Leistung oder anderer nicht historischer Angelegenheiten sind zukunftsgerichtete Aussagen. Solche Aussagen sind an Begriffen wie „erwartet“, „beabsichtigt“, „plant“, „prognostiziert“, „glaubt“, „schätzt“ und ähnlichen Ausdrücken erkennbar.",
       "Zukunftsgerichtete Aussagen beinhalten Risiken und Unsicherheiten, die dazu führen könnten, dass die tatsächlichen Ergebnisse erheblich abweichen, einschließlich Marktbedingungen, Wettbewerb, operativer Herausforderungen und anderer Faktoren. OBC Care e.K. übernimmt keine Verpflichtung, diese Aussagen öffentlich zu aktualisieren, und Sie sollten sich bei Entscheidungen nicht ausschließlich auf sie verlassen."
     ]
+  },
+  "PrivacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "intro": [
+      "Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat für die Geschäftsleitung der OBC CARE e.K. einen besonders hohen Stellenwert. Eine Nutzung der Internetseiten der OBC CARE e.K. ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden.",
+      "Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.",
+      "Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung (DSGVO) und in Übereinstimmung mit den für die OBC CARE e.K. geltenden landesspezifischen Datenschutzbestimmungen.",
+      "Mittels dieser Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.",
+      "Die OBC CARE e.K. hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln."
+    ],
+    "definitions": {
+      "title": "1. Begriffsbestimmungen",
+      "intro": "Die Datenschutzerklärung der OBC CARE e.K. beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der DSGVO verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein.",
+      "items": [
+        {
+          "title": "a) Personenbezogene Daten",
+          "content": "Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen."
+        },
+        {
+          "title": "b) Betroffene Person",
+          "content": "Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren personenbezogene Daten von dem für die Verarbeitung Verantwortlichen verarbeitet werden."
+        },
+        {
+          "title": "c) Verarbeitung",
+          "content": "Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung."
+        },
+        {
+          "title": "d) Einschränkung der Verarbeitung",
+          "content": "Einschränkung der Verarbeitung ist die Markierung gespeicherter personenbezogener Daten mit dem Ziel, ihre künftige Verarbeitung einzuschränken."
+        },
+        {
+          "title": "e) Profiling",
+          "content": "Profiling ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine natürliche Person beziehen, zu bewerten."
+        },
+        {
+          "title": "f) Pseudonymisierung",
+          "content": "Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise, auf welche die personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können."
+        },
+        {
+          "title": "g) Verantwortlicher",
+          "content": "Verantwortlicher oder für die Verarbeitung Verantwortlicher ist die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet."
+        },
+        {
+          "title": "h) Auftragsverarbeiter",
+          "content": "Auftragsverarbeiter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet."
+        },
+        {
+          "title": "i) Empfänger",
+          "content": "Empfänger ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, der personenbezogene Daten offengelegt werden."
+        },
+        {
+          "title": "j) Dritter",
+          "content": "Dritter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle außer der betroffenen Person, dem Verantwortlichen, dem Auftragsverarbeiter und den Personen, die unter der unmittelbaren Verantwortung des Verantwortlichen oder des Auftragsverarbeiters befugt sind, die personenbezogenen Daten zu verarbeiten."
+        },
+        {
+          "title": "k) Einwilligung",
+          "content": "Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung."
+        }
+      ]
+    },
+    "controller": {
+      "title": "2. Name und Anschrift des für die Verarbeitung Verantwortlichen",
+      "content": "Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:",
+      "address": "Birkenhöhenweg 17<br/>51465 Bergisch Gladbach, Deutschland"
+    },
+    "cookies": {
+      "title": "3. Cookies",
+      "content": [
+        "Die Internetseiten der OBC CARE e.K. verwenden Cookies. Cookies sind Textdateien, welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert werden.",
+        "Zahlreiche Internetseiten und Server verwenden Cookies. Viele Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. Sie besteht aus einer Zeichenfolge, durch welche Internetseiten und Server dem konkreten Internetbrowser zugeordnet werden können, in dem das Cookie gespeichert wurde. Dies ermöglicht es den besuchten Internetseiten und Servern, den individuellen Browser der betroffenen Person von anderen Internetbrowsern, die andere Cookies enthalten, zu unterscheiden. Ein bestimmter Internetbrowser kann über die eindeutige Cookie-ID wiedererkannt und identifiziert werden.",
+        "Durch den Einsatz von Cookies kann die OBC CARE e.K. den Nutzern dieser Internetseite nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich wären.",
+        "Mittels eines Cookies können die Informationen und Angebote auf unserer Internetseite im Sinne des Benutzers optimiert werden. Cookies ermöglichen uns, wie bereits erwähnt, die Benutzer unserer Internetseite wiederzuerkennen. Zweck dieser Wiedererkennung ist es, den Nutzern die Verwendung unserer Internetseite zu erleichtern. Der Benutzer einer Internetseite, die Cookies verwendet, muss beispielsweise nicht bei jedem Besuch der Internetseite erneut seine Zugangsdaten eingeben, weil dies von der Internetseite und dem auf dem Computersystem des Benutzers abgelegten Cookie übernommen wird. Ein weiteres Beispiel ist das Cookie eines Warenkorbes im Online-Shop.",
+        "Die betroffene Person kann die Setzung von Cookies durch unsere Internetseite jederzeit mittels einer entsprechenden Einstellung des genutzten Internetbrowsers verhindern und damit der Setzung von Cookies dauerhaft widersprechen. Ferner können bereits gesetzte Cookies jederzeit über einen Internetbrowser oder andere Softwareprogramme gelöscht werden. Dies ist in allen gängigen Internetbrowsern möglich.",
+        "Deaktiviert die betroffene Person die Setzung von Cookies in dem genutzten Internetbrowser, sind unter Umständen nicht alle Funktionen unserer Internetseite vollumfänglich nutzbar."
+      ]
+    },
+    "generalData": {
+      "title": "4. Erfassung von allgemeinen Daten und Informationen",
+      "content": [
+        "Die Internetseite der OBC CARE e.K. erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen.",
+        "Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die OBC CARE e.K. keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr benötigt, um (1) die Inhalte unserer Internetseite korrekt auszuliefern, (2) die Inhalte unserer Internetseite sowie die Werbung für diese zu optimieren, (3) die dauerhafte Funktionsfähigkeit unserer informationstechnologischen Systeme und der Technik unserer Internetseite zu gewährleisten sowie (4) um Strafverfolgungsbehörden im Falle eines Cyberangriffes die zur Strafverfolgung notwendigen Informationen bereitzustellen. Diese anonym erhobenen Daten und Informationen werden durch die OBC CARE e.K. daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den Datenschutz und die Datensicherheit in unserem Unternehmen zu erhöhen, um letztlich ein optimales Schutzniveau für die von uns verarbeiteten personenbezogenen Daten sicherzustellen. Die anonymen Daten der Server-Logfiles werden getrennt von allen durch eine betroffene Person angegebenen personenbezogenen Daten gespeichert."
+      ]
+    },
+    "contact": {
+      "title": "5. Kontaktmöglichkeit über die Internetseite",
+      "content": [
+        "Die Internetseite der OBC CARE e.K. enthält aufgrund von gesetzlichen Vorschriften Angaben, die eine schnelle elektronische Kontaktaufnahme zu unserem Unternehmen sowie eine unmittelbare Kommunikation mit uns ermöglichen, was ebenfalls eine allgemeine Adresse der sogenannten elektronischen Post (E-Mail-Adresse) umfasst. Sofern eine betroffene Person per E-Mail oder über ein Kontaktformular den Kontakt mit dem für die Verarbeitung Verantwortlichen aufnimmt, werden die von der betroffenen Person übermittelten personenbezogenen Daten automatisch gespeichert.",
+        "Solche auf freiwilliger Basis von einer betroffenen Person an den für die Verarbeitung Verantwortlichen übermittelten personenbezogenen Daten werden für Zwecke der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten an Dritte."
+      ]
+    },
+    "erasure": {
+      "title": "6. Routinemäßige Löschung und Sperrung von personenbezogenen Daten",
+      "content": [
+        "Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche unterliegt, vorgesehen wurde.",
+        "Entfällt der Speicherungszweck oder läuft eine vom Europäischen Richtlinien- und Verordnungsgeber oder einem anderen zuständigen Gesetzgeber vorgeschriebene Speicherfrist ab, werden die personenbezogenen Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht."
+      ]
+    },
+    "rights": {
+      "title": "7. Rechte der betroffenen Person",
+      "items": [
+        {
+          "title": "a) Recht auf Bestätigung",
+          "content": "Jede betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber eingeräumte Recht, von dem für die Verarbeitung Verantwortlichen eine Bestätigung darüber zu verlangen, ob sie betreffende personenbezogene Daten verarbeitet werden. Möchte eine betroffene Person dieses Bestätigungsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an einen Mitarbeiter der OBC CARE e.K. wenden."
+        },
+        {
+          "title": "b) Recht auf Auskunft",
+          "content": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das Recht, jederzeit von dem für die Verarbeitung Verantwortlichen unentgeltliche Auskunft über die zu seiner Person gespeicherten personenbezogenen Daten und eine Kopie dieser Auskunft zu erhalten. Ferner hat der Europäische Richtlinien- und Verordnungsgeber der betroffenen Person Auskunft über folgende Informationen zugestanden: die Verarbeitungszwecke; die Kategorien personenbezogener Daten, die verarbeitet werden; die Empfänger oder Kategorien von Empfängern, gegenüber denen die personenbezogenen Daten offengelegt worden sind oder noch offengelegt werden; falls möglich die geplante Dauer, für die die personenbezogenen Daten gespeichert werden; das Bestehen eines Rechts auf Berichtigung oder Löschung der sie betreffenden personenbezogenen Daten oder auf Einschränkung der Verarbeitung durch den Verantwortlichen oder eines Widerspruchsrechts gegen diese Verarbeitung; das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde; wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben werden: Alle verfügbaren Informationen über die Herkunft der Daten; das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Artikel 22 DSGVO.<br/>Werden personenbezogene Daten an ein Drittland oder an eine internationale Organisation übermittelt, so hat die betroffene Person das Recht, über die geeigneten Garantien im Zusammenhang mit der Übermittlung unterrichtet zu werden. Dieses Recht kann jederzeit durch Kontaktaufnahme mit OBC CARE e.K. ausgeübt werden."
+        },
+        {
+          "title": "c) Recht auf Berichtigung",
+          "content": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das Recht, die unverzügliche Berichtigung sie betreffender unrichtiger personenbezogener Daten zu verlangen. Unter Berücksichtigung der Zwecke der Verarbeitung hat die betroffene Person das Recht, die Vervollständigung unvollständiger personenbezogener Daten zu verlangen. Dieses Recht kann jederzeit durch Kontaktaufnahme mit OBC CARE e.K. ausgeübt werden."
+        },
+        {
+          "title": "d) Recht auf Löschung (Recht auf Vergessenwerden)",
+          "content": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das Recht, von dem Verantwortlichen zu verlangen, dass die sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden, sofern einer der folgenden Gründe zutrifft und soweit die Verarbeitung nicht erforderlich ist: Die personenbezogenen Daten wurden für solche Zwecke erhoben, für die sie nicht mehr notwendig sind; die betroffene Person widerruft ihre Einwilligung; oder die betroffene Person legt Widerspruch gegen die Verarbeitung ein.<br/>Sofern einer der oben genannten Gründe zutrifft und eine betroffene Person die Löschung von personenbezogenen Daten, die bei der OBC CARE e.K. gespeichert sind, veranlassen möchte, kann sie sich hierzu jederzeit an einen Mitarbeiter wenden."
+        },
+        {
+          "title": "e) Recht auf Einschränkung der Verarbeitung",
+          "content": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das Recht, von dem Verantwortlichen die Einschränkung der Verarbeitung zu verlangen, wenn eine der Voraussetzungen gegeben ist: Die Richtigkeit der personenbezogenen Daten wird von der betroffenen Person bestritten; die Verarbeitung ist unrechtmäßig; der Verantwortliche benötigt die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger; oder die betroffene Person hat Widerspruch gegen die Verarbeitung eingelegt. Dieses Recht kann jederzeit durch Kontaktaufnahme mit OBC CARE e.K. ausgeübt werden."
+        },
+        {
+          "title": "f) Recht auf Datenübertragbarkeit",
+          "content": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das Recht, die sie betreffenden personenbezogenen Daten, welche sie einem Verantwortlichen bereitgestellt hat, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Sie hat außerdem das Recht, diese Daten einem anderen Verantwortlichen ohne Behinderung durch den Verantwortlichen, dem die personenbezogenen Daten bereitgestellt wurden, zu übermitteln, sofern die Verarbeitung auf der Einwilligung gemäß Art. 6 Abs. 1 Buchstabe a DSGVO oder Art. 9 Abs. 2 Buchstabe a DSGVO oder auf einem Vertrag gemäß Art. 6 Abs. 1 Buchstabe b DSGVO beruht und die Verarbeitung mithilfe automatisierter Verfahren erfolgt. Anfragen können jederzeit an die OBC CARE e.K. gerichtet werden."
+        },
+        {
+          "title": "g) Recht auf Widerspruch",
+          "content": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung sie betreffender personenbezogener Daten, die aufgrund von Art. 6 Abs. 1 Buchstaben e oder f DSGVO erfolgt, Widerspruch einzulegen. Dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling. Die OBC CARE e.K. verarbeitet die personenbezogenen Daten im Falle des Widerspruchs nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen. Werden personenbezogene Daten verarbeitet, um Direktwerbung zu betreiben, so hat die betroffene Person das Recht, jederzeit Widerspruch gegen die Verarbeitung der personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen."
+        },
+        {
+          "title": "h) Automatisierte Entscheidungen im Einzelfall einschließlich Profiling",
+          "content": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung — einschließlich Profiling — beruhenden Entscheidung unterworfen zu werden, die ihr gegenüber rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt. Ist die Entscheidung für den Abschluss oder die Erfüllung eines Vertrags erforderlich, gesetzlich zulässig oder mit ausdrücklicher Einwilligung der betroffenen Person erfolgt, trifft die OBC CARE e.K. angemessene Maßnahmen, um die Rechte und Freiheiten sowie die berechtigten Interessen der betroffenen Person zu wahren."
+        },
+        {
+          "title": "i) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung",
+          "content": "Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das Recht, eine Einwilligung zur Verarbeitung personenbezogener Daten jederzeit zu widerrufen. Möchte die betroffene Person ihr Recht auf Widerruf einer Einwilligung geltend machen, kann sie sich hierzu jederzeit an einen Mitarbeiter der OBC CARE e.K. wenden."
+        }
+      ]
+    },
+    "facebook": {
+      "title": "8. Datenschutzbestimmungen zu Einsatz und Verwendung von Facebook",
+      "content": [
+        "Auf dieser Internetseite hat der für die Verarbeitung Verantwortliche Komponenten des Unternehmens Facebook integriert. Facebook ist ein soziales Netzwerk, das Nutzern ermöglicht, Profile zu erstellen, Fotos hochzuladen und sich über Freundschaftsanfragen und andere Funktionen zu vernetzen.",
+        "Betreibergesellschaft von Facebook ist die Meta Platforms, Inc., 1 Hacker Way, Menlo Park, CA 94025, USA. Für die Verarbeitung personenbezogener Daten Verantwortlicher ist, wenn eine betroffene Person außerhalb der USA oder Kanada lebt, die Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland.",
+        "Durch jeden Aufruf einer der Einzelseiten dieser Internetseite, die durch den für die Verarbeitung Verantwortlichen betrieben wird und auf welcher eine Facebook-Komponente (Facebook-Plug-In) integriert wurde, wird der Internetbrowser auf dem informationstechnologischen System der betroffenen Person automatisch durch die jeweilige Facebook-Komponente veranlasst, eine Darstellung der entsprechenden Facebook-Komponente von Facebook herunterzuladen. Im Rahmen dieses technischen Verfahrens erhält Facebook Kenntnis darüber, welche konkrete Unterseite unserer Internetseite durch die betroffene Person besucht wird.",
+        "Sofern die betroffene Person gleichzeitig bei Facebook eingeloggt ist, erkennt Facebook mit jedem Aufruf unserer Internetseite durch die betroffene Person und während der gesamten Dauer des jeweiligen Aufenthaltes auf unserer Internetseite, welche konkrete Unterseite unserer Internetseite die betroffene Person besucht. Diese Informationen werden durch die Facebook-Komponente gesammelt und durch Facebook dem jeweiligen Facebook-Account der betroffenen Person zugeordnet.",
+        "Weitere Informationen zu den Datenschutzpraktiken von Facebook finden Sie in der <a href='https://www.facebook.com/about/privacy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Datenschutzerklärung von Facebook</a>.",
+        "Facebook erhält über die Facebook-Komponente immer dann eine Information darüber, dass die betroffene Person unsere Internetseite besucht hat, wenn die betroffene Person zum Zeitpunkt des Aufrufs unserer Internetseite gleichzeitig bei Facebook eingeloggt ist; dies findet unabhängig davon statt, ob die betroffene Person die Facebook-Komponente anklickt oder nicht. Will die betroffene Person diese Übermittlung nicht, so kann sie diese verhindern, indem sie sich vor einem Aufruf unserer Internetseite aus ihrem Facebook-Account ausloggt.",
+        "Die von Facebook veröffentlichte Datenrichtlinie, die unter <a href='https://www.facebook.com/privacy/policy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Meta Privacy Policy - Wie Meta Nutzerdaten erfasst und verwendet</a> abrufbar ist, gibt Aufschluss über die Erhebung, Verarbeitung und Nutzung personenbezogener Daten durch Facebook. Ferner wird dort erläutert, welche Einstellungsmöglichkeiten Facebook zum Schutz der Privatsphäre der betroffenen Person bietet. Zudem sind unterschiedliche Applikationen erhältlich, die es ermöglichen, eine Datenübermittlung an Facebook zu unterdrücken."
+      ]
+    }
   }
 }
 

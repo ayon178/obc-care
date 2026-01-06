@@ -1412,10 +1412,10 @@
   "ContactHero": {
     "breadcrumb": {
       "home": "Home",
-      "contact": "Contact Us"
+      "contact": "Contact"
     },
-    "title": "CONTACT US",
-    "subtitle": "Send Us a Message"
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for any inquiries or support."
   },
   "Impressum": {
     "title": "Impressum / Legal Notice",
@@ -1486,6 +1486,156 @@
       "Statements on this website regarding future business opportunities, plans, growth, financial performance, or other non-historical matters are forward-looking statements. Such statements are identifiable by terms like “expects,” “intends,” “plans,” “projects,” “believes,” “estimates,” and similar expressions.",
       "Forward-looking statements involve risks and uncertainties that could cause actual results to differ materially, including market conditions, competition, operational challenges, and other factors. OBC Care e.K. does not undertake any obligation to update these statements publicly, and you should not rely solely on them for decision-making purposes."
     ]
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": [
+      "We are very pleased that you have shown interest in our enterprise. Data protection is a particularly high priority for the management of OBC CARE e.K. The use of the Internet pages of OBC CARE e.K. is possible without any indication of personal data; however, if a data subject wishes to use special enterprise services via our website, processing of personal data may become necessary.",
+      "If the processing of personal data is necessary and there is no statutory basis for such processing, we generally obtain consent from the data subject.",
+      "The processing of personal data, such as the name, address, e-mail address, or telephone number of a data subject, shall always be carried out in accordance with the General Data Protection Regulation (GDPR) and in compliance with the country-specific data protection regulations applicable to OBC CARE e.K.",
+      "By means of this data protection declaration, our enterprise would like to inform the general public of the nature, scope, and purpose of the personal data we collect, use, and process. Furthermore, data subjects are informed of the rights to which they are entitled.",
+      "As the controller, OBC CARE e.K. has implemented numerous technical and organizational measures to ensure the most complete protection of personal data processed through this website. However, Internet-based data transmissions may in principle have security gaps, so absolute protection cannot be guaranteed. For this reason, every data subject is free to transfer personal data to us via alternative means, e.g. by telephone."
+    ],
+    "definitions": {
+      "title": "1. Definitions",
+      "intro": "The data protection declaration of OBC CARE e.K. is based on the terms used by the European legislator for the adoption of the GDPR. Our data protection declaration is intended to be clear and understandable for the general public, customers, and business partners.",
+      "items": [
+        {
+          "title": "a) Personal data",
+          "content": "Personal data means any information relating to an identified or identifiable natural person (“data subject”)."
+        },
+        {
+          "title": "b) Data subject",
+          "content": "A data subject is any identified or identifiable natural person whose personal data is processed by the controller."
+        },
+        {
+          "title": "c) Processing",
+          "content": "Processing is any operation performed on personal data, whether or not by automated means, such as collection, recording, organisation, storage, use, disclosure, restriction, erasure, or destruction."
+        },
+        {
+          "title": "d) Restriction of processing",
+          "content": "Restriction of processing is the marking of stored personal data with the aim of limiting its processing in the future."
+        },
+        {
+          "title": "e) Profiling",
+          "content": "Profiling means any form of automated processing of personal data used to evaluate personal aspects relating to a natural person."
+        },
+        {
+          "title": "f) Pseudonymisation",
+          "content": "Pseudonymisation is the processing of personal data in such a manner that it can no longer be attributed to a specific data subject without additional information."
+        },
+        {
+          "title": "g) Controller",
+          "content": "The controller is the natural or legal person who determines the purposes and means of the processing of personal data."
+        },
+        {
+          "title": "h) Processor",
+          "content": "A processor is a natural or legal person who processes personal data on behalf of the controller."
+        },
+        {
+          "title": "i) Recipient",
+          "content": "A recipient is a natural or legal person to whom personal data is disclosed."
+        },
+        {
+          "title": "j) Third party",
+          "content": "A third party is any person or body other than the data subject, controller, or processor."
+        },
+        {
+          "title": "k) Consent",
+          "content": "Consent is any freely given, specific, informed, and unambiguous indication of the data subject’s wishes to agree to the processing of personal data."
+        }
+      ]
+    },
+    "controller": {
+      "title": "2. Name and Address of the Controller",
+      "content": "Controller for the purposes of the General Data Protection Regulation (GDPR) and other applicable data protection laws is:",
+      "address": "Birkenhöhenweg 17<br/>51465 Bergisch Gladbach, Germany"
+    },
+    "cookies": {
+      "title": "3. Cookies",
+      "content": [
+        "The Internet pages of OBC CARE e.K. use cookies. Cookies are text files that are stored on a computer system via an Internet browser.",
+        "Many Internet sites and servers use cookies. Many cookies contain a so-called cookie ID. A cookie ID is a unique identifier consisting of a character string that allows Internet pages and servers to associate the cookie with a specific Internet browser. This enables visited websites and servers to distinguish an individual browser from others that contain different cookies. A specific Internet browser can be recognized and identified using this unique cookie ID.",
+        "Through the use of cookies, OBC CARE e.K. can provide users of this website with more user-friendly services that would not be possible without the use of cookies.",
+        "By means of a cookie, the information and offers on our website can be optimized with the user in mind. Cookies help us recognize users of our website, which makes it easier for them to navigate and use our services. For example, users do not need to re-enter access data each time they visit the website, as this information is stored by cookies on the user’s computer system. Another example is a shopping cart cookie, which allows an online store to remember items placed in a virtual shopping cart.",
+        "The data subject may, at any time, prevent the setting of cookies through appropriate settings in their Internet browser and may permanently refuse the setting of cookies. Additionally, cookies that have already been set may be deleted at any time via an Internet browser or other software programs. This is possible in all commonly used Internet browsers.",
+        "If the data subject deactivates cookies in the Internet browser, not all functions of this website may be fully available."
+      ]
+    },
+    "generalData": {
+      "title": "4. Collection of General Data and Information",
+      "content": [
+        "The website of OBC CARE e.K. collects a series of general data and information whenever a data subject or an automated system accesses the website. This general data and information are stored in the server log files. The data collected may include the browser types and versions used, the operating system used by the accessing system, the website from which an accessing system reaches our website (so-called referrers), the sub-websites accessed, the date and time of access to the Internet site, the Internet Protocol (IP) address, the Internet service provider of the accessing system, as well as other similar data and information that may be required in the event of attacks on our information technology systems.",
+        "When using these general data and information, OBC CARE e.K. does not draw any conclusions about the identity of the data subject. Instead, this information is required to ensure the correct delivery of website content, to optimize the content and presentation of our website and related communications, to guarantee the long-term functionality and security of our information technology systems and website infrastructure, and to provide law enforcement authorities with the information necessary for criminal prosecution in the event of a cyber-attack. For these purposes, OBC CARE e.K. analyzes the collected data and information anonymously and statistically in order to enhance data protection and data security within the enterprise and to ensure an appropriate level of protection for the personal data processed. The anonymous data contained in the server log files are stored separately from any personal data provided by a data subject."
+      ]
+    },
+    "contact": {
+      "title": "5. Contact Possibility via the Website",
+      "content": [
+        "The website of OBC CARE e.K. contains information that enables quick electronic contact with our enterprise, as well as direct communication with us. This includes a general electronic mail (e-mail) address. If a data subject contacts the controller by e-mail or via a contact form, the personal data transmitted by the data subject are automatically stored.",
+        "Such personal data are provided voluntarily by the data subject and are stored for the purpose of processing the inquiry or contacting the data subject. There is no transfer of this personal data to third parties."
+      ]
+    },
+    "erasure": {
+      "title": "6. Routine Erasure and Blocking of Personal Data",
+      "content": [
+        "The controller processes and stores the personal data of the data subject only for the period necessary to achieve the purpose of storage, or insofar as this is permitted by the European legislator or other legislators under laws or regulations to which OBC CARE e.K. is subject.",
+        "If the purpose for storage no longer applies, or if a statutory retention period prescribed by the European legislator or another competent authority expires, the personal data are routinely blocked or erased in accordance with applicable legal requirements."
+      ]
+    },
+    "rights": {
+      "title": "7. Rights of the Data Subject",
+      "items": [
+        {
+          "title": "a) Right of Confirmation",
+          "content": "Each data subject has the right granted by the European legislator to obtain confirmation from the controller as to whether or not personal data concerning him or her are being processed. If a data subject wishes to exercise this right, he or she may contact any employee of OBC CARE e.K. at any time."
+        },
+        {
+          "title": "b) Right of Access",
+          "content": "Each data subject has the right to obtain free information about his or her personal data stored by the controller and a copy of such data. In addition, the data subject has the right to access information regarding the purposes of processing, the categories of personal data concerned, the recipients or categories of recipients, the envisaged storage period, the existence of rights to rectification, erasure, restriction, or objection, the right to lodge a complaint with a supervisory authority, the source of the data if not collected directly, and the existence of automated decision-making, including profiling, pursuant to Article 22 GDPR.<br/>Where personal data are transferred to a third country or an international organisation, the data subject has the right to be informed of the appropriate safeguards relating to such transfer. This right may be exercised at any time by contacting OBC CARE e.K.."
+        },
+        {
+          "title": "c) Right to Rectification",
+          "content": "Each data subject has the right to obtain the rectification of inaccurate personal data without undue delay. Taking into account the purposes of processing, the data subject also has the right to have incomplete personal data completed. This right may be exercised by contacting OBC CARE e.K. at any time."
+        },
+        {
+          "title": "d) Right to Erasure (Right to Be Forgotten)",
+          "content": "Each data subject has the right to obtain the erasure of personal data without undue delay where the personal data are no longer necessary, consent is withdrawn, processing is objected to, the data were unlawfully processed, erasure is required for legal compliance, or the data were collected in relation to information society services pursuant to Article 8 GDPR.<br/>If one of these grounds applies, the data subject may request erasure by contacting OBC CARE e.K., and the request will be handled promptly. Where personal data have been made public, OBC CARE e.K. shall take reasonable steps to inform other controllers of the erasure request, taking into account available technology and implementation costs."
+        },
+        {
+          "title": "e) Right of Restriction of Processing",
+          "content": "Each data subject has the right to request restriction of processing where the accuracy of data is contested, processing is unlawful but erasure is opposed, the data are required for legal claims, or an objection to processing is pending verification. This right may be exercised by contacting OBC CARE e.K.."
+        },
+        {
+          "title": "f) Right to Data Portability",
+          "content": "Each data subject has the right to receive personal data provided to a controller in a structured, commonly used, and machine-readable format and to transmit those data to another controller, where processing is based on consent or contract and carried out by automated means. Where technically feasible, the data subject may request direct transmission between controllers. Requests may be made to OBC CARE e.K. at any time."
+        },
+        {
+          "title": "g) Right to Object",
+          "content": "Each data subject has the right to object at any time to processing of personal data based on Article 6(1)(e) or (f) GDPR, including profiling. OBC CARE e.K. will cease processing unless compelling legitimate grounds exist. Where personal data are processed for direct marketing purposes, the data subject has an unconditional right to object, after which processing will cease. Objections may also apply to research or statistical processing unless required for public interest. This right may be exercised at any time."
+        },
+        {
+          "title": "h) Automated Individual Decision-Making, Including Profiling",
+          "content": "Each data subject has the right not to be subject to decisions based solely on automated processing that produce legal or similarly significant effects, unless such processing is necessary for contract performance, authorized by law, or based on explicit consent. In such cases, OBC CARE e.K. ensures safeguards including the right to human intervention, expression of viewpoint, and contesting the decision."
+        },
+        {
+          "title": "i) Right to Withdraw Consent",
+          "content": "Each data subject has the right to withdraw consent to the processing of personal data at any time. Withdrawal does not affect the lawfulness of processing prior to withdrawal. This right may be exercised by contacting OBC CARE e.K.."
+        }
+      ]
+    },
+    "facebook": {
+      "title": "8. Data Protection Provisions Regarding the Application and Use of Facebook",
+      "content": [
+        "This website integrates components of the social network Facebook. Facebook is a social network that enables users to create profiles, upload photos, and interact through friend requests and other features.",
+        "The operating company of Facebook is Meta Platforms, Inc., 1 Hacker Way, Menlo Park, CA 94025, USA. For users outside the United States or Canada, the controller is Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland.",
+        "Each time a data subject accesses a page of this website containing a Facebook component (plug-in), the browser automatically downloads the Facebook component. During this process, Facebook becomes aware of the specific sub-page visited.",
+        "If the data subject is logged into Facebook at the same time, Facebook associates the visit with the user’s Facebook account. If the data subject interacts with the Facebook plug-in, such as clicking the “Like” button or posting a comment, this information is transmitted to Facebook and stored there.",
+        "Further information about Facebook’s data protection practices is available in <a href='https://www.facebook.com/about/privacy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Facebook’s Privacy Policy</a>.",
+        "Facebook always receives information, through the Facebook component, about a visit to our website by the data subject whenever the data subject is logged into Facebook at the same time as accessing our website. This occurs regardless of whether the data subject clicks on the Facebook component. If the data subject does not wish such information to be transmitted to Facebook, this may be prevented by logging out of the Facebook account prior to accessing our website.",
+        "The data protection guidelines published by Facebook, which are available at <a href='https://www.facebook.com/privacy/policy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Meta Privacy Policy - How Meta collects and uses user data</a>, provide information about the collection, processing, and use of personal data by Facebook. These guidelines also explain the available settings Facebook offers to protect the privacy of data subjects. In addition, various configuration options and browser applications are available that allow the prevention or limitation of data transmission to Facebook. Such tools may be used by the data subject to restrict or eliminate the transmission of personal data to Facebook."
+      ]
+    }
   }
 }
 

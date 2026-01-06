@@ -1416,8 +1416,8 @@
       "home": "Inicio",
       "contact": "Contacto"
     },
-    "title": "CONTÁCTENOS",
-    "subtitle": "Envíenos un mensaje"
+    "title": "Contáctenos",
+    "subtitle": "Póngase en contacto con nuestro equipo para cualquier consulta o soporte."
   },
   "Impressum": {
     "title": "Aviso Legal / Impressum",
@@ -1488,5 +1488,155 @@
       "Las declaraciones en este sitio web con respecto a futuras oportunidades de negocio, planes, crecimiento, desempeño financiero u otros asuntos no históricos son declaraciones a futuro. Tales declaraciones son identificables por términos como “espera”, “pretende”, “planea”, “proyecta”, “cree”, “estima” y expresiones similares.",
       "Las declaraciones a futuro implican riesgos e incertidumbres que podrían causar que los resultados reales difieran materialmente, incluidas las condiciones del mercado, la competencia, los desafíos operativos y otros factores. OBC Care e.K. no asume ninguna obligación de actualizar estas declaraciones públicamente, y no debe confiar únicamente en ellas para fines de toma de decisiones."
     ]
+  },
+  "PrivacyPolicy": {
+    "title": "Política de Privacidad",
+    "intro": [
+      "Nos complace mucho que haya mostrado interés en nuestra empresa. La protección de datos es una prioridad especialmente alta para la dirección de OBC CARE e.K. El uso de las páginas de Internet de OBC CARE e.K. es posible sin ninguna indicación de datos personales; sin embargo, si un interesado desea utilizar servicios empresariales especiales a través de nuestro sitio web, el procesamiento de datos personales podría ser necesario.",
+      "Si el procesamiento de datos personales es necesario y no existe una base legal para dicho procesamiento, generalmente obtenemos el consentimiento del interesado.",
+      "El procesamiento de datos personales, como el nombre, la dirección, la dirección de correo electrónico o el número de teléfono de un interesado, siempre se llevará a cabo de acuerdo con el Reglamento General de Protección de Datos (GDPR) y de conformidad con las regulaciones de protección de datos específicas del país aplicables a OBC CARE e.K.",
+      "Mediante esta declaración de protección de datos, nuestra empresa desea informar al público en general sobre la naturaleza, el alcance y el propósito de los datos personales que recopilamos, utilizamos y procesamos. Además, se informa a los interesados de los derechos a los que tienen derecho.",
+      "Como responsable del tratamiento, OBC CARE e.K. ha implementado numerosas medidas técnicas y organizativas para garantizar la protección más completa de los datos personales procesados a través de este sitio web. Sin embargo, las transmisiones de datos basadas en Internet pueden tener, en principio, brechas de seguridad, por lo que no se puede garantizar una protección absoluta. Por esta razón, cada interesado es libre de transferirnos datos personales a través de medios alternativos, por ejemplo, por teléfono."
+    ],
+    "definitions": {
+      "title": "1. Definiciones",
+      "intro": "La declaración de protección de datos de OBC CARE e.K. se basa en los términos utilizados por el legislador europeo para la adopción del GDPR. Nuestra declaración de protección de datos tiene la intención de ser clara y comprensible para el público en general, los clientes y los socios comerciales.",
+      "items": [
+        {
+          "title": "a) Datos personales",
+          "content": "Datos personales significa cualquier información relacionada con una persona física identificada o identificable (\"interesado\")."
+        },
+        {
+          "title": "b) Interesado",
+          "content": "Un interesado es cualquier persona física identificada o identificable cuyos datos personales son procesados por el controlador."
+        },
+        {
+          "title": "c) Procesamiento",
+          "content": "El procesamiento es cualquier operación realizada sobre datos personales, ya sea por medios automatizados o no, como la recopilación, registro, organización, almacenamiento, uso, divulgación, restricción, eliminación o destrucción."
+        },
+        {
+          "title": "d) Restricción del procesamiento",
+          "content": "La restricción del procesamiento es el marcado de datos personales almacenados con el objetivo de limitar su procesamiento en el futuro."
+        },
+        {
+          "title": "e) Perfilado",
+          "content": "Perfilado significa cualquier forma de procesamiento automatizado de datos personales utilizado para evaluar aspectos personales relacionados con una persona física."
+        },
+        {
+          "title": "f) Seudonimización",
+          "content": "La seudonimización es el procesamiento de datos personales de tal manera que ya no puedan atribuirse a un interesado específico sin información adicional."
+        },
+        {
+          "title": "g) Controlador",
+          "content": "El controlador es la persona física o jurídica que determina los propósitos y medios del procesamiento de datos personales."
+        },
+        {
+          "title": "h) Procesador",
+          "content": "Un procesador es una persona física o jurídica que procesa datos personales en nombre del controlador."
+        },
+        {
+          "title": "i) Destinatario",
+          "content": "Un destinatario es una persona física o jurídica a la que se divulgan datos personales."
+        },
+        {
+          "title": "j) Tercero",
+          "content": "Un tercero es cualquier persona u organismo que no sea el interesado, el controlador o el procesador."
+        },
+        {
+          "title": "k) Consentimiento",
+          "content": "El consentimiento es cualquier indicación libre, específica, informada e inequívoca de los deseos del interesado de aceptar el procesamiento de datos personales."
+        }
+      ]
+    },
+    "controller": {
+      "title": "2. Nombre y Dirección del Controlador",
+      "content": "El controlador a los efectos del Reglamento General de Protección de Datos (GDPR) y otras leyes de protección de datos aplicables es:",
+      "address": "Birkenhöhenweg 17<br/>51465 Bergisch Gladbach, Alemania"
+    },
+    "cookies": {
+      "title": "3. Cookies",
+      "content": [
+        "Las páginas de Internet de OBC CARE e.K. utilizan cookies. Las cookies son archivos de texto que se almacenan en un sistema informático a través de un navegador de Internet.",
+        "Muchos sitios de Internet y servidores utilizan cookies. Muchas cookies contienen una llamada ID de cookie. Una ID de cookie es un identificador único que consiste en una cadena de caracteres que permite a las páginas de Internet y a los servidores asociar la cookie con un navegador de Internet específico. Esto permite que los sitios web y servidores visitados distingan un navegador individual de otros que contienen diferentes cookies. Un navegador de Internet específico puede ser reconocido e identificado utilizando esta ID de cookie única.",
+        "Mediante el uso de cookies, OBC CARE e.K. puede proporcionar a los usuarios de este sitio web servicios más fáciles de usar que no serían posibles sin el uso de cookies.",
+        "Mediante una cookie, la información y las ofertas en nuestro sitio web se pueden optimizar pensando en el usuario. Las cookies nos ayudan a reconocer a los usuarios de nuestro sitio web, lo que les facilita navegar y utilizar nuestros servicios. Por ejemplo, los usuarios no necesitan volver a ingresar los datos de acceso cada vez que visitan el sitio web, ya que esta información es almacenada por las cookies en el sistema informático del usuario. Otro ejemplo es una cookie de carrito de compras en una tienda en línea.",
+        "El interesado puede, en cualquier momento, evitar la configuración de cookies a través de la configuración adecuada en su navegador de Internet y puede negarse permanentemente a la configuración de cookies. Además, las cookies que ya se han configurado se pueden eliminar en cualquier momento a través de un navegador de Internet u otros programas de software. Esto es posible en todos los navegadores de Internet de uso común.",
+        "Si el interesado desactiva las cookies en el navegador de Internet, es posible que no todas las funciones de este sitio web estén completamente disponibles."
+      ]
+    },
+    "generalData": {
+      "title": "4. Recopilación de Datos e Información General",
+      "content": [
+        "El sitio web de OBC CARE e.K. recopila una serie de datos e información general cada vez que un interesado o un sistema automatizado accede al sitio web. Estos datos e información generales se almacenan en los archivos de registro del servidor. Los datos recopilados pueden incluir los tipos y versiones de navegador utilizados, el sistema operativo utilizado por el sistema de acceso, el sitio web desde el cual un sistema de acceso llega a nuestro sitio web (llamados referentes), los sub-sitios web accedidos, la fecha y hora de acceso al sitio de Internet, la dirección de Protocolo de Internet (IP), el proveedor de servicios de Internet del sistema de acceso, así como otros datos e información similares que puedan ser necesarios en caso de ataques a nuestros sistemas de tecnología de la información.",
+        "Al utilizar estos datos e información generales, OBC CARE e.K. no saca ninguna conclusión sobre la identidad del interesado. En cambio, esta información es necesaria para garantizar la entrega correcta del contenido del sitio web, optimizar el contenido y la presentación de nuestro sitio web y las comunicaciones relacionadas, garantizar la funcionalidad y seguridad a largo plazo de nuestros sistemas de tecnología de la información e infraestructura del sitio web, y proporcionar a las autoridades encargadas de hacer cumplir la ley la información necesaria para el enjuiciamiento penal en caso de un ciberataque. Para estos fines, OBC CARE e.K. analiza los datos e información recopilados de forma anónima y estadística con el fin de mejorar la protección de datos y la seguridad de los datos dentro de la empresa y garantizar un nivel adecuado de protección para los datos personales procesados. Los datos anónimos contenidos en los archivos de registro del servidor se almacenan por separado de cualquier dato personal proporcionado por un interesado."
+      ]
+    },
+    "contact": {
+      "title": "5. Posibilidad de Contacto a través del Sitio Web",
+      "content": [
+        "El sitio web de OBC CARE e.K. contiene información que permite un contacto electrónico rápido con nuestra empresa, así como una comunicación directa con nosotros. Esto incluye una dirección general de correo electrónico. Si un interesado se pone en contacto con el controlador por correo electrónico o a través de un formulario de contacto, los datos personales transmitidos por el interesado se almacenan automáticamente.",
+        "Dichos datos personales son proporcionados voluntariamente por el interesado y se almacenan con el fin de procesar la consulta o contactar al interesado. No hay transferencia de estos datos personales a terceros."
+      ]
+    },
+    "erasure": {
+      "title": "6. Borrado y Bloqueo Rutinario de Datos Personales",
+      "content": [
+        "El controlador procesa y almacena los datos personales del interesado solo durante el período necesario para lograr el propósito del almacenamiento, o en la medida en que esto esté permitido por el legislador europeo u otros legisladores bajo leyes o regulaciones a las que OBC CARE e.K. está sujeta.",
+        "Si el propósito del almacenamiento ya no es aplicable, o si expira un período de retención legal prescrito por el legislador europeo u otra autoridad competente, los datos personales se bloquean o borran rutinariamente de acuerdo con los requisitos legales aplicables."
+      ]
+    },
+    "rights": {
+      "title": "7. Derechos del Interesado",
+      "items": [
+        {
+          "title": "a) Derecho de Confirmación",
+          "content": "Cada interesado tiene el derecho otorgado por el legislador europeo de obtener del controlador confirmación sobre si se están procesando o no datos personales que le conciernen. Si un interesado desea ejercer este derecho, puede comunicarse con cualquier empleado de OBC CARE e.K. en cualquier momento."
+        },
+        {
+          "title": "b) Derecho de Acceso",
+          "content": "Cada interesado tiene derecho a obtener información gratuita sobre sus datos personales almacenados por el controlador y una copia de dichos datos. Además, el interesado tiene derecho a acceder a información sobre los fines del procesamiento, las categorías de datos personales en cuestión, los destinatarios o categorías de destinatarios, el período de almacenamiento previsto, la existencia de derechos de rectificación, borrado, restricción u objeción, el derecho a presentar una queja ante una autoridad de supervisión, la fuente de los datos si no se recopilan directamente, y la existencia de toma de decisiones automatizada, incluido el perfilado, de conformidad con el artículo 22 del GDPR.<br/>Cuando los datos personales se transfieren a un tercer país o a una organización internacional, el interesado tiene derecho a ser informado de las garantías adecuadas relacionadas con dicha transferencia. Este derecho puede ejercerse en cualquier momento contactando a OBC CARE e.K.."
+        },
+        {
+          "title": "c) Derecho a la Rectificación",
+          "content": "Cada interesado tiene derecho a obtener la rectificación de datos personales inexactos sin demora indebida. Teniendo en cuenta los fines del procesamiento, el interesado también tiene derecho a que se completen los datos personales incompletos. Este derecho puede ejercerse contactando a OBC CARE e.K. en cualquier momento."
+        },
+        {
+          "title": "d) Derecho al Borrado (Derecho al Olvido)",
+          "content": "Cada interesado tiene derecho a obtener el borrado de datos personales sin demora indebida cuando los datos personales ya no sean necesarios, se retire el consentimiento, se objete al procesamiento, los datos hayan sido procesados ilegalmente, se requiera el borrado para el cumplimiento legal, o los datos hayan sido recopilados en relación con servicios de la sociedad de la información de conformidad con el Artículo 8 del GDPR.<br/>Si se aplica uno de estos motivos, el interesado puede solicitar el borrado contactando a OBC CARE e.K., y la solicitud se gestionará con prontitud."
+        },
+        {
+          "title": "e) Derecho a la Restricción del Procesamiento",
+          "content": "Cada interesado tiene derecho a solicitar la restricción del procesamiento cuando se impugne la exactitud de los datos, el procesamiento sea ilegal pero se oponga al borrado, los datos sean necesarios para reclamos legales, o una objeción al procesamiento esté pendiente de verificación. Este derecho puede ejercerse contactando a OBC CARE e.K.."
+        },
+        {
+          "title": "f) Derecho a la Portabilidad de Datos",
+          "content": "Cada interesado tiene derecho a recibir datos personales proporcionados a un controlador en un formato estructurado, de uso común y legible por máquina y a transmitir esos datos a otro controlador, donde el procesamiento se base en el consentimiento o contrato y se lleve a cabo por medios automatizados. Cuando sea técnicamente posible, el interesado puede solicitar la transmisión directa entre controladores. Las solicitudes pueden hacerse a OBC CARE e.K. en cualquier momento."
+        },
+        {
+          "title": "g) Derecho a Objetar",
+          "content": "Cada interesado tiene derecho a objetar en cualquier momento al procesamiento de datos personales basado en el Artículo 6(1)(e) o (f) del GDPR, incluido el perfilado. OBC CARE e.K. dejará de procesar a menos que existan motivos legítimos imperiosos. Cuando los datos personales se procesan con fines de marketing directo, el interesado tiene un derecho incondicional a objetar, después de lo cual el procesamiento cesará."
+        },
+        {
+          "title": "h) Toma de Decisiones Individual Automatizada, Incluido el Perfilado",
+          "content": "Cada interesado tiene derecho a no estar sujeto a decisiones basadas únicamente en el procesamiento automatizado que produzcan efectos legales o significativos similares, a menos que dicho procesamiento sea necesario para la ejecución del contrato, autorizado por ley o basado en el consentimiento explícito."
+        },
+        {
+          "title": "i) Derecho a Retirar el Consentimiento",
+          "content": "Cada interesado tiene derecho a retirar el consentimiento para el procesamiento de datos personales en cualquier momento. La retirada no afecta la legalidad del procesamiento anterior a la retirada. Este derecho puede ejercerse contactando a OBC CARE e.K.."
+        }
+      ]
+    },
+    "facebook": {
+      "title": "8. Disposiciones de Protección de Datos sobre la Aplicación y Uso de Facebook",
+      "content": [
+        "Este sitio web integra componentes de la red social Facebook. Facebook es una red social que permite a los usuarios crear perfiles, subir fotos e interactuar a través de solicitudes de amistad y otras funciones.",
+        "La empresa operadora de Facebook es Meta Platforms, Inc., 1 Hacker Way, Menlo Park, CA 94025, EE. UU. Para usuarios fuera de los Estados Unidos o Canadá, el controlador es Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublín 2, Irlanda.",
+        "Cada vez que un interesado accede a una página de este sitio web que contiene un componente de Facebook (plug-in), el navegador descarga automáticamente el componente de Facebook. Durante este proceso, Facebook se da cuenta de la sub-página específica visitada.",
+        "Si el interesado ha iniciado sesión en Facebook al mismo tiempo, Facebook asocia la visita con la cuenta de Facebook del usuario. Si el interesado interactúa con el complemento de Facebook, como hacer clic en el botón \"Me gusta\" o publicar un comentario, esta información se transmite a Facebook y se almacena allí.",
+        "Más información sobre las prácticas de protección de datos de Facebook está disponible en la <a href='https://www.facebook.com/about/privacy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Política de Privacidad de Facebook</a>.",
+        "Facebook siempre recibe información, a través del componente de Facebook, sobre una visita a nuestro sitio web por parte del interesado siempre que el interesado haya iniciado sesión en Facebook al mismo tiempo que accede a nuestro sitio web. Esto ocurre independientemente de si el interesado hace clic en el componente de Facebook. Si el interesado no desea que dicha información se transmita a Facebook, esto puede evitarse cerrando sesión en la cuenta de Facebook antes de acceder a nuestro sitio web.",
+        "Las pautas de protección de datos publicadas por Facebook, que están disponibles en <a href='https://www.facebook.com/privacy/policy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Política de Privacidad de Meta - Cómo Meta recopila y utiliza datos de usuario</a>, proporcionan información sobre la recopilación, procesamiento y uso de datos personales por parte de Facebook."
+      ]
+    }
   }
 }
