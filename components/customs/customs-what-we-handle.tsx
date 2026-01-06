@@ -54,8 +54,8 @@ export default function CustomsWhatWeHandle() {
                 >
                   <div className="flex items-start gap-4 rounded-2xl p-5 md:p-6 bg-white/70 backdrop-blur-md border border-gray-200 hover:border-[#91c73e]/60 transition-all shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)]">
                     {/* Icon */}
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#194479]/10 flex items-center justify-center group-hover:bg-[#194479] transition-colors duration-300">
-                      <Icon className="w-6 h-6 text-[#194479] group-hover:text-white transition-colors duration-300" />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#91c73e]/10 flex items-center justify-center group-hover:bg-[#91c73e] transition-colors duration-300">
+                      <Icon className="w-6 h-6 text-[#91c73e] group-hover:text-white transition-colors duration-300" />
                     </div>
                     
                     {/* Content */}
