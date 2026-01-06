@@ -1438,6 +1438,56 @@
     "vatIdLabel": "USt-IdNr.:",
     "editorialTitle": "Verantwortlich für den Inhalt nach § 55 RStV:",
     "editorialPerson": "Eugen Reimer"
+  },
+  "Terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "intro": "Bitte lesen Sie diese Allgemeinen Geschäftsbedingungen sorgfältig durch, bevor Sie auf diese Website zugreifen oder sie nutzen.",
+    "scopeTitle": "Geltungsbereich",
+    "scopeIntro": "Die Allgemeinen Geschäftsbedingungen von OBC Care decken die folgenden Bereiche ab:",
+    "generalProvisionsTitle": "Allgemeine Bestimmungen",
+    "generalProvisionsContent": [
+      "OBC Care e.K. ist über verschiedene verbundene Unternehmen tätig, die jeweils eine eigene Rechtspersönlichkeit besitzen. Auf dieser Website können die Begriffe „OBC Care e.K.“, „wir“, „uns“ oder „unser“ verwendet werden, um gemeinsam auf das Unternehmen oder seine Einheiten zu verweisen, wo eine spezifische Identifizierung nicht erforderlich ist.",
+      "Der Inhalt dieser Website wird von OBC Care e.K. nur zu Informationszwecken bereitgestellt. Die Verfügbarkeit von OBC Care Produkten und Dienstleistungen kann je nach Region variieren. Durch die Nutzung dieser Website oder das Herunterladen von Inhalten erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen einverstanden. Wenn Sie nicht einverstanden sind, nutzen Sie diese Website bitte nicht.",
+      "OBC Care e.K. gibt keine ausdrücklichen oder stillschweigenden Garantien oder Zusicherungen hinsichtlich der Genauigkeit, Vollständigkeit oder Zuverlässigkeit von Informationen, Texten, Grafiken, Links oder anderen Materialien auf dieser Website.",
+      "Wir behalten uns das Recht vor, die Website zu ändern oder die hierin beschriebenen Produkte und Dienstleistungen jederzeit ohne vorherige Ankündigung zu aktualisieren. Diese Allgemeinen Geschäftsbedingungen können ebenfalls jederzeit überarbeitet werden, und es liegt in Ihrer Verantwortung, diese Seite regelmäßig zu überprüfen, um über Aktualisierungen informiert zu bleiben. Bestimmte Bestimmungen können durch spezielle rechtliche Hinweise oder zusätzliche Bedingungen auf einzelnen Seiten außer Kraft gesetzt werden."
+    ],
+    "intellectualPropertyTitle": "Geistige Eigentumsrechte",
+    "intellectualPropertyContent": [
+      "Alle Materialien auf dieser Website, einschließlich Text, Grafiken, Logos, Symbole, Bilder, Videos und Software, sind Eigentum von OBC Care e.K. oder seinen Lizenzgebern und durch Urheberrechte und andere Gesetze zum geistigen Eigentum geschützt.",
+      "Nichts auf dieser Website gewährt Ihnen eine Lizenz zur Nutzung des geistigen Eigentums von OBC Care, außer wie hierin ausdrücklich genehmigt. Die unbefugte Nutzung, Vervielfältigung oder Verbreitung von Website-Inhalten ist strengstens untersagt.",
+      "Bilder, die auf dieser Website angezeigt werden, stammen von Google oder Freepik, sofern nicht anders angegeben."
+    ],
+    "trademarkTitle": "Markeninformationen",
+    "trademarkContent": [
+      "Alle Marken, Dienstleistungsmarken und Logos, die auf dieser Website angezeigt werden, sind Eigentum von OBC Care e.K. oder seinen Tochtergesellschaften. Die öffentliche Nutzung von Marken der OBC Care e.K. bedarf der vorherigen schriftlichen Genehmigung unseres Unternehmens.",
+      "Die faire Nutzung von Marken zum Zwecke der Bewerbung von OBC Care Produkten und Dienstleistungen ist nur mit entsprechender Kennzeichnung gestattet. Alle anderen Marken Dritter bleiben Eigentum ihrer jeweiligen Inhaber. Alle Eigentumshinweise müssen beachtet werden."
+    ],
+    "websiteUsageTitle": "Website-Nutzung",
+    "websiteUsageContent": [
+      "OBC Care e.K. gewährt Ihnen eine beschränkte, nicht übertragbare und nicht exklusive Lizenz für den Zugriff und die Nutzung dieser Website ausschließlich für persönliche oder informative Zwecke. Sie stimmen zu, Inhalte nicht ohne vorherige Genehmigung zu kopieren, zu reproduzieren, weiterzuverkaufen, weiterzuverteilen oder zu verwerten.",
+      "Sie stimmen auch zu, den Betrieb der Website nicht zu stören, keine schädliche Software einzuführen oder deren Sicherheit in irgendeiner Weise zu gefährden. Obwohl wir angemessene Anstrengungen unternehmen, um Viren oder andere schädliche Inhalte zu verhindern, kann OBC Care e.K. nicht garantieren, dass die Website virenfrei ist. Sie sind dafür verantwortlich, geeignete Schutzmaßnahmen auf Ihren Geräten zu implementieren. OBC Care e.K. haftet nicht für Schäden, die aus der Nutzung dieser Website resultieren, einschließlich Datenverlust, Betriebsunterbrechung oder anderer direkter oder indirekter Verluste."
+    ],
+    "personalDataTitle": "Umgang mit personenbezogenen Daten",
+    "personalDataContent": [
+      "Alle personenbezogenen Informationen, die Sie OBC Care e.K. zur Verfügung stellen, werden vertraulich behandelt und nur für Zwecke im Zusammenhang mit der Erbringung unserer Dienstleistungen oder wie anderweitig in unserer Datenschutzrichtlinie beschrieben verwendet. Ihre Daten werden nicht an Dritte weitergegeben, außer wenn dies für die Leistungserbringung erforderlich ist oder gesetzlich vorgeschrieben ist."
+    ],
+    "siteAccessibilityTitle": "Zugänglichkeit der Website",
+    "siteAccessibilityContent": [
+      "OBC Care e.K. garantiert keinen ununterbrochenen Zugriff auf diese Website. Vorübergehende Nichtverfügbarkeit kann aufgrund von technischen Wartungsarbeiten, Reparaturen, Geräteausfällen oder anderen Ereignissen außerhalb unserer Kontrolle auftreten."
+    ],
+    "externalLinksTitle": "Externe Links",
+    "externalLinksContent": [
+      "Diese Website kann Links zu Websites Dritter enthalten. OBC Care e.K. kontrolliert nicht und ist nicht verantwortlich für den Inhalt, die Datenschutzrichtlinien oder Praktiken verlinkter Websites. Die Aufnahme eines Links stellt keine Billigung dar. Der Zugriff auf externe Websites erfolgt auf eigenes Risiko. Wir behalten uns das Recht vor, Links nach unserem Ermessen zu entfernen."
+    ],
+    "governingLawTitle": "Anwendbares Recht",
+    "governingLawContent": [
+      "Diese Website wird von OBC Care e.K. von Deutschland aus betrieben. Der Zugriff auf diese Website aus anderen Rechtsgebieten erfolgt auf eigenes Risiko, und die Nutzer sind für die Einhaltung der lokalen Gesetze verantwortlich. Alle Ansprüche im Zusammenhang mit dieser Website unterliegen dem materiellen Recht Deutschlands."
+    ],
+    "forwardLookingTitle": "Zukunftsgerichtete Aussagen",
+    "forwardLookingContent": [
+      "Aussagen auf dieser Website bezüglich zukünftiger Geschäftsmöglichkeiten, Pläne, Wachstum, finanzieller Leistung oder anderer nicht historischer Angelegenheiten sind zukunftsgerichtete Aussagen. Solche Aussagen sind an Begriffen wie „erwartet“, „beabsichtigt“, „plant“, „prognostiziert“, „glaubt“, „schätzt“ und ähnlichen Ausdrücken erkennbar.",
+      "Zukunftsgerichtete Aussagen beinhalten Risiken und Unsicherheiten, die dazu führen könnten, dass die tatsächlichen Ergebnisse erheblich abweichen, einschließlich Marktbedingungen, Wettbewerb, operativer Herausforderungen und anderer Faktoren. OBC Care e.K. übernimmt keine Verpflichtung, diese Aussagen öffentlich zu aktualisieren, und Sie sollten sich bei Entscheidungen nicht ausschließlich auf sie verlassen."
+    ]
   }
 }
 

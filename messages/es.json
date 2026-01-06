@@ -1438,5 +1438,55 @@
     "vatIdLabel": "NIF-IVA:",
     "editorialTitle": "Responsabilidad editorial del contenido según §55 RStV:",
     "editorialPerson": "Eugen Reimer"
+  },
+  "Terms": {
+    "title": "Términos y Condiciones",
+    "intro": "Por favor, lea estos Términos y Condiciones cuidadosamente antes de acceder o utilizar este sitio web.",
+    "scopeTitle": "Alcance",
+    "scopeIntro": "Los Términos y Condiciones de OBC Care cubren las siguientes áreas:",
+    "generalProvisionsTitle": "Disposiciones Generales",
+    "generalProvisionsContent": [
+      "OBC Care e.K. opera a través de sus diversas entidades afiliadas, cada una manteniendo su propia identidad legal. En este sitio web, los términos “OBC Care e.K.”, “nosotros”, “nos” o “nuestro” pueden utilizarse para referirse colectivamente a la empresa o sus entidades cuando no sea necesaria una identificación específica.",
+      "El contenido de este sitio web es proporcionado por OBC Care e.K. únicamente con fines informativos. La disponibilidad de productos y servicios de OBC Care puede variar según la región. Al utilizar este sitio web o descargar contenido del mismo, usted acepta cumplir con estos Términos y Condiciones. Si no está de acuerdo, por favor absténgase de utilizar este sitio web.",
+      "OBC Care e.K. no ofrece garantías ni representaciones, expresas o implícitas, con respecto a la exactitud, integridad o fiabilidad de cualquier información, texto, gráficos, enlaces u otros materiales en este sitio web.",
+      "Nos reservamos el derecho de modificar el sitio web o actualizar los productos y servicios descritos aquí en cualquier momento sin previo aviso. Estos Términos y Condiciones también pueden ser revisados en cualquier momento, y es su responsabilidad revisar esta página periódicamente para mantenerse informado de cualquier actualización. Ciertas disposiciones pueden ser anuladas por avisos legales específicos o términos adicionales en páginas individuales."
+    ],
+    "intellectualPropertyTitle": "Derechos de Propiedad Intelectual",
+    "intellectualPropertyContent": [
+      "Todos los materiales en este sitio web, incluidos textos, gráficos, logotipos, iconos, imágenes, videos y software, son propiedad de OBC Care e.K. o sus licenciantes y están protegidos por derechos de autor y otras leyes de propiedad intelectual.",
+      "Nada en este sitio web le otorga ninguna licencia para usar la propiedad intelectual de OBC Care, excepto según lo autorizado explícitamente aquí. El uso no autorizado, reproducción o distribución del contenido del sitio web está estrictamente prohibido.",
+      "Las imágenes mostradas en este sitio web provienen de Google o Freepik a menos que se indique lo contrario."
+    ],
+    "trademarkTitle": "Información de Marcas Registradas",
+    "trademarkContent": [
+      "Todas las marcas comerciales, marcas de servicio y logotipos mostrados en este sitio web son propiedad de OBC Care e.K. o sus subsidiarias. El uso público de las marcas comerciales de OBC Care e.K. requiere la aprobación previa por escrito de nuestra empresa.",
+      "El uso legítimo de marcas comerciales con el fin de promocionar productos y servicios de OBC Care está permitido solo con la atribución adecuada. Todas las demás marcas comerciales de terceros siguen siendo propiedad de sus respectivos dueños. Se deben respetar todos los avisos de propiedad."
+    ],
+    "websiteUsageTitle": "Uso del Sitio Web",
+    "websiteUsageContent": [
+      "OBC Care e.K. le otorga una licencia limitada, intransferible y no exclusiva para acceder y utilizar este sitio web únicamente con fines personales o informativos. Usted acepta no copiar, reproducir, revender, redistribuir o explotar ningún contenido sin autorización previa.",
+      "También acepta no interferir con el funcionamiento del sitio web, introducir software malicioso o comprometer su seguridad de ninguna manera. Si bien hacemos esfuerzos razonables para prevenir virus u otro contenido dañino, OBC Care e.K. no puede garantizar que el sitio web esté libre de virus. Usted es responsable de implementar las medidas de seguridad adecuadas en sus dispositivos. OBC Care e.K. no será responsable de ningún daño que resulte del uso de este sitio web, incluida la pérdida de datos, interrupción del negocio u otras pérdidas directas o indirectas."
+    ],
+    "personalDataTitle": "Manejo de Datos Personales",
+    "personalDataContent": [
+      "Cualquier información personal proporcionada por usted a OBC Care e.K. será tratada de manera confidencial y utilizada solo para fines relacionados con la prestación de nuestros servicios o como se describe de otra manera en nuestra Política de Privacidad. Sus datos no serán revelados a terceros excepto cuando sea necesario para la prestación del servicio o según lo requerido legalmente."
+    ],
+    "siteAccessibilityTitle": "Accesibilidad del Sitio",
+    "siteAccessibilityContent": [
+      "OBC Care e.K. no garantiza el acceso ininterrumpido a este sitio web. La indisponibilidad temporal puede ocurrir debido a mantenimiento técnico, reparaciones, fallas en el equipo u otros eventos fuera de nuestro control."
+    ],
+    "externalLinksTitle": "Enlaces Externos",
+    "externalLinksContent": [
+      "Este sitio web puede incluir enlaces a sitios web de terceros. OBC Care e.K. no controla y no es responsable del contenido, las políticas de privacidad o las prácticas de los sitios vinculados. La inclusión de cualquier enlace no constituye un respaldo. El acceso a sitios web externos es bajo su propio riesgo. Nos reservamos el derecho de eliminar cualquier enlace a nuestra discreción."
+    ],
+    "governingLawTitle": "Ley Aplicable",
+    "governingLawContent": [
+      "Este sitio web es operado por OBC Care e.K. desde Alemania. El acceso a este sitio web desde otras jurisdicciones es bajo su propio riesgo, y los usuarios son responsables del cumplimiento de las leyes locales. Todas las reclamaciones relacionadas con este sitio web se rigen por las leyes sustantivas de Alemania."
+    ],
+    "forwardLookingTitle": "Declaraciones a Futuro",
+    "forwardLookingContent": [
+      "Las declaraciones en este sitio web con respecto a futuras oportunidades de negocio, planes, crecimiento, desempeño financiero u otros asuntos no históricos son declaraciones a futuro. Tales declaraciones son identificables por términos como “espera”, “pretende”, “planea”, “proyecta”, “cree”, “estima” y expresiones similares.",
+      "Las declaraciones a futuro implican riesgos e incertidumbres que podrían causar que los resultados reales difieran materialmente, incluidas las condiciones del mercado, la competencia, los desafíos operativos y otros factores. OBC Care e.K. no asume ninguna obligación de actualizar estas declaraciones públicamente, y no debe confiar únicamente en ellas para fines de toma de decisiones."
+    ]
   }
 }

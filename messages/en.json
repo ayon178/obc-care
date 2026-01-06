@@ -1436,6 +1436,56 @@
     "vatIdLabel": "VAT ID:",
     "editorialTitle": "Editorial responsibility for the content according to §55 RStV:",
     "editorialPerson": "Eugen Reimer"
+  },
+  "Terms": {
+    "title": "Terms and Conditions",
+    "intro": "Please read these Terms and Conditions carefully before accessing or using this website.",
+    "scopeTitle": "Scope",
+    "scopeIntro": "The Terms and Conditions of OBC Care cover the following areas:",
+    "generalProvisionsTitle": "General Provisions",
+    "generalProvisionsContent": [
+      "OBC Care e.K. operates through its various affiliated entities, each maintaining its own legal identity. On this website, the terms “OBC Care e.K.,” “we,” “us,” or “our” may be used to refer collectively to the company or its entities where specific identification is unnecessary.",
+      "The content on this website is provided by OBC Care e.K. for informational purposes only. Availability of OBC Care products and services may vary by region. By using this website or downloading content from it, you agree to comply with these Terms and Conditions. If you do not agree, please refrain from using this website.",
+      "OBC Care e.K. makes no warranties or representations, expressed or implied, regarding the accuracy, completeness, or reliability of any information, text, graphics, links, or other materials on this website.",
+      "We reserve the right to modify the website or update the products and services described herein at any time without prior notice. These Terms and Conditions may also be revised at any time, and it is your responsibility to review this page periodically to remain informed of any updates. Certain provisions may be overridden by specific legal notices or additional terms on individual pages."
+    ],
+    "intellectualPropertyTitle": "Intellectual Property Rights",
+    "intellectualPropertyContent": [
+      "All materials on this website, including text, graphics, logos, icons, images, videos, and software, are the property of OBC Care e.K. or its licensors and are protected by copyright and other intellectual property laws.",
+      "Nothing on this website grants you any license to use OBC Care’s intellectual property except as explicitly authorized herein. Unauthorized use, reproduction, or distribution of website content is strictly prohibited.",
+      "Images displayed on this website are sourced from Google or Freepik unless otherwise indicated."
+    ],
+    "trademarkTitle": "Trademark Information",
+    "trademarkContent": [
+      "All trademarks, service marks, and logos displayed on this website are the property of OBC Care e.K. or its subsidiaries. Public use of OBC Care e.K. trademarks requires prior written approval from our company.",
+      "Fair use of trademarks for the purpose of promoting OBC Care products and services is permitted only with proper attribution. All other third-party trademarks remain the property of their respective owners. All proprietary notices must be observed."
+    ],
+    "websiteUsageTitle": "Website Usage",
+    "websiteUsageContent": [
+      "OBC Care e.K. grants you a limited, non-transferable, and non-exclusive license to access and use this website for personal or informational purposes only. You agree not to copy, reproduce, resell, redistribute, or exploit any content without prior authorization.",
+      "You also agree not to interfere with the operation of the website, introduce malicious software, or compromise its security in any way. While we make reasonable efforts to prevent viruses or other harmful content, OBC Care e.K. cannot guarantee the website is virus-free. You are responsible for implementing appropriate safeguards on your devices. OBC Care e.K. will not be liable for any damages resulting from use of this website, including loss of data, business interruption, or other direct or indirect losses."
+    ],
+    "personalDataTitle": "Personal Data Handling",
+    "personalDataContent": [
+      "Any personal information provided by you to OBC Care e.K. will be treated confidentially and used only for purposes related to the provision of our services or as otherwise described in our Privacy Policy. Your data will not be disclosed to third parties except as necessary for service delivery or as legally required."
+    ],
+    "siteAccessibilityTitle": "Site Accessibility",
+    "siteAccessibilityContent": [
+      "OBC Care e.K. does not guarantee uninterrupted access to this website. Temporary unavailability may occur due to technical maintenance, repairs, equipment failure, or other events beyond our control."
+    ],
+    "externalLinksTitle": "External Links",
+    "externalLinksContent": [
+      "This website may include links to third-party websites. OBC Care e.K. does not control and is not responsible for the content, privacy policies, or practices of linked sites. Inclusion of any link does not constitute endorsement. Accessing external websites is at your own risk. We reserve the right to remove any links at our discretion."
+    ],
+    "governingLawTitle": "Governing Law",
+    "governingLawContent": [
+      "This website is operated by OBC Care e.K. from Germany. Accessing this website from other jurisdictions is at your own risk, and users are responsible for compliance with local laws. All claims relating to this website are governed by the substantive laws of Germany."
+    ],
+    "forwardLookingTitle": "Forward-Looking Statements",
+    "forwardLookingContent": [
+      "Statements on this website regarding future business opportunities, plans, growth, financial performance, or other non-historical matters are forward-looking statements. Such statements are identifiable by terms like “expects,” “intends,” “plans,” “projects,” “believes,” “estimates,” and similar expressions.",
+      "Forward-looking statements involve risks and uncertainties that could cause actual results to differ materially, including market conditions, competition, operational challenges, and other factors. OBC Care e.K. does not undertake any obligation to update these statements publicly, and you should not rely solely on them for decision-making purposes."
+    ]
   }
 }
 
