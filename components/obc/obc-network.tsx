@@ -75,11 +75,8 @@ export default function ObcNetwork() {
           </p>
         </div>
 
-        {/* Panel with stats */}
-        <div
-          className="mt-8 md:mt-12 rounded-3xl border border-gray-200 bg-white p-6 md:p-8 shadow-[0_6px_20px_rgba(0,0,0,0.06)]"
-        >
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+        {/* Stats grid */}
+        <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
             {statsWithData.map((s, i) => {
               const Icon = s.icon
               return (
@@ -89,7 +86,7 @@ export default function ObcNetwork() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.45, delay: i * 0.08 }}
-                  className="flex items-center gap-4 rounded-2xl border border-gray-200 bg-white p-4"
+                  className="flex items-center gap-4"
                 >
                   <div className="rounded-xl bg-[#194479]/10 p-3">
                     <Icon className="w-6 h-6 text-[#194479]" />
@@ -103,19 +100,21 @@ export default function ObcNetwork() {
             })}
           </div>
 
-          {/* Descriptor bullets */}
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 text-gray-700 text-sm">
-            <div className="rounded-xl border border-gray-200 bg-white p-4">
-              {t("bullets.0")}
+          {/* Descriptor text */}
+          <div className="mt-8 space-y-3 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 text-gray-700 text-sm md:text-base">
+            <div className="flex items-start gap-2">
+               <div className="min-w-1.5 h-1.5 rounded-full bg-[#91c73e] mt-2" />
+               <p>{t("bullets.0")}</p>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-4">
-              {t("bullets.1")}
+            <div className="flex items-start gap-2">
+               <div className="min-w-1.5 h-1.5 rounded-full bg-[#91c73e] mt-2" />
+               <p>{t("bullets.1")}</p>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-4">
-              {t("bullets.2")}
+            <div className="flex items-start gap-2">
+               <div className="min-w-1.5 h-1.5 rounded-full bg-[#91c73e] mt-2" />
+               <p>{t("bullets.2")}</p>
             </div>
           </div>
-        </div>
       </div>
     </section>
   )
