@@ -302,7 +302,7 @@ export default function Footer() {
             />
             <div className="flex flex-wrap items-center justify-center md:justify-end gap-6">
               <Link
-                href="/privacy"
+                href="/privacy-policy"
                 className="hover:text-[#91C73E] transition-colors"
               >
                 {t("privacy")}
