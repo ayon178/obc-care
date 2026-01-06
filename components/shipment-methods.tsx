@@ -111,12 +111,7 @@ export default function ShipmentMethods() {
               <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500">
                 <div className="absolute -inset-20 bg-gradient-to-r from-transparent via-white/20 to-transparent rotate-12" />
               </div>
-              {/* Bottom caption bar */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                <p className="paragraphFont text-white/90 text-sm sm:text-base">
-                  {t("imageCaption")}
-                </p>
-              </div>
+
             </div>
           </div>
         </div>
