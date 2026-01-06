@@ -7,6 +7,7 @@ import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import SmoothScroll from "@/components/smooth-scroll"
+import CookieConsent from "@/components/cookie-consent"
 import { Toaster } from "@/components/ui/sonner"
 import "../globals.css"
 
@@ -55,6 +56,7 @@ export default async function RootLayout({
           <SmoothScroll>
             {children}
           </SmoothScroll>
+          <CookieConsent />
           <Toaster />
           <Analytics />
         </NextIntlClientProvider>

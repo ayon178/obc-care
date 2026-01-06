@@ -1419,6 +1419,24 @@
     "title": "Contáctenos",
     "subtitle": "Póngase en contacto con nuestro equipo para cualquier consulta o soporte."
   },
+  "CookieConsent": {
+    "title": "Cookies y Tecnologías Similares 🍪",
+    "description": "Utilizamos cookies y tecnologías similares para optimizar nuestro sitio web y medidas de marketing. El seguimiento solo se activa si usted da su consentimiento expreso. Su consentimiento puede ser revocado en cualquier momento con efecto para el futuro.",
+    "managePreferencesLink": "Gestionar preferencias",
+    "acceptAll": "Aceptar todo",
+    "rejectAll": "Rechazar todo",
+    "managePreferences": "Gestionar preferencias",
+    "hidePreferences": "Ocultar preferencias",
+    "savePreferences": "Guardar preferencias",
+    "necessary": "Cookies necesarias",
+    "necessaryDesc": "Necesarias para la funcionalidad básica del sitio web",
+    "analytics": "Cookies analíticas",
+    "analyticsDesc": "Nos ayudan a mejorar nuestro sitio web",
+    "marketing": "Cookies de marketing",
+    "marketingDesc": "Se utilizan para publicidad personalizada",
+    "privacyPolicy": "Política de Privacidad",
+    "legalNotice": "Aviso Legal"
+  },
   "Impressum": {
     "title": "Aviso Legal / Impressum",
     "copyright": "© {year} OBC Care e.K",
