@@ -49,36 +49,16 @@ export default function AboutIntro() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
-              <Image
-                src="/images/about.png" // Using placeholder/existing image
-                alt="OBC Care Logistics"
-                fill
-                className="object-cover"
-              />
-            {/* Overlay Shape */}
-            <div className="absolute bottom-0 right-0 w-3/4 bg-[#194479]/90 backdrop-blur-sm p-8 rounded-tl-[100px] text-white">
-              <div className="flex flex-col gap-6 pl-8">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-[#91c73e] rounded-full">
-                    <Globe2 className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lg">{t("imageOverlay.network.title")}</h4>
-                    <p className="text-sm text-gray-300">{t("imageOverlay.network.desc")}</p>
-                  </div>
+              <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl bg-gray-50/50 border border-gray-100">
+                <div className="absolute inset-0 flex items-center justify-center p-12">
+                  <Image
+                    src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
+                    alt="OBC Care Logo"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-[#91c73e] rounded-full">
-                    <ShieldCheck className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lg">{t("imageOverlay.secure.title")}</h4>
-                    <p className="text-sm text-gray-300">{t("imageOverlay.secure.desc")}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
             </div>
           </motion.div>
 
