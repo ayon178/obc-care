@@ -81,19 +81,19 @@ export default function CookieConsent() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="relative w-full max-w-md bg-[#2a2d3a] text-white rounded-2xl shadow-2xl overflow-hidden"
+            className="relative w-full max-w-md bg-white text-gray-900 rounded-2xl shadow-2xl overflow-hidden"
           >
             {/* Header */}
             <div className="p-6 pb-4">
-              <h2 className="text-xl font-bold mb-3 flex items-center gap-2">
+              <h2 className="text-xl font-bold mb-3 flex items-center gap-2 text-[#194479]">
                 {t("title")}
               </h2>
-              <p className="text-sm text-gray-300 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {t("description")}
                 {" "}
                 <Link 
                   href="/privacy-policy" 
-                  className="text-[#91c73e] hover:underline"
+                  className="text-[#91c73e] hover:underline font-medium"
                 >
                   {t("managePreferencesLink")}
                 </Link>
@@ -109,11 +109,11 @@ export default function CookieConsent() {
                   exit={{ height: 0, opacity: 0 }}
                   className="px-6 overflow-hidden"
                 >
-                  <div className="py-4 space-y-3 border-t border-gray-600">
+                  <div className="py-4 space-y-3 border-t border-gray-100">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="font-semibold text-sm">{t("necessary")}</p>
-                        <p className="text-xs text-gray-400">{t("necessaryDesc")}</p>
+                        <p className="font-semibold text-sm text-[#194479]">{t("necessary")}</p>
+                        <p className="text-xs text-gray-500">{t("necessaryDesc")}</p>
                       </div>
                       <input
                         type="checkbox"
@@ -124,8 +124,8 @@ export default function CookieConsent() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="font-semibold text-sm">{t("analytics")}</p>
-                        <p className="text-xs text-gray-400">{t("analyticsDesc")}</p>
+                        <p className="font-semibold text-sm text-[#194479]">{t("analytics")}</p>
+                        <p className="text-xs text-gray-500">{t("analyticsDesc")}</p>
                       </div>
                       <input
                         type="checkbox"
@@ -136,8 +136,8 @@ export default function CookieConsent() {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="font-semibold text-sm">{t("marketing")}</p>
-                        <p className="text-xs text-gray-400">{t("marketingDesc")}</p>
+                        <p className="font-semibold text-sm text-[#194479]">{t("marketing")}</p>
+                        <p className="text-xs text-gray-500">{t("marketingDesc")}</p>
                       </div>
                       <input
                         type="checkbox"
@@ -156,14 +156,14 @@ export default function CookieConsent() {
               {showPreferences ? (
                 <button
                   onClick={handleSavePreferences}
-                  className="w-full px-4 py-3 bg-[#91c73e] text-white font-semibold rounded-lg hover:bg-[#7fb030] transition-colors"
+                  className="w-full px-4 py-3 bg-[#91c73e] text-white font-semibold rounded-lg hover:bg-[#7fb030] transition-colors shadow-sm"
                 >
                   {t("savePreferences")}
                 </button>
               ) : (
                 <button
                   onClick={handleAcceptAll}
-                  className="w-full px-4 py-3 bg-white text-[#2a2d3a] font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                  className="w-full cursor-pointer px-4 py-3 bg-[#91c73e] text-white font-semibold rounded-lg hover:bg-[#7fb030] transition-colors shadow-lg shadow-[#91c73e]/20"
                 >
                   {t("acceptAll")}
                 </button>
@@ -171,14 +171,14 @@ export default function CookieConsent() {
               
               <button
                 onClick={handleRejectAll}
-                className="w-full px-4 py-3 bg-transparent text-white font-semibold rounded-lg border border-white/20 hover:bg-white/10 transition-colors"
+                className="w-full cursor-pointer px-4 py-3 bg-white text-gray-700 font-semibold rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors"
               >
                 {t("rejectAll")}
               </button>
               
               <button
                 onClick={handleManagePreferences}
-                className="w-full px-4 py-3 bg-transparent text-gray-300 font-semibold rounded-lg hover:text-white transition-colors text-sm"
+                className="w-full cursor-pointer px-4 py-3 bg-transparent text-gray-500 font-semibold rounded-lg hover:text-[#194479] transition-colors text-sm"
               >
                 {showPreferences ? t("hidePreferences") : t("managePreferences")}
               </button>
