@@ -66,16 +66,16 @@ export default function FmlmHowItWorks() {
                 >
                   {/* Node - positioned relative to the whole row, centered on desktop, aligned to left track on mobile */}
                   <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-1 w-8 h-8 rounded-full bg-white border border-[#194479]/40 shadow flex items-center justify-center">
-                    <Icon className="w-4 h-4 text-[#194479]" />
+                    <Icon className="w-4 h-4 text-[#91C73E]" />
                   </div>
 
                   {/* Card */}
                   <div className={cardCols}>
-                    <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-4 md:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_28px_rgba(0,0,0,0.08)] transition-all">
-                      <h3 className="titleFont text-[#194479] text-sm sm:text-base leading-snug">
+                    <div className="group rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-4 md:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.05)] hover:shadow-xl hover:bg-[#91C73E] hover:border-[#91C73E] hover:scale-105 transition-all duration-300">
+                      <h3 className="titleFont text-[#194479] group-hover:text-white text-sm sm:text-base leading-snug font-bold">
                         {t(`steps.${i}.title`)}
                       </h3>
-                      <p className="paragraphFont mt-1.5 text-gray-600 text-sm md:text-base">
+                      <p className="paragraphFont mt-1.5 text-gray-600 group-hover:text-white text-sm md:text-base">
                         {t(`steps.${i}.description`)}
                       </p>
                     </div>
