@@ -5,33 +5,7 @@ import { Plane, Truck, Globe, Bell } from "lucide-react"
 
 
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.2,
-    },
-  },
-}
 
-const cardVariants = {
-  hidden: { 
-    opacity: 0, 
-    y: 60,
-    scale: 0.9
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.8,
-      ease: [0.25, 0.1, 0.25, 1],
-    },
-  },
-}
 
 import { useTranslations } from "next-intl"
 
@@ -142,19 +116,16 @@ export default function KeyHighlights() {
         </motion.div>
 
         {/* Highlights Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {highlights.map((highlight, index) => {
             const Icon = highlight.icon
             return (
               <motion.div
                 key={index}
-                variants={cardVariants}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{
                   y: -10,
                   scale: 1.02,
@@ -254,7 +225,7 @@ export default function KeyHighlights() {
               </motion.div>
             )
           })}
-        </motion.div>
+        </div>
       </div>
     </section>
   )

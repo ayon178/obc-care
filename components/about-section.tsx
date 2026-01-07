@@ -106,15 +106,12 @@ export default function AboutSection() {
               {/* Decorative frame elements */}
               <div className="absolute -inset-4 bg-gradient-to-br from-[#91C73E]/20 via-transparent to-[#194479]/20 rounded-3xl blur-2xl"></div>
 
-              {/* Main image container with professional styling */}
+
               <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 1,
-                  ease: [0.25, 0.1, 0.25, 1],
-                }}
-                viewport={{ once: true, margin: "-100px" }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
                 className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
               >
                 {/* Image */}
@@ -148,15 +145,10 @@ export default function AboutSection() {
 
               {/* Professional badge overlay */}
               <motion.div
-                initial={{ opacity: 0, scale: 0.8, y: 20 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.5,
-                  type: "spring",
-                  stiffness: 200,
-                }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
                 className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-white/50"
               >
                 <div className="flex items-center justify-between">
@@ -250,18 +242,22 @@ export default function AboutSection() {
             </motion.div>
 
             {/* Main Title */}
-            <div className="overflow-hidden -mt-1">
-              <WordReveal
-                text={t("title")}
-                className="text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.1] mb-0.5"
-              />
-            </div>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.1] mb-0.5"
+              style={{ color: "#194479" }}
+            >
+              {t("title")}
+            </motion.h2>
 
             {/* Subtitle */}
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
               className="text-xl md:text-2xl font-semibold mb-2 leading-tight"
               style={{ color: "#91C73E" }}
@@ -271,31 +267,19 @@ export default function AboutSection() {
 
             {/* Description */}
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <motion.p
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                className="text-base md:text-lg text-gray-700 leading-relaxed"
-              >
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                 {t("p1")}
-              </motion.p>
+              </p>
 
-              <motion.p
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                viewport={{ once: true }}
-                className="text-base md:text-lg text-gray-700 leading-relaxed"
-              >
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                 {t("p2")}
-              </motion.p>
+              </p>
             </motion.div>
 
             {/* Stats Grid */}

@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect, useRef } from "react"
+import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 
 // Dot Grid SVG Pattern
@@ -138,10 +139,14 @@ const ShipmentMission: React.FC = () => {
   return (
     <div className="w-full bg-white pb-20 flex justify-center font-sans">
       {/* Main Container */}
-      <div
+      <motion.div
         className="relative w-full max-w-[1180px] mx-auto px-4"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
       >
         {/* 
             Gray Background Box 
@@ -256,7 +261,7 @@ const ShipmentMission: React.FC = () => {
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

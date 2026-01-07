@@ -123,12 +123,18 @@ export default function LogisticsAdvantage() {
               </span>
             </motion.div>
 
-            {/* Main Title with Word-by-Word Reveal */}
+            {/* Main Title with Standard Animation */}
             <div className="overflow-hidden">
-              <WordReveal
-                text={t("title")}
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight"
-              />
+                style={{ color: "#194479" }}
+              >
+                {t("title")}
+              </motion.h2>
             </div>
 
             {/* Subtitle */}
@@ -276,11 +282,11 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 animate={{
                   rotate: [-12, -18, -12],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
+                  transition: {
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }
                 }}
               />
 
@@ -296,11 +302,11 @@ export default function LogisticsAdvantage() {
                 viewport={{ once: true }}
                 animate={{
                   scale: [1, 1.1, 1],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
+                  transition: {
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }
                 }}
               />
 
@@ -381,11 +387,11 @@ export default function LogisticsAdvantage() {
                 animate={{
                   y: [0, -10, 0],
                   opacity: [0.5, 1, 0.5],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
+                  transition: {
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }
                 }}
               />
             </div>
