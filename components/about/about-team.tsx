@@ -48,6 +48,9 @@ export default function AboutTeam() {
       image: "/about/team/cristine.png",
       icon: <ClipboardList className="h-8 w-8" />,
       contact: "+1 (610) 245-8815",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/cristine-acosta/",
+      },
     },
     {
       name: "Noreleen Neypes",
@@ -55,6 +58,9 @@ export default function AboutTeam() {
       image: "/about/team/noreleen.jpeg", // Reusing image for now
       icon: <ClipboardList className="h-8 w-8" />,
       contact: "+44 7700 183290",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/noree-neypes/",
+      },
     },
     {
       name: "Renz Abad",
@@ -62,6 +68,9 @@ export default function AboutTeam() {
       image: "/about/team/renz.png", // Reusing image for now
       icon: <ClipboardList className="h-8 w-8" />,
       contact: "+44 7700 183458",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/renz-adrian-abad-017009348/",
+      },
     },
   ]
 

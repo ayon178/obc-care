@@ -3,9 +3,11 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function ObcWhatIs() {
   const t = useTranslations("ObcWhatIs")
+  const isMobile = useIsMobile()
 
   return (
     <section
@@ -14,7 +16,12 @@ export default function ObcWhatIs() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-16 items-center">
           {/* Text */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-[#194479]/10 text-[#194479] text-[10px] sm:text-[11px]">
               {t("badge")}
             </span>
@@ -32,10 +39,16 @@ export default function ObcWhatIs() {
                 {t("p3")}
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Image */}
-          <div className="relative">
+          <motion.div
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative"
+          >
             <div className="relative rounded-3xl overflow-hidden border border-gray-200 shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
               <div className="pointer-events-none absolute " />
               <Image
@@ -47,7 +60,7 @@ export default function ObcWhatIs() {
                 priority={false}
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

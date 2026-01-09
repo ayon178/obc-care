@@ -3,9 +3,11 @@
 import { motion } from "framer-motion"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function ObcBanner() {
   const t = useTranslations("ObcBanner")
+  const isMobile = useIsMobile()
 
   return (
     <section
@@ -23,7 +25,7 @@ export default function ObcBanner() {
       <div className="container mx-auto h-full px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -40,7 +42,7 @@ export default function ObcBanner() {
             </p>
 
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}

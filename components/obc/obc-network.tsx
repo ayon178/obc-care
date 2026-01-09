@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Globe2, Users, Timer } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const stats = [
   { label: "Active OBCs", value: "1,200+", icon: Users },
@@ -12,6 +13,7 @@ const stats = [
 
 export default function ObcNetwork() {
   const t = useTranslations("ObcNetwork")
+  const isMobile = useIsMobile()
 
   const statsWithData = [
     { label: t("stats.activeObcs"), value: "1,200+", icon: Users },
@@ -27,39 +29,7 @@ export default function ObcNetwork() {
         <div className="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-[#194479]/10 blur-3xl" />
       </div>
 
-      {/* Abstract globe made of animated rings and dots (unique accent) */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 h-80 w-80 rounded-full border border-[#194479]/30"
-      >
-        {/* Primary orbits */}
-        <div className="absolute inset-6 rounded-full border border-[#194479]/25" />
-        <div className="absolute inset-14 rounded-full border border-[#194479]/20" />
-        <div className="absolute inset-24 rounded-full border border-[#194479]/15" />
 
-        {/* Rotating dots for multiple orbits (one dot per orbit, same direction, varied speed) */}
-        <motion.div
-          className="absolute inset-6 rounded-full"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-        >
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 w-2 h-2 rounded-full bg-[#194479]" />
-        </motion.div>
-        <motion.div
-          className="absolute inset-14 rounded-full"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-        >
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-[#194479]" />
-        </motion.div>
-        <motion.div
-          className="absolute inset-24 rounded-full"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 34, repeat: Infinity, ease: "linear" }}
-        >
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 w-3 h-3 rounded-full bg-[#194479]" />
-        </motion.div>
-      </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
@@ -82,7 +52,7 @@ export default function ObcNetwork() {
               return (
                 <motion.div
                   key={s.label}
-                  initial={{ opacity: 0, y: 16 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.45, delay: i * 0.08 }}

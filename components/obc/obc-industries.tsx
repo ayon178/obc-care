@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Plane, Car, Cpu, Factory, FileText, Laptop, HeartPulse } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const industries = [
   { icon: Plane, id: "aviation" },
@@ -16,6 +17,7 @@ const industries = [
 
 export default function ObcIndustries() {
   const t = useTranslations("ObcIndustries")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative py-14 md:py-20 bg-white overflow-hidden">
@@ -47,7 +49,7 @@ export default function ObcIndustries() {
             return (
               <motion.div
                 key={it.id}
-                initial={{ opacity: 0, y: 22 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: i * 0.06, ease: "easeOut" }}

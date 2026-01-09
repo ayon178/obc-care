@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { ShieldCheck, Plane, Globe2, Bell, UserCheck, Timer } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const featureList = [
   {
@@ -34,6 +35,7 @@ const featureList = [
 
 export default function ObcWhyChoose() {
   const t = useTranslations("ObcWhyChoose")
+  const isMobile = useIsMobile()
 
   // Map features to icons using index to fetch translation
   const featureListWithData = featureList.map((f, i) => ({
@@ -114,7 +116,7 @@ export default function ObcWhyChoose() {
                 return (
                   <motion.div
                     key={f.title}
-                    initial={{ opacity: 0, y: 18 }}
+                    initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-60px" }}
                     transition={{ duration: 0.45, delay: i * 0.07 }}

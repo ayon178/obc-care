@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { FileSearch, UserCheck, ShieldCheck, Radio, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const steps = [
   { title: "Inquiry & Quotation", desc: "Contact us and receive a free quote within minutes.", icon: FileSearch },
@@ -14,6 +15,7 @@ const steps = [
 
 export default function ObcHowItWorks() {
   const t = useTranslations("ObcHowItWorks")
+  const isMobile = useIsMobile()
 
   // Map steps to icons using index to fetch translation
   const stepsWithData = steps.map((s, i) => ({
@@ -59,7 +61,7 @@ export default function ObcHowItWorks() {
               return (
                 <motion.div
                   key={s.title}
-                  initial={{ opacity: 0, y: 18 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.45, delay: i * 0.07 }}

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { ShieldCheck, Plane, Eye, BellRing, Timer } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const reasons = [
   {
@@ -36,6 +37,7 @@ const reasons = [
 
 export default function ObcWhyImportant() {
   const t = useTranslations("ObcWhyImportant")
+  const isMobile = useIsMobile()
 
   // Map reasons to icons using index to fetch translation
   const reasonsWithData = reasons.map((r, i) => ({
@@ -73,7 +75,7 @@ export default function ObcWhyImportant() {
             return (
               <motion.div
                 key={r.title}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: i * 0.07, ease: "easeOut" }}
