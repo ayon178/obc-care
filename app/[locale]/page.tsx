@@ -8,9 +8,8 @@ import ShipmentMission from "@/components/shipment-mission"
 import UrgentSupportCTA from "@/components/urgent-support-cta"
 import Footer from "@/components/footer"
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, Variants } from "framer-motion"
 import { useEffect, useState } from "react"
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"
 import { Link } from "@/i18n/routing"
 import ServicesCTA from "@/components/services-cta"
 
@@ -30,7 +29,6 @@ const Home = () => {
     }));
   const [isOpen, setIsOpen] = useState(false)
   const [currentImage, setCurrentImage] = useState(0)
-  const [variantIndex, setVariantIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
 
   const images = ["/slide-1.png", "/slide-2.png", "/slide-3.png"]
@@ -39,7 +37,6 @@ const Home = () => {
     if (!isAnimating) {
       setIsAnimating(true) // Start animation
       setCurrentImage((prevIndex) => (prevIndex + 1) % images.length)
-      setVariantIndex((prevIndex) => (prevIndex + 1) % imageVariants.length)
 
       // Reset `isAnimating` after animation duration (only for auto-slide)
       setTimeout(() => {
@@ -53,9 +50,6 @@ const Home = () => {
       setIsAnimating(true) // Start animation
       setCurrentImage((prevIndex) =>
         prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      )
-      setVariantIndex((prevIndex) =>
-        prevIndex === 0 ? imageVariants.length - 1 : prevIndex - 1
       )
 
       // Reset `isAnimating` after animation duration (only for auto-slide)
@@ -75,90 +69,59 @@ const Home = () => {
     return () => clearInterval(interval)
   }, [isAnimating])
 
-  const goToImage = (index) => {
-    setCurrentImage(index)
+  const imageVariants = {
+    enter: { opacity: 0 },
+    center: { opacity: 1 },
+    exit: { opacity: 0, transition: { duration: 1 } },
   }
 
-  const imageVariants = [
-    // Slide in from the right and exit to the left
-    {
-      enter: { opacity: 0, x: "100vw" }, // Enter from the right
-      center: { opacity: 1, x: 0 }, // Centered position
-      exit: { opacity: 0, x: "-100vw", transition: { duration: 1 } }, // Exit to the left
-    },
-    // Slide in from the bottom and exit to the top
-    {
-      enter: { opacity: 0, y: "100vh" }, // Enter from the bottom
-      center: { opacity: 1, y: 0 },
-      exit: { opacity: 0, y: "-100vh", transition: { duration: 1 } }, // Exit to the top
-    },
-    // Slide in from the left and exit to the right
-    {
-      enter: { opacity: 0, x: "-100vw" }, // Enter from the left
-      center: { opacity: 1, x: 0 },
-      exit: { opacity: 0, x: "100vw", transition: { duration: 1 } }, // Exit to the right
-    },
-    // Slide in from the top and exit to the bottom
-    {
-      enter: { opacity: 0, y: "-100vh" }, // Enter from the top
-      center: { opacity: 1, y: 0 },
-      exit: { opacity: 0, y: "100vh", transition: { duration: 1 } }, // Exit to the bottom
-    },
-    // Zoom in and zoom out
-    {
-      enter: { opacity: 0, scale: 0.8 }, // Zoom in
-      center: { opacity: 1, scale: 1 },
-      exit: { opacity: 0, scale: 1.2, transition: { duration: 1 } }, // Zoom out
-    },
-  ]
-
-  const headerVariants = {
+  const headerVariants: Variants = {
     smallLine: {
-      hidden: { opacity: 0, x: -60 },
-      visible: {
-        opacity: 1,
-        x: 0,
-        transition: { duration: 0.8, ease: "easeInOut", delay: 1.2 },
-      },
-    },
-    firstLine: {
-      hidden: { opacity: 0, x: -50 },
-      visible: {
-        opacity: 1,
-        x: 0,
-        transition: { duration: 1, ease: "easeInOut", delay: 0.8 },
-      },
-    },
-    secondLine: {
-      hidden: { opacity: 0, x: -40 },
-      visible: {
-        opacity: 1,
-        x: 0,
-        transition: { duration: 0.8, ease: "easeInOut", delay: 1 },
-      },
-    },
-    thirdLine: {
-      hidden: { opacity: 0, x: -30 },
-      visible: {
-        opacity: 1,
-        x: 0,
-        transition: { duration: 0.6, ease: "easeInOut", delay: 1.2 },
-      },
-    },
-    viewProjectsButton: {
-      hidden: { opacity: 0, x: -20 },
-      visible: {
-        opacity: 1,
-        x: 0,
-        transition: { duration: 0.4, ease: "easeInOut", delay: 1.4 },
-      },
-    },
-    callUs: {
-      hidden: { opacity: 0, y: 50 },
+      hidden: { opacity: 0, y: 20 },
       visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 1, ease: "easeInOut", delay: 1.5 },
+        transition: { duration: 0.6, ease: "easeOut", delay: 0.2 },
+      },
+    },
+    firstLine: {
+      hidden: { opacity: 0, y: 20 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut", delay: 0.3 },
+      },
+    },
+    secondLine: {
+      hidden: { opacity: 0, y: 20 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut", delay: 0.4 },
+      },
+    },
+    thirdLine: {
+      hidden: { opacity: 0, y: 20 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut", delay: 0.5 },
+      },
+    },
+    viewProjectsButton: {
+      hidden: { opacity: 0, y: 20 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut", delay: 0.6 },
+      },
+    },
+    callUs: {
+      hidden: { opacity: 0, y: 20 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut", delay: 0.7 },
       },
     },
   }
@@ -185,7 +148,7 @@ const Home = () => {
         >
           <motion.div
             key={currentImage}
-            variants={imageVariants[variantIndex]}
+            variants={imageVariants}
             initial="enter"
             animate="center"
             exit="exit"
