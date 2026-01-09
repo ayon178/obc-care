@@ -9,6 +9,12 @@ import {
   CheckCircle2,
 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 export default function OperatingProcess() {
   const t = useTranslations("OperatingProcess")
@@ -248,9 +254,18 @@ export default function OperatingProcess() {
                       <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 leading-tight">
                         {step.title}
                       </h3>
-                      <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                        {step.description}
-                      </p>
+                      <TooltipProvider>
+                        <Tooltip delayDuration={300}>
+                          <TooltipTrigger asChild>
+                            <p className="text-sm md:text-base text-gray-600 leading-relaxed line-clamp-3">
+                              {step.description}
+                            </p>
+                          </TooltipTrigger>
+                          <TooltipContent className="max-w-xs text-sm bg-slate-900 text-white border-slate-800">
+                            <p>{step.description}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
 
                       {/* Decorative Line */}
                       <motion.div

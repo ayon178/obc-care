@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   description:
     "Fast. Secure. Reliable. — We move your time-critical shipments across the globe, 24/7.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default async function RootLayout({
