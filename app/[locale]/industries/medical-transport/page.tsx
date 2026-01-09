@@ -7,7 +7,7 @@ import MedicalIntro from "@/components/medical/medical-intro"
 import MedicalWhatWeHandle from "@/components/medical/medical-what-we-handle"
 import MedicalHowWeSaveLives from "@/components/medical/medical-how-we-save-lives"
 import MedicalCta from "@/components/medical/medical-cta"
-import ShipmentMission from "@/components/shipment-mission"
+import ShipmentMission2 from "@/components/shipment-mission2"
 
 export default function MedicalTransportPage() {
   return (
@@ -18,7 +18,7 @@ export default function MedicalTransportPage() {
       <MedicalWhatWeHandle />
       <MedicalHowWeSaveLives />
       <div className="mt-10">
-        <ShipmentMission />
+        <ShipmentMission2 />
       </div>
       <MedicalCta />
       <Footer />
