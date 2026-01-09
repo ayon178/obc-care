@@ -4,9 +4,12 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { FileText, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function CustomsWhatIs() {
   const t = useTranslations("CustomsWhatIs")
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-br from-gray-50 via-white to-[#194479]/5 overflow-hidden">
       {/* Decorative background elements */}
@@ -19,10 +22,10 @@ export default function CustomsWhatIs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.6 : 0.8 }}
             className="space-y-6"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
@@ -43,7 +46,7 @@ export default function CustomsWhatIs() {
             </p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -65,7 +68,7 @@ export default function CustomsWhatIs() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -80,10 +83,10 @@ export default function CustomsWhatIs() {
 
           {/* Right: Image with Overlay */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: isMobile ? 0.6 : 0.8, delay: 0.2 }}
             className="relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">

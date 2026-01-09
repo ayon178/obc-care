@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Clock, Shield, Zap, Package } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const reasonIcons = [
   {
@@ -30,6 +31,7 @@ const reasonIcons = [
 
 export default function CustomsWhyImportant() {
   const t = useTranslations("CustomsWhyImportant")
+  const isMobile = useIsMobile()
   
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
@@ -41,44 +43,23 @@ export default function CustomsWhyImportant() {
             backgroundSize: '40px 40px',
           }} />
         </div>
-        <motion.div
-          animate={{
-            x: [0, 100, 0],
-            y: [0, 50, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-[#91c73e]/10 to-transparent blur-3xl"
-        />
-        <motion.div
-          animate={{
-            x: [0, -100, 0],
-            y: [0, -50, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-gradient-to-br from-[#194479]/10 to-transparent blur-3xl"
-        />
+        {/* Simplified Background Elements - No complex loops */}
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-[#91c73e]/10 to-transparent blur-3xl opacity-50" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-gradient-to-br from-[#194479]/10 to-transparent blur-3xl opacity-50" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: isMobile ? 0.6 : 0.8 }}
           className="text-center max-w-3xl mx-auto mb-16 md:mb-20"
         >
           <motion.span
-            initial={{ scale: 0.9 }}
-            whileInView={{ scale: 1 }}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#194479]/10 to-[#194479]/5 text-[#194479] text-xs sm:text-sm font-semibold border border-[#194479]/20"
           >
@@ -95,10 +76,10 @@ export default function CustomsWhyImportant() {
           <div className="relative">
             {/* Mobile: Show Image First */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.6 }}
               className="relative mb-12 md:hidden w-full h-[300px]"
             >
               <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
@@ -125,7 +106,7 @@ export default function CustomsWhyImportant() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.8 }}
               className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-[400px] h-[400px] pointer-events-none"
             >
               <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
@@ -163,18 +144,16 @@ export default function CustomsWhyImportant() {
                 return (
                   <motion.div
                     key={i}
-                    initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                    whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
+                    initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
                     transition={{
                       duration: 0.6,
-                      delay: i * 0.15,
-                      type: "spring",
-                      stiffness: 100,
+                      delay: isMobile ? i * 0.05 : i * 0.1,
+                      ease: "easeOut",
                     }}
                     whileHover={{
-                      scale: 1.05,
-                      rotate: i % 2 === 0 ? 2 : -2,
+                      scale: 1.02,
                       transition: { duration: 0.3 },
                     }}
                     className={`relative ${desktopPos} max-w-[280px] w-full z-30`}

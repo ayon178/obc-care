@@ -3,9 +3,11 @@
 import { motion } from "framer-motion"
 import { Calendar, Package, Plane, Radio, Truck } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function NfoHowItWorks() {
   const t = useTranslations("NfoHowItWorks")
+  const isMobile = useIsMobile()
 
   const steps = [
     {
@@ -47,41 +49,11 @@ export default function NfoHowItWorks() {
 
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-gray-50 via-white to-[#194479]/5 overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute top-20 right-10 w-96 h-96 bg-[#91c73e]/10 rounded-full blur-3xl"
-          animate={{
-            x: [0, 40, 0],
-            y: [0, 30, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute bottom-20 left-10 w-80 h-80 bg-[#194479]/10 rounded-full blur-3xl"
-          animate={{
-            x: [0, -30, 0],
-            y: [0, -20, 0],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-        />
-      </div>
-
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
@@ -111,7 +83,7 @@ export default function NfoHowItWorks() {
               return (
                 <motion.div
                   key={step.number}
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: i * 0.15 }}
@@ -173,7 +145,7 @@ export default function NfoHowItWorks() {
 
         {/* Bottom CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.8 }}

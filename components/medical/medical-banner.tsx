@@ -4,9 +4,11 @@ import { useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { ClipboardList } from "lucide-react"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const MedicalBanner = () => {
   const t = useTranslations("MedicalTransportPage.hero")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative h-[75vh] min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -22,7 +24,7 @@ const MedicalBanner = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-20 text-center text-white pt-24 md:pt-32">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"

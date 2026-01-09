@@ -4,48 +4,20 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { Zap, Plane, Clock, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function NfoWhatIs() {
   const t = useTranslations("NfoWhatIs")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative py-20 md:py-28 bg-gradient-to-br from-[#194479]/5 via-white to-gray-50 overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute top-20 left-10 w-96 h-96 bg-[#91c73e]/10 rounded-full blur-3xl"
-          animate={{
-            x: [0, 50, 0],
-            y: [0, 30, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute bottom-20 right-10 w-80 h-80 bg-[#194479]/10 rounded-full blur-3xl"
-          animate={{
-            x: [0, -40, 0],
-            y: [0, -20, 0],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-        />
-      </div>
-
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Badge and Header */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
@@ -125,8 +97,8 @@ export default function NfoWhatIs() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* Card 1 */}
               <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="relative group"
@@ -150,7 +122,7 @@ export default function NfoWhatIs() {
 
               {/* Card 2 - With Image */}
               <motion.div
-                initial={{ opacity: 0, y: -30 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -175,8 +147,8 @@ export default function NfoWhatIs() {
 
               {/* Card 3 */}
               <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="relative group"
@@ -201,7 +173,7 @@ export default function NfoWhatIs() {
 
             {/* Bottom Description */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.5 }}

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { FileCheck, Send, Radio, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const stepIcons = [
   FileCheck,
@@ -13,6 +14,8 @@ const stepIcons = [
 
 export default function CustomsProcess() {
   const t = useTranslations("CustomsProcess")
+  const isMobile = useIsMobile()
+  
   return (
     <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* Background accents */}
@@ -24,10 +27,10 @@ export default function CustomsProcess() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: isMobile ? 0.6 : 0.8 }}
           className="text-center max-w-3xl mx-auto mb-10 md:mb-14"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
@@ -55,7 +58,7 @@ export default function CustomsProcess() {
               return (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 18 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.45, delay: i * 0.1 }}

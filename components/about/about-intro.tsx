@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { CheckCircle2, Globe2, ShieldCheck } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AboutIntro() {
   const t = useTranslations("AboutIntro")
+  const isMobile = useIsMobile()
 
   return (
     <section className="py-20 md:py-28 bg-white overflow-hidden">
@@ -15,10 +17,10 @@ export default function AboutIntro() {
           
           {/* Text Content */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: isMobile ? -20 : -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.6 : 0.8 }}
           >
             <h4 className="text-[#91c73e] font-bold tracking-wider uppercase mb-2">{t("whoWeAre")}</h4>
             <h2 className="text-3xl md:text-4xl font-bold text-[#194479] mb-6 leading-tight">
@@ -43,21 +45,21 @@ export default function AboutIntro() {
 
           {/* Image Content */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: isMobile ? 20 : 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.6 : 0.8 }}
             className="relative"
           >
-              <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl bg-gray-50/50 border border-gray-100">
-                <div className="absolute inset-0 flex items-center justify-center p-12">
-                  <Image
-                    src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
-                    alt="OBC Care Logo"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+            <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl bg-gray-50/50 border border-gray-100">
+              <div className="absolute inset-0 flex items-center justify-center p-12">
+                <Image
+                  src="/images/design-mode/Whats-App-Image-2025-11-03-at-19-02-48-fd85551c.jpg"
+                  alt="OBC Care Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
 
             </div>
           </motion.div>

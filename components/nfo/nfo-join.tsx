@@ -1,168 +1,134 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { User, ArrowRight, CheckCircle2, Plane, Clock, Globe } from "lucide-react"
+import { UserPlus, CheckCircle2, ArrowRight } from "lucide-react"
 import { Link } from "@/i18n/routing"
-import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function NfoJoin() {
   const t = useTranslations("NfoJoin")
+  const isMobile = useIsMobile()
 
   const benefits = [
-    { icon: Plane, text: t("benefits.0") },
-    { icon: Clock, text: t("benefits.1") },
-    { icon: Globe, text: t("benefits.2") },
-    { icon: CheckCircle2, text: t("benefits.3") },
+    t("benefits.0"),
+    t("benefits.1"),
+    t("benefits.2"),
+    t("benefits.3"),
   ]
 
   return (
-    <section className="relative py-20 md:py-28 bg-gradient-to-br from-white via-gray-50/50 to-white overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute top-20 left-10 w-96 h-96 bg-[#91c73e]/10 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.3, 0.5, 0.3],
-            x: [0, 40, 0],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute bottom-20 right-10 w-80 h-80 bg-[#194479]/10 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-            x: [0, -30, 0],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-        />
-      </div>
-
+    <section className="relative py-20 md:py-28 bg-white overflow-hidden">
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
-          {/* Split Layout: Text Left, Box Right */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Left: Text Content */}
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16 md:mb-20"
+          >
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold mb-6">
+              <UserPlus className="w-4 h-4" />
+              {t("badge")}
+            </span>
+            <h2 className="headingFont text-xl sm:text-2xl md:text-4xl font-bold text-[#194479] leading-tight mb-4 max-w-3xl mx-auto">
+              {t("title")}
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+            {/* Left Column: Content */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 md:space-y-8"
+              className="space-y-8"
             >
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold">
-                <User className="w-4 h-4" />
-                {t("badge")}
-              </div>
-
-              {/* Heading */}
-              <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight">
-                {t("title")}
-              </h2>
-
-              {/* Question */}
-              <p className="paragraphFont text-gray-700 text-lg md:text-xl font-medium">
-                {t("question")}
+              <h3 className="titleFont text-2xl md:text-3xl font-bold text-[#194479]">
+                {t("subtitle")}
+              </h3>
+              <p className="paragraphFont text-gray-700 text-lg leading-relaxed">
+                {t("description")}
               </p>
 
-              {/* Description */}
-              <div className="space-y-4">
-                <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-                  {t("description1")}
-                </p>
-                <p className="paragraphFont text-gray-700 text-base md:text-lg leading-relaxed">
-                  {t("description2")}
-                </p>
-              </div>
-
               {/* Benefits Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                {benefits.map((benefit, index) => {
-                  const Icon = benefit.icon
-                  return (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                      className="flex items-center gap-3 p-4 rounded-xl bg-white border-2 border-gray-100 hover:border-[#91c73e]/30 transition-all duration-300 shadow-sm hover:shadow-md"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-[#194479]/10 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-5 h-5 text-[#194479]" />
-                      </div>
-                      <p className="paragraphFont text-gray-700 text-sm md:text-base font-medium">
-                        {benefit.text}
-                      </p>
-                    </motion.div>
-                  )
-                })}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {benefits.map((benefit, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100 hover:border-[#91c73e]/50 hover:shadow-md transition-all duration-300"
+                  >
+                    <div className="w-8 h-8 rounded-full bg-[#91c73e]/20 flex items-center justify-center flex-shrink-0">
+                      <CheckCircle2 className="w-5 h-5 text-[#91c73e]" />
+                    </div>
+                    <span className="text-gray-700 font-medium text-sm md:text-base">{benefit}</span>
+                  </motion.div>
+                ))}
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              {/* CTA Button */}
+              <div className="pt-4">
                 <Link
-                  href="/inquiry"
-                  className="buttonFont group relative inline-flex items-center justify-center gap-2 bg-[#91c73e] hover:bg-[#7bb033] text-white px-5 py-3 rounded-xl font-semibold text-sm md:text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center"
+                  href="/register"
+                  className="buttonFont inline-flex items-center gap-2 bg-[#194479] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#153a69] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 >
-                  <span className="relative z-10">{t("ctaPrimary")}</span>
-                  <ArrowRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                </Link>
-                <Link
-                  href="/inquiry"
-                  className="buttonFont group relative inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#194479] border-2 border-[#194479] px-5 py-3 rounded-xl font-semibold text-sm md:text-base shadow-md hover:shadow-lg transition-all duration-300 text-center"
-                >
-                  <span className="relative z-10">{t("ctaSecondary")}</span>
-                  <ArrowRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  {t("button")}
+                  <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
             </motion.div>
 
-            {/* Right: Box with Decorative Elements (Replaces Image) */}
+            {/* Right Column: Decorative Box */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <div className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
-                   <Image
-                      src="/services/become_nfo.png"
-                      alt={t("title")}
-                      fill
-                      className="object-cover"
-                   />
-                   <div className="absolute inset-0 bg-black/20" />
+              <div className="relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden bg-gradient-to-br from-[#194479] to-[#1a4a7f] shadow-2xl p-8 flex items-center justify-center">
+                {/* Background Pattern */}
+                <div className="absolute inset-0 opacity-10"
+                  style={{
+                    backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
+                    backgroundSize: "32px 32px",
+                  }}
+                />
 
-                  {/* Floating Stats Card */}
-                
-                  {/* Icon Badge - Bottom Right */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.6 }}
-                    className="absolute bottom-6 right-6"
-                  >
-                    <div className="w-20 h-20 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-xl">
-                      <User className="w-10 h-10 text-white" />
-                    </div>
-                  </motion.div>
+                {/* Central Card */}
+                <div className="relative z-10 bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl max-w-sm text-center">
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <UserPlus className="w-10 h-10 text-white" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-white mb-3">{t("cardTitle")}</h4>
+                  <p className="text-white/80 leading-relaxed">
+                    {t("cardDesc")}
+                  </p>
                 </div>
+
+                {/* Floating Icon Badge */}
+                <motion.div
+                  className="absolute top-10 right-10 w-16 h-16 bg-[#91c73e] rounded-2xl flex items-center justify-center shadow-lg transform rotate-12"
+                  animate={{
+                    y: [0, -10, 0],
+                    rotate: [12, 15, 12],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <CheckCircle2 className="w-8 h-8 text-white" />
+                </motion.div>
               </div>
             </motion.div>
           </div>

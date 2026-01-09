@@ -3,11 +3,12 @@
 import { motion } from "framer-motion"
 import { Clock, Shield, Eye, Globe2, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
-
+import { useIsMobile } from "@/hooks/use-mobile"
 import Image from "next/image"
 
 export default function NfoWhyImportant() {
   const t = useTranslations("NfoWhyImportant")
+  const isMobile = useIsMobile()
 
   const benefits = [
     {
@@ -42,7 +43,7 @@ export default function NfoWhyImportant() {
 
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
-      {/* Animated Background Pattern */}
+      {/* Background Pattern */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 opacity-[0.02]"
           style={{
@@ -53,38 +54,13 @@ export default function NfoWhyImportant() {
             backgroundSize: "60px 60px",
           }}
         />
-        <motion.div
-          className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#91c73e]/5 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#194479]/5 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-        />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
@@ -109,7 +85,7 @@ export default function NfoWhyImportant() {
               return (
                 <motion.div
                   key={benefit.title}
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -162,22 +138,6 @@ export default function NfoWhyImportant() {
                       style={{ backgroundColor: benefit.color }}
                     />
                   </div>
-
-                  {/* Floating Decorative Element */}
-                  <motion.div
-                    className="absolute -z-10 -top-2 -right-2 w-24 h-24 rounded-full opacity-20 blur-2xl"
-                    style={{ backgroundColor: benefit.color }}
-                    animate={{
-                      scale: [1, 1.2, 1],
-                      opacity: [0.2, 0.3, 0.2],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      delay: index * 0.2,
-                    }}
-                  />
                 </motion.div>
               )
             })}
@@ -185,7 +145,7 @@ export default function NfoWhyImportant() {
 
           {/* Bottom CTA Card */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.5 }}

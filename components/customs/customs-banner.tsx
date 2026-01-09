@@ -4,9 +4,12 @@ import { motion } from "framer-motion"
 import { Globe } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function CustomsBanner() {
   const t = useTranslations("CustomsBanner")
+  const isMobile = useIsMobile()
+
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -23,10 +26,10 @@ export default function CustomsBanner() {
       <div className="container relative z-10 mx-auto h-full px-4 sm:px-6 lg:px-8">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: isMobile ? 0.6 : 0.6, ease: "easeOut" }}
             className="max-w-4xl text-right ml-auto"
           >
             <span className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-white/10 text-white/90 text-[10px] sm:text-[11px] backdrop-blur self-end">

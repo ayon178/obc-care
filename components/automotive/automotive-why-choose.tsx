@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import { Shield, Zap, Clock, Eye } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AutomotiveWhyChoose() {
   const t = useTranslations("AutomotiveWhyChoose")
+  const isMobile = useIsMobile()
 
   const benefits = [
     {
@@ -47,10 +49,10 @@ export default function AutomotiveWhyChoose() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.6 : 0.8 }}
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-4">
@@ -71,10 +73,10 @@ export default function AutomotiveWhyChoose() {
                 return (
                   <motion.div
                     key={index} // Changed key to index
-                    initial={{ opacity: 0, y: 40, rotateX: -15 }}
-                    whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                    initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: index * 0.15 }}
+                    transition={{ duration: 0.6, delay: isMobile ? index * 0.05 : index * 0.15 }}
                     className="group relative"
                     style={{
                       transformStyle: 'preserve-3d'

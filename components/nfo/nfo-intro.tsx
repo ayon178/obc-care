@@ -1,157 +1,143 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { Clock, Globe, Zap, Shield } from "lucide-react"
-import { useTranslations } from "next-intl"
-import { Link } from "@/i18n/routing"
 import Image from "next/image"
+import { motion } from "framer-motion"
+import { Globe, Clock, ShieldCheck, Zap } from "lucide-react"
+import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function NfoIntro() {
   const t = useTranslations("NfoIntro")
+  const isMobile = useIsMobile()
 
   const features = [
-    {
-      icon: Clock,
-      title: t("features.0.title"),
-    },
-    {
-      icon: Globe,
-      title: t("features.1.title"),
-    },
-    {
-      icon: Zap,
-      title: t("features.2.title"),
-    },
-    {
-      icon: Shield,
-      title: t("features.3.title"),
-    },
+    { icon: Clock, title: t("features.0.title"), description: t("features.0.desc") },
+    { icon: Globe, title: t("features.1.title"), description: t("features.1.desc") },
+    { icon: ShieldCheck, title: t("features.2.title"), description: t("features.2.desc") },
+    { icon: Zap, title: t("features.3.title"), description: t("features.3.desc") },
   ]
 
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[#91c73e]/10 to-transparent rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-[#194479]/10 to-transparent rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-        />
-      </div>
-
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Main Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl mx-auto mb-16"
-        >
-          <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6">
-            {t("title")}
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#91c73e] to-[#194479] mx-auto rounded-full" />
-        </motion.div>
-
-        {/* Creative Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 max-w-7xl mx-auto">
-          {/* Large Box Card - Left Side (Replaces Image) */}
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-7 relative group"
+            className="text-center mb-16 md:mb-20"
           >
-            <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden shadow-2xl">
-              <Image 
-                src="/services/next_flight_first.png" 
-                alt={t("title")}
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-black/20" />
-
-
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#194479]/10 text-[#194479] text-sm font-semibold mb-6">
+              <Zap className="w-4 h-4" />
+              {t("badge")}
             </div>
+            <h2 className="headingFont text-2xl sm:text-3xl md:text-5xl font-bold text-[#194479] leading-tight mb-6 max-w-4xl mx-auto">
+              {t("title")}
+            </h2>
+            <p className="paragraphFont text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+              {t("description")}
+            </p>
           </motion.div>
 
-          {/* Right Side - Text and Feature Cards */}
-          <div className="lg:col-span-5 space-y-6">
-            {/* Text Content Card */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left: Interactive Image Card */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-white rounded-3xl p-6 md:p-8 shadow-xl border border-gray-100"
+              transition={{ duration: 0.8 }}
+              className="relative group"
             >
-              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed mb-4">
-                {t("textCard1")}
-              </p>
-              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed mb-4">
-                {t("textCard2")}
-              </p>
-              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed mb-4">
-                {t("imageCardText1")}
-              </p>
-              <p className="paragraphFont text-gray-700 text-sm md:text-base leading-relaxed">
-                {t("imageCardText2")}
-              </p>
-            </motion.div>
-
-            {/* Feature Cards Grid (Replaces Feature Images) */}
-            <div className="grid grid-cols-2 gap-4">
-              {features.map((feature, index) => {
-                const Icon = feature.icon
-                return (
-                  <motion.div
-                    key={feature.title}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
-                  >
-                    <div className="relative h-[90px] md:h-[100px] bg-gradient-to-br from-[#91c73e] to-[#88bc3a] transition-colors duration-500">
-                      
-                      {/* Icon Badge */}
-                      <div className="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300">
-                        <Icon className="w-5 h-5 text-white transition-colors duration-300" />
+              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[500px] md:h-[600px]">
+                <Image
+                  src="/services/urgent.png"
+                  alt="Next Flight Out Service"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#194479]/90 via-[#194479]/30 to-transparent" />
+                
+                <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
+                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-full bg-[#91c73e] flex items-center justify-center">
+                        <Clock className="w-6 h-6 text-white" />
                       </div>
-                      
-                      {/* Title */}
-                      <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <h3 className="headingFont text-white text-sm sm:text-base font-bold transition-colors duration-300">
-                          {feature.title}
-                        </h3>
+                      <div>
+                        <div className="text-white/80 text-sm font-medium">{t("card.label")}</div>
+                        <div className="text-white text-xl font-bold">{t("card.value")}</div>
                       </div>
                     </div>
-                  </motion.div>
-                )
-              })}
-            </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative circle */}
+              <div className="absolute -z-10 -top-8 -left-8 w-32 h-32 bg-[#91c73e]/20 rounded-full blur-2xl" />
+              <div className="absolute -z-10 -bottom-8 -right-8 w-40 h-40 bg-[#194479]/20 rounded-full blur-2xl" />
+            </motion.div>
+
+            {/* Right: Features Grid */}
+            <motion.div
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="space-y-8"
+            >
+              <h3 className="titleFont text-2xl md:text-3xl font-bold text-[#194479] mb-8">
+                {t("subtitle")}
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {features.map((feature, index) => {
+                  const Icon = feature.icon
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
+                      className="bg-gray-50 rounded-2xl p-6 hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-[#194479]/10 group"
+                    >
+                      <div className="w-12 h-12 rounded-xl bg-[#194479]/10 flex items-center justify-center mb-4 group-hover:bg-[#194479] transition-colors duration-300">
+                        <Icon className="w-6 h-6 text-[#194479] group-hover:text-white transition-colors duration-300" />
+                      </div>
+                      <h4 className="titleFont text-lg font-bold text-[#194479] mb-2">
+                        {feature.title}
+                      </h4>
+                      <p className="paragraphFont text-gray-600 text-sm leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </motion.div>
+                  )
+                })}
+              </div>
+
+              {/* Stats/Badge */}
+              <div className="bg-[#194479] rounded-2xl p-6 md:p-8 text-white mt-8 shadow-xl">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                  <div>
+                    <div className="text-3xl md:text-4xl font-bold text-[#91c73e] mb-1">24/7</div>
+                    <div className="text-white/80 text-sm">{t("stats.support")}</div>
+                  </div>
+                  <div className="w-full md:w-px h-px md:h-12 bg-white/20" />
+                  <div>
+                    <div className="text-3xl md:text-4xl font-bold text-[#91c73e] mb-1">190+</div>
+                    <div className="text-white/80 text-sm">{t("stats.countries")}</div>
+                  </div>
+                  <div className="w-full md:w-px h-px md:h-12 bg-white/20" />
+                  <div>
+                    <div className="text-3xl md:text-4xl font-bold text-[#91c73e] mb-1">99%</div>
+                    <div className="text-white/80 text-sm">{t("stats.success")}</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>

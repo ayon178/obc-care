@@ -3,9 +3,11 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AutomotiveIntro() {
   const t = useTranslations("AutomotiveIntro")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative py-16 md:py-20 bg-white overflow-hidden">
@@ -25,10 +27,10 @@ export default function AutomotiveIntro() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left: Text Content */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: isMobile ? 0.6 : 0.8 }}
               className="space-y-6"
             >
               <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight">
@@ -51,10 +53,10 @@ export default function AutomotiveIntro() {
 
             {/* Right: Image with Stats Overlay */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: isMobile ? 0.6 : 0.8, delay: 0.2 }}
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">

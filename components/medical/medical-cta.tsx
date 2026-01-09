@@ -5,10 +5,12 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { useRouter } from "@/i18n/routing"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const MedicalCta = () => {
   const t = useTranslations("MedicalTransportPage.cta")
   const router = useRouter()
+  const isMobile = useIsMobile()
 
   return (
     <section className="py-16 md:py-20 bg-gradient-to-br from-[#f8f9fa] to-[#e9ecef]">
@@ -19,7 +21,7 @@ const MedicalCta = () => {
           
           <div className="relative z-10 p-8 md:p-12 text-center">
             <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="headingFont text-2xl md:text-4xl font-bold text-[#194479] mb-4"
@@ -28,7 +30,7 @@ const MedicalCta = () => {
             </motion.h2>
             
             <motion.p 
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
@@ -38,7 +40,7 @@ const MedicalCta = () => {
             </motion.p>
             
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}

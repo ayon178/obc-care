@@ -3,8 +3,10 @@
 import { motion } from "framer-motion"
 import { ArrowRight, Phone, Clock } from "lucide-react"
 import { Link } from "@/i18n/routing"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function FmlmQuoteCta() {
+  const isMobile = useIsMobile()
   return (
     <section 
       className="relative py-16 md:py-24 overflow-hidden"
@@ -26,7 +28,7 @@ export default function FmlmQuoteCta() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}

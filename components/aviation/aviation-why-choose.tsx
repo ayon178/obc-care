@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Phone, Zap, Shield, FileText, Eye } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const benefitsData = [
   { icon: Phone, color: "#194479" },
@@ -15,6 +16,7 @@ const benefitsData = [
 
 export default function AviationWhyChoose() {
   const t = useTranslations("AviationWhyChoose")
+  const isMobile = useIsMobile()
 
   const benefits = benefitsData.map((benefit, index) => ({
     ...benefit,
@@ -34,10 +36,10 @@ export default function AviationWhyChoose() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.6 : 0.8 }}
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-4">
@@ -55,10 +57,10 @@ export default function AviationWhyChoose() {
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  transition={{ duration: 0.6, delay: isMobile ? index * 0.05 : index * 0.1 }}
                   className="group"
                 >
                   <div className="relative h-full bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">

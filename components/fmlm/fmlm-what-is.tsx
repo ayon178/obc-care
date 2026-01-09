@@ -4,9 +4,12 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { Truck, Package, ArrowRight } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function FmlmWhatIs() {
   const t = useTranslations("FmlmWhatIs")
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-br from-gray-50 via-white to-[#194479]/5 overflow-hidden">
       {/* Decorative background elements */}
@@ -19,8 +22,8 @@ export default function FmlmWhatIs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content with Visual Elements */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="space-y-6"
@@ -36,7 +39,7 @@ export default function FmlmWhatIs() {
 
             {/* First Mile Card */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -70,7 +73,7 @@ export default function FmlmWhatIs() {
 
             {/* Last Mile Card */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -90,7 +93,7 @@ export default function FmlmWhatIs() {
             </motion.div>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -102,8 +105,8 @@ export default function FmlmWhatIs() {
 
           {/* Image with Overlay Content */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"

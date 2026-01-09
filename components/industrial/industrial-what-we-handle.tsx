@@ -3,9 +3,11 @@
 import { motion } from "framer-motion"
 import { Cog, Wrench, Settings, Factory, Package } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function IndustrialWhatWeHandle() {
   const t = useTranslations("IndustrialWhatWeHandle")
+  const isMobile = useIsMobile()
 
   const items = [
     {
@@ -40,7 +42,7 @@ export default function IndustrialWhatWeHandle() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
@@ -63,7 +65,7 @@ export default function IndustrialWhatWeHandle() {
               return (
                 <motion.div
                   key={item.title}
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}

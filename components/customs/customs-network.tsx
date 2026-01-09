@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Globe2, FileCheck, MapPin, Clock } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const statsConfig = [
   { key: "agents", icon: FileCheck },
@@ -15,6 +16,7 @@ const coverageKeys = ["asia", "europe", "americas"]
 
 export default function CustomsNetwork() {
   const t = useTranslations("CustomsNetwork")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
@@ -28,10 +30,10 @@ export default function CustomsNetwork() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Content */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: isMobile ? 0.6 : 0.8 }}
             className="space-y-6"
           >
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
@@ -58,8 +60,8 @@ export default function CustomsNetwork() {
                 return (
                   <motion.div
                     key={stat.key}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="text-center p-4 rounded-xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
@@ -83,10 +85,10 @@ export default function CustomsNetwork() {
 
           {/* Right: Coverage Areas with Image */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: isMobile ? 0.6 : 0.8, delay: 0.2 }}
             className="relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
@@ -106,8 +108,8 @@ export default function CustomsNetwork() {
                     {coverageKeys.map((key, index) => (
                       <motion.div
                         key={key}
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                         className="bg-black/60 backdrop-blur-sm rounded-l-lg rounded-r-none p-2 md:p-2.5 shadow-lg border border-white/20 border-r-0"

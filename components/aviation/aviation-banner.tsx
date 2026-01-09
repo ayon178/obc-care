@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import { Plane } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AviationBanner() {
   const t = useTranslations("AviationBanner")
+  const isMobile = useIsMobile()
 
   return (
     <section
@@ -24,15 +26,15 @@ export default function AviationBanner() {
       <div className="container relative z-10 mx-auto h-full px-4 sm:px-6 lg:px-8">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: isMobile ? 0.6 : 0.8, ease: "easeOut" }}
             className="max-w-4xl text-right ml-auto"
           >
             <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-white/10 text-white/90 text-[10px] sm:text-[11px] backdrop-blur self-end"
@@ -41,7 +43,7 @@ export default function AviationBanner() {
               {t("badge")}
             </motion.span>
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
@@ -50,7 +52,7 @@ export default function AviationBanner() {
               {t("title")}
             </motion.h1>
             <motion.p
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}

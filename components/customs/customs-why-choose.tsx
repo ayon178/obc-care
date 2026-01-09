@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Globe, Clock, Zap, Package } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const featureIcons = [
   Globe,
@@ -21,6 +22,8 @@ const featureImages = [
 
 export default function CustomsWhyChoose() {
   const t = useTranslations("CustomsWhyChoose")
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       {/* Background accents */}
@@ -32,10 +35,10 @@ export default function CustomsWhyChoose() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: isMobile ? 0.6 : 0.8 }}
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
@@ -55,7 +58,7 @@ export default function CustomsWhyChoose() {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}

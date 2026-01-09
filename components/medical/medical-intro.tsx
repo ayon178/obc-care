@@ -2,9 +2,11 @@
 
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const MedicalIntro = () => {
   const t = useTranslations("MedicalTransportPage.intro")
+  const isMobile = useIsMobile()
 
   return (
     <section id="medical-intro" className="py-16 md:py-20 bg-white overflow-hidden">
@@ -12,8 +14,8 @@ const MedicalIntro = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="text-left"
             >
@@ -34,8 +36,8 @@ const MedicalIntro = () => {
 
             {/* Image Content */}
             <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
                 className="relative rounded-3xl overflow-hidden shadow-2xl"

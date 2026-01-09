@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Route, Radio, ShieldCheck, CheckCircle2 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const steps = [
   {
@@ -21,6 +22,8 @@ const steps = [
 
 export default function FmlmHowItWorks() {
   const t = useTranslations("FmlmHowItWorks")
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* background accents */}
@@ -58,7 +61,7 @@ export default function FmlmHowItWorks() {
               return (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 18 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.45, delay: i * 0.07 }}

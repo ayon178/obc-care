@@ -10,6 +10,7 @@ import {
   Settings,
 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const itemsData = [
   { icon: Wrench, color: "#194479" },
@@ -21,6 +22,7 @@ const itemsData = [
 
 export default function AviationWhatWeHandle() {
   const t = useTranslations("AviationWhatWeHandle")
+  const isMobile = useIsMobile()
 
   const items = itemsData.map((item, index) => ({
     ...item,
@@ -63,10 +65,10 @@ export default function AviationWhatWeHandle() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: isMobile ? 0.6 : 0.8 }}
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
@@ -84,10 +86,10 @@ export default function AviationWhatWeHandle() {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: isMobile ? index * 0.05 : index * 0.1 }}
                 className="group"
               >
                 <div className="relative h-full bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-[#91c73e]/30">

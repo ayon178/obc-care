@@ -5,6 +5,7 @@ import { Handshake, FileCheck, Globe, Shield, ArrowRight } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const benefitIcons = [
   FileCheck,
@@ -15,6 +16,8 @@ const benefitIcons = [
 
 export default function CustomsJoin() {
   const t = useTranslations("CustomsJoin")
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative py-16 md:py-24 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* Background accents */}
@@ -27,8 +30,8 @@ export default function CustomsJoin() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
           {/* Left: Text Content */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
             className="space-y-6"
@@ -100,8 +103,8 @@ export default function CustomsJoin() {
                 return (
                   <motion.div
                     key={i}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.8 + i * 0.1 }}
                     className="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-[#91c73e]/60 transition-all"
@@ -149,8 +152,8 @@ export default function CustomsJoin() {
 
           {/* Right: Image with Overlay */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
@@ -175,8 +178,8 @@ export default function CustomsJoin() {
 
             {/* Floating stats card */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.8, y: 20 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.8 }}
               className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-gray-200/50"

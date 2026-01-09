@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const MedicalMission = () => {
     // Re-using hero translations for generic text or add new keys if needed. 
@@ -9,6 +10,7 @@ const MedicalMission = () => {
     // Actually, I should probably reuse "intro" or "cta" keys or be safe.
     // User didn't give text for this section, so I will make it visual predominantly.
   const t = useTranslations("MedicalTransportPage.intro") 
+  const isMobile = useIsMobile()
 
   return (
     <section className="py-16 bg-white overflow-hidden relative">
@@ -22,7 +24,7 @@ const MedicalMission = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-[#194479]/90 to-transparent flex items-center">
                 <div className="p-8 md:p-16 max-w-2xl text-white">
                     <motion.h2 
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="headingFont text-2xl md:text-4xl font-bold mb-6"
@@ -30,7 +32,7 @@ const MedicalMission = () => {
                         {t("title")} {/* Reusing "Introducing OBC Life Care" or just "OBC Life Care" */}
                     </motion.h2>
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}

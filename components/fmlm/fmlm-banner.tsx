@@ -4,9 +4,12 @@ import { motion } from "framer-motion"
 import { Truck } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function FmlmBanner() {
   const t = useTranslations("FmlmBanner")
+  const isMobile = useIsMobile()
+
   return (
     <section
       className="relative h-screen min-h-[600px] w-full overflow-hidden"
@@ -23,7 +26,7 @@ export default function FmlmBanner() {
       <div className="relative z-10 container mx-auto h-full px-4 sm:px-6 lg:px-8">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}

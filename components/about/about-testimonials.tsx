@@ -1,14 +1,15 @@
 "use client"
 
-import { motion } from "framer-motion"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { Star } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AboutTestimonials() {
   const t = useTranslations("AboutTestimonials")
+  const isMobile = useIsMobile()
 
   const settings = {
     dots: true,
@@ -45,7 +46,7 @@ export default function AboutTestimonials() {
           <Slider {...settings}>
             {testimonials.map((item, index) => (
               <div key={index} className="px-4 outline-none">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-10 md:p-14 text-center relative">
+                <div className={`bg-white/10 ${isMobile ? "" : "backdrop-blur-sm"} rounded-2xl p-10 md:p-14 text-center relative`}>
                   <div className="flex justify-center gap-1 mb-8">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-6 w-6 text-[#91c73e] fill-[#91c73e]" />

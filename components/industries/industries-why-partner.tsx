@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Globe, Clock, Radio, Target } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const benefitsData = [
   { icon: Globe, color: "#194479" },
@@ -13,6 +14,7 @@ const benefitsData = [
 
 export default function IndustriesWhyPartner() {
   const t = useTranslations("IndustriesWhyPartner")
+  const isMobile = useIsMobile()
 
   const benefits = benefitsData.map((benefit, index) => ({
     ...benefit,
@@ -32,26 +34,13 @@ export default function IndustriesWhyPartner() {
             backgroundSize: "40px 40px",
           }}
         />
-        <motion.div
-          className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-[#91c73e]/8 to-transparent rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.3, 0.5, 0.3],
-            x: [0, 50, 0],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
@@ -73,7 +62,7 @@ export default function IndustriesWhyPartner() {
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}

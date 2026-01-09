@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import { Zap } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function ElectronicsBanner() {
   const t = useTranslations("ElectronicsBanner")
+  const isMobile = useIsMobile()
 
   return (
     <section
@@ -26,10 +28,10 @@ export default function ElectronicsBanner() {
       <div className="container mx-auto h-full px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: isMobile ? 0.6 : 0.6, ease: "easeOut" }}
             className="max-w-4xl text-right ml-auto relative z-30"
           >
             <motion.span
@@ -44,10 +46,10 @@ export default function ElectronicsBanner() {
               {t("badge")}
             </motion.span>
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              transition={{ duration: isMobile ? 0.6 : 0.6, delay: 0.2, ease: "easeOut" }}
               className="headingFont mt-2 text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-white leading-tight"
               style={{ textShadow: '0 4px 12px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)' }}
             >

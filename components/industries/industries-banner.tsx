@@ -4,11 +4,13 @@ import { motion } from "framer-motion"
 import { Factory } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 import Image from "next/image"
 
 export default function IndustriesBanner() {
   const t = useTranslations("IndustriesBanner")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative h-screen min-h-[600px] w-full overflow-hidden">
@@ -27,7 +29,7 @@ export default function IndustriesBanner() {
       <div className="container relative z-10 mx-auto h-full px-4 sm:px-6 lg:px-8">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -44,7 +46,7 @@ export default function IndustriesBanner() {
               {t("badge")}
             </motion.span>
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
@@ -53,7 +55,7 @@ export default function IndustriesBanner() {
               {t("title")}
             </motion.h1>
             <motion.p
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
@@ -63,7 +65,7 @@ export default function IndustriesBanner() {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}

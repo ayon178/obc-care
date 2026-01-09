@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import { ArrowRight, Zap } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function ElectronicsCta() {
   const t = useTranslations("ElectronicsCta")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
@@ -21,7 +23,7 @@ export default function ElectronicsCta() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
@@ -47,8 +49,8 @@ export default function ElectronicsCta() {
             <div className="relative z-10 text-center space-y-5 md:space-y-6">
               {/* Icon Badge */}
               <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="flex justify-center mb-2"

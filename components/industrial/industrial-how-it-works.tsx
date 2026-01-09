@@ -3,9 +3,11 @@
 import { motion } from "framer-motion"
 import { Radio, Package, Plane, FileCheck, Building2 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function IndustrialHowItWorks() {
   const t = useTranslations("IndustrialHowItWorks")
+  const isMobile = useIsMobile()
 
   const steps = [
     {
@@ -62,7 +64,7 @@ export default function IndustrialHowItWorks() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
@@ -85,8 +87,8 @@ export default function IndustrialHowItWorks() {
               return (
                 <motion.div
                   key={step.number}
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: i * 0.15 }}
                   className="relative"
@@ -142,7 +144,7 @@ export default function IndustrialHowItWorks() {
                     return (
                       <motion.div
                         key={step.number}
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.6, delay: i * 0.15 }}
@@ -193,7 +195,7 @@ export default function IndustrialHowItWorks() {
                     return (
                       <motion.div
                         key={step.number}
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.6, delay: (i + 3) * 0.15 }}

@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AboutMissionVision() {
   const t = useTranslations("AboutMissionVision")
+  const isMobile = useIsMobile()
 
   return (
     <section className="py-20 bg-gray-50">
@@ -13,10 +15,10 @@ export default function AboutMissionVision() {
           
           {/* Mission */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: isMobile ? -10 : -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: isMobile ? 0.5 : 0.6 }}
             className="bg-[#194479] p-8 rounded-2xl shadow-lg"
           >
             <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">{t("mission.title")}</h3>
@@ -27,10 +29,10 @@ export default function AboutMissionVision() {
 
           {/* Vision */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: isMobile ? 0.5 : 0.6, delay: isMobile ? 0.1 : 0.2 }}
             className="bg-[#194479] p-8 rounded-2xl shadow-lg"
           >
             <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-wide border-l-4 border-[#91c73e] pl-4">{t("vision.title")}</h3>

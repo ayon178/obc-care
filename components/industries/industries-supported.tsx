@@ -12,6 +12,7 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const industriesData = [
   {
@@ -54,6 +55,7 @@ const industriesData = [
 
 export default function IndustriesSupported() {
   const t = useTranslations("IndustriesSupported")
+  const isMobile = useIsMobile()
 
   const industries = industriesData.map((ind, index) => ({
     ...ind,
@@ -68,39 +70,13 @@ export default function IndustriesSupported() {
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute top-20 right-10 w-96 h-96 bg-[#91c73e]/10 rounded-full blur-3xl"
-          animate={{
-            x: [0, 40, 0],
-            y: [0, 30, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute bottom-20 left-10 w-80 h-80 bg-[#194479]/10 rounded-full blur-3xl"
-          animate={{
-            x: [0, -30, 0],
-            y: [0, -20, 0],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-        />
+        
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
@@ -125,7 +101,7 @@ export default function IndustriesSupported() {
             return (
               <motion.div
                 key={industry.title}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}

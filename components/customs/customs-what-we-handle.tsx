@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { FileText, Calculator, FileCheck, Plane, Package } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const serviceIcons = [
   FileText,
@@ -14,6 +15,8 @@ const serviceIcons = [
 
 export default function CustomsWhatWeHandle() {
   const t = useTranslations("CustomsWhatWeHandle")
+  const isMobile = useIsMobile()
+  
   return (
     <section className="relative py-14 md:py-20 bg-gradient-to-b from-white via-gray-50/40 to-white overflow-hidden">
       {/* Background accents */}
@@ -25,10 +28,10 @@ export default function CustomsWhatWeHandle() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: isMobile ? 0.6 : 0.8 }}
           className="text-center max-w-3xl mx-auto mb-8 md:mb-12"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#194479]/10 text-[#194479] text-xs sm:text-sm font-semibold">
@@ -46,8 +49,8 @@ export default function CustomsWhatWeHandle() {
               return (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="group relative"

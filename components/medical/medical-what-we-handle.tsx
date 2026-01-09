@@ -3,9 +3,11 @@
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
 import { CheckCircle2, FlaskRound, ThermometerSnowflake, Activity, Microscope, Box } from "lucide-react"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const MedicalWhatWeHandle = () => {
   const t = useTranslations("MedicalTransportPage.whatWeHandle")
+  const isMobile = useIsMobile()
 
   const itemsData = [
     { icon: Microscope, color: "#194479" }, // Stem Cells
@@ -27,8 +29,8 @@ const MedicalWhatWeHandle = () => {
             
             {/* Image (Left) */}
             <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-xl lg:order-1"
             >
@@ -41,8 +43,8 @@ const MedicalWhatWeHandle = () => {
 
             {/* Content (Right) */}
             <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="lg:order-2"
             >
@@ -57,7 +59,7 @@ const MedicalWhatWeHandle = () => {
                   {items.map((item, index) => (
                      <motion.div
                         key={index}
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}

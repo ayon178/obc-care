@@ -3,9 +3,11 @@
 import { motion } from "framer-motion"
 import { Globe2, MapPin } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function FmlmNetwork() {
   const t = useTranslations("FmlmNetwork")
+  const isMobile = useIsMobile()
 
   const coverageKeys = ["asia", "europe", "americas"]
 
@@ -19,7 +21,7 @@ export default function FmlmNetwork() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
@@ -43,7 +45,7 @@ export default function FmlmNetwork() {
         {/* Floating Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -58,7 +60,7 @@ export default function FmlmNetwork() {
           </motion.div>
           
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -73,7 +75,7 @@ export default function FmlmNetwork() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -93,7 +95,7 @@ export default function FmlmNetwork() {
           {coverageKeys.map((key, i) => (
             <motion.div
               key={key}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 * (i + 1) }}

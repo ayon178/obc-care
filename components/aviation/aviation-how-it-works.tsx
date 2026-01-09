@@ -4,6 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { Clock, Plane, FileCheck, Radio, Truck } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const stepsData = [
   { icon: Clock, color: "#194479" },
@@ -15,6 +16,7 @@ const stepsData = [
 
 export default function AviationHowItWorks() {
   const t = useTranslations("AviationHowItWorks")
+  const isMobile = useIsMobile()
 
   const steps = stepsData.map((step, index) => ({
     ...step,
@@ -41,10 +43,10 @@ export default function AviationHowItWorks() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: isMobile ? 0.6 : 0.8 }}
           className="text-center max-w-3xl mx-auto mb-12 md:mb-16"
         >
           <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-4">
@@ -68,10 +70,10 @@ export default function AviationHowItWorks() {
               return (
                 <motion.div
                   key={step.number}
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.6, delay: i * 0.15 }}
+                  transition={{ duration: 0.6, delay: isMobile ? i * 0.05 : i * 0.15 }}
                   className={`relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center ${
                     isLeft ? "md:grid-flow-col" : "md:grid-flow-col-dense"
                   }`}

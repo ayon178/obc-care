@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function ConfidentialMission() {
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative py-20 md:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -12,10 +15,10 @@ export default function ConfidentialMission() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left: Text Content */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: isMobile ? 0.6 : 0.8 }}
             >
               <h2 className="headingFont text-xl sm:text-2xl md:text-3xl font-bold text-[#194479] leading-tight mb-6">
                 Your shipment, our mission — 24/7, across the globe.
@@ -28,10 +31,10 @@ export default function ConfidentialMission() {
 
             {/* Right: Image */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: isMobile ? 0.6 : 0.8, delay: 0.2 }}
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">

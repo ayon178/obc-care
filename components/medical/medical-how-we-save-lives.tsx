@@ -4,9 +4,11 @@ import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
 import {  ClipboardCheck, Radio, Clock, Thermometer, ShieldCheck, AlertTriangle } from "lucide-react"
 import { Link } from "@/i18n/routing"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const MedicalHowWeSaveLives = () => {
   const t = useTranslations("MedicalTransportPage.howWeSaveLives")
+  const isMobile = useIsMobile()
 
   const steps = [
     { icon: ClipboardCheck, key: "0" },
@@ -33,7 +35,7 @@ const MedicalHowWeSaveLives = () => {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
@@ -54,7 +56,7 @@ const MedicalHowWeSaveLives = () => {
 
         {/* Closing Section 1 */}
         <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mt-12 text-center max-w-4xl mx-auto bg-[#194479] text-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow"
@@ -67,7 +69,7 @@ const MedicalHowWeSaveLives = () => {
 
         {/* Closing Section 2 - CTA */}
         <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}

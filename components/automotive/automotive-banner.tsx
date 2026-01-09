@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import { Car } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AutomotiveBanner() {
   const t = useTranslations("AutomotiveBanner")
+  const isMobile = useIsMobile()
 
   return (
     <section
@@ -26,15 +28,15 @@ export default function AutomotiveBanner() {
       <div className="container mx-auto h-full px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="flex h-full items-center justify-end pt-32 md:pt-36">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: isMobile ? 0.6 : 0.8, ease: "easeOut" }}
             className="max-w-4xl text-right ml-auto relative z-30"
           >
             <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur-md text-white text-[10px] sm:text-[11px] font-semibold self-end border border-white/20"
@@ -44,7 +46,7 @@ export default function AutomotiveBanner() {
               {t("badge")}
             </motion.span>
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
@@ -55,7 +57,7 @@ export default function AutomotiveBanner() {
             </motion.h1>
 
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}

@@ -3,9 +3,11 @@
 import { motion } from "framer-motion"
 import { Globe, ShieldCheck, Clock, Users, Truck, Headphones } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AboutWhyChooseUs() {
   const t = useTranslations("AboutWhyChooseUs")
+  const isMobile = useIsMobile()
 
   const features = [
     {
@@ -54,10 +56,10 @@ export default function AboutWhyChooseUs() {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: isMobile ? 0.3 : 0.5, delay: isMobile ? index * 0.05 : index * 0.1 }}
                 className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group"
               >
                 <div className="h-14 w-14 bg-[#194479]/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#91c73e] transition-colors duration-300">

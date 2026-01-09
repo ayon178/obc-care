@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Clock, Users, Radio, Globe } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const features = [
   {
@@ -21,12 +22,14 @@ const features = [
 
 export default function FmlmWhyChoose() {
   const t = useTranslations("FmlmWhyChoose")
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -50,7 +53,7 @@ export default function FmlmWhyChoose() {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}

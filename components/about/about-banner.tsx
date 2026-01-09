@@ -1,14 +1,14 @@
-"use client"
-
 import { motion } from "framer-motion"
 import { Link } from "@/i18n/routing"
 import { ChevronRight } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 import Image from "next/image"
 
 export default function AboutBanner() {
   const t = useTranslations("AboutBanner")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative pt-20 h-[500px] w-full overflow-hidden bg-[#194479]">
@@ -28,9 +28,9 @@ export default function AboutBanner() {
       {/* Content */}
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center text-center text-white">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: isMobile ? 0.6 : 0.8 }}
         >
           {/* Breadcrumb */}
           <div className="flex items-center justify-center gap-2 text-sm md:text-base mb-4 text-gray-300">

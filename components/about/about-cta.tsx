@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import { Link } from "@/i18n/routing"
 import { ArrowRight } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AboutCTA() {
   const t = useTranslations("AboutCta")
+  const isMobile = useIsMobile()
 
   return (
     <section className="py-20 bg-white">
@@ -17,10 +19,10 @@ export default function AboutCTA() {
           
           <div className="relative z-10 px-8 py-16 md:p-20 text-center">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: isMobile ? 10 : 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: isMobile ? 0.4 : 0.6 }}
             >
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
                 {t("title")}

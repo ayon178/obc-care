@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Clock, Shield, Globe, Zap, CheckCircle2 } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const reasons = [
   {
@@ -35,6 +36,8 @@ const reasons = [
 
 export default function FmlmWhyImportant() {
   const t = useTranslations("FmlmWhyImportant")
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       {/* Hero Image Background */}
@@ -55,7 +58,7 @@ export default function FmlmWhyImportant() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
@@ -78,7 +81,7 @@ export default function FmlmWhyImportant() {
             return (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}

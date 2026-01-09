@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import { ArrowRight, Car } from "lucide-react"
 import { Link } from "@/i18n/routing"
 import { useTranslations } from "next-intl"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function AutomotiveCta() {
   const t = useTranslations("AutomotiveCta")
+  const isMobile = useIsMobile()
 
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
@@ -21,7 +23,7 @@ export default function AutomotiveCta() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: isMobile ? 10 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
