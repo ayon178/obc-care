@@ -252,23 +252,23 @@
     "steps": {
       "0": {
         "title": "Anfrage & Bewertung",
-        "description": "Senden Sie Ihre Sendungsdetails unser Operationsteam bewertet die schnellste Route und erstellt innerhalb von 15 Minuten ein Angebot."
+        "description": "Senden Sie Ihre Sendungsdaten. Unser Operatives Team überprüft die Anforderungen, ermittelt die schnellste Route und erstellt innerhalb von 15 Minuten ein Angebot."
       },
       "1": {
         "title": "Buchung & Dokumentation",
-        "description": "Nach Bestätigung buchen wir alle Flüge und bereiten alle erforderlichen Papiere, einschließlich Zollunterlagen, vor, um einen reibungslosen Transport zu gewährleisten."
+        "description": "Nach Bestätigung sichern wir Flüge und bereiten alle erforderlichen Papiere vor, einschließlich Zolldokumenten, um einen reibungslosen und konformen Transport zu gewährleisten."
       },
       "2": {
         "title": "Abholung & Übergabe",
-        "description": "Ein geschulter Kurier holt Ihre Sendung ab und bereitet sie für den Abflug vor."
+        "description": "Ein geschulter Kurier holt Ihre Sendung ab, überprüft die Transportanforderungen und bereitet sie sicher für den sofortigen Abflug vor."
       },
       "3": {
         "title": "Echtzeit-Updates",
-        "description": "Von der Abholung bis zur Lieferung senden wir Live-Status-Updates bei jedem Meilenstein."
+        "description": "Von der Abholung bis zur Zustellung erhalten Sie Live-Status-Updates zu jedem wichtigen Meilenstein."
       },
       "4": {
-        "title": "Endgültige Lieferbestätigung",
-        "description": "Sobald Ihre Sendung ankommt, erhalten Sie eine sofortige Lieferbestätigung sicher und pünktlich."
+        "title": "Zustellbestätigung",
+        "description": "Nach der Zustellung erhalten Sie einen unterschriebenen Abliefernachweis, der die sichere und pünktliche Ankunft bestätigt."
       }
     }
   },

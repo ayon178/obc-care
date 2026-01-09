@@ -250,23 +250,23 @@
     "steps": {
       "0": {
         "title": "Request & Assessment",
-        "description": "Submit your shipment details, and our operations team will instantly evaluate the fastest routes to provide a comprehensive quote within 15 minutes."
+        "description": "Submit your shipment details. Our operations team reviews requirements, identifies the fastest route, and provides a quote within 15 minutes."
       },
       "1": {
         "title": "Booking & Documentation",
-        "description": "Upon confirmation, we immediately secure flights and handle all necessary paperwork, including customs documentation, to ensure a seamless and compliant transport process."
+        "description": "Upon confirmation, we secure flights and prepare all required paperwork, including customs documentation, to ensure smooth and compliant transport."
       },
       "2": {
         "title": "Collection & Handover",
-        "description": "A professionally trained courier personally collects the shipment from your specified location, verifying its security and preparing it for immediate departure."
+        "description": "A trained courier collects your shipment, verifies handling requirements, and prepares it securely for immediate departure."
       },
       "3": {
         "title": "Real-Time Updates",
-        "description": "Stay informed throughout the entire journey with real-time tracking and milestone notifications, ensuring complete transparency from pickup to final destination."
+        "description": "From pickup through delivery, you receive live status updates at every key milestone."
       },
       "4": {
         "title": "Final Delivery Confirmation",
-        "description": "We ensure secure hand-carry delivery directly to the recipient, providing you with instant proof of delivery upon successful handover."
+        "description": "Once delivered, you receive a signed proof of delivery, confirming safe and on-time arrival."
       }
     }
   },

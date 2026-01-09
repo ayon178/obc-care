@@ -252,23 +252,23 @@
     "steps": {
       "0": {
         "title": "Solicitud y Evaluación",
-        "description": "Envíe los detalles de su envío  nuestro equipo de operaciones evaluará la ruta más rápida y proporcionará una cotización en 15 minutos."
+        "description": "Envíe los detalles de su envío. Nuestro equipo de operaciones revisa los requisitos, identifica la ruta más rápida y proporciona una cotización en 15 minutos."
       },
       "1": {
         "title": "Reserva y Documentación",
-        "description": "Una vez confirmado, reservamos todos los vuelos y preparamos todos los documentos necesarios, incluida la documentación aduanera, para asegurar un transporte fluido."
+        "description": "Tras la confirmación, aseguramos los vuelos y preparamos toda la documentación requerida, incluida la aduanera, para garantizar un transporte fluido y conforme."
       },
       "2": {
-        "title": "Recolección y Entrega",
-        "description": "Un mensajero capacitado recoge su envío y lo prepara para la salida."
+        "title": "Recogida y Entrega",
+        "description": "Un mensajero capacitado recoge su envío, verifica los requisitos de manejo y lo prepara de forma segura para su salida inmediata."
       },
       "3": {
         "title": "Actualizaciones en Tiempo Real",
-        "description": "Desde la recolección hasta la entrega, enviamos actualizaciones de estado en vivo en cada hito."
+        "description": "Desde la recogida hasta la entrega, recibirá actualizaciones de estado en vivo en cada hito clave."
       },
       "4": {
         "title": "Confirmación de Entrega Final",
-        "description": "Una vez que su envío llega, recibirá una prueba de entrega instantánea  de manera segura y a tiempo."
+        "description": "Una vez entregado, recibirá un comprobante de entrega firmado, confirmando una llegada segura y puntual."
       }
     }
   },

@@ -9,12 +9,7 @@ import {
   CheckCircle2,
 } from "lucide-react"
 import { useTranslations } from "next-intl"
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+
 
 export default function OperatingProcess() {
   const t = useTranslations("OperatingProcess")
@@ -179,7 +174,7 @@ export default function OperatingProcess() {
                     y: -8,
                     transition: { duration: 0.3 },
                   }}
-                  className="relative group"
+                  className="relative group h-full"
                 >
                   {/* Connecting Arrow - Desktop Only */}
                   {!isLast && (
@@ -209,7 +204,7 @@ export default function OperatingProcess() {
 
                   {/* Step Card - Enhanced */}
                   <div className="relative h-full">
-                    <div className="relative h-full p-6 md:p-7 bg-white/90 backdrop-blur-xl rounded-3xl shadow-lg border-2 border-gray-200/50 hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                    <div className="relative h-full p-6 md:p-7 bg-white/90 backdrop-blur-xl rounded-3xl shadow-lg border-2 border-gray-200/50 hover:shadow-2xl transition-all duration-500 overflow-hidden flex flex-col">
                       {/* Shine Effect */}
                       <motion.div
                         className="absolute inset-0 opacity-0 group-hover:opacity-100"
@@ -254,18 +249,9 @@ export default function OperatingProcess() {
                       <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 leading-tight">
                         {step.title}
                       </h3>
-                      <TooltipProvider>
-                        <Tooltip delayDuration={300}>
-                          <TooltipTrigger asChild>
-                            <p className="text-sm md:text-base text-gray-600 leading-relaxed line-clamp-3">
-                              {step.description}
-                            </p>
-                          </TooltipTrigger>
-                          <TooltipContent className="max-w-xs text-sm bg-slate-900 text-white border-slate-800">
-                            <p>{step.description}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
+                      <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
+                        {step.description}
+                      </p>
 
                       {/* Decorative Line */}
                       <motion.div
@@ -273,7 +259,7 @@ export default function OperatingProcess() {
                         whileInView={{ scaleX: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: index * 0.1 + 0.4 }}
-                        className="mt-6 h-1 rounded-full shadow-sm"
+                        className="mt-auto h-1 rounded-full shadow-sm"
                         style={{ backgroundColor: step.color }}
                       />
                     </div>
