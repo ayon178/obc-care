@@ -53,7 +53,7 @@ const ShipmentMission2: React.FC = () => {
     },
     {
       id: 4,
-      src: "/industries/shipment/4.jpeg",
+      src: "/industries/shipment/4.png",
       alt: t("images.deliveryCheck"),
     }
   ]
