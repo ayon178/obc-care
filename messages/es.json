@@ -1091,27 +1091,22 @@
   "NfoJoin": {
     "badge": "Conviértase en Socio de Operaciones NFO",
     "title": "Únase a nuestra red de profesionales de logística y ayúdenos a mover envíos críticos en todo el mundo.",
-    "question": "¿Listo para marcar la diferencia en la logística global?",
-    "description1": "Desde la coordinación de despachos hasta el manejo en aeropuertos, siempre buscamos socios confiables dedicados a una logística rápida y segura.",
-    "description2": "Como parte de la red global de OBC Care, se le confiarán entregas de alto valor y sensibles al tiempo, respaldadas por nuestro equipo de soporte 24/7.",
+    "subtitle": "¿Listo para marcar la diferencia en la logística global?",
+    "description": "Desde la coordinación de despachos hasta el manejo en aeropuertos, siempre buscamos socios confiables dedicados a una logística rápida y segura. Como parte de la red global de OBC Care, se le confiarán entregas de alto valor y sensibles al tiempo, respaldadas por nuestro equipo de soporte 24/7.",
+    "button": "Aplicar como Socio",
+    "cardTitle": "Oportunidades Globales",
+    "cardDesc": "Únase a un equipo que mueve envíos críticos las 24 horas",
     "benefits": {
       "0": "Trabajar con envíos críticos",
       "1": "Respaldo del equipo de soporte 24/7",
       "2": "Oportunidades de red global",
       "3": "Crecimiento profesional"
-    },
-    "ctaPrimary": "Aplicar como Socio",
-    "ctaSecondary": "Contacte a Nuestro Equipo NFO",
-    "stats": {
-      "value": "24/7",
-      "label": "Operaciones",
-      "desc": "Únase a un equipo que mueve envíos críticos las 24 horas"
     }
   },
   "NfoCta": {
     "title": "Su Envío Urgente, en el Aire en Horas",
-    "description": "Cuando la urgencia no es negociable, confíe en las soluciones NFO de OBC Care para mantener su negocio en movimiento.",
-    "subDescription": "Combinamos velocidad, confiabilidad y transparencia, asegurando que su envío llegue cuando más se necesita.",
+    "description1": "Cuando la urgencia no es negociable, confíe en las soluciones NFO de OBC Care para mantener su negocio en movimiento.",
+    "description2": "Combinamos velocidad, confiabilidad y transparencia, asegurando que su envío llegue cuando más se necesita.",
     "button": "Obtenga una Cotización Gratis Ahora",
     "closing": "Nuestro equipo responde en minutos, porque cada segundo cuenta."
   },

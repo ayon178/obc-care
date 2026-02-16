@@ -1089,27 +1089,22 @@
   "NfoJoin": {
     "badge": "Become an NFO Operations Partner",
     "title": "Join our network of logistics professionals and help us move time-critical shipments worldwide.",
-    "question": "Ready to make a difference in global logistics?",
-    "description1": "From dispatch coordination to airport handling, we're always looking for reliable partners dedicated to fast and secure logistics.",
-    "description2": "As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.",
+    "subtitle": "Ready to make a difference in global logistics?",
+    "description": "From dispatch coordination to airport handling, we're always looking for reliable partners dedicated to fast and secure logistics. As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.",
+    "button": "Apply as a Partner",
+    "cardTitle": "Global Opportunities",
+    "cardDesc": "Join a team that moves critical shipments around the clock.",
     "benefits": {
       "0": "Work with time-critical shipments",
       "1": "24/7 support team backing",
       "2": "Global network opportunities",
       "3": "Professional growth"
-    },
-    "ctaPrimary": "Apply as a Partner",
-    "ctaSecondary": "Contact Our NFO Team",
-    "stats": {
-      "value": "24/7",
-      "label": "Operations",
-      "desc": "Join a team that moves critical shipments around the clock"
     }
   },
   "NfoCta": {
     "title": "Your Urgent Shipment, Airborne in Hours",
-    "description": "When urgency is non-negotiable, trust OBC Care's NFO Solutions to keep your business moving.",
-    "subDescription": "We combine speed, reliability, and transparency ensuring your shipment arrives when it's needed most.",
+    "description1": "When urgency is non-negotiable, trust OBC Care's NFO Solutions to keep your business moving.",
+    "description2": "We combine speed, reliability, and transparency ensuring your shipment arrives when it's needed most.",
     "button": "Get a Free Quote Now",
     "closing": "Our team responds within minutes because every second counts."
   },

@@ -1091,27 +1091,22 @@
   "NfoJoin": {
     "badge": "Werden Sie NFO-Operationspartner",
     "title": "Treten Sie unserem Netzwerk von Logistikprofis bei und helfen Sie uns, zeitkritische Sendungen weltweit zu bewegen.",
-    "question": "Bereit, einen Unterschied in der globalen Logistik zu machen?",
-    "description1": "Von der Versandkoordination bis zum Flughafenhandling suchen wir immer nach zuverlässigen Partnern, die sich der schnellen und sicheren Logistik verschrieben haben.",
-    "description2": "Als Teil des globalen Netzwerks von OBC Care werden Ihnen hochwertige und zeitsensible Lieferungen anvertraut, unterstützt durch unser 24/7-Supportteam.",
+    "subtitle": "Bereit, einen Unterschied in der globalen Logistik zu machen?",
+    "description": "Von der Versandkoordination bis zum Flughafenhandling suchen wir immer nach zuverlässigen Partnern, die sich der schnellen und sicheren Logistik verschrieben haben. Als Teil des globalen Netzwerks von OBC Care werden Ihnen hochwertige und zeitsensible Lieferungen anvertraut, unterstützt durch unser 24/7-Supportteam.",
+    "button": "Als Partner bewerben",
+    "cardTitle": "Globale Möglichkeiten",
+    "cardDesc": "Schließen Sie sich einem Team an, das kritische Sendungen rund um die Uhr bewegt.",
     "benefits": {
       "0": "Arbeit mit zeitkritischen Sendungen",
       "1": "24/7 Support-Team-Unterstützung",
       "2": "Globale Netzwerkmöglichkeiten",
       "3": "Professionelles Wachstum"
-    },
-    "ctaPrimary": "Als Partner bewerben",
-    "ctaSecondary": "Kontaktieren Sie unser NFO-Team",
-    "stats": {
-      "value": "24/7",
-      "label": "Betrieb",
-      "desc": "Schließen Sie sich einem Team an, das kritische Sendungen rund um die Uhr bewegt"
     }
   },
   "NfoCta": {
     "title": "Ihre dringende Sendung, in Stunden in der Luft",
-    "description": "Wenn Dringlichkeit nicht verhandelbar ist, vertrauen Sie den NFO-Lösungen von OBC Care, um Ihr Geschäft am Laufen zu halten.",
-    "subDescription": "Wir kombinieren Geschwindigkeit, Zuverlässigkeit und Transparenz – und stellen sicher, dass Ihre Sendung dann ankommt, wenn sie am dringendsten benötigt wird.",
+    "description1": "Wenn Dringlichkeit nicht verhandelbar ist, vertrauen Sie den NFO-Lösungen von OBC Care, um Ihr Geschäft am Laufen zu halten.",
+    "description2": "Wir kombinieren Geschwindigkeit, Zuverlässigkeit und Transparenz – und stellen sicher, dass Ihre Sendung dann ankommt, wenn sie am dringendsten benötigt wird.",
     "button": "Jetzt kostenloses Angebot erhalten",
     "closing": "Unser Team antwortet innerhalb von Minuten – denn jede Sekunde zählt."
   },
