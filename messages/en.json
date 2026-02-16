@@ -319,7 +319,7 @@
         }
       }
     },
-    "imageCaption": "OBC missions, FM/LM or NFO in action priority handling worldwide."     
+    "imageCaption": "OBC missions, FM/LM or NFO in action priority handling worldwide."
   },
   "ObcBanner": {
     "badge": "Onboard Courier (OBC) Service",
@@ -341,11 +341,26 @@
     "title": "When every minute counts",
     "description": "OBC services keep operations running in aviation, automotive, tech, and manufacturing by eliminating delays and maintaining custody at every step.",
     "items": {
-      "0": { "title": "Zero Room for Error", "description": "Avoid misrouting, loss, or delays common in standard air cargo with hand-carry supervision." },
-      "1": { "title": "Immediate Availability", "description": "Your shipment moves on the next available flight not in days." },
-      "2": { "title": "Continuous Control", "description": "Courier handles customs, security, and delivery personally no third‑party handovers." },
-      "3": { "title": "Peace of Mind", "description": "Live status updates ensure full visibility from pickup to final handover." },
-      "4": { "title": "Critical for Urgent Industries", "description": "Ideal for AOG parts, prototypes, sensitive items, and confidential documents." }
+      "0": {
+        "title": "Zero Room for Error",
+        "description": "Avoid misrouting, loss, or delays common in standard air cargo with hand-carry supervision."
+      },
+      "1": {
+        "title": "Immediate Availability",
+        "description": "Your shipment moves on the next available flight not in days."
+      },
+      "2": {
+        "title": "Continuous Control",
+        "description": "Courier handles customs, security, and delivery personally no third‑party handovers."
+      },
+      "3": {
+        "title": "Peace of Mind",
+        "description": "Live status updates ensure full visibility from pickup to final handover."
+      },
+      "4": {
+        "title": "Critical for Urgent Industries",
+        "description": "Ideal for AOG parts, prototypes, sensitive items, and confidential documents."
+      }
     }
   },
   "ObcWhyChoose": {
@@ -353,18 +368,42 @@
     "title": "Precision‑driven hand‑carry logistics",
     "description": "A distinct operating model that pairs rapid mobilization with continuous custody.",
     "stats": {
-      "quoteSla": { "value": "15m", "label": "Quote SLA" },
-      "activeObc": { "value": "1,200+", "label": "Active OBCs" },
-      "countries": { "value": "70+", "label": "Countries" },
+      "quoteSla": {
+        "value": "15m",
+        "label": "Quote SLA"
+      },
+      "activeObc": {
+        "value": "1,200+",
+        "label": "Active OBCs"
+      },
+      "countries": {
+        "value": "70+",
+        "label": "Countries"
+      },
       "title": "Built for Critical Missions",
       "subtitle": "Hand‑carry operations with auditable custody and proactive exception handling."
     },
     "items": {
-      "0": { "title": "Speed You Can Rely On", "description": "Next available flight no cargo wait or consolidation delays." },
-      "1": { "title": "Maximum Security", "description": "Continuous custody from check‑in to customs to handover." },
-      "2": { "title": "Real‑Time Updates", "description": "Live notifications for flight status and delivery confirmation." },
-      "3": { "title": "Global Coverage", "description": "Rapid mobilization across Europe, Asia, Middle East, North America." },
-      "4": { "title": "Trained & Verified Couriers", "description": "Professionally trained, background‑checked, OBC‑experienced." }
+      "0": {
+        "title": "Speed You Can Rely On",
+        "description": "Next available flight no cargo wait or consolidation delays."
+      },
+      "1": {
+        "title": "Maximum Security",
+        "description": "Continuous custody from check‑in to customs to handover."
+      },
+      "2": {
+        "title": "Real‑Time Updates",
+        "description": "Live notifications for flight status and delivery confirmation."
+      },
+      "3": {
+        "title": "Global Coverage",
+        "description": "Rapid mobilization across Europe, Asia, Middle East, North America."
+      },
+      "4": {
+        "title": "Trained & Verified Couriers",
+        "description": "Professionally trained, background‑checked, OBC‑experienced."
+      }
     }
   },
   "ObcIndustries": {
@@ -372,9 +411,18 @@
     "title": "Built for operations that can’t afford downtime",
     "description": "A distinctive mosaic layout highlighting impact across verticals.",
     "stats": {
-      "dispatch": { "value": "24/7", "label": "Dispatch" },
-      "handling": { "value": "Priority", "label": "Handling" },
-      "custody": { "value": "Secure", "label": "Custody" }
+      "dispatch": {
+        "value": "24/7",
+        "label": "Dispatch"
+      },
+      "handling": {
+        "value": "Priority",
+        "label": "Handling"
+      },
+      "custody": {
+        "value": "Secure",
+        "label": "Custody"
+      }
     },
     "items": {
       "aviation": "Aviation & AOG Parts",
@@ -391,11 +439,26 @@
     "title": "Timeline of an OBC Mission",
     "description": "A vertical timeline with connected nodes showing custody from quote to delivery.",
     "steps": {
-      "0": { "title": "Inquiry & Quotation", "description": "Contact us and receive a free quote within minutes." },
-      "1": { "title": "Courier Assignment", "description": "Nearest available OBC deployed for immediate dispatch." },
-      "2": { "title": "Pickup & Verification", "description": "Shipment verified, sealed, and escorted to the airport." },
-      "3": { "title": "In‑Transit Updates", "description": "Live notifications from departure to landing." },
-      "4": { "title": "Final Delivery", "description": "Courier hand‑delivers directly to the consignee fast and secure." }
+      "0": {
+        "title": "Inquiry & Quotation",
+        "description": "Contact us and receive a free quote within minutes."
+      },
+      "1": {
+        "title": "Courier Assignment",
+        "description": "Nearest available OBC deployed for immediate dispatch."
+      },
+      "2": {
+        "title": "Pickup & Verification",
+        "description": "Shipment verified, sealed, and escorted to the airport."
+      },
+      "3": {
+        "title": "In‑Transit Updates",
+        "description": "Live notifications from departure to landing."
+      },
+      "4": {
+        "title": "Final Delivery",
+        "description": "Courier hand‑delivers directly to the consignee fast and secure."
+      }
     }
   },
   "ObcNetwork": {
@@ -422,10 +485,22 @@
     "imageAlt": "On Board Courier professional",
     "stats": "Active Couriers",
     "benefits": {
-      "0": { "title": "Travel Opportunities", "description": "Explore the world while earning" },
-      "1": { "title": "Flexible Schedule", "description": "Choose missions that fit your lifestyle" },
-      "2": { "title": "Global Network", "description": "Join 1,200+ couriers worldwide" },
-      "3": { "title": "Competitive Pay", "description": "Fair compensation for your expertise" }
+      "0": {
+        "title": "Travel Opportunities",
+        "description": "Explore the world while earning"
+      },
+      "1": {
+        "title": "Flexible Schedule",
+        "description": "Choose missions that fit your lifestyle"
+      },
+      "2": {
+        "title": "Global Network",
+        "description": "Join 1,200+ couriers worldwide"
+      },
+      "3": {
+        "title": "Competitive Pay",
+        "description": "Fair compensation for your expertise"
+      }
     }
   },
   "ObcCta": {
@@ -444,8 +519,14 @@
   "FmlmWhatIs": {
     "badge": "What Is First Mile / Last Mile Delivery?",
     "title": "Every shipment begins with a first mile and ends with a last mile and both are critical.",
-    "firstMile": { "title": "First Mile Delivery", "description": "Transporting goods from the shipper's location (like a warehouse or supplier) to the next logistics point often the airport or freight forwarder." },
-    "lastMile": { "title": "Last Mile Delivery", "description": "The final stretch, moving shipments from the airport, customs warehouse, or terminal directly to the consignee's doorstep." },
+    "firstMile": {
+      "title": "First Mile Delivery",
+      "description": "Transporting goods from the shipper's location (like a warehouse or supplier) to the next logistics point often the airport or freight forwarder."
+    },
+    "lastMile": {
+      "title": "Last Mile Delivery",
+      "description": "The final stretch, moving shipments from the airport, customs warehouse, or terminal directly to the consignee's doorstep."
+    },
     "description": "At OBC Care, we ensure both ends of the journey are handled with speed, precision, and care connecting your cargo from origin to destination seamlessly.",
     "imageAlt": "First Mile Last Mile Delivery",
     "stats": {
@@ -458,11 +539,26 @@
     "title": "Even the fastest flight is only as efficient as the ground transport that supports it.",
     "description": "Delays, mishandling, or poor coordination during the first or last mile can jeopardize entire operations, especially in time-critical industries.",
     "items": {
-      "0": { "title": "Prevents Costly Delays", "description": "Proper timing ensures your shipment catches the next flight or reaches your client on time." },
-      "1": { "title": "Ensures Shipment Integrity", "description": "Secure ground handling minimizes damage, loss, or misrouting." },
-      "2": { "title": "Bridges Global Gaps", "description": "FM/LM services connect airports, warehouses, and destinations in one smooth flow." },
-      "3": { "title": "Supports 24/7 Operations", "description": "Perfect for urgent AOG, automotive, or electronic shipments that can't wait." },
-      "4": { "title": "Guarantees Accountability", "description": "Every handover and movement is tracked and reported." }
+      "0": {
+        "title": "Prevents Costly Delays",
+        "description": "Proper timing ensures your shipment catches the next flight or reaches your client on time."
+      },
+      "1": {
+        "title": "Ensures Shipment Integrity",
+        "description": "Secure ground handling minimizes damage, loss, or misrouting."
+      },
+      "2": {
+        "title": "Bridges Global Gaps",
+        "description": "FM/LM services connect airports, warehouses, and destinations in one smooth flow."
+      },
+      "3": {
+        "title": "Supports 24/7 Operations",
+        "description": "Perfect for urgent AOG, automotive, or electronic shipments that can't wait."
+      },
+      "4": {
+        "title": "Guarantees Accountability",
+        "description": "Every handover and movement is tracked and reported."
+      }
     }
   },
   "FmlmSolutions": {
@@ -479,10 +575,22 @@
       "accountable": "Accountable"
     },
     "items": {
-      "0": { "title": "First Mile Delivery", "description": "Pickup from your facility to airport or freight partner aligned precisely with flight schedules." },
-      "1": { "title": "Last Mile Delivery", "description": "From customs or airport to consignee's door fast secure and fully coordinated." },
-      "2": { "title": "Express Ground Transfers", "description": "Dedicated vehicles for local or regional movements that demand urgency." },
-      "3": { "title": "Direct Drive Options", "description": "Point-to-point transport no stops no detours no waiting." }
+      "0": {
+        "title": "First Mile Delivery",
+        "description": "Pickup from your facility to airport or freight partner aligned precisely with flight schedules."
+      },
+      "1": {
+        "title": "Last Mile Delivery",
+        "description": "From customs or airport to consignee's door fast secure and fully coordinated."
+      },
+      "2": {
+        "title": "Express Ground Transfers",
+        "description": "Dedicated vehicles for local or regional movements that demand urgency."
+      },
+      "3": {
+        "title": "Direct Drive Options",
+        "description": "Point-to-point transport no stops no detours no waiting."
+      }
     }
   },
   "FmlmHowItWorks": {
@@ -490,10 +598,22 @@
     "title": "From Pickup to Delivery Seamless Coordination",
     "description": "A streamlined process ensuring your shipment moves efficiently from origin to destination.",
     "steps": {
-      "0": { "title": "Pickup Coordination", "description": "Our operations team identifies the fastest route and dispatches a driver immediately." },
-      "1": { "title": "Live Communication", "description": "You receive updates at every stage, from pickup to delivery." },
-      "2": { "title": "Secure Transit", "description": "All vehicles are GPS-tracked, and all drivers are trained in time-critical handling." },
-      "3": { "title": "Delivery Confirmation", "description": "Instant proof of delivery is provided once your shipment arrives." }
+      "0": {
+        "title": "Pickup Coordination",
+        "description": "Our operations team identifies the fastest route and dispatches a driver immediately."
+      },
+      "1": {
+        "title": "Live Communication",
+        "description": "You receive updates at every stage, from pickup to delivery."
+      },
+      "2": {
+        "title": "Secure Transit",
+        "description": "All vehicles are GPS-tracked, and all drivers are trained in time-critical handling."
+      },
+      "3": {
+        "title": "Delivery Confirmation",
+        "description": "Instant proof of delivery is provided once your shipment arrives."
+      }
     }
   },
   "FmlmWhyChoose": {
@@ -501,10 +621,22 @@
     "title": "Excellence in Every Mile",
     "description": "Our comprehensive ground transport solutions ensure your shipments move with precision, speed, and complete visibility.",
     "items": {
-      "0": { "title": "24/7 Availability", "description": "Always operational, across time zones and weekends." },
-      "1": { "title": "Trained, Verified Drivers", "description": "Professionals with logistics expertise and security clearance." },
-      "2": { "title": "Real-Time Updates", "description": "Stay informed at every milestone no uncertainty." },
-      "3": { "title": "Global Coordination", "description": "Door-to-door, airport-to-airport, or mixed modes we connect every link." }
+      "0": {
+        "title": "24/7 Availability",
+        "description": "Always operational, across time zones and weekends."
+      },
+      "1": {
+        "title": "Trained, Verified Drivers",
+        "description": "Professionals with logistics expertise and security clearance."
+      },
+      "2": {
+        "title": "Real-Time Updates",
+        "description": "Stay informed at every milestone no uncertainty."
+      },
+      "3": {
+        "title": "Global Coordination",
+        "description": "Door-to-door, airport-to-airport, or mixed modes we connect every link."
+      }
     }
   },
   "FmlmNetwork": {
@@ -513,14 +645,32 @@
     "description1": "With hundreds of professional drivers and logistics partners across Asia, Europe, and the Americas, OBC Care guarantees seamless global ground coordination.",
     "description2": "Whether it's door-to-door, airport-to-door, door-to-airport, or airport-to-airport, our FM/LM network is built to move your cargo efficiently anytime, anywhere.",
     "stats": {
-      "drivers": { "label": "Professional Drivers", "value": "500+" },
-      "coverage": { "label": "Global Coverage", "value": "70+" },
-      "response": { "label": "Response Time", "value": "<30m" }
+      "drivers": {
+        "label": "Professional Drivers",
+        "value": "500+"
+      },
+      "coverage": {
+        "label": "Global Coverage",
+        "value": "70+"
+      },
+      "response": {
+        "label": "Response Time",
+        "value": "<30m"
+      }
     },
     "coverage": {
-      "asia": { "region": "Asia", "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai" },
-      "europe": { "region": "Europe", "cities": "London, Frankfurt, Amsterdam, Paris, Milan" },
-      "americas": { "region": "Americas", "cities": "New York, Los Angeles, Miami, Toronto, São Paulo" }
+      "asia": {
+        "region": "Asia",
+        "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai"
+      },
+      "europe": {
+        "region": "Europe",
+        "cities": "London, Frankfurt, Amsterdam, Paris, Milan"
+      },
+      "americas": {
+        "region": "Americas",
+        "cities": "New York, Los Angeles, Miami, Toronto, São Paulo"
+      }
     }
   },
   "FmlmJoin": {
@@ -530,10 +680,22 @@
     "description2": "As part of OBC Care's global network, you'll be trusted with high-value and time-sensitive deliveries, backed by our 24/7 support team.",
     "description3": "Whether you're an experienced courier or a professional driver looking to enter time-critical logistics, we're always looking for reliable partners worldwide to grow our network.",
     "benefits": {
-      "0": { "title": "Drive Critical Shipments", "description": "Be part of time-sensitive logistics that matter" },
-      "1": { "title": "24/7 Support Team", "description": "Backed by our professional operations center" },
-      "2": { "title": "Flexible Opportunities", "description": "Choose assignments that fit your schedule" },
-      "3": { "title": "Global Network", "description": "Join hundreds of drivers worldwide" }
+      "0": {
+        "title": "Drive Critical Shipments",
+        "description": "Be part of time-sensitive logistics that matter"
+      },
+      "1": {
+        "title": "24/7 Support Team",
+        "description": "Backed by our professional operations center"
+      },
+      "2": {
+        "title": "Flexible Opportunities",
+        "description": "Choose assignments that fit your schedule"
+      },
+      "3": {
+        "title": "Global Network",
+        "description": "Join hundreds of drivers worldwide"
+      }
     },
     "ctaApply": "Apply Now",
     "ctaContact": "Contact Us",
@@ -572,10 +734,22 @@
     "badge": "Why Is Customs Clearance Important?",
     "title": "Customs clearance is critical because it:",
     "reasons": {
-      "0": { "title": "Prevents Costly Delays", "desc": "Avoids demurrage fees and storage penalties by ensuring timely clearance." },
-      "1": { "title": "Ensures Legal Compliance", "desc": "Avoids fines or seizure by meeting all import/export regulations." },
-      "2": { "title": "Speeds Up Release", "desc": "Time-critical shipments can proceed to delivery without unnecessary delays." },
-      "3": { "title": "Protects High-Value Cargo", "desc": "Proper classification and handling for sensitive or valuable shipments." }
+      "0": {
+        "title": "Prevents Costly Delays",
+        "desc": "Avoids demurrage fees and storage penalties by ensuring timely clearance."
+      },
+      "1": {
+        "title": "Ensures Legal Compliance",
+        "desc": "Avoids fines or seizure by meeting all import/export regulations."
+      },
+      "2": {
+        "title": "Speeds Up Release",
+        "desc": "Time-critical shipments can proceed to delivery without unnecessary delays."
+      },
+      "3": {
+        "title": "Protects High-Value Cargo",
+        "desc": "Proper classification and handling for sensitive or valuable shipments."
+      }
     },
     "imageAlt": "Customs Clearance"
   },
@@ -583,11 +757,26 @@
     "badge": "What We Handle",
     "title": "Comprehensive Customs Solutions",
     "services": {
-      "0": { "title": "Import & Export Declarations", "desc": "Provides guidance and assistance to help navigate import and export processes efficiently." },
-      "1": { "title": "Duties, Taxes & Tariff Guidance", "desc": "We advise and communicate applicable duties and taxes, helping you prepare for potential charges." },
-      "2": { "title": "Permit & License Coordination", "desc": "Support the coordination of special permits and licenses required for your shipment." },
-      "3": { "title": "Airport & Border Handling", "desc": "Coordinates with airport customs and ground handlers for swift release." },
-      "4": { "title": "Special Cargo Clearance", "desc": "Expert handling of restricted, high-value, or temperature-sensitive shipments." }
+      "0": {
+        "title": "Import & Export Declarations",
+        "desc": "Provides guidance and assistance to help navigate import and export processes efficiently."
+      },
+      "1": {
+        "title": "Duties, Taxes & Tariff Guidance",
+        "desc": "We advise and communicate applicable duties and taxes, helping you prepare for potential charges."
+      },
+      "2": {
+        "title": "Permit & License Coordination",
+        "desc": "Support the coordination of special permits and licenses required for your shipment."
+      },
+      "3": {
+        "title": "Airport & Border Handling",
+        "desc": "Coordinates with airport customs and ground handlers for swift release."
+      },
+      "4": {
+        "title": "Special Cargo Clearance",
+        "desc": "Expert handling of restricted, high-value, or temperature-sensitive shipments."
+      }
     }
   },
   "CustomsProcess": {
@@ -595,10 +784,22 @@
     "title": "From Documentation to Delivery",
     "description": "A streamlined process ensuring your shipment clears customs efficiently and reaches its destination.",
     "steps": {
-      "0": { "title": "Document Verification", "desc": "We pre-check all paperwork before dispatch to avoid any clearance rejection." },
-      "1": { "title": "Customs Submission", "desc": "Our licensed agents handle filing, coordination, and customs communication." },
-      "2": { "title": "Real-Time Updates", "desc": "Receive instant status updates every step of the way." },
-      "3": { "title": "Final Release & Delivery", "desc": "Once cleared, we arrange immediate transport to your destination." }
+      "0": {
+        "title": "Document Verification",
+        "desc": "We pre-check all paperwork before dispatch to avoid any clearance rejection."
+      },
+      "1": {
+        "title": "Customs Submission",
+        "desc": "Our licensed agents handle filing, coordination, and customs communication."
+      },
+      "2": {
+        "title": "Real-Time Updates",
+        "desc": "Receive instant status updates every step of the way."
+      },
+      "3": {
+        "title": "Final Release & Delivery",
+        "desc": "Once cleared, we arrange immediate transport to your destination."
+      }
     }
   },
   "CustomsWhyChoose": {
@@ -606,10 +807,22 @@
     "title": "Excellence in Every Clearance",
     "description": "Our comprehensive customs solutions ensure your shipments clear borders with speed, compliance, and complete transparency.",
     "features": {
-      "0": { "title": "Global Expertise, Local Compliance", "desc": "Our knowledge of both international and country-specific customs ensures fast and lawful clearance." },
-      "1": { "title": "24/7 Monitoring & Updates", "desc": "Stay informed with live progress reports and milestone updates." },
-      "2": { "title": "Zero Delay Commitment", "desc": "We act fast to prevent demurrage fees and storage penalties." },
-      "3": { "title": "All-in-One Logistics Partner", "desc": "From pickup to final handover OBC Care manages it all with precision and transparency." }
+      "0": {
+        "title": "Global Expertise, Local Compliance",
+        "desc": "Our knowledge of both international and country-specific customs ensures fast and lawful clearance."
+      },
+      "1": {
+        "title": "24/7 Monitoring & Updates",
+        "desc": "Stay informed with live progress reports and milestone updates."
+      },
+      "2": {
+        "title": "Zero Delay Commitment",
+        "desc": "We act fast to prevent demurrage fees and storage penalties."
+      },
+      "3": {
+        "title": "All-in-One Logistics Partner",
+        "desc": "From pickup to final handover OBC Care manages it all with precision and transparency."
+      }
     }
   },
   "CustomsNetwork": {
@@ -618,14 +831,32 @@
     "description1": "Our customs partners and licensed agents operate across major trade lanes and key airports worldwide ensuring fast, compliant clearance across regions.",
     "description2": "We coordinate local expertise with global oversight so your shipment doesn't stop at the border.",
     "stats": {
-      "agents": { "label": "Licensed Agents", "value": "200+" },
-      "coverage": { "label": "Global Coverage", "value": "50+" },
-      "time": { "label": "Clearance Time", "value": "<24h" }
+      "agents": {
+        "label": "Licensed Agents",
+        "value": "200+"
+      },
+      "coverage": {
+        "label": "Global Coverage",
+        "value": "50+"
+      },
+      "time": {
+        "label": "Clearance Time",
+        "value": "<24h"
+      }
     },
     "coverage": {
-      "asia": { "region": "Asia", "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai" },
-      "europe": { "region": "Europe", "cities": "London, Frankfurt, Amsterdam, Paris, Milan" },
-      "americas": { "region": "Americas", "cities": "New York, Los Angeles, Miami, Toronto, São Paulo" }
+      "asia": {
+        "region": "Asia",
+        "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai"
+      },
+      "europe": {
+        "region": "Europe",
+        "cities": "London, Frankfurt, Amsterdam, Paris, Milan"
+      },
+      "americas": {
+        "region": "Americas",
+        "cities": "New York, Los Angeles, Miami, Toronto, São Paulo"
+      }
     },
     "imageAlt": "Global Customs Network"
   },
@@ -643,10 +874,22 @@
       "label": "Partners Worldwide"
     },
     "benefits": {
-      "0": { "title": "Licensed Expertise", "description": "Work with certified customs professionals" },
-      "1": { "title": "Global Network", "description": "Support shipments across continents" },
-      "2": { "title": "24/7 Operations", "description": "Backed by our professional team" },
-      "3": { "title": "Partnership Benefits", "description": "Grow your business with reliable partners" }
+      "0": {
+        "title": "Licensed Expertise",
+        "description": "Work with certified customs professionals"
+      },
+      "1": {
+        "title": "Global Network",
+        "description": "Support shipments across continents"
+      },
+      "2": {
+        "title": "24/7 Operations",
+        "description": "Backed by our professional team"
+      },
+      "3": {
+        "title": "Partnership Benefits",
+        "description": "Grow your business with reliable partners"
+      }
     }
   },
   "CustomsCta": {
@@ -664,28 +907,63 @@
     "secondaryCta": "Get a Free Quote"
   },
   "NfoIntro": {
+    "badge": "Time-Critical Solutions",
     "title": "Time-Critical Logistics Without Compromise",
-    "imageCardText1": "Delays aren't an option when critical operations depend on your shipment's arrival.",
-    "imageCardText2": "That's why OBC Care's Next Flight Out (NFO) service prioritizes your cargo on the earliest available flight ensuring zero downtime, full visibility, and guaranteed speed.",
-    "textCard1": "Our global team monitors every route, flight schedule, and customs requirement in real time, arranging the quickest and most reliable path from pickup to delivery.",
-    "textCard2": "Whether it's aviation parts, automotive components, or electronic equipment, our NFO service keeps your business moving no matter where you are in the world.",
+    "description": "That's why OBC Care's Next Flight Out (NFO) service prioritizes your cargo on the earliest available flight ensuring zero downtime, full visibility, and guaranteed speed.",
+    "subtitle": "Why Choose NFO?",
+    "card": {
+      "label": "Service Speed",
+      "value": "Next Flight Out"
+    },
+    "stats": {
+      "support": "Live Support",
+      "countries": "Countries Served",
+      "success": "On-Time Delivery"
+    },
     "features": {
-      "0": { "title": "24/7 Monitoring" },
-      "1": { "title": "Global Coverage" },
-      "2": { "title": "Zero Downtime" },
-      "3": { "title": "Guaranteed Speed" }
+      "0": {
+        "title": "24/7 Monitoring",
+        "desc": "Our control tower monitors your shipment 24/7."
+      },
+      "1": {
+        "title": "Global Coverage",
+        "desc": "Access to flights worldwide for maximum reach."
+      },
+      "2": {
+        "title": "Zero Downtime",
+        "desc": "Keep your operations running without interruption."
+      },
+      "3": {
+        "title": "Guaranteed Speed",
+        "desc": "The fastest air freight solution available."
+      }
     }
   },
   "NfoWhatIs": {
     "badge": "What Is a Next Flight Out (NFO) Service?",
     "title": "Next Flight Out (NFO) is the fastest air freight solution for time-critical shipments.",
     "stats": {
-      "flight": { "label": "Flight", "value": "Next" },
-      "support": { "label": "Support", "value": "24/7" }
+      "flight": {
+        "label": "Flight",
+        "value": "Next"
+      },
+      "support": {
+        "label": "Support",
+        "value": "24/7"
+      }
     },
-    "card1": { "title": "Fastest Booking", "desc": "Your cargo is booked on the very next available commercial or cargo flight." },
-    "card2": { "title": "Real-Time Routing", "desc": "Expert coordination for record speed." },
-    "card3": { "title": "Minimize Downtime", "desc": "Avoiding operational losses with guaranteed speed and reliability." },
+    "card1": {
+      "title": "Fastest Booking",
+      "desc": "Your cargo is booked on the very next available commercial or cargo flight."
+    },
+    "card2": {
+      "title": "Real-Time Routing",
+      "desc": "Expert coordination for record speed."
+    },
+    "card3": {
+      "title": "Minimize Downtime",
+      "desc": "Avoiding operational losses with guaranteed speed and reliability."
+    },
     "description1": "It ensures that your cargo is booked on the very next available commercial or cargo flight minimizing downtime and avoiding operational losses.",
     "description2": "At OBC Care, we combine real-time routing, dedicated handling, and expert coordination to move your shipment across borders at record speed."
   },
@@ -694,10 +972,22 @@
     "title": "In time-sensitive industries, even a short delay can lead to major disruptions.",
     "subtitle": "Our NFO service is designed to:",
     "benefits": {
-      "0": { "title": "Same-Day Dispatch", "desc": "Guarantee same-day dispatch on the next available flight." },
-      "1": { "title": "Prevent Halts", "desc": "Prevent costly production or operational halts." },
-      "2": { "title": "Real-Time Visibility", "desc": "Ensure real-time visibility throughout the journey." },
-      "3": { "title": "Global Transport", "desc": "Provide reliable, secure, and fully compliant transport anywhere in the world." }
+      "0": {
+        "title": "Same-Day Dispatch",
+        "desc": "Guarantee same-day dispatch on the next available flight."
+      },
+      "1": {
+        "title": "Prevent Halts",
+        "desc": "Prevent costly production or operational halts."
+      },
+      "2": {
+        "title": "Real-Time Visibility",
+        "desc": "Ensure real-time visibility throughout the journey."
+      },
+      "3": {
+        "title": "Global Transport",
+        "desc": "Provide reliable, secure, and fully compliant transport anywhere in the world."
+      }
     },
     "ctaTitle": "Ready to Experience Zero-Delay Logistics?",
     "ctaDesc": "Get your shipment on the next available flight with our 24/7 NFO service."
@@ -707,22 +997,52 @@
     "title": "From Request to Delivery In Record Time",
     "description": "A streamlined 5-step process ensuring your time-critical shipment reaches its destination on the next available flight.",
     "steps": {
-      "0": { "title": "Immediate Booking & Route Planning", "desc": "Our operations team identifies the fastest flight option available commercial or cargo within minutes of your request." },
-      "1": { "title": "Priority Pickup & Documentation", "desc": "We arrange immediate pickup and verify all paperwork for seamless dispatch." },
-      "2": { "title": "Onboard or Cargo Coordination", "desc": "Depending on urgency, we either book the shipment on the next flight or assign an onboard courier for direct escort." },
-      "3": { "title": "Real-Time Updates", "desc": "Get milestone notifications at every stage from acceptance to arrival." },
-      "4": { "title": "Fast Final Delivery", "desc": "Once landed, we handle customs clearance and deliver your shipment straight to its destination." }
+      "0": {
+        "title": "Immediate Booking & Route Planning",
+        "desc": "Our operations team identifies the fastest flight option available commercial or cargo within minutes of your request."
+      },
+      "1": {
+        "title": "Priority Pickup & Documentation",
+        "desc": "We arrange immediate pickup and verify all paperwork for seamless dispatch."
+      },
+      "2": {
+        "title": "Onboard or Cargo Coordination",
+        "desc": "Depending on urgency, we either book the shipment on the next flight or assign an onboard courier for direct escort."
+      },
+      "3": {
+        "title": "Real-Time Updates",
+        "desc": "Get milestone notifications at every stage from acceptance to arrival."
+      },
+      "4": {
+        "title": "Fast Final Delivery",
+        "desc": "Once landed, we handle customs clearance and deliver your shipment straight to its destination."
+      }
     },
     "cta": "Ready to get started? Book your NFO shipment now"
   },
   "NfoWhyChoose": {
     "title": "Why Choose OBC Care for NFO Shipments",
     "features": {
-      "0": { "title": "Fastest Global Option", "desc": "Your shipment is prioritized on the next available flight guaranteed." },
-      "1": { "title": "24/7 Operations Team", "desc": "Our logistics experts monitor global routes and coordinate across time zones for uninterrupted service." },
-      "2": { "title": "Integrated Customs & Ground Support", "desc": "We manage all clearances, airport handling, and last-mile arrangements no handoffs or delays." },
-      "3": { "title": "Real-Time Updates", "desc": "Receive immediate status alerts for every milestone until delivery is confirmed." },
-      "4": { "title": "Flexible & Secure Handling", "desc": "From small parcels to high-value cargo, each shipment is handled with accuracy and care." }
+      "0": {
+        "title": "Fastest Global Option",
+        "desc": "Your shipment is prioritized on the next available flight guaranteed."
+      },
+      "1": {
+        "title": "24/7 Operations Team",
+        "desc": "Our logistics experts monitor global routes and coordinate across time zones for uninterrupted service."
+      },
+      "2": {
+        "title": "Integrated Customs & Ground Support",
+        "desc": "We manage all clearances, airport handling, and last-mile arrangements no handoffs or delays."
+      },
+      "3": {
+        "title": "Real-Time Updates",
+        "desc": "Receive immediate status alerts for every milestone until delivery is confirmed."
+      },
+      "4": {
+        "title": "Flexible & Secure Handling",
+        "desc": "From small parcels to high-value cargo, each shipment is handled with accuracy and care."
+      }
     },
     "highlightTitle": "Experience the Fastest Air Freight Solution",
     "highlightDesc": "Join thousands of businesses that trust OBC Care for their time-critical shipments. Get your cargo on the next flight guaranteed."
@@ -732,9 +1052,18 @@
     "title": "With access to thousands of commercial and cargo flights worldwide, OBC Care ensures the fastest routing possible anytime, anywhere.",
     "description": "Our control tower operates 24/7 to monitor routes, weather, customs, and flight availability in real time.",
     "stats": {
-      "flights": { "label": "Flights Daily", "value": "1000+" },
-      "tower": { "label": "Control Tower", "value": "24/7" },
-      "coverage": { "label": "Coverage", "value": "Global" }
+      "flights": {
+        "label": "Flights Daily",
+        "value": "1000+"
+      },
+      "tower": {
+        "label": "Control Tower",
+        "value": "24/7"
+      },
+      "coverage": {
+        "label": "Coverage",
+        "value": "Global"
+      }
     },
     "card1Title": "Worldwide Flight Access",
     "card1Desc": "Thousands of commercial and cargo flights at your disposal, ensuring the fastest routing for your time-critical shipments.",
@@ -743,9 +1072,18 @@
     "footerTitle": "Global Reach, Local Expertise",
     "footerDesc": "Connecting your shipments to the world's fastest flight routes",
     "coverage": {
-      "asia": { "region": "Asia", "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai" },
-      "europe": { "region": "Europe", "cities": "London, Frankfurt, Amsterdam, Paris, Milan" },
-      "americas": { "region": "Americas", "cities": "New York, Los Angeles, Miami, Toronto, São Paulo" }
+      "asia": {
+        "region": "Asia",
+        "cities": "Singapore, Hong Kong, Tokyo, Dubai, Mumbai"
+      },
+      "europe": {
+        "region": "Europe",
+        "cities": "London, Frankfurt, Amsterdam, Paris, Milan"
+      },
+      "americas": {
+        "region": "Americas",
+        "cities": "New York, Los Angeles, Miami, Toronto, São Paulo"
+      }
     }
   },
   "NfoJoin": {
@@ -762,7 +1100,11 @@
     },
     "ctaPrimary": "Apply as a Partner",
     "ctaSecondary": "Contact Our NFO Team",
-    "stats": { "value": "24/7", "label": "Operations", "desc": "Join a team that moves critical shipments around the clock" }
+    "stats": {
+      "value": "24/7",
+      "label": "Operations",
+      "desc": "Join a team that moves critical shipments around the clock"
+    }
   },
   "NfoCta": {
     "title": "Your Urgent Shipment, Airborne in Hours",
@@ -786,22 +1128,48 @@
     "title": "Serving Every Sector with Precision",
     "description": "From aviation to technology, we deliver mission-critical shipments across industries where downtime isn't an option.",
     "industries": {
-      "0": { "title": "Aviation & AOG Parts", "desc": "Urgent spare parts, tools, and components dispatched instantly to keep aircraft airborne and operations uninterrupted." },
-      "1": { "title": "Automotive & Manufacturing", "desc": "Just-in-time deliveries of parts, moulds and tools that power production lines and prevent costly stoppages." },
-      "2": { "title": "Electronics & Semiconductors", "desc": "Secure, high-priority logistics for fragile, high-value components in tech hubs and manufacturing centres." },
-      "3": { "title": "Industrial Machinery & Engineering", "desc": "Heavy or specialised machinery parts transported with precision so your plant keeps running without disruption." },
-      "4": { "title": "Technology & Data Equipment", "desc": "From servers to prototypes, we protect your high-value hardware with discrete, timed delivery and full visibility." },
-      "5": { "title": "High-Value / Confidential Documents", "desc": "Critical contracts, prototypes and sensitive documents handled discreetly through secure hand-carry and direct delivery." }
+      "0": {
+        "title": "Aviation & AOG Parts",
+        "desc": "Urgent spare parts, tools, and components dispatched instantly to keep aircraft airborne and operations uninterrupted."
+      },
+      "1": {
+        "title": "Automotive & Manufacturing",
+        "desc": "Just-in-time deliveries of parts, moulds and tools that power production lines and prevent costly stoppages."
+      },
+      "2": {
+        "title": "Electronics & Semiconductors",
+        "desc": "Secure, high-priority logistics for fragile, high-value components in tech hubs and manufacturing centres."
+      },
+      "3": {
+        "title": "Industrial Machinery & Engineering",
+        "desc": "Heavy or specialised machinery parts transported with precision so your plant keeps running without disruption."
+      },
+      "4": {
+        "title": "Technology & Data Equipment",
+        "desc": "From servers to prototypes, we protect your high-value hardware with discrete, timed delivery and full visibility."
+      },
+      "5": {
+        "title": "High-Value / Confidential Documents",
+        "desc": "Critical contracts, prototypes and sensitive documents handled discreetly through secure hand-carry and direct delivery."
+      }
     }
   },
   "IndustriesWhyPartner": {
     "badge": "Why Partner with OBC Care in These Industries",
     "title": "Built for Industries That Can't Afford Delays",
     "benefits": {
-      "0": { "title": "Global presence with dedicated logistics experts in key industrial zones" },
-      "1": { "title": "24/7 operations and immediate response for urgent scenarios" },
-      "2": { "title": "Real-time updates and full transparency at every milestone" },
-      "3": { "title": "Tailored solutions built for industries with zero margin for error" }
+      "0": {
+        "title": "Global presence with dedicated logistics experts in key industrial zones"
+      },
+      "1": {
+        "title": "24/7 operations and immediate response for urgent scenarios"
+      },
+      "2": {
+        "title": "Real-time updates and full transparency at every milestone"
+      },
+      "3": {
+        "title": "Tailored solutions built for industries with zero margin for error"
+      }
     },
     "stats": {
       "operations": "Operations",
@@ -834,33 +1202,73 @@
     "title": "What We Handle",
     "description": "Comprehensive aviation logistics for every critical component and document your aircraft needs.",
     "items": {
-      "0": { "title": "AOG Parts & Tools" },
-      "1": { "title": "Engine Components & Avionics" },
-      "2": { "title": "Aircraft Documents & Certificates" },
-      "3": { "title": "Maintenance, Repair & Overhaul (MRO) Supplies" },
-      "4": { "title": "Ground Support Equipment & Accessories" }
+      "0": {
+        "title": "AOG Parts & Tools"
+      },
+      "1": {
+        "title": "Engine Components & Avionics"
+      },
+      "2": {
+        "title": "Aircraft Documents & Certificates"
+      },
+      "3": {
+        "title": "Maintenance, Repair & Overhaul (MRO) Supplies"
+      },
+      "4": {
+        "title": "Ground Support Equipment & Accessories"
+      }
     }
   },
   "AviationHowItWorks": {
     "title": "How It Works",
     "description": "A streamlined 5-step process ensuring your AOG parts reach your aircraft on the fastest route possible.",
     "steps": {
-      "0": { "title": "Immediate Response", "desc": "Once we receive your AOG alert, our operations team mobilizes within minutes." },
-      "1": { "title": "Next Flight Booking", "desc": "Your shipment is prioritized on the fastest available route." },
-      "2": { "title": "Customs & Airport Coordination", "desc": "We handle all airport and customs procedures for quick clearance." },
-      "3": { "title": "In-Transit Monitoring", "desc": "Receive real-time updates from pickup to delivery." },
-      "4": { "title": "Final Handover", "desc": "Shipment is personally delivered to your hangar, technician, or operations team." }
+      "0": {
+        "title": "Immediate Response",
+        "desc": "Once we receive your AOG alert, our operations team mobilizes within minutes."
+      },
+      "1": {
+        "title": "Next Flight Booking",
+        "desc": "Your shipment is prioritized on the fastest available route."
+      },
+      "2": {
+        "title": "Customs & Airport Coordination",
+        "desc": "We handle all airport and customs procedures for quick clearance."
+      },
+      "3": {
+        "title": "In-Transit Monitoring",
+        "desc": "Receive real-time updates from pickup to delivery."
+      },
+      "4": {
+        "title": "Final Handover",
+        "desc": "Shipment is personally delivered to your hangar, technician, or operations team."
+      }
     }
   },
   "AviationWhyChoose": {
     "title": "Why Aviation Leaders Choose OBC Care",
     "description": "Trusted by aviation professionals worldwide for critical AOG logistics.",
     "benefits": {
-      "0": { "title": "24/7 AOG Desk", "desc": "Always on call for critical aviation emergencies." },
-      "1": { "title": "Next Flight & Onboard Options", "desc": "We choose the fastest route available NFO or hand-carry." },
-      "2": { "title": "Airline-Approved Couriers", "desc": "Our team is trained in handling aviation cargo and airside operations." },
-      "3": { "title": "Full Compliance & Documentation", "desc": "We ensure all airway bills, certificates, and customs papers are correct and ready." },
-      "4": { "title": "End-to-End Visibility", "desc": "Track every movement with real-time communication." }
+      "0": {
+        "title": "24/7 AOG Desk",
+        "desc": "Always on call for critical aviation emergencies."
+      },
+      "1": {
+        "title": "Next Flight & Onboard Options",
+        "desc": "We choose the fastest route available NFO or hand-carry."
+      },
+      "2": {
+        "title": "Airline-Approved Couriers",
+        "desc": "Our team is trained in handling aviation cargo and airside operations."
+      },
+      "3": {
+        "title": "Full Compliance & Documentation",
+        "desc": "We ensure all airway bills, certificates, and customs papers are correct and ready."
+      },
+      "4": {
+        "title": "End-to-End Visibility",
+        "desc": "Track every movement with real-time communication."
+      }
     }
   },
   "AviationCta": {
@@ -891,36 +1299,73 @@
     "title": "What We Handle",
     "description": "Comprehensive logistics for every critical component your production line needs.",
     "items": {
-      "0": { "title": "Automotive Spare Parts & Components" },
-      "1": { "title": "Tools, Dies, and Molds" },
-      "2": { "title": "Prototype Materials & Test Units" },
-      "3": { "title": "Assembly Line Equipment" },
-      "4": { "title": "Urgent Technical Documents" }
+      "0": {
+        "title": "Automotive Spare Parts & Components"
+      },
+      "1": {
+        "title": "Tools, Dies, and Molds"
+      },
+      "2": {
+        "title": "Prototype Materials & Test Units"
+      },
+      "3": {
+        "title": "Assembly Line Equipment"
+      },
+      "4": {
+        "title": "Urgent Technical Documents"
+      }
     }
   },
   "AutomotiveHowItWorks": {
     "title": "How It Works",
     "description": "A streamlined 5-step process ensuring your critical materials reach your production line on time, every time.",
     "steps": {
-      "0": { "title": "Rapid Assessment", "desc": "We analyze your route, flight options, and delivery window within minutes." },
-      "1": { "title": "Next Flight or Direct Drive", "desc": "Your shipment moves immediately by air or dedicated ground vehicle." },
-      "2": { "title": "Customs & Documentation", "desc": "We handle all import/export formalities for smooth transitions." },
-      "3": { "title": "Real Time Updates", "desc": "Get updated with every milestone from dispatch to delivery." },
-      "4": { "title": "Direct Handover", "desc": "Shipment is personally delivered to your plant or technician." }
+      "0": {
+        "title": "Rapid Assessment",
+        "desc": "We analyze your route, flight options, and delivery window within minutes."
+      },
+      "1": {
+        "title": "Next Flight or Direct Drive",
+        "desc": "Your shipment moves immediately by air or dedicated ground vehicle."
+      },
+      "2": {
+        "title": "Customs & Documentation",
+        "desc": "We handle all import/export formalities for smooth transitions."
+      },
+      "3": {
+        "title": "Real Time Updates",
+        "desc": "Get updated with every milestone from dispatch to delivery."
+      },
+      "4": {
+        "title": "Direct Handover",
+        "desc": "Shipment is personally delivered to your plant or technician."
+      }
     }
   },
   "AutomotiveWhyChoose": {
     "title": "Why Automotive Leaders Choose OBC Care",
     "description": "Trusted by automotive manufacturers worldwide for critical supply chain logistics.",
     "benefits": {
-      "0": { "title": "Zero Downtime Commitment", "desc": "We ensure no production halt due to logistics delay." },
-      "1": { "title": "Multi-Modal Flexibility", "desc": "Air, road, and OBC hand-carry options for maximum speed." },
-      "2": { "title": "24/7 Control", "desc": "Continuous global coordination and updates." },
-      "3": { "title": "Full Transparency", "desc": "Real-time visibility and delivery confirmation." }
+      "0": {
+        "title": "Zero Downtime Commitment",
+        "desc": "We ensure no production halt due to logistics delay."
+      },
+      "1": {
+        "title": "Multi-Modal Flexibility",
+        "desc": "Air, road, and OBC hand-carry options for maximum speed."
+      },
+      "2": {
+        "title": "24/7 Control",
+        "desc": "Continuous global coordination and updates."
+      },
+      "3": {
+        "title": "Full Transparency",
+        "desc": "Real-time visibility and delivery confirmation."
+      }
     },
     "bottomCard": {
-        "title": "Your shipment, our mission 24/7, across the globe.",
-        "desc": "Trusted by automotive manufacturers worldwide for critical supply chain logistics."
+      "title": "Your shipment, our mission 24/7, across the globe.",
+      "desc": "Trusted by automotive manufacturers worldwide for critical supply chain logistics."
     }
   },
   "AutomotiveMission": {
@@ -956,33 +1401,73 @@
     "title": "What We Handle",
     "description": "Comprehensive logistics for every sensitive component your production and R&D needs.",
     "items": {
-      "0": { "title": "Semiconductor Wafers & Microchips" },
-      "1": { "title": "Circuit Boards & Electronic Modules" },
-      "2": { "title": "Prototypes & R&D Equipment" },
-      "3": { "title": "Cleanroom-Handled Components" },
-      "4": { "title": "Sensitive Data Carriers & Confidential Devices" }
+      "0": {
+        "title": "Semiconductor Wafers & Microchips"
+      },
+      "1": {
+        "title": "Circuit Boards & Electronic Modules"
+      },
+      "2": {
+        "title": "Prototypes & R&D Equipment"
+      },
+      "3": {
+        "title": "Cleanroom-Handled Components"
+      },
+      "4": {
+        "title": "Sensitive Data Carriers & Confidential Devices"
+      }
     }
   },
   "ElectronicsHowItWorks": {
     "title": "How It Works",
     "description": "A streamlined 5-step process ensuring your sensitive components reach your facility safely and on time.",
     "steps": {
-      "0": { "title": "Immediate Coordination", "desc": "Our control tower identifies the fastest and safest route available." },
-      "1": { "title": "Secure Packaging & Handling", "desc": "Components are prepared in compliance with ESD and cleanroom standards." },
-      "2": { "title": "Next Flight Out / Hand-Carry Option", "desc": "Shipments are flown on the next available flight or escorted by an Onboard Courier (OBC)." },
-      "3": { "title": "Customs & Compliance", "desc": "All export documents, licenses, and declarations are managed seamlessly." },
-      "4": { "title": "Direct Handover", "desc": "Fast, safe, and verified delivery to your production or R&D facility." }
+      "0": {
+        "title": "Immediate Coordination",
+        "desc": "Our control tower identifies the fastest and safest route available."
+      },
+      "1": {
+        "title": "Secure Packaging & Handling",
+        "desc": "Components are prepared in compliance with ESD and cleanroom standards."
+      },
+      "2": {
+        "title": "Next Flight Out / Hand-Carry Option",
+        "desc": "Shipments are flown on the next available flight or escorted by an Onboard Courier (OBC)."
+      },
+      "3": {
+        "title": "Customs & Compliance",
+        "desc": "All export documents, licenses, and declarations are managed seamlessly."
+      },
+      "4": {
+        "title": "Direct Handover",
+        "desc": "Fast, safe, and verified delivery to your production or R&D facility."
+      }
     }
   },
   "ElectronicsWhyChoose": {
     "title": "Why Technology Leaders Trust OBC Care",
     "description": "Trusted by electronics and semiconductor companies worldwide for precision logistics.",
     "benefits": {
-      "0": { "title": "ESD-Safe Handling", "desc": "Trained professionals manage sensitive materials under strict anti-static standards." },
-      "1": { "title": "Time-Critical Expertise", "desc": "Designed for industries where every minute counts." },
-      "2": { "title": "Secure Chain of Custody", "desc": "From pickup to delivery, your shipment remains fully traceable." },
-      "3": { "title": "24/7 Control", "desc": "Global monitoring and real-time communication at every milestone." },
-      "4": { "title": "Regulatory Compliance", "desc": "Full adherence to export, ITAR, and semiconductor logistics regulations." }
+      "0": {
+        "title": "ESD-Safe Handling",
+        "desc": "Trained professionals manage sensitive materials under strict anti-static standards."
+      },
+      "1": {
+        "title": "Time-Critical Expertise",
+        "desc": "Designed for industries where every minute counts."
+      },
+      "2": {
+        "title": "Secure Chain of Custody",
+        "desc": "From pickup to delivery, your shipment remains fully traceable."
+      },
+      "3": {
+        "title": "24/7 Control",
+        "desc": "Global monitoring and real-time communication at every milestone."
+      },
+      "4": {
+        "title": "Regulatory Compliance",
+        "desc": "Full adherence to export, ITAR, and semiconductor logistics regulations."
+      }
     }
   },
   "ElectronicsMission": {
@@ -1013,33 +1498,73 @@
     "title": "What We Handle",
     "description": "Comprehensive logistics for every industrial component your operations need.",
     "items": {
-      "0": { "title": "Heavy Machinery Parts & Equipment" },
-      "1": { "title": "Maintenance, Repair & Operations (MRO) Components" },
-      "2": { "title": "Industrial Tools & Calibration Instruments" },
-      "3": { "title": "Manufacturing Line Replacements" },
-      "4": { "title": "Oversized or Custom-Engineered Components" }
+      "0": {
+        "title": "Heavy Machinery Parts & Equipment"
+      },
+      "1": {
+        "title": "Maintenance, Repair & Operations (MRO) Components"
+      },
+      "2": {
+        "title": "Industrial Tools & Calibration Instruments"
+      },
+      "3": {
+        "title": "Manufacturing Line Replacements"
+      },
+      "4": {
+        "title": "Oversized or Custom-Engineered Components"
+      }
     }
   },
   "IndustrialHowItWorks": {
     "title": "How It Works",
     "description": "A streamlined 5-step process ensuring your industrial components reach your facility safely and on time.",
     "steps": {
-      "0": { "title": "Immediate Coordination", "desc": "Our logistics control team identifies the fastest route and optimal transport method." },
-      "1": { "title": "Specialized Packaging & Handling", "desc": "Industrial cargo is secured with vibration-resistant, moisture-proof, or custom crating as needed." },
-      "2": { "title": "Next Flight Out / Hand-Carry Option", "desc": "Urgent parts are shipped on the next available flight or escorted by an Onboard Courier (OBC)." },
-      "3": { "title": "Customs & Compliance", "desc": "We handle all trade documents and ensure full compliance with import/export and safety standards." },
-      "4": { "title": "Direct Handover", "desc": "Fast and verified delivery to your plant, job site, or engineering facility." }
+      "0": {
+        "title": "Immediate Coordination",
+        "desc": "Our logistics control team identifies the fastest route and optimal transport method."
+      },
+      "1": {
+        "title": "Specialized Packaging & Handling",
+        "desc": "Industrial cargo is secured with vibration-resistant, moisture-proof, or custom crating as needed."
+      },
+      "2": {
+        "title": "Next Flight Out / Hand-Carry Option",
+        "desc": "Urgent parts are shipped on the next available flight or escorted by an Onboard Courier (OBC)."
+      },
+      "3": {
+        "title": "Customs & Compliance",
+        "desc": "We handle all trade documents and ensure full compliance with import/export and safety standards."
+      },
+      "4": {
+        "title": "Direct Handover",
+        "desc": "Fast and verified delivery to your plant, job site, or engineering facility."
+      }
     }
   },
   "IndustrialWhyChoose": {
     "title": "Why Manufacturers Trust OBC Care",
     "description": "Trusted by industrial manufacturers worldwide for reliable logistics.",
     "benefits": {
-      "0": { "title": "Zero-Delay Commitment", "description": "We act fast to keep your production moving." },
-      "1": { "title": "Expert Handling", "description": "Couriers trained in managing high-value industrial and engineering goods." },
-      "2": { "title": "Global Coverage", "description": "From factory floors to construction hubs, we deliver worldwide." },
-      "3": { "title": "24/7 Tracking", "description": "Real-time visibility at every stage of transport." },
-      "4": { "title": "Safety First", "description": "Compliance with all handling, labeling, and safety standards." }
+      "0": {
+        "title": "Zero-Delay Commitment",
+        "description": "We act fast to keep your production moving."
+      },
+      "1": {
+        "title": "Expert Handling",
+        "description": "Couriers trained in managing high-value industrial and engineering goods."
+      },
+      "2": {
+        "title": "Global Coverage",
+        "description": "From factory floors to construction hubs, we deliver worldwide."
+      },
+      "3": {
+        "title": "24/7 Tracking",
+        "description": "Real-time visibility at every stage of transport."
+      },
+      "4": {
+        "title": "Safety First",
+        "description": "Compliance with all handling, labeling, and safety standards."
+      }
     },
     "imageCardTitle": "Your shipment, our mission 24/7, across the globe.",
     "imageCardDesc": "Trusted by industrial manufacturers worldwide for reliable logistics."
@@ -1072,33 +1597,73 @@
     "title": "What We Handle",
     "description": "Comprehensive logistics for every technology component your operations need.",
     "items": {
-      "0": { "title": "Servers, Networking & Storage Devices" },
-      "1": { "title": "Laptops, Workstations, and High-Value IT Hardware" },
-      "2": { "title": "Data Backup Drives & Sensitive Digital Equipment" },
-      "3": { "title": "Testing, Calibration & Research Instruments" },
-      "4": { "title": "Confidential or Encrypted Technology Assets" }
+      "0": {
+        "title": "Servers, Networking & Storage Devices"
+      },
+      "1": {
+        "title": "Laptops, Workstations, and High-Value IT Hardware"
+      },
+      "2": {
+        "title": "Data Backup Drives & Sensitive Digital Equipment"
+      },
+      "3": {
+        "title": "Testing, Calibration & Research Instruments"
+      },
+      "4": {
+        "title": "Confidential or Encrypted Technology Assets"
+      }
     }
   },
   "TechnologyHowItWorks": {
     "title": "How It Works",
     "description": "A streamlined 5-step process ensuring your technology reaches your facility safely and on time.",
     "steps": {
-      "0": { "title": "Rapid Response & Coordination", "desc": "Our 24/7 control center arranges immediate pickup and fastest routing worldwide." },
-      "1": { "title": "Secure Handling & Packaging", "desc": "ESD-safe, shock-proof, and moisture-protected packaging for sensitive electronics." },
-      "2": { "title": "Next Flight Out / Hand-Carry Service", "desc": "Urgent deliveries escorted by trained Onboard Couriers (OBCs) for maximum security." },
-      "3": { "title": "Customs & ITAR Compliance", "desc": "We manage all regulatory and documentation requirements for international tech shipments." },
-      "4": { "title": "Verified Handover", "desc": "Door-to-door delivery with proof of receipt and chain-of-custody tracking." }
+      "0": {
+        "title": "Rapid Response & Coordination",
+        "desc": "Our 24/7 control center arranges immediate pickup and fastest routing worldwide."
+      },
+      "1": {
+        "title": "Secure Handling & Packaging",
+        "desc": "ESD-safe, shock-proof, and moisture-protected packaging for sensitive electronics."
+      },
+      "2": {
+        "title": "Next Flight Out / Hand-Carry Service",
+        "desc": "Urgent deliveries escorted by trained Onboard Couriers (OBCs) for maximum security."
+      },
+      "3": {
+        "title": "Customs & ITAR Compliance",
+        "desc": "We manage all regulatory and documentation requirements for international tech shipments."
+      },
+      "4": {
+        "title": "Verified Handover",
+        "desc": "Door-to-door delivery with proof of receipt and chain-of-custody tracking."
+      }
     }
   },
   "TechnologyWhyChoose": {
     "title": "Why Tech Leaders Trust OBC Care",
     "description": "Trusted by technology companies worldwide for secure logistics.",
     "benefits": {
-      "0": { "title": "Zero Data Compromise", "description": "Strict confidentiality and sealed transfers for sensitive IT assets." },
-      "1": { "title": "Fast Deployment Support", "description": "Ideal for urgent tech rollouts or equipment replacements." },
-      "2": { "title": "Real-Time Tracking", "description": "Transparent monitoring from origin to destination." },
-      "3": { "title": "Global Reach", "description": "Expertise across tech hubs, data centers, and R&D facilities worldwide." },
-      "4": { "title": "Specialized Couriers", "description": "Professionals trained in handling and securing digital and high-value electronics." }
+      "0": {
+        "title": "Zero Data Compromise",
+        "description": "Strict confidentiality and sealed transfers for sensitive IT assets."
+      },
+      "1": {
+        "title": "Fast Deployment Support",
+        "description": "Ideal for urgent tech rollouts or equipment replacements."
+      },
+      "2": {
+        "title": "Real-Time Tracking",
+        "description": "Transparent monitoring from origin to destination."
+      },
+      "3": {
+        "title": "Global Reach",
+        "description": "Expertise across tech hubs, data centers, and R&D facilities worldwide."
+      },
+      "4": {
+        "title": "Specialized Couriers",
+        "description": "Professionals trained in handling and securing digital and high-value electronics."
+      }
     }
   },
   "TechnologyCta": {
@@ -1126,34 +1691,76 @@
     "title": "What We Handle",
     "description": "Comprehensive secure delivery for every type of confidential document.",
     "items": {
-      "0": { "title": "Legal and Corporate Documents" },
-      "1": { "title": "Banking, Financial & Audit Files" },
-      "2": { "title": "Diplomatic or Government Papers" },
-      "3": { "title": "Intellectual Property & Trade Secrets" },
-      "4": { "title": "Academic, Scientific & Research Records" },
-      "5": { "title": "Sealed or Notarized Physical Data Media" }
+      "0": {
+        "title": "Legal and Corporate Documents"
+      },
+      "1": {
+        "title": "Banking, Financial & Audit Files"
+      },
+      "2": {
+        "title": "Diplomatic or Government Papers"
+      },
+      "3": {
+        "title": "Intellectual Property & Trade Secrets"
+      },
+      "4": {
+        "title": "Academic, Scientific & Research Records"
+      },
+      "5": {
+        "title": "Sealed or Notarized Physical Data Media"
+      }
     }
   },
   "ConfidentialHowItWorks": {
     "title": "How It Works",
     "description": "A streamlined 5-step process ensuring your confidential documents reach their destination safely and securely.",
     "steps": {
-      "0": { "title": "Immediate Response", "desc": "Upon inquiry, our operations team arranges a hand-carry courier within minutes." },
-      "1": { "title": "Verified Pickup", "desc": "Documents are personally collected and sealed for direct transit." },
-      "2": { "title": "Hand-Carry Escort", "desc": "A dedicated Onboard Courier (OBC) travels with your documents at all times no third-party handling." },
-      "3": { "title": "Real-Time Tracking", "desc": "You receive milestone updates from pickup to delivery confirmation." },
-      "4": { "title": "Proof of Delivery", "desc": "Signed, timestamped handover confirmation ensures complete accountability." }
+      "0": {
+        "title": "Immediate Response",
+        "desc": "Upon inquiry, our operations team arranges a hand-carry courier within minutes."
+      },
+      "1": {
+        "title": "Verified Pickup",
+        "desc": "Documents are personally collected and sealed for direct transit."
+      },
+      "2": {
+        "title": "Hand-Carry Escort",
+        "desc": "A dedicated Onboard Courier (OBC) travels with your documents at all times no third-party handling."
+      },
+      "3": {
+        "title": "Real-Time Tracking",
+        "desc": "You receive milestone updates from pickup to delivery confirmation."
+      },
+      "4": {
+        "title": "Proof of Delivery",
+        "desc": "Signed, timestamped handover confirmation ensures complete accountability."
+      }
     }
   },
   "ConfidentialWhyChoose": {
     "title": "Why Clients Trust OBC Care for Confidential Deliveries",
     "description": "Trusted by professionals worldwide for secure document delivery.",
     "benefits": {
-      "0": { "title": "Absolute Discretion", "description": "Your shipment's details remain confidential at every stage." },
-      "1": { "title": "Direct Hand-Carry Only", "description": "No cargo holds or shared logistics only person-to-person delivery." },
-      "2": { "title": "24/7 Availability", "description": "Global coordination for urgent legal, financial, or diplomatic shipments." },
-      "3": { "title": "Full Chain-of-Custody", "description": "Every handover is documented and verified." },
-      "4": { "title": "Trusted by Professionals", "description": "Chosen by law firms, financial institutions, and corporations worldwide." }
+      "0": {
+        "title": "Absolute Discretion",
+        "description": "Your shipment's details remain confidential at every stage."
+      },
+      "1": {
+        "title": "Direct Hand-Carry Only",
+        "description": "No cargo holds or shared logistics only person-to-person delivery."
+      },
+      "2": {
+        "title": "24/7 Availability",
+        "description": "Global coordination for urgent legal, financial, or diplomatic shipments."
+      },
+      "3": {
+        "title": "Full Chain-of-Custody",
+        "description": "Every handover is documented and verified."
+      },
+      "4": {
+        "title": "Trusted by Professionals",
+        "description": "Chosen by law firms, financial institutions, and corporations worldwide."
+      }
     }
   },
   "ConfidentialCta": {
@@ -1186,51 +1793,84 @@
       "realTimeTracking": "Real-time Tracking"
     },
     "imageOverlay": {
-      "network": { "title": "Extensive Network", "desc": "Connecting businesses worldwide." },
-      "secure": { "title": "Reliable & Secure", "desc": "Your shipment is safe with us." }
+      "network": {
+        "title": "Extensive Network",
+        "desc": "Connecting businesses worldwide."
+      },
+      "secure": {
+        "title": "Reliable & Secure",
+        "desc": "Your shipment is safe with us."
+      }
     }
   },
   "AboutWhyChooseUs": {
     "label": "Features",
     "title": "Why Choose Us",
     "items": {
-      "0": { "title": "Global Reach", "description": "Connecting you to over 200 countries worldwide with our extensive logistics network." },
-      "1": { "title": "100% Safe Delivery", "description": "Your shipments are handled with the highest level of security and care from pickup to delivery." },
-      "2": { "title": "Fastest Delivery", "description": "We prioritize speed and efficiency to ensure your urgent shipments arrive on time, every time." },
-      "3": { "title": "Expert Team", "description": "Our dedicated team of logistics professionals is ready to handle your most complex requirements." },
-      "4": { "title": "Door-to-Door", "description": "Seamless door-to-door service, managing every step of the logistics chain for you." },
-      "5": { "title": "24/7 Support", "description": "Round-the-clock customer support to keep you informed and assist with any queries." }
+      "0": {
+        "title": "Global Reach",
+        "description": "Connecting you to over 200 countries worldwide with our extensive logistics network."
+      },
+      "1": {
+        "title": "100% Safe Delivery",
+        "description": "Your shipments are handled with the highest level of security and care from pickup to delivery."
+      },
+      "2": {
+        "title": "Fastest Delivery",
+        "description": "We prioritize speed and efficiency to ensure your urgent shipments arrive on time, every time."
+      },
+      "3": {
+        "title": "Expert Team",
+        "description": "Our dedicated team of logistics professionals is ready to handle your most complex requirements."
+      },
+      "4": {
+        "title": "Door-to-Door",
+        "description": "Seamless door-to-door service, managing every step of the logistics chain for you."
+      },
+      "5": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock customer support to keep you informed and assist with any queries."
+      }
     }
   },
   "AboutStats": {
     "title": "We Make Strongest Services Above World",
     "description": "Experience the pinnacle of logistics excellence with our world-class services designed to exceed your expectations.",
     "stats": {
-      "0": { "title": "Trusted Services", "description": "Reliable solutions you can count on." },
-      "1": { "title": "100% Safe", "description": "Security is our top priority." },
-      "2": { "title": "Global Reach", "description": "Connecting you to the world." }
+      "0": {
+        "title": "Trusted Services",
+        "description": "Reliable solutions you can count on."
+      },
+      "1": {
+        "title": "100% Safe",
+        "description": "Security is our top priority."
+      },
+      "2": {
+        "title": "Global Reach",
+        "description": "Connecting you to the world."
+      }
     }
   },
   "AboutMissionVision": {
     "mission": {
-        "title": "Our Mission",
-        "description": "To deliver time critical and hand carry logistics solutions with the highest standards of accuracy, security, and reliability, ensuring that urgent shipments reach their destination efficiently and without compromise."
+      "title": "Our Mission",
+      "description": "To deliver time critical and hand carry logistics solutions with the highest standards of accuracy, security, and reliability, ensuring that urgent shipments reach their destination efficiently and without compromise."
     },
     "vision": {
-        "title": "Our Vision",
-        "description": "To become the leading global provider of Onboard courier and urgent logistics services, recognized for operational excellence, integrity, and a consistent commitment to service quality across every shipment and every route."
+      "title": "Our Vision",
+      "description": "To become the leading global provider of Onboard courier and urgent logistics services, recognized for operational excellence, integrity, and a consistent commitment to service quality across every shipment and every route."
     }
   },
   "AboutTeam": {
     "label": "Meet the Team",
     "title": "Together, our team combines international expertise and local insight to move shipments and businesses forward.",
     "roles": {
-        "0": "CEO, Founder & General Manager",
-        "1": "Accounting Manager",
-        "2": "Operations Manager",
-        "3": "Project Manager",
-        "4": "Project Manager",
-        "5": "Project Manager"
+      "0": "CEO, Founder & General Manager",
+      "1": "Accounting Manager",
+      "2": "Operations Manager",
+      "3": "Project Manager",
+      "4": "Project Manager",
+      "5": "Project Manager"
     }
   },
   "AboutTestimonials": {
@@ -1290,9 +1930,18 @@
     "title": "Inquiry Form",
     "description": "Fill out the form below and we'll get back to you within minutes. Our team is available 24/7 to assist you.",
     "contactCards": {
-      "support": { "title": "24/7 Support", "desc": "Available round the clock" },
-      "response": { "title": "Quick Response", "desc": "Response within minutes" },
-      "direct": { "title": "Direct Contact", "desc": "Call us anytime" }
+      "support": {
+        "title": "24/7 Support",
+        "desc": "Available round the clock"
+      },
+      "response": {
+        "title": "Quick Response",
+        "desc": "Response within minutes"
+      },
+      "direct": {
+        "title": "Direct Contact",
+        "desc": "Call us anytime"
+      }
     },
     "howItWorks": {
       "title": "How It Works",
@@ -1335,10 +1984,22 @@
     "whyBecomeObc": {
       "title": "Why You Should Become an Onboard Courier",
       "items": {
-        "0": { "title": "Every Day Is a New Adventure", "description": "No two days are ever the same. One mission may take you across Europe delivering critical machinery; the next may have you hand-carrying urgent documents on a domestic flight. It’s a career built on excitement and purpose." },
-        "1": { "title": "Think Fast, Act Faster", "description": "Delays happen. Plans change. Challenges appear without warning. Great couriers adapt quickly, stay calm under pressure, and always find a solution. If you thrive in fast-moving environments, this role is for you." },
-        "2": { "title": "A World of Experiences", "description": "Each assignment introduces you to new places, cultures, and people. It’s not just a job; it’s a gateway to global exposure, personal growth, and meaningful professional connections." },
-        "3": { "title": "Never a Boring Day", "description": "Every shipment tells a different story. From aircraft parts to medical samples and urgent legal documents, every delivery is unique, and so is every challenge you overcome." }
+        "0": {
+          "title": "Every Day Is a New Adventure",
+          "description": "No two days are ever the same. One mission may take you across Europe delivering critical machinery; the next may have you hand-carrying urgent documents on a domestic flight. It’s a career built on excitement and purpose."
+        },
+        "1": {
+          "title": "Think Fast, Act Faster",
+          "description": "Delays happen. Plans change. Challenges appear without warning. Great couriers adapt quickly, stay calm under pressure, and always find a solution. If you thrive in fast-moving environments, this role is for you."
+        },
+        "2": {
+          "title": "A World of Experiences",
+          "description": "Each assignment introduces you to new places, cultures, and people. It’s not just a job; it’s a gateway to global exposure, personal growth, and meaningful professional connections."
+        },
+        "3": {
+          "title": "Never a Boring Day",
+          "description": "Every shipment tells a different story. From aircraft parts to medical samples and urgent legal documents, every delivery is unique, and so is every challenge you overcome."
+        }
       }
     },
     "cta": {
@@ -1346,8 +2007,7 @@
       "description": "Join a trusted global team and experience the world while delivering time-critical shipments safely and professionally.",
       "btnApply": "👉 Apply Now"
     }
-  }
-  ,
+  },
   "ContactForm": {
     "title": "Inquiry Form",
     "description": "If you have inquiries about our services, On Board Courier requests, or partnership opportunities, please fill out the form below — our team will respond shortly.",
@@ -1656,4 +2316,3 @@
     }
   }
 }
-

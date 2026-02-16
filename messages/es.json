@@ -343,11 +343,26 @@
     "title": "Cuando cada minuto cuenta",
     "description": "Los servicios OBC mantienen en funcionamiento las operaciones en aviación, automoción, tecnología y fabricación al eliminar retrasos y mantener la custodia en cada paso.",
     "items": {
-      "0": { "title": "Cero margen de error", "description": "Evite errores de enrutamiento, pérdidas o retrasos comunes en la carga aérea estándar con supervisión de transporte manual." },
-      "1": { "title": "Disponibilidad inmediata", "description": "Su envío se mueve en el próximo vuelo disponible  no en días." },
-      "2": { "title": "Control continuo", "description": "El mensajero maneja aduanas, seguridad y entrega personalmente  sin traspasos a terceros." },
-      "3": { "title": "Tranquilidad", "description": "Las actualizaciones de estado en vivo aseguran una visibilidad total desde la recogida hasta la entrega final." },
-      "4": { "title": "Crítico para industrias urgentes", "description": "Ideal para piezas AOG, prototipos, artículos sensibles y documentos confidenciales." }
+      "0": {
+        "title": "Cero margen de error",
+        "description": "Evite errores de enrutamiento, pérdidas o retrasos comunes en la carga aérea estándar con supervisión de transporte manual."
+      },
+      "1": {
+        "title": "Disponibilidad inmediata",
+        "description": "Su envío se mueve en el próximo vuelo disponible  no en días."
+      },
+      "2": {
+        "title": "Control continuo",
+        "description": "El mensajero maneja aduanas, seguridad y entrega personalmente  sin traspasos a terceros."
+      },
+      "3": {
+        "title": "Tranquilidad",
+        "description": "Las actualizaciones de estado en vivo aseguran una visibilidad total desde la recogida hasta la entrega final."
+      },
+      "4": {
+        "title": "Crítico para industrias urgentes",
+        "description": "Ideal para piezas AOG, prototipos, artículos sensibles y documentos confidenciales."
+      }
     }
   },
   "ObcWhyChoose": {
@@ -355,18 +370,42 @@
     "title": "Logística de transporte manual impulsada por la precisión",
     "description": "Un modelo operativo distinto que combina una movilización rápida con una custodia continua.",
     "stats": {
-      "quoteSla": { "value": "15m", "label": "Cotización SLA" },
-      "activeObc": { "value": "1,200+", "label": "OBCs Activos" },
-      "countries": { "value": "70+", "label": "Países" },
+      "quoteSla": {
+        "value": "15m",
+        "label": "Cotización SLA"
+      },
+      "activeObc": {
+        "value": "1,200+",
+        "label": "OBCs Activos"
+      },
+      "countries": {
+        "value": "70+",
+        "label": "Países"
+      },
       "title": "Construido para misiones críticas",
       "subtitle": "Operaciones de transporte manual con custodia auditable y manejo proactivo de excepciones."
     },
     "items": {
-      "0": { "title": "Velocidad en la que puede confiar", "description": "Próximo vuelo disponible  sin esperas de carga o retrasos de consolidación." },
-      "1": { "title": "Máxima seguridad", "description": "Custodia continua desde el check-in hasta la aduana y la entrega." },
-      "2": { "title": "Actualizaciones en tiempo real", "description": "Notificaciones en vivo para el estado del vuelo y la confirmación de la entrega." },
-      "3": { "title": "Cobertura global", "description": "Movilización rápida en Europa, Asia, Medio Oriente, América del Norte." },
-      "4": { "title": "Mensajeros entrenados y verificados", "description": "Profesionalmente entrenados, con antecedentes verificados y experiencia en OBC." }
+      "0": {
+        "title": "Velocidad en la que puede confiar",
+        "description": "Próximo vuelo disponible  sin esperas de carga o retrasos de consolidación."
+      },
+      "1": {
+        "title": "Máxima seguridad",
+        "description": "Custodia continua desde el check-in hasta la aduana y la entrega."
+      },
+      "2": {
+        "title": "Actualizaciones en tiempo real",
+        "description": "Notificaciones en vivo para el estado del vuelo y la confirmación de la entrega."
+      },
+      "3": {
+        "title": "Cobertura global",
+        "description": "Movilización rápida en Europa, Asia, Medio Oriente, América del Norte."
+      },
+      "4": {
+        "title": "Mensajeros entrenados y verificados",
+        "description": "Profesionalmente entrenados, con antecedentes verificados y experiencia en OBC."
+      }
     }
   },
   "ObcIndustries": {
@@ -374,9 +413,18 @@
     "title": "Construido para operaciones que no pueden permitirse tiempo de inactividad",
     "description": "Un diseño de mosaico distintivo que destaca el impacto en las verticales.",
     "stats": {
-      "dispatch": { "value": "24/7", "label": "Despacho" },
-      "handling": { "value": "Prioridad", "label": "Manejo" },
-      "custody": { "value": "Segura", "label": "Custodia" }
+      "dispatch": {
+        "value": "24/7",
+        "label": "Despacho"
+      },
+      "handling": {
+        "value": "Prioridad",
+        "label": "Manejo"
+      },
+      "custody": {
+        "value": "Segura",
+        "label": "Custodia"
+      }
     },
     "items": {
       "aviation": "Aviación y Piezas AOG",
@@ -393,11 +441,26 @@
     "title": "Línea de tiempo de una misión OBC",
     "description": "Una línea de tiempo vertical con nodos conectados que muestra la custodia desde la cotización hasta la entrega.",
     "steps": {
-      "0": { "title": "Consulta y Cotización", "description": "Contáctenos y reciba una cotización gratuita en minutos." },
-      "1": { "title": "Asignación de mensajero", "description": "OBC disponible más cercano desplegado para despacho inmediato." },
-      "2": { "title": "Recogida y Verificación", "description": "Envío verificado, sellado y escoltado al aeropuerto." },
-      "3": { "title": "Actualizaciones en tránsito", "description": "Notificaciones en vivo desde la salida hasta el aterrizaje." },
-      "4": { "title": "Entrega final", "description": "El mensajero entrega personalmente directamente al consignatario  rápido y seguro." }
+      "0": {
+        "title": "Consulta y Cotización",
+        "description": "Contáctenos y reciba una cotización gratuita en minutos."
+      },
+      "1": {
+        "title": "Asignación de mensajero",
+        "description": "OBC disponible más cercano desplegado para despacho inmediato."
+      },
+      "2": {
+        "title": "Recogida y Verificación",
+        "description": "Envío verificado, sellado y escoltado al aeropuerto."
+      },
+      "3": {
+        "title": "Actualizaciones en tránsito",
+        "description": "Notificaciones en vivo desde la salida hasta el aterrizaje."
+      },
+      "4": {
+        "title": "Entrega final",
+        "description": "El mensajero entrega personalmente directamente al consignatario  rápido y seguro."
+      }
     }
   },
   "ObcNetwork": {
@@ -424,10 +487,22 @@
     "imageAlt": "Profesional Mensajero a Bordo",
     "stats": "Mensajeros Activos",
     "benefits": {
-      "0": { "title": "Oportunidades de viaje", "description": "Explora el mundo mientras ganas" },
-      "1": { "title": "Horario flexible", "description": "Elige misiones que se adapten a tu estilo de vida" },
-      "2": { "title": "Red global", "description": "Únete a 1,200+ mensajeros en todo el mundo" },
-      "3": { "title": "Pago competitivo", "description": "Compensación justa por tu experiencia" }
+      "0": {
+        "title": "Oportunidades de viaje",
+        "description": "Explora el mundo mientras ganas"
+      },
+      "1": {
+        "title": "Horario flexible",
+        "description": "Elige misiones que se adapten a tu estilo de vida"
+      },
+      "2": {
+        "title": "Red global",
+        "description": "Únete a 1,200+ mensajeros en todo el mundo"
+      },
+      "3": {
+        "title": "Pago competitivo",
+        "description": "Compensación justa por tu experiencia"
+      }
     }
   },
   "ObcCta": {
@@ -446,8 +521,14 @@
   "FmlmWhatIs": {
     "badge": "¿Qué es la entrega de Primera / Última Milla?",
     "title": "Cada envío comienza con una primera milla y termina con una última milla y ambas son críticas.",
-    "firstMile": { "title": "Entrega de Primera Milla", "description": "Transporte de mercancías desde la ubicación del remitente (como un almacén o proveedor) al siguiente punto logístico a menudo el aeropuerto o transitario." },
-    "lastMile": { "title": "Entrega de Última Milla", "description": "El tramo final, moviendo envíos desde el aeropuerto, almacén de aduanas o terminal directamente a la puerta del consignatario." },
+    "firstMile": {
+      "title": "Entrega de Primera Milla",
+      "description": "Transporte de mercancías desde la ubicación del remitente (como un almacén o proveedor) al siguiente punto logístico a menudo el aeropuerto o transitario."
+    },
+    "lastMile": {
+      "title": "Entrega de Última Milla",
+      "description": "El tramo final, moviendo envíos desde el aeropuerto, almacén de aduanas o terminal directamente a la puerta del consignatario."
+    },
     "description": "En OBC Care, aseguramos que ambos extremos del viaje se manejen con velocidad, precisión y cuidado conectando su carga desde el origen hasta el destino sin problemas.",
     "imageAlt": "Entrega de Primera y Última Milla",
     "stats": {
@@ -460,11 +541,26 @@
     "title": "Incluso el vuelo más rápido es tan eficiente como el transporte terrestre que lo respalda.",
     "description": "Retrasos, mal manejo o mala coordinación durante la primera o última milla pueden poner en peligro operaciones enteras, especialmente en industrias críticas por el tiempo.",
     "items": {
-      "0": { "title": "Previene retrasos costosos", "description": "El tiempo adecuado asegura que su envío tome el próximo vuelo o llegue a su cliente a tiempo." },
-      "1": { "title": "Asegura la integridad del envío", "description": "El manejo terrestre seguro minimiza daños, pérdidas o errores de ruta." },
-      "2": { "title": "Cierra brechas globales", "description": "Los servicios FM/LM conectan aeropuertos, almacenes y destinos en un flujo fluido." },
-      "3": { "title": "Soporta operaciones 24/7", "description": "Perfecto para envíos urgentes de AOG, automotriz o electrónicos que no pueden esperar." },
-      "4": { "title": "Garantiza responsabilidad", "description": "Cada entrega y movimiento es rastreado y reportado." }
+      "0": {
+        "title": "Previene retrasos costosos",
+        "description": "El tiempo adecuado asegura que su envío tome el próximo vuelo o llegue a su cliente a tiempo."
+      },
+      "1": {
+        "title": "Asegura la integridad del envío",
+        "description": "El manejo terrestre seguro minimiza daños, pérdidas o errores de ruta."
+      },
+      "2": {
+        "title": "Cierra brechas globales",
+        "description": "Los servicios FM/LM conectan aeropuertos, almacenes y destinos en un flujo fluido."
+      },
+      "3": {
+        "title": "Soporta operaciones 24/7",
+        "description": "Perfecto para envíos urgentes de AOG, automotriz o electrónicos que no pueden esperar."
+      },
+      "4": {
+        "title": "Garantiza responsabilidad",
+        "description": "Cada entrega y movimiento es rastreado y reportado."
+      }
     }
   },
   "FmlmSolutions": {
@@ -481,10 +577,22 @@
       "accountable": "Responsable"
     },
     "items": {
-      "0": { "title": "Entrega de Primera Milla", "description": "Recogida desde su instalación al aeropuerto o socio de carga alineado precisamente con los horarios de vuelo." },
-      "1": { "title": "Entrega de Última Milla", "description": "Desde aduanas o aeropuerto a la puerta del consignatario rápido, seguro y totalmente coordinado." },
-      "2": { "title": "Transferencias terrestres urgentes", "description": "Vehículos dedicados para movimientos locales o regionales que exigen urgencia." },
-      "3": { "title": "Opciones de conducción directa", "description": "Transporte punto a punto sin paradas, sin desvíos, sin espera." }
+      "0": {
+        "title": "Entrega de Primera Milla",
+        "description": "Recogida desde su instalación al aeropuerto o socio de carga alineado precisamente con los horarios de vuelo."
+      },
+      "1": {
+        "title": "Entrega de Última Milla",
+        "description": "Desde aduanas o aeropuerto a la puerta del consignatario rápido, seguro y totalmente coordinado."
+      },
+      "2": {
+        "title": "Transferencias terrestres urgentes",
+        "description": "Vehículos dedicados para movimientos locales o regionales que exigen urgencia."
+      },
+      "3": {
+        "title": "Opciones de conducción directa",
+        "description": "Transporte punto a punto sin paradas, sin desvíos, sin espera."
+      }
     }
   },
   "FmlmHowItWorks": {
@@ -492,10 +600,22 @@
     "title": "Desde la recogida hasta la entrega  Coordinación sin interrupciones",
     "description": "Un proceso simplificado que asegura que su envío se mueva eficientemente desde el origen hasta el destino.",
     "steps": {
-      "0": { "title": "Coordinación de recogida", "description": "Nuestro equipo de operaciones identifica la ruta más rápida y envía un conductor inmediatamente." },
-      "1": { "title": "Comunicación en vivo", "description": "Recibe actualizaciones en cada etapa, desde la recogida hasta la entrega." },
-      "2": { "title": "Tránsito seguro", "description": "Todos los vehículos son rastreados por GPS y todos los conductores están capacitados en manejo crítico por el tiempo." },
-      "3": { "title": "Confirmación de entrega", "description": "Se proporciona prueba de entrega instantánea una vez que su envío llega." }
+      "0": {
+        "title": "Coordinación de recogida",
+        "description": "Nuestro equipo de operaciones identifica la ruta más rápida y envía un conductor inmediatamente."
+      },
+      "1": {
+        "title": "Comunicación en vivo",
+        "description": "Recibe actualizaciones en cada etapa, desde la recogida hasta la entrega."
+      },
+      "2": {
+        "title": "Tránsito seguro",
+        "description": "Todos los vehículos son rastreados por GPS y todos los conductores están capacitados en manejo crítico por el tiempo."
+      },
+      "3": {
+        "title": "Confirmación de entrega",
+        "description": "Se proporciona prueba de entrega instantánea una vez que su envío llega."
+      }
     }
   },
   "FmlmWhyChoose": {
@@ -503,10 +623,22 @@
     "title": "Excelencia en cada milla",
     "description": "Nuestras soluciones integrales de transporte terrestre aseguran que sus envíos se muevan con precisión, velocidad y visibilidad completa.",
     "items": {
-      "0": { "title": "Disponibilidad 24/7", "description": "Siempre operativo, a través de zonas horarias y fines de semana." },
-      "1": { "title": "Conductores entrenados y verificados", "description": "Profesionales con experiencia en logística y autorización de seguridad." },
-      "2": { "title": "Actualizaciones en tiempo real", "description": "Manténgase informado en cada hito  sin incertidumbre." },
-      "3": { "title": "Coordinación global", "description": "Puerta a puerta, aeropuerto a aeropuerto o modos mixtos  conectamos cada eslabón." }
+      "0": {
+        "title": "Disponibilidad 24/7",
+        "description": "Siempre operativo, a través de zonas horarias y fines de semana."
+      },
+      "1": {
+        "title": "Conductores entrenados y verificados",
+        "description": "Profesionales con experiencia en logística y autorización de seguridad."
+      },
+      "2": {
+        "title": "Actualizaciones en tiempo real",
+        "description": "Manténgase informado en cada hito  sin incertidumbre."
+      },
+      "3": {
+        "title": "Coordinación global",
+        "description": "Puerta a puerta, aeropuerto a aeropuerto o modos mixtos  conectamos cada eslabón."
+      }
     }
   },
   "FmlmNetwork": {
@@ -515,14 +647,32 @@
     "description1": "Con cientos de conductores profesionales y socios logísticos en Asia, Europa y América, OBC Care garantiza una coordinación global terrestre sin interrupciones.",
     "description2": "Ya sea puerta a puerta, aeropuerto a puerta, puerta a aeropuerto o aeropuerto a aeropuerto, nuestra red FM/LM está construida para mover su carga eficientemente  en cualquier momento y lugar.",
     "stats": {
-      "drivers": { "label": "Conductores Profesionales", "value": "500+" },
-      "coverage": { "label": "Cobertura Global", "value": "70+" },
-      "response": { "label": "Tiempo de respuesta", "value": "<30m" }
+      "drivers": {
+        "label": "Conductores Profesionales",
+        "value": "500+"
+      },
+      "coverage": {
+        "label": "Cobertura Global",
+        "value": "70+"
+      },
+      "response": {
+        "label": "Tiempo de respuesta",
+        "value": "<30m"
+      }
     },
     "coverage": {
-      "asia": { "region": "Asia", "cities": "Singapur, Hong Kong, Tokio, Dubai, Mumbai" },
-      "europe": { "region": "Europa", "cities": "Londres, Frankfurt, Ámsterdam, París, Milán" },
-      "americas": { "region": "América", "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo" }
+      "asia": {
+        "region": "Asia",
+        "cities": "Singapur, Hong Kong, Tokio, Dubai, Mumbai"
+      },
+      "europe": {
+        "region": "Europa",
+        "cities": "Londres, Frankfurt, Ámsterdam, París, Milán"
+      },
+      "americas": {
+        "region": "América",
+        "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo"
+      }
     }
   },
   "FmlmJoin": {
@@ -532,10 +682,22 @@
     "description2": "Como parte de la red global de OBC Care, se te confiarán entregas de alto valor y sensibles al tiempo, respaldadas por nuestro equipo de soporte 24/7.",
     "description3": "Ya sea que seas un mensajero experimentado o un conductor profesional que busca ingresar a la logística crítica por el tiempo, siempre estamos buscando socios confiables en todo el mundo para hacer crecer nuestra red.",
     "benefits": {
-      "0": { "title": "Conduce envíos críticos", "description": "Sé parte de la logística sensible al tiempo que importa" },
-      "1": { "title": "Equipo de soporte 24/7", "description": "Respaldado por nuestro centro de operaciones profesional" },
-      "2": { "title": "Oportunidades flexibles", "description": "Elige asignaciones que se adapten a tu horario" },
-      "3": { "title": "Red global", "description": "Únete a cientos de conductores en todo el mundo" }
+      "0": {
+        "title": "Conduce envíos críticos",
+        "description": "Sé parte de la logística sensible al tiempo que importa"
+      },
+      "1": {
+        "title": "Equipo de soporte 24/7",
+        "description": "Respaldado por nuestro centro de operaciones profesional"
+      },
+      "2": {
+        "title": "Oportunidades flexibles",
+        "description": "Elige asignaciones que se adapten a tu horario"
+      },
+      "3": {
+        "title": "Red global",
+        "description": "Únete a cientos de conductores en todo el mundo"
+      }
     },
     "ctaApply": "Aplica ahora",
     "ctaContact": "Ponerse en contacto",
@@ -574,10 +736,22 @@
     "badge": "¿Por qué es importante el despacho de aduanas?",
     "title": "El despacho de aduanas es crítico porque:",
     "reasons": {
-      "0": { "title": "Previene Retrasos Costosos", "desc": "Evita tarifas de demora y penalizaciones de almacenamiento asegurando un despacho oportuno." },
-      "1": { "title": "Asegura Cumplimiento Legal", "desc": "Evita multas o incautaciones cumpliendo con todas las regulaciones de importación/exportación." },
-      "2": { "title": "Acelera la Liberación", "desc": "Los envíos críticos pueden proceder a la entrega sin retrasos innecesarios." },
-      "3": { "title": "Protege Carga de Alto Valor", "desc": "Clasificación y manejo adecuados para envíos sensibles o valiosos." }
+      "0": {
+        "title": "Previene Retrasos Costosos",
+        "desc": "Evita tarifas de demora y penalizaciones de almacenamiento asegurando un despacho oportuno."
+      },
+      "1": {
+        "title": "Asegura Cumplimiento Legal",
+        "desc": "Evita multas o incautaciones cumpliendo con todas las regulaciones de importación/exportación."
+      },
+      "2": {
+        "title": "Acelera la Liberación",
+        "desc": "Los envíos críticos pueden proceder a la entrega sin retrasos innecesarios."
+      },
+      "3": {
+        "title": "Protege Carga de Alto Valor",
+        "desc": "Clasificación y manejo adecuados para envíos sensibles o valiosos."
+      }
     },
     "imageAlt": "Despacho de Aduanas"
   },
@@ -585,11 +759,26 @@
     "badge": "Lo que manejamos",
     "title": "Soluciones Aduaneras Integrales",
     "services": {
-      "0": { "title": "Declaraciones de Importación y Exportación", "desc": "Proporciona orientación y asistencia para navegar eficientemente los procesos de importación y exportación." },
-      "1": { "title": "Aranceles, Impuestos y Orientación Tarifaria", "desc": "Asesoramos y comunicamos los aranceles e impuestos aplicables, ayudándole a prepararse para posibles cargos." },
-      "2": { "title": "Coordinación de Permisos y Licencias", "desc": "Apoyo en la coordinación de permisos especiales y licencias requeridas para su envío." },
-      "3": { "title": "Manejo en Aeropuertos y Fronteras", "desc": "Coordina con aduanas aeroportuarias y operadores en tierra para una liberación rápida." },
-      "4": { "title": "Despacho de Carga Especial", "desc": "Manejo experto de envíos restringidos, de alto valor o sensibles a la temperatura." }
+      "0": {
+        "title": "Declaraciones de Importación y Exportación",
+        "desc": "Proporciona orientación y asistencia para navegar eficientemente los procesos de importación y exportación."
+      },
+      "1": {
+        "title": "Aranceles, Impuestos y Orientación Tarifaria",
+        "desc": "Asesoramos y comunicamos los aranceles e impuestos aplicables, ayudándole a prepararse para posibles cargos."
+      },
+      "2": {
+        "title": "Coordinación de Permisos y Licencias",
+        "desc": "Apoyo en la coordinación de permisos especiales y licencias requeridas para su envío."
+      },
+      "3": {
+        "title": "Manejo en Aeropuertos y Fronteras",
+        "desc": "Coordina con aduanas aeroportuarias y operadores en tierra para una liberación rápida."
+      },
+      "4": {
+        "title": "Despacho de Carga Especial",
+        "desc": "Manejo experto de envíos restringidos, de alto valor o sensibles a la temperatura."
+      }
     }
   },
   "CustomsProcess": {
@@ -597,10 +786,22 @@
     "title": "De la Documentación a la Entrega",
     "description": "Un proceso simplificado que asegura que su envío pase la aduana eficientemente y llegue a su destino.",
     "steps": {
-      "0": { "title": "Verificación de Documentos", "desc": "Verificamos todo el papeleo antes del despacho para evitar cualquier rechazo en aduana." },
-      "1": { "title": "Presentación Aduanera", "desc": "Nuestros agentes con licencia manejan la presentación, coordinación y comunicación aduanera." },
-      "2": { "title": "Actualizaciones en Tiempo Real", "desc": "Reciba actualizaciones de estado instantáneas en cada paso del camino." },
-      "3": { "title": "Liberación Final y Entrega", "desc": "Una vez liberado, organizamos el transporte inmediato a su destino." }
+      "0": {
+        "title": "Verificación de Documentos",
+        "desc": "Verificamos todo el papeleo antes del despacho para evitar cualquier rechazo en aduana."
+      },
+      "1": {
+        "title": "Presentación Aduanera",
+        "desc": "Nuestros agentes con licencia manejan la presentación, coordinación y comunicación aduanera."
+      },
+      "2": {
+        "title": "Actualizaciones en Tiempo Real",
+        "desc": "Reciba actualizaciones de estado instantáneas en cada paso del camino."
+      },
+      "3": {
+        "title": "Liberación Final y Entrega",
+        "desc": "Una vez liberado, organizamos el transporte inmediato a su destino."
+      }
     }
   },
   "CustomsWhyChoose": {
@@ -608,10 +809,22 @@
     "title": "Excelencia en Cada Despacho",
     "description": "Nuestras soluciones aduaneras integrales aseguran que sus envíos crucen fronteras con velocidad, cumplimiento y total transparencia.",
     "features": {
-      "0": { "title": "Experiencia Global, Cumplimiento Local", "desc": "Nuestro conocimiento de las aduanas internacionales y específicas de cada país asegura un despacho rápido y legal." },
-      "1": { "title": "Monitoreo y Actualizaciones 24/7", "desc": "Manténgase informado con informes de progreso en vivo y actualizaciones de hitos." },
-      "2": { "title": "Compromiso de Cero Retrasos", "desc": "Actuamos rápido para prevenir tarifas de demora y penalizaciones de almacenamiento." },
-      "3": { "title": "Socio Logístico Todo en Uno", "desc": "Desde la recolección hasta la entrega final  OBC Care lo gestiona todo con precisión y transparencia." }
+      "0": {
+        "title": "Experiencia Global, Cumplimiento Local",
+        "desc": "Nuestro conocimiento de las aduanas internacionales y específicas de cada país asegura un despacho rápido y legal."
+      },
+      "1": {
+        "title": "Monitoreo y Actualizaciones 24/7",
+        "desc": "Manténgase informado con informes de progreso en vivo y actualizaciones de hitos."
+      },
+      "2": {
+        "title": "Compromiso de Cero Retrasos",
+        "desc": "Actuamos rápido para prevenir tarifas de demora y penalizaciones de almacenamiento."
+      },
+      "3": {
+        "title": "Socio Logístico Todo en Uno",
+        "desc": "Desde la recolección hasta la entrega final  OBC Care lo gestiona todo con precisión y transparencia."
+      }
     }
   },
   "CustomsNetwork": {
@@ -620,14 +833,32 @@
     "description1": "Nuestros socios aduaneros y agentes con licencia operan en las principales rutas comerciales y aeropuertos clave en todo el mundo  asegurando un despacho rápido y conforme en todas las regiones.",
     "description2": "Coordinamos la experiencia local con supervisión global para que su envío no se detenga en la frontera.",
     "stats": {
-      "agents": { "label": "Agentes con Licencia", "value": "200+" },
-      "coverage": { "label": "Cobertura Global", "value": "50+" },
-      "time": { "label": "Tiempo de Despacho", "value": "<24h" }
+      "agents": {
+        "label": "Agentes con Licencia",
+        "value": "200+"
+      },
+      "coverage": {
+        "label": "Cobertura Global",
+        "value": "50+"
+      },
+      "time": {
+        "label": "Tiempo de Despacho",
+        "value": "<24h"
+      }
     },
     "coverage": {
-      "asia": { "region": "Asia", "cities": "Singapur, Hong Kong, Tokio, Dubái, Bombay" },
-      "europe": { "region": "Europa", "cities": "Londres, Fráncfort, Ámsterdam, París, Milán" },
-      "americas": { "region": "Américas", "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo" }
+      "asia": {
+        "region": "Asia",
+        "cities": "Singapur, Hong Kong, Tokio, Dubái, Bombay"
+      },
+      "europe": {
+        "region": "Europa",
+        "cities": "Londres, Fráncfort, Ámsterdam, París, Milán"
+      },
+      "americas": {
+        "region": "Américas",
+        "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo"
+      }
     },
     "imageAlt": "Red Aduanera Global"
   },
@@ -645,10 +876,22 @@
       "label": "Socios en Todo el Mundo"
     },
     "benefits": {
-      "0": { "title": "Experiencia Licenciada", "description": "Trabaje con profesionales aduaneros certificados" },
-      "1": { "title": "Red Global", "description": "Apoye envíos a través de continentes" },
-      "2": { "title": "Operaciones 24/7", "description": "Respaldado por nuestro equipo profesional" },
-      "3": { "title": "Beneficios de Asociación", "description": "Haga crecer su negocio con socios confiables" }
+      "0": {
+        "title": "Experiencia Licenciada",
+        "description": "Trabaje con profesionales aduaneros certificados"
+      },
+      "1": {
+        "title": "Red Global",
+        "description": "Apoye envíos a través de continentes"
+      },
+      "2": {
+        "title": "Operaciones 24/7",
+        "description": "Respaldado por nuestro equipo profesional"
+      },
+      "3": {
+        "title": "Beneficios de Asociación",
+        "description": "Haga crecer su negocio con socios confiables"
+      }
     }
   },
   "CustomsCta": {
@@ -666,28 +909,63 @@
     "secondaryCta": "Obtener cotización gratis"
   },
   "NfoIntro": {
+    "badge": "Soluciones Críticas",
     "title": "Logística Crítica sin Compromisos",
-    "imageCardText1": "Los retrasos no son una opción cuando las operaciones críticas dependen de la llegada de su envío.",
-    "imageCardText2": "Es por eso que el servicio Next Flight Out (NFO) de OBC Care prioriza su carga en el primer vuelo disponible, asegurando cero tiempo de inactividad, visibilidad total y velocidad garantizada.",
-    "textCard1": "Nuestro equipo global monitorea cada ruta, horario de vuelo y requisito aduanero en tiempo real, organizando el camino más rápido y confiable desde la recolección hasta la entrega.",
-    "textCard2": "Ya sean piezas de aviación, componentes automotrices o equipos electrónicos, nuestro servicio NFO mantiene su negocio en movimiento, sin importar dónde se encuentre en el mundo.",
+    "description": "Es por eso que el servicio Next Flight Out (NFO) de OBC Care prioriza su carga en el primer vuelo disponible, asegurando cero tiempo de inactividad, visibilidad total y velocidad garantizada.",
+    "subtitle": "¿Por qué elegir NFO?",
+    "card": {
+      "label": "Velocidad de Servicio",
+      "value": "Siguiente Vuelo"
+    },
+    "stats": {
+      "support": "Soporte en Vivo",
+      "countries": "Países Servidos",
+      "success": "Entrega a Tiempo"
+    },
     "features": {
-      "0": { "title": "Monitoreo 24/7" },
-      "1": { "title": "Cobertura Global" },
-      "2": { "title": "Cero Inactividad" },
-      "3": { "title": "Velocidad Garantizada" }
+      "0": {
+        "title": "Monitoreo 24/7",
+        "desc": "Nuestra torre de control monitorea su envío las 24 horas."
+      },
+      "1": {
+        "title": "Cobertura Global",
+        "desc": "Acceso a vuelos en todo el mundo para un alcance máximo."
+      },
+      "2": {
+        "title": "Cero Inactividad",
+        "desc": "Mantenga sus operaciones funcionando sin interrupciones."
+      },
+      "3": {
+        "title": "Velocidad Garantizada",
+        "desc": "La solución de carga aérea más rápida disponible."
+      }
     }
   },
   "NfoWhatIs": {
     "badge": "¿Qué es un servicio Next Flight Out (NFO)?",
     "title": "Next Flight Out (NFO) es la solución de carga aérea más rápida para envíos críticos.",
     "stats": {
-      "flight": { "label": "Vuelo", "value": "Próximo" },
-      "support": { "label": "Soporte", "value": "24/7" }
+      "flight": {
+        "label": "Vuelo",
+        "value": "Próximo"
+      },
+      "support": {
+        "label": "Soporte",
+        "value": "24/7"
+      }
     },
-    "card1": { "title": "Reserva Más Rápida", "desc": "Su carga se reserva en el próximo vuelo comercial o de carga disponible." },
-    "card2": { "title": "Rutas en Tiempo Real", "desc": "Coordinación experta para una velocidad récord." },
-    "card3": { "title": "Minimizar Inactividad", "desc": "Evitando pérdidas operativas con velocidad y confiabilidad garantizadas." },
+    "card1": {
+      "title": "Reserva Más Rápida",
+      "desc": "Su carga se reserva en el próximo vuelo comercial o de carga disponible."
+    },
+    "card2": {
+      "title": "Rutas en Tiempo Real",
+      "desc": "Coordinación experta para una velocidad récord."
+    },
+    "card3": {
+      "title": "Minimizar Inactividad",
+      "desc": "Evitando pérdidas operativas con velocidad y confiabilidad garantizadas."
+    },
     "description1": "Asegura que su carga se reserve en el próximo vuelo comercial o de carga disponible, minimizando el tiempo de inactividad y evitando pérdidas operativas.",
     "description2": "En OBC Care, combinamos rutas en tiempo real, manejo dedicado y coordinación experta para mover su envío a través de fronteras a una velocidad récord."
   },
@@ -696,10 +974,22 @@
     "title": "En industrias sensibles al tiempo, incluso un pequeño retraso puede provocar interrupciones importantes.",
     "subtitle": "Nuestro servicio NFO está diseñado para:",
     "benefits": {
-      "0": { "title": "Despacho el Mismo Día", "desc": "Garantizar el despacho el mismo día en el próximo vuelo disponible." },
-      "1": { "title": "Prevenir Paradas", "desc": "Prevenir costosas paradas de producción u operativas." },
-      "2": { "title": "Visibilidad en Tiempo Real", "desc": "Asegurar visibilidad en tiempo real durante todo el viaje." },
-      "3": { "title": "Transporte Global", "desc": "Proporcionar transporte confiable, seguro y totalmente conforme, en cualquier lugar del mundo." }
+      "0": {
+        "title": "Despacho el Mismo Día",
+        "desc": "Garantizar el despacho el mismo día en el próximo vuelo disponible."
+      },
+      "1": {
+        "title": "Prevenir Paradas",
+        "desc": "Prevenir costosas paradas de producción u operativas."
+      },
+      "2": {
+        "title": "Visibilidad en Tiempo Real",
+        "desc": "Asegurar visibilidad en tiempo real durante todo el viaje."
+      },
+      "3": {
+        "title": "Transporte Global",
+        "desc": "Proporcionar transporte confiable, seguro y totalmente conforme, en cualquier lugar del mundo."
+      }
     },
     "ctaTitle": "¿Listo para experimentar logística sin retrasos?",
     "ctaDesc": "Ponga su envío en el próximo vuelo disponible con nuestro servicio NFO 24/7."
@@ -709,22 +999,52 @@
     "title": "Desde la Solicitud hasta la Entrega  En Tiempo Récord",
     "description": "Un proceso simplificado de 5 pasos que asegura que su envío crítico llegue a su destino en el próximo vuelo disponible.",
     "steps": {
-      "0": { "title": "Reserva Inmediata y Planificación de Rutas", "desc": "Nuestro equipo de operaciones identifica la opción de vuelo más rápida disponible, comercial o de carga, a minutos de su solicitud." },
-      "1": { "title": "Recolección Prioritaria y Documentación", "desc": "Organizamos la recolección inmediata y verificamos todo el papeleo para un despacho sin problemas." },
-      "2": { "title": "Coordinación a Bordo o de Carga", "desc": "Dependiendo de la urgencia, reservamos el envío en el próximo vuelo o asignamos un mensajero a bordo para escolta directa." },
-      "3": { "title": "Actualizaciones en Tiempo Real", "desc": "Obtenga notificaciones de hitos en cada etapa, desde la aceptación hasta la llegada." },
-      "4": { "title": "Entrega Final Rápida", "desc": "Una vez aterrizado, manejamos el despacho de aduanas y entregamos su envío directamente a su destino." }
+      "0": {
+        "title": "Reserva Inmediata y Planificación de Rutas",
+        "desc": "Nuestro equipo de operaciones identifica la opción de vuelo más rápida disponible, comercial o de carga, a minutos de su solicitud."
+      },
+      "1": {
+        "title": "Recolección Prioritaria y Documentación",
+        "desc": "Organizamos la recolección inmediata y verificamos todo el papeleo para un despacho sin problemas."
+      },
+      "2": {
+        "title": "Coordinación a Bordo o de Carga",
+        "desc": "Dependiendo de la urgencia, reservamos el envío en el próximo vuelo o asignamos un mensajero a bordo para escolta directa."
+      },
+      "3": {
+        "title": "Actualizaciones en Tiempo Real",
+        "desc": "Obtenga notificaciones de hitos en cada etapa, desde la aceptación hasta la llegada."
+      },
+      "4": {
+        "title": "Entrega Final Rápida",
+        "desc": "Una vez aterrizado, manejamos el despacho de aduanas y entregamos su envío directamente a su destino."
+      }
     },
     "cta": "¿Listo para comenzar? Reserve su envío NFO ahora"
   },
   "NfoWhyChoose": {
     "title": "Por qué elegir OBC Care para envíos NFO",
     "features": {
-      "0": { "title": "Opción Global Más Rápida", "desc": "Su envío se prioriza en el próximo vuelo disponible, garantizado." },
-      "1": { "title": "Equipo de Operaciones 24/7", "desc": "Nuestros expertos en logística monitorean rutas globales y coordinan a través de zonas horarias para un servicio ininterrumpido." },
-      "2": { "title": "Soporte de Aduanas y Terrestre Integrado", "desc": "Gestionamos todos los despachos, manejo en aeropuertos y arreglos de última milla, sin traspasos ni retrasos." },
-      "3": { "title": "Actualizaciones en Tiempo Real", "desc": "Reciba alertas de estado inmediatas para cada hito hasta que se confirme la entrega." },
-      "4": { "title": "Manejo Flexible y Seguro", "desc": "Desde paquetes pequeños hasta carga de alto valor, cada envío se maneja con precisión y cuidado." }
+      "0": {
+        "title": "Opción Global Más Rápida",
+        "desc": "Su envío se prioriza en el próximo vuelo disponible, garantizado."
+      },
+      "1": {
+        "title": "Equipo de Operaciones 24/7",
+        "desc": "Nuestros expertos en logística monitorean rutas globales y coordinan a través de zonas horarias para un servicio ininterrumpido."
+      },
+      "2": {
+        "title": "Soporte de Aduanas y Terrestre Integrado",
+        "desc": "Gestionamos todos los despachos, manejo en aeropuertos y arreglos de última milla, sin traspasos ni retrasos."
+      },
+      "3": {
+        "title": "Actualizaciones en Tiempo Real",
+        "desc": "Reciba alertas de estado inmediatas para cada hito hasta que se confirme la entrega."
+      },
+      "4": {
+        "title": "Manejo Flexible y Seguro",
+        "desc": "Desde paquetes pequeños hasta carga de alto valor, cada envío se maneja con precisión y cuidado."
+      }
     },
     "highlightTitle": "Experimente la Solución de Carga Aérea Más Rápida",
     "highlightDesc": "Únase a miles de empresas que confían en OBC Care para sus envíos críticos. Ponga su carga en el próximo vuelo, garantizado."
@@ -734,9 +1054,18 @@
     "title": "Con acceso a miles de vuelos comerciales y de carga en todo el mundo, OBC Care asegura la ruta más rápida posible, en cualquier momento y lugar.",
     "description": "Nuestra torre de control opera 24/7 para monitorear rutas, clima, aduanas y disponibilidad de vuelos en tiempo real.",
     "stats": {
-      "flights": { "label": "Vuelos Diarios", "value": "1000+" },
-      "tower": { "label": "Torre de Control", "value": "24/7" },
-      "coverage": { "label": "Cobertura", "value": "Global" }
+      "flights": {
+        "label": "Vuelos Diarios",
+        "value": "1000+"
+      },
+      "tower": {
+        "label": "Torre de Control",
+        "value": "24/7"
+      },
+      "coverage": {
+        "label": "Cobertura",
+        "value": "Global"
+      }
     },
     "card1Title": "Acceso a Vuelos Mundiales",
     "card1Desc": "Miles de vuelos comerciales y de carga a su disposición, asegurando la ruta más rápida para sus envíos críticos.",
@@ -745,9 +1074,18 @@
     "footerTitle": "Alcance Global, Experiencia Local",
     "footerDesc": "Conectando sus envíos a las rutas de vuelo más rápidas del mundo",
     "coverage": {
-      "asia": { "region": "Asia", "cities": "Singapur, Hong Kong, Tokio, Dubái, Bombay" },
-      "europe": { "region": "Europa", "cities": "Londres, Fráncfort, Ámsterdam, París, Milán" },
-      "americas": { "region": "Américas", "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo" }
+      "asia": {
+        "region": "Asia",
+        "cities": "Singapur, Hong Kong, Tokio, Dubái, Bombay"
+      },
+      "europe": {
+        "region": "Europa",
+        "cities": "Londres, Fráncfort, Ámsterdam, París, Milán"
+      },
+      "americas": {
+        "region": "Américas",
+        "cities": "Nueva York, Los Ángeles, Miami, Toronto, São Paulo"
+      }
     }
   },
   "NfoJoin": {
@@ -764,7 +1102,11 @@
     },
     "ctaPrimary": "Aplicar como Socio",
     "ctaSecondary": "Contacte a Nuestro Equipo NFO",
-    "stats": { "value": "24/7", "label": "Operaciones", "desc": "Únase a un equipo que mueve envíos críticos las 24 horas" }
+    "stats": {
+      "value": "24/7",
+      "label": "Operaciones",
+      "desc": "Únase a un equipo que mueve envíos críticos las 24 horas"
+    }
   },
   "NfoCta": {
     "title": "Su Envío Urgente, en el Aire en Horas",
@@ -788,22 +1130,48 @@
     "title": "Sirviendo a Cada Sector con Precisión",
     "description": "Desde la aviación hasta la tecnología, entregamos envíos de misión crítica a través de industrias donde el tiempo de inactividad no es una opción.",
     "industries": {
-      "0": { "title": "Aviación y Piezas AOG", "desc": "Repuestos urgentes, herramientas y componentes despachados al instante para mantener los aviones en el aire y las operaciones ininterrumpidas." },
-      "1": { "title": "Automotriz y Manufactura", "desc": "Entregas justo a tiempo de piezas, moldes y herramientas que impulsan las líneas de producción y previenen paradas costosas." },
-      "2": { "title": "Electrónica y Semiconductores", "desc": "Logística segura y de alta prioridad para componentes frágiles y de alto valor en centros tecnológicos y de fabricación." },
-      "3": { "title": "Maquinaria Industrial e Ingeniería", "desc": "Piezas de maquinaria pesada o especializada transportadas con precisión para que su planta siga funcionando sin interrupciones." },
-      "4": { "title": "Tecnología y Equipo de Datos", "desc": "Desde servidores hasta prototipos, protegemos su hardware de alto valor con entrega discreta y programada y visibilidad total." },
-      "5": { "title": "Documentos de Alto Valor / Confidenciales", "desc": "Contratos críticos, prototipos y documentos sensibles manejados discretamente a través de transporte manual seguro y entrega directa." }
+      "0": {
+        "title": "Aviación y Piezas AOG",
+        "desc": "Repuestos urgentes, herramientas y componentes despachados al instante para mantener los aviones en el aire y las operaciones ininterrumpidas."
+      },
+      "1": {
+        "title": "Automotriz y Manufactura",
+        "desc": "Entregas justo a tiempo de piezas, moldes y herramientas que impulsan las líneas de producción y previenen paradas costosas."
+      },
+      "2": {
+        "title": "Electrónica y Semiconductores",
+        "desc": "Logística segura y de alta prioridad para componentes frágiles y de alto valor en centros tecnológicos y de fabricación."
+      },
+      "3": {
+        "title": "Maquinaria Industrial e Ingeniería",
+        "desc": "Piezas de maquinaria pesada o especializada transportadas con precisión para que su planta siga funcionando sin interrupciones."
+      },
+      "4": {
+        "title": "Tecnología y Equipo de Datos",
+        "desc": "Desde servidores hasta prototipos, protegemos su hardware de alto valor con entrega discreta y programada y visibilidad total."
+      },
+      "5": {
+        "title": "Documentos de Alto Valor / Confidenciales",
+        "desc": "Contratos críticos, prototipos y documentos sensibles manejados discretamente a través de transporte manual seguro y entrega directa."
+      }
     }
   },
   "IndustriesWhyPartner": {
     "badge": "Por qué asociarse con OBC Care en estas industrias",
     "title": "Construido para industrias que no pueden permitirse retrasos",
     "benefits": {
-      "0": { "title": "Presencia global con expertos en logística dedicados en zonas industriales clave" },
-      "1": { "title": "Operaciones 24/7 y respuesta inmediata para escenarios urgentes" },
-      "2": { "title": "Actualizaciones en tiempo real y transparencia total en cada hito" },
-      "3": { "title": "Soluciones a medida construidas para industrias con margen de error cero" }
+      "0": {
+        "title": "Presencia global con expertos en logística dedicados en zonas industriales clave"
+      },
+      "1": {
+        "title": "Operaciones 24/7 y respuesta inmediata para escenarios urgentes"
+      },
+      "2": {
+        "title": "Actualizaciones en tiempo real y transparencia total en cada hito"
+      },
+      "3": {
+        "title": "Soluciones a medida construidas para industrias con margen de error cero"
+      }
     },
     "stats": {
       "operations": "Operaciones",
@@ -836,33 +1204,73 @@
     "title": "Lo Que Manejamos",
     "description": "Logística de aviación integral para cada componente crítico y documento que su avión necesita.",
     "items": {
-      "0": { "title": "Piezas y Herramientas AOG" },
-      "1": { "title": "Componentes de Motor y Aviónica" },
-      "2": { "title": "Documentos y Certificados de Aeronaves" },
-      "3": { "title": "Suministros de Mantenimiento, Reparación y Revisión (MRO)" },
-      "4": { "title": "Equipos de Apoyo en Tierra y Accesorios" }
+      "0": {
+        "title": "Piezas y Herramientas AOG"
+      },
+      "1": {
+        "title": "Componentes de Motor y Aviónica"
+      },
+      "2": {
+        "title": "Documentos y Certificados de Aeronaves"
+      },
+      "3": {
+        "title": "Suministros de Mantenimiento, Reparación y Revisión (MRO)"
+      },
+      "4": {
+        "title": "Equipos de Apoyo en Tierra y Accesorios"
+      }
     }
   },
   "AviationHowItWorks": {
     "title": "Cómo Funciona",
     "description": "Un proceso simplificado de 5 pasos que asegura que sus piezas AOG lleguen a su avión en la ruta más rápida posible.",
     "steps": {
-      "0": { "title": "Respuesta Inmediata", "desc": "Una vez que recibimos su alerta AOG, nuestro equipo de operaciones se moviliza en minutos." },
-      "1": { "title": "Reserva del Próximo Vuelo", "desc": "Su envío se prioriza en la ruta disponible más rápida." },
-      "2": { "title": "Coordinación de Aduanas y Aeropuertos", "desc": "Manejamos todos los procedimientos aeroportuarios y aduaneros para un despacho rápido." },
-      "3": { "title": "Monitoreo en Tránsito", "desc": "Reciba actualizaciones en tiempo real desde la recogida hasta la entrega." },
-      "4": { "title": "Entrega Final", "desc": "El envío se entrega personalmente a su hangar, técnico o equipo de operaciones." }
+      "0": {
+        "title": "Respuesta Inmediata",
+        "desc": "Una vez que recibimos su alerta AOG, nuestro equipo de operaciones se moviliza en minutos."
+      },
+      "1": {
+        "title": "Reserva del Próximo Vuelo",
+        "desc": "Su envío se prioriza en la ruta disponible más rápida."
+      },
+      "2": {
+        "title": "Coordinación de Aduanas y Aeropuertos",
+        "desc": "Manejamos todos los procedimientos aeroportuarios y aduaneros para un despacho rápido."
+      },
+      "3": {
+        "title": "Monitoreo en Tránsito",
+        "desc": "Reciba actualizaciones en tiempo real desde la recogida hasta la entrega."
+      },
+      "4": {
+        "title": "Entrega Final",
+        "desc": "El envío se entrega personalmente a su hangar, técnico o equipo de operaciones."
+      }
     }
   },
   "AviationWhyChoose": {
     "title": "Por Qué los Líderes de Aviación Eligen OBC Care",
     "description": "Confiado por profesionales de la aviación en todo el mundo para la logística crítica de AOG.",
     "benefits": {
-      "0": { "title": "Escritorio AOG 24/7", "desc": "Siempre de guardia para emergencias críticas de aviación." },
-      "1": { "title": "Opciones de Próximo Vuelo y a Bordo", "desc": "Elegimos la ruta más rápida disponible  NFO o transporte manual." },
-      "2": { "title": "Mensajeros Aprobados por Aerolíneas", "desc": "Nuestro equipo está capacitado en el manejo de carga aérea y operaciones en la zona de operaciones." },
-      "3": { "title": "Cumplimiento Total y Documentación", "desc": "Aseguramos que todos los conocimientos de embarque, certificados y documentos de aduana sean correctos y estén listos." },
-      "4": { "title": "Visibilidad de Extremo a Extremo", "desc": "Rastree cada movimiento con comunicación en tiempo real." }
+      "0": {
+        "title": "Escritorio AOG 24/7",
+        "desc": "Siempre de guardia para emergencias críticas de aviación."
+      },
+      "1": {
+        "title": "Opciones de Próximo Vuelo y a Bordo",
+        "desc": "Elegimos la ruta más rápida disponible  NFO o transporte manual."
+      },
+      "2": {
+        "title": "Mensajeros Aprobados por Aerolíneas",
+        "desc": "Nuestro equipo está capacitado en el manejo de carga aérea y operaciones en la zona de operaciones."
+      },
+      "3": {
+        "title": "Cumplimiento Total y Documentación",
+        "desc": "Aseguramos que todos los conocimientos de embarque, certificados y documentos de aduana sean correctos y estén listos."
+      },
+      "4": {
+        "title": "Visibilidad de Extremo a Extremo",
+        "desc": "Rastree cada movimiento con comunicación en tiempo real."
+      }
     }
   },
   "AviationCta": {
@@ -893,36 +1301,73 @@
     "title": "Lo Que Manejamos",
     "description": "Logística integral para cada componente crítico que su línea de producción necesita.",
     "items": {
-      "0": { "title": "Repuestos y Componentes Automotrices" },
-      "1": { "title": "Herramientas, Matrices y Moldes" },
-      "2": { "title": "Materiales de Prototipo y Unidades de Prueba" },
-      "3": { "title": "Equipos de Línea de Montaje" },
-      "4": { "title": "Documentos Técnicos Urgentes" }
+      "0": {
+        "title": "Repuestos y Componentes Automotrices"
+      },
+      "1": {
+        "title": "Herramientas, Matrices y Moldes"
+      },
+      "2": {
+        "title": "Materiales de Prototipo y Unidades de Prueba"
+      },
+      "3": {
+        "title": "Equipos de Línea de Montaje"
+      },
+      "4": {
+        "title": "Documentos Técnicos Urgentes"
+      }
     }
   },
   "AutomotiveHowItWorks": {
     "title": "Cómo Funciona",
     "description": "Un proceso optimizado de 5 pasos que asegura que sus materiales críticos lleguen a su línea de producción a tiempo, cada vez.",
     "steps": {
-      "0": { "title": "Evaluación Rápida", "desc": "Analizamos su ruta, opciones de vuelo y ventana de entrega en minutos." },
-      "1": { "title": "Próximo Vuelo o Transporte Directo", "desc": "Su envío se mueve inmediatamente  por aire o vehículo terrestre dedicado." },
-      "2": { "title": "Aduanas y Documentación", "desc": "Manejamos todos los trámites de importación/exportación para transiciones fluidas." },
-      "3": { "title": "Actualizaciones en Tiempo Real", "desc": "Manténgase actualizado con cada hito desde el despacho hasta la entrega." },
-      "4": { "title": "Entrega Directa", "desc": "El envío se entrega personalmente a su planta o técnico." }
+      "0": {
+        "title": "Evaluación Rápida",
+        "desc": "Analizamos su ruta, opciones de vuelo y ventana de entrega en minutos."
+      },
+      "1": {
+        "title": "Próximo Vuelo o Transporte Directo",
+        "desc": "Su envío se mueve inmediatamente  por aire o vehículo terrestre dedicado."
+      },
+      "2": {
+        "title": "Aduanas y Documentación",
+        "desc": "Manejamos todos los trámites de importación/exportación para transiciones fluidas."
+      },
+      "3": {
+        "title": "Actualizaciones en Tiempo Real",
+        "desc": "Manténgase actualizado con cada hito desde el despacho hasta la entrega."
+      },
+      "4": {
+        "title": "Entrega Directa",
+        "desc": "El envío se entrega personalmente a su planta o técnico."
+      }
     }
   },
   "AutomotiveWhyChoose": {
     "title": "Por Qué los Líderes Automotrices Eligen OBC Care",
     "description": "De confianza por fabricantes de automóviles en todo el mundo para logística crítica de la cadena de suministro.",
     "benefits": {
-      "0": { "title": "Compromiso de Cero Inactividad", "desc": "Aseguramos que no haya paradas de producción debido a retrasos logísticos." },
-      "1": { "title": "Flexibilidad Multimodal", "desc": "Opciones de aire, carretera y mensajería a bordo (OBC) para máxima velocidad." },
-      "2": { "title": "Control 24/7", "desc": "Coordinación global continua y actualizaciones." },
-      "3": { "title": "Transparencia Total", "desc": "Visibilidad en tiempo real y confirmación de entrega." }
+      "0": {
+        "title": "Compromiso de Cero Inactividad",
+        "desc": "Aseguramos que no haya paradas de producción debido a retrasos logísticos."
+      },
+      "1": {
+        "title": "Flexibilidad Multimodal",
+        "desc": "Opciones de aire, carretera y mensajería a bordo (OBC) para máxima velocidad."
+      },
+      "2": {
+        "title": "Control 24/7",
+        "desc": "Coordinación global continua y actualizaciones."
+      },
+      "3": {
+        "title": "Transparencia Total",
+        "desc": "Visibilidad en tiempo real y confirmación de entrega."
+      }
     },
     "bottomCard": {
-        "title": "Su envío, nuestra misión  24/7, en todo el mundo.",
-        "desc": "De confianza por fabricantes de automóviles en todo el mundo para logística crítica de la cadena de suministro."
+      "title": "Su envío, nuestra misión  24/7, en todo el mundo.",
+      "desc": "De confianza por fabricantes de automóviles en todo el mundo para logística crítica de la cadena de suministro."
     }
   },
   "AutomotiveMission": {
@@ -958,33 +1403,73 @@
     "title": "Lo Que Manejamos",
     "description": "Logística integral para cada componente sensible que su producción e I+D necesita.",
     "items": {
-      "0": { "title": "Obleas de Semiconductores y Microchips" },
-      "1": { "title": "Placas de Circuito y Módulos Electrónicos" },
-      "2": { "title": "Prototipos y Equipos de I+D" },
-      "3": { "title": "Componentes Manejados en Sala Limpia" },
-      "4": { "title": "Portadores de Datos Sensibles y Dispositivos Confidenciales" }
+      "0": {
+        "title": "Obleas de Semiconductores y Microchips"
+      },
+      "1": {
+        "title": "Placas de Circuito y Módulos Electrónicos"
+      },
+      "2": {
+        "title": "Prototipos y Equipos de I+D"
+      },
+      "3": {
+        "title": "Componentes Manejados en Sala Limpia"
+      },
+      "4": {
+        "title": "Portadores de Datos Sensibles y Dispositivos Confidenciales"
+      }
     }
   },
   "ElectronicsHowItWorks": {
     "title": "Cómo Funciona",
     "description": "Un proceso optimizado de 5 pasos que asegura que sus componentes sensibles lleguen a su instalación de manera segura y a tiempo.",
     "steps": {
-      "0": { "title": "Coordinación Inmediata", "desc": "Nuestra torre de control identifica la ruta más rápida y segura disponible." },
-      "1": { "title": "Embalaje y Manejo Seguro", "desc": "Los componentes se preparan cumpliendo con los estándares ESD y de sala limpia." },
-      "2": { "title": "Opción de Próximo Vuelo / Transporte Manual", "desc": "Los envíos vuelan en el siguiente vuelo disponible o son escoltados por un Mensajero a Bordo (OBC)." },
-      "3": { "title": "Aduanas y Cumplimiento", "desc": "Todos los documentos de exportación, licencias y declaraciones se gestionan sin problemas." },
-      "4": { "title": "Entrega Directa", "desc": "Entrega rápida, segura y verificada a su instalación de producción o I+D." }
+      "0": {
+        "title": "Coordinación Inmediata",
+        "desc": "Nuestra torre de control identifica la ruta más rápida y segura disponible."
+      },
+      "1": {
+        "title": "Embalaje y Manejo Seguro",
+        "desc": "Los componentes se preparan cumpliendo con los estándares ESD y de sala limpia."
+      },
+      "2": {
+        "title": "Opción de Próximo Vuelo / Transporte Manual",
+        "desc": "Los envíos vuelan en el siguiente vuelo disponible o son escoltados por un Mensajero a Bordo (OBC)."
+      },
+      "3": {
+        "title": "Aduanas y Cumplimiento",
+        "desc": "Todos los documentos de exportación, licencias y declaraciones se gestionan sin problemas."
+      },
+      "4": {
+        "title": "Entrega Directa",
+        "desc": "Entrega rápida, segura y verificada a su instalación de producción o I+D."
+      }
     }
   },
   "ElectronicsWhyChoose": {
     "title": "Por Qué los Líderes Tecnológicos Confían en OBC Care",
     "description": "De confianza por empresas de electrónica y semiconductores en todo el mundo para logística de precisión.",
     "benefits": {
-      "0": { "title": "Manejo Seguro ESD", "desc": "Profesionales capacitados manejan materiales sensibles bajo estrictos estándares antiestáticos." },
-      "1": { "title": "Experiencia de Tiempo Crítico", "desc": "Diseñado para industrias donde cada minuto cuenta." },
-      "2": { "title": "Cadena de Custodia Segura", "desc": "Desde la recogida hasta la entrega, su envío permanece totalmente rastreable." },
-      "3": { "title": "Control 24/7", "desc": "Monitoreo global y comunicación en tiempo real en cada hito." },
-      "4": { "title": "Cumplimiento Normativo", "desc": "Cumplimiento total de las regulaciones de exportación, ITAR y logística de semiconductores." }
+      "0": {
+        "title": "Manejo Seguro ESD",
+        "desc": "Profesionales capacitados manejan materiales sensibles bajo estrictos estándares antiestáticos."
+      },
+      "1": {
+        "title": "Experiencia de Tiempo Crítico",
+        "desc": "Diseñado para industrias donde cada minuto cuenta."
+      },
+      "2": {
+        "title": "Cadena de Custodia Segura",
+        "desc": "Desde la recogida hasta la entrega, su envío permanece totalmente rastreable."
+      },
+      "3": {
+        "title": "Control 24/7",
+        "desc": "Monitoreo global y comunicación en tiempo real en cada hito."
+      },
+      "4": {
+        "title": "Cumplimiento Normativo",
+        "desc": "Cumplimiento total de las regulaciones de exportación, ITAR y logística de semiconductores."
+      }
     }
   },
   "ElectronicsMission": {
@@ -1015,33 +1500,73 @@
     "title": "Lo Que Manejamos",
     "description": "Logística integral para cada componente industrial que sus operaciones necesitan.",
     "items": {
-      "0": { "title": "Piezas y Equipos de Maquinaria Pesada" },
-      "1": { "title": "Componentes de Mantenimiento, Reparación y Operaciones (MRO)" },
-      "2": { "title": "Herramientas Industriales e Instrumentos de Calibración" },
-      "3": { "title": "Reemplazos de Línea de Fabricación" },
-      "4": { "title": "Componentes de Gran Tamaño o Diseñados a Medida" }
+      "0": {
+        "title": "Piezas y Equipos de Maquinaria Pesada"
+      },
+      "1": {
+        "title": "Componentes de Mantenimiento, Reparación y Operaciones (MRO)"
+      },
+      "2": {
+        "title": "Herramientas Industriales e Instrumentos de Calibración"
+      },
+      "3": {
+        "title": "Reemplazos de Línea de Fabricación"
+      },
+      "4": {
+        "title": "Componentes de Gran Tamaño o Diseñados a Medida"
+      }
     }
   },
   "IndustrialHowItWorks": {
     "title": "Cómo Funciona",
     "description": "Un proceso simplificado de 5 pasos que asegura que sus componentes industriales lleguen a sus instalaciones de forma segura y a tiempo.",
     "steps": {
-      "0": { "title": "Coordinación Inmediata", "desc": "Nuestro equipo de control logístico identifica la ruta más rápida y el método de transporte óptimo." },
-      "1": { "title": "Embalaje y Manejo Especializado", "desc": "La carga industrial se asegura con embalajes resistentes a vibraciones, a prueba de humedad o personalizados según sea necesario." },
-      "2": { "title": "Próximo Vuelo de Salida / Opción Hand-Carry", "desc": "Las piezas urgentes se envían en el próximo vuelo disponible o son escoltadas por un Mensajero a Bordo (OBC)." },
-      "3": { "title": "Aduanas y Cumplimiento", "desc": "Manejamos todos los documentos comerciales y aseguramos el cumplimiento total de los estándares de importación/exportación y seguridad." },
-      "4": { "title": "Entrega Directa", "desc": "Entrega rápida y verificada en su planta, sitio de trabajo o instalación de ingeniería." }
+      "0": {
+        "title": "Coordinación Inmediata",
+        "desc": "Nuestro equipo de control logístico identifica la ruta más rápida y el método de transporte óptimo."
+      },
+      "1": {
+        "title": "Embalaje y Manejo Especializado",
+        "desc": "La carga industrial se asegura con embalajes resistentes a vibraciones, a prueba de humedad o personalizados según sea necesario."
+      },
+      "2": {
+        "title": "Próximo Vuelo de Salida / Opción Hand-Carry",
+        "desc": "Las piezas urgentes se envían en el próximo vuelo disponible o son escoltadas por un Mensajero a Bordo (OBC)."
+      },
+      "3": {
+        "title": "Aduanas y Cumplimiento",
+        "desc": "Manejamos todos los documentos comerciales y aseguramos el cumplimiento total de los estándares de importación/exportación y seguridad."
+      },
+      "4": {
+        "title": "Entrega Directa",
+        "desc": "Entrega rápida y verificada en su planta, sitio de trabajo o instalación de ingeniería."
+      }
     }
   },
   "IndustrialWhyChoose": {
     "title": "Por Qué los Fabricantes Confían en OBC Care",
     "description": "De confianza por fabricantes industriales en todo el mundo para logística confiable.",
     "benefits": {
-      "0": { "title": "Compromiso de Cero Retrasos", "description": "Actuamos rápido para mantener su producción en movimiento." },
-      "1": { "title": "Manejo Experto", "description": "Mensajeros capacitados en el manejo de bienes industriales y de ingeniería de alto valor." },
-      "2": { "title": "Cobertura Global", "description": "Desde pisos de fábrica hasta centros de construcción, entregamos en todo el mundo." },
-      "3": { "title": "Rastreo 24/7", "description": "Visibilidad en tiempo real en cada etapa del transporte." },
-      "4": { "title": "Seguridad Primero", "description": "Cumplimiento con todos los estándares de manejo, etiquetado y seguridad." }
+      "0": {
+        "title": "Compromiso de Cero Retrasos",
+        "description": "Actuamos rápido para mantener su producción en movimiento."
+      },
+      "1": {
+        "title": "Manejo Experto",
+        "description": "Mensajeros capacitados en el manejo de bienes industriales y de ingeniería de alto valor."
+      },
+      "2": {
+        "title": "Cobertura Global",
+        "description": "Desde pisos de fábrica hasta centros de construcción, entregamos en todo el mundo."
+      },
+      "3": {
+        "title": "Rastreo 24/7",
+        "description": "Visibilidad en tiempo real en cada etapa del transporte."
+      },
+      "4": {
+        "title": "Seguridad Primero",
+        "description": "Cumplimiento con todos los estándares de manejo, etiquetado y seguridad."
+      }
     },
     "imageCardTitle": "Su envío, nuestra misión  24/7, en todo el mundo.",
     "imageCardDesc": "De confianza por fabricantes industriales en todo el mundo para logística confiable."
@@ -1074,33 +1599,73 @@
     "title": "Lo Que Manejamos",
     "description": "Logística integral para cada componente tecnológico que sus operaciones necesitan.",
     "items": {
-      "0": { "title": "Servidores, Redes y Dispositivos de Almacenamiento" },
-      "1": { "title": "Laptops, Estaciones de Trabajo y Hardware de TI de Alto Valor" },
-      "2": { "title": "Unidades de Respaldo de Datos y Equipos Digitales Sensibles" },
-      "3": { "title": "Instrumentos de Prueba, Calibración e Investigación" },
-      "4": { "title": "Activos Tecnológicos Confidenciales o Encriptados" }
+      "0": {
+        "title": "Servidores, Redes y Dispositivos de Almacenamiento"
+      },
+      "1": {
+        "title": "Laptops, Estaciones de Trabajo y Hardware de TI de Alto Valor"
+      },
+      "2": {
+        "title": "Unidades de Respaldo de Datos y Equipos Digitales Sensibles"
+      },
+      "3": {
+        "title": "Instrumentos de Prueba, Calibración e Investigación"
+      },
+      "4": {
+        "title": "Activos Tecnológicos Confidenciales o Encriptados"
+      }
     }
   },
   "TechnologyHowItWorks": {
     "title": "Cómo Funciona",
     "description": "Un proceso simplificado de 5 pasos que asegura que su tecnología llegue a sus instalaciones de forma segura y a tiempo.",
     "steps": {
-      "0": { "title": "Respuesta Rápida y Coordinación", "desc": "Nuestro centro de control 24/7 organiza la recogida inmediata y la ruta más rápida en todo el mundo." },
-      "1": { "title": "Manejo y Embalaje Seguro", "desc": "Embalaje seguro contra descargas electrostáticas (ESD), a prueba de golpes y protegido contra la humedad para electrónica sensible." },
-      "2": { "title": "Próximo Vuelo de Salida / Servicio Hand-Carry", "desc": "Entregas urgentes escoltadas por Mensajeros a Bordo (OBC) capacitados para máxima seguridad." },
-      "3": { "title": "Aduanas y Cumplimiento ITAR", "desc": "Gestionamos todos los requisitos regulatorios y de documentación para envíos tecnológicos internacionales." },
-      "4": { "title": "Entrega Verificada", "desc": "Entrega puerta a puerta con prueba de recepción y seguimiento de cadena de custodia." }
+      "0": {
+        "title": "Respuesta Rápida y Coordinación",
+        "desc": "Nuestro centro de control 24/7 organiza la recogida inmediata y la ruta más rápida en todo el mundo."
+      },
+      "1": {
+        "title": "Manejo y Embalaje Seguro",
+        "desc": "Embalaje seguro contra descargas electrostáticas (ESD), a prueba de golpes y protegido contra la humedad para electrónica sensible."
+      },
+      "2": {
+        "title": "Próximo Vuelo de Salida / Servicio Hand-Carry",
+        "desc": "Entregas urgentes escoltadas por Mensajeros a Bordo (OBC) capacitados para máxima seguridad."
+      },
+      "3": {
+        "title": "Aduanas y Cumplimiento ITAR",
+        "desc": "Gestionamos todos los requisitos regulatorios y de documentación para envíos tecnológicos internacionales."
+      },
+      "4": {
+        "title": "Entrega Verificada",
+        "desc": "Entrega puerta a puerta con prueba de recepción y seguimiento de cadena de custodia."
+      }
     }
   },
   "TechnologyWhyChoose": {
     "title": "Por Qué los Líderes Tecnológicos Confían en OBC Care",
     "description": "De confianza por empresas de tecnología en todo el mundo para logística segura.",
     "benefits": {
-      "0": { "title": "Cero Compromiso de Datos", "description": "Estricta confidencialidad y transferencias selladas para activos de TI sensibles." },
-      "1": { "title": "Soporte de Implementación Rápida", "description": "Ideal para despliegues tecnológicos urgentes o reemplazos de equipos." },
-      "2": { "title": "Rastreo en Tiempo Real", "description": "Monitoreo transparente desde el origen hasta el destino." },
-      "3": { "title": "Alcance Global", "description": "Experiencia en centros tecnológicos, centros de datos e instalaciones de I+D en todo el mundo." },
-      "4": { "title": "Mensajeros Especializados", "description": "Profesionales capacitados en el manejo y aseguramiento de electrónica digital y de alto valor." }
+      "0": {
+        "title": "Cero Compromiso de Datos",
+        "description": "Estricta confidencialidad y transferencias selladas para activos de TI sensibles."
+      },
+      "1": {
+        "title": "Soporte de Implementación Rápida",
+        "description": "Ideal para despliegues tecnológicos urgentes o reemplazos de equipos."
+      },
+      "2": {
+        "title": "Rastreo en Tiempo Real",
+        "description": "Monitoreo transparente desde el origen hasta el destino."
+      },
+      "3": {
+        "title": "Alcance Global",
+        "description": "Experiencia en centros tecnológicos, centros de datos e instalaciones de I+D en todo el mundo."
+      },
+      "4": {
+        "title": "Mensajeros Especializados",
+        "description": "Profesionales capacitados en el manejo y aseguramiento de electrónica digital y de alto valor."
+      }
     }
   },
   "TechnologyCta": {
@@ -1128,34 +1693,76 @@
     "title": "Lo Que Manejamos",
     "description": "Entrega segura integral para cada tipo de documento confidencial.",
     "items": {
-      "0": { "title": "Documentos Legales y Corporativos" },
-      "1": { "title": "Archivos Bancarios, Financieros y de Auditoría" },
-      "2": { "title": "Papeles Diplomáticos o Gubernamentales" },
-      "3": { "title": "Propiedad Intelectual y Secretos Comerciales" },
-      "4": { "title": "Registros Académicos, Científicos y de Investigación" },
-      "5": { "title": "Medios de Datos Físicos Sellados o Notariados" }
+      "0": {
+        "title": "Documentos Legales y Corporativos"
+      },
+      "1": {
+        "title": "Archivos Bancarios, Financieros y de Auditoría"
+      },
+      "2": {
+        "title": "Papeles Diplomáticos o Gubernamentales"
+      },
+      "3": {
+        "title": "Propiedad Intelectual y Secretos Comerciales"
+      },
+      "4": {
+        "title": "Registros Académicos, Científicos y de Investigación"
+      },
+      "5": {
+        "title": "Medios de Datos Físicos Sellados o Notariados"
+      }
     }
   },
   "ConfidentialHowItWorks": {
     "title": "Cómo Funciona",
     "description": "Un proceso simplificado de 5 pasos que asegura que su documentos confidenciales lleguen a su destino de forma segura y protegida.",
     "steps": {
-      "0": { "title": "Respuesta Inmediata", "desc": "Tras la consulta, nuestro equipo de operaciones organiza un mensajero hand-carry en minutos." },
-      "1": { "title": "Recogida Verificada", "desc": "Los documentos se recogen personalmente y se sellan para tránsito directo." },
-      "2": { "title": "Escolta Hand-Carry", "desc": "Un Mensajero a Bordo (OBC) dedicado viaja con sus documentos en todo momento  sin manipulación de terceros." },
-      "3": { "title": "Rastreo en Tiempo Real", "desc": "Recibe actualizaciones de hitos desde la recogida hasta la confirmación de entrega." },
-      "4": { "title": "Prueba de Entrega", "desc": "La confirmación de entrega firmada y con marca de tiempo garantiza la responsabilidad total." }
+      "0": {
+        "title": "Respuesta Inmediata",
+        "desc": "Tras la consulta, nuestro equipo de operaciones organiza un mensajero hand-carry en minutos."
+      },
+      "1": {
+        "title": "Recogida Verificada",
+        "desc": "Los documentos se recogen personalmente y se sellan para tránsito directo."
+      },
+      "2": {
+        "title": "Escolta Hand-Carry",
+        "desc": "Un Mensajero a Bordo (OBC) dedicado viaja con sus documentos en todo momento  sin manipulación de terceros."
+      },
+      "3": {
+        "title": "Rastreo en Tiempo Real",
+        "desc": "Recibe actualizaciones de hitos desde la recogida hasta la confirmación de entrega."
+      },
+      "4": {
+        "title": "Prueba de Entrega",
+        "desc": "La confirmación de entrega firmada y con marca de tiempo garantiza la responsabilidad total."
+      }
     }
   },
   "ConfidentialWhyChoose": {
     "title": "Por Qué los Clientes Confían en OBC Care para Entregas Confidenciales",
     "description": "Confiado por profesionales en todo el mundo para la entrega segura de documentos.",
     "benefits": {
-      "0": { "title": "Discreción Absoluta", "description": "Los detalles de su envío permanecen confidenciales en cada etapa." },
-      "1": { "title": "Solo Hand-Carry Directo", "description": "Sin bodegas de carga o logística compartida  solo entrega persona a persona." },
-      "2": { "title": "Disponibilidad 24/7", "description": "Coordinación global para envíos legales, financieros o diplomáticos urgentes." },
-      "3": { "title": "Cadena de Custodia Completa", "description": "Cada entrega está documentada y verificada." },
-      "4": { "title": "Confiado por Profesionales", "description": "Elegido por bufetes de abogados, instituciones financieras y corporaciones en todo el mundo." }
+      "0": {
+        "title": "Discreción Absoluta",
+        "description": "Los detalles de su envío permanecen confidenciales en cada etapa."
+      },
+      "1": {
+        "title": "Solo Hand-Carry Directo",
+        "description": "Sin bodegas de carga o logística compartida  solo entrega persona a persona."
+      },
+      "2": {
+        "title": "Disponibilidad 24/7",
+        "description": "Coordinación global para envíos legales, financieros o diplomáticos urgentes."
+      },
+      "3": {
+        "title": "Cadena de Custodia Completa",
+        "description": "Cada entrega está documentada y verificada."
+      },
+      "4": {
+        "title": "Confiado por Profesionales",
+        "description": "Elegido por bufetes de abogados, instituciones financieras y corporaciones en todo el mundo."
+      }
     }
   },
   "ConfidentialCta": {
@@ -1188,20 +1795,44 @@
       "realTimeTracking": "Rastreo en Tiempo Real"
     },
     "imageOverlay": {
-      "network": { "title": "Red Extensa", "desc": "Conectando negocios en todo el mundo." },
-      "secure": { "title": "Confiable y Seguro", "desc": "Su envío está seguro con nosotros." }
+      "network": {
+        "title": "Red Extensa",
+        "desc": "Conectando negocios en todo el mundo."
+      },
+      "secure": {
+        "title": "Confiable y Seguro",
+        "desc": "Su envío está seguro con nosotros."
+      }
     }
   },
   "AboutWhyChooseUs": {
     "label": "Características",
     "title": "Por Qué Elegirnos",
     "items": {
-      "0": { "title": "Alcance Global", "description": "Conectándolo con más de 200 países en todo el mundo con nuestra extensa red logística." },
-      "1": { "title": "Entrega 100% Segura", "description": "Sus envíos se manejan con el más alto nivel de seguridad y cuidado desde la recolección hasta la entrega." },
-      "2": { "title": "Entrega Más Rápida", "description": "Priorizamos la velocidad y la eficiencia para garantizar que sus envíos urgentes lleguen a tiempo, siempre." },
-      "3": { "title": "Equipo Experto", "description": "Nuestro equipo dedicado de profesionales de la logística está listo para manejar sus requisitos más complejos." },
-      "4": { "title": "Puerta a Puerta", "description": "Servicio puerta a puerta sin problemas, gestionando cada paso de la cadena logística por usted." },
-      "5": { "title": "Soporte 24/7", "description": "Atención al cliente las 24 horas para mantenerlo informado y ayudarlo con cualquier consulta." }
+      "0": {
+        "title": "Alcance Global",
+        "description": "Conectándolo con más de 200 países en todo el mundo con nuestra extensa red logística."
+      },
+      "1": {
+        "title": "Entrega 100% Segura",
+        "description": "Sus envíos se manejan con el más alto nivel de seguridad y cuidado desde la recolección hasta la entrega."
+      },
+      "2": {
+        "title": "Entrega Más Rápida",
+        "description": "Priorizamos la velocidad y la eficiencia para garantizar que sus envíos urgentes lleguen a tiempo, siempre."
+      },
+      "3": {
+        "title": "Equipo Experto",
+        "description": "Nuestro equipo dedicado de profesionales de la logística está listo para manejar sus requisitos más complejos."
+      },
+      "4": {
+        "title": "Puerta a Puerta",
+        "description": "Servicio puerta a puerta sin problemas, gestionando cada paso de la cadena logística por usted."
+      },
+      "5": {
+        "title": "Soporte 24/7",
+        "description": "Atención al cliente las 24 horas para mantenerlo informado y ayudarlo con cualquier consulta."
+      }
     }
   },
   "AboutMissionVision": {
@@ -1218,9 +1849,18 @@
     "title": "Hacemos los Servicios Más Fuertes del Mundo",
     "description": "Experimente la cima de la excelencia logística con nuestros servicios de clase mundial diseñados para superar sus expectativas.",
     "stats": {
-      "0": { "title": "Servicios de Confianza", "description": "Soluciones confiables con las que puede contar." },
-      "1": { "title": "100% Seguro", "description": "La seguridad es nuestra máxima prioridad." },
-      "2": { "title": "Alcance Global", "description": "Conectándole con el mundo." }
+      "0": {
+        "title": "Servicios de Confianza",
+        "description": "Soluciones confiables con las que puede contar."
+      },
+      "1": {
+        "title": "100% Seguro",
+        "description": "La seguridad es nuestra máxima prioridad."
+      },
+      "2": {
+        "title": "Alcance Global",
+        "description": "Conectándole con el mundo."
+      }
     }
   },
   "AboutTeam": {
@@ -1292,9 +1932,18 @@
     "title": "Formulario de Consulta",
     "description": "Complete el siguiente formulario y nos pondremos en contacto con usted en cuestión de minutos. Nuestro equipo está disponible las 24 horas para ayudarle.",
     "contactCards": {
-      "support": { "title": "Soporte 24/7", "desc": "Disponible todo el día" },
-      "response": { "title": "Respuesta Rápida", "desc": "Respuesta en minutos" },
-      "direct": { "title": "Contacto Directo", "desc": "Llámenos en cualquier momento" }
+      "support": {
+        "title": "Soporte 24/7",
+        "desc": "Disponible todo el día"
+      },
+      "response": {
+        "title": "Respuesta Rápida",
+        "desc": "Respuesta en minutos"
+      },
+      "direct": {
+        "title": "Contacto Directo",
+        "desc": "Llámenos en cualquier momento"
+      }
     },
     "howItWorks": {
       "title": "Cómo Funciona",
@@ -1338,10 +1987,22 @@
     "whyBecomeObc": {
       "title": "Por Qué Debería Convertirse en un Mensajero a Bordo",
       "items": {
-        "0": { "title": "Cada Día Es una Nueva Aventura", "description": "No hay dos días iguales. Una misión puede llevarlo por toda Europa entregando maquinaria crítica; la siguiente puede hacer que lleve documentos urgentes en un vuelo nacional. Es una carrera construida sobre la emoción y el propósito." },
-        "1": { "title": "Piense Rápido, Actúe Más Rápido", "description": "Los retrasos ocurren. Los planes cambian. Los desafíos aparecen sin previo aviso. Los grandes mensajeros se adaptan rápidamente, mantienen la calma bajo presión y siempre encuentran una solución. Si prospera en entornos de ritmo rápido, este rol es para usted." },
-        "2": { "title": "Un Mundo de Experiencias", "description": "Cada asignación le presenta nuevos lugares, culturas y personas. No es solo un trabajo; es una puerta de entrada a la exposición global, el crecimiento personal y conexiones profesionales significativas." },
-        "3": { "title": "Nunca un Día Aburrido", "description": "Cada envío cuenta una historia diferente. Desde piezas de aviones hasta muestras médicas y documentos legales urgentes, cada entrega es única, y también lo es cada desafío que supera." }
+        "0": {
+          "title": "Cada Día Es una Nueva Aventura",
+          "description": "No hay dos días iguales. Una misión puede llevarlo por toda Europa entregando maquinaria crítica; la siguiente puede hacer que lleve documentos urgentes en un vuelo nacional. Es una carrera construida sobre la emoción y el propósito."
+        },
+        "1": {
+          "title": "Piense Rápido, Actúe Más Rápido",
+          "description": "Los retrasos ocurren. Los planes cambian. Los desafíos aparecen sin previo aviso. Los grandes mensajeros se adaptan rápidamente, mantienen la calma bajo presión y siempre encuentran una solución. Si prospera en entornos de ritmo rápido, este rol es para usted."
+        },
+        "2": {
+          "title": "Un Mundo de Experiencias",
+          "description": "Cada asignación le presenta nuevos lugares, culturas y personas. No es solo un trabajo; es una puerta de entrada a la exposición global, el crecimiento personal y conexiones profesionales significativas."
+        },
+        "3": {
+          "title": "Nunca un Día Aburrido",
+          "description": "Cada envío cuenta una historia diferente. Desde piezas de aviones hasta muestras médicas y documentos legales urgentes, cada entrega es única, y también lo es cada desafío que supera."
+        }
       }
     },
     "cta": {
