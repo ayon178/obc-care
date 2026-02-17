@@ -11,6 +11,7 @@ import {
   Factory,
   Package,
 } from "lucide-react"
+import { SuccessModal } from "@/components/shared/success-modal"
 
 export interface QuoteFormData {
   name: string
@@ -45,6 +46,7 @@ const QuoteForm: React.FC = () => {
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
   const [analysis, setAnalysis] = useState<QuoteAnalysis | null>(null)
 
   const handleChange = (
@@ -61,12 +63,35 @@ const QuoteForm: React.FC = () => {
     setIsSubmitting(true)
     setAnalysis(null)
 
-    // Simulate minimum loading time for UX + API call
     try {
-      // In a real app, you'd submit to your backend here.
-      // We will assume success and then run the AI analysis.
+      const response = await fetch("https://formspree.io/f/mwvnbyeg", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setShowSuccess(true)
+        setFormData({
+          name: "",
+          phone: "",
+          company: "",
+          email: "",
+          inquiryType: "",
+          industry: "",
+          dimensions: "",
+          weight: "",
+          message: "",
+        })
+      } else {
+        alert("Something went wrong. Please try again.")
+      }
     } catch (error) {
       console.error("Submission failed", error)
+      alert("Something went wrong. Please check your internet connection.")
     } finally {
       setIsSubmitting(false)
     }
@@ -74,6 +99,13 @@ const QuoteForm: React.FC = () => {
 
   return (
     <div className="w-full bg-transparent border-r-2 border-primary/10 flex flex-col justify-center min-h-screen relative">
+      <SuccessModal
+        isOpen={showSuccess}
+        onClose={() => setShowSuccess(false)}
+        title="Quote Request Sent!"
+        description="We have received your quote request. Our team will review the details and get back to you with a tailored logistics plan shortly."
+      />
+
       <div className="max-w-2xl mx-auto w-full">
         {/* Header Section */}
         <div className="mb-10 pt-10 px-10">
@@ -89,7 +121,7 @@ const QuoteForm: React.FC = () => {
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 lg:p-10 rounded-2xl shadow-sm border border-gray-100 mx-6">
-          
+
           {/* Row 1: Name */}
           <div className="space-y-2">
             <label className="flex items-center gap-2 text-base font-semibold text-slate-700">

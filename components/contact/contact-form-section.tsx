@@ -3,9 +3,43 @@
 import { motion } from "framer-motion"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { useState } from "react"
+import { SuccessModal } from "@/components/shared/success-modal"
+import { toast } from "sonner" // Assuming sonner is available based on file list, or I will use a simple alert if not. File list showed sonner.tsx in ui folder.
 
 export default function ContactFormSection() {
   const t = useTranslations("ContactForm");
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setIsSubmitting(true)
+
+    const formData = new FormData(event.currentTarget)
+    try {
+      const response = await fetch("https://formspree.io/f/mwvnbyeg", {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setShowSuccess(true)
+        event.currentTarget.reset()
+      } else {
+        console.error("Form submission failed")
+        alert("Something went wrong. Please try again.")
+      }
+    } catch (error) {
+      console.error("Error submitting form", error)
+      alert("Something went wrong. Please check your internet connection.")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   const serviceKeys = [
     "obc",
@@ -30,7 +64,7 @@ export default function ContactFormSection() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          
+
           {/* Left Column: Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -44,7 +78,14 @@ export default function ContactFormSection() {
               {t("description")}
             </p>
 
-            <form className="space-y-6">
+            <SuccessModal
+              isOpen={showSuccess}
+              onClose={() => setShowSuccess(false)}
+              title={t("success.title") || "Message Sent Successfully!"}
+              description={t("success.description") || "Thank you for contacting OBC Care. We have received your inquiry and will get back to you shortly."}
+            />
+
+            <form className="space-y-6" onSubmit={handleSubmit}>
               {/* Row 1: Name */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -53,6 +94,8 @@ export default function ContactFormSection() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  required
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all"
                   placeholder={t("placeholders.name")}
                 />
@@ -67,6 +110,7 @@ export default function ContactFormSection() {
                   <input
                     type="tel"
                     id="phone"
+                    name="phone"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all"
                     placeholder={t("placeholders.phone")}
                   />
@@ -78,6 +122,7 @@ export default function ContactFormSection() {
                   <input
                     type="text"
                     id="company"
+                    name="company"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all"
                     placeholder={t("placeholders.company")}
                   />
@@ -93,6 +138,8 @@ export default function ContactFormSection() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  required
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all"
                   placeholder={t("placeholders.email")}
                 />
@@ -107,6 +154,7 @@ export default function ContactFormSection() {
                   </label>
                   <select
                     id="inquiryType"
+                    name="inquiryType"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all bg-white"
                     defaultValue=""
                   >
@@ -120,10 +168,11 @@ export default function ContactFormSection() {
                 </div>
                 <div>
                   <label htmlFor="industry" className="block text-sm font-medium text-gray-700 mb-2">
-                   {t("labels.industry")}
+                    {t("labels.industry")}
                   </label>
                   <select
                     id="industry"
+                    name="industry"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all bg-white"
                     defaultValue=""
                   >
@@ -146,6 +195,7 @@ export default function ContactFormSection() {
                   <input
                     type="text"
                     id="dimensions"
+                    name="dimensions"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all"
                     placeholder={t("placeholders.dimensions")}
                   />
@@ -158,6 +208,7 @@ export default function ContactFormSection() {
                     <input
                       type="text"
                       id="weight"
+                      name="weight"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all"
                       placeholder={t("placeholders.weight")}
                     />
@@ -177,6 +228,7 @@ export default function ContactFormSection() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={5}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#91c73e] focus:border-transparent outline-none transition-all resize-none"
                   placeholder={t("placeholders.message")}
@@ -186,13 +238,26 @@ export default function ContactFormSection() {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-[#194479] text-white font-bold rounded-lg hover:bg-[#13335b] transition-colors shadow-md hover:shadow-lg flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className="w-full px-8 py-4 bg-[#194479] text-white font-bold rounded-lg hover:bg-[#13335b] transition-colors shadow-md hover:shadow-lg flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-                {t("button")}
+                {isSubmitting ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                    {t("button")}
+                  </>
+                )}
               </button>
             </form>
           </motion.div>
@@ -211,11 +276,11 @@ export default function ContactFormSection() {
                 <MapPin className="h-6 w-6 text-[#91c73e]" />
                 {t("office.title")}
               </h3>
-              
+
               <div className="space-y-6">
                 <div>
                   <p className="font-bold text-gray-800 mb-1">{t("office.name")}</p>
-                  <p 
+                  <p
                     className="text-gray-600"
                     dangerouslySetInnerHTML={{ __html: t.raw("office.address") }}
                   />
