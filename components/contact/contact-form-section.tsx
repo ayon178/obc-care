@@ -49,11 +49,9 @@ export default function ContactFormSection() {
         event.currentTarget.reset()
       } else {
         console.error("Form submission failed")
-        alert("Something went wrong. Please try again.")
       }
     } catch (error) {
       console.error("Error submitting form", error)
-      alert("Something went wrong. Please check your internet connection.")
     } finally {
       setIsSubmitting(false)
     }

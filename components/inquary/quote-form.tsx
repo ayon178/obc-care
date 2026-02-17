@@ -102,11 +102,12 @@ const QuoteForm: React.FC = () => {
           message: "",
         })
       } else {
-        alert("Something went wrong. Please try again.")
+        // alert("Something went wrong. Please try again.")
+        console.error("Form submission failed")
       }
     } catch (error) {
       console.error("Submission failed", error)
-      alert("Something went wrong. Please check your internet connection.")
+      // alert("Something went wrong. Please check your internet connection.")
     } finally {
       setIsSubmitting(false)
     }

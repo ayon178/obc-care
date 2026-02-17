@@ -2312,5 +2312,11 @@
         "Die von Facebook veröffentlichte Datenrichtlinie, die unter <a href='https://www.facebook.com/privacy/policy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Meta Privacy Policy - Wie Meta Nutzerdaten erfasst und verwendet</a> abrufbar ist, gibt Aufschluss über die Erhebung, Verarbeitung und Nutzung personenbezogener Daten durch Facebook. Ferner wird dort erläutert, welche Einstellungsmöglichkeiten Facebook zum Schutz der Privatsphäre der betroffenen Person bietet. Zudem sind unterschiedliche Applikationen erhältlich, die es ermöglichen, eine Datenübermittlung an Facebook zu unterdrücken."
       ]
     }
+  },
+  "ContactForm": {
+    "success": {
+      "title": "Nachricht gesendet!",
+      "description": "Vielen Dank für Ihre Kontaktaufnahme. Wir werden uns in Kürze bei Ihnen melden."
+    }
   }
 }
