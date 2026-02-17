@@ -62,7 +62,26 @@ export default function AboutTeam() {
         linkedin: "https://www.linkedin.com/in/noree-neypes/",
       },
     },
-   
+    {
+      name: "Esther Ekpenyong",
+      role: t("roles.5"),
+      image: "/about/team/esther.jpeg",
+      icon: <ClipboardList className="h-8 w-8" />,
+      contact: "+44 7700 183458",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/esther-ekpenyong-783350269/",
+      },
+    },
+    {
+      name: "Bea Olalo",
+      role: t("roles.6"),
+      image: "/about/team/bea.jpeg",
+      icon: <ClipboardList className="h-8 w-8" />,
+      contact: "+44 7700 183581",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/bea-angelie-olalo",
+      },
+    },
   ]
 
   return (
@@ -77,7 +96,7 @@ export default function AboutTeam() {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto place-items-center">
           {teamMembers.map((member, index) => (
             <TeamCard
               key={index}
