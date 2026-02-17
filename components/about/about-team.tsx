@@ -68,9 +68,6 @@ export default function AboutTeam() {
       image: "/about/team/esther.jpeg",
       icon: <ClipboardList className="h-8 w-8" />,
       contact: "+44 7700 183458",
-      socials: {
-        linkedin: "https://www.linkedin.com/in/esther-ekpenyong-783350269/",
-      },
     },
     {
       name: "Bea Olalo",
