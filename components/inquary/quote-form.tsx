@@ -63,10 +63,25 @@ const QuoteForm: React.FC = () => {
     setIsSubmitting(true)
     setAnalysis(null)
 
+    // Format the data for a professional email look
+    const submissionData = {
+      _subject: `New Quote Request from ${formData.company || formData.name}`,
+      _replyto: formData.email,
+      "Full Name": formData.name,
+      "Contact Number": formData.phone,
+      "Company Name": formData.company,
+      "Email Address": formData.email,
+      "Service Requested": formData.inquiryType,
+      "Industry Sector": formData.industry,
+      "Shipment Dimensions": formData.dimensions,
+      "Shipment Weight": formData.weight,
+      "Additional Message": formData.message,
+    }
+
     try {
       const response = await fetch("https://formspree.io/f/mwvnbyeg", {
         method: "POST",
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submissionData),
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'

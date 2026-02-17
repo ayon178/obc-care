@@ -17,11 +17,29 @@ export default function ContactFormSection() {
     setIsSubmitting(true)
 
     const formData = new FormData(event.currentTarget)
+    const rawData = Object.fromEntries(formData.entries())
+
+    // Format the data for a professional email look
+    const submissionData = {
+      _subject: `New Contact Inquiry from ${rawData.name}`,
+      _replyto: rawData.email,
+      "Full Name": rawData.name,
+      "Contact Number": rawData.phone,
+      "Company Name": rawData.company,
+      "Email Address": rawData.email,
+      "Service Requested": rawData.inquiryType,
+      "Industry Sector": rawData.industry,
+      "Shipment Dimensions": rawData.dimensions,
+      "Shipment Weight": rawData.weight,
+      "Message Content": rawData.message,
+    }
+
     try {
       const response = await fetch("https://formspree.io/f/mwvnbyeg", {
         method: "POST",
-        body: formData,
+        body: JSON.stringify(submissionData),
         headers: {
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
         }
       })
