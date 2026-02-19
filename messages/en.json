@@ -2007,6 +2007,10 @@
   "ContactForm": {
     "title": "Inquiry Form",
     "description": "If you have inquiries about our services, On Board Courier requests, or partnership opportunities, please fill out the form below — our team will respond shortly.",
+    "success": {
+      "title": "Message Sent Successfully!",
+      "description": "Thank you for contacting OBC Care. We have received your inquiry and will get back to you shortly."
+    },
     "labels": {
       "name": "Your Name",
       "phone": "Business telephone number",
@@ -2309,12 +2313,6 @@
         "Facebook always receives information, through the Facebook component, about a visit to our website by the data subject whenever the data subject is logged into Facebook at the same time as accessing our website. This occurs regardless of whether the data subject clicks on the Facebook component. If the data subject does not wish such information to be transmitted to Facebook, this may be prevented by logging out of the Facebook account prior to accessing our website.",
         "The data protection guidelines published by Facebook, which are available at <a href='https://www.facebook.com/privacy/policy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Meta Privacy Policy - How Meta collects and uses user data</a>, provide information about the collection, processing, and use of personal data by Facebook. These guidelines also explain the available settings Facebook offers to protect the privacy of data subjects. In addition, various configuration options and browser applications are available that allow the prevention or limitation of data transmission to Facebook. Such tools may be used by the data subject to restrict or eliminate the transmission of personal data to Facebook."
       ]
-    }
-  },
-  "ContactForm": {
-    "success": {
-      "title": "Message Sent!",
-      "description": "Thank you for contacting us. We will get back to you shortly."
     }
   }
 }

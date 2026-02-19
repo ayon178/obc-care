@@ -2010,6 +2010,10 @@
   "ContactForm": {
     "title": "Anrageformular",
     "description": "Wenn Sie Fragen zu unseren Dienstleistungen, On Board Courier-Anfragen oder Partnerschaftsmöglichkeiten haben, füllen Sie bitte das folgende Formular aus – unser Team wird Ihnen in Kürze antworten.",
+    "success": {
+      "title": "Nachricht erfolgreich gesendet!",
+      "description": "Vielen Dank für Ihre Kontaktaufnahme mit OBC Care. Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden."
+    },
     "labels": {
       "name": "Ihr Name",
       "phone": "Geschäftstelefonnummer",
@@ -2312,12 +2316,6 @@
         "Facebook erhält über die Facebook-Komponente immer dann eine Information darüber, dass die betroffene Person unsere Internetseite besucht hat, wenn die betroffene Person zum Zeitpunkt des Aufrufs unserer Internetseite gleichzeitig bei Facebook eingeloggt ist; dies findet unabhängig davon statt, ob die betroffene Person die Facebook-Komponente anklickt oder nicht. Will die betroffene Person diese Übermittlung nicht, so kann sie diese verhindern, indem sie sich vor einem Aufruf unserer Internetseite aus ihrem Facebook-Account ausloggt.",
         "Die von Facebook veröffentlichte Datenrichtlinie, die unter <a href='https://www.facebook.com/privacy/policy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Meta Privacy Policy - Wie Meta Nutzerdaten erfasst und verwendet</a> abrufbar ist, gibt Aufschluss über die Erhebung, Verarbeitung und Nutzung personenbezogener Daten durch Facebook. Ferner wird dort erläutert, welche Einstellungsmöglichkeiten Facebook zum Schutz der Privatsphäre der betroffenen Person bietet. Zudem sind unterschiedliche Applikationen erhältlich, die es ermöglichen, eine Datenübermittlung an Facebook zu unterdrücken."
       ]
-    }
-  },
-  "ContactForm": {
-    "success": {
-      "title": "Nachricht gesendet!",
-      "description": "Vielen Dank für Ihre Kontaktaufnahme. Wir werden uns in Kürze bei Ihnen melden."
     }
   }
 }

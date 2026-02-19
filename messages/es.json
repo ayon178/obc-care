@@ -2010,6 +2010,10 @@
   "ContactForm": {
     "title": "Formulario de Consulta",
     "description": "Si tiene consultas sobre nuestros servicios, solicitudes de On Board Courier u oportunidades de asociación, complete el formulario a continuación: nuestro equipo responderá en breve.",
+    "success": {
+      "title": "¡Mensaje enviado con éxito!",
+      "description": "Gracias por contactar con OBC Care. Hemos recibido su consulta y nos pondremos en contacto con usted en breve."
+    },
     "labels": {
       "name": "Su Nombre",
       "phone": "Número de teléfono comercial",
@@ -2312,12 +2316,6 @@
         "Facebook siempre recibe información, a través del componente de Facebook, sobre una visita a nuestro sitio web por parte del interesado siempre que el interesado haya iniciado sesión en Facebook al mismo tiempo que accede a nuestro sitio web. Esto ocurre independientemente de si el interesado hace clic en el componente de Facebook. Si el interesado no desea que dicha información se transmita a Facebook, esto puede evitarse cerrando sesión en la cuenta de Facebook antes de acceder a nuestro sitio web.",
         "Las pautas de protección de datos publicadas por Facebook, que están disponibles en <a href='https://www.facebook.com/privacy/policy/' target='_blank' rel='noopener noreferrer' class='text-[#194479] underline'>Política de Privacidad de Meta - Cómo Meta recopila y utiliza datos de usuario</a>, proporcionan información sobre la recopilación, procesamiento y uso de datos personales por parte de Facebook."
       ]
-    }
-  },
-  "ContactForm": {
-    "success": {
-      "title": "¡Mensaje Enviado!",
-      "description": "Gracias por contactarnos. Nos pondremos en contacto con usted en breve."
     }
   }
 }
