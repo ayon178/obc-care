@@ -162,12 +162,12 @@ export default function Footer() {
               
 
               <motion.a
-                href="tel:+4922739431564"
+                href="tel:+4922024600723"
                 className="flex items-center gap-3 text-white hover:text-[#91C73E] transition-colors group justify-center md:justify-start"
                 whileHover={{ x: 5 }}
               >
                 <Phone className="w-6 h-6 text-[#91C73E] group-hover:scale-110 transition-transform" />
-                <span className="text-base">+49 227 394 315 64</span>
+                <span className="text-base">+49 2202 4600 723</span>
               </motion.a>
 
               <motion.a
