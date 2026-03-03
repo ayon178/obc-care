@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from "next-intl"
 import { getMessages } from "next-intl/server"
 import { notFound } from "next/navigation"
+import Script from "next/script"
 
 import type React from "react"
 import type { Metadata } from "next"
@@ -12,14 +13,14 @@ import { Toaster } from "@/components/ui/sonner"
 import "../globals.css"
 
 // Inter for body text and paragraphs (highly readable, professional)
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 })
 
 // Poppins for headers, titles, and navbar (modern, professional, slightly bold)
-const poppins = Poppins({ 
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-poppins",
@@ -54,6 +55,24 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-8EWCBFRCZ5`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-8EWCBFRCZ5');
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <SmoothScroll>
