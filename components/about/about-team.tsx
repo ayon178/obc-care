@@ -75,7 +75,7 @@ export default function AboutTeam() {
     {
       name: "Greenly Cantilang",
       role: t("roles.7"),
-      image: "/about/team/greenly.JPG",
+      image: "/about/team/greenly.png",
       icon: <ClipboardList className="h-8 w-8" />,
       contact: "+44 7488 848507",
       socials: {
