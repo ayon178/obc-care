@@ -63,13 +63,6 @@ export default function AboutTeam() {
       },
     },
     {
-      name: "Esther Ekpenyong",
-      role: t("roles.5"),
-      image: "/about/team/esther.jpeg",
-      icon: <ClipboardList className="h-8 w-8" />,
-      contact: "+44 7700 183458",
-    },
-    {
       name: "Bea Olalo",
       role: t("roles.6"),
       image: "/about/team/bea.jpeg",
@@ -78,6 +71,33 @@ export default function AboutTeam() {
       socials: {
         linkedin: "https://www.linkedin.com/in/bea-angelie-olalo",
       },
+    },
+    {
+      name: "Greenly Cantilang",
+      role: t("roles.7"),
+      image: "/about/team/greenly.JPG",
+      icon: <ClipboardList className="h-8 w-8" />,
+      contact: "+44 7488 848507",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/greenly-rose-cantilang-309526417/",
+      },
+    },
+    {
+      name: "John Malondras",
+      role: t("roles.5"),
+      image: "/about/team/john.png",
+      icon: <ClipboardList className="h-8 w-8" />,
+      contact: "+44 7700 183458",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/nairanhoj?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      },
+    },
+    {
+      name: "Athos Baldan",
+      role: t("roles.5"),
+      image: "/about/team/athos.png",
+      icon: <ClipboardList className="h-8 w-8" />,
+      contact: "+447893926839",
     },
   ]
 
