@@ -84,7 +84,7 @@ export default function AboutTeam() {
     },
     {
       name: "John Malondras",
-      role: t("roles.5"),
+      role: t("roles.8"),
       image: "/about/team/john.png",
       icon: <ClipboardList className="h-8 w-8" />,
       contact: "+44 7700 183458",
@@ -94,7 +94,7 @@ export default function AboutTeam() {
     },
     {
       name: "Athos Baldan",
-      role: t("roles.5"),
+      role: t("roles.9"),
       image: "/about/team/athos.png",
       icon: <ClipboardList className="h-8 w-8" />,
       contact: "+447893926839",
